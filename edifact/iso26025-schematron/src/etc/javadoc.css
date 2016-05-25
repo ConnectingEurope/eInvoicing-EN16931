@@ -1,0 +1,583 @@
+/**
+ * Copyright (C) 2014-2016 Philip Helger (www.helger.com)
+ * philip[at]helger[dot]com
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*
+ * based on phloc javadoc CSS.
+ * (c) 2011-2014 phloc systems.
+ * Derived from the original javadoc CSS from Sun JDK
+ */
+ 
+body {
+	background-color: #FFFFFF;
+	color: #353833;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 76%;
+	margin: 0;
+}
+
+a:link,a:visited {
+	color: #880000;
+	text-decoration: none;
+}
+
+a:hover,a:focus {
+	color: #BB2222;
+	text-decoration: none;
+}
+
+a:active {
+	color: #4C6B87;
+	text-decoration: none;
+}
+
+a[name] {
+	color: #353833;
+}
+
+a[name]:hover {
+	color: #353833;
+	text-decoration: none;
+}
+
+pre {
+	font-size: 1.3em;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1.1em;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+code,tt {
+	font-size: 1.2em;
+}
+
+dt code {
+	font-size: 1.2em;
+}
+
+table tr td dt code {
+	font-size: 1.2em;
+	vertical-align: top;
+}
+
+sup {
+	font-size: 0.6em;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+.aboutLanguage {
+	float: right;
+	font-size: 0.8em;
+	margin-top: -7px;
+	padding: 0 21px;
+	z-index: 200;
+}
+
+.legalCopy {
+	margin-left: 0.5em;
+}
+
+.bar a,.bar a:link,.bar a:visited,.bar a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.bar a:hover,.bar a:focus {
+	color: #BB7A2A;
+}
+
+.tab {
+	background-color: #0066FF;
+	background-image: url("resources/titlebar.gif");
+	background-position: left top;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 8px;
+	width: 5em;
+}
+
+.bar {
+	background-image: url("resources/background.gif");
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	font-size: 1em;
+	height: auto;
+	margin: 0;
+	padding: 0.8em 0.5em 0.4em 0.8em;
+}
+
+.topNav {
+	background-image: url("resources/background.gif");
+	background-repeat: repeat-x;
+	clear: right;
+	color: #FFFFFF;
+	float: left;
+	height: 2.8em;
+	overflow: hidden;
+	padding: 10px 0 0;
+	width: 100%;
+}
+
+.bottomNav {
+	background-image: url("resources/background.gif");
+	background-repeat: repeat-x;
+	clear: right;
+	color: #FFFFFF;
+	float: left;
+	height: 2.8em;
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 10px 0 0;
+	width: 100%;
+}
+
+.subNav {
+	background-color: #DEE3E9;
+	border-bottom: 1px solid #9EADC0;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+}
+
+.subNav div {
+	clear: left;
+	float: left;
+	padding: 0 0 5px 6px;
+}
+
+ul.navList,ul.subNavList {
+	float: left;
+	margin: 0 25px 0 0;
+	padding: 0;
+}
+
+ul.navList li {
+	float: left;
+	list-style: none outside none;
+	padding: 3px 6px;
+}
+
+ul.subNavList li {
+	float: left;
+	font-size: 90%;
+	list-style: none outside none;
+}
+
+.topNav a:link,.topNav a:active,.topNav a:visited,.bottomNav a:link,.bottomNav a:active,.bottomNav a:visited
+	{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.topNav a:hover,.bottomNav a:hover {
+	color: #BB7A2A;
+	text-decoration: none;
+}
+
+.navBarCell1Rev {
+	background-color: #A88834;
+	background-image: url("resources/tab.gif");
+	border: 1px solid #C9AA44;
+	color: #FFFFFF;
+	margin: auto 5px;
+}
+
+.header,.footer {
+	clear: both;
+	margin: 0 20px;
+	padding: 5px 0 0;
+}
+
+.indexHeader {
+	margin: 10px;
+	position: relative;
+}
+
+.indexHeader h1 {
+	font-size: 1.3em;
+}
+
+.title {
+	color: #880000;
+	margin: 10px 0;
+}
+
+.subTitle {
+	margin: 5px 0 0;
+}
+
+.header ul {
+	margin: 0 0 25px;
+	padding: 0;
+}
+
+.footer ul {
+	margin: 20px 0 5px;
+}
+
+.header ul li,.footer ul li {
+	font-size: 1.2em;
+	list-style: none outside none;
+}
+
+div.details ul.blockList ul.blockList ul.blockList li.blockList h4,div.details ul.blockList ul.blockList ul.blockListLast li.blockList h4
+	{
+	background-color: #DEE3E9;
+	border-bottom: 1px solid #9EADC0;
+	border-top: 1px solid #9EADC0;
+	margin: 0 0 6px -8px;
+	padding: 2px 5px;
+}
+
+ul.blockList ul.blockList ul.blockList li.blockList h3 {
+	background-color: #DEE3E9;
+	border-bottom: 1px solid #9EADC0;
+	border-top: 1px solid #9EADC0;
+	margin: 0 0 6px -8px;
+	padding: 2px 5px;
+}
+
+ul.blockList ul.blockList li.blockList h3 {
+	margin: 15px 0;
+	padding: 0;
+}
+
+ul.blockList li.blockList h2 {
+	padding: 0 0 20px;
+}
+
+.contentContainer,.sourceContainer,.classUseContainer,.serializedFormContainer,.constantValuesContainer
+	{
+	clear: both;
+	padding: 10px 20px;
+	position: relative;
+}
+
+.indexContainer {
+	font-size: 1em;
+	margin: 10px;
+	position: relative;
+}
+
+.indexContainer h2 {
+	font-size: 1.1em;
+	padding: 0 0 3px;
+}
+
+.indexContainer ul {
+	margin: 0;
+	padding: 0;
+}
+
+.indexContainer ul li {
+	list-style: none outside none;
+}
+
+.contentContainer .description dl dt,.contentContainer .details dl dt,.serializedFormContainer dl dt
+	{
+	color: #4E4E4E;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+.contentContainer .description dl dd,.contentContainer .details dl dd,.serializedFormContainer dl dd
+	{
+	margin: 10px 0 10px 20px;
+}
+
+.serializedFormContainer dl.nameValue dt {
+	display: inline;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: 1px;
+}
+
+.serializedFormContainer dl.nameValue dd {
+	display: inline;
+	font-size: 1.1em;
+}
+
+ul.horizontal li {
+	display: inline;
+	font-size: 0.9em;
+}
+
+ul.inheritance {
+	margin: 0;
+	padding: 0;
+}
+
+ul.inheritance li {
+	display: inline;
+	list-style: none outside none;
+}
+
+ul.inheritance li ul.inheritance {
+	margin-left: 15px;
+	padding-left: 15px;
+	padding-top: 1px;
+}
+
+ul.blockList,ul.blockListLast {
+	margin: 10px 0;
+	padding: 0;
+}
+
+ul.blockList li.blockList,ul.blockListLast li.blockList {
+	list-style: none outside none;
+	margin-bottom: 25px;
+}
+
+ul.blockList ul.blockList li.blockList,ul.blockList ul.blockListLast li.blockList
+	{
+	background-color: #F9F9F9;
+	border: 1px solid #9EADC0;
+	padding: 0 20px 5px 10px;
+}
+
+ul.blockList ul.blockList ul.blockList li.blockList,ul.blockList ul.blockList ul.blockListLast li.blockList
+	{
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #FFFFFF;
+	border-color: currentColor #9EADC0 #9EADC0;
+	border-image: none;
+	border-right: 1px solid #9EADC0;
+	border-style: none solid solid;
+	border-width: medium 1px 1px;
+	padding: 0 0 5px 8px;
+}
+
+ul.blockList ul.blockList ul.blockList ul.blockList li.blockList {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: currentColor currentColor #9EADC0;
+	border-image: none;
+	border-style: none none solid;
+	border-width: medium medium 1px;
+	margin-left: 0;
+	padding-bottom: 15px;
+	padding-left: 0;
+}
+
+ul.blockList ul.blockList ul.blockList ul.blockList li.blockListLast {
+	border-bottom: medium none;
+	list-style: none outside none;
+	padding-bottom: 0;
+}
+
+table tr td dl,table tr td dl dt,table tr td dl dd {
+	margin-bottom: 1px;
+	margin-top: 0;
+}
+
+.contentContainer table,.classUseContainer table,.constantValuesContainer table
+	{
+	border-bottom: 1px solid #9EADC0;
+	width: 100%;
+}
+
+.contentContainer ul li table,.classUseContainer ul li table,.constantValuesContainer ul li table
+	{
+	width: 100%;
+}
+
+.contentContainer .description table,.contentContainer .details table {
+	border-bottom: medium none;
+}
+
+.contentContainer ul li table th.colOne,.contentContainer ul li table th.colFirst,.contentContainer ul li table th.colLast,.classUseContainer ul li table th,.constantValuesContainer ul li table th,.contentContainer ul li table td.colOne,.contentContainer ul li table td.colFirst,.contentContainer ul li table td.colLast,.classUseContainer ul li table td,.constantValuesContainer ul li table td
+	{
+	padding-right: 20px;
+	vertical-align: top;
+}
+
+.contentContainer ul li table th.colLast,.classUseContainer ul li table th.colLast,.constantValuesContainer ul li table th.colLast,.contentContainer ul li table td.colLast,.classUseContainer ul li table td.colLast,.constantValuesContainer ul li table td.colLast,.contentContainer ul li table th.colOne,.classUseContainer ul li table th.colOne,.contentContainer ul li table td.colOne,.classUseContainer ul li table td.colOne
+	{
+	padding-right: 3px;
+}
+
+.overviewSummary caption,.packageSummary caption,.contentContainer ul.blockList li.blockList caption,.summary caption,.classUseContainer caption,.constantValuesContainer caption
+	{
+	background-repeat: no-repeat;
+	clear: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	text-align: left;
+}
+
+caption a:link,caption a:hover,caption a:active,caption a:visited {
+	color: #FFFFFF;
+}
+
+.overviewSummary caption span,.packageSummary caption span,.contentContainer ul.blockList li.blockList caption span,.summary caption span,.classUseContainer caption span,.constantValuesContainer caption span
+	{
+	background-image: url("resources/titlebar.gif");
+	display: block;
+	float: left;
+	height: 18px;
+	padding-left: 8px;
+	padding-top: 8px;
+	white-space: nowrap;
+}
+
+.overviewSummary .tabEnd,.packageSummary .tabEnd,.contentContainer ul.blockList li.blockList .tabEnd,.summary .tabEnd,.classUseContainer .tabEnd,.constantValuesContainer .tabEnd
+	{
+	background-image: url("resources/titlebar_end.gif");
+	background-position: right top;
+	background-repeat: no-repeat;
+	float: left;
+	position: relative;
+	width: 10px;
+}
+
+ul.blockList ul.blockList li.blockList table {
+	margin: 0 0 12px;
+	width: 100%;
+}
+
+.tableSubHeadingColor {
+	background-color: #EEEEFF;
+}
+
+.altColor {
+	background-color: #EEEEEF;
+}
+
+.rowColor {
+	background-color: #FFFFFF;
+}
+
+.overviewSummary td,.packageSummary td,.contentContainer ul.blockList li.blockList td,.summary td,.classUseContainer td,.constantValuesContainer td
+	{
+	padding: 3px 3px 3px 7px;
+	text-align: left;
+}
+
+th.colFirst,th.colLast,th.colOne,.constantValuesContainer th {
+	background: none repeat scroll 0 0 #DEE3E9;
+	border-bottom: 1px solid #9EADC0;
+	border-top: 1px solid #9EADC0;
+	padding: 3px 3px 3px 7px;
+	text-align: left;
+}
+
+td.colOne a:link,td.colOne a:active,td.colOne a:visited,td.colOne a:hover,td.colFirst a:link,td.colFirst a:active,td.colFirst a:visited,td.colFirst a:hover,td.colLast a:link,td.colLast a:active,td.colLast a:visited,td.colLast a:hover,.constantValuesContainer td a:link,.constantValuesContainer td a:active,.constantValuesContainer td a:visited,.constantValuesContainer td a:hover
+	{
+	font-weight: bold;
+}
+
+td.colFirst,th.colFirst {
+	border-left: 1px solid #9EADC0;
+	white-space: nowrap;
+}
+
+td.colLast,th.colLast {
+	border-right: 1px solid #9EADC0;
+}
+
+td.colOne,th.colOne {
+	border-left: 1px solid #9EADC0;
+	border-right: 1px solid #9EADC0;
+}
+
+table.overviewSummary {
+	margin-left: 0;
+	padding: 0;
+}
+
+table.overviewSummary td.colFirst,table.overviewSummary th.colFirst,table.overviewSummary td.colOne,table.overviewSummary th.colOne
+	{
+	vertical-align: middle;
+	width: 25%;
+}
+
+table.packageSummary td.colFirst,table.overviewSummary th.colFirst {
+	vertical-align: middle;
+	width: 25%;
+}
+
+.description pre {
+	margin-top: 0;
+}
+
+.deprecatedContent {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.docSummary {
+	padding: 0;
+}
+
+.sourceLineNo {
+	color: #008000;
+	padding: 0 30px 0 0;
+}
+
+h1.hidden {
+	font-size: 0.9em;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.block {
+	display: block;
+	margin: 3px 0 0;
+}
+
+.strong {
+	font-weight: bold;
+}
