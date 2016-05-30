@@ -147,6 +147,11 @@
         </configuration>
         <dependencies>
           <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-xjc</artifactId>
+            <version>2.2.11</version>
+          </dependency>
+          <dependency>
             <groupId>com.helger</groupId>
             <artifactId>ph-jaxb22-plugin</artifactId>
             <version>2.2.11.6</version>
