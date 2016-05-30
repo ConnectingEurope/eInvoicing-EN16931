@@ -3,7 +3,7 @@
   <title>TC434 bound to ISO 20625</title>
   <pattern id="TC434">
     <rule context="/M_INVOIC/S_UNH/D_0062">
-      <assert test="string-length(text()) &lt; 5" flag="fatal" id="dummy">Something must be present</assert>
+      <assert test="string-length(text()) &lt; 5" flag="fatal" id="dummy">Something must be present here</assert>
     </rule>
   </pattern>  
 </schema>
