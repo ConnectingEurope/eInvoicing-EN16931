@@ -9,3 +9,11 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * `edifact` - UN/EDIFACT (and ISO 26025 based XML version)
   * `iso20022` - Invoice based on ISO 20022
   * `ubl` - UBL 2.1 (ISO/IEC 19845:2015)
+
+  # Development
+  
+  For the Java projects contained in this repository, please consider the following prerequisites
+    * Java JDK 1.8.x (was tested only with a JDK and not with a JRE)
+    * Eclipse 4.x (JEE edition please!)
+    * For building on the commandline use Apache Maven 3.x (latest) 
+ 
