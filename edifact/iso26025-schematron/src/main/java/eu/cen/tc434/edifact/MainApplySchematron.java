@@ -19,7 +19,7 @@ public final class MainApplySchematron
   public static void main (final String [] args)
   {
     SystemProperties.setPropertyValue ("jdk.xml.maxOccurLimit", Integer.toString (9_999_999));
-    final FileSystemResource aXML = new FileSystemResource ("src/main/resources/xml/invoic5.xml");
+    final FileSystemResource aXML = new FileSystemResource ("src/main/resources/xml/invoic4.xml");
     final FileSystemResource aSCH = new FileSystemResource ("src/main/resources/sch/example.sch");
 
     final InvoicReader aReader = new InvoicReader ();
