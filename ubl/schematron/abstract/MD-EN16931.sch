@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for EN16931 -->
-<!-- Timestamp: 2016-06-07 07:57:36 +0200 -->
+<!-- Timestamp: 2016-06-08 20:57:06 +0200 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931">
   <rule context="$Account_information ">
     <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-A Financial account identifier shall be present if Account identification information is provided in the Invoice. </assert>
