@@ -149,7 +149,7 @@
   <param name="BR-O-07" value="not(ram:ExemptionReason)"/>
   <param name="BR-O-08" value="not(ram:ExemptionReason)"/>
   <!-- new -->
-  <param name="BR-MD-118" value="count(//ram:AssociatedDocumentLineDocument[ram:LineID = current()/ram:AssociatedDocumentLineDocument/ram:LineID]) &lt;= 1"/>
+  <param name="BR-MD-118" value="not(ram:AssociatedDocumentLineDocument/ram:LineID = preceding-sibling::ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID)"/>
   <!-- end new -->
   <param name="Invoice_Period " value="//ram:ApplicableHeaderTradeSettlement/ram:BillingSpecifiedPeriod"/>
   <param name="Document_totals " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>
