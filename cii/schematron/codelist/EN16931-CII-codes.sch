@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="CodesTC434">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="EN16931-Codes">
 <!--
   This implementation supports genericode code lists with no instance
   meta data.

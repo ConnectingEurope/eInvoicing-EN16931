@@ -1,7 +1,7 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for TC434 -->
 <!-- Timestamp: 2016-05-11 10:47:37 +0200 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="TC434">
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931">
   <rule context="$Account_information ">
     <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-A Financial account identifier shall be present if Account identification information is provided in the Invoice. </assert>
   </rule>
@@ -64,6 +64,8 @@
     <assert test="$BR-24" flag="fatal" id="BR-24">[BR-24]-Invoice line item net price shall NOT be negative. </assert>
     <assert test="$BR-25" flag="fatal" id="BR-25">[BR-25]-Invoice line item gross price shall NOT be negative. </assert>
     <assert test="$BR-CO-04" flag="fatal" id="BR-CO-04">[BR-CO-04]-Each Invoice line shall be categorized with an Invoiced item VAT category code. </assert>
+    <!-- new -->
+    <assert test="$BR-MD-118" flag="fatal" id="BR-MD-118">[BR-MD-118]-Each Invoice line identifier shall be unique. </assert>
   </rule>
   <rule context="$Invoice_line_allowances ">
     <assert test="$BR-42" flag="fatal" id="BR-42">[BR-42]-Each Invoice line allowance shall have an Invoice line allowance amount. </assert>
