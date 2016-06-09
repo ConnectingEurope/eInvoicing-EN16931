@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for EN16931 -->
-<!-- Timestamp: 2016-06-08 20:57:06 +0200 -->
+<!-- Timestamp: 2016-06-09 12:05:06 +0200 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931">
   <rule context="$Account_information ">
     <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-A Financial account identifier shall be present if Account identification information is provided in the Invoice. </assert>
@@ -55,6 +55,7 @@
     <assert test="$BR-CO-03" flag="fatal" id="BR-CO-03">[BR-CO-03]-One and only one of either the Seller VAT identifier or the Seller tax representative VAT identifier shall exist in an Invoice if the Invoice has an Invoice total VAT amount. </assert>
   </rule>
   <rule context="$Invoice_Line ">
+    <assert test="$BR-61" flag="fatal" id="BR-61">[BR-61]-Each Invoice line shall have a unique identifier within the whole Invoice.</assert>
     <assert test="$BR-18" flag="fatal" id="BR-18">[BR-18]-Each Invoice line shall have an Invoice line identifier. </assert>
     <assert test="$BR-19" flag="fatal" id="BR-19">[BR-19]-Each Invoice line shall have an Invoiced quantity. </assert>
     <assert test="$BR-20" flag="fatal" id="BR-20">[BR-20]-An invoiced quantity shall have an Invoice quantity unit of measure. </assert>

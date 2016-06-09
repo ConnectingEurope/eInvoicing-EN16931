@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for EN16931 -->
-<!-- Timestamp: 2016-06-08 16:45:48 +0200 -->
+<!-- Timestamp: 2016-06-09 08:16:02 +0200 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931">
   <rule context="$Tax_subtotal">
     <assert test="$UBL-SR-35" flag="warning" id="UBL-SR-35">[UBL-SR-35]-VAT exemption reason text shall occur maximum once</assert>
