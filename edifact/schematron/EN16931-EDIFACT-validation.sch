@@ -13,16 +13,17 @@
   <phase id="codelist_phase">
     <active pattern="EN16931-Codes"/>
   </phase>
-  <phase id="syntax_phase">
+  <!--phase id="syntax_phase">
     <active pattern="EN16931-EDIFACT-Syntax"/>
-  </phase>
+  </phase-->
   <!-- Abstract CEN BII patterns -->
   <!-- ========================= -->
   <include href="abstract/EN16931-EDIFACT-model.sch"/>
+  <!--include href="abstract/EN16931-EDIFACT-syntax.sch"/-->
   <!-- Data Binding parameters -->
   <!-- ======================= -->
   <include href="EDIFACT/EN16931-EDIFACT-model.sch"/>
-  <include href="EDIFACT/EN16931-EDIFACT-syntax.sch"/>
+  <!--include href="EDIFACT/EN16931-EDIFACT-syntax.sch"/-->
   <!-- Code Lists Binding rules -->
   <!-- ======================== -->
   <include href="codelist/EN16931-EDIFACT-codes.sch"/>
