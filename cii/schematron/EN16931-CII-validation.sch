@@ -24,6 +24,7 @@
   <!-- Abstract CEN BII patterns -->
   <!-- ========================= -->
   <include href="abstract/EN16931-CII-model.sch"/>
+  <include href="abstract/EN16931-CII-syntax.sch"/>
   <!-- Data Binding parameters -->
   <!-- ======================= -->
   <include href="CII/EN16931-CII-model.sch"/>
