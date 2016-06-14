@@ -9,14 +9,15 @@
   <title>EN16931  model bound to UBL</title>
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
+  <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"/>
   <ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"/>
-  <phase id="EN16931model_phase">
+  <phase id="EN_16931_model">
     <active pattern="UBL-model"/>
   </phase>
-  <phase id="codelist_phase">
+  <phase id="EN_16931_codes">
     <active pattern="CodesEN16931"/>
   </phase>
-  <phase id="EN16931syntax_phase">
+  <phase id="Specific_UBL_syntax">
     <active pattern="UBL-syntax"/>
   </phase>
   <!-- Abstract CEN BII patterns -->
