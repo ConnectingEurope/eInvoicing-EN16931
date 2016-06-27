@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Schema agency:  UNCEFACT
+Schema version: 100.0
+Schema date:    30 May 2016
+
+Copyright (C) UN/CEFACT (2016). All Rights Reserved.
+
+This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.
+
+The limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.
+
+This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+-->
+<xsd:schema xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:19" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:19" elementFormDefault="qualified" attributeFormDefault="unqualified" version="19.0">
+	<xsd:complexType name="AmountType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT000001</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="currencyID" type="xsd:token"/>
+				<xsd:attribute name="currencyCodeListVersionID" type="xsd:token"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="BinaryObjectType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT000002</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:base64Binary">
+				<xsd:attribute name="format" type="xsd:string"/>
+				<xsd:attribute name="mimeCode" type="xsd:token"/>
+				<xsd:attribute name="encodingCode" type="xsd:token"/>
+				<xsd:attribute name="characterSetCode" type="xsd:token"/>
+				<xsd:attribute name="uri" type="xsd:anyURI"/>
+				<xsd:attribute name="filename" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="CodeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT000007</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:token">
+				<xsd:attribute name="listID" type="xsd:token"/>
+				<xsd:attribute name="listAgencyID" type="xsd:token"/>
+				<xsd:attribute name="listAgencyName" type="xsd:string"/>
+				<xsd:attribute name="listName" type="xsd:string"/>
+				<xsd:attribute name="listVersionID" type="xsd:token"/>
+				<xsd:attribute name="name" type="xsd:string"/>
+				<xsd:attribute name="languageID" type="xsd:token"/>
+				<xsd:attribute name="listURI" type="xsd:anyURI"/>
+				<xsd:attribute name="listSchemeURI" type="xsd:anyURI"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="DateTimeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT000008</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="DateTimeString">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="format" type="xsd:string"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DateTime" type="xsd:dateTime"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="DateType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT000009</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="DateString">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="format" type="xsd:string"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Date" type="xsd:date"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="IDType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000011</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:token">
+				<xsd:attribute name="schemeID" type="xsd:token"/>
+				<xsd:attribute name="schemeName" type="xsd:string"/>
+				<xsd:attribute name="schemeAgencyID" type="xsd:token"/>
+				<xsd:attribute name="schemeAgencyName" type="xsd:string"/>
+				<xsd:attribute name="schemeVersionID" type="xsd:token"/>
+				<xsd:attribute name="schemeDataURI" type="xsd:anyURI"/>
+				<xsd:attribute name="schemeURI" type="xsd:anyURI"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="IndicatorType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000012</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="IndicatorString">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="format" type="xsd:string"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Indicator" type="xsd:boolean"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="MeasureType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000013</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:token"/>
+				<xsd:attribute name="unitCodeListVersionID" type="xsd:token"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="NumericType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000014</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="format" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="PercentType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000016</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="format" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="QuantityType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000018</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:token"/>
+				<xsd:attribute name="unitCodeListID" type="xsd:token"/>
+				<xsd:attribute name="unitCodeListAgencyID" type="xsd:token"/>
+				<xsd:attribute name="unitCodeListAgencyName" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="RateType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000017</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="format" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="TextType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="languageID" type="xsd:token"/>
+				<xsd:attribute name="languageLocaleID" type="xsd:token"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="ValueType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<ccts:UniqueID>UDT0000015</ccts:UniqueID>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="format" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>
