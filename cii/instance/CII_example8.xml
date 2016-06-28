@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:19" xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:19" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:19" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100 ../uncefact/data/standard/CrossIndustryInvoice_100p0.xsd">
+	<rsm:ExchangedDocumentContext>
+		<ram:GuidelineSpecifiedDocumentContextParameter>
+			<ram:ID>urn:cen.eu:en16931:2017</ram:ID>
+		</ram:GuidelineSpecifiedDocumentContextParameter>
+	</rsm:ExchangedDocumentContext>
+	<rsm:ExchangedDocument>
+		<ram:ID>1100512139</ram:ID>
+		<ram:TypeCode>380</ram:TypeCode>
+		<ram:IssueDateTime>
+			<udt:DateTimeString format="102">20141110</udt:DateTimeString>
+		</ram:IssueDateTime>
+		<ram:LanguageID>nl</ram:LanguageID>
+		<ram:IncludedNote>
+			<ram:Content>Periodieke afrekening
+U vindt een toelichting op uw factuur via www.enexis.nl/factuur_grootzakelijk
+Op alle diensten en overeenkomsten zijn de algemene voorwaarden aansluiting en
+transport grootverbruik elektriciteit, respectievelijk gas van toepassing
+www.enexis.nl</ram:Content>
+		</ram:IncludedNote>
+	</rsm:ExchangedDocument>
+	<rsm:SupplyChainTradeTransaction>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>1</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Getransporteerde kWh's</ram:Name>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>contract transportvermogen</ram:Description>
+					<ram:Value>132,00 kW</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>transporttarief</ram:Description>
+					<ram:Value>Netvlak MSD Enexis</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>netvlak</ram:Description>
+					<ram:Value>MS-D</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>correctiefactor</ram:Description>
+					<ram:Value>1,0130</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>0.0088</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="KWH">16000</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>140.80</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>2</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Systemdiensten</ram:Name>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>contract transportvermogen</ram:Description>
+					<ram:Value>132,00 kW</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>transporttarief</ram:Description>
+					<ram:Value>Netvlak MSD Enexis</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>netvlak</ram:Description>
+					<ram:Value>MS-D</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>correctiefactor</ram:Description>
+					<ram:Value>1,0130</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>0.00101</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="KWH">1</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>0.00101</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="KWH">16000</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>16.16</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>3</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Contract transportvermogen</ram:Name>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>contract transportvermogen</ram:Description>
+					<ram:Value>132,00 kW</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>transporttarief</ram:Description>
+					<ram:Value>Netvlak MSD Enexis</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>netvlak</ram:Description>
+					<ram:Value>MS-D</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>correctiefactor</ram:Description>
+					<ram:Value>1,0130</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>15.24</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MON">12</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>15.24</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="MON">132</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>167.64</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>4</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Maximaal afgenomen vermogen</ram:Name>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>contract transportvermogen</ram:Description>
+					<ram:Value>132,00 kW</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>transporttarief</ram:Description>
+					<ram:Value>Netvlak MSD Enexis</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>netvlak</ram:Description>
+					<ram:Value>MS-D</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>correctiefactor</ram:Description>
+					<ram:Value>1,0130</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>1.53</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MON">1</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>1.53</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="MON">58</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>88.74</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>5</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Vastrecht Transportdienst</ram:Name>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>contract transportvermogen</ram:Description>
+					<ram:Value>132,00 kW</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>transporttarief</ram:Description>
+					<ram:Value>Netvlak MSD Enexis</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>netvlak</ram:Description>
+					<ram:Value>MS-D</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>correctiefactor</ram:Description>
+					<ram:Value>1,0130</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>441</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MON">12</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>441</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="MON">1</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>36.75</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>6</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Vastrecht Aansluitsdienst</ram:Name>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>contract transportvermogen</ram:Description>
+					<ram:Value>132,00 kW</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>transporttarief</ram:Description>
+					<ram:Value>Netvlak MSD Enexis</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>netvlak</ram:Description>
+					<ram:Value>MS-D</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+				<ram:ApplicableProductCharacteristic>
+					<ram:Description>correctiefactor</ram:Description>
+					<ram:Value>1,0130</ram:Value>
+				</ram:ApplicableProductCharacteristic>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>678</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MON">12</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>678</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="MON">1</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>56.5</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>7</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Huur Transformatoren</ram:Name>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>83.34</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MON">1</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>83.34</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="MON">1</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>83.34</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>8</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Huur Schakelinstallaties</ram:Name>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>190.31</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MON">1</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>190.31</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="MON">1</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>190.31</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>9</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Huur Overige Apparaten</ram:Name>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>64.21</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MON">1</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>64.21</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="MON">1</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>64.21</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>10</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Huur Meterdiensten</ram:Name>
+			</ram:SpecifiedTradeProduct>
+			<ram:SpecifiedLineTradeAgreement>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>64.46</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MON">1</ram:BasisQuantity>
+				</ram:GrossPriceProductTradePrice>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount>64.46</ram:ChargeAmount>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedLineTradeAgreement>
+			<ram:SpecifiedLineTradeDelivery>
+				<ram:BilledQuantity unitCode="MON">1</ram:BilledQuantity>
+			</ram:SpecifiedLineTradeDelivery>
+			<ram:SpecifiedLineTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:CategoryCode>S</ram:CategoryCode>
+					<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:SpecifiedTradeSettlementLineMonetarySummation>
+					<ram:LineTotalAmount>64.46</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementLineMonetarySummation>
+			</ram:SpecifiedLineTradeSettlement>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:ApplicableHeaderTradeAgreement>
+			<ram:Reference>876193831000290806</ram:Reference>
+			<ram:SellerTradeParty>
+				<ram:Name>Enexis B.V.</ram:Name>
+				<ram:SpecifiedLegalOrganization>
+					<ram:ID>17131139</ram:ID>
+					<ram:TradingBusinessName>Enexis</ram:TradingBusinessName>
+				</ram:SpecifiedLegalOrganization>
+				<ram:DefinedTradeContact>
+					<ram:EmailURIUniversalCommunication>
+						<ram:URIID>klantenservice.zakelijk@enexis.nl</ram:URIID>
+					</ram:EmailURIUniversalCommunication>
+				</ram:DefinedTradeContact>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>5223MB</ram:PostcodeCode>
+					<ram:LineOne>Magistratenlaan 116</ram:LineOne>
+					<ram:CityName>'S-HERTOGENBOSCH</ram:CityName>
+					<ram:CountryID>NL</ram:CountryID>
+				</ram:PostalTradeAddress>
+				<ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="VA">NL809561074B01</ram:ID>
+				</ram:SpecifiedTaxRegistration>
+			</ram:SellerTradeParty>
+			<ram:BuyerTradeParty>
+				<ram:ID>1081119</ram:ID>
+				<ram:Name>Klant</ram:Name>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>9999 XX</ram:PostcodeCode>
+					<ram:LineOne>Bedrijfslaan 4</ram:LineOne>
+					<ram:CityName>ONDERNEMERSTAD</ram:CityName>
+					<ram:CountryID>NL</ram:CountryID>
+				</ram:PostalTradeAddress>
+			</ram:BuyerTradeParty>
+		</ram:ApplicableHeaderTradeAgreement>
+		<ram:ApplicableHeaderTradeDelivery>
+			<ram:ShipToTradeParty>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>9999 XX</ram:PostcodeCode>
+					<ram:LineOne>Berijfslaan 4,</ram:LineOne>
+					<ram:CityName>ONDERNEMERSTAD</ram:CityName>
+					<ram:CountryID>NL</ram:CountryID>
+				</ram:PostalTradeAddress>
+			</ram:ShipToTradeParty>
+		</ram:ApplicableHeaderTradeDelivery>
+		<ram:ApplicableHeaderTradeSettlement>
+			<ram:PaymentReference>1100512149</ram:PaymentReference>
+			<ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+			<ram:SpecifiedTradeSettlementPaymentMeans>
+				<ram:TypeCode>30</ram:TypeCode>
+				<ram:PayerPartyDebtorFinancialAccount>
+					<ram:IBANID>NL28RBOS0420242228</ram:IBANID>
+				</ram:PayerPartyDebtorFinancialAccount>
+			</ram:SpecifiedTradeSettlementPaymentMeans>
+			<ram:ApplicableTradeTax>
+				<ram:CalculatedAmount>190.87</ram:CalculatedAmount>
+				<ram:BasisAmount>908.91</ram:BasisAmount>
+				<ram:CategoryCode>S</ram:CategoryCode>
+				<ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+			</ram:ApplicableTradeTax>
+			<ram:BillingSpecifiedPeriod>
+				<ram:StartDateTime>
+					<udt:DateTimeString format="102">20140801</udt:DateTimeString>
+				</ram:StartDateTime>
+				<ram:EndDateTime>
+					<udt:DateTimeString format="102">20140831</udt:DateTimeString>
+				</ram:EndDateTime>
+			</ram:BillingSpecifiedPeriod>
+			<ram:SpecifiedTradePaymentTerms>
+				<ram:Description>Enexis brengt wettelijke rente in rekening over te laat betaalde
+facturen. Kijk voor informatie op www.enexis.nl/rentenota</ram:Description>
+				<ram:DueDateDateTime>
+					<udt:DateTimeString format="102">20141124</udt:DateTimeString>
+				</ram:DueDateDateTime>
+			</ram:SpecifiedTradePaymentTerms>
+			<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+				<ram:LineTotalAmount>908.91</ram:LineTotalAmount>
+				<ram:TaxBasisTotalAmount>908.91</ram:TaxBasisTotalAmount>
+				<ram:TaxTotalAmount currencyID="EUR">190.87</ram:TaxTotalAmount>
+				<ram:GrandTotalAmount>1099.78</ram:GrandTotalAmount>
+				<ram:DuePayableAmount>1099.78</ram:DuePayableAmount>
+			</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+		</ram:ApplicableHeaderTradeSettlement>
+	</rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>

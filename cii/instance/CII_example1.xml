@@ -30,11 +30,11 @@
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>9.9500</ram:ChargeAmount>
+                    <ram:ChargeAmount>9.95</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">2.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">2</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -42,7 +42,7 @@
                     <ram:RateApplicablePercent>6</ram:RateApplicablePercent>                    
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>19.90</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>19.9</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>                
             </ram:SpecifiedLineTradeSettlement>            
         </ram:IncludedSupplyChainTradeLineItem>
@@ -56,11 +56,11 @@
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>9.8500</ram:ChargeAmount>
+                    <ram:ChargeAmount>9.85</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -82,11 +82,11 @@
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>8.2900</ram:ChargeAmount>
+                    <ram:ChargeAmount>8.29</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -104,15 +104,15 @@
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
                 <ram:SellerAssignedID>438103</ram:SellerAssignedID>
-                <ram:Name>FRITESSAUS 3 LRR (G GLORIE - )</ram:Name>
+                <ram:Name>FRITESSAUS 3 LRR</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>7.2300</ram:ChargeAmount>
+                    <ram:ChargeAmount>7.23</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">2.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">2</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -134,11 +134,11 @@
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>35.0000</ram:ChargeAmount>
+                    <ram:ChargeAmount>35</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -146,7 +146,7 @@
                     <ram:RateApplicablePercent>6</ram:RateApplicablePercent>                    
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>35.00</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>35</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>                
             </ram:SpecifiedLineTradeSettlement>            
         </ram:IncludedSupplyChainTradeLineItem>
@@ -160,11 +160,11 @@
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>35.0000</ram:ChargeAmount>
+                    <ram:ChargeAmount>35</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -172,7 +172,7 @@
                     <ram:RateApplicablePercent>6</ram:RateApplicablePercent>                    
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>35.00</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>35</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>                
             </ram:SpecifiedLineTradeSettlement>            
         </ram:IncludedSupplyChainTradeLineItem>
@@ -182,15 +182,15 @@
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
                 <ram:SellerAssignedID>350257</ram:SellerAssignedID>
-                <ram:Name>SUIKERKLONT (VAN GILZE)</ram:Name>
+                <ram:Name>SUIKERKLONT</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>10.6500</ram:ChargeAmount>
+                    <ram:ChargeAmount>10.65</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -207,16 +207,16 @@
                 <ram:LineID>8</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
-                <ram:SellerAssignedID>3</ram:SellerAssignedID>
+                <ram:SellerAssignedID>350258</ram:SellerAssignedID>
                 <ram:Name>1 KG UL BLOKJES</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>1.5500</ram:ChargeAmount>
+                    <ram:ChargeAmount>1.55</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -238,11 +238,11 @@
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>4.7900</ram:ChargeAmount>
+                    <ram:ChargeAmount>4.79</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">3.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">3</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -260,15 +260,15 @@
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
                 <ram:SellerAssignedID>740810</ram:SellerAssignedID>
-                <ram:Name>CHIPS NAT KLEIN ZAKJES (LAYS - )</ram:Name>
+                <ram:Name>CHIPS NAT KLEIN ZAKJES</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>8.2900</ram:ChargeAmount>
+                    <ram:ChargeAmount>8.29</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -286,15 +286,15 @@
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
                 <ram:SellerAssignedID>740829</ram:SellerAssignedID>
-                <ram:Name>CHIPS PAP KLEINE ZAKJES (LAYS - ) .</ram:Name>
+                <ram:Name>CHIPS PAP KLEINE ZAKJES</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>8.2900</ram:ChargeAmount>
+                    <ram:ChargeAmount>8.29</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">2.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">2</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -311,7 +311,7 @@
                 <ram:LineID>12</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
-                <ram:SellerAssignedID>3</ram:SellerAssignedID>
+                <ram:SellerAssignedID>740828</ram:SellerAssignedID>
                 <ram:Name>TR KL PAKJES APPELSAP</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
@@ -337,16 +337,16 @@
                 <ram:LineID>13</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
-                <ram:SellerAssignedID>3</ram:SellerAssignedID>
-                <ram:Name>PK CHOCOMEL</ram:Name>
+                <ram:SellerAssignedID>740827</ram:SellerAssignedID>
+                <ram:Name>PK CHOCOLADEMELK</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>1.6500</ram:ChargeAmount>
+                    <ram:ChargeAmount>1.65</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">2.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">2</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -354,7 +354,7 @@
                     <ram:RateApplicablePercent>6</ram:RateApplicablePercent>                    
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>3.30</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>3.3</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>                
             </ram:SpecifiedLineTradeSettlement>            
         </ram:IncludedSupplyChainTradeLineItem>
@@ -363,16 +363,16 @@
                 <ram:LineID>14</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
-                <ram:SellerAssignedID>999998</ram:SellerAssignedID>
-                <ram:Name>KRAT AMSTEL</ram:Name>
+                <ram:SellerAssignedID>999996</ram:SellerAssignedID>
+                <ram:Name>KRAT BIER</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>10.8000</ram:ChargeAmount>
+                    <ram:ChargeAmount>10.8</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -380,7 +380,7 @@
                     <ram:RateApplicablePercent>21</ram:RateApplicablePercent>                    
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>10.80</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>10.8</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>                
             </ram:SpecifiedLineTradeSettlement>            
         </ram:IncludedSupplyChainTradeLineItem>
@@ -389,16 +389,16 @@
                 <ram:LineID>15</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
-                <ram:SellerAssignedID>1</ram:SellerAssignedID>
+                <ram:SellerAssignedID>999995</ram:SellerAssignedID>
                 <ram:Name>STATIEGELD</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>3.9000</ram:ChargeAmount>
+                    <ram:ChargeAmount>3.9</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -406,7 +406,7 @@
                     <ram:RateApplicablePercent>6</ram:RateApplicablePercent>                    
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>3.90</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>3.9</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>                
             </ram:SpecifiedLineTradeSettlement>            
         </ram:IncludedSupplyChainTradeLineItem>
@@ -416,15 +416,15 @@
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
                 <ram:SellerAssignedID>102172</ram:SellerAssignedID>
-                <ram:Name>GLORIX BLEEK 3 X 750 ML</ram:Name>
+                <ram:Name>BLEEK 3 X 750 ML</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>3.8000</ram:ChargeAmount>
+                    <ram:ChargeAmount>3.8</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">2.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">2</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -432,7 +432,7 @@
                     <ram:RateApplicablePercent>21</ram:RateApplicablePercent>                    
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>7.60</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>7.6</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>                
             </ram:SpecifiedLineTradeSettlement>            
         </ram:IncludedSupplyChainTradeLineItem>
@@ -441,16 +441,16 @@
                 <ram:LineID>17</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
-                <ram:SellerAssignedID>999998</ram:SellerAssignedID>
+                <ram:SellerAssignedID>999994</ram:SellerAssignedID>
                 <ram:Name>WC PAPIER</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>4.6700</ram:ChargeAmount>
+                    <ram:ChargeAmount>4.67</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">2.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">2</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -467,16 +467,16 @@
                 <ram:LineID>18</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
-                <ram:SellerAssignedID>999998</ram:SellerAssignedID>
+                <ram:SellerAssignedID>999993</ram:SellerAssignedID>
                 <ram:Name>BALPENNEN 50 ST BLAUW</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>18.6300</ram:ChargeAmount>
+                    <ram:ChargeAmount>18.63</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">1.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -493,16 +493,16 @@
                 <ram:LineID>19</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>                
-                <ram:SellerAssignedID>3</ram:SellerAssignedID>
+                <ram:SellerAssignedID>999992</ram:SellerAssignedID>
                 <ram:Name>EM FRITUURVET</ram:Name>
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>17.0200</ram:ChargeAmount>
+                    <ram:ChargeAmount>17.02</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">6.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">6</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -524,11 +524,11 @@
             </ram:SpecifiedTradeProduct>
             <ram:SpecifiedLineTradeAgreement>
                 <ram:NetPriceProductTradePrice>
-                    <ram:ChargeAmount>18.3300</ram:ChargeAmount>
+                    <ram:ChargeAmount>18.33</ram:ChargeAmount>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">-6.0000</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">-6</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -550,6 +550,7 @@
                     <ram:PostcodeCode>1950 AB</ram:PostcodeCode>
                     <ram:LineOne>Postbus 7l</ram:LineOne>
                     <ram:CityName>Velsen-Nord</ram:CityName>
+                    <ram:CountryID>NL</ram:CountryID>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
                     <ram:ID schemeID="VA">NL8200.98.395.B.01</ram:ID>
@@ -565,6 +566,7 @@
                     <ram:PostcodeCode>1960 AJ</ram:PostcodeCode>
                     <ram:LineOne>POSTBUS 367</ram:LineOne>
                     <ram:CityName>HEEMSKERK</ram:CityName>
+                    <ram:CountryID>NL</ram:CountryID>
                 </ram:PostalTradeAddress>
             </ram:BuyerTradeParty>
         </ram:ApplicableHeaderTradeAgreement>
@@ -574,17 +576,21 @@
             <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
             <ram:SpecifiedTradeSettlementPaymentMeans>
                 <ram:TypeCode>31</ram:TypeCode>
-                <ram:PayerPartyDebtorFinancialAccount><ram:IBANID>NL57RABO0107307510</ram:IBANID></ram:PayerPartyDebtorFinancialAccount>
+                <ram:PayerPartyDebtorFinancialAccount><ram:IBANID>NL57RABO0107307510</ram:IBANID></ram:PayerPartyDebtorFinancialAccount>                
+            </ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:SpecifiedTradeSettlementPaymentMeans>
+                <ram:TypeCode>31</ram:TypeCode>
+                <ram:PayerPartyDebtorFinancialAccount><ram:IBANID>NL03INGB0004489902</ram:IBANID></ram:PayerPartyDebtorFinancialAccount>                
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>
-                <ram:CalculatedAmount>9.90</ram:CalculatedAmount>
-                <ram:BasisAmount>164.96</ram:BasisAmount>
+                <ram:CalculatedAmount>10.99</ram:CalculatedAmount>
+                <ram:BasisAmount>183.23</ram:BasisAmount>
                 <ram:CategoryCode>S</ram:CategoryCode>
                 <ram:RateApplicablePercent>6.00</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
             <ram:ApplicableTradeTax>
-                <ram:CalculatedAmount>12.76</ram:CalculatedAmount>
-                <ram:BasisAmount>60.74</ram:BasisAmount>
+                <ram:CalculatedAmount>9.74</ram:CalculatedAmount>
+                <ram:BasisAmount>46.37</ram:BasisAmount>
                 <ram:CategoryCode>S</ram:CategoryCode>
                 <ram:RateApplicablePercent>21.00</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
@@ -594,9 +600,9 @@
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 <ram:LineTotalAmount>229.60</ram:LineTotalAmount>
                 <ram:TaxBasisTotalAmount>229.60</ram:TaxBasisTotalAmount>
-                <ram:TaxTotalAmount currencyID="EUR">22.66</ram:TaxTotalAmount>
-                <ram:GrandTotalAmount>252.26</ram:GrandTotalAmount>
-                <ram:DuePayableAmount>252.26</ram:DuePayableAmount>
+                <ram:TaxTotalAmount currencyID="EUR">20.73</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>250.33</ram:GrandTotalAmount>
+                <ram:DuePayableAmount>250.33</ram:DuePayableAmount>
             </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
         </ram:ApplicableHeaderTradeSettlement>
     </rsm:SupplyChainTradeTransaction>

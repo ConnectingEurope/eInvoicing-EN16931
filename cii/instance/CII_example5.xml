@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice
+    xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:19"
+    xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:19"
+    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:19"
+    xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100 ../uncefact/data/standard/CrossIndustryInvoice_100p0.xsd">
+    <rsm:ExchangedDocumentContext>
+    <ram:BusinessProcessSpecifiedDocumentContextParameter>
+		<ram:ID>1</ram:ID>
+    </ram:BusinessProcessSpecifiedDocumentContextParameter>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+            <ram:ID>urn:cen.eu:en16931:2017</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:ExchangedDocumentContext>
+    <rsm:ExchangedDocument>
+        <ram:ID>TOSL110</ram:ID>
+        <ram:TypeCode>380</ram:TypeCode>
+        <ram:IssueDateTime>
+            <udt:DateTimeString format="102">20130410</udt:DateTimeString>
+        </ram:IssueDateTime>
+        <ram:LanguageID>en</ram:LanguageID>
+        <ram:IncludedNote><ram:Content>Ordered through our website</ram:Content></ram:IncludedNote>
+    </rsm:ExchangedDocument>
+    <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>1</ram:LineID>
+                <ram:IncludedNote><ram:Content>first line</ram:Content></ram:IncludedNote>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedTradeProduct>
+				<ram:GlobalID schemeID="00160">1234567890128</ram:GlobalID>
+				<ram:SellerAssignedID>JB007</ram:SellerAssignedID>				
+                <ram:Name>Printing paper</ram:Name>
+                <ram:Description>Printing paper, 2mm</ram:Description>
+                <ram:ApplicableProductCharacteristic>
+					<ram:Description>Thickness</ram:Description>
+					<ram:Value>2 mm</ram:Value>
+                </ram:ApplicableProductCharacteristic>
+                <ram:DesignatedProductClassification><ram:ClassCode listID="UNSPSC">12344321</ram:ClassCode></ram:DesignatedProductClassification>
+                <ram:OriginTradeCountry><ram:ID>NL</ram:ID></ram:OriginTradeCountry>
+            </ram:SpecifiedTradeProduct>
+            <ram:SpecifiedLineTradeAgreement>
+				<ram:BuyerOrderReferencedDocument>
+					<ram:LineID>1</ram:LineID>
+				</ram:BuyerOrderReferencedDocument>
+				<ram:GrossPriceProductTradePrice>
+					<ram:ChargeAmount>1.1</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="C62">1</ram:BasisQuantity>
+					<ram:AppliedTradeAllowanceCharge>
+						<ram:ChargeIndicator><udt:Indicator>false</udt:Indicator></ram:ChargeIndicator>
+						<ram:ActualAmount>0.1</ram:ActualAmount>
+					</ram:AppliedTradeAllowanceCharge>
+				</ram:GrossPriceProductTradePrice>	
+                <ram:NetPriceProductTradePrice>
+                    <ram:ChargeAmount>1</ram:ChargeAmount>
+                </ram:NetPriceProductTradePrice>                
+            </ram:SpecifiedLineTradeAgreement>
+            <ram:SpecifiedLineTradeDelivery>
+                <ram:BilledQuantity unitCode="C62">1000</ram:BilledQuantity>                
+            </ram:SpecifiedLineTradeDelivery>
+            <ram:SpecifiedLineTradeSettlement>
+                <ram:ApplicableTradeTax>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+                </ram:ApplicableTradeTax>
+                <ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20130310</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20130410</udt:DateTimeString>
+					</ram:EndDateTime>
+                </ram:BillingSpecifiedPeriod>
+                <ram:SpecifiedTradeAllowanceCharge>
+					<ram:ChargeIndicator><udt:Indicator>false</udt:Indicator></ram:ChargeIndicator>
+					<ram:CalculationPercent>10</ram:CalculationPercent>
+					<ram:BasisAmount>1000</ram:BasisAmount>						
+					<ram:ActualAmount>100</ram:ActualAmount>
+					<ram:ReasonCode>15</ram:ReasonCode>
+					<ram:Reason>Local customer</ram:Reason>
+                </ram:SpecifiedTradeAllowanceCharge>
+                <ram:SpecifiedTradeAllowanceCharge>
+					<ram:ChargeIndicator><udt:Indicator>true</udt:Indicator></ram:ChargeIndicator>
+					<ram:CalculationPercent>10</ram:CalculationPercent>
+					<ram:BasisAmount>1000</ram:BasisAmount>						
+					<ram:ActualAmount>100</ram:ActualAmount>
+					<ram:ReasonCode>14</ram:ReasonCode>
+					<ram:Reason>Packaging</ram:Reason>
+                </ram:SpecifiedTradeAllowanceCharge>
+                <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    <ram:LineTotalAmount>1000</ram:LineTotalAmount>
+                </ram:SpecifiedTradeSettlementLineMonetarySummation>
+                <ram:ReceivableSpecifiedTradeAccountingAccount>
+					<ram:ID>ACC7654</ram:ID>
+				</ram:ReceivableSpecifiedTradeAccountingAccount>
+            </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>2</ram:LineID>
+                <ram:IncludedNote><ram:Content>Second line</ram:Content></ram:IncludedNote>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedTradeProduct>
+				<ram:SellerAssignedID>JB008</ram:SellerAssignedID>
+                <ram:Name>Parker Pen</ram:Name>
+                <ram:Description>Parker Pen, Black, model Sansa</ram:Description>
+                <ram:OriginTradeCountry><ram:ID>NL</ram:ID></ram:OriginTradeCountry>
+            </ram:SpecifiedTradeProduct>
+            <ram:SpecifiedLineTradeAgreement>
+                <ram:NetPriceProductTradePrice>
+                    <ram:ChargeAmount>5</ram:ChargeAmount>
+                </ram:NetPriceProductTradePrice>
+            </ram:SpecifiedLineTradeAgreement>
+            <ram:SpecifiedLineTradeDelivery>
+                <ram:BilledQuantity unitCode="C62">100</ram:BilledQuantity>
+            </ram:SpecifiedLineTradeDelivery>
+            <ram:SpecifiedLineTradeSettlement>
+                <ram:ApplicableTradeTax>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+                </ram:ApplicableTradeTax>
+                <ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20130310</udt:DateTimeString>
+					</ram:StartDateTime>                
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20130410</udt:DateTimeString>
+					</ram:EndDateTime>
+                </ram:BillingSpecifiedPeriod>
+                <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    <ram:LineTotalAmount>500</ram:LineTotalAmount>
+                </ram:SpecifiedTradeSettlementLineMonetarySummation>
+                <ram:ReceivableSpecifiedTradeAccountingAccount>
+					<ram:ID>ACC7654</ram:ID>
+				</ram:ReceivableSpecifiedTradeAccountingAccount>
+            </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>3</ram:LineID>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedTradeProduct>
+				<ram:SellerAssignedID>JB009</ram:SellerAssignedID>
+                <ram:Name>American Cookies</ram:Name>
+            </ram:SpecifiedTradeProduct>
+            <ram:SpecifiedLineTradeAgreement>
+                <ram:NetPriceProductTradePrice>
+                    <ram:ChargeAmount>5</ram:ChargeAmount>
+                </ram:NetPriceProductTradePrice>
+            </ram:SpecifiedLineTradeAgreement>
+            <ram:SpecifiedLineTradeDelivery>
+                <ram:BilledQuantity unitCode="C62">500</ram:BilledQuantity>
+            </ram:SpecifiedLineTradeDelivery>
+            <ram:SpecifiedLineTradeSettlement>
+                <ram:ApplicableTradeTax>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
+                </ram:ApplicableTradeTax>
+                <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    <ram:LineTotalAmount>2500</ram:LineTotalAmount>
+                </ram:SpecifiedTradeSettlementLineMonetarySummation>
+            </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+		<ram:ApplicableHeaderTradeAgreement>
+			<ram:Reference>OBJ999</ram:Reference>
+			<ram:BuyerReference>qwerty</ram:BuyerReference>
+            <ram:SellerTradeParty>
+				<ram:GlobalID schemeID="0088">5790000436101</ram:GlobalID>
+                <ram:Name>SellerCompany</ram:Name>      
+                <ram:Description>Export</ram:Description>          
+                <ram:SpecifiedLegalOrganization>
+                    <ram:ID>NL16356706</ram:ID>
+                    <ram:TradingBusinessName>SelCo</ram:TradingBusinessName>
+                </ram:SpecifiedLegalOrganization>
+                <ram:DefinedTradeContact>
+					<ram:PersonName>Anthon Larsen</ram:PersonName>
+					<ram:TelephoneUniversalCommunication><ram:CompleteNumber>+21898989898</ram:CompleteNumber></ram:TelephoneUniversalCommunication>
+                    <ram:EmailURIUniversalCommunication><ram:URIID>Anthon@Selco.nl</ram:URIID></ram:EmailURIUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>54321</ram:PostcodeCode>
+                    <ram:LineOne>Hoofdstraat 4</ram:LineOne>
+                    <ram:LineTwo>In de hoek</ram:LineTwo>
+                    <ram:CityName>Grootstad</ram:CityName>
+                    <ram:CountryID>NL</ram:CountryID>
+                    <ram:CountrySubDivisionName>Overijssel</ram:CountrySubDivisionName>
+                </ram:PostalTradeAddress>
+                <ram:URIUniversalCommunication><ram:URIID>info@selco.nl</ram:URIID></ram:URIUniversalCommunication>
+                <ram:SpecifiedTaxRegistration>
+                    <ram:ID schemeID="VA">NL16356706</ram:ID>                    
+                </ram:SpecifiedTaxRegistration>
+                <ram:SpecifiedTaxRegistration>
+                    <ram:ID schemeID="FC">NL16356706</ram:ID>                    
+                </ram:SpecifiedTaxRegistration>
+            </ram:SellerTradeParty>
+            <ram:BuyerTradeParty>
+                <ram:GlobalID schemeID="0088">5790000436057</ram:GlobalID>
+                <ram:Name>Buyercompany ltd</ram:Name>
+                <ram:SpecifiedLegalOrganization>
+					<ram:ID>DK16356607</ram:ID>
+                </ram:SpecifiedLegalOrganization>
+                <ram:DefinedTradeContact>
+					<ram:PersonName>John Hansen</ram:PersonName>
+					<ram:TelephoneUniversalCommunication><ram:CompleteNumber>+4598989898</ram:CompleteNumber></ram:TelephoneUniversalCommunication>
+					<ram:EmailURIUniversalCommunication><ram:URIID>john.hansen@buyercompany.dk</ram:URIID></ram:EmailURIUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>101</ram:PostcodeCode>
+                    <ram:LineOne>Anystreet, Building 1</ram:LineOne>
+                    <ram:LineTwo>5th floor</ram:LineTwo>
+                    <ram:CityName>Anytown</ram:CityName>
+                    <ram:CountryID>DK</ram:CountryID>                    
+                    <ram:CountrySubDivisionName>Jutland</ram:CountrySubDivisionName>
+                </ram:PostalTradeAddress>               
+                <ram:URIUniversalCommunication><ram:URIID>info@buyercompany.dk</ram:URIID></ram:URIUniversalCommunication> 
+                <ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="VA">DK16356607</ram:ID>
+                </ram:SpecifiedTaxRegistration>
+            </ram:BuyerTradeParty>
+            <ram:SellerTaxRepresentativeTradeParty>
+				<ram:Name>Dick Paname</ram:Name>
+				<ram:PostalTradeAddress>
+                    <ram:PostcodeCode>101</ram:PostcodeCode>
+                    <ram:LineOne>Anystreet, Building 1</ram:LineOne>
+                    <ram:LineTwo>6th floor</ram:LineTwo>
+                    <ram:CityName>Anytown</ram:CityName>
+                    <ram:CountryID>DK</ram:CountryID>                    
+                    <ram:CountrySubDivisionName>Jutland</ram:CountrySubDivisionName>
+                </ram:PostalTradeAddress>
+				<ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="VA">DK16356609</ram:ID>
+				</ram:SpecifiedTaxRegistration>
+            </ram:SellerTaxRepresentativeTradeParty>
+            <ram:SellerOrderReferencedDocument>
+				<ram:IssuerAssignedID>123</ram:IssuerAssignedID>
+            </ram:SellerOrderReferencedDocument>
+            <ram:BuyerOrderReferencedDocument>
+				<ram:IssuerAssignedID>PO4711</ram:IssuerAssignedID>
+            </ram:BuyerOrderReferencedDocument>
+            <ram:ContractReferencedDocument>
+				<ram:IssuerAssignedID>2013-05</ram:IssuerAssignedID>
+            </ram:ContractReferencedDocument>
+            <ram:AdditionalReferencedDocument>
+                <ram:IssuerAssignedID>sales slip</ram:IssuerAssignedID>                
+                <ram:Name>your sales slip</ram:Name>
+                <ram:AttachmentBinaryObject mimeCode="application/pdf" filename="EHF.pdf" characterSetCode="7" ><![CDATA[JVBERi0xLjUNCiUNCjEgMCBvYmoOy6JTZX9bcgRVxIVG]]></ram:AttachmentBinaryObject>                
+            </ram:AdditionalReferencedDocument>
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery>
+            <ram:ShipToTradeParty>
+				<ram:GlobalID schemeID="0088">5790000436068</ram:GlobalID>				
+				<ram:Name>Logistic service Ltd</ram:Name>                
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>9000</ram:PostcodeCode>
+                    <ram:LineOne>Deliverystreet</ram:LineOne>
+                    <ram:LineTwo>Gate 15</ram:LineTwo>
+                    <ram:CityName>Deliverycity</ram:CityName>
+                    <ram:CountryID>DK</ram:CountryID>
+                    <ram:CountrySubDivisionName>Jutland</ram:CountrySubDivisionName>
+                </ram:PostalTradeAddress>
+            </ram:ShipToTradeParty>
+            <ram:ActualDeliverySupplyChainEvent>
+                <ram:OccurrenceDateTime>
+                    <udt:DateTimeString format="102">20130415</udt:DateTimeString>
+                </ram:OccurrenceDateTime>
+            </ram:ActualDeliverySupplyChainEvent>
+            <ram:DespatchAdviceReferencedDocument>
+				<ram:IssuerAssignedID>5433</ram:IssuerAssignedID>
+            </ram:DespatchAdviceReferencedDocument>
+            <ram:ReceivingAdviceReferencedDocument>
+				<ram:IssuerAssignedID>3544</ram:IssuerAssignedID>
+            </ram:ReceivingAdviceReferencedDocument>
+        </ram:ApplicableHeaderTradeDelivery>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:PaymentReference>Payref1</ram:PaymentReference>
+            <ram:TaxCurrencyCode>EUR</ram:TaxCurrencyCode>
+            <ram:InvoiceCurrencyCode>DKK</ram:InvoiceCurrencyCode>
+            <ram:PayeeTradeParty>
+				<ram:ID>DK16356608</ram:ID>
+				<ram:Name>Dagobert Duck</ram:Name>
+				<ram:SpecifiedLegalOrganization><ram:ID>DK16356608</ram:ID></ram:SpecifiedLegalOrganization>
+            </ram:PayeeTradeParty>
+            <ram:SpecifiedTradeSettlementPaymentMeans>				
+                <ram:TypeCode>49</ram:TypeCode>
+                <ram:Information>Half prepaid</ram:Information>
+                <ram:ID schemeID="DK5678">123456</ram:ID>
+                <ram:PayerPartyDebtorFinancialAccount>
+                    <ram:ProprietaryID>DK1212341234123412</ram:ProprietaryID>                    
+                </ram:PayerPartyDebtorFinancialAccount>
+                <ram:PayerSpecifiedDebtorFinancialInstitution>
+					<ram:BICID>ING</ram:BICID>
+					<ram:SubDivisionBranchFinancialInstitution><ram:ID>ING Denmark</ram:ID> </ram:SubDivisionBranchFinancialInstitution>
+                </ram:PayerSpecifiedDebtorFinancialInstitution>
+            </ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:SpecifiedTradeSettlementPaymentMeans>				
+                <ram:TypeCode>48</ram:TypeCode>
+                <ram:Information>Half prepaid</ram:Information>
+                <ram:ApplicableTradeSettlementFinancialCard>
+					<ram:ID>56789</ram:ID>					
+					<ram:IssuingCompanyName>Mastercard</ram:IssuingCompanyName>
+                </ram:ApplicableTradeSettlementFinancialCard>
+            </ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:ApplicableTradeTax>
+                <ram:CalculatedAmount>375</ram:CalculatedAmount>
+                <ram:BasisAmount>1500</ram:BasisAmount>                
+                <ram:CategoryCode>S</ram:CategoryCode>                                
+                <ram:TaxPointDate>
+					<udt:DateString format="102">10130410</udt:DateString>
+				</ram:TaxPointDate>
+                <ram:RateApplicablePercent>25</ram:RateApplicablePercent>                
+            </ram:ApplicableTradeTax>
+            <ram:ApplicableTradeTax>
+                <ram:CalculatedAmount>2500</ram:CalculatedAmount>
+                <ram:BasisAmount>300</ram:BasisAmount>                
+                <ram:CategoryCode>S</ram:CategoryCode>                                
+                <ram:TaxPointDate>
+					<udt:DateString format="102">10130410</udt:DateString>
+				</ram:TaxPointDate>
+                <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:BillingSpecifiedPeriod>
+				<ram:StartDateTime>
+					<udt:DateTimeString format="102">20130310</udt:DateTimeString>
+				</ram:StartDateTime>
+				<ram:EndDateTime>
+					<udt:DateTimeString format="102">201030410</udt:DateTimeString>
+				</ram:EndDateTime>
+            </ram:BillingSpecifiedPeriod>
+            <ram:SpecifiedTradeAllowanceCharge>
+                <ram:ChargeIndicator><udt:Indicator>false</udt:Indicator></ram:ChargeIndicator>
+                <ram:CalculationPercent>10</ram:CalculationPercent>
+				<ram:BasisAmount>1500</ram:BasisAmount>
+                <ram:ActualAmount>150</ram:ActualAmount>                
+                <ram:ReasonCode>15</ram:ReasonCode>
+                <ram:Reason>Loyal customer</ram:Reason>
+                <ram:CategoryTradeTax>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+                </ram:CategoryTradeTax>
+            </ram:SpecifiedTradeAllowanceCharge>
+            <ram:SpecifiedTradeAllowanceCharge>
+                <ram:ChargeIndicator><udt:Indicator>true</udt:Indicator></ram:ChargeIndicator>
+                <ram:CalculationPercent>10</ram:CalculationPercent>
+				<ram:BasisAmount>1500</ram:BasisAmount>
+                <ram:ActualAmount>150</ram:ActualAmount>                
+                <ram:ReasonCode>14</ram:ReasonCode>
+                <ram:Reason>Packaging</ram:Reason>
+                <ram:CategoryTradeTax>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+                </ram:CategoryTradeTax>
+            </ram:SpecifiedTradeAllowanceCharge>
+            <ram:SpecifiedTradePaymentTerms>
+				<ram:Description>50% prepaid, 50% within one month</ram:Description>
+                <ram:DueDateDateTime>
+                    <udt:DateTimeString format="102">20130510</udt:DateTimeString>
+                </ram:DueDateDateTime>
+            </ram:SpecifiedTradePaymentTerms>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:LineTotalAmount>4000</ram:LineTotalAmount>
+                <ram:ChargeTotalAmount>150</ram:ChargeTotalAmount>
+                <ram:AllowanceTotalAmount>150</ram:AllowanceTotalAmount>
+                <ram:TaxBasisTotalAmount>4000</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount currencyID="DKK">675</ram:TaxTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">628.62</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>4675</ram:GrandTotalAmount>
+                <ram:TotalPrepaidAmount>2337.5</ram:TotalPrepaidAmount>
+                <ram:DuePayableAmount>2337.5</ram:DuePayableAmount>                
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+            <ram:InvoiceReferencedDocument>
+				<ram:IssuerAssignedID>TOSL109</ram:IssuerAssignedID>
+				<ram:FormattedIssueDateTime>
+					<qdt:DateTimeString format="102">20130310</qdt:DateTimeString>
+				</ram:FormattedIssueDateTime>
+            </ram:InvoiceReferencedDocument>
+            <ram:ReceivableSpecifiedTradeAccountingAccount>
+				<ram:ID>67543</ram:ID>
+			</ram:ReceivableSpecifiedTradeAccountingAccount>
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
