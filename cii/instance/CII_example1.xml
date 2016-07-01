@@ -583,14 +583,14 @@
                 <ram:PayerPartyDebtorFinancialAccount><ram:IBANID>NL03INGB0004489902</ram:IBANID></ram:PayerPartyDebtorFinancialAccount>                
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>
-                <ram:CalculatedAmount>10.99</ram:CalculatedAmount>
-                <ram:BasisAmount>183.23</ram:BasisAmount>
+                <ram:CalculatedAmount>11.23</ram:CalculatedAmount>
+                <ram:BasisAmount>187.19</ram:BasisAmount>
                 <ram:CategoryCode>S</ram:CategoryCode>
                 <ram:RateApplicablePercent>6.00</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
             <ram:ApplicableTradeTax>
-                <ram:CalculatedAmount>9.74</ram:CalculatedAmount>
-                <ram:BasisAmount>46.37</ram:BasisAmount>
+                <ram:CalculatedAmount>8.91</ram:CalculatedAmount>
+                <ram:BasisAmount>42.41</ram:BasisAmount>
                 <ram:CategoryCode>S</ram:CategoryCode>
                 <ram:RateApplicablePercent>21.00</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
@@ -600,9 +600,9 @@
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 <ram:LineTotalAmount>229.60</ram:LineTotalAmount>
                 <ram:TaxBasisTotalAmount>229.60</ram:TaxBasisTotalAmount>
-                <ram:TaxTotalAmount currencyID="EUR">20.73</ram:TaxTotalAmount>
-                <ram:GrandTotalAmount>250.33</ram:GrandTotalAmount>
-                <ram:DuePayableAmount>250.33</ram:DuePayableAmount>
+                <ram:TaxTotalAmount currencyID="EUR">20.14</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>249.74</ram:GrandTotalAmount>
+                <ram:DuePayableAmount>249.74</ram:DuePayableAmount>
             </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
         </ram:ApplicableHeaderTradeSettlement>
     </rsm:SupplyChainTradeTransaction>

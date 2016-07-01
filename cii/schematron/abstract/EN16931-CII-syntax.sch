@@ -117,7 +117,22 @@
         <assert test="$CII-DT-03" flag="fatal" id="CII-DT-03">[CII-DT-03] - schemeDataURI should not be present</assert>
         <assert test="$CII-DT-04" flag="fatal" id="CII-DT-04">[CII-DT-04] - schemeURI should not be present</assert>
     </rule>
-    <rule context="$IDTypeNoAttributes">
+    <rule context="$IDTypeNoAttributes1">
+        <assert test="$CII-DT-05" flag="fatal" id="CII-DT-05">[CII-DT-05] - schemeID should not be present</assert>
+        <assert test="$CII-DT-06" flag="fatal" id="CII-DT-06">[CII-DT-06] - schemeAgencyID should not be present</assert>
+        <assert test="$CII-DT-07" flag="fatal" id="CII-DT-07">[CII-DT-07] - schemeVersionID should not be present</assert>
+    </rule>
+	<rule context="$IDTypeNoAttributes2">
+        <assert test="$CII-DT-05" flag="fatal" id="CII-DT-05">[CII-DT-05] - schemeID should not be present</assert>
+        <assert test="$CII-DT-06" flag="fatal" id="CII-DT-06">[CII-DT-06] - schemeAgencyID should not be present</assert>
+        <assert test="$CII-DT-07" flag="fatal" id="CII-DT-07">[CII-DT-07] - schemeVersionID should not be present</assert>
+    </rule>
+	<rule context="$IDTypeNoAttributes3">
+        <assert test="$CII-DT-05" flag="fatal" id="CII-DT-05">[CII-DT-05] - schemeID should not be present</assert>
+        <assert test="$CII-DT-06" flag="fatal" id="CII-DT-06">[CII-DT-06] - schemeAgencyID should not be present</assert>
+        <assert test="$CII-DT-07" flag="fatal" id="CII-DT-07">[CII-DT-07] - schemeVersionID should not be present</assert>
+    </rule>
+	<rule context="$IDTypeNoAttributes4">
         <assert test="$CII-DT-05" flag="fatal" id="CII-DT-05">[CII-DT-05] - schemeID should not be present</assert>
         <assert test="$CII-DT-06" flag="fatal" id="CII-DT-06">[CII-DT-06] - schemeAgencyID should not be present</assert>
         <assert test="$CII-DT-07" flag="fatal" id="CII-DT-07">[CII-DT-07] - schemeVersionID should not be present</assert>

@@ -51,13 +51,13 @@
   <param name="BR-49" value="(ram:RateApplicablePercent) or (ram:CategoryCode = 'O')"/>
   <param name="BR-50" value="(ram:TypeCode)"/>
   <param name="BR-51" value="((ram:TypeCode = '49') and (ram:ID)) or not(ram:TypeCode =  '49')"/>
-  <param name="BR-52" value="((rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCodee = '49') and (ram:ID/@schemeID)) or not(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode =  '49')"/>
+  <param name="BR-52" value="((rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode = '49') and (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans/ram:ID/@schemeID)) or not(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode =  '49')"/>
   <param name="BR-53" value="(ram:IBANID) or (ram:ProprietaryID)"/>
   <param name="BR-54" value="string-length(ram:ID)&lt;=6 and string-length(ram:ID)&gt;=4"/>
   <param name="BR-55" value="(ram:IssuerAssignedID)"/>
   <param name="BR-56" value="(ram:Name)"/>
   <param name="BR-57" value="(ram:GrandTotalAmount) &gt;=0"/>
-  <param name="BR-59" value="(ram:TaxTotalAmount/@currencyID = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) and not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode)"/>
+  <param name="BR-59" value="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) or  (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode) or (ram:TaxTotalAmount/@currencyID = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode)"/>
   <param name="BR-60" value="(ram:Description) and (ram:Value)"/>
   <param name="BR-CO-01" value="true()"/>
   <param name="BR-CO-02" value="((ram:TypeCode = '30') and (ram:PayerPartyDebtorFinancialAccount/ram:IBANID or ram:PayerPartyDebtorFinancialAccount/ram:ProprietaryID)) or not(ram:TypeCode =  '30')"/>
@@ -76,20 +76,20 @@
     ((ram:TaxBasisTotalAmount = ram:LineTotalAmount + ram:ChargeTotalAmount) and not (ram:AllowanceTotalAmount)) or 
     ((ram:TaxBasisTotalAmount = ram:LineTotalAmount) and not (ram:ChargeTotalAmount) and not (ram:AllowanceTotalAmount))"/>
   <param name="BR-CO-14" value=". = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CalculatedAmount)*10*10)div 100) "/>
-  <param name="BR-CO-15" value="(ram:GrandTotalAmount = ram:TaxBasisTotalAmount + ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]) or
-    ((ram:GrandTotalAmount = ram:TaxBasisTotalAmount) and not (ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]))"/>
+  <param name="BR-CO-15" value="(ram:GrandTotalAmount = (round((ram:TaxBasisTotalAmount + ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]) *10*10)div 100)) or
+    ((ram:GrandTotalAmount = ram:TaxBasisTotalAmount) and not(ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]))"/>
   <param name="BR-CO-16" value="(ram:DuePayableAmount = ram:GrandTotalAmount - ram:TotalPrepaidAmount) or 
     ((ram:DuePayableAmount = ram:GrandTotalAmount) and not (ram:TotalPrepaidAmount))"/>
   <param name="BR-CO-17" value="ram:CalculatedAmount = round(ram:BasisAmount * (ram:RateApplicablePercent div 100) * 10 * 10) div 100 "/>
-  <param name="BR-S-01" value="/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'S'"/>
-  <param name="BR-S-02" value="/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']"/>
-  <param name="BR-S-03" value="ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'S' and ram:RateApplicablePercent=ram:ApplicableTradeTax/ram:RateApplicablePercent]/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='true' and ram:CategoryTradeTax/ram:CategoryCode='S' and ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10) div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='false' and ram:CategoryTradeTax/ram:CategoryCode='S' and ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10) div 100)"/> 
+  <param name="BR-S-01" value="//ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'S'"/>
+  <param name="BR-S-02" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']"/>
+  <param name="BR-S-03" value="ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'S' and ram:ApplicableTradeTax/ram:RateApplicablePercent = //rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'S']/ram:RateApplicablePercent]/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='true' and ram:CategoryTradeTax/ram:CategoryCode='S' and //rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'S']/ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10) div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='false' and ram:CategoryTradeTax/ram:CategoryCode='S' and //rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'S']/ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10) div 100)"/> 
   <param name="BR-S-04" value="true()"/> <!-- duplicate of BR-CO-17 -->
   <param name="BR-S-05" value="ram:RateApplicablePercent &gt; 0"/>
   <param name="BR-S-06" value="not(ram:ExemptionReason)"/>
   <param name="BR-S-07" value="not(ram:ExemptionReason)"/>
-  <param name="BR-Z-01" value="/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'Z'"/>
-  <param name="BR-Z-02" value="/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']"/>
+  <param name="BR-Z-01" value="//ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'Z'"/>
+  <param name="BR-Z-02" value="//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']"/>
   <param name="BR-Z-03" value="ram:RateApplicablePercent = 0"/>
   <param name="BR-Z-04" value="(ram:CategoryCode = 'Z') and (ram:RateApplicablePercent = 0)"/>
   <param name="BR-Z-05" value="(ram:CategoryCode = 'Z') and (ram:RateApplicablePercent = 0)"/>
@@ -98,8 +98,8 @@
   <param name="BR-Z-08" value="ram:RateApplicablePercent = 0"/>
   <param name="BR-Z-09" value="not(ram:ExemptionReason)"/>
   <param name="BR-Z-10" value="not(ram:ExemptionReason)"/>
-  <param name="BR-E-01" value="/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'E'"/>
-  <param name="BR-E-02" value="/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']"/>
+  <param name="BR-E-01" value="//ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'E'"/>
+  <param name="BR-E-02" value="//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']"/>
   <param name="BR-E-03" value="(ram:CategoryCode='E') and (/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-E-04" value="(ram:CategoryCode='E') and (/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-E-05" value="ram:RateApplicablePercent = 0"/>
@@ -108,9 +108,9 @@
   <param name="BR-E-08" value="ram:CalculatedAmount = 0"/>
   <param name="BR-E-09" value="(ram:ExemptionReason)"/>
   <param name="BR-E-10" value="ram:RateApplicablePercent = 0"/>
-  <param name="BR-AE-01" value="/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'AE'"/>
-  <param name="BR-AE-02" value="(/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
-  <param name="BR-AE-03" value="(ram:CategoryCode='AE') and (/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
+  <param name="BR-AE-01" value="//ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'AE'"/>
+  <param name="BR-AE-02" value="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (//ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
+  <param name="BR-AE-03" value="(ram:CategoryCode='AE') and (//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (//ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-AE-04" value="(ram:CategoryCode='AE') and (/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-AE-05" value="ram:CalculatedAmount = 0"/>
   <param name="BR-AE-06" value="ram:RateApplicablePercent = 0"/>
@@ -118,9 +118,9 @@
   <param name="BR-AE-08" value="true()"/>
   <param name="BR-AE-09" value="true()"/>
   <param name="BR-AE-10" value="ram:RateApplicablePercent = 0"/>
-  <param name="BR-IC-01" value="/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'IC'"/>
+  <param name="BR-IC-01" value="//ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'IC'"/>
   <param name="BR-IC-02" value="ram:CalculatedAmount = 0"/>
-  <param name="BR-IC-03" value="(/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
+  <param name="BR-IC-03" value="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (//ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-IC-04" value="(ram:CategoryCode='IC') and (/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-IC-05" value="(ram:CategoryCode='IC') and (/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-IC-06" value="ram:RateApplicablePercent = 0"/>
@@ -130,8 +130,8 @@
   <param name="BR-IC-10" value="true()"/>
   <param name="BR-IC-11" value="ram:RateApplicablePercent = 0"/>
   <param name="BR-IC-12" value="ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'IC' and ram:RateApplicablePercent=ram:ApplicableTradeTax/ram:RateApplicablePercent]/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='true' and ram:CategoryTradeTax/ram:CategoryCode='IC' and ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10)div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='false' and ram:CategoryTradeTax/ram:CategoryCode='IC' and ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10)div 100)"/> 
-  <param name="BR-G-01" value="/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'G'"/>
-  <param name="BR-G-02" value="(/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
+  <param name="BR-G-01" value="//ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode = 'G'"/>
+  <param name="BR-G-02" value="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-G-03" value="(ram:CategoryCode='G') and (/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-G-04" value="(ram:CategoryCode='G') and (/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])"/>
   <param name="BR-G-05" value="ram:RateApplicablePercent = 0"/>
@@ -157,8 +157,8 @@
   <param name="Tax_Representative" value="//ram:SellerTaxRepresentativeTradeParty"/>
   <param name="Invoice_Line " value="//ram:IncludedSupplyChainTradeLineItem"/>
   <param name="Invoice_Line_Period " value="//ram:SpecifiedLineTradeSettlement/ram:BillingSpecifiedPeriod"/>
-  <param name="Document_level_allowances " value="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='false']"/>
-  <param name="Document_level_charges " value="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='true']"/>
+  <param name="Document_level_allowances " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='false']"/>
+  <param name="Document_level_charges " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='true']"/>
   <param name="Invoice_line_allowances " value="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = 'false']"/>
   <param name="Invoice_line_charges " value="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = 'true']"/>
   <param name="VAT_breakdown " value="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax"/>
