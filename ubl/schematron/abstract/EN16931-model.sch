@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for model -->
-<!-- Timestamp: 2016-07-05 19:41:22 +0200 -->
+<!-- Timestamp: 2016-07-06 13:42:48 +0200 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="model">
   <rule context="$Account_information ">
     <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-A Financial account identifier shall be present if Account identification information is provided in the Invoice. </assert>
@@ -51,13 +51,8 @@
     <assert test="$BR-09" flag="fatal" id="BR-09">[BR-09]-An Invoice shall contain the Buyer postal address. </assert>
     <assert test="$BR-14" flag="fatal" id="BR-14">[BR-14]-An Invoice shall have at least one Invoice line. </assert>
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-The Bank creditor identifier shall be given in an Invoice in case the payment means is a SEPA direct debit. </assert>
-    <assert test="$BR-AE-01" flag="fatal" id="BR-AE-01">[BR-AE-01]-An Invoice that contains a line where the invoiced item VAT category code (BT-142) is “AE” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "AE". </assert>
     <assert test="$BR-CO-01" flag="fatal" id="BR-CO-01">[BR-CO-01]-Only one language shall be used in an Invoice. </assert>
     <assert test="$BR-CO-03" flag="fatal" id="BR-CO-03">[BR-CO-03]-One and only one of either the Seller VAT identifier or the Seller tax representative VAT identifier shall exist in an Invoice if the Invoice has an Invoice total VAT amount. </assert>
-    <assert test="$BR-E-01" flag="fatal" id="BR-E-01">[BR-E-01]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “E” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "E". </assert>
-    <assert test="$BR-IC-01" flag="fatal" id="BR-IC-01">[BR-IC-01]-An Invoice that contains a line where the invoiced item VAT category code (BT-142) is “IC” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "IC". </assert>
-    <assert test="$BR-S-01" flag="fatal" id="BR-S-01">[BR-S-01]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “S” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "S". </assert>
-    <assert test="$BR-Z-01" flag="fatal" id="BR-Z-01">[BR-Z-01]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “Z” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "Z". </assert>
   </rule>
   <rule context="$Invoice_Line ">
     <assert test="$BR-18" flag="fatal" id="BR-18">[BR-18]-Each Invoice line shall have an Invoice line identifier. </assert>
@@ -133,6 +128,7 @@
     <assert test="$BR-AE-04" flag="fatal" id="BR-AE-04">[BR-AE-04]-An Invoice that contains a document level charge (BG-19) with a document level charge VAT category code (BT-89) that is "AE" shall contain both the Seller's VAT identifier (BT-30) and Buyer's VAT identifier (BT-46). </assert>
   </rule>
   <rule context="$VATAE_Line">
+    <assert test="$BR-AE-01" flag="fatal" id="BR-AE-01">[BR-AE-01]-An Invoice that contains a line where the invoiced item VAT category code (BT-142) is “AE” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "AE". </assert>
     <assert test="$BR-AE-02" flag="fatal" id="BR-AE-02">[BR-AE-02]-An Invoice that contains a line where the invoiced item VAT category code (BT-142) is “AE” shall contain both the Seller's VAT identifier (BT-30) and Buyer's VAT identifier (BT-46). </assert>
     <assert test="$BR-AE-06" flag="fatal" id="BR-AE-06">[BR-AE-06]-In an Invoice line where the Invoice item VAT category code (BT-142) is "AE" the Invoiced item VAT rate (BT-143) shall be 0 (zero). </assert>
     <assert test="$BR-AE-08" flag="fatal" id="BR-AE-08">[BR-AE-08]-In an Invoice line where the Invoice item VAT category code (BT-142) is "AE" the invoiced item VAT exemption reasons text (BT-144) shall be "Reverse charge" (or the equivalent standard text in other languages). </assert>
@@ -150,12 +146,12 @@
     <assert test="$BR-E-04" flag="fatal" id="BR-E-04">[BR-E-04]-An Invoice that contains a document level charge (BG-19) with a document level charge VAT category code (BT-89) that is "E" shall contain the Seller's VAT identifier (BT-30). </assert>
   </rule>
   <rule context="$VATE_Line">
+    <assert test="$BR-E-01" flag="fatal" id="BR-E-01">[BR-E-01]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “E” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "E". </assert>
     <assert test="$BR-E-02" flag="fatal" id="BR-E-02">[BR-E-02]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “E” shall contain the Seller's VAT identifier (BT-30). </assert>
     <assert test="$BR-E-05" flag="fatal" id="BR-E-05">[BR-E-05]-In an Invoice line where the Invoice item VAT category code (BT-142) is "E", the Invoiced item VAT rate (BT-143) shall be 0 (zero). </assert>
     <assert test="$BR-E-06" flag="fatal" id="BR-E-06">[BR-E-06]-In an Invoice line where the Invoice item VAT category code (BT-142) is "E" the Invoiced item VAT exemption reason text (BT-144) shall not be blank. </assert>
   </rule>
   <rule context="$VATG">
-    <assert test="$BR-G-01" flag="fatal" id="BR-G-01">[BR-G-01]-An Invoice that contains a line where the invoiced item VAT category code (BT-142) is “G” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "G". </assert>
     <assert test="$BR-G-06" flag="fatal" id="BR-G-06">[BR-G-06]-The VAT category tax amount (BT-110) in a VAT breakdown (BG-21) where the VAT category code (BT-111) is “G” shall be 0 (zero). </assert>
     <assert test="$BR-G-08" flag="fatal" id="BR-G-08">[BR-G-08]-In an Invoice line where the Invoice item VAT category code (BT-142) is "G" the Invoiced item VAT rate (BT-143) shall be 0 (zero). </assert>
     <assert test="$BR-G-09" flag="fatal" id="BR-G-09">[BR-G-09]-The VAT exemption reason text (BT-113) shall be "Export outside the EU" (or the equivalent standard text in other languages) in the VAT breakdown (BG-21) if the VAT category code is "G". </assert>
@@ -168,6 +164,7 @@
     <assert test="$BR-G-04" flag="fatal" id="BR-G-04">[BR-G-04]-An Invoice that contains a document level charge (BG-19) with a document level charge VAT category code (BT-89) that is "G" shall contain the Seller's VAT identifier. </assert>
   </rule>
   <rule context="$VATG_Line">
+    <assert test="$BR-G-01" flag="fatal" id="BR-G-01">[BR-G-01]-An Invoice that contains a line where the invoiced item VAT category code (BT-142) is “G” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "G". </assert>
     <assert test="$BR-G-02" flag="fatal" id="BR-G-02">[BR-G-02]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “G” shall contain the Seller's VAT identifier (BT-30). </assert>
     <assert test="$BR-G-05" flag="fatal" id="BR-G-05">[BR-G-05]-In an Invoice line where the Invoice item VAT category code (BT-142) is "G" the Invoiced item VAT rate (BT-143) shall be 0 (zero). </assert>
     <assert test="$BR-G-07" flag="fatal" id="BR-G-07">[BR-G-07]-In an Invoice line where the Invoice item VAT category code (BT-142) is "G" the invoiced item VAT exemption reasons text (BT-144) shall be "Export outside the EU" (or the equivalent standard text in other languages). </assert>
@@ -187,6 +184,7 @@
     <assert test="$BR-IC-05" flag="fatal" id="BR-IC-05">[BR-IC-05]-An Invoice that contains a document level charge (BG-19) with a document level charge VAT category code (BT-89) that is "IC" shall contain both the Seller's VAT identifier (BT-30) and Buyer's VAT identifier (BT-46). </assert>
   </rule>
   <rule context="$VATIC_Line">
+    <assert test="$BR-IC-01" flag="fatal" id="BR-IC-01">[BR-IC-01]-An Invoice that contains a line where the invoiced item VAT category code (BT-142) is “IC” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "IC". </assert>
     <assert test="$BR-IC-03" flag="fatal" id="BR-IC-03">[BR-IC-03]-An Invoice that contains a line where the invoiced item VAT category code (BT-142) is “IC” shall contain both the Seller's VAT identifier (BT-30) and Buyer's VAT identifier (BT-46). </assert>
     <assert test="$BR-IC-06" flag="fatal" id="BR-IC-06">[BR-IC-06]-In an Invoice line where the Invoice item VAT category code (BT-142) is "IC" the invoiced item VAT rate (BT-143) shall be 0 (zero). </assert>
     <assert test="$BR-IC-07" flag="fatal" id="BR-IC-07">[BR-IC-07]-In an Invoice line where the Invoice item VAT category code (BT-142) is "IC" the invoiced item VAT exemption reasons text (BT-144) shall be "Intra community supply" (or the equivalent standard text in other languages). </assert>
@@ -210,6 +208,7 @@
     <assert test="$BR-S-07" flag="fatal" id="BR-S-07">[BR-S-07]-An Invoice where VAT category code (BT-111) is "S" shall not contain the VAT exemption reason text (BT-113) for that VAT category </assert>
   </rule>
   <rule context="$VATS_Line">
+    <assert test="$BR-S-01" flag="fatal" id="BR-S-01">[BR-S-01]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “S” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "S". </assert>
     <assert test="$BR-S-02" flag="fatal" id="BR-S-02">[BR-S-02]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “S” shall contain the Seller's VAT identifier (BT-30). </assert>
     <assert test="$BR-S-06" flag="fatal" id="BR-S-06">[BR-S-06]-An Invoice line where Invoiced item VAT category code (BT-142) is "S" shall not contain the Invoiced item VAT exemption reason text (BT-144) for that line. </assert>
   </rule>
@@ -226,6 +225,7 @@
     <assert test="$BR-Z-05" flag="fatal" id="BR-Z-05">[BR-Z-05]-For a document level charge (BG-19) where the document level charge VAT category code (BT-96) is "Z" the Document level allowance rate (BT-97) shall be 0 (zero). </assert>
   </rule>
   <rule context="$VATZ_Line">
+    <assert test="$BR-Z-01" flag="fatal" id="BR-Z-01">[BR-Z-01]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “Z” shall contain in the VAT breakdown (BG-21) one VAT category code (BT-111) equal with "Z". </assert>
     <assert test="$BR-Z-02" flag="fatal" id="BR-Z-02">[BR-Z-02]-An Invoice that contains a line where the Invoiced item VAT category code (BT-142) is “Z” shall contain the Seller's VAT identifier (BT-30). </assert>
     <assert test="$BR-Z-03" flag="fatal" id="BR-Z-03">[BR-Z-03]-In an Invoice line where the Invoice item VAT category code (BT-142) is "Z" the Invoiced item VAT rate (BT-143) shall be 0 (zero). </assert>
     <assert test="$BR-Z-09" flag="fatal" id="BR-Z-09">[BR-Z-09]-An Invoice line where Invoiced item VAT category code (BT-142) is "Z" shall not contain the Invoiced item VAT exemption reason text (BT-144) for that line. </assert>
