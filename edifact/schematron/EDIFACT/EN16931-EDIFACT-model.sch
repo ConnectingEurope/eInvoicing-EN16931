@@ -106,7 +106,7 @@
   <param name="BR-CO-17" value="S_MOA/C_C516[D_5025='124']/D_5004 = round(S_MOA/C_C516[D_5025='125']/D_5004 * (S_TAX[D_5283='VAT']/C_C243/D_5278 div 100) * 10 * 10) div 100 "/>
   <param name="BR-S-01" value="/M_INVOIC/G_SG27/G_SG35/S_TAX/D_5305 = 'S'"/>
   <param name="BR-S-02" value="/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154"/>
-  <param name="BR-S-03" value="current()[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
+  <param name="BR-S-03" value=".[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
     (
     round(
     sum(/M_INVOIC/G_SG27[
@@ -118,7 +118,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG28/S_MOA/C_C516[D_5025='203']/D_5004 
     )
     *10*10)
@@ -136,7 +136,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -157,7 +157,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -177,7 +177,7 @@
   <param name="BR-Z-03" value="G_SG35/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/C_C243/D_5278 = 0"/>
   <param name="BR-Z-04" value="(D_5305 = 'Z') and (C_C243/D_5278 = 0)"/>
   <param name="BR-Z-05" value="(D_5305 = 'Z') and (C_C243/D_5278 = 0)"/>
-  <param name="BR-Z-06" value="current()[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
+  <param name="BR-Z-06" value=".[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
     (
     round(
     sum(/M_INVOIC/G_SG27[
@@ -189,7 +189,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG28/S_MOA/C_C516[D_5025='203']/D_5004 
     )
     *10*10)
@@ -207,7 +207,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -228,7 +228,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -243,11 +243,11 @@
   
   <param name="BR-E-01" value="/M_INVOIC/G_SG27/G_SG35/S_TAX/D_5305 = 'E'"/>
   <param name="BR-E-02" value="/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154"/>
-  <param name="BR-E-03" value="(current()[D_5283='7' and C_C241/D_5153='VAT']/D_5305='E') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
-  <param name="BR-E-04" value="(current()[D_5283='7' and C_C241/D_5153='VAT']/D_5305='E') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
+  <param name="BR-E-03" value="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='E') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
+  <param name="BR-E-04" value="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='E') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
   <param name="BR-E-05" value="G_SG35/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/C_C243/D_5278 = 0"/>
   <param name="BR-E-06" value="S_FTX[D_4451='AGM' and D_4453='1']/C_C108/D_D4440"/>
-  <param name="BR-E-07" value="current()[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
+  <param name="BR-E-07" value=".[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
     (
     round(
     sum(/M_INVOIC/G_SG27[
@@ -259,7 +259,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG28/S_MOA/C_C516[D_5025='203']/D_5004 
     )
     *10*10)
@@ -277,7 +277,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -298,7 +298,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -311,11 +311,11 @@
   
   <param name="BR-AE-01" value="/M_INVOIC/G_SG27/G_SG35/S_TAX/D_5305 = 'AE'"/>
   <param name="BR-AE-02" value="(/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
-  <param name="BR-AE-03" value="(current()[D_5283='7' and C_C241/D_5153='VAT']/D_5305='AE') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
-  <param name="BR-AE-04" value="(current()[D_5283='7' and C_C241/D_5153='VAT']/D_5305='AE') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
+  <param name="BR-AE-03" value="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='AE') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
+  <param name="BR-AE-04" value="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='AE') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
   <param name="BR-AE-05" value="../S_MOA/C_C516[D_5025='124']/D_5004 = 0"/>
   <param name="BR-AE-06" value="G_SG35/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/C_C243/D_5278 = 0"/>
-  <param name="BR-AE-07" value="current()[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
+  <param name="BR-AE-07" value=".[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
     (
     round(
     sum(/M_INVOIC/G_SG27[
@@ -327,7 +327,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG28/S_MOA/C_C516[D_5025='203']/D_5004 
     )
     *10*10)
@@ -345,7 +345,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -366,7 +366,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -382,8 +382,8 @@
   <param name="BR-IC-01" value="/M_INVOIC/G_SG27/G_SG35/S_TAX/D_5305 = 'IC'"/>
   <param name="BR-IC-02" value="../S_MOA/C_C516[D_5025='124']/D_5004 = 0"/>
   <param name="BR-IC-03" value="(/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
-  <param name="BR-IC-04" value="(current()[D_5283='7' and C_C241/D_5153='VAT']/D_5305='IC') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
-  <param name="BR-IC-05" value="(current()[D_5283='7' and C_C241/D_5153='VAT']/D_5305='IC') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
+  <param name="BR-IC-04" value="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='IC') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
+  <param name="BR-IC-05" value="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='IC') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
   <param name="BR-IC-06" value="G_SG35/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/C_C243/D_5278 = 0"/>
   <!-- only possible : not empty -->
   <param name="BR-IC-07" value="S_FTX[D_4451='AGM' and D_4453='1']/C_C108/D_D4440"/>
@@ -393,7 +393,7 @@
   <!-- only possible : if invoice contains category code 'AE' the exemption reason may not be empty -->
   <param name="BR-IC-10" value="/M_INVOIC/S_FTX[D_4451='AGM']/C_C108/D_D4440"/>
   <param name="BR-IC-11" value="C_C243/D_5278 = 0"/>
-  <param name="BR-IC-12" value="current()[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
+  <param name="BR-IC-12" value=".[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 = 
     (
     round(
     sum(/M_INVOIC/G_SG27[
@@ -405,7 +405,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG28/S_MOA/C_C516[D_5025='203']/D_5004 
     )
     *10*10)
@@ -423,7 +423,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -444,7 +444,7 @@
     D_5283='7' and 
     C_C241/D_5153='VAT'
     ]/C_C243/D_5278 = 
-    current()/C_C243/D_5278
+    ./C_C243/D_5278
     ]/G_SG20/S_MOA/C_C516[
     D_5025='389'
     ]/D_5004
@@ -454,8 +454,8 @@
   
   <param name="BR-G-01" value="/M_INVOIC/G_SG27/G_SG35/S_TAX/D_5305 = 'G'"/>
   <param name="BR-G-02" value="(/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
-  <param name="BR-G-03" value="(current()[D_5283='7' and C_C241/D_5153='VAT']/D_5305='G') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
-  <param name="BR-G-04" value="(current()[D_5283='7' and C_C241/D_5153='VAT']/D_5305='G') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
+  <param name="BR-G-03" value="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='G') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
+  <param name="BR-G-04" value="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='G') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)"/>
   <param name="BR-G-05" value="G_SG35/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/C_C243/D_5278 = 0"/>
   <param name="BR-G-06" value="../S_MOA/C_C516[D_5025='124']/D_5004 = 0"/>
   <!-- only possible : not empty -->
