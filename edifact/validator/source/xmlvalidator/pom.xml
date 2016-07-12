@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.validool</groupId>
+    <artifactId>xmlvalidator</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>    
+    <organization>
+    <name>validool.org</name>
+    <url>http://www.validool.org</url>
+    </organization>
+
+  <developers>
+    <developer>
+      <id>ap</id>
+      <name>Andreas Pelekies</name>
+      <email>andreas.pelekies(at)validool.org</email>
+      <url>http://www.validool.org</url>
+    </developer>
+  </developers>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
+    <configuration>
+       <descriptorRefs>
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+       </descriptorRefs>
+       <archive>
+          <manifest>
+
+              <mainClass>org.validool.xmlvalidator.XMLValidator</mainClass>
+          </manifest>
+       </archive>
+    </configuration>
+    
+    <executions>
+        <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>                        
+                <goal>single</goal>
+            </goals>
+         </execution>
+     </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.helger</groupId>
+            <artifactId>ph-schematron</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+    </dependencies>    
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>config/sun_checks.xml</configLocation>
+                </configuration>
+            </plugin>            
+        </plugins>
+    </reporting>    
+</project>

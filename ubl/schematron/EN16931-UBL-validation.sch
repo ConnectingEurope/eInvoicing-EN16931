@@ -15,7 +15,7 @@
     <active pattern="UBL-model"/>
   </phase>
   <phase id="EN_16931_codes">
-    <active pattern="CodesEN16931"/>
+    <active pattern="Codesmodel"/>
   </phase>
   <phase id="Specific_UBL_syntax">
     <active pattern="UBL-syntax"/>

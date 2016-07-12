@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for syntax -->
-<!-- Timestamp: 2016-06-14 08:57:12 +0200 -->
+<!-- Timestamp: 2016-06-29 15:11:55 +0200 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="syntax">
   <rule context="$Additional_supporting_documents">
     <assert test="$UBL-SR-36" flag="warning" id="UBL-SR-36">[UBL-SR-36]-Supporting document identifier shall occur maximum once</assert>
