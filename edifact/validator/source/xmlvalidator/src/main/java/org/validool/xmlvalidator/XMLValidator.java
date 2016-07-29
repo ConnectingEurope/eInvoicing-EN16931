@@ -27,7 +27,7 @@ import com.helger.schematron.SchematronHelper;
 import com.helger.schematron.pure.SchematronResourcePure;
 import com.helger.schematron.svrl.SVRLFailedAssert;
 import com.helger.schematron.svrl.SVRLHelper;
-import com.helger.schematron.svrl.SVRLWriter;
+import com.helger.schematron.svrl.SVRLMarshaller;
 
 /**
  * @author Andreas Pelekies (andreas.pelekies(at)validool.org)
@@ -60,7 +60,7 @@ public class XMLValidator
     String xsdFile = null;
     String schFile = null;
 
-    if (argsValid && args.length != 4)
+    if (argsValid && args.length < 4)
     {
       argsValid = false;
     }
@@ -132,7 +132,7 @@ public class XMLValidator
     else
     {
       System.out.println ("schematron");
-      System.out.println ("Result: " + validateXMLSchematron (schFile, xmlFile));
+      System.out.println ("Result: " + validateXMLSchematron (schFile, xmlFile, "result.svrl"));
     }
     System.out.println ("Finished.");
     System.out.println ("=========================================");
@@ -159,7 +159,7 @@ public class XMLValidator
     return true;
   }
 
-  public static boolean validateXMLSchematron (final String schPath, final String xmlPath)
+  public static boolean validateXMLSchematron (final String schPath, final String xmlPath, final String svrlPath)
   {
     final FileSystemResource aXML = new FileSystemResource (xmlPath);
     final FileSystemResource aSCH = new FileSystemResource (schPath);
@@ -171,18 +171,16 @@ public class XMLValidator
       System.out.println ("Schematron file is malformed!");
       return false;
     }
-    final String sDetail = SVRLWriter.createXMLString (aSOT);
+    new SVRLMarshaller (false).write (aSOT, new FileSystemResource (svrlPath));
+
     final List <SVRLFailedAssert> aFailedAsserts = SVRLHelper.getAllFailedAssertions (aSOT);
-    if (aFailedAsserts.isEmpty ())
+    if (!aFailedAsserts.isEmpty ())
     {
-      System.out.println ("XML complies to Schematron! SVRL:\n" + sDetail);
-    }
-    else
-    {
-      System.out.println ("XML does not comply to Schematron! SVRL:\n" + sDetail);
+      System.out.println ("XML does not comply to Schematron! SVRL:");
       return false;
     }
 
+    System.out.println ("XML complies to Schematron!");
     return true;
   }
 

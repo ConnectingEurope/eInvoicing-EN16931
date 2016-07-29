@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schematron-output xmlns="http://purl.oclc.org/dsdl/svrl" title="EN16931 model bound to EDIFACT">
+    <active-pattern id="EN16931-EDIFACT-Model"/>
+    <fired-rule context="/M_INVOIC/G_SG26/S_EFI"/>
+    <fired-rule context="/M_INVOIC/G_SG26/S_EFI"/>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']"/>
+    <failed-assert id="BR-32" location="/M_INVOIC/G_SG16[0]" test="G_SG20/S_MOA/C_C516[D_5025='25']/D_5004" flag="fatal">
+        <text>[BR-32]-Each document level allowance shall have a Document level allowance amount. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']"/>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']"/>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']"/>
+    <failed-assert id="BR-36" location="/M_INVOIC/G_SG16[0]" test="G_SG20/S_MOA/C_C516[D_5025='25']/D_5004 &gt;=0" flag="fatal">
+        <text>[BR-36]-Document level allowance amounts shall not be negative. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']"/>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']"/>
+    <failed-assert id="BR-37" location="/M_INVOIC/G_SG16[1]" test="G_SG20/S_MOA/C_C516[D_5025='389']/D_5004" flag="fatal">
+        <text>[BR-37]-Each document level charge shall have a Document level charge amount. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']"/>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']"/>
+    <failed-assert id="BR-40" location="/M_INVOIC/G_SG16[1]" test="S_ALC/C_C552/D_1230" flag="fatal">
+        <text>[BR-40]-Each document level charge shall have a Document level charge reason. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']"/>
+    <failed-assert id="BR-41" location="/M_INVOIC/G_SG16[1]" test="G_SG20/S_MOA/C_C516[D_5025='389']/D_5004 &gt;=0" flag="fatal">
+        <text>[BR-41]-Document level charge amounts shall not be negative. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']"/>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-10" location="/M_INVOIC/G_SG52[0]" test="G_SG28/S_MOA/C_C516[D_5025='79']/D_5004" flag="fatal">
+        <text>[BR-10]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-10" location="/M_INVOIC/G_SG52[1]" test="G_SG28/S_MOA/C_C516[D_5025='79']/D_5004" flag="fatal">
+        <text>[BR-10]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-10" location="/M_INVOIC/G_SG52[2]" test="G_SG28/S_MOA/C_C516[D_5025='79']/D_5004" flag="fatal">
+        <text>[BR-10]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-10" location="/M_INVOIC/G_SG52[3]" test="G_SG28/S_MOA/C_C516[D_5025='79']/D_5004" flag="fatal">
+        <text>[BR-10]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-10" location="/M_INVOIC/G_SG52[4]" test="G_SG28/S_MOA/C_C516[D_5025='79']/D_5004" flag="fatal">
+        <text>[BR-10]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-10" location="/M_INVOIC/G_SG52[5]" test="G_SG28/S_MOA/C_C516[D_5025='79']/D_5004" flag="fatal">
+        <text>[BR-10]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-10" location="/M_INVOIC/G_SG52[6]" test="G_SG28/S_MOA/C_C516[D_5025='79']/D_5004" flag="fatal">
+        <text>[BR-10]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-10" location="/M_INVOIC/G_SG52[7]" test="G_SG28/S_MOA/C_C516[D_5025='79']/D_5004" flag="fatal">
+        <text>[BR-10]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-11" location="/M_INVOIC/G_SG52[0]" test="G_SG28/S_MOA/C_C516[D_5025='499']/D_5004" flag="fatal">
+        <text>[BR-11]-An Invoice shall have the Invoice total amount without VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-11" location="/M_INVOIC/G_SG52[1]" test="G_SG28/S_MOA/C_C516[D_5025='499']/D_5004" flag="fatal">
+        <text>[BR-11]-An Invoice shall have the Invoice total amount without VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-11" location="/M_INVOIC/G_SG52[2]" test="G_SG28/S_MOA/C_C516[D_5025='499']/D_5004" flag="fatal">
+        <text>[BR-11]-An Invoice shall have the Invoice total amount without VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-11" location="/M_INVOIC/G_SG52[3]" test="G_SG28/S_MOA/C_C516[D_5025='499']/D_5004" flag="fatal">
+        <text>[BR-11]-An Invoice shall have the Invoice total amount without VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-11" location="/M_INVOIC/G_SG52[4]" test="G_SG28/S_MOA/C_C516[D_5025='499']/D_5004" flag="fatal">
+        <text>[BR-11]-An Invoice shall have the Invoice total amount without VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-11" location="/M_INVOIC/G_SG52[5]" test="G_SG28/S_MOA/C_C516[D_5025='499']/D_5004" flag="fatal">
+        <text>[BR-11]-An Invoice shall have the Invoice total amount without VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-11" location="/M_INVOIC/G_SG52[6]" test="G_SG28/S_MOA/C_C516[D_5025='499']/D_5004" flag="fatal">
+        <text>[BR-11]-An Invoice shall have the Invoice total amount without VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-11" location="/M_INVOIC/G_SG52[7]" test="G_SG28/S_MOA/C_C516[D_5025='499']/D_5004" flag="fatal">
+        <text>[BR-11]-An Invoice shall have the Invoice total amount without VAT. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-12" location="/M_INVOIC/G_SG52[0]" test="G_SG28/S_MOA/C_C516[D_5025='388']/D_5004" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Invoice total amount with VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-12" location="/M_INVOIC/G_SG52[1]" test="G_SG28/S_MOA/C_C516[D_5025='388']/D_5004" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Invoice total amount with VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-12" location="/M_INVOIC/G_SG52[2]" test="G_SG28/S_MOA/C_C516[D_5025='388']/D_5004" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Invoice total amount with VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-12" location="/M_INVOIC/G_SG52[3]" test="G_SG28/S_MOA/C_C516[D_5025='388']/D_5004" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Invoice total amount with VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-12" location="/M_INVOIC/G_SG52[4]" test="G_SG28/S_MOA/C_C516[D_5025='388']/D_5004" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Invoice total amount with VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-12" location="/M_INVOIC/G_SG52[5]" test="G_SG28/S_MOA/C_C516[D_5025='388']/D_5004" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Invoice total amount with VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-12" location="/M_INVOIC/G_SG52[6]" test="G_SG28/S_MOA/C_C516[D_5025='388']/D_5004" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Invoice total amount with VAT. </text>
+    </failed-assert>
+    <failed-assert id="BR-12" location="/M_INVOIC/G_SG52[7]" test="G_SG28/S_MOA/C_C516[D_5025='388']/D_5004" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Invoice total amount with VAT. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-13" location="/M_INVOIC/G_SG52[0]" test="G_SG28/S_MOA/C_C516[D_5025='9']/D_5004" flag="fatal">
+        <text>[BR-13]-An Invoice shall have the Amount due for payment. </text>
+    </failed-assert>
+    <failed-assert id="BR-13" location="/M_INVOIC/G_SG52[1]" test="G_SG28/S_MOA/C_C516[D_5025='9']/D_5004" flag="fatal">
+        <text>[BR-13]-An Invoice shall have the Amount due for payment. </text>
+    </failed-assert>
+    <failed-assert id="BR-13" location="/M_INVOIC/G_SG52[2]" test="G_SG28/S_MOA/C_C516[D_5025='9']/D_5004" flag="fatal">
+        <text>[BR-13]-An Invoice shall have the Amount due for payment. </text>
+    </failed-assert>
+    <failed-assert id="BR-13" location="/M_INVOIC/G_SG52[3]" test="G_SG28/S_MOA/C_C516[D_5025='9']/D_5004" flag="fatal">
+        <text>[BR-13]-An Invoice shall have the Amount due for payment. </text>
+    </failed-assert>
+    <failed-assert id="BR-13" location="/M_INVOIC/G_SG52[4]" test="G_SG28/S_MOA/C_C516[D_5025='9']/D_5004" flag="fatal">
+        <text>[BR-13]-An Invoice shall have the Amount due for payment. </text>
+    </failed-assert>
+    <failed-assert id="BR-13" location="/M_INVOIC/G_SG52[5]" test="G_SG28/S_MOA/C_C516[D_5025='9']/D_5004" flag="fatal">
+        <text>[BR-13]-An Invoice shall have the Amount due for payment. </text>
+    </failed-assert>
+    <failed-assert id="BR-13" location="/M_INVOIC/G_SG52[6]" test="G_SG28/S_MOA/C_C516[D_5025='9']/D_5004" flag="fatal">
+        <text>[BR-13]-An Invoice shall have the Amount due for payment. </text>
+    </failed-assert>
+    <failed-assert id="BR-13" location="/M_INVOIC/G_SG52[7]" test="G_SG28/S_MOA/C_C516[D_5025='9']/D_5004" flag="fatal">
+        <text>[BR-13]-An Invoice shall have the Amount due for payment. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-57" location="/M_INVOIC/G_SG52[0]" test="(S_MOA/C_C516[D_5025='388']/D_5004) &gt;=0" flag="fatal">
+        <text>[BR-57]-Invoice total amount with VAT shall not be negative. </text>
+    </failed-assert>
+    <failed-assert id="BR-57" location="/M_INVOIC/G_SG52[1]" test="(S_MOA/C_C516[D_5025='388']/D_5004) &gt;=0" flag="fatal">
+        <text>[BR-57]-Invoice total amount with VAT shall not be negative. </text>
+    </failed-assert>
+    <failed-assert id="BR-57" location="/M_INVOIC/G_SG52[2]" test="(S_MOA/C_C516[D_5025='388']/D_5004) &gt;=0" flag="fatal">
+        <text>[BR-57]-Invoice total amount with VAT shall not be negative. </text>
+    </failed-assert>
+    <failed-assert id="BR-57" location="/M_INVOIC/G_SG52[3]" test="(S_MOA/C_C516[D_5025='388']/D_5004) &gt;=0" flag="fatal">
+        <text>[BR-57]-Invoice total amount with VAT shall not be negative. </text>
+    </failed-assert>
+    <failed-assert id="BR-57" location="/M_INVOIC/G_SG52[4]" test="(S_MOA/C_C516[D_5025='388']/D_5004) &gt;=0" flag="fatal">
+        <text>[BR-57]-Invoice total amount with VAT shall not be negative. </text>
+    </failed-assert>
+    <failed-assert id="BR-57" location="/M_INVOIC/G_SG52[6]" test="(S_MOA/C_C516[D_5025='388']/D_5004) &gt;=0" flag="fatal">
+        <text>[BR-57]-Invoice total amount with VAT shall not be negative. </text>
+    </failed-assert>
+    <failed-assert id="BR-57" location="/M_INVOIC/G_SG52[7]" test="(S_MOA/C_C516[D_5025='388']/D_5004) &gt;=0" flag="fatal">
+        <text>[BR-57]-Invoice total amount with VAT shall not be negative. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-CO-10" location="/M_INVOIC/G_SG52[0]" test="S_MOA/C_C516[D_5025='79']/D_5004 = (round(sum(/M_INVOIC/G_SG27/G_SG28/S_MOA/C_C516[D_5025='79']/D_5004) * 10 * 10)div 100)" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-10" location="/M_INVOIC/G_SG52[1]" test="S_MOA/C_C516[D_5025='79']/D_5004 = (round(sum(/M_INVOIC/G_SG27/G_SG28/S_MOA/C_C516[D_5025='79']/D_5004) * 10 * 10)div 100)" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-10" location="/M_INVOIC/G_SG52[2]" test="S_MOA/C_C516[D_5025='79']/D_5004 = (round(sum(/M_INVOIC/G_SG27/G_SG28/S_MOA/C_C516[D_5025='79']/D_5004) * 10 * 10)div 100)" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-10" location="/M_INVOIC/G_SG52[3]" test="S_MOA/C_C516[D_5025='79']/D_5004 = (round(sum(/M_INVOIC/G_SG27/G_SG28/S_MOA/C_C516[D_5025='79']/D_5004) * 10 * 10)div 100)" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-10" location="/M_INVOIC/G_SG52[4]" test="S_MOA/C_C516[D_5025='79']/D_5004 = (round(sum(/M_INVOIC/G_SG27/G_SG28/S_MOA/C_C516[D_5025='79']/D_5004) * 10 * 10)div 100)" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-10" location="/M_INVOIC/G_SG52[5]" test="S_MOA/C_C516[D_5025='79']/D_5004 = (round(sum(/M_INVOIC/G_SG27/G_SG28/S_MOA/C_C516[D_5025='79']/D_5004) * 10 * 10)div 100)" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-10" location="/M_INVOIC/G_SG52[6]" test="S_MOA/C_C516[D_5025='79']/D_5004 = (round(sum(/M_INVOIC/G_SG27/G_SG28/S_MOA/C_C516[D_5025='79']/D_5004) * 10 * 10)div 100)" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-10" location="/M_INVOIC/G_SG52[7]" test="S_MOA/C_C516[D_5025='79']/D_5004 = (round(sum(/M_INVOIC/G_SG27/G_SG28/S_MOA/C_C516[D_5025='79']/D_5004) * 10 * 10)div 100)" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-CO-11" location="/M_INVOIC/G_SG52[2]" test="S_MOA/C_C516[D_5025='260']/D_5004 =      (     round(     sum(     /M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG20/S_MOA/C_C516[D_5025='389']/D_5004     )* 10 * 10      ) div 100     ) or      not(S_MOA/C_C516[D_5025='260']/D_5004)" flag="fatal">
+        <text>[BR-CO-11]-Sum of allowances on document level = Σ Document level allowance amount. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-CO-13" location="/M_INVOIC/G_SG52[0]" test="(S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004))" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-13" location="/M_INVOIC/G_SG52[1]" test="(S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004))" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-13" location="/M_INVOIC/G_SG52[2]" test="(S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004))" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-13" location="/M_INVOIC/G_SG52[3]" test="(S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004))" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-13" location="/M_INVOIC/G_SG52[4]" test="(S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004))" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-13" location="/M_INVOIC/G_SG52[5]" test="(S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004))" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-13" location="/M_INVOIC/G_SG52[6]" test="(S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004))" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-13" location="/M_INVOIC/G_SG52[7]" test="(S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 - S_MOA/C_C516[D_5025='260']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004 + S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004)) or      ((S_MOA/C_C516[D_5025='499']/D_5004 = S_MOA/C_C516[D_5025='79']/D_5004) and not (S_MOA/C_C516[D_5025='259']/D_5004) and not (S_MOA/C_C516[D_5025='260']/D_5004))" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-CO-15" location="/M_INVOIC/G_SG52[0]" test="(S_MOA/C_C516[D_5025='388']/D_5004 = S_MOA/C_C516[D_5025='499']/D_5004 + S_MOA/C_C516[D_5025='176']/D_5004)" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-15" location="/M_INVOIC/G_SG52[1]" test="(S_MOA/C_C516[D_5025='388']/D_5004 = S_MOA/C_C516[D_5025='499']/D_5004 + S_MOA/C_C516[D_5025='176']/D_5004)" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-15" location="/M_INVOIC/G_SG52[2]" test="(S_MOA/C_C516[D_5025='388']/D_5004 = S_MOA/C_C516[D_5025='499']/D_5004 + S_MOA/C_C516[D_5025='176']/D_5004)" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-15" location="/M_INVOIC/G_SG52[3]" test="(S_MOA/C_C516[D_5025='388']/D_5004 = S_MOA/C_C516[D_5025='499']/D_5004 + S_MOA/C_C516[D_5025='176']/D_5004)" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-15" location="/M_INVOIC/G_SG52[4]" test="(S_MOA/C_C516[D_5025='388']/D_5004 = S_MOA/C_C516[D_5025='499']/D_5004 + S_MOA/C_C516[D_5025='176']/D_5004)" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-15" location="/M_INVOIC/G_SG52[5]" test="(S_MOA/C_C516[D_5025='388']/D_5004 = S_MOA/C_C516[D_5025='499']/D_5004 + S_MOA/C_C516[D_5025='176']/D_5004)" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-15" location="/M_INVOIC/G_SG52[6]" test="(S_MOA/C_C516[D_5025='388']/D_5004 = S_MOA/C_C516[D_5025='499']/D_5004 + S_MOA/C_C516[D_5025='176']/D_5004)" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-15" location="/M_INVOIC/G_SG52[7]" test="(S_MOA/C_C516[D_5025='388']/D_5004 = S_MOA/C_C516[D_5025='499']/D_5004 + S_MOA/C_C516[D_5025='176']/D_5004)" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG52"/>
+    <failed-assert id="BR-CO-16" location="/M_INVOIC/G_SG52[0]" test="(S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004 - S_MOA/C_C516[D_5025='113']/D_5004) or      ((S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004) and not (S_MOA/C_C516[D_5025='113']/D_5004))" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-16" location="/M_INVOIC/G_SG52[1]" test="(S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004 - S_MOA/C_C516[D_5025='113']/D_5004) or      ((S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004) and not (S_MOA/C_C516[D_5025='113']/D_5004))" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-16" location="/M_INVOIC/G_SG52[2]" test="(S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004 - S_MOA/C_C516[D_5025='113']/D_5004) or      ((S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004) and not (S_MOA/C_C516[D_5025='113']/D_5004))" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-16" location="/M_INVOIC/G_SG52[3]" test="(S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004 - S_MOA/C_C516[D_5025='113']/D_5004) or      ((S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004) and not (S_MOA/C_C516[D_5025='113']/D_5004))" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-16" location="/M_INVOIC/G_SG52[4]" test="(S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004 - S_MOA/C_C516[D_5025='113']/D_5004) or      ((S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004) and not (S_MOA/C_C516[D_5025='113']/D_5004))" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-16" location="/M_INVOIC/G_SG52[5]" test="(S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004 - S_MOA/C_C516[D_5025='113']/D_5004) or      ((S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004) and not (S_MOA/C_C516[D_5025='113']/D_5004))" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-16" location="/M_INVOIC/G_SG52[6]" test="(S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004 - S_MOA/C_C516[D_5025='113']/D_5004) or      ((S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004) and not (S_MOA/C_C516[D_5025='113']/D_5004))" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-16" location="/M_INVOIC/G_SG52[7]" test="(S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004 - S_MOA/C_C516[D_5025='113']/D_5004) or      ((S_MOA/C_C516[D_5025='9']/D_5004 = S_MOA/C_C516[D_5025='388']/D_5004) and not (S_MOA/C_C516[D_5025='113']/D_5004))" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC"/>
+    <failed-assert id="BR-01" location="/M_INVOIC" test="G_SG1/S_RFF/C_C506[D_1153='AEG']/D_1154" flag="fatal">
+        <text>[BR-01]-An Invoice shall have a Specification identification. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <failed-assert id="BR-05" location="/M_INVOIC" test="G_SG7/S_CUX/C_C504[D_6347='3' and D_6343='18']/D_6345" flag="fatal">
+        <text>[BR-05]-An Invoice shall have an Invoice currency code. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27"/>
+    <fired-rule context="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='A' and S_ALC/D_4471='2']"/>
+    <fired-rule context="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='A' and S_ALC/D_4471='2']"/>
+    <fired-rule context="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='A' and S_ALC/D_4471='2']"/>
+    <fired-rule context="/M_INVOIC/G_SG27/S_DTM"/>
+    <failed-assert id="BR-29" location="/M_INVOIC/G_SG27[0]/S_DTM[0]" test="C_C507[D_2005='194' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-29]-An Invoice line period shall have an Invoice line period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-29" location="/M_INVOIC/G_SG27[0]/S_DTM[1]" test="C_C507[D_2005='194' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-29]-An Invoice line period shall have an Invoice line period start date. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG27/S_DTM"/>
+    <failed-assert id="BR-30" location="/M_INVOIC/G_SG27[0]/S_DTM[0]" test="C_C507[D_2005='206' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-30]-An Invoice line period shall have an Invoice line period end date. </text>
+    </failed-assert>
+    <failed-assert id="BR-30" location="/M_INVOIC/G_SG27[0]/S_DTM[1]" test="C_C507[D_2005='206' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-30]-An Invoice line period shall have an Invoice line period end date. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG27/S_DTM"/>
+    <failed-assert id="BR-31" location="/M_INVOIC/G_SG27[0]/S_DTM[0]" test="(C_C507[D_2005='206' and D_2379='102']/D_2380) &gt;= (C_C507[D_2005='194' and D_2379='102']/D_2380)" flag="fatal">
+        <text>[BR-31]-An Invoice line period end date shall be later or equal to an Invoice line period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-31" location="/M_INVOIC/G_SG27[0]/S_DTM[1]" test="(C_C507[D_2005='206' and D_2379='102']/D_2380) &gt;= (C_C507[D_2005='194' and D_2379='102']/D_2380)" flag="fatal">
+        <text>[BR-31]-An Invoice line period end date shall be later or equal to an Invoice line period start date. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <failed-assert id="BR-26" location="/M_INVOIC/S_DTM[0]" test="C_C507[D_2005='194' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-26]-An Invoice period shall have an Invoice period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-26" location="/M_INVOIC/S_DTM[1]" test="C_C507[D_2005='194' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-26]-An Invoice period shall have an Invoice period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-26" location="/M_INVOIC/S_DTM[2]" test="C_C507[D_2005='194' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-26]-An Invoice period shall have an Invoice period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-26" location="/M_INVOIC/S_DTM[3]" test="C_C507[D_2005='194' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-26]-An Invoice period shall have an Invoice period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-26" location="/M_INVOIC/S_DTM[4]" test="C_C507[D_2005='194' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-26]-An Invoice period shall have an Invoice period start date. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <failed-assert id="BR-27" location="/M_INVOIC/S_DTM[0]" test="C_C507[D_2005='206' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-27]-An Invoice period shall have an Invoice period end date. </text>
+    </failed-assert>
+    <failed-assert id="BR-27" location="/M_INVOIC/S_DTM[1]" test="C_C507[D_2005='206' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-27]-An Invoice period shall have an Invoice period end date. </text>
+    </failed-assert>
+    <failed-assert id="BR-27" location="/M_INVOIC/S_DTM[2]" test="C_C507[D_2005='206' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-27]-An Invoice period shall have an Invoice period end date. </text>
+    </failed-assert>
+    <failed-assert id="BR-27" location="/M_INVOIC/S_DTM[3]" test="C_C507[D_2005='206' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-27]-An Invoice period shall have an Invoice period end date. </text>
+    </failed-assert>
+    <failed-assert id="BR-27" location="/M_INVOIC/S_DTM[4]" test="C_C507[D_2005='206' and D_2379='102']/D_2380" flag="fatal">
+        <text>[BR-27]-An Invoice period shall have an Invoice period end date. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <failed-assert id="BR-28" location="/M_INVOIC/S_DTM[0]" test="(C_C507[D_2005='206' and D_2379='102']/D_2380) &gt;= (C_C507[D_2005='194' and D_2379='102']/D_2380)" flag="fatal">
+        <text>[BR-28]-An Invoice period end date shall be later or equal to an Invoice period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-28" location="/M_INVOIC/S_DTM[1]" test="(C_C507[D_2005='206' and D_2379='102']/D_2380) &gt;= (C_C507[D_2005='194' and D_2379='102']/D_2380)" flag="fatal">
+        <text>[BR-28]-An Invoice period end date shall be later or equal to an Invoice period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-28" location="/M_INVOIC/S_DTM[2]" test="(C_C507[D_2005='206' and D_2379='102']/D_2380) &gt;= (C_C507[D_2005='194' and D_2379='102']/D_2380)" flag="fatal">
+        <text>[BR-28]-An Invoice period end date shall be later or equal to an Invoice period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-28" location="/M_INVOIC/S_DTM[3]" test="(C_C507[D_2005='206' and D_2379='102']/D_2380) &gt;= (C_C507[D_2005='194' and D_2379='102']/D_2380)" flag="fatal">
+        <text>[BR-28]-An Invoice period end date shall be later or equal to an Invoice period start date. </text>
+    </failed-assert>
+    <failed-assert id="BR-28" location="/M_INVOIC/S_DTM[4]" test="(C_C507[D_2005='206' and D_2379='102']/D_2380) &gt;= (C_C507[D_2005='194' and D_2379='102']/D_2380)" flag="fatal">
+        <text>[BR-28]-An Invoice period end date shall be later or equal to an Invoice period start date. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG27/S_FTX[D_4451='ACF' and D_4453='1']/C_C108"/>
+    <fired-rule context="/M_INVOIC/G_SG2/S_NAD[D_3035='PE']"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC/G_SG2/S_NAD[D_3035='AE']"/>
+    <fired-rule context="/M_INVOIC/G_SG2/S_NAD[D_3035='AE']"/>
+    <fired-rule context="/M_INVOIC/G_SG54[S_TAX[C_C241/D_5153='VAT']/D_5283='7']/S_MOA"/>
+    <failed-assert id="BR-59" location="/M_INVOIC/G_SG54[0]/S_MOA[0]" test="(C_C516[D_5025='2']/D_5004) and not(/M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='2' and D_6343='4']/D_6345 = /M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='3' and D_6343='18']/D_6345)" flag="fatal">
+        <text>[BR-59]-If the VAT accounting currency code is different than the Invoice currency code, then the Invoice total VAT amount in accounting currency shall be provided. </text>
+    </failed-assert>
+    <failed-assert id="BR-59" location="/M_INVOIC/G_SG54[0]/S_MOA[1]" test="(C_C516[D_5025='2']/D_5004) and not(/M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='2' and D_6343='4']/D_6345 = /M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='3' and D_6343='18']/D_6345)" flag="fatal">
+        <text>[BR-59]-If the VAT accounting currency code is different than the Invoice currency code, then the Invoice total VAT amount in accounting currency shall be provided. </text>
+    </failed-assert>
+    <failed-assert id="BR-59" location="/M_INVOIC/G_SG54[1]/S_MOA[0]" test="(C_C516[D_5025='2']/D_5004) and not(/M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='2' and D_6343='4']/D_6345 = /M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='3' and D_6343='18']/D_6345)" flag="fatal">
+        <text>[BR-59]-If the VAT accounting currency code is different than the Invoice currency code, then the Invoice total VAT amount in accounting currency shall be provided. </text>
+    </failed-assert>
+    <failed-assert id="BR-59" location="/M_INVOIC/G_SG54[1]/S_MOA[1]" test="(C_C516[D_5025='2']/D_5004) and not(/M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='2' and D_6343='4']/D_6345 = /M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='3' and D_6343='18']/D_6345)" flag="fatal">
+        <text>[BR-59]-If the VAT accounting currency code is different than the Invoice currency code, then the Invoice total VAT amount in accounting currency shall be provided. </text>
+    </failed-assert>
+    <failed-assert id="BR-59" location="/M_INVOIC/G_SG54[2]/S_MOA[0]" test="(C_C516[D_5025='2']/D_5004) and not(/M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='2' and D_6343='4']/D_6345 = /M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='3' and D_6343='18']/D_6345)" flag="fatal">
+        <text>[BR-59]-If the VAT accounting currency code is different than the Invoice currency code, then the Invoice total VAT amount in accounting currency shall be provided. </text>
+    </failed-assert>
+    <failed-assert id="BR-59" location="/M_INVOIC/G_SG54[2]/S_MOA[1]" test="(C_C516[D_5025='2']/D_5004) and not(/M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='2' and D_6343='4']/D_6345 = /M_INVOIC/G_SG7/S_CUX/C_C504[D_6347='3' and D_6343='18']/D_6345)" flag="fatal">
+        <text>[BR-59]-If the VAT accounting currency code is different than the Invoice currency code, then the Invoice total VAT amount in accounting currency shall be provided. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']"/>
+    <fired-rule context="/M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']"/>
+    <fired-rule context="/M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']"/>
+    <fired-rule context="/M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']"/>
+    <fired-rule context="/M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']"/>
+    <failed-assert id="BR-CO-17" location="/M_INVOIC/G_SG54[0]" test="S_MOA/C_C516[D_5025='124']/D_5004 = round(S_MOA/C_C516[D_5025='125']/D_5004 * (S_TAX[D_5283='VAT']/C_C243/D_5278 div 100) * 10 * 10) div 100" flag="fatal">
+        <text>[BR-CO-17]-VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-17" location="/M_INVOIC/G_SG54[1]" test="S_MOA/C_C516[D_5025='124']/D_5004 = round(S_MOA/C_C516[D_5025='125']/D_5004 * (S_TAX[D_5283='VAT']/C_C243/D_5278 div 100) * 10 * 10) div 100" flag="fatal">
+        <text>[BR-CO-17]-VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals. </text>
+    </failed-assert>
+    <failed-assert id="BR-CO-17" location="/M_INVOIC/G_SG54[2]" test="S_MOA/C_C516[D_5025='124']/D_5004 = round(S_MOA/C_C516[D_5025='125']/D_5004 * (S_TAX[D_5283='VAT']/C_C243/D_5278 div 100) * 10 * 10) div 100" flag="fatal">
+        <text>[BR-CO-17]-VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX"/>
+    <failed-assert id="BR-AE-03" location="/M_INVOIC/G_SG16[0]/G_SG22/S_TAX" test="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='AE') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)" flag="fatal">
+        <text>[BR-AE-03]-An Invoice that contains a document level allowance (BG-18) with a document level allowance VAT category code (BT-89) that is "AE" shall contain both the Seller's VAT identifier (BT-30) and Buyer's VAT identifier (BT-46). </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX"/>
+    <failed-assert id="BR-AE-04" location="/M_INVOIC/G_SG16[1]/G_SG22/S_TAX" test="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='AE') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)" flag="fatal">
+        <text>[BR-AE-04]-An Invoice that contains a document level charge (BG-19) with a document level charge VAT category code (BT-89) that is "AE" shall contain both the Seller's VAT identifier (BT-30) and Buyer's VAT identifier (BT-46). </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']"/>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']"/>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']"/>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']"/>
+    <failed-assert id="BR-E-07" location="/M_INVOIC/G_SG54[2]/S_TAX" test=".[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 =      (     round(     sum(/M_INVOIC/G_SG27[     G_SG35/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305='E' and      G_SG35/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG28/S_MOA/C_C516[D_5025='203']/D_5004      )     *10*10)     div 100     ) + (     round(     sum(     /M_INVOIC/G_SG16[     S_ALC/D_5463='C' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305 = 'E' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG20/S_MOA/C_C516[     D_5025='389'     ]/D_5004     )     *10*10)     div 100)      -      (     round(     sum(     /M_INVOIC/G_SG16[     S_ALC/D_5463='A' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305 = 'E' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG20/S_MOA/C_C516[     D_5025='389'     ]/D_5004     )     *10*10)     div 100)" flag="fatal">
+        <text>[BR-E-07]-In a VAT breakdown (BG-21) where VAT category code (BT-111) is "E" the VAT category taxable amount (BT-109) shall equal the sum of: Invoice line net amount (BT-122) where the VAT category codes (BT-142) is "E" and VAT exemption reason text (BT-144) matches the exemption reason text (BT-113), minus document level allowance amount (BT-86) plus document level charge amount (BT-93) where the VAT category code (BT-142, BT-89, BT-96) is “E". </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']"/>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']"/>
+    <failed-assert id="BR-E-09" location="/M_INVOIC/G_SG54[2]/S_TAX" test="(/M_INVOIC/S_FTX[D_4451='AGM']/C_C108/D_D4440)" flag="fatal">
+        <text>[BR-E-09]-A VAT exemption reason text (BT-113) shall be provided in the VAT breakdown (BG-21) if the VAT category code is "E". </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX"/>
+    <failed-assert id="BR-E-03" location="/M_INVOIC/G_SG16[0]/G_SG22/S_TAX" test="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='E') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)" flag="fatal">
+        <text>[BR-E-03]-An Invoice that contains a document level allowance (BG-18) with a document level allowance VAT category code (BT-89) that is "E" shall contain the Seller's VAT identifier (BT-30). </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX"/>
+    <failed-assert id="BR-E-04" location="/M_INVOIC/G_SG16[1]/G_SG22/S_TAX" test="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='E') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)" flag="fatal">
+        <text>[BR-E-04]-An Invoice that contains a document level charge (BG-19) with a document level charge VAT category code (BT-89) that is "E" shall contain the Seller's VAT identifier (BT-30). </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'E']"/>
+    <fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'E']"/>
+    <failed-assert id="BR-E-06" location="/M_INVOIC/G_SG27[3]" test="S_FTX[D_4451='AGM' and D_4453='1']/C_C108/D_D4440" flag="fatal">
+        <text>[BR-E-06]-In an Invoice line where the Invoice item VAT category code (BT-142) is "E" the Invoiced item VAT exemption reason text (BT-144) shall not be blank. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX"/>
+    <failed-assert id="BR-G-03" location="/M_INVOIC/G_SG16[0]/G_SG22/S_TAX" test="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='G') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)" flag="fatal">
+        <text>[BR-G-03]-An Invoice that contains a document level allowance (BG-18) with a document level allowance VAT category code (BT-89) that is "G" shall contain the Seller's VAT identifier (BT-30). </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX"/>
+    <failed-assert id="BR-G-04" location="/M_INVOIC/G_SG16[1]/G_SG22/S_TAX" test="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='G') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)" flag="fatal">
+        <text>[BR-G-04]-An Invoice that contains a document level charge (BG-19) with a document level charge VAT category code (BT-89) that is "G" shall contain the Seller's VAT identifier. </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX"/>
+    <failed-assert id="BR-IC-04" location="/M_INVOIC/G_SG16[0]/G_SG22/S_TAX" test="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='IC') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)" flag="fatal">
+        <text>[BR-IC-04]-An Invoice that contains a document level allowance (BG-18) with a document level allowance VAT category code (BT-89) that is "IC" shall contain both the Seller's VAT identifier (BT-30) and Buyer's VAT identifier (BT-46). </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX"/>
+    <failed-assert id="BR-IC-05" location="/M_INVOIC/G_SG16[1]/G_SG22/S_TAX" test="(.[D_5283='7' and C_C241/D_5153='VAT']/D_5305='IC') and (/M_INVOIC/G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154) and (/M_INVOIC/G_SG2[S_NAD/D_3035='BY']/G_SG3/S_RFF/C_C506[D_1153='VA']/D_1154)" flag="fatal">
+        <text>[BR-IC-05]-An Invoice that contains a document level charge (BG-19) with a document level charge VAT category code (BT-89) that is "IC" shall contain both the Seller's VAT identifier (BT-30) and Buyer's VAT identifier (BT-46). </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']"/>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']"/>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']"/>
+    <failed-assert id="BR-S-03" location="/M_INVOIC/G_SG54[0]/S_TAX" test=".[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 =      (     round(     sum(/M_INVOIC/G_SG27[     G_SG35/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305='S' and      G_SG35/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG28/S_MOA/C_C516[D_5025='203']/D_5004      )     *10*10)     div 100     ) + (     round(     sum(     /M_INVOIC/G_SG16[     S_ALC/D_5463='C' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305 = 'S' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG20/S_MOA/C_C516[     D_5025='389'     ]/D_5004     )     *10*10)     div 100)      -      (     round(     sum(     /M_INVOIC/G_SG16[     S_ALC/D_5463='A' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305 = 'S' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG20/S_MOA/C_C516[     D_5025='389'     ]/D_5004     )     *10*10)     div 100)" flag="fatal">
+        <text>[BR-S-03]-For each different value of VAT category rate (BT-112) where the VAT category code (BT-111) is "S", the VAT category taxable amount (BT-109) in a VAT breakdown (BG-21) shall equal the sum of Invoice line net amounts (BT-122) plus the sum of document level charge amount (BT-93) minus the sum of document level allowance amount (BT-86); where the VAT category code (BT-142, BT-96, BT-89) is “S” and the VAT rate (BT-143, BT-90, BT-97) equals the VAT category rate (BT-112). </text>
+    </failed-assert>
+    <failed-assert id="BR-S-03" location="/M_INVOIC/G_SG54[1]/S_TAX" test=".[D_5283='7' and C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='1']/D_5004 =      (     round(     sum(/M_INVOIC/G_SG27[     G_SG35/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305='S' and      G_SG35/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG28/S_MOA/C_C516[D_5025='203']/D_5004      )     *10*10)     div 100     ) + (     round(     sum(     /M_INVOIC/G_SG16[     S_ALC/D_5463='C' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305 = 'S' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG20/S_MOA/C_C516[     D_5025='389'     ]/D_5004     )     *10*10)     div 100)      -      (     round(     sum(     /M_INVOIC/G_SG16[     S_ALC/D_5463='A' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/D_5305 = 'S' and     G_SG22/S_TAX[     D_5283='7' and      C_C241/D_5153='VAT'     ]/C_C243/D_5278 =      ./C_C243/D_5278     ]/G_SG20/S_MOA/C_C516[     D_5025='389'     ]/D_5004     )     *10*10)     div 100)" flag="fatal">
+        <text>[BR-S-03]-For each different value of VAT category rate (BT-112) where the VAT category code (BT-111) is "S", the VAT category taxable amount (BT-109) in a VAT breakdown (BG-21) shall equal the sum of Invoice line net amounts (BT-122) plus the sum of document level charge amount (BT-93) minus the sum of document level allowance amount (BT-86); where the VAT category code (BT-142, BT-96, BT-89) is “S” and the VAT rate (BT-143, BT-90, BT-97) equals the VAT category rate (BT-112). </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']"/>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']"/>
+    <fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']"/>
+    <failed-assert id="BR-S-07" location="/M_INVOIC/G_SG54[0]/S_TAX" test="not(/M_INVOIC/S_FTX[D_4451='AGM']/C_C108/D_D4440) and not (/M_INVOIC/G_SG54/S_TAX[D_5305 != 'S' and D_5305 != 'Z' and D_5305 != 'O'])" flag="fatal">
+        <text>[BR-S-07]-An Invoice where VAT category code (BT-111) is "S" shall not contain the VAT exemption reason text (BT-113) for that VAT category </text>
+    </failed-assert>
+    <failed-assert id="BR-S-07" location="/M_INVOIC/G_SG54[1]/S_TAX" test="not(/M_INVOIC/S_FTX[D_4451='AGM']/C_C108/D_D4440) and not (/M_INVOIC/G_SG54/S_TAX[D_5305 != 'S' and D_5305 != 'Z' and D_5305 != 'O'])" flag="fatal">
+        <text>[BR-S-07]-An Invoice where VAT category code (BT-111) is "S" shall not contain the VAT exemption reason text (BT-113) for that VAT category </text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'S']"/>
+    <active-pattern id="EN16931-EDIFACT-Syntax"/>
+    <fired-rule context="/M_INVOIC/S_UNH"/>
+    <fired-rule context="/M_INVOIC/S_UNH"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_BGM"/>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <failed-assert id="EDIFACT-SR-015" location="/M_INVOIC/S_DTM[1]" test="count(C_C507[D_2005='137']) =1" flag="fatal">
+        <text>[EDIFACT-SR-015] - The
+            invoice issue date must be stated once</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-015" location="/M_INVOIC/S_DTM[2]" test="count(C_C507[D_2005='137']) =1" flag="fatal">
+        <text>[EDIFACT-SR-015] - The
+            invoice issue date must be stated once</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-015" location="/M_INVOIC/S_DTM[3]" test="count(C_C507[D_2005='137']) =1" flag="fatal">
+        <text>[EDIFACT-SR-015] - The
+            invoice issue date must be stated once</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-015" location="/M_INVOIC/S_DTM[4]" test="count(C_C507[D_2005='137']) =1" flag="fatal">
+        <text>[EDIFACT-SR-015] - The
+            invoice issue date must be stated once</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <fired-rule context="/M_INVOIC/S_DTM"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC"/>
+    <fired-rule context="/M_INVOIC/S_FTX"/>
+    <fired-rule context="/M_INVOIC/S_FTX"/>
+    <fired-rule context="/M_INVOIC/S_FTX"/>
+    <fired-rule context="/M_INVOIC/S_FTX"/>
+    <fired-rule context="/M_INVOIC/S_FTX"/>
+    <fired-rule context="/M_INVOIC/S_FTX"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <failed-assert id="EDIFACT-SR-041" location="/M_INVOIC/G_SG1[1]" test="(S_RFF/C_C506[D_1153='PQ' or D_1153='IV' or D_1153='AOU' or D_1153='ATS' or D_1153='AAK' or D_1153='ALO' or D_1153='VN' or D_1153='ON' or D_1153='CT' or D_1153='AEG' or D_1153='AEF' or D_1153='CR'])" flag="warning">
+        <text>[EDIFACT-SR-041] - Only
+            values AAK, AEF, AEG, ALO, AOU, ATS, CR, CT, IV, ON, PQ or VN should be used</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <failed-assert id="EDIFACT-SR-042" location="/M_INVOIC/G_SG1[1]" test="not(S_RFF/C_C506/D_1156)" flag="warning">
+        <text>[EDIFACT-SR-042] -
+            Document line identifier should not be used</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <failed-assert id="EDIFACT-SR-043" location="/M_INVOIC/G_SG1[1]" test="not(S_RFF/C_C506/D_1056)" flag="warning">
+        <text>[EDIFACT-SR-043] - Version
+            identifier should not be used</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <failed-assert id="EDIFACT-SR-044" location="/M_INVOIC/G_SG1[1]" test="not(S_RFF/C_C506/D_1060)" flag="warning">
+        <text>[EDIFACT-SR-044] -
+            Revision identifier should not be used</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <failed-assert id="EDIFACT-SR-047" location="/M_INVOIC/G_SG1[0]" test="count(S_RFF/C_C506[D_1153='AEG']) =1" flag="fatal">
+        <text>[EDIFACT-SR-047] - There
+            must be exaclty one specification identification</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-047" location="/M_INVOIC/G_SG1[1]" test="count(S_RFF/C_C506[D_1153='AEG']) =1" flag="fatal">
+        <text>[EDIFACT-SR-047] - There
+            must be exaclty one specification identification</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-047" location="/M_INVOIC/G_SG1[2]" test="count(S_RFF/C_C506[D_1153='AEG']) =1" flag="fatal">
+        <text>[EDIFACT-SR-047] - There
+            must be exaclty one specification identification</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-047" location="/M_INVOIC/G_SG1[3]" test="count(S_RFF/C_C506[D_1153='AEG']) =1" flag="fatal">
+        <text>[EDIFACT-SR-047] - There
+            must be exaclty one specification identification</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-047" location="/M_INVOIC/G_SG1[4]" test="count(S_RFF/C_C506[D_1153='AEG']) =1" flag="fatal">
+        <text>[EDIFACT-SR-047] - There
+            must be exaclty one specification identification</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-047" location="/M_INVOIC/G_SG1[5]" test="count(S_RFF/C_C506[D_1153='AEG']) =1" flag="fatal">
+        <text>[EDIFACT-SR-047] - There
+            must be exaclty one specification identification</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG1"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <failed-assert id="EDIFACT-SR-076" location="/M_INVOIC/G_SG2[0]" test="not(S_NAD/C_C819/D_3229)" flag="warning">
+        <text>[EDIFACT-SR-076] - Country
+            subdivision identifier should not be used</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-076" location="/M_INVOIC/G_SG2[1]" test="not(S_NAD/C_C819/D_3229)" flag="warning">
+        <text>[EDIFACT-SR-076] - Country
+            subdivision identifier should not be used</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <failed-assert id="EDIFACT-SR-083" location="/M_INVOIC/G_SG2[0]" test="(not(.[S_NAD/D_3035=('SE', 'PE')]/S_FII[D_3035='RB']))    or (.[S_NAD/D_3035='BY']/S_FII[D_3035='BI'])" flag="warning">
+        <text>[EDIFACT-SR-083] - The FII
+            segment should only be used for seller, buyer and payee</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-083" location="/M_INVOIC/G_SG2[2]" test="(not(.[S_NAD/D_3035=('SE', 'PE')]/S_FII[D_3035='RB']))    or (.[S_NAD/D_3035='BY']/S_FII[D_3035='BI'])" flag="warning">
+        <text>[EDIFACT-SR-083] - The FII
+            segment should only be used for seller, buyer and payee</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <failed-assert id="EDIFACT-SR-098" location="/M_INVOIC/G_SG2[0]" test="not(G_SG5) or G_SG5[S_CTA/D_3139='SU']/S_COM/C_C076[D_3155='EM']/D_3148" flag="warning">
+        <text>[EDIFACT-SR-098] - The
+            seller electronic address has to be given in a defined structure</text>
+    </failed-assert>
+    <failed-assert id="EDIFACT-SR-098" location="/M_INVOIC/G_SG2[1]" test="not(G_SG5) or G_SG5[S_CTA/D_3139='SU']/S_COM/C_C076[D_3155='EM']/D_3148" flag="warning">
+        <text>[EDIFACT-SR-098] - The
+            seller electronic address has to be given in a defined structure</text>
+    </failed-assert>
+    <fired-rule context="/M_INVOIC/G_SG2"/>
+    <active-pattern id="EN16931-Codes"/>
+    <fired-rule context="//D_1001" flag="fatal"/>
+    <fired-rule context="//D_6345" flag="fatal"/>
+    <fired-rule context="//D_3207" flag="fatal"/>
+    <fired-rule context="//D_4461" flag="fatal"/>
+    <fired-rule context="//D_5305" flag="fatal"/>
+    <fired-rule context="//D_6411" flag="fatal"/>
+    <fired-rule context="//D_5189" flag="warning"/>
+    <failed-assert location="/M_INVOIC/G_SG16[0]/S_ALC/C_C552/D_5189" test="((not(contains(normalize-space(.), ' ')) and contains(' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 ', concat(' ', normalize-space(.), ' '))))" flag="warning">
+        <text>[CL-13]-Coded allowance and charge reasons SHOULD belong to the UNCL 4465 code
+      list</text>
+    </failed-assert>
+</schematron-output>

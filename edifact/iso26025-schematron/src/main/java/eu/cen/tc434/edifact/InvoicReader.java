@@ -5,6 +5,7 @@ import javax.xml.namespace.QName;
 
 import org.unece.cefact.invoic.d14b.MINVOIC;
 
+import com.helger.commons.collection.ext.CommonsArrayList;
 import com.helger.commons.io.resource.ClassPathResource;
 import com.helger.commons.io.resource.IReadableResource;
 import com.helger.jaxb.AbstractJAXBMarshaller;
@@ -20,12 +21,8 @@ public class InvoicReader extends AbstractJAXBMarshaller <MINVOIC>
 
   protected InvoicReader ()
   {
-    super (MINVOIC.class, XSD);
-  }
-
-  @Override
-  protected JAXBElement <MINVOIC> wrapObject (final MINVOIC aObject)
-  {
-    return new JAXBElement <MINVOIC> (new QName ("", "M_INVOICE"), MINVOIC.class, aObject);
+    super (MINVOIC.class,
+           new CommonsArrayList<> (XSD),
+           x -> new JAXBElement <MINVOIC> (new QName ("", "M_INVOICE"), MINVOIC.class, x));
   }
 }
