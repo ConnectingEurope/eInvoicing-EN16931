@@ -3,7 +3,7 @@
 
             UBL syntax binding to the model  
             Created by Validex Schematron Generator. (2015) Midran Ltd.
-            Timestamp: 2016-08-22 16:30:06 +0200
+            Timestamp: 2016-09-01 17:05:56 +0200
      -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:UBL="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" queryBinding="xslt2">
   <title>EN16931  model bound to UBL</title>
