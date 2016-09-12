@@ -72,14 +72,14 @@
       <dependency>
         <groupId>com.helger</groupId>
         <artifactId>ph-commons-parent-pom</artifactId>
-        <version>8.4.0</version>
+        <version>8.5.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.helger</groupId>
         <artifactId>ph-schematron-parent-pom</artifactId>
-        <version>4.0.2</version>
+        <version>4.1.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
