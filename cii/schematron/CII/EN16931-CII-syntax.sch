@@ -132,7 +132,7 @@
     <param name="CII-SR-116" value="not(ram:GrossPriceProductTradePrice/ram:MaximumQuantity)"/>
     <param name="CII-SR-117" value="not(ram:GrossPriceProductTradePrice/ram:ChangeReason)"/>
     <param name="CII-SR-118" value="not(ram:GrossPriceProductTradePrice/ram:OrderUnitConversionFactorNumeric)"/>
-    <param name="CII-SR-439" value="count(ram:GrossPriceProductTradePrice/ram:ChargeAmount) = 1"/>   
+    <param name="CII-SR-439" value="count(ram:NetPriceProductTradePrice/ram:ChargeAmount) = 1"/>   
     
     <param name="CII-SR-119" value="(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false'] and ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount) or (not (ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ChargeIndicator) and not (ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount))"/>
 	<param name="CII-SR-120" value="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ID)"/>
@@ -531,7 +531,7 @@
 	<param name="CII-DT-029" value="not(ram:IssuerTradeParty)"/>
 	<param name="CII-DT-030" value="not(ram:AttachedSpecifiedBinaryFile)"/>
 	<!-- AmountType -->
-	<param name="CII-DT-031" value="not(@currencyID) and not (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount)"/>
+	<param name="CII-DT-031" value="not(@currencyID)"/>
 	<param name="CII-DT-032" value="not(@currencyCodeListVersionID)"/>
 	<!-- QuantityType -->
 	<param name="CII-DT-033" value="not(@unitCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeDelivery/ram:BilledQuantity/@unitCode)"/>
@@ -539,7 +539,7 @@
 	<param name="CII-DT-035" value="not(@unitCodeListAgencyID)"/>
 	<param name="CII-DT-036" value="not(@unitCodeListAgencyName)"/>
 	<!-- TradeTaxType -->
-	<param name="CII-DT-037" value="ram:TypeCode = 'VAT'"/>
+	<param name="CII-DT-037" value="not(ram:TypeCode) or (ram:TypeCode and not(ram:TypeCode = 'VAT'))"/>
 	<param name="CII-DT-038" value="not(ram:CalculatedRate)"/>
 	<param name="CII-DT-039" value="not(ram:CalculationSequenceNumeric)"/>
 	<param name="CII-DT-040" value="not(ram:BasisQuantity)"/>
