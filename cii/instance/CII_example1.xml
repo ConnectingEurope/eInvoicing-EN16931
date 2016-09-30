@@ -13,11 +13,14 @@
     </rsm:ExchangedDocumentContext>
     <rsm:ExchangedDocument>
         <ram:ID>12115118</ram:ID>
-        <ram:TypeCode>380</ram:TypeCode>
+        <ram:TypeCode>380</ram:TypeCode>        
         <ram:IssueDateTime>
             <udt:DateTimeString format="102">20150109</udt:DateTimeString>
-        </ram:IssueDateTime>
-        <ram:IncludedNote><ram:Content>Alle leveringen zijn franco. Alle prijzen zijn incl. BTW. Betalingstermijn: 14 dagen netto. Prijswijzigingen voorbehouden. Op al onze aanbiedingen, leveringen en overeenkomsten zijn van toepassing in de algemene verkoop en leveringsvoorwaarden. Gedeponeerd bij de K.v.K. te Amsterdam 25-04-'85.</ram:Content></ram:IncludedNote>
+        </ram:IssueDateTime>        
+        <ram:LanguageID>dut</ram:LanguageID>
+        <ram:IncludedNote>
+            <ram:SubjectCode>AAR</ram:SubjectCode>
+            <ram:Content>Alle leveringen zijn franco. Alle prijzen zijn incl. BTW. Betalingstermijn: 14 dagen netto. Prijswijzigingen voorbehouden. Op al onze aanbiedingen, leveringen en overeenkomsten zijn van toepassing in de algemene verkoop en leveringsvoorwaarden. Gedeponeerd bij de K.v.K. te Amsterdam 25-04-'85.</ram:Content></ram:IncludedNote>                
     </rsm:ExchangedDocument>
     <rsm:SupplyChainTradeTransaction>
         <ram:IncludedSupplyChainTradeLineItem>
@@ -576,21 +579,21 @@
             <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
             <ram:SpecifiedTradeSettlementPaymentMeans>
                 <ram:TypeCode>31</ram:TypeCode>
-                <ram:PayerPartyDebtorFinancialAccount><ram:IBANID>NL57RABO0107307510</ram:IBANID></ram:PayerPartyDebtorFinancialAccount>                
+                <ram:PayerPartyDebitorFinancialAccount><ram:IBANID>NL57RABO0107307510</ram:IBANID></ram:PayerPartyDebitorFinancialAccount>                                
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:SpecifiedTradeSettlementPaymentMeans>
                 <ram:TypeCode>31</ram:TypeCode>
-                <ram:PayerPartyDebtorFinancialAccount><ram:IBANID>NL03INGB0004489902</ram:IBANID></ram:PayerPartyDebtorFinancialAccount>                
+                <ram:PayerPartyDebitorFinancialAccount><ram:IBANID>NL03INGB0004489902</ram:IBANID></ram:PayerPartyDebitorFinancialAccount>                
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>
-                <ram:CalculatedAmount>11.23</ram:CalculatedAmount>
-                <ram:BasisAmount>187.19</ram:BasisAmount>
+                <ram:CalculatedAmount>10.99</ram:CalculatedAmount>
+                <ram:BasisAmount>183.23</ram:BasisAmount>
                 <ram:CategoryCode>S</ram:CategoryCode>
                 <ram:RateApplicablePercent>6.00</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
             <ram:ApplicableTradeTax>
-                <ram:CalculatedAmount>8.91</ram:CalculatedAmount>
-                <ram:BasisAmount>42.41</ram:BasisAmount>
+                <ram:CalculatedAmount>9.74</ram:CalculatedAmount>
+                <ram:BasisAmount>46.37</ram:BasisAmount>
                 <ram:CategoryCode>S</ram:CategoryCode>
                 <ram:RateApplicablePercent>21.00</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
@@ -600,9 +603,9 @@
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 <ram:LineTotalAmount>229.60</ram:LineTotalAmount>
                 <ram:TaxBasisTotalAmount>229.60</ram:TaxBasisTotalAmount>
-                <ram:TaxTotalAmount currencyID="EUR">20.14</ram:TaxTotalAmount>
-                <ram:GrandTotalAmount>249.74</ram:GrandTotalAmount>
-                <ram:DuePayableAmount>249.74</ram:DuePayableAmount>
+                <ram:TaxTotalAmount currencyID="EUR">20.73</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>250.33</ram:GrandTotalAmount>
+                <ram:DuePayableAmount>250.33</ram:DuePayableAmount>
             </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
         </ram:ApplicableHeaderTradeSettlement>
     </rsm:SupplyChainTradeTransaction>

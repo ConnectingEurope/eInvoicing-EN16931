@@ -77,10 +77,10 @@
     <param name="CII-SR-066" value="not(ram:FormattedLatestProductDataChangeDateTime)"/>
     <param name="CII-SR-067" value="not(ram:ApplicableProductCharacteristic/ram:ID)"/>
     <param name="CII-SR-068" value="not(ram:ApplicableProductCharacteristic/ram:TypeCode)"/>
-    <param name="CII-SR-069" value="not (ram:ApplicableProductCharacteristic) or (count(ram:ApplicableProductCharacteristic/ram:Description) =1)"/>
+    <param name="CII-SR-069" value="(count(ram:Description) =1)"/>
     <param name="CII-SR-070" value="not(ram:ApplicableProductCharacteristic/ram:ValueMeasure)"/>
     <param name="CII-SR-071" value="not(ram:ApplicableProductCharacteristic/ram:MeasurementMethodCode)"/>
-    <param name="CII-SR-072" value="not (ram:ApplicableProductCharacteristic) or (count(ram:ApplicableProductCharacteristic/ram:Value) =1)"/>
+    <param name="CII-SR-072" value="(count(ram:Value) =1)"/>
     <param name="CII-SR-073" value="not(ram:ApplicableProductCharacteristic/ram:ValueCode)"/>
     <param name="CII-SR-074" value="not(ram:ApplicableProductCharacteristic/ram:ValueDateTime)"/>
     <param name="CII-SR-075" value="not(ram:ApplicableProductCharacteristic/ram:ValueIndicator)"/>
@@ -517,7 +517,7 @@
 	<param name="CII-DT-015" value="not(ram:URIID) or name()='ram:AdditionalReferencedDocument' "/>
 	<param name="CII-DT-016" value="not(ram:StatusCode)"/>
 	<param name="CII-DT-017" value="not(ram:CopyIndicator)"/>
-	<param name="CII-DT-018" value="not(ram:TypeCode)"/>
+	<param name="CII-DT-018" value="not(ram:TypeCode) or name()='ram:AdditionalReferencedDocument'"/>
 	<param name="CII-DT-019" value="not(ram:GlobalID)"/>
 	<param name="CII-DT-020" value="not(ram:RevisionID)"/>
 	<param name="CII-DT-021" value="not(ram:Name) or name()='ram:AdditionalReferencedDocument'"/>
@@ -526,7 +526,7 @@
 	<param name="CII-DT-024" value="not(ram:ReferenceTypeCode) or name()='ram:AdditionalReferencedDocument'"/>
 	<param name="CII-DT-025" value="not(ram:SectionName)"/>
 	<param name="CII-DT-026" value="not(ram:PreviousRevisionID)"/>
-	<param name="CII-DT-027" value="not(ram:FormattedIssueDateTime)"/>
+	<param name="CII-DT-027" value="not(ram:FormattedIssueDateTime) or name()='ram:InvoiceReferencedDocument'"/>
 	<param name="CII-DT-028" value="not(ram:EffectiveSpecifiedPeriod)"/>
 	<param name="CII-DT-029" value="not(ram:IssuerTradeParty)"/>
 	<param name="CII-DT-030" value="not(ram:AttachedSpecifiedBinaryFile)"/>
@@ -543,7 +543,7 @@
 	<param name="CII-DT-038" value="not(ram:CalculatedRate)"/>
 	<param name="CII-DT-039" value="not(ram:CalculationSequenceNumeric)"/>
 	<param name="CII-DT-040" value="not(ram:BasisQuantity)"/>
-	<param name="CII-DT-041" value="not(ram:BasisAmount)"/>
+	<param name="CII-DT-041" value="not(ram:BasisAmount) or (ancestor::ram:ApplicableHeaderTradeSettlement)"/>
 	<param name="CII-DT-042" value="not(ram:UnitBasisAmount)"/>
 	<param name="CII-DT-043" value="not(ram:LineTotalBasisAmount)"/>
 	<param name="CII-DT-044" value="not(ram:AllowanceChargeBasisAmount)"/>
@@ -557,7 +557,7 @@
 	<param name="CII-DT-052" value="not(ram:ExemptionReasonCode) or name()='ram:ApplicableTradeTax'"/>
 	<param name="CII-DT-098" value="not(ram:ExemptionReason) or name()='ram:ApplicableTradeTax'"/>
 	<param name="CII-DT-053" value="not(ram:TaxBasisAllowanceRate)"/>
-	<param name="CII-DT-054" value="not(ram:TaxPointDate)"/>
+	<param name="CII-DT-054" value="not(ram:TaxPointDate)  or (ancestor::ram:ApplicableHeaderTradeSettlement)"/>
 	<param name="CII-DT-055" value="not(ram:Type)"/>
 	<param name="CII-DT-056" value="not(ram:InformationAmount)"/>
 	<param name="CII-DT-057" value="not(ram:CategoryName)"/>
@@ -605,31 +605,31 @@
 	
     <!-- Sections -->
     
-    <param name="Invoice_line" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem"/>
-    <param name="Invoice" value="/rsm:CrossIndustryInvoice"/>
-    <param name="Document_Context" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext"/>
-    <param name="DocumentContextParameter" value="//*[ends-with(name(), 'DocumentContextParameter')]"/>
-    <param name="Exchanged_Document" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument"/>
-    <param name="IDType" value="//ram:*[ends-with(name(), 'ID')]"/>
-    <param name="IDTypeNoAttributes" value="(/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID) or
-        (/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:ID) or 
-        (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID) or
-        (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID)"/>
-    <param name="TypeCodeType" value="//ram:TypeCode"/>
-    <param name="TypeCodeTypeNoAttributes" value="(/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode)"/>
-    <param name="SpecifiedTradeProduct" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct"/>
-    <param name="ReferencedDocumentType" value="//ram:*[ends-with(name(), 'ReferencedDocument')]"/>
-    <param name="SpecifiedLineTradeAgreement" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeAgreement"/>
-    <param name="AmountType" value="//ram:*[ends-with(name(), 'Amount')]"/>
-    <param name="QuantityType" value="//ram:*[ends-with(name(), 'Quantity')]"/>
-    <param name="SpecifiedLineTradeDelivery" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeDelivery"/>
-    <param name="SpecifiedLineTradeSettlement" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement"/>
-    <param name="TradeTaxType" value="//ram:*[ends-with(name(), 'TradeTax')]"/>
-    <param name="BillingSpecifiedPeriodType" value="//ram:BillingSpecifiedPeriod"/>
-    <param name="ApplicableHeaderTradeAgreement" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement"/>
-    <param name="PostalTradeAddressType" value="//ram:PostalTradeAddress"/>
-    <param name="ApplicableHeaderTradeDelivery" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery"/>
-	<param name="ApplicableHeaderTradeSettlement" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement"/>    
-	<param name="SpecifiedTradeSettlementHeaderMonetarySummation" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>    
+    <param name="Invoice_line " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem"/>
+    <param name="Invoice " value="/rsm:CrossIndustryInvoice"/>
+    <param name="Document_Context " value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext"/>
+    <param name="DocumentContextParameter " value="//*[ends-with(name(), 'DocumentContextParameter')]"/>
+    <param name="Exchanged_Document " value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument"/>
+    <param name="IDType " value="//ram:*[ends-with(name(), 'ID')]"/>
+    <param name="IDTypeNoAttributes " value="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or
+        self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or
+        self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]"/>
+    <param name="TypeCodeType " value="//ram:TypeCode"/>
+    <param name="TypeCodeTypeNoAttributes " value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode"/>
+    <param name="SpecifiedTradeProduct " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct"/>
+    <param name="ReferencedDocumentType " value="//ram:*[ends-with(name(), 'ReferencedDocument')]"/>
+    <param name="SpecifiedLineTradeAgreement " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeAgreement"/>
+	<param name="AmountType " value="//ram:*[ends-with(name(), 'Amount') and not (self::ram:TaxTotalAmount)]"/>
+    <param name="QuantityType " value="//ram:*[ends-with(name(), 'Quantity')]"/>
+    <param name="SpecifiedLineTradeDelivery " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeDelivery"/>
+    <param name="SpecifiedLineTradeSettlement " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement"/>
+    <param name="TradeTaxType " value="//ram:*[ends-with(name(), 'TradeTax')]"/>
+    <param name="BillingSpecifiedPeriodType " value="//ram:BillingSpecifiedPeriod"/>
+    <param name="ApplicableHeaderTradeAgreement " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement"/>
+	<param name="ApplicableProductCharacteristic " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:ApplicableProductCharacteristic"/>	
+    <param name="PostalTradeAddressType " value="//ram:PostalTradeAddress"/>
+    <param name="ApplicableHeaderTradeDelivery " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery"/>
+	<param name="ApplicableHeaderTradeSettlement " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement"/>    
+	<param name="SpecifiedTradeSettlementHeaderMonetarySummation " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>    
         
 </pattern>

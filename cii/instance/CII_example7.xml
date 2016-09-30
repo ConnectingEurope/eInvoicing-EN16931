@@ -12,7 +12,7 @@
         </ram:GuidelineSpecifiedDocumentContextParameter>
     </rsm:ExchangedDocumentContext>
     <rsm:ExchangedDocument>
-        <ram:ID>INVOICE_test_4</ram:ID>
+        <ram:ID>INVOICE_test_7</ram:ID>
         <ram:TypeCode>380</ram:TypeCode>
         <ram:IssueDateTime>
             <udt:DateTimeString format="102">20130513</udt:DateTimeString>
@@ -41,12 +41,11 @@
                 <ram:BilledQuantity unitCode="C62">1</ram:BilledQuantity>                
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
-                <ram:ApplicableTradeTax>
-					<ram:ExemptionReason>Tax</ram:ExemptionReason>
+                <ram:ApplicableTradeTax>					
 					<ram:CategoryCode>O</ram:CategoryCode>                    
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>1000</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>2500</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>
             </ram:SpecifiedLineTradeSettlement>
         </ram:IncludedSupplyChainTradeLineItem>
@@ -116,7 +115,7 @@
         </ram:ApplicableHeaderTradeAgreement>
         <ram:ApplicableHeaderTradeDelivery />
         <ram:ApplicableHeaderTradeSettlement>
-            <ram:InvoiceCurrencyCode>SEK</ram:InvoiceCurrencyCode>
+            <ram:InvoiceCurrencyCode>SEK</ram:InvoiceCurrencyCode>            
             <ram:SpecifiedTradeSettlementPaymentMeans>
 				<ram:TypeCode>31</ram:TypeCode>
 				<ram:PayerPartyDebtorFinancialAccount>
@@ -125,7 +124,13 @@
 				<ram:PayerSpecifiedDebtorFinancialInstitution>
 					<ram:BICID>SEXDABCD</ram:BICID>				
 				</ram:PayerSpecifiedDebtorFinancialInstitution>
-            </ram:SpecifiedTradeSettlementPaymentMeans>
+            </ram:SpecifiedTradeSettlementPaymentMeans>           
+            <ram:ApplicableTradeTax>
+                <ram:CalculatedAmount>0</ram:CalculatedAmount>
+                <ram:ExemptionReason>Tax</ram:ExemptionReason>
+                <ram:BasisAmount>3200</ram:BasisAmount>                
+                <ram:CategoryCode>O</ram:CategoryCode>                
+            </ram:ApplicableTradeTax>
             <ram:BillingSpecifiedPeriod>
 				<ram:StartDateTime>
 					<udt:DateTimeString format="102">20130101</udt:DateTimeString>

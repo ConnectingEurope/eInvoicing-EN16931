@@ -124,8 +124,8 @@
                 <ram:RateApplicablePercent>25</ram:RateApplicablePercent>                
             </ram:ApplicableTradeTax>
             <ram:ApplicableTradeTax>
-                <ram:CalculatedAmount>2500</ram:CalculatedAmount>
-                <ram:BasisAmount>300</ram:BasisAmount>                
+                <ram:CalculatedAmount>300</ram:CalculatedAmount>
+                <ram:BasisAmount>2500</ram:BasisAmount>                
                 <ram:CategoryCode>S</ram:CategoryCode>                                
                 <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>

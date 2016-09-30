@@ -74,7 +74,7 @@
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>
             </ram:SpecifiedLineTradeSettlement>
         </ram:IncludedSupplyChainTradeLineItem>
-                <ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
             <ram:AssociatedDocumentLineDocument>
                 <ram:LineID>3</ram:LineID>
             </ram:AssociatedDocumentLineDocument>
@@ -88,7 +88,7 @@
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
-                <ram:BilledQuantity unitCode="C62">100</ram:BilledQuantity>
+                <ram:BilledQuantity unitCode="C62">500</ram:BilledQuantity>
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
@@ -96,7 +96,7 @@
                     <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
-                    <ram:LineTotalAmount>500</ram:LineTotalAmount>
+                    <ram:LineTotalAmount>2500</ram:LineTotalAmount>
                 </ram:SpecifiedTradeSettlementLineMonetarySummation>
             </ram:SpecifiedLineTradeSettlement>
         </ram:IncludedSupplyChainTradeLineItem>
@@ -161,7 +161,7 @@
             <ram:SpecifiedTradeSettlementPaymentMeans>
                 <ram:TypeCode>42</ram:TypeCode>
                 <ram:PayerPartyDebtorFinancialAccount>
-                    <ram:ProprietaryID>DK1212341234123412</ram:ProprietaryID>
+                    <ram:IBANID>DK1212341234123412</ram:IBANID>
                 </ram:PayerPartyDebtorFinancialAccount>
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>
@@ -171,8 +171,8 @@
                 <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
             <ram:ApplicableTradeTax>
-                <ram:CalculatedAmount>2500</ram:CalculatedAmount>
-                <ram:BasisAmount>300</ram:BasisAmount>                
+                <ram:CalculatedAmount>300</ram:CalculatedAmount>
+                <ram:BasisAmount>2500</ram:BasisAmount>                
                 <ram:CategoryCode>S</ram:CategoryCode>                                
                 <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>

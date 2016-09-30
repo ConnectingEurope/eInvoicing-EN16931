@@ -8,7 +8,7 @@
     xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100 ../uncefact/data/standard/CrossIndustryInvoice_100p0.xsd">
     <rsm:ExchangedDocumentContext>
         <ram:BusinessProcessSpecifiedDocumentContextParameter>
-            <ram:ID>1</ram:ID>
+            <ram:ID>P1</ram:ID>
         </ram:BusinessProcessSpecifiedDocumentContextParameter>
         <ram:GuidelineSpecifiedDocumentContextParameter>
             <ram:ID>urn:cen.eu:en16931:2017</ram:ID>
@@ -29,7 +29,7 @@
                 <ram:IncludedNote><ram:Content>Scratch on box</ram:Content></ram:IncludedNote>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>
-                <ram:GlobalID schemeID="0160">1234567890124</ram:GlobalID>
+                <ram:GlobalID schemeID="SRV">1234567890124</ram:GlobalID>
                 <ram:SellerAssignedID>JB007</ram:SellerAssignedID>
                 <ram:Name>Laptop computer</ram:Name>
                 <ram:Description>Processor: Intel Core 2 Duo SU9400 LV (1.4GHz). RAM: 3MB. Screen 1440x900</ram:Description>
@@ -52,7 +52,7 @@
                     <ram:LineID>1</ram:LineID>
                 </ram:BuyerOrderReferencedDocument>
                 <ram:GrossPriceProductTradePrice>
-                    <ram:ChargeAmount>1498.00</ram:ChargeAmount>
+                    <ram:ChargeAmount>1498</ram:ChargeAmount>
                     <ram:BasisQuantity unitCode="NAR">1</ram:BasisQuantity>
                     <ram:AppliedTradeAllowanceCharge>
                         <ram:ChargeIndicator><udt:Indicator>false</udt:Indicator></ram:ChargeIndicator>
@@ -61,6 +61,7 @@
                 </ram:GrossPriceProductTradePrice>
                 <ram:NetPriceProductTradePrice>
                     <ram:ChargeAmount>1273</ram:ChargeAmount>
+                    <ram:BasisQuantity unitCode="NAR">1</ram:BasisQuantity>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
@@ -99,7 +100,7 @@
                 <ram:IncludedNote><ram:Content>Cover is slightly damaged.</ram:Content></ram:IncludedNote>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>
-                <ram:GlobalID schemeID="0160">1234567890125</ram:GlobalID>
+                <ram:GlobalID schemeID="SRV">1234567890125</ram:GlobalID>
                 <ram:SellerAssignedID>JB008</ram:SellerAssignedID>
                 <ram:Name>Returned "Advanced computing" book</ram:Name>                
                 <ram:DesignatedProductClassification>
@@ -142,7 +143,7 @@
                 <ram:LineID>3</ram:LineID>                
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>
-                <ram:GlobalID schemeID="0160">1234567890126</ram:GlobalID>
+                <ram:GlobalID schemeID="SRV">1234567890126</ram:GlobalID>
                 <ram:SellerAssignedID>JB009</ram:SellerAssignedID>
                 <ram:Name>"Computing for dummies" book</ram:Name>                
                 <ram:DesignatedProductClassification>
@@ -166,6 +167,7 @@
                 </ram:GrossPriceProductTradePrice>
                 <ram:NetPriceProductTradePrice>
                     <ram:ChargeAmount>2.48</ram:ChargeAmount>
+                    <ram:BasisQuantity unitCode="NAR">1</ram:BasisQuantity>
                 </ram:NetPriceProductTradePrice>
             </ram:SpecifiedLineTradeAgreement>
             <ram:SpecifiedLineTradeDelivery>
@@ -189,7 +191,7 @@
                 <ram:LineID>4</ram:LineID>                
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>
-                <ram:GlobalID schemeID="0160">1234567890127</ram:GlobalID>
+                <ram:GlobalID schemeID="SRV">1234567890127</ram:GlobalID>
                 <ram:SellerAssignedID>JB010</ram:SellerAssignedID>
                 <ram:Name>Returned IBM 5150 desktop</ram:Name>                
                 <ram:DesignatedProductClassification>
@@ -232,7 +234,7 @@
                 <ram:LineID>5</ram:LineID>                
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>
-                <ram:GlobalID schemeID="0160">1234567890128</ram:GlobalID>
+                <ram:GlobalID schemeID="SRV">1234567890128</ram:GlobalID>
                 <ram:SellerAssignedID>JB011</ram:SellerAssignedID>
                 <ram:Name>Network cable</ram:Name>    
                 <ram:ApplicableProductCharacteristic>
@@ -292,7 +294,7 @@
                     <ram:LineTwo>Suite 123</ram:LineTwo>
                     <ram:CityName>Big city</ram:CityName>
                     <ram:CountryID>NO</ram:CountryID>
-                    <ram:CountrySubDivisionID>RegionA</ram:CountrySubDivisionID>
+                    <ram:CountrySubDivisionName>RegionA</ram:CountrySubDivisionName>                    
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
                     <ram:ID schemeID="VA">123456789MVA</ram:ID>
@@ -315,7 +317,7 @@
                     <ram:LineTwo>Back door</ram:LineTwo>
                     <ram:CityName>Anytown</ram:CityName>
                     <ram:CountryID>NO</ram:CountryID>
-                    <ram:CountrySubDivisionID>RegionB</ram:CountrySubDivisionID>
+                    <ram:CountrySubDivisionName>RegionB</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
                     <ram:ID schemeID="VA">987654321MVA</ram:ID>
@@ -329,7 +331,7 @@
                     <ram:LineTwo>Front door</ram:LineTwo>
                     <ram:CityName>Newtown</ram:CityName>
                     <ram:CountryID>NO</ram:CountryID>
-                    <ram:CountrySubDivisionID>RegionC</ram:CountrySubDivisionID>
+                    <ram:CountrySubDivisionName>RegionC</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
                     <ram:ID schemeID="VA">967611265MVA</ram:ID>
@@ -361,7 +363,7 @@
                     <ram:LineTwo>Side door</ram:LineTwo>
                     <ram:CityName>DeliveryCity</ram:CityName>
                     <ram:CountryID>NO</ram:CountryID>
-                    <ram:CountrySubDivisionID>RegionD</ram:CountrySubDivisionID>
+                    <ram:CountrySubDivisionName>RegionD</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
             </ram:ShipToTradeParty>
             <ram:ActualDeliverySupplyChainEvent>
@@ -381,14 +383,13 @@
                 </ram:SpecifiedLegalOrganization>
             </ram:PayeeTradeParty>
             <ram:SpecifiedTradeSettlementPaymentMeans>
-                <ram:TypeCode>31</ram:TypeCode>
-                <ram:PayerPartyDebtorFinancialAccount>
+                <ram:TypeCode>30</ram:TypeCode>                
+                <ram:PayeePartyCreditorFinancialAccount>
                     <ram:IBANID>NO9386011117947</ram:IBANID>
-                </ram:PayerPartyDebtorFinancialAccount>
-                <ram:PayerSpecifiedDebtorFinancialInstitution>
-                    <ram:BICID>DNBANOKK</ram:BICID>
-                    <ram:SubDivisionBranchFinancialInstitution><ram:ID>9710</ram:ID></ram:SubDivisionBranchFinancialInstitution>
-                </ram:PayerSpecifiedDebtorFinancialInstitution>
+                </ram:PayeePartyCreditorFinancialAccount>
+                <ram:PayeeSpecifiedCreditorFinancialInstitution>
+                    <ram:BICID>DNBANOKK</ram:BICID>                    
+                </ram:PayeeSpecifiedCreditorFinancialInstitution>
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>
                 <ram:CalculatedAmount>365.13</ram:CalculatedAmount>
@@ -458,9 +459,9 @@ Penalty percentage 10% from due date</ram:Description>
                 <ram:AllowanceTotalAmount>100</ram:AllowanceTotalAmount>
                 <ram:TaxBasisTotalAmount>1436.5</ram:TaxBasisTotalAmount>
                 <ram:TaxTotalAmount currencyID="NOK">365.28</ram:TaxTotalAmount>
-                <ram:GrandTotalAmount>1802</ram:GrandTotalAmount>
+                <ram:GrandTotalAmount>1801.78</ram:GrandTotalAmount>
                 <ram:TotalPrepaidAmount>1000</ram:TotalPrepaidAmount>
-                <ram:DuePayableAmount>802</ram:DuePayableAmount>                
+                <ram:DuePayableAmount>801.78</ram:DuePayableAmount>                
             </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
             <ram:ReceivableSpecifiedTradeAccountingAccount>
                 <ram:ID>Project cost code 123</ram:ID>

@@ -85,8 +85,8 @@
             <ram:InvoiceCurrencyCode>DKK</ram:InvoiceCurrencyCode>
             <ram:SpecifiedTradeSettlementPaymentMeans>
                 <ram:TypeCode>42</ram:TypeCode>
-                <ram:PayerPartyDebtorFinancialAccount>
-                    <ram:ProprietaryID>DK1212341234123412</ram:ProprietaryID>
+                <ram:PayerPartyDebtorFinancialAccount>                    
+                    <ram:IBANID>DK1212341234123412</ram:IBANID>
                 </ram:PayerPartyDebtorFinancialAccount>
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>

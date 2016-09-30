@@ -2,7 +2,7 @@
 <!-- Abstract rules for binding CII to EN16931 -->
 <!-- Timestamp: 2016-07-27 22:50:02 +0200 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931-CII">
-    <rule context="$Document_Context">
+    <rule context="$Document_Context ">
         <assert test="$CII-SR-001" flag="warning" id="CII-SR-001">[CII-SR-001] - SpecifiedTransactionID should not be present</assert>
         <assert test="$CII-SR-002" flag="warning" id="CII-SR-002">[CII-SR-002] - TestIndicator should not be present</assert>
         <assert test="$CII-SR-003" flag="warning" id="CII-SR-003">[CII-SR-003] - BusinessProcessSpecifiedDocumentContextParameter should exist maximum once</assert>
@@ -14,7 +14,7 @@
         <assert test="$CII-SR-011" flag="warning" id="CII-SR-011">[CII-SR-011] - SubsetSpecifiedDocumentContextParameter should not be present</assert>
         <assert test="$CII-SR-012" flag="warning" id="CII-SR-012">[CII-SR-012] - MessageStandardSpecifiedDocumentContextParameter should not be present</assert>
     </rule>
-    <rule context="$Exchanged_Document">
+    <rule context="$Exchanged_Document ">
         <assert test="$CII-SR-013" flag="warning" id="CII-SR-013">[CII-SR-013] - Name should not be present</assert>
         <assert test="$CII-SR-014" flag="fatal" id="CII-SR-014">[CII-SR-014] - TypeCode must exist exactly once</assert>
         <assert test="$CII-SR-015" flag="warning" id="CII-SR-015">[CII-SR-015] - DateTime should not be present</assert>
@@ -38,7 +38,7 @@
         <assert test="$CII-SR-033" flag="warning" id="CII-SR-033">[CII-SR-033] - EffectiveSpecifiedPeriod should not be present</assert>
         <assert test="$CII-SR-034" flag="warning" id="CII-SR-034">[CII-SR-034] - IssuerTradeParty should not be present</assert>
     </rule>
-    <rule context="$Invoice_line">
+    <rule context="$Invoice_line ">
         <assert test="$CII-SR-035" flag="warning" id="CII-SR-035">[CII-SR-035] - DescriptionCode should not be present</assert>
         <assert test="$CII-SR-036" flag="warning" id="CII-SR-036">[CII-SR-036] - ParentLineID should not be present</assert>
         <assert test="$CII-SR-037" flag="warning" id="CII-SR-037">[CII-SR-037] - LineStatusCode should not be present</assert>
@@ -51,7 +51,7 @@
         <assert test="$CII-SR-044" flag="warning" id="CII-SR-044">[CII-SR-044] - Subject should not be present</assert>
         <assert test="$CII-SR-221" flag="warning" id="CII-SR-221">[CII-SR-221] - IncludedSubordinateTradeLineItem should not be present</assert>
     </rule>
-    <rule context="$SpecifiedTradeProduct">
+    <rule context="$SpecifiedTradeProduct ">
         <assert test="$CII-SR-045" flag="warning" id="CII-SR-045">[CII-SR-045] - ID should not be present</assert>
         <assert test="$CII-SR-046" flag="fatal" id="CII-SR-046">[CII-SR-046] - schemeID must be present if GlobalID is present</assert>
         
@@ -76,10 +76,10 @@
         <assert test="$CII-SR-066" flag="warning" id="CII-SR-066">[CII-SR-066] - FormattedLatestProductDataChangeDateTime should not be present</assert>
         <assert test="$CII-SR-067" flag="warning" id="CII-SR-067">[CII-SR-067] - ID should not be present</assert>
         <assert test="$CII-SR-068" flag="warning" id="CII-SR-068">[CII-SR-068] - TypeCode should not be present</assert>
-        <assert test="$CII-SR-069" flag="fatal" id="CII-SR-069">[CII-SR-069] - Description should exist maximum once.</assert>
+        
         <assert test="$CII-SR-070" flag="warning" id="CII-SR-070">[CII-SR-070] - ValueMeasure should not be present</assert>
         <assert test="$CII-SR-071" flag="warning" id="CII-SR-071">[CII-SR-071] - MeasurementMethodCode should not be present</assert>
-        <assert test="$CII-SR-072" flag="fatal" id="CII-SR-072">[CII-SR-072] - Value should exist maximum once.</assert>
+    	
         <assert test="$CII-SR-073" flag="warning" id="CII-SR-073">[CII-SR-073] - ValueCode should not be present</assert>
         <assert test="$CII-SR-074" flag="warning" id="CII-SR-074">[CII-SR-074] - ValueDateTime should not be present</assert>
         <assert test="$CII-SR-075" flag="warning" id="CII-SR-075">[CII-SR-075] - ValueIndicator should not be present</assert>
@@ -116,7 +116,11 @@
         <assert test="$CII-SR-102" flag="warning" id="CII-SR-102">[CII-SR-102] - IncludedReferencedProduct should not be present</assert>
         <assert test="$CII-SR-103" flag="warning" id="CII-SR-103">[CII-SR-103] - InformationNote should not be present</assert>
     </rule>
-    <rule context="$SpecifiedLineTradeAgreement">
+	<rule context="$ApplicableProductCharacteristic ">
+		<assert test="$CII-SR-069" flag="fatal" id="CII-SR-069">[CII-SR-069] - Description should exist maximum once.</assert>
+		<assert test="$CII-SR-072" flag="fatal" id="CII-SR-072">[CII-SR-072] - Value should exist maximum once.</assert>
+	</rule>
+    <rule context="$SpecifiedLineTradeAgreement ">
 		<assert test="$CII-SR-104" flag="warning" id="CII-SR-104">[CII-SR-104] - BuyerReference should not be present</assert>
 		<assert test="$CII-SR-105" flag="warning" id="CII-SR-105">[CII-SR-105] - BuyerRequisitionerTradeParty should not be present</assert>
 		<assert test="$CII-SR-106" flag="warning" id="CII-SR-106">[CII-SR-106] - ApplicableTradeDeliveryTerms should not be present</assert>
@@ -174,7 +178,7 @@
 		<assert test="$CII-SR-150" flag="warning" id="CII-SR-150">[CII-SR-150] - IncludedSpecifiedMarketplace should not be present</assert>
 				
     </rule>
-    <rule context="$SpecifiedLineTradeDelivery">
+    <rule context="$SpecifiedLineTradeDelivery ">
 		<assert test="$CII-SR-151" flag="warning" id="CII-SR-151">[CII-SR-151] - RequestedQuantity should not be present</assert>
 		<assert test="$CII-SR-152" flag="warning" id="CII-SR-152">[CII-SR-152] - ReceivedQuantity should not be present</assert>
 		<assert test="$CII-SR-153" flag="warning" id="CII-SR-153">[CII-SR-153] - ChargeFreeQuantity should not be present</assert>
@@ -203,7 +207,7 @@
 		<assert test="$CII-SR-176" flag="warning" id="CII-SR-176">[CII-SR-176] - ConsumptionReportReferencedDocument should not be present</assert>
 		<assert test="$CII-SR-177" flag="warning" id="CII-SR-177">[CII-SR-177] - RequestedQuantity should not be present</assert>
 	</rule>
-	<rule context="$SpecifiedLineTradeSettlement">
+	<rule context="$SpecifiedLineTradeSettlement ">
 		<assert test="$CII-SR-178" flag="warning" id="CII-SR-178">[CII-SR-178] - PaymentReference should not be present</assert>
 		<assert test="$CII-SR-179" flag="warning" id="CII-SR-179">[CII-SR-179] - InvoiceIssuerReference should not be present</assert>
 		<assert test="$CII-SR-180" flag="warning" id="CII-SR-180">[CII-SR-180] - TotalAdjustmentAmount should not be present</assert>
@@ -252,7 +256,7 @@
 		<assert test="$CII-SR-220" flag="warning" id="CII-SR-220">[CII-SR-220] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
 		
     </rule>		
-	<rule context="$ApplicableHeaderTradeAgreement">
+	<rule context="$ApplicableHeaderTradeAgreement ">
 		<assert test="$CII-SR-442" flag="warning" id="CII-SR-442">[CII-SR-442] - Reference should not be present</assert>
 		<assert test="$CII-SR-222" flag="warning" id="CII-SR-222">[CII-SR-222] - RoleCode should not be present</assert>
 		
@@ -354,7 +358,7 @@
 		<assert test="$CII-SR-307" flag="warning" id="CII-SR-307">[CII-SR-307] - Description should not be present</assert>
 		
 	</rule>
-	<rule context="$ApplicableHeaderTradeDelivery">
+	<rule context="$ApplicableHeaderTradeDelivery ">
 		<assert test="$CII-SR-308" flag="warning" id="CII-SR-308">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>
 		
 		<assert test="$CII-SR-309" flag="warning" id="CII-SR-309">[CII-SR-309] - RoleCode should not be present</assert>
@@ -392,7 +396,7 @@
 		<assert test="$CII-SR-338" flag="warning" id="CII-SR-338">[CII-SR-338] - PackingListReferencedDocument should not be present</assert>
 		
 	</rule>
-	<rule context="$ApplicableHeaderTradeSettlement">
+	<rule context="$ApplicableHeaderTradeSettlement ">
 		<assert test="$CII-SR-339" flag="warning" id="CII-SR-339">[CII-SR-339] - DuePayableAmount should not be present</assert>
 		<assert test="$CII-SR-340" flag="warning" id="CII-SR-340">[CII-SR-340] - CreditorReferenceTypeCode should not be present</assert>
 		<assert test="$CII-SR-341" flag="warning" id="CII-SR-341">[CII-SR-341] - CreditorReferenceType should not be present</assert>
@@ -491,7 +495,7 @@
 		<assert test="$CII-SR-437" flag="warning" id="CII-SR-437">[CII-SR-437] - UltimatePayeeTradeParty should not be present</assert>
 		
 	</rule>
-	<rule context="$SpecifiedTradeSettlementHeaderMonetarySummation">
+	<rule context="$SpecifiedTradeSettlementHeaderMonetarySummation ">
 		
 		<assert test="$CII-SR-411" flag="warning" id="CII-SR-411">[CII-SR-411] - InformationAmount should not be present</assert>
 		<assert test="$CII-SR-412" flag="warning" id="CII-SR-412">[CII-SR-412] - TotalDiscountAmount should not be present</assert>
@@ -504,38 +508,38 @@
 		<assert test="$CII-SR-419" flag="warning" id="CII-SR-419">[CII-SR-419] - NetLineTotalAmount should not be present</assert>
 		<assert test="$CII-SR-420" flag="warning" id="CII-SR-420">[CII-SR-420] - NetIncludingTaxesLineTotalAmount should not be present</assert>
 	</rule>
-    <rule context="$Invoice">
+    <rule context="$Invoice ">
         <assert test="$CII-DT-013" flag="fatal" id="CII-DT-013">[CII-DT-013] - languageID should not be present</assert>
         <assert test="$CII-DT-014" flag="fatal" id="CII-DT-014">[CII-DT-014] - languageLocaleID should not be present</assert>
 
         <assert test="$CII-SR-438" flag="warning" id="CII-SR-438">[CII-SR-438] - ValuationBreakdownStatement should not be present</assert>	
     </rule>
-    <rule context="$DocumentContextParameter">
+    <rule context="$DocumentContextParameter ">
         <assert test="$CII-SR-004" flag="warning" id="CII-SR-04">[CII-SR-004] - Value should not be present</assert>
         <assert test="$CII-SR-005" flag="warning" id="CII-SR-05">[CII-SR-005] - SpecifiedDocumentVersion should not be present</assert>
     </rule>
-    <rule context="$IDType">
+    <rule context="$IDType ">
         <assert test="$CII-DT-001" flag="fatal" id="CII-DT-001">[CII-DT-001] - schemeName should not be present</assert>
         <assert test="$CII-DT-002" flag="fatal" id="CII-DT-002">[CII-DT-002] - schemeAgencyName should not be present</assert>
         <assert test="$CII-DT-003" flag="fatal" id="CII-DT-003">[CII-DT-003] - schemeDataURI should not be present</assert>
         <assert test="$CII-DT-004" flag="fatal" id="CII-DT-004">[CII-DT-004] - schemeURI should not be present</assert>
     	<assert test="$CII-DT-097" flag="fatal" id="CII-DT-097">[CII-DT-097] - schemeVersionID should not be present</assert>
     </rule>
-    <rule context="$IDTypeNoAttributes">
+	<rule context="$IDTypeNoAttributes ">
         <assert test="$CII-DT-005" flag="fatal" id="CII-DT-005">[CII-DT-005] - schemeID should not be present</assert>
         <assert test="$CII-DT-006" flag="fatal" id="CII-DT-006">[CII-DT-006] - schemeAgencyID should not be present</assert>
         <assert test="$CII-DT-007" flag="fatal" id="CII-DT-007">[CII-DT-007] - schemeVersionID should not be present</assert>
     </rule>
-    <rule context="$TypeCodeType">
+    <rule context="$TypeCodeType ">
         <assert test="$CII-DT-008" flag="fatal" id="CII-DT-008">[CII-DT-008] - name should not be present</assert>
         <assert test="$CII-DT-009" flag="fatal" id="CII-DT-009">[CII-DT-009] - listURI should not be present</assert>
     </rule>
-    <rule context="$TypeCodeTypeNoAttributes">
+	<rule context="$TypeCodeTypeNoAttributes ">
         <assert test="$CII-DT-010" flag="fatal" id="CII-DT-010">[CII-DT-010] - listID should not be present</assert>
         <assert test="$CII-DT-011" flag="fatal" id="CII-DT-011">[CII-DT-011] - listAgencyID should not be present</assert>
         <assert test="$CII-DT-012" flag="fatal" id="CII-DT-012">[CII-DT-012] - listVersionID should not be present</assert>
     </rule>
-    <rule context="$ReferencedDocumentType">
+    <rule context="$ReferencedDocumentType ">
         <assert test="$CII-DT-015" flag="fatal" id="CII-DT-015">[CII-DT-015] - URIID should not be present</assert>
         <assert test="$CII-DT-016" flag="fatal" id="CII-DT-016">[CII-DT-016] - StatusCode should not be present</assert>
         <assert test="$CII-DT-017" flag="fatal" id="CII-DT-017">[CII-DT-017] - CopyIndicator should not be present</assert>
@@ -553,17 +557,17 @@
         <assert test="$CII-DT-029" flag="fatal" id="CII-DT-029">[CII-DT-029] - IssuerTradeParty should not be present</assert>
         <assert test="$CII-DT-030" flag="fatal" id="CII-DT-030">[CII-DT-030] - AttachedSpecifiedBinaryFile should not be present</assert>
     </rule>
-    <rule context="$AmountType">
+    <rule context="$AmountType ">
         <assert test="$CII-DT-031" flag="fatal" id="CII-DT-031">[CII-DT-031] - currencyID should not be present</assert>
         <assert test="$CII-DT-032" flag="fatal" id="CII-DT-032">[CII-DT-032] - currencyCodeListVersionID should not be present</assert>
 	</rule>
-	<rule context="$QuantityType">
+	<rule context="$QuantityType ">
         <assert test="$CII-DT-033" flag="fatal" id="CII-DT-033">[CII-DT-033] - unitCode should not be present</assert>
         <assert test="$CII-DT-034" flag="fatal" id="CII-DT-034">[CII-DT-034] - unitCodeListID should not be present</assert>
         <assert test="$CII-DT-035" flag="fatal" id="CII-DT-035">[CII-DT-035] - unitCodeListAgencyID should not be present</assert>
         <assert test="$CII-DT-036" flag="fatal" id="CII-DT-036">[CII-DT-036] - unitCodeListAgencyName should not be present</assert>
 	</rule>
-	<rule context="$TradeTaxType">
+	<rule context="$TradeTaxType ">
         <assert test="$CII-DT-037" flag="fatal" id="CII-DT-037">[CII-DT-037] - TypeCode shall be 'VAT'</assert>
         <assert test="$CII-DT-038" flag="warning" id="CII-DT-038">[CII-DT-038] - CalculatedRate should not be present</assert>
         <assert test="$CII-DT-039" flag="warning" id="CII-DT-039">[CII-DT-039] - CalculationSequenceNumeric should not be present</assert>
@@ -597,7 +601,7 @@
         <assert test="$CII-DT-066" flag="warning" id="CII-DT-066">[CII-DT-066] - BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount should not be present</assert>   
         <assert test="$CII-DT-067" flag="warning" id="CII-DT-067">[CII-DT-067] - PlaceApplicableTradeLocation should not be present</assert>        
 	</rule>
-	<rule context="$BillingSpecifiedPeriodType">
+	<rule context="$BillingSpecifiedPeriodType ">
         <assert test="$CII-DT-068" flag="fatal" id="CII-DT-068">[CII-DT-068] - DateTime shall not be used.</assert>
         <assert test="$CII-DT-069" flag="fatal" id="CII-DT-069">[CII-DT-069] - DurationMeasure shall not be used.</assert>
         <assert test="$CII-DT-070" flag="fatal" id="CII-DT-070">[CII-DT-070] - InclusiveIndicator shall not be used.</assert>
@@ -613,7 +617,7 @@
         <assert test="$CII-DT-080" flag="fatal" id="CII-DT-080">[CII-DT-080] - ContinuousIndicator shall not be used.</assert>
         <assert test="$CII-DT-081" flag="fatal" id="CII-DT-081">[CII-DT-081] - PurposeCode shall not be used.</assert>
     </rule>
-    <rule context="$PostalTradeAddressType">
+    <rule context="$PostalTradeAddressType ">
         <assert test="$CII-DT-082" flag="fatal" id="CII-DT-082">[CII-DT-082] - ID shall not be used.</assert>
         <assert test="$CII-DT-083" flag="fatal" id="CII-DT-083">[CII-DT-083] - PostOfficeBox shall not be used.</assert>
         <assert test="$CII-DT-084" flag="fatal" id="CII-DT-084">[CII-DT-084] - BuildingName shall not be used.</assert>

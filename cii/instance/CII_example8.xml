@@ -11,7 +11,7 @@
 		<ram:IssueDateTime>
 			<udt:DateTimeString format="102">20141110</udt:DateTimeString>
 		</ram:IssueDateTime>
-		<ram:LanguageID>nl</ram:LanguageID>
+		<ram:LanguageID>dut</ram:LanguageID>
 		<ram:IncludedNote>
 			<ram:Content>Periodieke afrekening
 U vindt een toelichting op uw factuur via www.enexis.nl/factuur_grootzakelijk
@@ -403,8 +403,7 @@ www.enexis.nl</ram:Content>
 				</ram:SpecifiedTradeSettlementLineMonetarySummation>
 			</ram:SpecifiedLineTradeSettlement>
 		</ram:IncludedSupplyChainTradeLineItem>
-		<ram:ApplicableHeaderTradeAgreement>
-			<ram:Reference>876193831000290806</ram:Reference>
+		<ram:ApplicableHeaderTradeAgreement>			
 			<ram:SellerTradeParty>
 				<ram:Name>Enexis B.V.</ram:Name>
 				<ram:SpecifiedLegalOrganization>
@@ -436,6 +435,10 @@ www.enexis.nl</ram:Content>
 					<ram:CountryID>NL</ram:CountryID>
 				</ram:PostalTradeAddress>
 			</ram:BuyerTradeParty>
+			<ram:AdditionalReferencedDocument>
+				<ram:IssuerAssignedID>876193831000290806</ram:IssuerAssignedID>
+				<ram:TypeCode>130</ram:TypeCode>
+			</ram:AdditionalReferencedDocument>
 		</ram:ApplicableHeaderTradeAgreement>
 		<ram:ApplicableHeaderTradeDelivery>
 			<ram:ShipToTradeParty>
