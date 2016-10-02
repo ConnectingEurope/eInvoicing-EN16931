@@ -23,7 +23,7 @@
       flag="fatal">[CL-03]-currencyID MUST be coded using ISO code list 4217 alpha-3</assert>
   </rule>
   
-  <rule context="//D_2005" flag="fatal">
+  <rule context="//D_2005[not (../D_2380)]" flag="fatal">
     <assert
       test="((not(contains(normalize-space(.), ' ')) and contains(' 3 35 432 ', concat(' ', normalize-space(.), ' '))))"
       flag="fatal">[CL-04]-Value added tax point date code MUST be coded using a restriction of UNTDID 2005</assert>

@@ -15,22 +15,22 @@
 	<param name="EDIFACT-SR-005" value="not(C_C002/D_1000)"/>
 	<param name="EDIFACT-SR-006" value="not(C_C106/D_1056)"/>
 	<param name="EDIFACT-SR-007" value="not(C_C106/D_1060)"/>
-	<param name="EDIFACT-SR-008" value="D_1225='9'"/>
+	<param name="EDIFACT-SR-008" value="not(D_1225)"/>
 	<param name="EDIFACT-SR-009" value="not(D_4343)"/>
 	<param name="EDIFACT-SR-010" value="not(D_1373)"/>
 	
-	<!-- DTM -->
-	<param name="EDIFACT-SR-012" value="C_C507[D_2005='3' or D_2005='35' or D_2005='131' or D_2005='137' or D_2005='167' or D_2005='168' or D_2005='432']"/>
-	<param name="EDIFACT-SR-011" value="count(C_C507[D_2005='3' and not exist(D_2380)]) &lt;=1"/>
-	<param name="EDIFACT-SR-013" value="count(C_C507[D_2005='35' and exist(D_2380)]) &lt;=1"/>
-	<param name="EDIFACT-SR-014" value="count(C_C507[D_2005='131']) &lt;=1"/>
-	<param name="EDIFACT-SR-015" value="count(C_C507[D_2005='137']) =1"/>
-	<param name="EDIFACT-SR-016" value="count(C_C507[D_2005='167']) &lt;=1"/>
-	<param name="EDIFACT-SR-017" value="count(C_C507[D_2005='168']) &lt;=1"/>
-    <param name="EDIFACT-SR-293" value="count(C_C507[D_2005='432'] and not exist(D_2380)) &lt;=1"/>
-   	<param name="EDIFACT-SR-294" value="count(C_C507[D_2005='35' and not exist(D_2380)]) &lt;=1"/>
-
 	<!-- Invoice -->
+	<param name="EDIFACT-SR-012" value="S_DTM/C_C507[D_2005='3' or D_2005='35' or D_2005='131' or D_2005='137' or D_2005='167' or D_2005='168' or D_2005='432']"/>
+	<param name="EDIFACT-SR-011" value="count(S_DTM/C_C507[D_2005='3' and not(D_2380)]) &lt;=1"/>
+	<param name="EDIFACT-SR-013" value="count(S_DTM/C_C507[D_2005='35' and D_2380]) &lt;=1"/>
+	<param name="EDIFACT-SR-014" value="count(S_DTM/C_C507[D_2005='131']) &lt;=1"/>
+	<param name="EDIFACT-SR-015" value="count(S_DTM/C_C507[D_2005='137']) =1"/>
+	<param name="EDIFACT-SR-016" value="count(S_DTM/C_C507[D_2005='167']) &lt;=1"/>
+	<param name="EDIFACT-SR-017" value="count(S_DTM/C_C507[D_2005='168']) &lt;=1"/>
+	<param name="EDIFACT-SR-293" value="count(S_DTM/C_C507[D_2005='432'] and not (D_2380)) &lt;=1"/>
+	<param name="EDIFACT-SR-294" value="count(S_DTM/C_C507[D_2005='35' and not (D_2380)]) &lt;=1"/>
+
+	
 	<param name="EDIFACT-SR-018" value="not(S_PAI)"/>
 	<param name="EDIFACT-SR-019" value="not(S_ALI)"/>
 	<param name="EDIFACT-SR-020" value="not(S_IMD)"/>
@@ -50,7 +50,6 @@
 	<param name="EDIFACT-SR-034" value="not(G_SG55)"/>
 		
 	<!-- FTX -->
-	<param name="EDIFACT-SR-035" value=".[D_4451='GEN' or D_4451='AGM' or D_4451='AAB' or D_4451='DOC' or D_4451='REG' or D_4451='AAT']"/>
 	<param name="EDIFACT-SR-036" value="not(C_C107/D_1131)"/>
 	<param name="EDIFACT-SR-037" value="not(C_C107/D_3055)"/>
 	<param name="EDIFACT-SR-038" value="not(C_C108/D_4440_2 or C_C108/D_4440_3 or C_C108/D_4440_4 or C_C108/D_4440_5)"/>
@@ -72,7 +71,7 @@
 	<param name="EDIFACT-SR-053" value="count(S_RFF/C_C506[D_1153='ATS']) &lt;=1"/>
 	<param name="EDIFACT-SR-054" value="count(S_RFF/C_C506[D_1153='AEP']) &lt;=1"/>
 	<param name="EDIFACT-SR-055" value="(S_DTM/C_C507[D_2005='384']) or not (S_DTM)"/>
-	<param name="EDIFACT-SR-056" value="not(S_DTM/C_C507/D_2379)"/>
+	<param name="EDIFACT-SR-056" value="not(S_DTM/C_C507/D_2379) or (S_RFF/C_C506/D_1153='OI')"/>
 	<param name="EDIFACT-SR-057" value="not(S_GIR) or (S_RFF/C_C506[D_1153='ATS'] and S_GIR[D_7297='14'])"/>
 	<param name="EDIFACT-SR-295" value="not(S_GIR/C_C206/D_7405) and not (S_GIR/C_C206/D_4405) and not (S_GIR/C_C206_2) and not (S_GIR/C_C206_3) and not (S_GIR/C_C206_4) and not (S_GIR/C_C206_5)"/>
 	<param name="EDIFACT-SR-058" value="not(S_LOC)"/>
@@ -88,7 +87,7 @@
 
 	<param name="EDIFACT-SR-067" value="not(S_NAD/C_C058)"/>
 	<param name="EDIFACT-SR-068" value="not(S_NAD[D_3035='LC']/C_C082)"/>
-	<param name="EDIFACT-SR-069" value="not(S_NAD[D_3035!=('SE', 'BY')]/C_C080/D_3036_2)"/>
+	<param name="EDIFACT-SR-069" value="not(S_NAD/C_C080/D_3036_2) or (S_NAD/D_3035=('BY', 'SE'))"/>
 	<param name="EDIFACT-SR-070" value="not(S_NAD/C_C080/D_3036_3 or S_NAD/C_C080/D_3036_4 or S_NAD/C_C080/D_3036_5)"/>
 	<param name="EDIFACT-SR-071" value="not(S_NAD/C_C080/D_3045)"/>
 	<param name="EDIFACT-SR-072" value="not(S_NAD[D_3035='PE']/C_C059)"/>
@@ -102,8 +101,8 @@
 	<param name="EDIFACT-SR-080" value="not(S_NAD[D_3035='PE']/D_3251)"/>
 	<param name="EDIFACT-SR-081" value="not(S_NAD[D_3035='PE']/D_3207)"/>
 	<param name="EDIFACT-SR-082" value="not(S_LOC)"/>
-	<param name="EDIFACT-SR-083" value="(not(.[S_NAD/D_3035=('SE', 'PE')]/S_FII[D_3035='RB'])) 
-		or (.[S_NAD/D_3035='BY']/S_FII[D_3035=('PB', 'BI')])"/>
+	<param name="EDIFACT-SR-083" value="(.[S_NAD/D_3035=('SE', 'PE')]/S_FII[D_3035='RB']) 
+		or (.[S_NAD/D_3035='BY']/S_FII[D_3035=('PB', 'BI')]) or not (./S_FII)"/>
 	<param name="EDIFACT-SR-084" value="not(S_FII/C_C088/D_1131)"/>
 	<param name="EDIFACT-SR-085" value="not(S_FII/C_C088/D_1131_2)"/>
 	<param name="EDIFACT-SR-086" value="not(S_FII/C_C088/D_3055_2)"/>
@@ -122,7 +121,7 @@
 						(.[S_NAD/D_3035='PE']/G_SG3/S_RFF/C_C506[D_1153='GN']) or
 						(.[S_NAD/D_3035='LC']/G_SG3/S_RFF/C_C506[D_1153='VA'])"/>
 	<param name="EDIFACT-SR-097" value="not(G_SG4)"/>
-	<param name="EDIFACT-SR-098" value="not(G_SG5) or G_SG5[S_CTA/D_3139='IC']/S_COM/C_C076[D_3155='EM']/D_3148 
+	<param name="EDIFACT-SR-098" value="not(G_SG5[S_CTA/D_3139='IC']) or G_SG5[S_CTA/D_3139='IC']/S_COM/C_C076/D_3148 
 		"/>
 	<param name="EDIFACT-SR-099" value="not(G_SG5/S_CTA/C_C056/D_3413)"/>
 	<!-- SG7 -->
@@ -145,12 +144,12 @@
 	<param name="EDIFACT-SR-113" value="S_ALC/D_5463=('A', 'C')"/>
 	<param name="EDIFACT-SR-114" value="not(S_ALC/D_4471)"/>
 	<param name="EDIFACT-SR-115" value="not(S_ALC/D_1227)"/>
-	<param name="EDIFACT-SR-116" value="not(S_ALC/C_C214)"/>
+	<param name="EDIFACT-SR-116" value="not(S_ALC/C_C214) or (S_ALC/D_5463='C')"/>
 	<param name="EDIFACT-SR-117" value="not(S_ALI)"/>
 	<param name="EDIFACT-SR-118" value="not(S_FTX)"/>
 	<param name="EDIFACT-SR-119" value="not(G_SG17)"/>
 	<param name="EDIFACT-SR-120" value="not(G_SG18)"/>
-	<param name="EDIFACT-SR-121" value="G_SG19/S_PCD/C_C501[D_5245=('1','2')]/D_5482"/>
+	<param name="EDIFACT-SR-121" value="G_SG19/S_PCD/C_C501[D_5245=('1','2')]/D_5482 or not (G_SG19)"/>
 	<param name="EDIFACT-SR-122" value="not(G_SG19/S_PCD/C_C501/D_5249)"/>
 	<param name="EDIFACT-SR-123" value="not(G_SG19/S_PCD/C_C501/D_1131)"/>
 	<param name="EDIFACT-SR-124" value="not(G_SG19/S_PCD/C_C501/D_3055)"/>
@@ -167,7 +166,7 @@
 	
 	<param name="EDIFACT-SR-134" value="not(G_SG21)"/>
 	
-	<param name="EDIFACT-SR-135" value="G_SG222/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/D_5305"/>
+	<param name="EDIFACT-SR-135" value="G_SG22/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/D_5305"/>
 	
 	<param name="EDIFACT-SR-136" value="not(G_SG22/S_TAX/C_C241/D_1131)"/>
 	<param name="EDIFACT-SR-137" value="not(G_SG22/S_TAX/C_C241/D_3055)"/>
@@ -189,8 +188,7 @@
 	<param name="EDIFACT-SR-151" value="not(S_EFI/C_C099)"/>
 	<param name="EDIFACT-SR-152" value="not(S_EFI/D_1050)"/>
 	<param name="EDIFACT-SR-153" value="not(S_EFI/D_9450)"/>
-	<param name="EDIFACT-SR-154" value="not(S_CED)"/>
-	<param name="EDIFACT-SR-155" value="not(S_RFF)"/>
+	<param name="EDIFACT-SR-154" value="not(S_CED)"/>	
 	<param name="EDIFACT-SR-156" value="not(S_DTM)"/>
 	<param name="EDIFACT-SR-157" value="not(S_QTY)"/>
 	
@@ -202,7 +200,7 @@
 	<param name="EDIFACT-SR-162" value="not(S_LIN/D_1222)"/>
 	<param name="EDIFACT-SR-163" value="not(S_LIN/D_7083)"/>
 	
-	<param name="EDIFACT-SR-164" value="S_PIA[D_4347 = ('1', '5')]"/>
+	<param name="EDIFACT-SR-164" value="S_PIA[D_4347 = ('1', '5')] or not (S_PIA)"/>
 	<param name="EDIFACT-SR-165" value="not(S_PIA/C_C212/D_1131)"/>
 	<param name="EDIFACT-SR-166" value="not(S_PIA/C_C212/D_3055)"/>
 	
@@ -223,7 +221,7 @@
 	<param name="EDIFACT-SR-179" value="not(S_IMD/D_3055)"/>
 	
 	<param name="EDIFACT-SR-180" value="not(S_MEA)"/>
-	<param name="EDIFACT-SR-181" value="S_QTY[C_C186/D_6063='47']/D_6411"/>
+	<param name="EDIFACT-SR-181" value="S_QTY/C_C186[D_6063='47']/D_6411 or not (S_QTY)"/>
 	<param name="EDIFACT-SR-182" value="not(S_PCD)"/>
 	<param name="EDIFACT-SR-183" value="not(S_ALI) or S_ALI/D_3239"/>
 	<param name="EDIFACT-SR-184" value="not(S_ALI/D_9213)"/>
@@ -239,7 +237,7 @@
 	<param name="EDIFACT-SR-193" value="not(S_QVR)"/>
 	<param name="EDIFACT-SR-194" value="not(S_EQD)"/>
 	
-	<param name="EDIFACT-SR-195" value="not(S_FTX) or (S_FTX[D_4451='ACB') and D_4453='1']/C_C108/D_4440) or ((S_FTX[D_4451='ACF' and D_4453='1']/C_C108/D_4440) and (S_FTX[D_4451='ACF' and D_4453='1']/C_C108/D_4440_2))"/>
+	<param name="EDIFACT-SR-195" value="not(S_FTX) or (S_FTX[D_4451='ACB']/C_C108/D_4440) or ((S_FTX[D_4451='ACF']/C_C108/D_4440) and (S_FTX[D_4451='ACF']/C_C108/D_4440_2))"/>
 	<param name="EDIFACT-SR-196" value="not(S_FTX/C_C107/D_1131)"/>
 	<param name="EDIFACT-SR-197" value="not(S_FTX/C_C107/D_3055)"/>
 	<param name="EDIFACT-SR-198" value="not(S_FTX/C_C108/D_4440_3)"/>
@@ -267,7 +265,7 @@
 	<param name="EDIFACT-SR-216" value="not(G_SG30/S_RNG)"/>
 	<param name="EDIFACT-SR-217" value="not(G_SG30/S_DTM)"/>
 	
-	<param name="EDIFACT-SR-218" value="not(G_SG31/S_RFF/C_C506[D_1153=('AVE','ON,'AWQ')]/D_1154)"/>
+	<param name="EDIFACT-SR-218" value="(G_SG31/S_RFF/C_C506[D_1153=('AVE','AWQ')]/D_1154) or (G_SG31/S_RFF/C_C506[D_1153='ON']/D_1156) or not (G_SG31)"/>
 	<param name="EDIFACT-SR-219" value="not(G_SG31/S_RFF/C_C506[D_1153!='ON']/D_1156)"/>
 	<param name="EDIFACT-SR-220" value="not(G_SG31/S_RFF/C_C506/D_1056)"/>
 	<param name="EDIFACT-SR-221" value="not(G_SG31/S_RFF/C_C506/D_1060)"/>
@@ -296,18 +294,18 @@
 	
 	<param name="EDIFACT-SR-242" value="not(G_SG36)"/>
 	
-	<param name="EDIFACT-SR-243" value="G_SG40[S_ALC/D_5463='A']/G_SG43/S_MOA/C_C516[D_5025='509']/D_5004 or 
+	<param name="EDIFACT-SR-243" value="not (G_SG40) or G_SG40[S_ALC/D_5463='A']/G_SG43/S_MOA/C_C516[D_5025='509']/D_5004 or 
 		G_SG40[G_SG43/S_MOA/C_C516/D_5025='204']/S_ALC[D_5463='A']/C_C552/D_1230 or
 		G_SG40[G_SG43/S_MOA/C_C516/D_5025='23']/S_ALC[D_5463='C']/C_C552/D_1230 "/>
 	<param name="EDIFACT-SR-244" value="not(G_SG40/S_ALC/D_4471)"/>
 	<param name="EDIFACT-SR-245" value="not(G_SG40/S_ALC/D_1227)"/>
-	<param name="EDIFACT-SR-246" value="not(G_SG40/S_ALC/C_C214)"/>
+	<param name="EDIFACT-SR-246" value="not(G_SG40/S_ALC/C_C214)  or (G_SG40/S_ALC/D_5463='C')"/>
 	<param name="EDIFACT-SR-247" value="not(G_SG40/S_ALI)"/>
 	<param name="EDIFACT-SR-248" value="not(G_SG40/S_DTM)"/>
 	<param name="EDIFACT-SR-249" value="not(G_SG40/S_FTX)"/>
 	<param name="EDIFACT-SR-250" value="not(G_SG40/G_SG41)"/>	
-	<param name="EDIFACT-SR-251" value="(G_SG40[A_ALC/D_5463='A']/G_SG42/S_PCD/C_C501[D_5245='1']/D_5482) or 
-		(G_SG40[A_ALC/D_5463='C']/G_SG42/S_PCD/C_C501[D_5245='2']/D_5482) or
+	<param name="EDIFACT-SR-251" value="(G_SG40[S_ALC/D_5463='A']/G_SG42/S_PCD/C_C501[D_5245='1']/D_5482) or 
+		(G_SG40[S_ALC/D_5463='C']/G_SG42/S_PCD/C_C501[D_5245='2']/D_5482) or
 		not(G_SG40/G_SG42)"/>
 	<param name="EDIFACT-SR-252" value="not(G_SG40/G_SG42/S_PCD/C_C501/D_5249)"/>
 	<param name="EDIFACT-SR-253" value="not(G_SG40/G_SG42/S_PCD/C_C501/D_1131)"/>
@@ -337,11 +335,8 @@
 	<param name="EDIFACT-SR-275" value="not(G_SG53)"/>
 	
 	<!-- SG54 -->
-	<param name="EDIFACT-SR-276" value="(
-		(S_TAX[D_5283='7' and C_C241/D_5153='VAT']/D_5305) and 
-		(S_MOA/C_C516[D_5025 = ('124', '125')]/D_5004)
-		) 
-		)"/>
+	<param name="EDIFACT-SR-276" value="(S_TAX[D_5283='7' and C_C241/D_5153='VAT']/D_5305) and 
+		(S_MOA/C_C516[D_5025 = ('124', '125')]/D_5004)"/>
 	<param name="EDIFACT-SR-277" value="not(S_TAX/C_C241/D_1131)"/>
 	<param name="EDIFACT-SR-278" value="not(S_TAX/C_C241/D_3055)"/>
 	<param name="EDIFACT-SR-279" value="not(S_TAX/C_C241/D_5152)"/>
@@ -362,11 +357,10 @@
 	
 	
 	<!-- segments, groups and composites -->
-    <param name="UNH" value="/M_INVOIC/S_UNH"/>
-    <param name="BGM" value="/M_INVOIC/S_BGM"/>
-    <param name="DTM" value="/M_INVOIC/S_DTM"/>
-    <param name="Invoice" value="/M_INVOIC"/>
-    <param name="FTX" value="/M_INVOIC/S_FTX"/>
+    <param name="UNH " value="/M_INVOIC/S_UNH"/>
+    <param name="BGM " value="/M_INVOIC/S_BGM"/>    
+    <param name="Invoice " value="/M_INVOIC"/>
+    <param name="FTX " value="/M_INVOIC/S_FTX"/>
     <param name="SG1 " value="/M_INVOIC/G_SG1"/>
     <param name="SG2 " value="/M_INVOIC/G_SG2"/>
 	<param name="SG7 " value="/M_INVOIC/G_SG7"/>

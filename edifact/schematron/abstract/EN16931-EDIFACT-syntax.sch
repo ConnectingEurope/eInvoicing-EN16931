@@ -3,13 +3,13 @@
 <!-- Abstract rules for binding EDIFACT to EN16931 -->
 <!-- Timestamp: 2016-07-27 22:50:02 +0200 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931-SYNTAX">
-    <rule context="$UNH">
+    <rule context="$UNH ">
         <assert test="$EDIFACT-SR-001" flag="warning" id="EDIFACT-SR-001">[EDIFACT-SR-001] - Common
             access reference should not be used</assert>
         <assert test="$EDIFACT-SR-002" flag="warning" id="EDIFACT-SR-002">[EDIFACT-SR-002] - Status
             of the transfer should not be used</assert>
     </rule>
-    <rule context="$BGM">
+    <rule context="$BGM ">
         <assert test="$EDIFACT-SR-003" flag="warning" id="EDIFACT-SR-003">[EDIFACT-SR-003] - Code
             list identification code should not be used</assert>
         <assert test="$EDIFACT-SR-004" flag="warning" id="EDIFACT-SR-004">[EDIFACT-SR-004] - Code
@@ -21,14 +21,14 @@
         <assert test="$EDIFACT-SR-007" flag="warning" id="EDIFACT-SR-007">[EDIFACT-SR-007] -
             Revision identifier should not be used</assert>
         <assert test="$EDIFACT-SR-008" flag="warning" id="EDIFACT-SR-008">[EDIFACT-SR-008] - Message
-            function code should be 9 (Original)</assert>
+            function code should not be used</assert>
         <assert test="$EDIFACT-SR-009" flag="warning" id="EDIFACT-SR-009">[EDIFACT-SR-009] -
             Response type code should not be used</assert>
         <assert test="$EDIFACT-SR-010" flag="warning" id="EDIFACT-SR-010">[EDIFACT-SR-010] -
             Document status code should not be used</assert>
         
     </rule>
-    <rule context="$DTM">
+    <rule context="$Invoice ">
         <assert test="$EDIFACT-SR-011" flag="fatal" id="EDIFACT-SR-011">[EDIFACT-SR-011] - The
             tax point code with invoice issue date may only be stated once</assert>
         <assert test="$EDIFACT-SR-012" flag="warning" id="EDIFACT-SR-012">[EDIFACT-SR-012] - Only
@@ -36,9 +36,10 @@
         <assert test="$EDIFACT-SR-013" flag="fatal" id="EDIFACT-SR-013">[EDIFACT-SR-013] - The
             actual delivery date may only be stated once</assert>
         <assert test="$EDIFACT-SR-014" flag="fatal" id="EDIFACT-SR-014">[EDIFACT-SR-014] - The value
-            added tax point date may only be stated once</assert>
+            added tax point date may only be stated once</assert>        
         <assert test="$EDIFACT-SR-015" flag="fatal" id="EDIFACT-SR-015">[EDIFACT-SR-015] - The
             invoice issue date must be stated once</assert>
+        
         <assert test="$EDIFACT-SR-016" flag="fatal" id="EDIFACT-SR-016">[EDIFACT-SR-016] - The
             invoice period start date may only be stated once</assert>
         <assert test="$EDIFACT-SR-017" flag="fatal" id="EDIFACT-SR-017">[EDIFACT-SR-017] - The
@@ -47,8 +48,8 @@
             tax point code with paid to date may only be stated once</assert>
             <assert test="$EDIFACT-SR-294" flag="fatal" id="EDIFACT-SR-294">[EDIFACT-SR-294] - The
             tax point code with actual delivery date may only be stated once</assert>
-    </rule>
-    <rule context="$Invoice">
+    
+    
         <assert test="$EDIFACT-SR-018" flag="warning" id="EDIFACT-SR-018">[EDIFACT-SR-018] - The PAI
             segment should not be used</assert>
         <assert test="$EDIFACT-SR-019" flag="warning" id="EDIFACT-SR-019">[EDIFACT-SR-019] - The ALI
@@ -84,9 +85,8 @@
         <assert test="$EDIFACT-SR-034" flag="warning" id="EDIFACT-SR-034">[EDIFACT-SR-034] - The
             SG55 segment group should not be used</assert>
     </rule>
-    <rule context="$FTX">
-        <assert test="$EDIFACT-SR-035" flag="warning" id="EDIFACT-SR-035">[EDIFACT-SR-035] - Only
-            values GEN, AGM, DOC, REG, AAT or AAB should be used</assert>
+    <rule context="$FTX ">
+        
         <assert test="$EDIFACT-SR-036" flag="warning" id="EDIFACT-SR-036">[EDIFACT-SR-036] - Code
             list identification code should not be used</assert>
         <assert test="$EDIFACT-SR-037" flag="warning" id="EDIFACT-SR-037">[EDIFACT-SR-037] - Code
@@ -306,8 +306,7 @@
         <assert test="$EDIFACT-SR-151" flag="warning" id="EDIFACT-SR-151">[EDIFACT-SR-151] - The C099 composite should not be used</assert>
         <assert test="$EDIFACT-SR-152" flag="warning" id="EDIFACT-SR-152">[EDIFACT-SR-152] - The Sequence position identifier should not be used</assert>
         <assert test="$EDIFACT-SR-153" flag="warning" id="EDIFACT-SR-153">[EDIFACT-SR-153] - The File compression technique name should not be used</assert>
-        <assert test="$EDIFACT-SR-154" flag="warning" id="EDIFACT-SR-154">[EDIFACT-SR-154] - The CED segment should not be used</assert>
-        <assert test="$EDIFACT-SR-155" flag="warning" id="EDIFACT-SR-155">[EDIFACT-SR-155] - The RFF segment should not be used</assert>
+        <assert test="$EDIFACT-SR-154" flag="warning" id="EDIFACT-SR-154">[EDIFACT-SR-154] - The CED segment should not be used</assert>        
         <assert test="$EDIFACT-SR-156" flag="warning" id="EDIFACT-SR-156">[EDIFACT-SR-156] - The DTM segment should not be used</assert>
         <assert test="$EDIFACT-SR-157" flag="warning" id="EDIFACT-SR-157">[EDIFACT-SR-157] - The QTY segment should not be used</assert>
     </rule>
@@ -387,7 +386,7 @@
         <assert test="$EDIFACT-SR-216" flag="warning" id="EDIFACT-SR-216">[EDIFACT-SR-216] - The RNG segment should not be used</assert>
         <assert test="$EDIFACT-SR-217" flag="warning" id="EDIFACT-SR-217">[EDIFACT-SR-217] - The DTM segment should not be used</assert>
         
-        <assert test="$EDIFACT-SR-218" flag="warning" id="EDIFACT-SR-218">[EDIFACT-SR-218] - Only the Invoiced line object identifier, the Referenced purchase order line identifier or the Buyer accounting reference should be used</assert>
+        <assert test="$EDIFACT-SR-218" flag="warning" id="EDIFACT-SR-218">[EDIFACT-SR-218] - Only the Invoiced line object identifier, the Referenced purchase order line identifier or the Buyer accounting reference should be used with the line item RFF</assert>
         <assert test="$EDIFACT-SR-219" flag="warning" id="EDIFACT-SR-219">[EDIFACT-SR-219] - The Document line identifier should only be used with a referenced purchase order</assert>        
         <assert test="$EDIFACT-SR-220" flag="warning" id="EDIFACT-SR-220">[EDIFACT-SR-220] - The Version identifier should not be used</assert>
         <assert test="$EDIFACT-SR-221" flag="warning" id="EDIFACT-SR-221">[EDIFACT-SR-221] - The Revision identifier should not be used</assert>
