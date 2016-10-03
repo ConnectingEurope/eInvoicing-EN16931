@@ -39,6 +39,12 @@
 		</C_C507>
 	</S_DTM>
 	<S_FTX>
+		<D_4451>AAB</D_4451>
+		<C_C108>
+			<D_4440>Payment within 30 days</D_4440>
+		</C_C108>
+	</S_FTX>
+	<S_FTX>
 		<D_4451>GEN</D_4451>
 		<C_C108>
 			<D_4440>Testscenario 7</D_4440>
@@ -356,7 +362,7 @@
 		</S_MOA>
 	</G_SG54>
 	<S_UNT>
-		<D_0074>48</D_0074>
+		<D_0074>49</D_0074>
 		<D_0062>INVOICE_test_7</D_0062>
 	</S_UNT>
 </M_INVOIC>

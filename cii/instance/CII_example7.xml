@@ -157,6 +157,9 @@
                     <udt:DateTimeString format="102">20131231</udt:DateTimeString>
                 </ram:EndDateTime>
             </ram:BillingSpecifiedPeriod>
+            <ram:SpecifiedTradePaymentTerms>
+                <ram:Description>Payment within 30 days</ram:Description>
+            </ram:SpecifiedTradePaymentTerms>
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 <ram:LineTotalAmount>3200</ram:LineTotalAmount>
                 <ram:TaxBasisTotalAmount>3200</ram:TaxBasisTotalAmount>

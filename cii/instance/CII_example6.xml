@@ -129,6 +129,9 @@
                 <ram:CategoryCode>S</ram:CategoryCode>
                 <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradePaymentTerms>
+                <ram:DueDateDateTime/>
+            </ram:SpecifiedTradePaymentTerms>
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 <ram:LineTotalAmount>4000</ram:LineTotalAmount>
                 <ram:TaxBasisTotalAmount>4000</ram:TaxBasisTotalAmount>
