@@ -244,7 +244,7 @@
 				
 		<assert test="$CII-SR-209" flag="warning" id="CII-SR-209">[CII-SR-209] - SpecifiedFinancialAdjustment should not be present</assert>
 		<assert test="$CII-SR-210" flag="warning" id="CII-SR-210">[CII-SR-210] - InvoiceReferencedDocument should not be present</assert>
-		<assert test="$CII-SR-211" flag="warning" id="CII-SR-211">[CII-SR-211] - AdditionalReferencedDocument should not be present</assert>
+		
 		<assert test="$CII-SR-212" flag="warning" id="CII-SR-212">[CII-SR-212] - PayableSpecifiedTradeAccountingAccount should not be present</assert>
 		<assert test="$CII-SR-213" flag="warning" id="CII-SR-213">[CII-SR-213] - SetTriggerCode should not be present</assert>
 		<assert test="$CII-SR-214" flag="warning" id="CII-SR-214">[CII-SR-214] - TypeCode should not be present</assert>

@@ -237,7 +237,7 @@
 	
 	<param name="CII-SR-209" value="not(ram:SpecifiedFinancialAdjustment)"/>
 	<param name="CII-SR-210" value="not(ram:InvoiceReferencedDocument)"/>
-	<param name="CII-SR-211" value="not(ram:AdditionalReferencedDocument)"/>
+	
 	<param name="CII-SR-212" value="not(ram:PayableSpecifiedTradeAccountingAccount)"/>
 	<param name="CII-SR-213" value="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:SetTriggerCode)"/>
 	<param name="CII-SR-214" value="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:TypeCode)"/>
@@ -539,7 +539,7 @@
 	<param name="CII-DT-035" value="not(@unitCodeListAgencyID)"/>
 	<param name="CII-DT-036" value="not(@unitCodeListAgencyName)"/>
 	<!-- TradeTaxType -->
-	<param name="CII-DT-037" value="not(ram:TypeCode) or (ram:TypeCode and not(ram:TypeCode = 'VAT'))"/>
+	<param name="CII-DT-037" value="not(ram:TypeCode) or (ram:TypeCode = 'VAT')"/>
 	<param name="CII-DT-038" value="not(ram:CalculatedRate)"/>
 	<param name="CII-DT-039" value="not(ram:CalculationSequenceNumeric)"/>
 	<param name="CII-DT-040" value="not(ram:BasisQuantity)"/>

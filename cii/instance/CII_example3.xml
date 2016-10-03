@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rsm:CrossIndustryInvoice
+<rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
     xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:19"
     xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:19"
     xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:19"
-    xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100 ../uncefact/data/standard/CrossIndustryInvoice_100p0.xsd">
     <rsm:ExchangedDocumentContext>
@@ -17,7 +15,9 @@
         <ram:IssueDateTime>
             <udt:DateTimeString format="102">20130410</udt:DateTimeString>
         </ram:IssueDateTime>
-        <ram:IncludedNote><ram:Content>Contract was established through our website</ram:Content></ram:IncludedNote>
+        <ram:IncludedNote>
+            <ram:Content>Contract was established through our website</ram:Content>
+        </ram:IncludedNote>
     </rsm:ExchangedDocument>
     <rsm:SupplyChainTradeTransaction>
         <ram:IncludedSupplyChainTradeLineItem>
@@ -38,6 +38,7 @@
             </ram:SpecifiedLineTradeDelivery>
             <ram:SpecifiedLineTradeSettlement>
                 <ram:ApplicableTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
                     <ram:CategoryCode>S</ram:CategoryCode>
                     <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
                 </ram:ApplicableTradeTax>
@@ -48,12 +49,14 @@
         </ram:IncludedSupplyChainTradeLineItem>
         <ram:ApplicableHeaderTradeAgreement>
             <ram:SellerTradeParty>
-                <ram:Name>Subscription Seller</ram:Name>
+                <ram:Name>SubscriptionSeller</ram:Name>
                 <ram:SpecifiedLegalOrganization>
                     <ram:ID>DK16356706</ram:ID>
                 </ram:SpecifiedLegalOrganization>
                 <ram:DefinedTradeContact>
-                    <ram:EmailURIUniversalCommunication><ram:URIID>antonio@SubscriptionsSeller.dk</ram:URIID></ram:EmailURIUniversalCommunication>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID>antonio@SubscriptionsSeller.dk</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
                 </ram:DefinedTradeContact>
                 <ram:PostalTradeAddress>
                     <ram:PostcodeCode>54321</ram:PostcodeCode>
@@ -72,30 +75,37 @@
                     <ram:PostcodeCode>101</ram:PostcodeCode>
                     <ram:LineOne>Anystreet, Building 1</ram:LineOne>
                     <ram:CityName>Anytown</ram:CityName>
-                    <ram:CountryID>DK</ram:CountryID>                    
+                    <ram:CountryID>DK</ram:CountryID>
                 </ram:PostalTradeAddress>
             </ram:BuyerTradeParty>
             <ram:ContractReferencedDocument>
                 <ram:IssuerAssignedID>SUBSCR571</ram:IssuerAssignedID>
             </ram:ContractReferencedDocument>
         </ram:ApplicableHeaderTradeAgreement>
-        <ram:ApplicableHeaderTradeDelivery />
+        <ram:ApplicableHeaderTradeDelivery/>
         <ram:ApplicableHeaderTradeSettlement>
             <ram:PaymentReference>Payref1</ram:PaymentReference>
             <ram:InvoiceCurrencyCode>DKK</ram:InvoiceCurrencyCode>
             <ram:SpecifiedTradeSettlementPaymentMeans>
-                <ram:TypeCode>42</ram:TypeCode>
-                <ram:PayerPartyDebtorFinancialAccount>                    
+                <ram:TypeCode>30</ram:TypeCode>
+                <ram:PayeePartyCreditorFinancialAccount>
                     <ram:IBANID>DK1212341234123412</ram:IBANID>
-                </ram:PayerPartyDebtorFinancialAccount>
+                </ram:PayeePartyCreditorFinancialAccount>
+            </ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:SpecifiedTradeSettlementPaymentMeans>
+                <ram:TypeCode>30</ram:TypeCode>
+                <ram:PayeePartyCreditorFinancialAccount>
+                    <ram:IBANID>DK1212341234123412</ram:IBANID>
+                </ram:PayeePartyCreditorFinancialAccount>
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>
                 <ram:CalculatedAmount>225</ram:CalculatedAmount>
-                <ram:BasisAmount>900</ram:BasisAmount>                
-                <ram:CategoryCode>S</ram:CategoryCode>                                
+                <ram:TypeCode>VAT</ram:TypeCode>
+                <ram:BasisAmount>900</ram:BasisAmount>
+                <ram:CategoryCode>S</ram:CategoryCode>
                 <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
             </ram:ApplicableTradeTax>
-            <ram:BillingSpecifiedPeriod>                
+            <ram:BillingSpecifiedPeriod>
                 <ram:StartDateTime>
                     <udt:DateTimeString format="102">20130101</udt:DateTimeString>
                 </ram:StartDateTime>
@@ -104,19 +114,20 @@
                 </ram:EndDateTime>
             </ram:BillingSpecifiedPeriod>
             <ram:SpecifiedTradeAllowanceCharge>
-                <ram:ChargeIndicator><udt:Indicator>true</udt:Indicator></ram:ChargeIndicator>
+                <ram:ChargeIndicator>
+                    <udt:Indicator>true</udt:Indicator>
+                </ram:ChargeIndicator>
                 <ram:ActualAmount>100</ram:ActualAmount>
-                <ram:ReasonCode>94</ram:ReasonCode>
+                <ram:ReasonCode>FC</ram:ReasonCode>
                 <ram:Reason>Freight charge</ram:Reason>
                 <ram:CategoryTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
                     <ram:CategoryCode>S</ram:CategoryCode>
                     <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
                 </ram:CategoryTradeTax>
             </ram:SpecifiedTradeAllowanceCharge>
             <ram:SpecifiedTradePaymentTerms>
-                <ram:DueDateDateTime>
-                    <udt:DateTimeString format="102">20130510</udt:DateTimeString>
-                </ram:DueDateDateTime>
+                <ram:DueDateDateTime/>
             </ram:SpecifiedTradePaymentTerms>
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 <ram:LineTotalAmount>800</ram:LineTotalAmount>
@@ -124,7 +135,7 @@
                 <ram:TaxBasisTotalAmount>900</ram:TaxBasisTotalAmount>
                 <ram:TaxTotalAmount currencyID="DKK">225</ram:TaxTotalAmount>
                 <ram:GrandTotalAmount>1125</ram:GrandTotalAmount>
-                <ram:DuePayableAmount>1125</ram:DuePayableAmount>                
+                <ram:DuePayableAmount>1125</ram:DuePayableAmount>
             </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
         </ram:ApplicableHeaderTradeSettlement>
     </rsm:SupplyChainTradeTransaction>
