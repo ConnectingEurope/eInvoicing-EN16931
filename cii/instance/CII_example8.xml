@@ -11,7 +11,7 @@
     </rsm:ExchangedDocumentContext>
     <rsm:ExchangedDocument>
         <ram:ID>1100512149</ram:ID>
-        <ram:TypeCode>Invoice</ram:TypeCode>
+        <ram:TypeCode>380</ram:TypeCode>
         <ram:IssueDateTime>
             <udt:DateTimeString format="102">20141110</udt:DateTimeString>
         </ram:IssueDateTime>
