@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:swift:xsd:tsin.004.001.01 tsin.004.001.01.xsd"
+ xmlns="urn:swift:xsd:tsin.004.001.01">
+    <FinInvc>
+        <InvcHdr>
+            <Id>101232</Id>
+            <TpCd>CINV</TpCd>
+            <IsseDtTm>2010-11-11T18:13:51</IsseDtTm>
+            <InclNote>
+                <InfTp>SHPM</InfTp>
+                <InfVal>MKUS3411189</InfVal>
+            </InclNote>
+        </InvcHdr>
+        <TradAgrmt>
+            <Buyr>
+                <PtyId>
+                    <Nm>Finnish Timber Ltd</Nm>
+                    <PstlAdr>
+                       <AdrTp>BIZZ</AdrTp> 
+                       <StrtNm>Timber street 3</StrtNm>
+                       <PstCd>00100</PstCd> 
+                       <TwnNm>Helsinki</TwnNm> 
+                       <Ctry>FI</Ctry>  
+                    </PstlAdr>
+                    <CtryOfRes>FI</CtryOfRes>
+                </PtyId>
+                <LglOrg>
+                    <Id>654235</Id>
+                    <Nm>Finnish Timber Ltd</Nm>
+                </LglOrg>
+                <TaxPty>
+                    <TaxId>FI654235</TaxId>
+                    <TaxTp>VAT</TaxTp>
+                    <RegnId>RegnId1</RegnId>
+                    <TaxXmptnRsn>
+                        <Ustrd>International transport VAT exempt pursuant to Art. 144 and 146(1)(e) of Council Directive 2006/112/EC</Ustrd>
+                    </TaxXmptnRsn>
+                    <TaxXmptnRsn>
+                        <Ustrd>Intra-Community transport subject to reserve charge pursuant to Art 196 of Council Directive 2006/112/EC.</Ustrd>
+                    </TaxXmptnRsn>
+                    <TaxXmptnRsn>
+                        <Ustrd>VAT exempt pursuant to Art. 144 and 146(1)(e) of Council Directive 2006/112/EC</Ustrd>
+                    </TaxXmptnRsn>                    
+                </TaxPty>
+            </Buyr>
+            <Sellr>
+                <PtyId>
+                    <Nm>Swiss Furniture AG</Nm>
+                    <PstlAdr>
+                       <AdrTp>BIZZ</AdrTp> 
+                       <StrtNm>Bern Strasse 35</StrtNm>
+                       <PstCd>3097</PstCd> 
+                       <TwnNm>Bern</TwnNm> 
+                       <Ctry>CH</Ctry>   
+                    </PstlAdr>
+                </PtyId>
+             </Sellr>
+            <CtrctDocId>
+                <Id>A6645089DFH</Id>
+                <DtOfIsse>2009-06-07</DtOfIsse>
+            </CtrctDocId>
+            <BuyrOrdrIdDoc>
+                <Id>OR3344</Id>
+                <DtOfIsse>2010-10-15</DtOfIsse>
+            </BuyrOrdrIdDoc>
+        </TradAgrmt>
+        <TradDlvry>
+            <ShipTo>
+                <PtyId>
+                     <Nm>Furniture Manufacturing B.V</Nm>
+                    <PstlAdr>
+                       <StrtNm>Hintzenweg 12</StrtNm>
+                       <PstCd>3068 AX</PstCd> 
+                       <TwnNm>Rotterdam</TwnNm> 
+                       <Ctry>NL</Ctry>    
+                    </PstlAdr>
+                </PtyId>
+                 <TaxPty>
+                    <TaxId>NL123456789B23</TaxId>
+                    <TaxTp>VAT</TaxTp>
+                </TaxPty>
+            </ShipTo>
+            <DlvryNote>
+                <Id>DLVRY5633256</Id>
+                <DtOfIsse>2010-11-08</DtOfIsse>
+            </DlvryNote>
+            <Consgnmt>
+                <TrnsprtMeans>
+                    <MdCd>1</MdCd>
+                     <Nm>Blue Sea Swan</Nm>
+                </TrnsprtMeans>
+            </Consgnmt>
+        </TradDlvry>
+        <TradSttlm>
+            <DuePyblAmt Ccy="EUR">12414.62</DuePyblAmt>
+            <DuePyblAmt Ccy="CHF">17017.96</DuePyblAmt>            
+            <CdtrRef>
+                <Tp>
+                    <CdOrPrtry>
+                        <Cd>SCOR</Cd>
+                    </CdOrPrtry>
+                    <Issr>ISO</Issr>
+                </Tp>
+                <Ref>RF02 4325 6216</Ref>
+            </CdtrRef>
+            <PmtRef>4325 6216</PmtRef>
+            <InvcCcyCd>EUR</InvcCcyCd>
+            <InvcCcyXchg>
+                <TrgtCcy>DKK</TrgtCcy>
+                <SrcCcy>EUR</SrcCcy>
+                <XchgRateInf>
+                    <XchgRate>7.4562</XchgRate>
+                    <RateTp>SPOT</RateTp>
+                </XchgRateInf>
+            </InvcCcyXchg>
+            <PmtCcyXchg>
+                <TrgtCcy>CHF</TrgtCcy>
+                <SrcCcy>EUR</SrcCcy>
+                <XchgRateInf>
+                    <XchgRate>1.3708</XchgRate>
+                    <RateTp>SPOT</RateTp>
+                </XchgRateInf>
+            </PmtCcyXchg>
+            <PmtMeans>
+                <PmtTp>
+                    <InstrPrty>NORM</InstrPrty>
+                </PmtTp>
+                <PmtMtdCd>TRA</PmtMtdCd>
+                <PyeeCdtrAcct>
+                    <Id>
+                        <IBAN>FI56894534</IBAN>
+                    </Id>
+                    <Ccy>EUR</Ccy>
+                 </PyeeCdtrAcct>
+                <PyeeFI>
+                    <FinInstnId>
+                       <BIC>OKOYFIHH</BIC>
+                       <Nm>Pohjola Bank</Nm> 
+                    </FinInstnId>
+                </PyeeFI>
+            </PmtMeans>
+            <PmtMeans>
+                <PmtTp>
+                    <InstrPrty>NORM</InstrPrty>
+                </PmtTp>
+                <PmtMtdCd>TRA</PmtMtdCd>
+                <PyeeCdtrAcct>
+                    <Id>
+                        <IBAN>FI333444567</IBAN>
+                    </Id>
+                    <Ccy>CHF</Ccy>
+                 </PyeeCdtrAcct>
+                <PyeeFI>
+                    <FinInstnId>
+                       <BIC>NDEAFIHH</BIC>
+                       <Nm>Nordea Bank Finland</Nm> 
+                    </FinInstnId>
+                </PyeeFI>
+            </PmtMeans>
+            <SubTtlClctdTax>
+                <CtgyCd>VAT</CtgyCd>
+                <ClctdAmt Ccy="EUR">1728.45</ClctdAmt>
+                <ClctdAmt Ccy="CHF">2369.36</ClctdAmt>
+                <ClctdRate>23</ClctdRate>
+            </SubTtlClctdTax>
+            <SubTtlClctdTax>
+                <CtgyCd>VAT</CtgyCd>
+                <ClctdAmt Ccy="EUR">220.00</ClctdAmt>
+                <ClctdAmt Ccy="CHF">303.16</ClctdAmt>
+                <ClctdRate>8</ClctdRate>
+            </SubTtlClctdTax>
+            <PmtTerms>
+                <DueDt>2010-12-10</DueDt>
+                <PnltyPctRate>8</PnltyPctRate>
+            </PmtTerms>
+            <MntrySummtn>
+                <TaxTtlAmt Ccy="EUR">1948.45</TaxTtlAmt>
+                <TaxTtlAmt Ccy="CHF">2670.94</TaxTtlAmt>
+                <TaxBsisAmt Ccy="EUR">10466.17</TaxBsisAmt>
+                <TaxBsisAmt Ccy="CHF">14347.03</TaxBsisAmt>                                                
+                <GrdTtlAmt Ccy="EUR">12414.62</GrdTtlAmt>
+                <GrdTtlAmt Ccy="CHF">117017.96</GrdTtlAmt>                
+            </MntrySummtn>
+        </TradSttlm>
+        <LineItm>
+            <Id>01</Id>
+            <TradPdct>
+                <Nm>Timber  A</Nm>
+            </TradPdct>
+            <BuyrOrdrId>
+                <Id>OR3344</Id>
+                <OrdrLineId>10</OrdrLineId>
+            </BuyrOrdrId>
+            <NetPric Ccy="EUR">100.20</NetPric>
+            <NetPricQty>
+                <UnitOfMeasrCd>MTR</UnitOfMeasrCd>
+                <Val>1</Val>
+            </NetPricQty>            
+            <Tax>
+                <ClctdAmt Ccy="EUR">1728.45</ClctdAmt>
+                <TpCd>
+                    <Cd>VATA</Cd>
+                </TpCd>
+                <ClctdRate>23</ClctdRate>
+            </Tax>
+            <BlldQty>
+                <UnitOfMeasrCd>MTR</UnitOfMeasrCd>
+                <Val>75</Val>
+            </BlldQty>
+            <MntrySummtn>
+                <LineTtlAmt Ccy="EUR">9243.45</LineTtlAmt>
+                <TaxTtlAmt Ccy="EUR">1728.45</TaxTtlAmt>
+                <TaxBsisTtlAmt Ccy="EUR">7515.00</TaxBsisTtlAmt>
+            </MntrySummtn>            
+        </LineItm>
+        <LineItm>
+            <Id>02</Id>
+            <TradPdct>
+                <Nm>Timber  B</Nm>
+            </TradPdct>
+            <BuyrOrdrId>
+                <Id>OR3344</Id>
+                <OrdrLineId>20</OrdrLineId>
+            </BuyrOrdrId>
+            <NetPric Ccy="EUR">55.00</NetPric>
+            <NetPricQty>
+                <UnitOfMeasrCd>MTR</UnitOfMeasrCd>
+                <Val>1</Val>
+            </NetPricQty>            
+            <GrssPric Ccy="EUR">2970.00</GrssPric>
+            <Tax>
+                <ClctdAmt Ccy="EUR">220.00</ClctdAmt>
+                <TpCd>
+                    <Cd>VATA</Cd>
+                </TpCd>
+                <ClctdRate>8</ClctdRate>
+            </Tax>
+            <BlldQty>
+                <UnitOfMeasrCd>MTR</UnitOfMeasrCd>
+                <Val>50</Val>
+            </BlldQty>
+            <MntrySummtn>
+                <LineTtlAmt Ccy="EUR">2970.00</LineTtlAmt>
+                <TaxTtlAmt Ccy="EUR">220.00</TaxTtlAmt>
+                <TaxBsisTtlAmt Ccy="EUR">2750.00</TaxBsisTtlAmt>
+            </MntrySummtn>             
+        </LineItm>
+        <LineItm>
+            <Id>03</Id>
+            <TradPdct>
+                <Nm>Freight</Nm>
+            </TradPdct>
+            <BuyrOrdrId>
+                <Id>OR3344</Id>
+                <OrdrLineId>30</OrdrLineId>
+            </BuyrOrdrId>
+            <NetPric Ccy="DKK">1500.00</NetPric>
+            <NetPricQty>
+                <UnitOfMeasrCd>EA</UnitOfMeasrCd>
+                <Val>1</Val>
+            </NetPricQty>             
+            <Tax>
+                <ClctdAmt Ccy="EUR">0</ClctdAmt>
+                <TpCd>
+                    <Cd>VATB</Cd>
+                </TpCd>
+            </Tax>
+            <BlldQty>
+                <UnitOfMeasrCd>EA</UnitOfMeasrCd>
+                <Val>1</Val>
+            </BlldQty>
+            <MntrySummtn>
+                <LineTtlAmt Ccy="EUR">201.17</LineTtlAmt>
+                <TaxTtlAmt Ccy="EUR">0</TaxTtlAmt>
+                <TaxBsisTtlAmt Ccy="EUR">201.17</TaxBsisTtlAmt>
+            </MntrySummtn>                         
+        </LineItm>        
+    </FinInvc>
+</Document>
