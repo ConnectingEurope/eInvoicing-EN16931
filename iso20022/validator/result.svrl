@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schematron-output xmlns="http://purl.oclc.org/dsdl/svrl" title="EN16931 model bound to ISO20022">
+    <active-pattern id="EN16931-ISO20022-Model"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm/PmtMeans/PyeeCdtrAcct"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-31" location="/Document/FinInvc/TradSttlm" test="(MntrySummtn/AllwncTtlAmt)" flag="fatal">
+        <text>[BR-31]-Each document level allowance shall have a Document level allowance amount. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-33" location="/Document/FinInvc/TradSttlm" test="(AllwncChrg/Rsn/ChrgTp/Prtry/Id) or (AllwncChrg/Rsn/ChrgTp/Cd)" flag="fatal">
+        <text>[BR-33]-Each document level allowance shall have a Document level allowance reason or a Document level allowance reason code. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-CO-21" location="/Document/FinInvc/TradSttlm" test="(AllwncChrg/Rsn/ChrgTp/Prtry/Id) or (AllwncChrg/Rsn/ChrgTp/Cd )" flag="fatal">
+        <text>[BR-CO-21]-Each Document level allowance (BG-20) must contain a Document level allowance reason or a Document level allowance reason code, or both.</text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-36" location="/Document/FinInvc/TradSttlm" test="(MntrySummtn/ChrgTtlAmt)" flag="fatal">
+        <text>[BR-36]-Each document level charge shall have a Document level charge amount. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-38" location="/Document/FinInvc/TradSttlm" test="(AllwncChrg/Rsn/ChrgTp/Prtry) or (AllwncChrg/Rsn/ChrgTp/Cd)" flag="fatal">
+        <text>[BR-38]-Each document level charge shall have a Document level charge reason or a Document level charge reason code. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-39" location="/Document/FinInvc/TradSttlm" test="(MntrySummtn/ChrgTtlAmt) &gt;=0" flag="fatal">
+        <text>[BR-39]-Document level charge amount shall not be negative. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-12" location="/Document/FinInvc/TradSttlm" test="(MntrySummtn/LineTtlAmt)" flag="fatal">
+        <text>[BR-12]-An Invoice shall have the Sum of Invoice line net amount. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-CO-10" location="/Document/FinInvc/TradSttlm" test="FIXME" flag="fatal">
+        <text>[BR-CO-10]-Sum of Invoice line net amount = Σ Invoice line net amount. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-CO-11" location="/Document/FinInvc/TradSttlm" test="FIXME" flag="fatal">
+        <text>[BR-CO-11]-Sum of allowances on document level = Σ Document level allowance amount. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-CO-12" location="/Document/FinInvc/TradSttlm" test="FIXME" flag="fatal">
+        <text>[BR-CO-12]-Sum of charges on document level = Σ Document level charge amount. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-CO-13" location="/Document/FinInvc/TradSttlm" test="FIXME" flag="fatal">
+        <text>[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-CO-15" location="/Document/FinInvc/TradSttlm" test="FIXME" flag="fatal">
+        <text>[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <failed-assert id="BR-CO-16" location="/Document/FinInvc/TradSttlm" test="FIXME" flag="fatal">
+        <text>[BR-CO-16]-Amount due for payment = Invoice total amount with VAT-Paid amount + Rounding amount (BT-114). </text>
+    </failed-assert>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <fired-rule context="//Document/FinInvc/TradSttlm"/>
+    <active-pattern id="EN16931-IS020022-Syntax"/>
+</schematron-output>

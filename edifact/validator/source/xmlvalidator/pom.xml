@@ -56,8 +56,13 @@
     <dependencies>
         <dependency>
             <groupId>com.helger</groupId>
+            <artifactId>ph-xml</artifactId>
+            <version>8.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.helger</groupId>
             <artifactId>ph-schematron</artifactId>
-            <version>4.0.2</version>
+            <version>4.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>

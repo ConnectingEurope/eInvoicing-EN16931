@@ -1,0 +1,77 @@
+AE-01: TODO_X
+AF-01: TODO_X
+AG-01: TODO_X
+Additional_supporting_documents: //Document/FinInvc/TradAgrmt/AddtlRefDoc
+BR-01: (InvcHdr/InclNote/InfTp)
+BR-02: (InvcHdr/Id)
+BR-03: (InvcHdr/IsseDtTm)
+BR-04: (InvcHdr/TpCd)
+BR-05: (TradSttlm/InvcCcyCd)
+BR-06: (Document/FinInvc/TradAgrmt/Sellr/PtyId/Nm)
+BR-07: (Document/FinInvc/TradAgrmt/Buyr/PtyId/Nm)
+BR-08: (Document/FinInvc/TradAgrmt/Sellr/PtyId/Id/PstlAdr)
+BR-09: (Document/FinInvc/TradAgrmt/Sellr/PtyId/PstlAdr/Ctry)
+BR-10: (Document/FinInvc/TradAgrmt/Buyr/PtyId/PstlAdr)
+BR-11: (Document/FinInvc/TradAgrmt/Buyr/PtyId/PstlAdr/Ctry)
+BR-12: (MntrySummtn/LineTtlAmt)
+BR-13: (MntrySummtn/TaxBsisAmt)
+BR-14: (MntrySummtn/GrdTtlAmt)
+BR-15: (DuePyblAmt)
+BR-16: (Document/FinInvc/LineItm)
+BR-31: (MntrySummtn/AllwncTtlAmt)
+BR-32: (SubTtlClctdTax/CtgyCd)
+BR-33: (AllwncChrg/Rsn/ChrgTp/Prtry/Id) or (AllwncChrg/Rsn/ChrgTp/Cd)
+BR-34: (MntrySummtn/AllwncTtlAmt) &gt;=0 or not (MntrySummtn/LineTtlAmt)
+BR-35: (MntrySummtn/LineTtlAmt &gt;=0) or not (MntrySummtn/LineTtlAmt)
+BR-36: (MntrySummtn/ChrgTtlAmt)
+BR-37: (SubTtlClctdTax/CtgyCd)
+BR-38: (AllwncChrg/Rsn/ChrgTp/Prtry) or (AllwncChrg/Rsn/ChrgTp/Cd)
+BR-39: (MntrySummtn/ChrgTtlAmt) &gt;=0
+BR-40: (MntrySummtn/LineTtlAmt &gt;=0) or not (MntrySummtn/LineTtlAmt)
+BR-50: (Id/IBAN)
+BR-51: string-length(Id)&lt;=6 and string-length(Id)&gt;=4
+BR-52: (DocNb)
+BR-CO-01: count(Document/FinInvc/InvcHdr/LangCd) &lt;=1
+BR-CO-05: true()
+BR-CO-06: true()
+BR-CO-10: FIXME
+BR-CO-11: FIXME
+BR-CO-12: FIXME
+BR-CO-13: FIXME
+BR-CO-15: FIXME
+BR-CO-16: FIXME
+BR-CO-21: (AllwncChrg/Rsn/ChrgTp/Prtry/Id) or (AllwncChrg/Rsn/ChrgTp/Cd )
+BR-CO-22: true()
+BR-CO-25: (number(Document/FinInvc/TradSttlm/DuePyblAmt) &gt; 0 and (exists(Document/FinInvc/TradSttlm/PmtTerms/DueDt)
+  or exists(Document/FinInvc/TradSttlm/PmtTerms/Desc))) or not(number(Document/FinInvc/TradSttlm/DuePyblAmt
+  )&gt;0)
+BR-DEC-01: string-length(substring-after(AllwncTtlAmt,'.'))&lt;=2
+BR-DEC-02: string-length(substring-after(LineTtlAmt,'.'))&lt;=2
+BR-DEC-03: string-length(substring-after(DscntPctRate,'.'))&lt;=4
+BR-DEC-04: string-length(substring-after((SubTtlClctdTax/ClctdRate)[1],'.'))&lt;=4
+BR-DEC-05: string-length(substring-after(MntrySummtn/AllwncTtlAmt,'.'))&lt;=2
+BR-DEC-06: string-length(substring-after(MntrySummtn/LineTtlAmt,'.'))&lt;=2
+BR-DEC-07: string-length(substring-after(TradSttlm/PmtTerms/DscntPctRate,'.'))&lt;=4
+BR-DEC-08: string-length(substring-after(TradSttlm/SubTtlClctdTax/ClctdRate,'.'))&lt;=4
+BR-DEC-09: string-length(substring-after(TradSttlm/MntrySummtn/LineTtlAmt,'.'))&lt;=2
+BR-DEC-10: string-length(substring-after(TradSttlm/MntrySummtn/AllwncTtlAmt,'.'))&lt;=2
+BR-DEC-11: string-length(substring-after(TradSttlm/MntrySummtn/ChrgTtlAmt,'.'))&lt;=2
+BR-DEC-12: string-length(substring-after(TradSttlm/MntrySummtn/TaxBsisAmt,'.'))&lt;=2
+BR-DEC-13: string-length(substring-after(TradSttlm/MntrySummtn/TaxTtlAmt,'.'))&lt;=2
+BR-DEC-14: string-length(substring-after(TradSttlm/MntrySummtn/GrdTtlAmt,'.'))&lt;=2
+BR-DEC-15: string-length(substring-after(TradSttlm/MntrySummtn/TaxTtlAmt,'.'))&lt;=2
+BR-DEC-16: string-length(substring-after(TradSttlm/MntrySummtn/TtlPrepdAmt,'.'))&lt;=2
+BR-DEC-17: string-length(substring-after(TradSttlm/MntrySummtn/RndgAmt,'.'))&lt;=2
+BR-DEC-18: string-length(substring-after(TradSttlm/DuePyblAmt,'.'))&lt;=2
+Card_information: //Document/FinInvc/TradSttlm/PmtMeans/Id
+CreditTransfer_information: //Document/FinInvc/TradSttlm/PmtMeans/PyeeCdtrAcct
+Document_level_allowances: //Document/FinInvc/TradSttlm
+Document_level_charges: //Document/FinInvc/TradSttlm
+Document_totals: //Document/FinInvc/TradSttlm
+E-01: TODO_X
+G-01: TODO_X
+IC-01: TODO_X
+Invoice: //Document/FinInvc
+O-01: TODO_X
+S-01: TODO_X
+Z-01: TODO_X
