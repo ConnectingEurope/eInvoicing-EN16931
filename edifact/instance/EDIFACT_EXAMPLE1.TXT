@@ -1,7 +1,7 @@
 UNA:+.?*'
 UNB+UNOW:4::7+4000001000005:14+4000001000005:14+20150109:1403+87846595'
 UNH+12115118+INVOIC:D:14B:UN::16B'
-BGM+380+12115118++++dut'
+BGM+380+12115118'
 DTM+137:20150109:102'
 FTX+AAR+++Alle leveringen zijn franco. Alle prijzen zijn incl. BTW. Betalingstermijn?: 14 dagen netto. Prijswijzigingen voorbehouden. Op al onze aanbiedingen, leveringen en overeenkomsten zijn van toepassing in de algemene verkoop en leveringsvoorwaarden. Gedeponeerd bij de K.v.K. te Amsterdam 25-04-?'85.'
 FTX+DOC++P1+urn?:cen.eu?:en16931?:2017'

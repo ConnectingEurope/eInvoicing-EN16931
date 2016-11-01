@@ -5,7 +5,7 @@ echo Usage validate_transaction example_number
 rem example number 1, 2, 3...
 set EXAMPLE_NUMBER=%1
 
-set XSD_PATH=uncefact\data\standard\CrossIndustryInvoice_100p0.xsd
+set XSD_PATH=uncefact\data\standard\CrossIndustryInvoice_100pD16B.xsd
 set SCHEMATRON_PATH="..\schematron\EN16931-CII-validation.sch"
 set XML_PATH="..\instance\CII_example%EXAMPLE_NUMBER%.xml"
 

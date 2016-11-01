@@ -3,8 +3,8 @@
 
         	EDIFACT syntax binding to the EN16931   
         	Author: Andreas Pelekies
-            Timestamp: 2016-09-30 00:00:00 +0200
-     -->
+          Timestamp: 2016-10-31 00:00:00 +0200
+ -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
   <title>EN16931 model bound to EDIFACT</title>  
   <phase id="EN16931-model-phase">

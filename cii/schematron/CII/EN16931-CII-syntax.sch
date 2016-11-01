@@ -21,7 +21,7 @@
     <param name="CII-SR-016" value="not(ram:CopyIndicator)"/>
     <param name="CII-SR-017" value="not(ram:Purpose)"/>
     <param name="CII-SR-018" value="not(ram:ControlRequirementIndicator)"/>
-    <param name="CII-SR-019" value="count(ram:LanguageID) &lt;= 1"/>
+    <param name="CII-SR-019" value="not(ram:LanguageID)"/>
     <param name="CII-SR-020" value="not(ram:PurposeCode)"/>
     <param name="CII-SR-021" value="not(ram:RevisionDateTime)"/>
     <param name="CII-SR-022" value="not(ram:VersionID)"/>
@@ -149,6 +149,7 @@
 	<param name="CII-SR-131" value="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualTradeCurrencyExchange)"/>
 	<param name="CII-SR-440" value="count(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount) &lt;= 1"/>
 	
+	<param name="CII-SR-445" value="not(ram:GrossPriceProductTradePrice/ram:IncludedTradeTax)"/>
 	<param name="CII-SR-132" value="not(ram:GrossPriceProductTradePrice/ram:ValiditySpecifiedPeriod)"/>
 	<param name="CII-SR-133" value="not(ram:GrossPriceProductTradePrice/ram:DeliveryTradeLocation)"/>
 	<param name="CII-SR-134" value="not(ram:GrossPriceProductTradePrice/ram:TradeComparisonReferencePrice)"/>
@@ -161,6 +162,7 @@
 	<param name="CII-SR-140" value="not(ram:NetPriceProductTradePrice/ram:ChangeReason)"/>
 	<param name="CII-SR-141" value="not(ram:NetPriceProductTradePrice/ram:OrderUnitConversionFactorNumeric)"/>
 	<param name="CII-SR-142" value="not(ram:NetPriceProductTradePrice/ram:AppliedTradeAllowanceCharge)"/>
+	<param name="CII-SR-446" value="not(ram:NetPriceProductTradePrice/ram:IncludedTradeTax)"/>
 	<param name="CII-SR-143" value="not(ram:NetPriceProductTradePrice/ram:ValiditySpecifiedPeriod)"/>
 	<param name="CII-SR-144" value="not(ram:NetPriceProductTradePrice/ram:DeliveryTradeLocation)"/>
 	<param name="CII-SR-145" value="not(ram:NetPriceProductTradePrice/ram:TradeComparisonReferencePrice)"/>
@@ -171,6 +173,7 @@
 	<param name="CII-SR-148" value="not(ram:ItemSellerTradeParty)"/>
 	<param name="CII-SR-149" value="not(ram:ItemBuyerTradeParty)"/>
 	<param name="CII-SR-150" value="not(ram:IncludedSpecifiedMarketplace)"/>
+	<param name="CII-SR-447" value="not(ram:UltimateCustomerOrderReferencedDocument)"/>	
 
 	<!-- SpecifiedLineTradeDelivery -->
 	<param name="CII-SR-151" value="not(ram:RequestedQuantity)"/>
@@ -344,6 +347,7 @@
 	<param name="CII-SR-305" value="not(ram:BuyerAgentTradeParty)"/>
 	<param name="CII-SR-306" value="not(ram:PurchaseConditionsReferencedDocument)"/>
 	<param name="CII-SR-307" value="not(ram:SpecifiedProcuringProject/ram:Description)"/>
+	<param name="CII-SR-448" value="not(ram:UltimateCustomerOrderReferencedDocument)"/>
 
 	<!-- ApplicableHeaderTradeDelivery -->
 	<param name="CII-SR-308" value="not(ram:RelatedSupplyChainConsignment)"/>
@@ -590,7 +594,6 @@
 	<param name="CII-DT-082" value="not(ram:ID)"/>
 	<param name="CII-DT-083" value="not(ram:PostOfficeBox)"/>
 	<param name="CII-DT-084" value="not(ram:BuildingName)"/>
-	<param name="CII-DT-085" value="not(ram:LineThree)"/>
 	<param name="CII-DT-086" value="not(ram:LineFour)"/>
 	<param name="CII-DT-087" value="not(ram:LineFive)"/>
 	<param name="CII-DT-088" value="not(ram:StreetName)"/>

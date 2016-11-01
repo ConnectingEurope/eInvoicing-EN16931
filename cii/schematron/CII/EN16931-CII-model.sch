@@ -57,7 +57,7 @@
   <param name="BR-53" value="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode and (ram:TaxTotalAmount/@currencyID = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) and not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode))"/>
   <param name="BR-54" value="(ram:Description) and (ram:Value)"/>
   <param name="BR-55" value="ram:IssuerAssignedID"/>
-  <param name="BR-CO-01" value="count(rsm:ExchangedDocument/ram:LanguageID) &lt;=1"/>
+  <!--param name="BR-CO-01" value="count(rsm:ExchangedDocument/ram:LanguageID) &lt;=1"/ -->
   <param name="BR-CO-02" value="((ram:TypeCode = ('30','57')) and (ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)) or not(ram:TypeCode =  ('30','57'))"/>
   <param name="BR-CO-03" value="((ram:TaxPointDate) and not (ram:DueDateTypeCode)) or (not (ram:TaxPointDate) and (ram:DueDateTypeCode)) or (not (ram:TaxPointDate) and not (ram:DueDateTypeCode))"/>
   <param name="BR-CO-04" value="(ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode)"/>
@@ -219,12 +219,8 @@
   
   <param name="BR-DEC-01" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-02" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-03" value="string-length(substring-after(ram:CalculationPercent,'.'))&lt;=4"/>
-  <param name="BR-DEC-04" value="string-length(substring-after(ram:CategoryTradeTax/ram:RateApplicablePercent,'.'))&lt;=4"/>
   <param name="BR-DEC-05" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-06" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-07" value="string-length(substring-after(ram:CalculationPercent,'.'))&lt;=4"/>
-  <param name="BR-DEC-08" value="string-length(substring-after(ram:CategoryTradeTax/ram:RateApplicablePercent,'.'))&lt;=4"/>
   <param name="BR-DEC-09" value="string-length(substring-after(ram:LineTotalAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-10" value="string-length(substring-after(ram:AllowanceTotalAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-11" value="string-length(substring-after(ram:ChargeTotalAmount,'.'))&lt;=2"/>
@@ -237,20 +233,11 @@
   <param name="BR-DEC-18" value="string-length(substring-after(ram:DuePayableAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-19" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-20" value="string-length(substring-after(ram:CalculatedAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-21" value="string-length(substring-after(ram:RateApplicablePercent,'.'))&lt;=4"/>
-  <param name="BR-DEC-22" value="string-length(substring-after(ram:SpecifiedTradeDelivery/ram:BilledQuantity,'.'))&lt;=4"/>
   <param name="BR-DEC-23" value="string-length(substring-after(ram:SpecifiedTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-24" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-25" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-26" value="string-length(substring-after(ram:CalculationPercent,'.'))&lt;=4"/>
   <param name="BR-DEC-27" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-28" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-29" value="string-length(substring-after(ram:CalculationPercent,'.'))&lt;=4"/>
-  <param name="BR-DEC-30" value="string-length(substring-after(ram:SpecifiedTradeAgreement/ram:NetPriceProductTradePrice/ram:ChargeAmount,'.'))&lt;=5"/>
-  <param name="BR-DEC-31" value="string-length(substring-after(ram:SpecifiedTradeAgreement/ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount,'.'))&lt;=5"/>
-  <param name="BR-DEC-32" value="string-length(substring-after(ram:SpecifiedTradeAgreement/ram:GrossPriceProductTradePrice/ram:ChargeAmount,'.'))&lt;=5"/>
-  <param name="BR-DEC-33" value="string-length(substring-after(ram:SpecifiedTradeAgreement/ram:NetPriceProductTradePrice/ram:BasisQuantity,'.'))&lt;=4"/>
-  <param name="BR-DEC-34" value="string-length(substring-after(ram:SpecifiedTradeAgreement/ram:ApplicableTradeTax/ram:RateApplicablePercent,'.'))&lt;=4"/>
   
   <param name="Invoice_Period " value="//ram:ApplicableHeaderTradeSettlement/ram:BillingSpecifiedPeriod"/>
   <param name="Document_totals " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>  

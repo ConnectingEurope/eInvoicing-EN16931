@@ -1,9 +1,9 @@
-<rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
-    xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:19"
-    xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:19"
-    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:19"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100 ../uncefact/data/standard/CrossIndustryInvoice_100p0.xsd">
+<rsm:CrossIndustryInvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100 ../validator/uncefact/data/standard/CrossIndustryInvoice_100pD16B.xsd"
+ xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100"
+ xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+ xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+ xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
     <rsm:ExchangedDocumentContext>
         <ram:GuidelineSpecifiedDocumentContextParameter>
             <ram:ID>urn:cen.eu:en16931:2017</ram:ID>
@@ -14,8 +14,7 @@
         <ram:TypeCode>380</ram:TypeCode>
         <ram:IssueDateTime>
             <udt:DateTimeString format="102">20141110</udt:DateTimeString>
-        </ram:IssueDateTime>
-        <ram:LanguageID>dut</ram:LanguageID>
+        </ram:IssueDateTime>        
         <ram:IncludedNote>
             <ram:Content>Periodieke afrekening
 U vindt een toelichting op uw factuur via www.enexis.nl/factuur_grootzakelijk
@@ -471,7 +470,7 @@ www.enexis.nl</ram:Content>
             <ram:SpecifiedTradePaymentTerms>
                 <ram:Description>Enexis brengt wettelijke rente in rekening over te laat betaalde
 facturen. Kijk voor informatie op www.enexis.nl/rentenota</ram:Description>
-                <ram:DueDateDateTime/>
+                <ram:DueDateDateTime><udt:DateTimeString format="102">20141124</udt:DateTimeString></ram:DueDateDateTime>
             </ram:SpecifiedTradePaymentTerms>
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 <ram:LineTotalAmount>908.91</ram:LineTotalAmount>

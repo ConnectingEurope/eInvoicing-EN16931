@@ -1,9 +1,9 @@
-<rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
-    xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:19"
-    xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:19"
-    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:19"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100 ../uncefact/data/standard/CrossIndustryInvoice_100p0.xsd">
+<rsm:CrossIndustryInvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100 ../validator/uncefact/data/standard/CrossIndustryInvoice_100pD16B.xsd"
+ xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100"
+ xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+ xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+ xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
     <rsm:ExchangedDocumentContext>
         <ram:BusinessProcessSpecifiedDocumentContextParameter>
             <ram:ID>P1</ram:ID>
@@ -17,11 +17,10 @@
         <ram:TypeCode>380</ram:TypeCode>
         <ram:IssueDateTime>
             <udt:DateTimeString format="102">20130410</udt:DateTimeString>
-        </ram:IssueDateTime>
-        <ram:LanguageID>eng</ram:LanguageID>
+        </ram:IssueDateTime>        
         <ram:IncludedNote>
-            <ram:SubjectCode>AAI</ram:SubjectCode>
             <ram:Content>Ordered through our website</ram:Content>
+            <ram:SubjectCode>AAI</ram:SubjectCode>            
         </ram:IncludedNote>
     </rsm:ExchangedDocument>
     <rsm:SupplyChainTradeTransaction>
@@ -33,7 +32,7 @@
                 </ram:IncludedNote>
             </ram:AssociatedDocumentLineDocument>
             <ram:SpecifiedTradeProduct>
-                <ram:GlobalID schemeID="SRV">1234567890128</ram:GlobalID>
+                <ram:GlobalID schemeID="0088">1234567890128</ram:GlobalID>
                 <ram:SellerAssignedID>JB007</ram:SellerAssignedID>
                 <ram:BuyerAssignedID>BUY123</ram:BuyerAssignedID>
                 <ram:Name>Printing paper</ram:Name>
@@ -43,7 +42,7 @@
                     <ram:Value>2 mm</ram:Value>
                 </ram:ApplicableProductCharacteristic>
                 <ram:DesignatedProductClassification>
-                    <ram:ClassCode listID="0001">12344321</ram:ClassCode>
+                    <ram:ClassCode listID="ZZZ">12344321</ram:ClassCode>
                 </ram:DesignatedProductClassification>
                 <ram:OriginTradeCountry>
                     <ram:ID>NL</ram:ID>
@@ -417,7 +416,7 @@
             </ram:SpecifiedTradeAllowanceCharge>
             <ram:SpecifiedTradePaymentTerms>
                 <ram:Description>50% prepaid, 50% within one month</ram:Description>
-                <ram:DueDateDateTime/>
+                <ram:DueDateDateTime><udt:DateTimeString format="102">20130510</udt:DateTimeString></ram:DueDateDateTime>
                 <ram:DirectDebitMandateID>123456</ram:DirectDebitMandateID>
             </ram:SpecifiedTradePaymentTerms>
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
@@ -434,7 +433,7 @@
             <ram:InvoiceReferencedDocument>
                 <ram:IssuerAssignedID>TOSL109</ram:IssuerAssignedID>
                 <ram:FormattedIssueDateTime>
-                    <udt:DateTimeString format="102">20130310</udt:DateTimeString>
+                    <qdt:DateTimeString format="102">20130310</qdt:DateTimeString>
                 </ram:FormattedIssueDateTime>
             </ram:InvoiceReferencedDocument>
             <ram:ReceivableSpecifiedTradeAccountingAccount>

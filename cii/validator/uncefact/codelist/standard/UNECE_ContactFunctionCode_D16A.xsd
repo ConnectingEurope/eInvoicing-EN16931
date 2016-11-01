@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Schema agency:  UNCEFACT
+Schema version: 100.0
+Schema date:    10 October 2016
+
+Copyright (C) UN/CEFACT (2016). All Rights Reserved.
+
+This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.
+
+The limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.
+
+This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+-->
+<xsd:schema xmlns:clm63139ContactTypeCode="urn:un:unece:uncefact:codelist:standard:UNECE:ContactFunctionCode:D16A" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:ContactFunctionCode:D16A" elementFormDefault="qualified" version="1.4">
+	<xsd:simpleType name="ContactFunctionCodeContentType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="AA"/>
+			<xsd:enumeration value="AB"/>
+			<xsd:enumeration value="AC"/>
+			<xsd:enumeration value="AD"/>
+			<xsd:enumeration value="AE"/>
+			<xsd:enumeration value="AF"/>
+			<xsd:enumeration value="AG"/>
+			<xsd:enumeration value="AH"/>
+			<xsd:enumeration value="AI"/>
+			<xsd:enumeration value="AJ"/>
+			<xsd:enumeration value="AK"/>
+			<xsd:enumeration value="AL"/>
+			<xsd:enumeration value="AM"/>
+			<xsd:enumeration value="AN"/>
+			<xsd:enumeration value="AO"/>
+			<xsd:enumeration value="AP"/>
+			<xsd:enumeration value="AQ"/>
+			<xsd:enumeration value="AR"/>
+			<xsd:enumeration value="AS"/>
+			<xsd:enumeration value="AT"/>
+			<xsd:enumeration value="AU"/>
+			<xsd:enumeration value="AV"/>
+			<xsd:enumeration value="AW"/>
+			<xsd:enumeration value="AX"/>
+			<xsd:enumeration value="AY"/>
+			<xsd:enumeration value="AZ"/>
+			<xsd:enumeration value="BA"/>
+			<xsd:enumeration value="BB"/>
+			<xsd:enumeration value="BC"/>
+			<xsd:enumeration value="BD"/>
+			<xsd:enumeration value="BE"/>
+			<xsd:enumeration value="BF"/>
+			<xsd:enumeration value="BG"/>
+			<xsd:enumeration value="BH"/>
+			<xsd:enumeration value="BI"/>
+			<xsd:enumeration value="BJ"/>
+			<xsd:enumeration value="BK"/>
+			<xsd:enumeration value="BL"/>
+			<xsd:enumeration value="BM"/>
+			<xsd:enumeration value="BN"/>
+			<xsd:enumeration value="BO"/>
+			<xsd:enumeration value="BP"/>
+			<xsd:enumeration value="BQ"/>
+			<xsd:enumeration value="BR"/>
+			<xsd:enumeration value="BU"/>
+			<xsd:enumeration value="CA"/>
+			<xsd:enumeration value="CB"/>
+			<xsd:enumeration value="CC"/>
+			<xsd:enumeration value="CD"/>
+			<xsd:enumeration value="CE"/>
+			<xsd:enumeration value="CF"/>
+			<xsd:enumeration value="CG"/>
+			<xsd:enumeration value="CN"/>
+			<xsd:enumeration value="CO"/>
+			<xsd:enumeration value="CP"/>
+			<xsd:enumeration value="CR"/>
+			<xsd:enumeration value="CW"/>
+			<xsd:enumeration value="DE"/>
+			<xsd:enumeration value="DI"/>
+			<xsd:enumeration value="DL"/>
+			<xsd:enumeration value="EB"/>
+			<xsd:enumeration value="EC"/>
+			<xsd:enumeration value="ED"/>
+			<xsd:enumeration value="EX"/>
+			<xsd:enumeration value="GR"/>
+			<xsd:enumeration value="HE"/>
+			<xsd:enumeration value="HG"/>
+			<xsd:enumeration value="HM"/>
+			<xsd:enumeration value="IC"/>
+			<xsd:enumeration value="IN"/>
+			<xsd:enumeration value="LB"/>
+			<xsd:enumeration value="LO"/>
+			<xsd:enumeration value="MC"/>
+			<xsd:enumeration value="MD"/>
+			<xsd:enumeration value="MH"/>
+			<xsd:enumeration value="MR"/>
+			<xsd:enumeration value="MS"/>
+			<xsd:enumeration value="NT"/>
+			<xsd:enumeration value="OC"/>
+			<xsd:enumeration value="PA"/>
+			<xsd:enumeration value="PD"/>
+			<xsd:enumeration value="PE"/>
+			<xsd:enumeration value="PM"/>
+			<xsd:enumeration value="QA"/>
+			<xsd:enumeration value="QC"/>
+			<xsd:enumeration value="RD"/>
+			<xsd:enumeration value="RP"/>
+			<xsd:enumeration value="SA"/>
+			<xsd:enumeration value="SC"/>
+			<xsd:enumeration value="SD"/>
+			<xsd:enumeration value="SR"/>
+			<xsd:enumeration value="SU"/>
+			<xsd:enumeration value="TA"/>
+			<xsd:enumeration value="TD"/>
+			<xsd:enumeration value="TI"/>
+			<xsd:enumeration value="TR"/>
+			<xsd:enumeration value="WH"/>
+			<xsd:enumeration value="WI"/>
+			<xsd:enumeration value="WJ"/>
+			<xsd:enumeration value="WK"/>
+			<xsd:enumeration value="ZZZ"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

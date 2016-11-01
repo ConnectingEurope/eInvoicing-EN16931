@@ -18,6 +18,7 @@
 	<param name="EDIFACT-SR-008" value="not(D_1225)"/>
 	<param name="EDIFACT-SR-009" value="not(D_4343)"/>
 	<param name="EDIFACT-SR-010" value="not(D_1373)"/>
+	<param name="EDIFACT-SR-296" value="not(D_3453)"/>
 	
 	<!-- Invoice -->
 	<param name="EDIFACT-SR-012" value="S_DTM/C_C507[D_2005='3' or D_2005='35' or D_2005='131' or D_2005='137' or D_2005='167' or D_2005='168' or D_2005='432']"/>
@@ -91,7 +92,6 @@
 	<param name="EDIFACT-SR-070" value="not(S_NAD/C_C080/D_3036_3 or S_NAD/C_C080/D_3036_4 or S_NAD/C_C080/D_3036_5)"/>
 	<param name="EDIFACT-SR-071" value="not(S_NAD/C_C080/D_3045)"/>
 	<param name="EDIFACT-SR-072" value="not(S_NAD[D_3035='PE']/C_C059)"/>
-	<param name="EDIFACT-SR-073" value="not(S_NAD/C_C059/D_3042_3)"/>
 	<param name="EDIFACT-SR-074" value="not(S_NAD/C_C059/D_3042_4)"/>
 	<param name="EDIFACT-SR-075" value="not(S_NAD[D_3035='PE']/D_3164)"/>
 	<param name="EDIFACT-SR-076" value="not(S_NAD/C_C819/D_3229)"/>

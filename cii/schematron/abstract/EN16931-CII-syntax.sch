@@ -21,7 +21,7 @@
         <assert test="$CII-SR-016" flag="warning" id="CII-SR-016">[CII-SR-016] - CopyIndicator should not be present</assert>
         <assert test="$CII-SR-017" flag="warning" id="CII-SR-017">[CII-SR-017] - Purpose should not be present</assert>
         <assert test="$CII-SR-018" flag="warning" id="CII-SR-018">[CII-SR-018] - ControlRequirementIndicator should not be present</assert>
-        <assert test="$CII-SR-019" flag="warning" id="CII-SR-019">[CII-SR-019] - LanguageID should exist maximum once</assert>
+        <assert test="$CII-SR-019" flag="warning" id="CII-SR-019">[CII-SR-019] - LanguageID should not be present</assert>
         <assert test="$CII-SR-020" flag="warning" id="CII-SR-020">[CII-SR-020] - PurposeCode should not be present</assert>
         <assert test="$CII-SR-021" flag="warning" id="CII-SR-021">[CII-SR-021] - RevisionDateTime should not be present</assert>
         <assert test="$CII-SR-022" flag="warning" id="CII-SR-022">[CII-SR-022] - VersionID should not be present</assert>
@@ -154,7 +154,8 @@
 		<assert test="$CII-SR-131" flag="warning" id="CII-SR-131">[CII-SR-131] - ActualTradeCurrencyExchange should not be present</assert>
 		<assert test="$CII-SR-440" flag="fatal" id="CII-SR-440">[CII-SR-440] - ActualAmount should exist maximum once</assert>
 		
-		<assert test="$CII-SR-132" flag="warning" id="CII-SR-132">[CII-SR-132] - ValiditySpecifiedPeriod should not be present</assert>
+    	<assert test="$CII-SR-445" flag="warning" id="CII-SR-445">[CII-SR-445] - IncludedTradeTax should not be present</assert>
+    	<assert test="$CII-SR-132" flag="warning" id="CII-SR-132">[CII-SR-132] - ValiditySpecifiedPeriod should not be present</assert>
 		<assert test="$CII-SR-133" flag="warning" id="CII-SR-133">[CII-SR-133] - DeliveryTradeLocation should not be present</assert>
 		<assert test="$CII-SR-134" flag="warning" id="CII-SR-134">[CII-SR-134] - TradeComparisonReferencePrice should not be present</assert>
 		<assert test="$CII-SR-135" flag="warning" id="CII-SR-135">[CII-SR-135] - AssociatedReferencedDocument should not be present</assert>
@@ -166,6 +167,7 @@
 		<assert test="$CII-SR-140" flag="warning" id="CII-SR-140">[CII-SR-140] - ChangeReason should not be present</assert>
 		<assert test="$CII-SR-141" flag="warning" id="CII-SR-141">[CII-SR-141] - OrderUnitConversionFactorNumeric should not be present</assert>
 		<assert test="$CII-SR-142" flag="warning" id="CII-SR-142">[CII-SR-142] - AppliedTradeAllowanceCharge should not be present</assert>
+    	<assert test="$CII-SR-446" flag="warning" id="CII-SR-446">[CII-SR-446] - IncludedTradeTax should not be present</assert>
 		<assert test="$CII-SR-143" flag="warning" id="CII-SR-143">[CII-SR-143] - ValiditySpecifiedPeriod should not be present</assert>
 		<assert test="$CII-SR-144" flag="warning" id="CII-SR-144">[CII-SR-144] - DeliveryTradeLocation should not be present</assert>
 		<assert test="$CII-SR-145" flag="warning" id="CII-SR-145">[CII-SR-145] - TradeComparisonReferencePrice should not be present</assert>
@@ -176,6 +178,7 @@
 		<assert test="$CII-SR-148" flag="warning" id="CII-SR-148">[CII-SR-148] - ItemSellerTradeParty should not be present</assert>
 		<assert test="$CII-SR-149" flag="warning" id="CII-SR-149">[CII-SR-149] - ItemBuyerTradeParty should not be present</assert>
 		<assert test="$CII-SR-150" flag="warning" id="CII-SR-150">[CII-SR-150] - IncludedSpecifiedMarketplace should not be present</assert>
+    	<assert test="$CII-SR-447" flag="warning" id="CII-SR-447">[CII-SR-447] - UltimateCustomerOrderReferencedDocument should not be present</assert>
 				
     </rule>
     <rule context="$SpecifiedLineTradeDelivery ">
@@ -356,6 +359,8 @@
 		<assert test="$CII-SR-305" flag="warning" id="CII-SR-305">[CII-SR-305] - BuyerAgentTradeParty should not be present</assert>
 		<assert test="$CII-SR-306" flag="warning" id="CII-SR-306">[CII-SR-306] - PurchaseConditionsReferencedDocument should not be present</assert>
 		<assert test="$CII-SR-307" flag="warning" id="CII-SR-307">[CII-SR-307] - Description should not be present</assert>
+		<assert test="$CII-SR-448" flag="warning" id="CII-SR-448">[CII-SR-448] - UltimateCustomerOrderReferencedDocument should not be present</assert>
+		
 		
 	</rule>
 	<rule context="$ApplicableHeaderTradeDelivery ">
@@ -621,7 +626,6 @@
         <assert test="$CII-DT-082" flag="fatal" id="CII-DT-082">[CII-DT-082] - ID shall not be used.</assert>
         <assert test="$CII-DT-083" flag="fatal" id="CII-DT-083">[CII-DT-083] - PostOfficeBox shall not be used.</assert>
         <assert test="$CII-DT-084" flag="fatal" id="CII-DT-084">[CII-DT-084] - BuildingName shall not be used.</assert>
-        <assert test="$CII-DT-085" flag="fatal" id="CII-DT-085">[CII-DT-085] - LineThree shall not be used.</assert>
         <assert test="$CII-DT-086" flag="fatal" id="CII-DT-086">[CII-DT-086] - LineFour shall not be used.</assert>
         <assert test="$CII-DT-087" flag="fatal" id="CII-DT-087">[CII-DT-087] - LineFive shall not be used.</assert>
         <assert test="$CII-DT-088" flag="fatal" id="CII-DT-088">[CII-DT-088] - StreetName shall not be used.</assert>

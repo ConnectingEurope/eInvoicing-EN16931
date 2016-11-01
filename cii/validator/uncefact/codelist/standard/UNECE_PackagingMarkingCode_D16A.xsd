@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Schema agency:  UNCEFACT
+Schema version: 100.0
+Schema date:    10 October 2016
+
+Copyright (C) UN/CEFACT (2016). All Rights Reserved.
+
+This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.
+
+The limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.
+
+This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+-->
+<xsd:schema xmlns:clm67233PackagingMarkingCode="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingMarkingCode:D16A" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:PackagingMarkingCode:D16A" elementFormDefault="qualified" version="1.1">
+	<xsd:simpleType name="PackagingMarkingCodeContentType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+			<xsd:enumeration value="4"/>
+			<xsd:enumeration value="5"/>
+			<xsd:enumeration value="6"/>
+			<xsd:enumeration value="7"/>
+			<xsd:enumeration value="8"/>
+			<xsd:enumeration value="9"/>
+			<xsd:enumeration value="10"/>
+			<xsd:enumeration value="31"/>
+			<xsd:enumeration value="32"/>
+			<xsd:enumeration value="33"/>
+			<xsd:enumeration value="34"/>
+			<xsd:enumeration value="35"/>
+			<xsd:enumeration value="36"/>
+			<xsd:enumeration value="37"/>
+			<xsd:enumeration value="38"/>
+			<xsd:enumeration value="39"/>
+			<xsd:enumeration value="40"/>
+			<xsd:enumeration value="41"/>
+			<xsd:enumeration value="42"/>
+			<xsd:enumeration value="43"/>
+			<xsd:enumeration value="44"/>
+			<xsd:enumeration value="45"/>
+			<xsd:enumeration value="46"/>
+			<xsd:enumeration value="47"/>
+			<xsd:enumeration value="48"/>
+			<xsd:enumeration value="49"/>
+			<xsd:enumeration value="53"/>
+			<xsd:enumeration value="54"/>
+			<xsd:enumeration value="55"/>
+			<xsd:enumeration value="56"/>
+			<xsd:enumeration value="57"/>
+			<xsd:enumeration value="58"/>
+			<xsd:enumeration value="59"/>
+			<xsd:enumeration value="60"/>
+			<xsd:enumeration value="61"/>
+			<xsd:enumeration value="62"/>
+			<xsd:enumeration value="63"/>
+			<xsd:enumeration value="66"/>
+			<xsd:enumeration value="68"/>
+			<xsd:enumeration value="69"/>
+			<xsd:enumeration value="70"/>
+			<xsd:enumeration value="71"/>
+			<xsd:enumeration value="72"/>
+			<xsd:enumeration value="73"/>
+			<xsd:enumeration value="74"/>
+			<xsd:enumeration value="75"/>
+			<xsd:enumeration value="76"/>
+			<xsd:enumeration value="77"/>
+			<xsd:enumeration value="80"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

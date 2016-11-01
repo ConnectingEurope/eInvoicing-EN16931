@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Schema agency:  UNCEFACT
+Schema version: 100.0
+Schema date:    10 October 2016
+
+Copyright (C) UN/CEFACT (2016). All Rights Reserved.
+
+This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.
+
+The limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.
+
+This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+-->
+<xsd:schema xmlns:clm65153="urn:un:unece:uncefact:codelist:standard:UNECE:DutyTaxFeeTypeCode:D16A" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:DutyTaxFeeTypeCode:D16A" elementFormDefault="qualified" version="1.2">
+	<xsd:simpleType name="DutyTaxFeeTypeCodeContentType">
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="AAA"/>
+			<xsd:enumeration value="AAB"/>
+			<xsd:enumeration value="AAC"/>
+			<xsd:enumeration value="AAD"/>
+			<xsd:enumeration value="AAE"/>
+			<xsd:enumeration value="AAF"/>
+			<xsd:enumeration value="AAG"/>
+			<xsd:enumeration value="AAH"/>
+			<xsd:enumeration value="AAI"/>
+			<xsd:enumeration value="AAJ"/>
+			<xsd:enumeration value="AAK"/>
+			<xsd:enumeration value="AAL"/>
+			<xsd:enumeration value="AAM"/>
+			<xsd:enumeration value="ADD"/>
+			<xsd:enumeration value="BOL"/>
+			<xsd:enumeration value="CAP"/>
+			<xsd:enumeration value="CAR"/>
+			<xsd:enumeration value="COC"/>
+			<xsd:enumeration value="CST"/>
+			<xsd:enumeration value="CUD"/>
+			<xsd:enumeration value="CVD"/>
+			<xsd:enumeration value="ENV"/>
+			<xsd:enumeration value="EXC"/>
+			<xsd:enumeration value="EXP"/>
+			<xsd:enumeration value="FET"/>
+			<xsd:enumeration value="FRE"/>
+			<xsd:enumeration value="GCN"/>
+			<xsd:enumeration value="GST"/>
+			<xsd:enumeration value="ILL"/>
+			<xsd:enumeration value="IMP"/>
+			<xsd:enumeration value="IND"/>
+			<xsd:enumeration value="LAC"/>
+			<xsd:enumeration value="LCN"/>
+			<xsd:enumeration value="LDP"/>
+			<xsd:enumeration value="LOC"/>
+			<xsd:enumeration value="LST"/>
+			<xsd:enumeration value="MCA"/>
+			<xsd:enumeration value="MCD"/>
+			<xsd:enumeration value="OTH"/>
+			<xsd:enumeration value="PDB"/>
+			<xsd:enumeration value="PDC"/>
+			<xsd:enumeration value="PRF"/>
+			<xsd:enumeration value="SCN"/>
+			<xsd:enumeration value="SSS"/>
+			<xsd:enumeration value="STT"/>
+			<xsd:enumeration value="SUP"/>
+			<xsd:enumeration value="SUR"/>
+			<xsd:enumeration value="SWT"/>
+			<xsd:enumeration value="TAC"/>
+			<xsd:enumeration value="TOT"/>
+			<xsd:enumeration value="TOX"/>
+			<xsd:enumeration value="TTA"/>
+			<xsd:enumeration value="VAD"/>
+			<xsd:enumeration value="VAT"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

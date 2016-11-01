@@ -54,7 +54,7 @@
   <param name="BR-49" value="G_SG8[S_PYT/D_4279='1']/S_PAI/C_C534/D_4461"/>
   <param name="BR-50" value="C_C078/D_3194"/>
   <param name="BR-51" value="((G_SG8[S_PYT/D_4279='1']/S_PAI/C_C534/D_4461 = '49') and ((G_SG2[S_NAD/D_3035='SE']/G_SG3/S_RFF/C_C506[D_1153='AVS']/D_1154) or (G_SG2[S_NAD/D_3035='PE']/G_SG3/S_RFF/C_C506[D_1153='AVS']/D_1154))) or not(G_SG8[S_PYT/D_4279='1']/S_PAI/C_C534/D_4461 =  '49')"/>  
-  <param name="BR-52" value="C_C077/D_1508"/>
+  <param name="BR-52" value="C_C506/D_1154"/>
   <param name="BR-53" value="G_SG52/S_MOA/C_C516[D_5025='2']/D_5004"/>
   <param name="BR-54" value="(D_4440) and (D_4440_2)"/>  
   <param name="BR-55" value="D_1154"/>  
@@ -678,12 +678,8 @@
   
   <param name="BR-DEC-01" value="string-length(substring-after(G_SG20/S_MOA/C_C516[D_5025='204']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-02" value="string-length(substring-after(G_SG20/S_MOA/C_C516[D_5025='25']/D_5004,'.'))&lt;=2"/>
-  <param name="BR-DEC-03" value="string-length(substring-after(G_SG19/S_PCD/C_C501[D_5245='1']/D_5482,'.'))&lt;=4"/>
-  <param name="BR-DEC-04" value="string-length(substring-after(G_SG22/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/C_C243/D_5278,'.'))&lt;=4"/>
   <param name="BR-DEC-05" value="string-length(substring-after(G_SG20/S_MOA/C_C516[D_5025='23']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-06" value="string-length(substring-after(G_SG20/S_MOA/C_C516[D_5025='25']/D_5004,'.'))&lt;=2"/>
-  <param name="BR-DEC-07" value="string-length(substring-after(G_SG19/S_PCD/C_C501[D_5245='2']/D_5482,'.'))&lt;=4"/>
-  <param name="BR-DEC-08" value="string-length(substring-after(G_SG22/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/C_C243/D_5278,'.'))&lt;=4"/>
   <param name="BR-DEC-09" value="string-length(substring-after(S_MOA/C_C516[D_5025='79']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-10" value="string-length(substring-after(S_MOA/C_C516[D_5025='260']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-11" value="string-length(substring-after(S_MOA/C_C516[D_5025='259']/D_5004,'.'))&lt;=2"/>
@@ -696,21 +692,12 @@
   <param name="BR-DEC-18" value="string-length(substring-after(S_MOA/C_C516[D_5025='9']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-19" value="string-length(substring-after(S_MOA/C_C516[D_5025='125']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-20" value="string-length(substring-after(S_MOA/C_C516[D_5025='124']/D_5004,'.'))&lt;=2"/>
-  <param name="BR-DEC-21" value="string-length(substring-after(S_TAX/D_5305,'.'))&lt;=4"/>
-  <param name="BR-DEC-22" value="string-length(substring-after(S_QTY/C_C186[D_6063='47']/D_6060,'.'))&lt;=4"/>
   <param name="BR-DEC-23" value="string-length(substring-after(G_SG28/S_MOA/C_C516[D_5025='203']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-24" value="string-length(substring-after(G_SG43/S_MOA/C_C516[D_5025='204']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-25" value="string-length(substring-after(G_SG43/S_MOA/C_C516[D_5025='25']/D_5004,'.'))&lt;=2"/>
-  <param name="BR-DEC-26" value="string-length(substring-after(G_SG42/S_PCD/C_C501[D_5245='1']/D_5482,'.'))&lt;=4"/>
   <param name="BR-DEC-27" value="string-length(substring-after(G_SG43/S_MOA/C_C516[D_5025='23']/D_5004,'.'))&lt;=2"/>
   <param name="BR-DEC-28" value="string-length(substring-after(G_SG43/S_MOA/C_C516[D_5025='25']/D_5004,'.'))&lt;=2"/>
-  <param name="BR-DEC-29" value="string-length(substring-after(G_SG42/S_PCD/C_C501[D_5245='2']/D_5482,'.'))&lt;=4"/>
-  <param name="BR-DEC-30" value="string-length(substring-after(G_SG30/S_PRI/C_C509[D_D5125='AAA']/D_5118,'.'))&lt;=5"/>
-  <param name="BR-DEC-31" value="string-length(substring-after(G_SG40[S_ALC/D_5463='A']/G_SG43/S_MOA/C_C516[D_5025='509']/D_5004,'.'))&lt;=5"/>
-  <param name="BR-DEC-32" value="string-length(substring-after(G_SG30/S_PRI/C_C509[D_D5125='AAB']/D_5118,'.'))&lt;=5"/>
-  <param name="BR-DEC-33" value="string-length(substring-after(G_SG30/S_PRI/C_C509[D_D5125='AAA']/D_5284,'.'))&lt;=4"/>
-  <param name="BR-DEC-34" value="string-length(substring-after(G_SG35/S_TAX[D_5283='7' and C_C241/D_5153='VAT']/C_C243/D_5278,'.'))&lt;=4"/>
- 
+  
   <param name="Invoice_Period " value="/M_INVOIC/S_DTM/C_C507[D_2005 = ('167', '168')]"/>
   <param name="Document_totals " value="/M_INVOIC/G_SG52"/>
   <param name="Payee " value="/M_INVOIC/G_SG2/S_NAD[D_3035='PE']"/>
@@ -726,7 +713,7 @@
   <param name="Payment_instructions " value="/M_INVOIC"/>
   <param name="CreditTransfer_information " value="/M_INVOIC[G_SG8/S_PYT/D_4279='1' and G_SG8/S_PAI/C_C534/D_D4461=('30', '57')]/G_SG2[S_NAD/C_C082/D_3039='PE' or S_NAD/C_C082/D_3039='SE']/S_FII[D_3035='RB']"/>
   <param name="Card_information " value="/M_INVOIC/G_SG2[S_NAD/C_C082/D_3039='BY']/S_FII[D_3035='BI']"/>
-  <param name="Additional_supporting_documents " value="/M_INVOIC/G_SG26/S_EFI"/>
+  <param name="Additional_supporting_documents " value="/M_INVOIC/G_SG26/S_RFF"/>
   <param name="Item_attributes " value="/M_INVOIC/G_SG27/S_FTX[D_4451='ACF' and D_4453='1']/C_C108"/>
   <param name="VAT_identifiers " value="/M_INVOIC"/> <!--no check left -->
   <param name="Tax_Total " value="/M_INVOIC/G_SG54/S_MOA/C_C516[D_5025='176']/D_5004"/>

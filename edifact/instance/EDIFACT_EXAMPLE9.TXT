@@ -1,7 +1,7 @@
 UNA:+.?*'
 UNB+UNOW:4::7+4000001000005:14+4000001000005:14+20150401:1403+87846595'
 UNH+20150483+INVOIC:D:14B:UN::16B'
-BGM+380+20150483++++dut'
+BGM+380+20150483'
 DTM+137:20150401:102'
 FTX+GEN+++Vriendelijk verzoeken wij u ervoor te zorgen dat het bedrag voor de vervaldatum op onze rekening staat onder vermelding van
 het factuurnummer. Het bankrekeningnummer is 37.78.15.500, Rabobank, t.n.v. Bluem te Amersfoort. Reclames gaarne binnen
