@@ -9,6 +9,8 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * `edifact` - UN/EDIFACT (and ISO 26025 based XML version)
   * `iso20022` - Invoice based on ISO 20022
   * `ubl` - UBL 2.1 (ISO/IEC 19845:2015)
+    * UBL Website: https://www.oasis-open.org/committees/ubl/
+    * Used XML Schemas: http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.zip
 
 # Development
 
