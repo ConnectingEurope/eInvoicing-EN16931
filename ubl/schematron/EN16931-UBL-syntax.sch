@@ -3,14 +3,13 @@
 
             UBL syntax binding to the syntax  
             Created by Validex Schematron Generator. (2015) Midran Ltd.
-            Timestamp: 2016-11-29 22:33:33 +0100
+            Timestamp: 2016-12-01 21:16:04 +0100
      -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:UBL="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" queryBinding="xslt2">
   <title>EN16931  syntax bound to UBL</title>
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
   <ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"/>
-  <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"/>
   <phase id="EN16931syntax_phase">
     <active pattern="UBL-syntax"/>
   </phase>

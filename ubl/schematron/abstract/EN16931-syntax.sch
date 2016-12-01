@@ -1,10 +1,9 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for syntax -->
-<!-- Timestamp: 2016-11-29 22:30:59 +0100 -->
+<!-- Timestamp: 2016-12-01 21:13:29 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="syntax">
   <rule context="$Additional_supporting_documents">
-    <assert test="$UBL-SR-36" flag="warning" id="UBL-SR-36">[UBL-SR-36]-Supporting document identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-37" flag="warning" id="UBL-SR-37">[UBL-SR-37]-Supporting document description shall occur maximum once</assert>
+    <assert test="$UBL-SR-33" flag="warning" id="UBL-SR-33">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
   </rule>
   <rule context="$Amount_data_type">
     <assert test="$UBL-DT-01" flag="fatal" id="UBL-DT-01">[UBL-DT-01]-Amounts shall be decimal up to two fraction digits</assert>
@@ -21,7 +20,6 @@
   </rule>
   <rule context="$Document_level_charges">
     <assert test="$UBL-SR-31" flag="warning" id="UBL-SR-31">[UBL-SR-31]-Document level charge reason shall occur maximum once</assert>
-    <assert test="$UBL-SR-32" flag="warning" id="UBL-SR-32">[UBL-SR-32]-Document level charge reason code shall occur maximum once</assert>
   </rule>
   <rule context="$Invoice">
     <assert test="$UBL-CR-001" flag="warning" id="UBL-CR-001">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
@@ -687,10 +685,14 @@
     <assert test="$UBL-DT-21" flag="warning" id="UBL-DT-21">[UBL-DT-21]-List scheme uri attribute should not be present</assert>
     <assert test="$UBL-DT-22" flag="warning" id="UBL-DT-22">[UBL-DT-22]-Language local identifier attribute should not be present</assert>
     <assert test="$UBL-DT-23" flag="warning" id="UBL-DT-23">[UBL-DT-23]-Uri attribute should not be present</assert>
+    <assert test="$UBL-DT-24" flag="warning" id="UBL-DT-24">[UBL-DT-24]-Currency code list version id should not be present</assert>
+    <assert test="$UBL-DT-25" flag="warning" id="UBL-DT-25">[UBL-DT-25]-CharacterSetCode attribute should not be present</assert>
+    <assert test="$UBL-DT-26" flag="warning" id="UBL-DT-26">[UBL-DT-26]-EncodingCode attribute should not be present</assert>
+    <assert test="$UBL-DT-27" flag="warning" id="UBL-DT-27">[UBL-DT-27]-List identifier attribute should not be present</assert>
     <assert test="$UBL-SR-01" flag="warning" id="UBL-SR-01">[UBL-SR-01]-Contract identifier shall occur maximum once.</assert>
     <assert test="$UBL-SR-02" flag="warning" id="UBL-SR-02">[UBL-SR-02]-Receive advice identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-03" flag="warning" id="UBL-SR-03">[UBL-SR-03]-Despatch advice identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-04" flag="warning" id="UBL-SR-04">[UBL-SR-04]-Invoice note shall occur maximum once</assert>
+    <assert test="$UBL-SR-04" flag="warning" id="UBL-SR-04">[UBL-SR-04]-Invoice object identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-05" flag="warning" id="UBL-SR-05">[UBL-SR-05]-Payment terms shall occur maximum once</assert>
     <assert test="$UBL-SR-06" flag="warning" id="UBL-SR-06">[UBL-SR-06]-Preceding invoice reference shall occur maximum once</assert>
     <assert test="$UBL-SR-08" flag="warning" id="UBL-SR-08">[UBL-SR-08]-Invoice period shall occur maximum once</assert>
@@ -706,19 +708,15 @@
     <assert test="$UBL-SR-18" flag="warning" id="UBL-SR-18">[UBL-SR-18]-Buyer VAT identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-24" flag="warning" id="UBL-SR-24">[UBL-SR-24]-Deliver to information shall occur maximum once</assert>
     <assert test="$UBL-SR-29" flag="warning" id="UBL-SR-29">[UBL-SR-29]-Bank creditor reference shall occur maximum once</assert>
+    <assert test="$UBL-SR-39" flag="warning" id="UBL-SR-39">[UBL-SR-39]-Project reference shall occur maximum once.</assert>
+    <assert test="$UBL-SR-40" flag="warning" id="UBL-SR-40">[UBL-SR-40]-Buyer trade name shall occur maximum once</assert>
   </rule>
   <rule context="$Invoice_line">
-    <assert test="$UBL-SR-38" flag="warning" id="UBL-SR-38">[UBL-SR-38]-Invoice line note shall occur maximum once</assert>
-    <assert test="$UBL-SR-39" flag="warning" id="UBL-SR-39">[UBL-SR-39]-Referenced purchase order line identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-40" flag="warning" id="UBL-SR-40">[UBL-SR-40]-Invoice line period shall occur maximum once</assert>
-    <assert test="$UBL-SR-41" flag="warning" id="UBL-SR-41">[UBL-SR-41]-Invoice line allowance reason shall occur maximum once</assert>
-    <assert test="$UBL-SR-42" flag="warning" id="UBL-SR-42">[UBL-SR-42]-Invoice line charge reason shall occur maximum once</assert>
-    <assert test="$UBL-SR-43" flag="warning" id="UBL-SR-43">[UBL-SR-43]-Item price discount shall occur maximum once</assert>
-    <assert test="$UBL-SR-44" flag="warning" id="UBL-SR-44">[UBL-SR-44]-Invoiced item VAT exemption reason text shall occur maximum once</assert>
-  </rule>
-  <rule context="$Invoice_total_VAT">
-    <assert test="$UBL-SR-33" flag="warning" id="UBL-SR-33">[UBL-SR-33]-Invoice total VAT amount shall occur maximum once</assert>
-    <assert test="$UBL-SR-34" flag="warning" id="UBL-SR-34">[UBL-SR-34]-Invoice total VAT amount in accounting currency shall occur maximum once if present</assert>
+    <assert test="$UBL-SR-34" flag="warning" id="UBL-SR-34">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>
+    <assert test="$UBL-SR-35" flag="warning" id="UBL-SR-35">[UBL-SR-35]-Referenced purchase order line identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-36" flag="warning" id="UBL-SR-36">[UBL-SR-36]-Invoice line period shall occur maximum once</assert>
+    <assert test="$UBL-SR-37" flag="warning" id="UBL-SR-37">[UBL-SR-37]-Item price discount shall occur maximum once</assert>
+    <assert test="$UBL-SR-38" flag="warning" id="UBL-SR-38">[UBL-SR-38]-Invoiced item VAT exemption reason text shall occur maximum once</assert>
   </rule>
   <rule context="$Payee">
     <assert test="$UBL-SR-19" flag="warning" id="UBL-SR-19">[UBL-SR-19]-Payee name shall occur maximum once, if the Payee is different from the Seller</assert>
@@ -738,6 +736,6 @@
     <assert test="$UBL-SR-23" flag="warning" id="UBL-SR-23">[UBL-SR-23]-Seller tax representative VAT identifier shall occur maximum once, if the Seller has a tax representative</assert>
   </rule>
   <rule context="$Tax_subtotal">
-    <assert test="$UBL-SR-35" flag="warning" id="UBL-SR-35">[UBL-SR-35]-VAT exemption reason text shall occur maximum once</assert>
+    <assert test="$UBL-SR-32" flag="warning" id="UBL-SR-32">[UBL-SR-32]-VAT exemption reason text shall occur maximum once</assert>
   </rule>
 </pattern>
