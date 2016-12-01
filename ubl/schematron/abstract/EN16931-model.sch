@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for model -->
-<!-- Timestamp: 2016-12-01 15:57:56 +0100 -->
+<!-- Timestamp: 2016-12-01 18:11:40 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="model">
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each additional supporting document shall contain a Supporting document identifier. </assert>
@@ -57,6 +57,7 @@
     <assert test="$BR-08" flag="fatal" id="BR-08">[BR-08]-An Invoice shall contain the Seller postal address. </assert>
     <assert test="$BR-10" flag="fatal" id="BR-10">[BR-10]-An Invoice shall contain the Buyer postal address. </assert>
     <assert test="$BR-16" flag="fatal" id="BR-16">[BR-16]-An Invoice shall have at least one Invoice line. </assert>
+    <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-If the VAT accounting currency code is present, then the Invoice total VAT amount in accounting currency shall be provided. </assert>
     <assert test="$BR-AE-01" flag="fatal" id="BR-AE-01">[BR-AE-01]-An Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code (BT-151, BT-95 or BT-102) is “Reverse charge” shall contain in the VAT breakdown (BG-23) exactly one VAT category code (BT-118) equal with "Reverse charge".</assert>
     <assert test="$BR-AE-02" flag="fatal" id="BR-AE-02">[BR-AE-02]-An Invoice that contains a line where the Invoiced item VAT category code (BT-151) is “Reverse charge” shall contain the Sellers VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier or the Buter tax registration identifier.</assert>
     <assert test="$BR-AE-03" flag="fatal" id="BR-AE-03">[BR-AE-03]-An Invoice that contains a document level allowance where the Invoiced item VAT category code (BT-95) is “Reverse charge” shall contain the Sellers VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier or the Buyer tax registration identifier.</assert>
@@ -173,7 +174,6 @@
     <assert test="$BR-20" flag="fatal" id="BR-20">[BR-20]-The Seller tax representative postal address shall contain a Tax representative country code, if the Seller has a tax representative party.</assert>
   </rule>
   <rule context="$Tax_Total">
-    <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-If the VAT accounting currency code is present, then the Invoice total VAT amount in accounting currency shall be provided. </assert>
     <assert test="$BR-CO-14" flag="fatal" id="BR-CO-14">[BR-CO-14]-Invoice total VAT amount = Σ VAT category tax amount. </assert>
   </rule>
   <rule context="$VAT_breakdown ">
