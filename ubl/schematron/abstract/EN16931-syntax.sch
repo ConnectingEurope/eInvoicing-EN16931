@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for syntax -->
-<!-- Timestamp: 2016-12-01 21:13:29 +0100 -->
+<!-- Timestamp: 2016-12-01 22:31:03 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="syntax">
   <rule context="$Additional_supporting_documents">
     <assert test="$UBL-SR-33" flag="warning" id="UBL-SR-33">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
@@ -688,7 +688,6 @@
     <assert test="$UBL-DT-24" flag="warning" id="UBL-DT-24">[UBL-DT-24]-Currency code list version id should not be present</assert>
     <assert test="$UBL-DT-25" flag="warning" id="UBL-DT-25">[UBL-DT-25]-CharacterSetCode attribute should not be present</assert>
     <assert test="$UBL-DT-26" flag="warning" id="UBL-DT-26">[UBL-DT-26]-EncodingCode attribute should not be present</assert>
-    <assert test="$UBL-DT-27" flag="warning" id="UBL-DT-27">[UBL-DT-27]-List identifier attribute should not be present</assert>
     <assert test="$UBL-SR-01" flag="warning" id="UBL-SR-01">[UBL-SR-01]-Contract identifier shall occur maximum once.</assert>
     <assert test="$UBL-SR-02" flag="warning" id="UBL-SR-02">[UBL-SR-02]-Receive advice identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-03" flag="warning" id="UBL-SR-03">[UBL-SR-03]-Despatch advice identifier shall occur maximum once</assert>
