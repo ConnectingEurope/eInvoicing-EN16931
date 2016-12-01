@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 
-            UBL syntax binding to the model  
+            UBL syntax binding to the syntax  
             Created by Validex Schematron Generator. (2015) Midran Ltd.
-            Timestamp: 2016-12-01 15:58:19 +0100
+            Timestamp: 2016-11-29 22:33:33 +0100
      -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:UBL="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" queryBinding="xslt2">
-  <title>EN16931  model bound to UBL</title>
+  <title>EN16931  syntax bound to UBL</title>
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
   <ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"/>
-  <phase id="EN16931model_phase">
-    <active pattern="UBL-model"/>
-  </phase>
-  <phase id="codelist_phase">
-    <active pattern="Codesmodel"/>
+  <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"/>
+  <phase id="EN16931syntax_phase">
+    <active pattern="UBL-syntax"/>
   </phase>
   <!-- Abstract CEN BII patterns -->
   <!-- ========================= -->
-  <include href="abstract/EN16931-model.sch"/>
+  <include href="abstract/EN16931-syntax.sch"/>
   <!-- Data Binding parameters -->
   <!-- ======================= -->
-  <include href="UBL/EN16931-UBL-model.sch"/>
-  <!-- Code Lists Binding rules -->
-  <!-- ======================== -->
-  <include href="codelist/EN16931-UBL-codes.sch"/>
+  <include href="UBL/EN16931-UBL-syntax.sch"/>
 </schema>

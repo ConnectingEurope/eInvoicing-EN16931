@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for model -->
-<!-- Timestamp: 2016-12-01 13:34:03 +0100 -->
+<!-- Timestamp: 2016-12-01 15:57:56 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="model">
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each additional supporting document shall contain a Supporting document identifier. </assert>
@@ -149,8 +149,8 @@
     <assert test="$BR-50" flag="fatal" id="BR-50">[BR-50]-A payment account identifier shall be present if Credit Transfer identification information is provided in the Invoice. </assert>
   </rule>
   <rule context="$Payment_instructions ">
-    <assert test="$BR-61" flag="fatal" id="BR-61">[BR-61]-If the Payment means type is SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier shall be present.</assert>
     <assert test="$BR-49" flag="fatal" id="BR-49">[BR-49]-A payment instruction shall specify the Payment means type code. </assert>
+    <assert test="$BR-61" flag="fatal" id="BR-61">[BR-61]-If the Payment means type is SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier shall be present.</assert>
   </rule>
   <rule context="$Preceding_Invoice">
     <assert test="$BR-55" flag="fatal" id="BR-55">[BR-55]-Each Preceding invoice reference shall contain a preceding invoice number.</assert>
@@ -173,6 +173,7 @@
     <assert test="$BR-20" flag="fatal" id="BR-20">[BR-20]-The Seller tax representative postal address shall contain a Tax representative country code, if the Seller has a tax representative party.</assert>
   </rule>
   <rule context="$Tax_Total">
+    <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-If the VAT accounting currency code is present, then the Invoice total VAT amount in accounting currency shall be provided. </assert>
     <assert test="$BR-CO-14" flag="fatal" id="BR-CO-14">[BR-CO-14]-Invoice total VAT amount = Σ VAT category tax amount. </assert>
   </rule>
   <rule context="$VAT_breakdown ">
@@ -180,7 +181,6 @@
     <assert test="$BR-46" flag="fatal" id="BR-46">[BR-46]-Each VAT breakdown shall have a VAT category tax amount. </assert>
     <assert test="$BR-47" flag="fatal" id="BR-47">[BR-47]-Each VAT breakdown shall be defined through a VAT category code. </assert>
     <assert test="$BR-48" flag="fatal" id="BR-48">[BR-48]-Each VAT breakdown shall have a VAT category rate, except if the Invoice is not subject to VAT. </assert>
-    <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-If the VAT accounting currency code is present, then the Invoice total VAT amount in accounting currency shall be provided. </assert>
     <assert test="$BR-CO-17" flag="fatal" id="BR-CO-17">[BR-CO-17]-VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded to two decimals. </assert>
   </rule>
   <rule context="$VAT_identifiers ">
