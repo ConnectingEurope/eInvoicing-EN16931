@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for model -->
-<!-- Timestamp: 2016-12-05 12:39:44 +0100 -->
+<!-- Timestamp: 2016-12-05 14:37:42 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="model">
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each additional supporting document shall contain a Supporting document identifier. </assert>
@@ -24,14 +24,12 @@
     <assert test="$BR-31" flag="fatal" id="BR-31">[BR-31]-Each document level allowance shall have a Document level allowance amount. </assert>
     <assert test="$BR-32" flag="fatal" id="BR-32">[BR-32]-Each document level allowance shall have a Document level allowance VAT category code. </assert>
     <assert test="$BR-33" flag="fatal" id="BR-33">[BR-33]-Each document level allowance shall have a Document level allowance reason or a document level allowance reason code.</assert>
-    <assert test="$BR-CO-05" flag="fatal" id="BR-CO-05">[BR-CO-05]-Document level allowance reason code and Document level allowance reason shall indicate the same type of allowance. </assert>
     <assert test="$BR-CO-21" flag="fatal" id="BR-CO-21">[BR-CO-21]-Each Document level allowance (BG-20) shall contain a Document level allowance reason or a Document level allowance reason code, or both.</assert>
   </rule>
   <rule context="$Document_level_charges ">
     <assert test="$BR-36" flag="fatal" id="BR-36">[BR-36]-Each document level charge shall have a Document level charge amount. </assert>
     <assert test="$BR-37" flag="fatal" id="BR-37">[BR-37]-Each document level charge shall have a Document level charge VAT category code. </assert>
     <assert test="$BR-38" flag="fatal" id="BR-38">[BR-38]-Each document level charge shall have a Document level charge reason or a Document level charge reason code.</assert>
-    <assert test="$BR-CO-06" flag="fatal" id="BR-CO-06">[BR-CO-06]-Document level charge reason code and Document level charge reason shall indicate the same type of charge. </assert>
     <assert test="$BR-CO-22" flag="fatal" id="BR-CO-22">[BR-CO-22]-Each Document level charge (BG-21) shall contain a Document level charge reason or a Document level charge reason code, or both.</assert>
   </rule>
   <rule context="$Document_totals ">
@@ -117,13 +115,11 @@
   <rule context="$Invoice_line_allowances ">
     <assert test="$BR-41" flag="fatal" id="BR-41">[BR-41]-Each Invoice line allowance shall have an Invoice line allowance amount. </assert>
     <assert test="$BR-42" flag="fatal" id="BR-42">[BR-42]-Each Invoice line allowance shall have an Invoice line allowance reason or an Invoice line allowance reason code.</assert>
-    <assert test="$BR-CO-07" flag="fatal" id="BR-CO-07">[BR-CO-07]-Invoice line allowance reason code and Invoice line allowance reason shall indicate the same type of allowance reason. </assert>
     <assert test="$BR-CO-23" flag="fatal" id="BR-CO-23">[BR-CO-23]-Each Invoice line allowance (BG-27) shall contain an Invoice line allowance reason or an Invoice line allowance reason code, or both.</assert>
   </rule>
   <rule context="$Invoice_line_charges ">
     <assert test="$BR-43" flag="fatal" id="BR-43">[BR-43]-Each Invoice line charge shall have an Invoice line charge amount. </assert>
     <assert test="$BR-44" flag="fatal" id="BR-44">[BR-44]-Each Invoice line charge shall have an Invoice line charge reason or an invoice line allowance reason code. </assert>
-    <assert test="$BR-CO-08" flag="fatal" id="BR-CO-08">[BR-CO-08]-Invoice line charge reason code and Invoice line charge reason shall indicate the same type of charge reason. </assert>
     <assert test="$BR-CO-24" flag="fatal" id="BR-CO-24">[BR-CO-24]-Each Invoice line charge (BG-28) shall contain an Invoice line charge reason or an Invoice line charge reason code, or both.</assert>
   </rule>
   <rule context="$Invoice_Line_Period ">
