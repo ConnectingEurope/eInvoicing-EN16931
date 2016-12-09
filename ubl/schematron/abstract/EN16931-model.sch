@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for model -->
-<!-- Timestamp: 2016-12-07 12:38:54 +0100 -->
+<!-- Timestamp: 2016-12-09 14:09:11 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="model">
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each additional supporting document shall contain a Supporting document identifier. </assert>
@@ -199,6 +199,7 @@
   <rule context="$VATE">
     <assert test="$BR-E-08" flag="fatal" id="BR-E-08">[BR-E-08]-In a VAT breakdown (BG-23) where VAT category code (BT-118) is "Exempt from VAT" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus document level allowance amounts (BT-92) plus document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are “Exempt from VAT".</assert>
     <assert test="$BR-E-09" flag="fatal" id="BR-E-09">[BR-E-09]-The VAT category tax amount (BT-117) In a VAT breakdown (BG-23) where the VAT category code (BT-118) equals "Exempt from VAT" shall equal 0 (zero).</assert>
+    <assert test="$BR-E-10" flag="fatal" id="BR-E-10">[BR-E-10]-A VAT Breakdown (BG-23) with VAT Category code (BT-118) "Exempt from VAT" shall have a VAT Exemption reason code (BT-121) or a VAT Exemption reason text (BT-120).</assert>
   </rule>
   <rule context="$VATE_Allowance">
     <assert test="$BR-E-06" flag="fatal" id="BR-E-06">[BR-E-06]-In a document level allowance where the Invoice item VAT category code (BT-95) is "Exempt from VAT", the Invoiced item VAT rate (BT-96) shall be 0 (zero).</assert>
