@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for model -->
-<!-- Timestamp: 2016-12-13 20:27:45 +0100 -->
+<!-- Timestamp: 2016-12-16 14:09:34 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="model">
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each additional supporting document shall contain a Supporting document identifier. </assert>
@@ -41,7 +41,6 @@
     <assert test="$BR-CO-11" flag="fatal" id="BR-CO-11">[BR-CO-11]-Sum of allowances on document level = Σ Document level allowance amount. </assert>
     <assert test="$BR-CO-12" flag="fatal" id="BR-CO-12">[BR-CO-12]-Sum of charges on document level = Σ Document level charge amount. </assert>
     <assert test="$BR-CO-13" flag="fatal" id="BR-CO-13">[BR-CO-13]-Invoice total amount without VAT = Σ Invoice line net amount - Sum of allowances on document level + Sum of charges on document level. </assert>
-    <assert test="$BR-CO-15" flag="fatal" id="BR-CO-15">[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </assert>
     <assert test="$BR-CO-16" flag="fatal" id="BR-CO-16">[BR-CO-16]-Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</assert>
   </rule>
   <rule context="$Invoice ">
@@ -61,6 +60,7 @@
     <assert test="$BR-AE-03" flag="fatal" id="BR-AE-03">[BR-AE-03]-An Invoice that contains a document level allowance where the Invoiced item VAT category code (BT-95) is “Reverse charge” shall contain the Sellers VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier or the Buyer tax registration identifier.</assert>
     <assert test="$BR-AE-04" flag="fatal" id="BR-AE-04">[BR-AE-04]-An Invoice that contains a document level charge where the Invoiced item VAT category code (BT-102) is “Reverse charge” shall contain the Sellers VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48).</assert>
     <assert test="$BR-CO-03" flag="fatal" id="BR-CO-03">[BR-CO-03]-Value added tax point date and Value added tax point date code are mutually exclusive. </assert>
+    <assert test="$BR-CO-15" flag="fatal" id="BR-CO-15">[BR-CO-15]-Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount. </assert>
     <assert test="$BR-CO-18" flag="fatal" id="BR-CO-18">[BR-CO-18]-An invoice shall at least have one VAT breakdown group (BG-23)</assert>
     <assert test="$BR-E-01" flag="fatal" id="BR-E-01">[BR-E-01]-An Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code (BT-151, BT-95 or BT-102) is “Exempt from VAT” shall contain exactly one a VAT breakdown (BG-23) with VAT category code (BT-118) equal to "Exempt from VAT". </assert>
     <assert test="$BR-E-02" flag="fatal" id="BR-E-02">[BR-E-02]-An Invoice that contains a line where the Invoiced item VAT category code (BT-151) is “Exempt from VAT” shall contain the Sellers VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) or the Seller tax representative VAT identifier (BT-63).</assert>
