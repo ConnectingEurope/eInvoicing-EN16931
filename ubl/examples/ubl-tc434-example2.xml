@@ -38,7 +38,7 @@
         <cbc:ID>Doc2</cbc:ID>
         <cbc:DocumentType>EHF specification</cbc:DocumentType>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="EHF.pdf">JVBERi0xLjUNCiUNCjEgMCBvYmoOy6JTZX9bcgRVxIVG...tbLosChU2XRf9xb/omscgTY/lXEhUb</cbc:EmbeddedDocumentBinaryObject>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="EHF.pdf">VGVzdGluZyBCYXNlNjQgZW5jb2Rpbmc=</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
     <cac:AccountingSupplierParty>
