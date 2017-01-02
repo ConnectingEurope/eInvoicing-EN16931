@@ -4,9 +4,7 @@
  xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
  xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
  xmlns:ccts="urn:un:unece:uncefact:documentation:2"
- xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 file:/Users/oriolbausa/Documents/Estandards/UBL/UBL-2.1/xsdrt/maindoc/UBL-Invoice-2.1.xsd">
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
     <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
     <cbc:ID>12115118</cbc:ID>
     <cbc:IssueDate>2015-01-09</cbc:IssueDate>

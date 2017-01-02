@@ -4,9 +4,7 @@
  xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
  xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
  xmlns:ccts="urn:un:unece:uncefact:documentation:2"
- xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 file:/Users/oriolbausa/Documents/Estandards/UBL/UBL-2.1/xsdrt/maindoc/UBL-Invoice-2.1.xsd">
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
     <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
     <cbc:ProfileID>1</cbc:ProfileID>
     <cbc:ID>TOSL110</cbc:ID>
@@ -52,7 +50,7 @@
         <cbc:ID>sales slip</cbc:ID>
         <cbc:DocumentType>your sales slip</cbc:DocumentType>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="EHF.pdf">JVBERi0xLjUNCiUNCjEgMCBvYmoOy6JTZX9bcgRVxIVG...tbLosChU2XRf9xb/omscgTY/lXEhUb</cbc:EmbeddedDocumentBinaryObject>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="EHF.pdf">VGVzdGluZyBCYXNlNjQgZW5jb2Rpbmc=</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
     <cac:ProjectReference>
@@ -209,7 +207,7 @@
     </cac:PaymentTerms>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReasonCode>75</cbc:AllowanceChargeReasonCode>
+        <cbc:AllowanceChargeReasonCode>100</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Loyal customer</cbc:AllowanceChargeReason>
         <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
         <cbc:Amount currencyID="DKK">150.00</cbc:Amount>
@@ -224,7 +222,7 @@
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReasonCode>Packaging</cbc:AllowanceChargeReasonCode>
+        <cbc:AllowanceChargeReasonCode>ABL</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Packaging</cbc:AllowanceChargeReason>
         <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
         <cbc:Amount currencyID="DKK">150.00</cbc:Amount>
@@ -292,7 +290,7 @@
         </cac:DocumentReference>
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-            <cbc:AllowanceChargeReasonCode>Loyal customer</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReasonCode>100</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Loyal customer</cbc:AllowanceChargeReason>
             <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
             <cbc:Amount currencyID="DKK">100.00</cbc:Amount>
@@ -300,7 +298,7 @@
         </cac:AllowanceCharge>
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-            <cbc:AllowanceChargeReasonCode>Packaging</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReasonCode>ABL</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Packaging</cbc:AllowanceChargeReason>
             <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
             <cbc:Amount currencyID="DKK">100.00</cbc:Amount>
