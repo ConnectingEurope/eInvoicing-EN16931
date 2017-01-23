@@ -71,7 +71,7 @@
   <dependencies>
     <dependency>
       <groupId>com.helger</groupId>
-      <artifactId>ph-xml</artifactId>
+      <artifactId>ph-jaxb</artifactId>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
