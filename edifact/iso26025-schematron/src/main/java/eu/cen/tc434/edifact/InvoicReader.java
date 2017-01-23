@@ -23,6 +23,6 @@ public class InvoicReader extends AbstractJAXBMarshaller <MINVOIC>
   {
     super (MINVOIC.class,
            new CommonsArrayList<> (XSD),
-           x -> new JAXBElement <MINVOIC> (new QName ("", "M_INVOICE"), MINVOIC.class, x));
+           x -> new JAXBElement<> (new QName ("", "M_INVOICE"), MINVOIC.class, x));
   }
 }

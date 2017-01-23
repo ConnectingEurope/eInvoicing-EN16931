@@ -54,12 +54,12 @@
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-xml</artifactId>
-      <version>8.6.0</version>
+      <version>8.6.1</version>
     </dependency>
     <dependency>
       <groupId>com.helger</groupId>
       <artifactId>ph-schematron</artifactId>
-      <version>4.1.1</version>
+      <version>4.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
