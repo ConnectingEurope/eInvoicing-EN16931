@@ -18,6 +18,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * `edifact` - UN/EDIFACT (and ISO 26025 based XML version)
     * Contact points
       * Andreas Pelekies
+      * Martin Krusch (Testing and QA)
   * `iso20022` - Invoice based on ISO 20022 (**discontinued**)
     * Contact points
       * Zsoltan Patkai
