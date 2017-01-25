@@ -703,7 +703,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_41() throws Exception {
 				state = 41;				
 				if (!var16_filter_elements_nodename.moveNext()) {state = 42; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG6", ""), (new seq62_join(((com.altova.mapforce.IMFNode)(var16_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG6", ""), (new seq68_join(((com.altova.mapforce.IMFNode)(var16_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -716,7 +716,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_44() throws Exception {
 				state = 44;				
 				if (!var17_filter_elements_nodename.moveNext()) {state = 45; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG7", ""), (new seq67_join(((com.altova.mapforce.IMFNode)(var17_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG7", ""), (new seq73_join(((com.altova.mapforce.IMFNode)(var17_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -729,7 +729,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_47() throws Exception {
 				state = 47;				
 				if (!var18_filter_elements_nodename.moveNext()) {state = 48; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG8", ""), (new seq70_join(((com.altova.mapforce.IMFNode)(var18_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG8", ""), (new seq76_join(((com.altova.mapforce.IMFNode)(var18_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -742,7 +742,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_50() throws Exception {
 				state = 50;				
 				if (!var19_filter_elements_nodename.moveNext()) {state = 51; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG9", ""), (new seq75_join(((com.altova.mapforce.IMFNode)(var19_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG9", ""), (new seq81_join(((com.altova.mapforce.IMFNode)(var19_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -755,7 +755,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_53() throws Exception {
 				state = 53;				
 				if (!var20_filter_elements_nodename.moveNext()) {state = 54; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG12", ""), (new seq90_join(((com.altova.mapforce.IMFNode)(var20_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG12", ""), (new seq95_join(((com.altova.mapforce.IMFNode)(var20_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -768,7 +768,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_56() throws Exception {
 				state = 56;				
 				if (!var21_filter_elements_nodename.moveNext()) {state = 57; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG13", ""), (new seq93_join(((com.altova.mapforce.IMFNode)(var21_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG13", ""), (new seq98_join(((com.altova.mapforce.IMFNode)(var21_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -781,7 +781,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_59() throws Exception {
 				state = 59;				
 				if (!var22_filter_elements_nodename.moveNext()) {state = 60; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG14", ""), (new seq100_join(((com.altova.mapforce.IMFNode)(var22_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG14", ""), (new seq105_join(((com.altova.mapforce.IMFNode)(var22_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -794,7 +794,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_62() throws Exception {
 				state = 62;				
 				if (!var23_filter_elements_nodename.moveNext()) {state = 63; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG16", ""), (new seq112_join(((com.altova.mapforce.IMFNode)(var23_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG16", ""), (new seq117_join(((com.altova.mapforce.IMFNode)(var23_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -807,7 +807,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_65() throws Exception {
 				state = 65;				
 				if (!var24_filter_elements_nodename.moveNext()) {state = 66; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG23", ""), (new seq123_join(((com.altova.mapforce.IMFNode)(var24_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG23", ""), (new seq128_join(((com.altova.mapforce.IMFNode)(var24_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -820,7 +820,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_68() throws Exception {
 				state = 68;				
 				if (!var25_filter_elements_nodename.moveNext()) {state = 69; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG24", ""), (new seq126_join(((com.altova.mapforce.IMFNode)(var25_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG24", ""), (new seq131_join(((com.altova.mapforce.IMFNode)(var25_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -833,7 +833,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_71() throws Exception {
 				state = 71;				
 				if (!var26_filter_elements_nodename.moveNext()) {state = 72; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG25", ""), (new seq128_join(((com.altova.mapforce.IMFNode)(var26_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG25", ""), (new seq133_join(((com.altova.mapforce.IMFNode)(var26_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -846,7 +846,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_74() throws Exception {
 				state = 74;				
 				if (!var27_filter_elements_nodename.moveNext()) {state = 75; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG26", ""), (new seq133_join(((com.altova.mapforce.IMFNode)(var27_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG26", ""), (new seq138_join(((com.altova.mapforce.IMFNode)(var27_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -859,7 +859,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_77() throws Exception {
 				state = 77;				
 				if (!var28_filter_elements_nodename.moveNext()) {state = 78; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG27", ""), (new seq141_join(((com.altova.mapforce.IMFNode)(var28_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG27", ""), (new seq144_join(((com.altova.mapforce.IMFNode)(var28_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -872,7 +872,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_80() throws Exception {
 				state = 80;				
 				if (!var29_filter_elements_nodename.moveNext()) {state = 81; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_UNS", ""), (new seq171_map(((com.altova.mapforce.IMFNode)(var29_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_UNS", ""), (new seq167_map(((com.altova.mapforce.IMFNode)(var29_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -885,7 +885,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_83() throws Exception {
 				state = 83;				
 				if (!var30_filter_elements_nodename.moveNext()) {state = 84; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CNT", ""), (new seq172_map(((com.altova.mapforce.IMFNode)(var30_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CNT", ""), (new seq168_map(((com.altova.mapforce.IMFNode)(var30_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -898,7 +898,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_86() throws Exception {
 				state = 86;				
 				if (!var31_filter_elements_nodename.moveNext()) {state = 87; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG52", ""), (new seq174_join(((com.altova.mapforce.IMFNode)(var31_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG52", ""), (new seq170_join(((com.altova.mapforce.IMFNode)(var31_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -911,7 +911,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_89() throws Exception {
 				state = 89;				
 				if (!var32_filter_elements_nodename.moveNext()) {state = 90; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG54", ""), (new seq122_join(((com.altova.mapforce.IMFNode)(var32_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG54", ""), (new seq127_join(((com.altova.mapforce.IMFNode)(var32_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -924,7 +924,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_92() throws Exception {
 				state = 92;				
 				if (!var33_filter_elements_nodename.moveNext()) {state = 93; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG55", ""), (new seq175_join(((com.altova.mapforce.IMFNode)(var33_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG55", ""), (new seq171_join(((com.altova.mapforce.IMFNode)(var33_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -937,7 +937,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_95() throws Exception {
 				state = 95;				
 				if (!var34_filter_elements_nodename.moveNext()) {state = 96; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_UNT", ""), (new seq176_join(((com.altova.mapforce.IMFNode)(var34_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_UNT", ""), (new seq172_join(((com.altova.mapforce.IMFNode)(var34_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -950,7 +950,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_98() throws Exception {
 				state = 98;				
 				if (!var35_filter_elements_nodename.moveNext()) {state = 99; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("P_OBJECT", ""), (new seq177_join(((com.altova.mapforce.IMFNode)(var35_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("P_OBJECT", ""), (new seq173_join(((com.altova.mapforce.IMFNode)(var35_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -6581,7 +6581,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG3", ""), (new seq59_seq_()));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG3", ""), (new seq59_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -6594,7 +6594,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_17() throws Exception {
 				state = 17;				
 				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG4", ""), (new seq60_seq_()));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG4", ""), (new seq60_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -6607,7 +6607,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_20() throws Exception {
 				state = 20;				
 				if (!var8_filter_elements_nodename.moveNext()) {state = 21; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG5", ""), (new seq61_seq_()));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG5", ""), (new seq63_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -7855,11 +7855,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq59_seq_ implements IEnumerable
+	static class seq59_join implements IEnumerable
 	{
+		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq59_seq_()
+		public seq59_join(com.altova.mapforce.IMFNode var1_cur)
 		{
+			this.var1_cur = var1_cur;
 		}
 
 		public IEnumerator enumerator() {return new Enumerator(this);}
@@ -7869,8 +7871,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq59_seq_ closure;
-			public Enumerator(seq59_seq_ closure) 
+			seq59_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			public Enumerator(seq59_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -7886,13 +7890,43 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 					switch (state) 
 					{
 					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
  					}
 				}
 				return false;
 			}
 
 			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("RFF", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RFF", ""), (new seq38_map(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
 				state = 0;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
 				return false;
 			}
 
@@ -7901,6 +7935,8 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			{
 				try
 				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
 				}
 				catch (Exception e)
 				{
@@ -7909,11 +7945,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq60_seq_ implements IEnumerable
+	static class seq60_join implements IEnumerable
 	{
+		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq60_seq_()
+		public seq60_join(com.altova.mapforce.IMFNode var1_cur)
 		{
+			this.var1_cur = var1_cur;
 		}
 
 		public IEnumerator enumerator() {return new Enumerator(this);}
@@ -7923,8 +7961,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq60_seq_ closure;
-			public Enumerator(seq60_seq_ closure) 
+			seq60_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			public Enumerator(seq60_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -7940,13 +7980,43 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 					switch (state) 
 					{
 					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
  					}
 				}
 				return false;
 			}
 
 			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("DOC", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DOC", ""), (new seq61_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
 				state = 0;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
 				return false;
 			}
 
@@ -7955,6 +8025,8 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			{
 				try
 				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
 				}
 				catch (Exception e)
 				{
@@ -7963,11 +8035,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq61_seq_ implements IEnumerable
+	static class seq61_join implements IEnumerable
 	{
+		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq61_seq_()
+		public seq61_join(com.altova.mapforce.IMFNode var1_cur)
 		{
+			this.var1_cur = var1_cur;
 		}
 
 		public IEnumerator enumerator() {return new Enumerator(this);}
@@ -7977,8 +8051,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq61_seq_ closure;
-			public Enumerator(seq61_seq_ closure) 
+			seq61_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			IEnumerator var4_filter_elements_nodename;
+			IEnumerator var5_filter_elements_nodename;
+			IEnumerator var6_filter_elements_nodename;
+			public Enumerator(seq61_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -7994,13 +8073,88 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 					switch (state) 
 					{
 					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+					case 8:	if (moveNext_8()) return true; break;
+					case 9:	if (moveNext_9()) return true; break;
+					case 11:	if (moveNext_11()) return true; break;
+					case 12:	if (moveNext_12()) return true; break;
+					case 14:	if (moveNext_14()) return true; break;
+					case 15:	if (moveNext_15()) return true; break;
  					}
 				}
 				return false;
 			}
 
 			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C002", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C002", ""), (new seq9_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C503", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C503", ""), (new seq62_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 8;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3153", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_8() throws Exception {
+				state = 8;				
+				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3153", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_9() throws Exception {
+				state = 11;				
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1220", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_11() throws Exception {
+				state = 11;				
+				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1220", ""), com.altova.functions.Core.box(com.altova.CoreTypes.decimalToString(com.altova.CoreTypes.parseDecimal(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_12() throws Exception {
+				state = 14;				
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1218", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_14() throws Exception {
+				state = 14;				
+				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1218", ""), com.altova.functions.Core.box(com.altova.CoreTypes.decimalToString(com.altova.CoreTypes.parseDecimal(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_15() throws Exception {
 				state = 0;				
+				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
 				return false;
 			}
 
@@ -8009,6 +8163,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			{
 				try
 				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
 				}
 				catch (Exception e)
 				{
@@ -8037,7 +8196,598 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
+			IEnumerator var5_filter_elements_nodename;
+			IEnumerator var6_filter_elements_nodename;
+			IEnumerator var7_filter_elements_nodename;
 			public Enumerator(seq62_join closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+					case 8:	if (moveNext_8()) return true; break;
+					case 9:	if (moveNext_9()) return true; break;
+					case 11:	if (moveNext_11()) return true; break;
+					case 12:	if (moveNext_12()) return true; break;
+					case 14:	if (moveNext_14()) return true; break;
+					case 15:	if (moveNext_15()) return true; break;
+					case 17:	if (moveNext_17()) return true; break;
+					case 18:	if (moveNext_18()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1004", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1004", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1373", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1373", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 8;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1366", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_8() throws Exception {
+				state = 8;				
+				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1366", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_9() throws Exception {
+				state = 11;				
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3453", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_11() throws Exception {
+				state = 11;				
+				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3453", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_12() throws Exception {
+				state = 14;				
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1056", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_14() throws Exception {
+				state = 14;				
+				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1056", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_15() throws Exception {
+				state = 17;				
+				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
+				var7_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1060", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_17() throws Exception {
+				state = 17;				
+				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1060", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_18() throws Exception {
+				state = 0;				
+				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
+				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq63_join implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq63_join(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq63_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			public Enumerator(seq63_join closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("CTA", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CTA", ""), (new seq64_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("COM", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_COM", ""), (new seq66_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 0;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq64_join implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq64_join(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq64_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			public Enumerator(seq64_join closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3139", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3139", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C056", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C056", ""), (new seq65_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 0;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq65_join implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq65_join(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq65_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			public Enumerator(seq65_join closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3413", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3413", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3412", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3412", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 0;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq66_map implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq66_map(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq66_map closure;
+			IEnumerator var2_filter_elements_nodename;
+			public Enumerator(seq66_map closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C076", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C076", ""), (new seq67_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 0;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq67_join implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq67_join(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq67_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			public Enumerator(seq67_join closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3148", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3148", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3155", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3155", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 0;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq68_join implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq68_join(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq68_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			IEnumerator var4_filter_elements_nodename;
+			public Enumerator(seq68_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -8072,7 +8822,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TAX", ""), (new seq63_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TAX", ""), (new seq69_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -8124,11 +8874,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq63_join implements IEnumerable
+	static class seq69_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq63_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq69_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -8140,7 +8890,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq63_join closure;
+			seq69_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
@@ -8150,7 +8900,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var8_filter_elements_nodename;
 			IEnumerator var9_filter_elements_nodename;
 			IEnumerator var10_filter_elements_nodename;
-			public Enumerator(seq63_join closure) 
+			public Enumerator(seq69_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -8210,7 +8960,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C241", ""), (new seq64_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C241", ""), (new seq70_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -8223,7 +8973,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C533", ""), (new seq65_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C533", ""), (new seq71_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -8249,7 +8999,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C243", ""), (new seq66_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C243", ""), (new seq72_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -8333,11 +9083,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq64_join implements IEnumerable
+	static class seq70_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq64_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq70_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -8349,12 +9099,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq64_join closure;
+			seq70_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq64_join closure) 
+			public Enumerator(seq70_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -8457,11 +9207,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq65_join implements IEnumerable
+	static class seq71_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq65_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq71_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -8473,11 +9223,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq65_join closure;
+			seq71_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq65_join closure) 
+			public Enumerator(seq71_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -8564,11 +9314,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq66_join implements IEnumerable
+	static class seq72_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq66_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq72_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -8580,11 +9330,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq66_join closure;
+			seq72_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq66_join closure) 
+			public Enumerator(seq72_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -8671,11 +9421,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq67_join implements IEnumerable
+	static class seq73_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq67_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq73_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -8687,10 +9437,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq67_join closure;
+			seq73_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq67_join closure) 
+			public Enumerator(seq73_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -8723,7 +9473,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CUX", ""), (new seq68_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CUX", ""), (new seq74_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -8761,11 +9511,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq68_join implements IEnumerable
+	static class seq74_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq68_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq74_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -8777,12 +9527,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq68_join closure;
+			seq74_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq68_join closure) 
+			public Enumerator(seq74_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -8819,7 +9569,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C504", ""), (new seq69_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C504", ""), (new seq75_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -8832,7 +9582,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C504_2", ""), (new seq69_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C504_2", ""), (new seq75_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -8885,11 +9635,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq69_join implements IEnumerable
+	static class seq75_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq69_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq75_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -8901,12 +9651,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq69_join closure;
+			seq75_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq69_join closure) 
+			public Enumerator(seq75_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -9009,11 +9759,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq70_join implements IEnumerable
+	static class seq76_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq70_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq76_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -9025,14 +9775,14 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq70_join closure;
+			seq76_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
 			IEnumerator var7_filter_elements_nodename;
-			public Enumerator(seq70_join closure) 
+			public Enumerator(seq76_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -9073,7 +9823,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PYT", ""), (new seq71_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PYT", ""), (new seq77_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9099,7 +9849,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCD", ""), (new seq73_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCD", ""), (new seq79_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9167,11 +9917,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq71_join implements IEnumerable
+	static class seq77_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq71_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq77_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -9183,14 +9933,14 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq71_join closure;
+			seq77_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
 			IEnumerator var7_filter_elements_nodename;
-			public Enumerator(seq71_join closure) 
+			public Enumerator(seq77_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -9244,7 +9994,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C019", ""), (new seq72_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C019", ""), (new seq78_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9325,11 +10075,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq72_join implements IEnumerable
+	static class seq78_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq72_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq78_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -9341,12 +10091,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq72_join closure;
+			seq78_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq72_join closure) 
+			public Enumerator(seq78_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -9449,11 +10199,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq73_join implements IEnumerable
+	static class seq79_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq73_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq79_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -9465,10 +10215,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq73_join closure;
+			seq79_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq73_join closure) 
+			public Enumerator(seq79_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -9501,7 +10251,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C501", ""), (new seq74_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C501", ""), (new seq80_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9539,11 +10289,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq74_join implements IEnumerable
+	static class seq80_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq74_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq80_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -9555,13 +10305,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq74_join closure;
+			seq80_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq74_join closure) 
+			public Enumerator(seq80_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -9680,11 +10430,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq75_join implements IEnumerable
+	static class seq81_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq75_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq81_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -9696,12 +10446,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq75_join closure;
+			seq81_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq75_join closure) 
+			public Enumerator(seq81_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -9738,7 +10488,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TDT", ""), (new seq76_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TDT", ""), (new seq82_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9751,7 +10501,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TSR", ""), (new seq83_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TSR", ""), (new seq89_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9764,7 +10514,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG10", ""), (new seq88_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG10", ""), (new seq94_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9777,7 +10527,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG11", ""), (new seq89_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG11", ""), (new seq59_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9804,11 +10554,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq76_join implements IEnumerable
+	static class seq82_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq76_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq82_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -9820,7 +10570,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq76_join closure;
+			seq82_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
@@ -9831,7 +10581,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var9_filter_elements_nodename;
 			IEnumerator var10_filter_elements_nodename;
 			IEnumerator var11_filter_elements_nodename;
-			public Enumerator(seq76_join closure) 
+			public Enumerator(seq82_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -9906,7 +10656,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C220", ""), (new seq77_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C220", ""), (new seq83_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9919,7 +10669,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C001", ""), (new seq78_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C001", ""), (new seq84_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9932,7 +10682,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C040", ""), (new seq79_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C040", ""), (new seq85_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9958,7 +10708,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_20() throws Exception {
 				state = 20;				
 				if (!var8_filter_elements_nodename.moveNext()) {state = 21; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C401", ""), (new seq80_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C401", ""), (new seq86_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9971,7 +10721,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_23() throws Exception {
 				state = 23;				
 				if (!var9_filter_elements_nodename.moveNext()) {state = 24; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C222", ""), (new seq81_join(((com.altova.mapforce.IMFNode)(var9_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C222", ""), (new seq87_join(((com.altova.mapforce.IMFNode)(var9_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -9997,7 +10747,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_29() throws Exception {
 				state = 29;				
 				if (!var11_filter_elements_nodename.moveNext()) {state = 30; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C003", ""), (new seq82_join(((com.altova.mapforce.IMFNode)(var11_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C003", ""), (new seq88_join(((com.altova.mapforce.IMFNode)(var11_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -10030,11 +10780,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq77_join implements IEnumerable
+	static class seq83_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq77_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq83_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -10046,10 +10796,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq77_join closure;
+			seq83_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq77_join closure) 
+			public Enumerator(seq83_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -10120,11 +10870,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq78_join implements IEnumerable
+	static class seq84_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq78_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq84_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -10136,12 +10886,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq78_join closure;
+			seq84_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq78_join closure) 
+			public Enumerator(seq84_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -10244,11 +10994,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq79_join implements IEnumerable
+	static class seq85_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq79_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq85_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -10260,12 +11010,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq79_join closure;
+			seq85_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq79_join closure) 
+			public Enumerator(seq85_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -10368,11 +11118,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq80_join implements IEnumerable
+	static class seq86_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq80_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq86_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -10384,11 +11134,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq80_join closure;
+			seq86_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq80_join closure) 
+			public Enumerator(seq86_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -10475,11 +11225,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq81_join implements IEnumerable
+	static class seq87_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq81_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq87_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -10491,13 +11241,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq81_join closure;
+			seq87_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq81_join closure) 
+			public Enumerator(seq87_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -10616,11 +11366,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq82_join implements IEnumerable
+	static class seq88_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq82_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq88_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -10632,12 +11382,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq82_join closure;
+			seq88_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq82_join closure) 
+			public Enumerator(seq88_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -10740,11 +11490,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq83_join implements IEnumerable
+	static class seq89_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq83_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq89_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -10756,12 +11506,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq83_join closure;
+			seq89_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq83_join closure) 
+			public Enumerator(seq89_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -10798,7 +11548,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C536", ""), (new seq84_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C536", ""), (new seq90_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -10811,7 +11561,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C233", ""), (new seq85_seq_()));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C233", ""), (new seq91_seq_()));
 				pos++;
 				return true;
 			}
@@ -10824,7 +11574,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C537", ""), (new seq86_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C537", ""), (new seq92_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -10837,7 +11587,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C703", ""), (new seq87_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C703", ""), (new seq93_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -10864,11 +11614,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq84_join implements IEnumerable
+	static class seq90_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq84_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq90_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -10880,11 +11630,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq84_join closure;
+			seq90_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq84_join closure) 
+			public Enumerator(seq90_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -10971,10 +11721,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq85_seq_ implements IEnumerable
+	static class seq91_seq_ implements IEnumerable
 	{
 	
-		public seq85_seq_()
+		public seq91_seq_()
 		{
 		}
 
@@ -10985,8 +11735,8 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq85_seq_ closure;
-			public Enumerator(seq85_seq_ closure) 
+			seq91_seq_ closure;
+			public Enumerator(seq91_seq_ closure) 
 			{
 				this.closure = closure;
 			}
@@ -11025,11 +11775,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq86_join implements IEnumerable
+	static class seq92_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq86_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq92_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -11041,11 +11791,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq86_join closure;
+			seq92_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq86_join closure) 
+			public Enumerator(seq92_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -11132,11 +11882,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq87_join implements IEnumerable
+	static class seq93_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq87_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq93_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -11148,11 +11898,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq87_join closure;
+			seq93_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq87_join closure) 
+			public Enumerator(seq93_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -11239,11 +11989,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq88_join implements IEnumerable
+	static class seq94_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq88_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq94_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -11255,10 +12005,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq88_join closure;
+			seq94_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq88_join closure) 
+			public Enumerator(seq94_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -11329,11 +12079,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq89_join implements IEnumerable
+	static class seq95_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq89_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq95_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -11345,100 +12095,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq89_join closure;
+			seq95_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq89_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("RFF", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RFF", ""), (new seq38_map(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 0;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq90_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq90_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq90_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq90_join closure) 
+			public Enumerator(seq95_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -11471,7 +12131,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TOD", ""), (new seq91_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TOD", ""), (new seq96_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -11509,11 +12169,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq91_join implements IEnumerable
+	static class seq96_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq91_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq96_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -11525,11 +12185,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq91_join closure;
+			seq96_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq91_join closure) 
+			public Enumerator(seq96_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -11590,7 +12250,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C100", ""), (new seq92_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C100", ""), (new seq97_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -11616,11 +12276,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq92_join implements IEnumerable
+	static class seq97_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq92_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq97_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -11632,12 +12292,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq92_join closure;
+			seq97_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq92_join closure) 
+			public Enumerator(seq97_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -11740,11 +12400,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq93_join implements IEnumerable
+	static class seq98_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq93_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq98_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -11756,10 +12416,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq93_join closure;
+			seq98_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq93_join closure) 
+			public Enumerator(seq98_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -11792,7 +12452,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EQD", ""), (new seq94_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EQD", ""), (new seq99_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -11805,7 +12465,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_SEL", ""), (new seq97_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_SEL", ""), (new seq102_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -11830,11 +12490,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq94_join implements IEnumerable
+	static class seq99_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq94_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq99_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -11846,7 +12506,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq94_join closure;
+			seq99_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
@@ -11854,7 +12514,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var6_filter_elements_nodename;
 			IEnumerator var7_filter_elements_nodename;
 			IEnumerator var8_filter_elements_nodename;
-			public Enumerator(seq94_join closure) 
+			public Enumerator(seq99_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -11910,7 +12570,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C237", ""), (new seq95_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C237", ""), (new seq100_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -11923,7 +12583,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C224", ""), (new seq96_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C224", ""), (new seq101_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12005,11 +12665,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq95_join implements IEnumerable
+	static class seq100_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq95_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq100_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12021,12 +12681,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq95_join closure;
+			seq100_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq95_join closure) 
+			public Enumerator(seq100_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -12129,11 +12789,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq96_join implements IEnumerable
+	static class seq101_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq96_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq101_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12145,12 +12805,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq96_join closure;
+			seq101_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq96_join closure) 
+			public Enumerator(seq101_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -12253,11 +12913,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq97_join implements IEnumerable
+	static class seq102_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq97_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq102_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12269,13 +12929,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq97_join closure;
+			seq102_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq97_join closure) 
+			public Enumerator(seq102_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -12327,7 +12987,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C215", ""), (new seq98_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C215", ""), (new seq103_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12353,7 +13013,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208", ""), (new seq99_map(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208", ""), (new seq104_map(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12394,11 +13054,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq98_join implements IEnumerable
+	static class seq103_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq98_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq103_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12410,12 +13070,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq98_join closure;
+			seq103_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq98_join closure) 
+			public Enumerator(seq103_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -12518,11 +13178,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq99_map implements IEnumerable
+	static class seq104_map implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq99_map(com.altova.mapforce.IMFNode var1_cur)
+		public seq104_map(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12534,9 +13194,9 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq99_map closure;
+			seq104_map closure;
 			IEnumerator var2_filter_elements_nodename;
-			public Enumerator(seq99_map closure) 
+			public Enumerator(seq104_map closure) 
 			{
 				this.closure = closure;
 			}
@@ -12591,11 +13251,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq100_join implements IEnumerable
+	static class seq105_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq100_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq105_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12607,12 +13267,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq100_join closure;
+			seq105_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq100_join closure) 
+			public Enumerator(seq105_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -12649,7 +13309,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PAC", ""), (new seq101_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PAC", ""), (new seq106_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12675,7 +13335,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EQD", ""), (new seq94_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EQD", ""), (new seq99_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12688,7 +13348,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG15", ""), (new seq106_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG15", ""), (new seq111_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12715,11 +13375,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq101_join implements IEnumerable
+	static class seq106_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq101_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq106_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12731,13 +13391,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq101_join closure;
+			seq106_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq101_join closure) 
+			public Enumerator(seq106_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -12789,7 +13449,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C531", ""), (new seq102_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C531", ""), (new seq107_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12802,7 +13462,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C202", ""), (new seq103_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C202", ""), (new seq108_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12815,7 +13475,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C402", ""), (new seq104_map(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C402", ""), (new seq109_map(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12828,7 +13488,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C532", ""), (new seq105_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C532", ""), (new seq110_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -12856,11 +13516,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq102_join implements IEnumerable
+	static class seq107_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq102_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq107_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12872,11 +13532,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq102_join closure;
+			seq107_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq102_join closure) 
+			public Enumerator(seq107_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -12963,11 +13623,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq103_join implements IEnumerable
+	static class seq108_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq103_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq108_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -12979,12 +13639,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq103_join closure;
+			seq108_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq103_join closure) 
+			public Enumerator(seq108_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -13087,11 +13747,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq104_map implements IEnumerable
+	static class seq109_map implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq104_map(com.altova.mapforce.IMFNode var1_cur)
+		public seq109_map(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13103,9 +13763,9 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq104_map closure;
+			seq109_map closure;
 			IEnumerator var2_filter_elements_nodename;
-			public Enumerator(seq104_map closure) 
+			public Enumerator(seq109_map closure) 
 			{
 				this.closure = closure;
 			}
@@ -13160,11 +13820,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq105_join implements IEnumerable
+	static class seq110_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq105_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq110_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13176,10 +13836,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq105_join closure;
+			seq110_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq105_join closure) 
+			public Enumerator(seq110_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -13250,11 +13910,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq106_join implements IEnumerable
+	static class seq111_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq106_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq111_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13266,12 +13926,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq106_join closure;
+			seq111_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq106_join closure) 
+			public Enumerator(seq111_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -13308,7 +13968,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCI", ""), (new seq107_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCI", ""), (new seq112_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13347,7 +14007,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_GIN", ""), (new seq110_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_GIN", ""), (new seq115_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13374,11 +14034,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq107_join implements IEnumerable
+	static class seq112_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq107_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq112_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13390,12 +14050,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq107_join closure;
+			seq112_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq107_join closure) 
+			public Enumerator(seq112_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -13445,7 +14105,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C210", ""), (new seq108_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C210", ""), (new seq113_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13471,7 +14131,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C827", ""), (new seq109_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C827", ""), (new seq114_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13498,11 +14158,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq108_map implements IEnumerable
+	static class seq113_map implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq108_map(com.altova.mapforce.IMFNode var1_cur)
+		public seq113_map(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13514,9 +14174,9 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq108_map closure;
+			seq113_map closure;
 			IEnumerator var2_filter_elements_nodename;
-			public Enumerator(seq108_map closure) 
+			public Enumerator(seq113_map closure) 
 			{
 				this.closure = closure;
 			}
@@ -13571,11 +14231,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq109_join implements IEnumerable
+	static class seq114_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq109_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq114_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13587,11 +14247,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq109_join closure;
+			seq114_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq109_join closure) 
+			public Enumerator(seq114_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -13678,11 +14338,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq110_join implements IEnumerable
+	static class seq115_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq110_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq115_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13694,14 +14354,14 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq110_join closure;
+			seq115_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
 			IEnumerator var7_filter_elements_nodename;
-			public Enumerator(seq110_join closure) 
+			public Enumerator(seq115_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -13755,7 +14415,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208", ""), (new seq111_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208", ""), (new seq116_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13768,7 +14428,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208_2", ""), (new seq111_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208_2", ""), (new seq116_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13781,7 +14441,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208_3", ""), (new seq111_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208_3", ""), (new seq116_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13794,7 +14454,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208_4", ""), (new seq111_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208_4", ""), (new seq116_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13807,7 +14467,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_17() throws Exception {
 				state = 17;				
 				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208_5", ""), (new seq111_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C208_5", ""), (new seq116_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -13836,11 +14496,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq111_join implements IEnumerable
+	static class seq116_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq111_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq116_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13852,10 +14512,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq111_join closure;
+			seq116_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq111_join closure) 
+			public Enumerator(seq116_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -13926,11 +14586,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq112_join implements IEnumerable
+	static class seq117_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq112_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq117_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -13942,7 +14602,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq112_join closure;
+			seq117_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
@@ -13952,7 +14612,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var8_filter_elements_nodename;
 			IEnumerator var9_filter_elements_nodename;
 			IEnumerator var10_filter_elements_nodename;
-			public Enumerator(seq112_join closure) 
+			public Enumerator(seq117_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -13999,7 +14659,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_ALC", ""), (new seq113_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_ALC", ""), (new seq118_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14038,7 +14698,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG17", ""), (new seq89_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG17", ""), (new seq59_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14051,7 +14711,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG18", ""), (new seq116_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG18", ""), (new seq121_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14064,7 +14724,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_17() throws Exception {
 				state = 17;				
 				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG19", ""), (new seq119_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG19", ""), (new seq124_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14077,7 +14737,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_20() throws Exception {
 				state = 20;				
 				if (!var8_filter_elements_nodename.moveNext()) {state = 21; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG20", ""), (new seq120_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG20", ""), (new seq125_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14090,7 +14750,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_23() throws Exception {
 				state = 23;				
 				if (!var9_filter_elements_nodename.moveNext()) {state = 24; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG21", ""), (new seq121_join(((com.altova.mapforce.IMFNode)(var9_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG21", ""), (new seq126_join(((com.altova.mapforce.IMFNode)(var9_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14103,7 +14763,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_26() throws Exception {
 				state = 26;				
 				if (!var10_filter_elements_nodename.moveNext()) {state = 27; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG22", ""), (new seq122_join(((com.altova.mapforce.IMFNode)(var10_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG22", ""), (new seq127_join(((com.altova.mapforce.IMFNode)(var10_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14135,11 +14795,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq113_join implements IEnumerable
+	static class seq118_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq113_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq118_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -14151,13 +14811,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq113_join closure;
+			seq118_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq113_join closure) 
+			public Enumerator(seq118_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -14209,7 +14869,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C552", ""), (new seq114_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C552", ""), (new seq119_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14248,7 +14908,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C214", ""), (new seq115_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C214", ""), (new seq120_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14276,11 +14936,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq114_join implements IEnumerable
+	static class seq119_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq114_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq119_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -14292,10 +14952,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq114_join closure;
+			seq119_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq114_join closure) 
+			public Enumerator(seq119_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -14366,11 +15026,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq115_join implements IEnumerable
+	static class seq120_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq115_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq120_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -14382,12 +15042,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq115_join closure;
+			seq120_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq115_join closure) 
+			public Enumerator(seq120_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -14490,11 +15150,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq116_join implements IEnumerable
+	static class seq121_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq116_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq121_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -14506,10 +15166,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq116_join closure;
+			seq121_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq116_join closure) 
+			public Enumerator(seq121_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -14555,7 +15215,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq117_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq122_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14580,11 +15240,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq117_join implements IEnumerable
+	static class seq122_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq117_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq122_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -14596,10 +15256,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq117_join closure;
+			seq122_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq117_join closure) 
+			public Enumerator(seq122_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -14645,7 +15305,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C280", ""), (new seq118_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C280", ""), (new seq123_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14670,11 +15330,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq118_join implements IEnumerable
+	static class seq123_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq118_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq123_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -14686,11 +15346,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq118_join closure;
+			seq123_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq118_join closure) 
+			public Enumerator(seq123_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -14777,11 +15437,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq119_join implements IEnumerable
+	static class seq124_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq119_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq124_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -14793,10 +15453,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq119_join closure;
+			seq124_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq119_join closure) 
+			public Enumerator(seq124_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -14829,7 +15489,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCD", ""), (new seq73_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCD", ""), (new seq79_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14842,7 +15502,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq117_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq122_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14867,11 +15527,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq120_join implements IEnumerable
+	static class seq125_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq120_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq125_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -14883,12 +15543,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq120_join closure;
+			seq125_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq120_join closure) 
+			public Enumerator(seq125_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -14938,7 +15598,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq117_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq122_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14951,7 +15611,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CUX", ""), (new seq68_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CUX", ""), (new seq74_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -14991,11 +15651,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq121_join implements IEnumerable
+	static class seq126_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq121_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq126_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15007,10 +15667,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq121_join closure;
+			seq126_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq121_join closure) 
+			public Enumerator(seq126_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15056,7 +15716,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq117_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq122_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15081,11 +15741,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq122_join implements IEnumerable
+	static class seq127_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq122_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq127_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15097,10 +15757,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq122_join closure;
+			seq127_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq122_join closure) 
+			public Enumerator(seq127_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15133,7 +15793,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TAX", ""), (new seq63_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TAX", ""), (new seq69_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15171,11 +15831,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq123_join implements IEnumerable
+	static class seq128_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq123_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq128_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15187,12 +15847,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq123_join closure;
+			seq128_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq123_join closure) 
+			public Enumerator(seq128_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15229,7 +15889,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RCS", ""), (new seq124_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RCS", ""), (new seq129_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15295,11 +15955,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq124_join implements IEnumerable
+	static class seq129_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq124_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq129_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15311,12 +15971,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq124_join closure;
+			seq129_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq124_join closure) 
+			public Enumerator(seq129_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15366,7 +16026,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C550", ""), (new seq125_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C550", ""), (new seq130_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15419,11 +16079,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq125_join implements IEnumerable
+	static class seq130_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq125_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq130_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15435,12 +16095,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq125_join closure;
+			seq130_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq125_join closure) 
+			public Enumerator(seq130_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15543,11 +16203,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq126_join implements IEnumerable
+	static class seq131_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq126_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq131_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15559,10 +16219,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq126_join closure;
+			seq131_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq126_join closure) 
+			public Enumerator(seq131_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15595,7 +16255,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_AJT", ""), (new seq127_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_AJT", ""), (new seq132_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15633,11 +16293,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq127_join implements IEnumerable
+	static class seq132_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq127_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq132_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15649,10 +16309,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq127_join closure;
+			seq132_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq127_join closure) 
+			public Enumerator(seq132_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15723,11 +16383,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq128_join implements IEnumerable
+	static class seq133_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq128_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq133_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15739,10 +16399,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq128_join closure;
+			seq133_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq128_join closure) 
+			public Enumerator(seq133_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15775,7 +16435,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_INP", ""), (new seq129_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_INP", ""), (new seq134_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15813,11 +16473,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq129_join implements IEnumerable
+	static class seq134_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq129_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq134_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15829,12 +16489,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq129_join closure;
+			seq134_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq129_join closure) 
+			public Enumerator(seq134_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -15871,7 +16531,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C849", ""), (new seq130_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C849", ""), (new seq135_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15884,7 +16544,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C522", ""), (new seq131_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C522", ""), (new seq136_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15897,7 +16557,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C850", ""), (new seq132_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C850", ""), (new seq137_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -15937,11 +16597,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq130_join implements IEnumerable
+	static class seq135_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq130_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq135_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -15953,10 +16613,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq130_join closure;
+			seq135_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq130_join closure) 
+			public Enumerator(seq135_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -16027,11 +16687,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq131_join implements IEnumerable
+	static class seq136_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq131_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq136_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -16043,13 +16703,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq131_join closure;
+			seq136_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq131_join closure) 
+			public Enumerator(seq136_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -16168,11 +16828,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq132_join implements IEnumerable
+	static class seq137_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq132_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq137_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -16184,10 +16844,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq132_join closure;
+			seq137_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq132_join closure) 
+			public Enumerator(seq137_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -16258,11 +16918,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq133_join implements IEnumerable
+	static class seq138_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq133_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq138_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -16274,13 +16934,14 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq133_join closure;
+			seq138_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq133_join closure) 
+			IEnumerator var7_filter_elements_nodename;
+			public Enumerator(seq138_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -16306,6 +16967,8 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 					case 12:	if (moveNext_12()) return true; break;
 					case 14:	if (moveNext_14()) return true; break;
 					case 15:	if (moveNext_15()) return true; break;
+					case 17:	if (moveNext_17()) return true; break;
+					case 18:	if (moveNext_18()) return true; break;
  					}
 				}
 				return false;
@@ -16319,7 +16982,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EFI", ""), (new seq134_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EFI", ""), (new seq139_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -16332,7 +16995,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CED", ""), (new seq137_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CED", ""), (new seq142_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -16345,7 +17008,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_COM", ""), (new seq139_map(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_COM", ""), (new seq66_map(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -16376,8 +17039,21 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 				return true;
 			}
 			private boolean moveNext_15() throws Exception {
-				state = 0;				
+				state = 17;				
 				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
+				var7_filter_elements_nodename = (com.altova.functions.Core.filterElements("QTY", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_17() throws Exception {
+				state = 17;				
+				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_QTY", ""), (new seq43_map(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_18() throws Exception {
+				state = 0;				
+				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
 				return false;
 			}
 
@@ -16391,6 +17067,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
 				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
 				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
+				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
 				}
 				catch (Exception e)
 				{
@@ -16399,11 +17076,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq134_join implements IEnumerable
+	static class seq139_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq134_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq139_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -16415,12 +17092,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq134_join closure;
+			seq139_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq134_join closure) 
+			public Enumerator(seq139_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -16457,7 +17134,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C077", ""), (new seq135_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C077", ""), (new seq140_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -16470,7 +17147,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C099", ""), (new seq136_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C099", ""), (new seq141_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -16523,11 +17200,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq135_join implements IEnumerable
+	static class seq140_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq135_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq140_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -16539,10 +17216,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq135_join closure;
+			seq140_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq135_join closure) 
+			public Enumerator(seq140_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -16613,11 +17290,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq136_join implements IEnumerable
+	static class seq141_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq136_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq141_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -16629,12 +17306,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq136_join closure;
+			seq141_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq136_join closure) 
+			public Enumerator(seq141_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -16737,11 +17414,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq137_join implements IEnumerable
+	static class seq142_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq137_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq142_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -16753,11 +17430,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq137_join closure;
+			seq142_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq137_join closure) 
+			public Enumerator(seq142_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -16805,7 +17482,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C079", ""), (new seq138_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C079", ""), (new seq143_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -16844,11 +17521,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq138_join implements IEnumerable
+	static class seq143_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq138_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq143_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -16860,7 +17537,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq138_join closure;
+			seq143_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
@@ -16868,7 +17545,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var6_filter_elements_nodename;
 			IEnumerator var7_filter_elements_nodename;
 			IEnumerator var8_filter_elements_nodename;
-			public Enumerator(seq138_join closure) 
+			public Enumerator(seq143_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -17019,11 +17696,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq139_map implements IEnumerable
+	static class seq144_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq139_map(com.altova.mapforce.IMFNode var1_cur)
+		public seq144_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -17035,170 +17712,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq139_map closure;
-			IEnumerator var2_filter_elements_nodename;
-			public Enumerator(seq139_map closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C076", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C076", ""), (new seq140_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 0;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq140_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq140_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq140_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq140_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3148", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3148", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3155", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3155", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 0;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq141_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq141_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq141_join closure;
+			seq144_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
@@ -17228,7 +17742,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var28_filter_elements_nodename;
 			IEnumerator var29_filter_elements_nodename;
 			IEnumerator var30_filter_elements_nodename;
-			public Enumerator(seq141_join closure) 
+			public Enumerator(seq144_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -17315,7 +17829,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_LIN", ""), (new seq142_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_LIN", ""), (new seq145_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17328,7 +17842,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PIA", ""), (new seq145_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PIA", ""), (new seq148_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17341,7 +17855,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PGI", ""), (new seq146_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PGI", ""), (new seq149_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17393,7 +17907,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_20() throws Exception {
 				state = 20;				
 				if (!var8_filter_elements_nodename.moveNext()) {state = 21; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCD", ""), (new seq73_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCD", ""), (new seq79_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17432,7 +17946,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_29() throws Exception {
 				state = 29;				
 				if (!var11_filter_elements_nodename.moveNext()) {state = 30; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_GIN", ""), (new seq110_join(((com.altova.mapforce.IMFNode)(var11_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_GIN", ""), (new seq115_join(((com.altova.mapforce.IMFNode)(var11_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17458,7 +17972,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_35() throws Exception {
 				state = 35;				
 				if (!var13_filter_elements_nodename.moveNext()) {state = 36; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_QVR", ""), (new seq148_join(((com.altova.mapforce.IMFNode)(var13_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_QVR", ""), (new seq151_join(((com.altova.mapforce.IMFNode)(var13_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17471,7 +17985,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_38() throws Exception {
 				state = 38;				
 				if (!var14_filter_elements_nodename.moveNext()) {state = 39; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EQD", ""), (new seq94_join(((com.altova.mapforce.IMFNode)(var14_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EQD", ""), (new seq99_join(((com.altova.mapforce.IMFNode)(var14_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17510,7 +18024,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_47() throws Exception {
 				state = 47;				
 				if (!var17_filter_elements_nodename.moveNext()) {state = 48; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG28", ""), (new seq151_join(((com.altova.mapforce.IMFNode)(var17_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG28", ""), (new seq154_join(((com.altova.mapforce.IMFNode)(var17_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17523,7 +18037,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_50() throws Exception {
 				state = 50;				
 				if (!var18_filter_elements_nodename.moveNext()) {state = 51; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG29", ""), (new seq152_join(((com.altova.mapforce.IMFNode)(var18_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG29", ""), (new seq155_join(((com.altova.mapforce.IMFNode)(var18_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17536,7 +18050,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_53() throws Exception {
 				state = 53;				
 				if (!var19_filter_elements_nodename.moveNext()) {state = 54; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG30", ""), (new seq153_join(((com.altova.mapforce.IMFNode)(var19_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG30", ""), (new seq156_join(((com.altova.mapforce.IMFNode)(var19_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17549,7 +18063,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_56() throws Exception {
 				state = 56;				
 				if (!var20_filter_elements_nodename.moveNext()) {state = 57; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG31", ""), (new seq89_join(((com.altova.mapforce.IMFNode)(var20_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG31", ""), (new seq59_join(((com.altova.mapforce.IMFNode)(var20_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17562,7 +18076,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_59() throws Exception {
 				state = 59;				
 				if (!var21_filter_elements_nodename.moveNext()) {state = 60; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG32", ""), (new seq158_join(((com.altova.mapforce.IMFNode)(var21_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG32", ""), (new seq161_join(((com.altova.mapforce.IMFNode)(var21_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17575,7 +18089,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_62() throws Exception {
 				state = 62;				
 				if (!var22_filter_elements_nodename.moveNext()) {state = 63; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG34", ""), (new seq159_join(((com.altova.mapforce.IMFNode)(var22_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG34", ""), (new seq162_join(((com.altova.mapforce.IMFNode)(var22_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17588,7 +18102,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_65() throws Exception {
 				state = 65;				
 				if (!var23_filter_elements_nodename.moveNext()) {state = 66; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG35", ""), (new seq62_join(((com.altova.mapforce.IMFNode)(var23_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG35", ""), (new seq68_join(((com.altova.mapforce.IMFNode)(var23_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17601,7 +18115,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_68() throws Exception {
 				state = 68;				
 				if (!var24_filter_elements_nodename.moveNext()) {state = 69; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG36", ""), (new seq160_join(((com.altova.mapforce.IMFNode)(var24_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG36", ""), (new seq163_join(((com.altova.mapforce.IMFNode)(var24_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17614,7 +18128,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_71() throws Exception {
 				state = 71;				
 				if (!var25_filter_elements_nodename.moveNext()) {state = 72; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG40", ""), (new seq167_join(((com.altova.mapforce.IMFNode)(var25_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG40", ""), (new seq164_join(((com.altova.mapforce.IMFNode)(var25_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17627,7 +18141,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_74() throws Exception {
 				state = 74;				
 				if (!var26_filter_elements_nodename.moveNext()) {state = 75; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG46", ""), (new seq168_join(((com.altova.mapforce.IMFNode)(var26_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG46", ""), (new seq165_join(((com.altova.mapforce.IMFNode)(var26_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17640,7 +18154,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_77() throws Exception {
 				state = 77;				
 				if (!var27_filter_elements_nodename.moveNext()) {state = 78; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG48", ""), (new seq90_join(((com.altova.mapforce.IMFNode)(var27_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG48", ""), (new seq95_join(((com.altova.mapforce.IMFNode)(var27_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17653,7 +18167,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_80() throws Exception {
 				state = 80;				
 				if (!var28_filter_elements_nodename.moveNext()) {state = 81; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG49", ""), (new seq123_join(((com.altova.mapforce.IMFNode)(var28_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG49", ""), (new seq128_join(((com.altova.mapforce.IMFNode)(var28_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17666,7 +18180,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_83() throws Exception {
 				state = 83;				
 				if (!var29_filter_elements_nodename.moveNext()) {state = 84; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG50", ""), (new seq169_join(((com.altova.mapforce.IMFNode)(var29_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG50", ""), (new seq166_join(((com.altova.mapforce.IMFNode)(var29_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17679,7 +18193,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_86() throws Exception {
 				state = 86;				
 				if (!var30_filter_elements_nodename.moveNext()) {state = 87; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG51", ""), (new seq170_join(((com.altova.mapforce.IMFNode)(var30_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG51", ""), (new seq138_join(((com.altova.mapforce.IMFNode)(var30_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17731,11 +18245,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq142_join implements IEnumerable
+	static class seq145_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq142_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq145_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -17747,14 +18261,14 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq142_join closure;
+			seq145_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
 			IEnumerator var7_filter_elements_nodename;
-			public Enumerator(seq142_join closure) 
+			public Enumerator(seq145_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -17821,7 +18335,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C212", ""), (new seq143_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C212", ""), (new seq146_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17834,7 +18348,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C829", ""), (new seq144_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C829", ""), (new seq147_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -17889,11 +18403,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq143_join implements IEnumerable
+	static class seq146_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq143_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq146_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -17905,12 +18419,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq143_join closure;
+			seq146_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq143_join closure) 
+			public Enumerator(seq146_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -18013,11 +18527,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq144_join implements IEnumerable
+	static class seq147_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq144_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq147_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -18029,10 +18543,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq144_join closure;
+			seq147_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq144_join closure) 
+			public Enumerator(seq147_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -18103,11 +18617,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq145_join implements IEnumerable
+	static class seq148_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq145_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq148_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -18119,10 +18633,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq145_join closure;
+			seq148_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq145_join closure) 
+			public Enumerator(seq148_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -18168,7 +18682,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C212", ""), (new seq143_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C212", ""), (new seq146_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -18193,11 +18707,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq146_join implements IEnumerable
+	static class seq149_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq146_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq149_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -18209,10 +18723,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq146_join closure;
+			seq149_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq146_join closure) 
+			public Enumerator(seq149_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -18258,7 +18772,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C288", ""), (new seq147_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C288", ""), (new seq150_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -18283,11 +18797,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq147_join implements IEnumerable
+	static class seq150_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq147_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq150_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -18299,12 +18813,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq147_join closure;
+			seq150_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq147_join closure) 
+			public Enumerator(seq150_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -18407,11 +18921,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq148_join implements IEnumerable
+	static class seq151_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq148_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq151_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -18423,11 +18937,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq148_join closure;
+			seq151_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq148_join closure) 
+			public Enumerator(seq151_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -18462,7 +18976,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C279", ""), (new seq149_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C279", ""), (new seq152_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -18488,7 +19002,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C960", ""), (new seq150_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C960", ""), (new seq153_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -18514,11 +19028,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq149_join implements IEnumerable
+	static class seq152_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq149_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq152_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -18530,10 +19044,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq149_join closure;
+			seq152_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq149_join closure) 
+			public Enumerator(seq152_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -18604,11 +19118,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq150_join implements IEnumerable
+	static class seq153_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq150_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq153_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -18620,12 +19134,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq150_join closure;
+			seq153_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq150_join closure) 
+			public Enumerator(seq153_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -18728,344 +19242,6 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq151_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq151_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq151_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq151_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("MOA", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_MOA", ""), (new seq45_map(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("CUX", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CUX", ""), (new seq68_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 0;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq152_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq152_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq152_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq152_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
-					case 8:	if (moveNext_8()) return true; break;
-					case 9:	if (moveNext_9()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("PYT", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PYT", ""), (new seq71_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 8;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("PCD", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_8() throws Exception {
-				state = 8;				
-				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCD", ""), (new seq73_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_9() throws Exception {
-				state = 0;				
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq153_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq153_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq153_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			IEnumerator var4_filter_elements_nodename;
-			IEnumerator var5_filter_elements_nodename;
-			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq153_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
-					case 8:	if (moveNext_8()) return true; break;
-					case 9:	if (moveNext_9()) return true; break;
-					case 11:	if (moveNext_11()) return true; break;
-					case 12:	if (moveNext_12()) return true; break;
-					case 14:	if (moveNext_14()) return true; break;
-					case 15:	if (moveNext_15()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("PRI", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PRI", ""), (new seq154_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("CUX", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CUX", ""), (new seq68_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 8;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("APR", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_8() throws Exception {
-				state = 8;				
-				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_APR", ""), (new seq156_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_9() throws Exception {
-				state = 11;				
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("RNG", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_11() throws Exception {
-				state = 11;				
-				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq117_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_12() throws Exception {
-				state = 14;				
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_14() throws Exception {
-				state = 14;				
-				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_15() throws Exception {
-				state = 0;				
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
 	static class seq154_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
@@ -19112,26 +19288,26 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 
 			private boolean moveNext_1() throws Exception {
 				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C509", closure.var1_cur)).enumerator();
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("MOA", closure.var1_cur)).enumerator();
 				return false;
 			}
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C509", ""), (new seq155_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_MOA", ""), (new seq45_map(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
 			private boolean moveNext_3() throws Exception {
 				state = 5;				
 				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_5213", closure.var1_cur)).enumerator();
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("CUX", closure.var1_cur)).enumerator();
 				return false;
 			}
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_5213", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CUX", ""), (new seq74_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -19177,9 +19353,364 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
+			public Enumerator(seq155_join closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+					case 8:	if (moveNext_8()) return true; break;
+					case 9:	if (moveNext_9()) return true; break;
+					case 11:	if (moveNext_11()) return true; break;
+					case 12:	if (moveNext_12()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("PYT", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PYT", ""), (new seq77_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 8;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("PCD", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_8() throws Exception {
+				state = 8;				
+				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PCD", ""), (new seq79_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_9() throws Exception {
+				state = 11;				
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("MOA", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_11() throws Exception {
+				state = 11;				
+				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_MOA", ""), (new seq45_map(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_12() throws Exception {
+				state = 0;				
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq156_join implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq156_join(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq156_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			IEnumerator var4_filter_elements_nodename;
+			IEnumerator var5_filter_elements_nodename;
+			IEnumerator var6_filter_elements_nodename;
+			public Enumerator(seq156_join closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+					case 8:	if (moveNext_8()) return true; break;
+					case 9:	if (moveNext_9()) return true; break;
+					case 11:	if (moveNext_11()) return true; break;
+					case 12:	if (moveNext_12()) return true; break;
+					case 14:	if (moveNext_14()) return true; break;
+					case 15:	if (moveNext_15()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("PRI", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PRI", ""), (new seq157_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("CUX", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CUX", ""), (new seq74_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 8;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("APR", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_8() throws Exception {
+				state = 8;				
+				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_APR", ""), (new seq159_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_9() throws Exception {
+				state = 11;				
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("RNG", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_11() throws Exception {
+				state = 11;				
+				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RNG", ""), (new seq122_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_12() throws Exception {
+				state = 14;				
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_14() throws Exception {
+				state = 14;				
+				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_15() throws Exception {
+				state = 0;				
+				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq157_join implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq157_join(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq157_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			public Enumerator(seq157_join closure) 
+			{
+				this.closure = closure;
+			}
+			
+			public Object current() {return current;}
+			
+			public int position() {return pos;}
+			
+			public boolean moveNext() throws Exception
+			{
+				while (state != 0)
+				{
+					switch (state) 
+					{
+					case 1:	if (moveNext_1()) return true; break;
+					case 2:	if (moveNext_2()) return true; break;
+					case 3:	if (moveNext_3()) return true; break;
+					case 5:	if (moveNext_5()) return true; break;
+					case 6:	if (moveNext_6()) return true; break;
+ 					}
+				}
+				return false;
+			}
+
+			private boolean moveNext_1() throws Exception {
+				state = 2;				
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C509", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_2() throws Exception {
+				state = 2;				
+				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C509", ""), (new seq158_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_3() throws Exception {
+				state = 5;				
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_5213", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_5() throws Exception {
+				state = 5;				
+				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_5213", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_6() throws Exception {
+				state = 0;				
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				return false;
+			}
+
+			
+			public void close()
+			{
+				try
+				{
+				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
+				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				}
+				catch (Exception e)
+				{
+				}
+			}
+		}
+				
+	}
+	static class seq158_join implements IEnumerable
+	{
+		com.altova.mapforce.IMFNode var1_cur;
+	
+		public seq158_join(com.altova.mapforce.IMFNode var1_cur)
+		{
+			this.var1_cur = var1_cur;
+		}
+
+		public IEnumerator enumerator() {return new Enumerator(this);}
+		
+		public static class Enumerator implements IEnumerator
+		{
+			int pos = 0;
+			int state = 1;
+			Object current;
+			seq158_join closure;
+			IEnumerator var2_filter_elements_nodename;
+			IEnumerator var3_filter_elements_nodename;
+			IEnumerator var4_filter_elements_nodename;
+			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
 			IEnumerator var7_filter_elements_nodename;
-			public Enumerator(seq155_join closure) 
+			public Enumerator(seq158_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -19314,11 +19845,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq156_join implements IEnumerable
+	static class seq159_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq156_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq159_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -19330,11 +19861,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq156_join closure;
+			seq159_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq156_join closure) 
+			public Enumerator(seq159_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -19382,7 +19913,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C138", ""), (new seq157_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C138", ""), (new seq160_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -19395,7 +19926,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C960", ""), (new seq150_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C960", ""), (new seq153_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -19421,11 +19952,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq157_join implements IEnumerable
+	static class seq160_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq157_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq160_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -19437,10 +19968,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq157_join closure;
+			seq160_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq157_join closure) 
+			public Enumerator(seq160_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -19511,11 +20042,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq158_join implements IEnumerable
+	static class seq161_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq158_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq161_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -19527,12 +20058,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq158_join closure;
+			seq161_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq158_join closure) 
+			public Enumerator(seq161_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -19569,7 +20100,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PAC", ""), (new seq101_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_PAC", ""), (new seq106_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -19595,7 +20126,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EQD", ""), (new seq94_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EQD", ""), (new seq99_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -19608,7 +20139,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG33", ""), (new seq106_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG33", ""), (new seq111_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -19635,11 +20166,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq159_join implements IEnumerable
+	static class seq162_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq159_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq162_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -19651,11 +20182,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq159_join closure;
+			seq162_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq159_join closure) 
+			public Enumerator(seq162_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -19742,11 +20273,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq160_join implements IEnumerable
+	static class seq163_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq160_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq163_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -19758,14 +20289,14 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq160_join closure;
+			seq163_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
 			IEnumerator var7_filter_elements_nodename;
-			public Enumerator(seq160_join closure) 
+			public Enumerator(seq163_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -19845,7 +20376,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG37", ""), (new seq89_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG37", ""), (new seq59_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -19858,7 +20389,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG38", ""), (new seq161_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG38", ""), (new seq60_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -19871,396 +20402,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_17() throws Exception {
 				state = 17;				
 				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG39", ""), (new seq164_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_18() throws Exception {
-				state = 0;				
-				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq161_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq161_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq161_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq161_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("DOC", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DOC", ""), (new seq162_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 0;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq162_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq162_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq162_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			IEnumerator var4_filter_elements_nodename;
-			IEnumerator var5_filter_elements_nodename;
-			IEnumerator var6_filter_elements_nodename;
-			public Enumerator(seq162_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
-					case 8:	if (moveNext_8()) return true; break;
-					case 9:	if (moveNext_9()) return true; break;
-					case 11:	if (moveNext_11()) return true; break;
-					case 12:	if (moveNext_12()) return true; break;
-					case 14:	if (moveNext_14()) return true; break;
-					case 15:	if (moveNext_15()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C002", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C002", ""), (new seq9_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C503", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C503", ""), (new seq163_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 8;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3153", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_8() throws Exception {
-				state = 8;				
-				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3153", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_9() throws Exception {
-				state = 11;				
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1220", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_11() throws Exception {
-				state = 11;				
-				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1220", ""), com.altova.functions.Core.box(com.altova.CoreTypes.decimalToString(com.altova.CoreTypes.parseDecimal(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_12() throws Exception {
-				state = 14;				
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1218", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_14() throws Exception {
-				state = 14;				
-				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1218", ""), com.altova.functions.Core.box(com.altova.CoreTypes.decimalToString(com.altova.CoreTypes.parseDecimal(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_15() throws Exception {
-				state = 0;				
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq163_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq163_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq163_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			IEnumerator var4_filter_elements_nodename;
-			IEnumerator var5_filter_elements_nodename;
-			IEnumerator var6_filter_elements_nodename;
-			IEnumerator var7_filter_elements_nodename;
-			public Enumerator(seq163_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
-					case 8:	if (moveNext_8()) return true; break;
-					case 9:	if (moveNext_9()) return true; break;
-					case 11:	if (moveNext_11()) return true; break;
-					case 12:	if (moveNext_12()) return true; break;
-					case 14:	if (moveNext_14()) return true; break;
-					case 15:	if (moveNext_15()) return true; break;
-					case 17:	if (moveNext_17()) return true; break;
-					case 18:	if (moveNext_18()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1004", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1004", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1373", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1373", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 8;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1366", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_8() throws Exception {
-				state = 8;				
-				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1366", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_9() throws Exception {
-				state = 11;				
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3453", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_11() throws Exception {
-				state = 11;				
-				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3453", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_12() throws Exception {
-				state = 14;				
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1056", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_14() throws Exception {
-				state = 14;				
-				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1056", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_15() throws Exception {
-				state = 17;				
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				var7_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_1060", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_17() throws Exception {
-				state = 17;				
-				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_1060", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG39", ""), (new seq63_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -20308,6 +20450,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			seq164_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
+			IEnumerator var4_filter_elements_nodename;
+			IEnumerator var5_filter_elements_nodename;
+			IEnumerator var6_filter_elements_nodename;
+			IEnumerator var7_filter_elements_nodename;
+			IEnumerator var8_filter_elements_nodename;
+			IEnumerator var9_filter_elements_nodename;
+			IEnumerator var10_filter_elements_nodename;
 			public Enumerator(seq164_join closure) 
 			{
 				this.closure = closure;
@@ -20328,6 +20477,20 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 					case 3:	if (moveNext_3()) return true; break;
 					case 5:	if (moveNext_5()) return true; break;
 					case 6:	if (moveNext_6()) return true; break;
+					case 8:	if (moveNext_8()) return true; break;
+					case 9:	if (moveNext_9()) return true; break;
+					case 11:	if (moveNext_11()) return true; break;
+					case 12:	if (moveNext_12()) return true; break;
+					case 14:	if (moveNext_14()) return true; break;
+					case 15:	if (moveNext_15()) return true; break;
+					case 17:	if (moveNext_17()) return true; break;
+					case 18:	if (moveNext_18()) return true; break;
+					case 20:	if (moveNext_20()) return true; break;
+					case 21:	if (moveNext_21()) return true; break;
+					case 23:	if (moveNext_23()) return true; break;
+					case 24:	if (moveNext_24()) return true; break;
+					case 26:	if (moveNext_26()) return true; break;
+					case 27:	if (moveNext_27()) return true; break;
  					}
 				}
 				return false;
@@ -20335,32 +20498,123 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 
 			private boolean moveNext_1() throws Exception {
 				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("CTA", closure.var1_cur)).enumerator();
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("ALC", closure.var1_cur)).enumerator();
 				return false;
 			}
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CTA", ""), (new seq165_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_ALC", ""), (new seq118_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
 			private boolean moveNext_3() throws Exception {
 				state = 5;				
 				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("COM", closure.var1_cur)).enumerator();
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("ALI", closure.var1_cur)).enumerator();
 				return false;
 			}
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_COM", ""), (new seq139_map(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_ALI", ""), (new seq15_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
 			private boolean moveNext_6() throws Exception {
-				state = 0;				
+				state = 8;				
 				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_8() throws Exception {
+				state = 8;				
+				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_9() throws Exception {
+				state = 11;				
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("FTX", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_11() throws Exception {
+				state = 11;				
+				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_FTX", ""), (new seq19_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_12() throws Exception {
+				state = 14;				
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG41", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_14() throws Exception {
+				state = 14;				
+				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG41", ""), (new seq121_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_15() throws Exception {
+				state = 17;				
+				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
+				var7_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG42", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_17() throws Exception {
+				state = 17;				
+				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG42", ""), (new seq124_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_18() throws Exception {
+				state = 20;				
+				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
+				var8_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG43", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_20() throws Exception {
+				state = 20;				
+				if (!var8_filter_elements_nodename.moveNext()) {state = 21; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG43", ""), (new seq125_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_21() throws Exception {
+				state = 23;				
+				if( var8_filter_elements_nodename != null ) { var8_filter_elements_nodename.close(); var8_filter_elements_nodename = null; }
+				var9_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG44", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_23() throws Exception {
+				state = 23;				
+				if (!var9_filter_elements_nodename.moveNext()) {state = 24; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG44", ""), (new seq126_join(((com.altova.mapforce.IMFNode)(var9_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_24() throws Exception {
+				state = 26;				
+				if( var9_filter_elements_nodename != null ) { var9_filter_elements_nodename.close(); var9_filter_elements_nodename = null; }
+				var10_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG45", closure.var1_cur)).enumerator();
+				return false;
+			}
+			private boolean moveNext_26() throws Exception {
+				state = 26;				
+				if (!var10_filter_elements_nodename.moveNext()) {state = 27; return false; }
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG45", ""), (new seq127_join(((com.altova.mapforce.IMFNode)(var10_filter_elements_nodename.current())))));
+				pos++;
+				return true;
+			}
+			private boolean moveNext_27() throws Exception {
+				state = 0;				
+				if( var10_filter_elements_nodename != null ) { var10_filter_elements_nodename.close(); var10_filter_elements_nodename = null; }
 				return false;
 			}
 
@@ -20371,6 +20625,13 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 				{
 				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
 				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
+				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
+				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
+				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
+				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
+				if( var8_filter_elements_nodename != null ) { var8_filter_elements_nodename.close(); var8_filter_elements_nodename = null; }
+				if( var9_filter_elements_nodename != null ) { var9_filter_elements_nodename.close(); var9_filter_elements_nodename = null; }
+				if( var10_filter_elements_nodename != null ) { var10_filter_elements_nodename.close(); var10_filter_elements_nodename = null; }
 				}
 				catch (Exception e)
 				{
@@ -20425,26 +20686,26 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 
 			private boolean moveNext_1() throws Exception {
 				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3139", closure.var1_cur)).enumerator();
+				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("TDT", closure.var1_cur)).enumerator();
 				return false;
 			}
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3139", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TDT", ""), (new seq82_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
 			private boolean moveNext_3() throws Exception {
 				state = 5;				
 				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("C_C056", closure.var1_cur)).enumerator();
+				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG47", closure.var1_cur)).enumerator();
 				return false;
 			}
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C056", ""), (new seq166_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG47", ""), (new seq94_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -20488,395 +20749,6 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			seq166_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq166_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3413", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3413", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("D_3412", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("D_3412", ""), com.altova.functions.Core.box(com.altova.CoreTypes.nodeToString(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 0;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq167_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq167_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq167_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			IEnumerator var4_filter_elements_nodename;
-			IEnumerator var5_filter_elements_nodename;
-			IEnumerator var6_filter_elements_nodename;
-			IEnumerator var7_filter_elements_nodename;
-			IEnumerator var8_filter_elements_nodename;
-			IEnumerator var9_filter_elements_nodename;
-			IEnumerator var10_filter_elements_nodename;
-			public Enumerator(seq167_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
-					case 8:	if (moveNext_8()) return true; break;
-					case 9:	if (moveNext_9()) return true; break;
-					case 11:	if (moveNext_11()) return true; break;
-					case 12:	if (moveNext_12()) return true; break;
-					case 14:	if (moveNext_14()) return true; break;
-					case 15:	if (moveNext_15()) return true; break;
-					case 17:	if (moveNext_17()) return true; break;
-					case 18:	if (moveNext_18()) return true; break;
-					case 20:	if (moveNext_20()) return true; break;
-					case 21:	if (moveNext_21()) return true; break;
-					case 23:	if (moveNext_23()) return true; break;
-					case 24:	if (moveNext_24()) return true; break;
-					case 26:	if (moveNext_26()) return true; break;
-					case 27:	if (moveNext_27()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("ALC", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_ALC", ""), (new seq113_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("ALI", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_ALI", ""), (new seq15_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 8;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_8() throws Exception {
-				state = 8;				
-				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_9() throws Exception {
-				state = 11;				
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("FTX", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_11() throws Exception {
-				state = 11;				
-				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_FTX", ""), (new seq19_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_12() throws Exception {
-				state = 14;				
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG41", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_14() throws Exception {
-				state = 14;				
-				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG41", ""), (new seq116_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_15() throws Exception {
-				state = 17;				
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				var7_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG42", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_17() throws Exception {
-				state = 17;				
-				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG42", ""), (new seq119_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_18() throws Exception {
-				state = 20;				
-				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
-				var8_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG43", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_20() throws Exception {
-				state = 20;				
-				if (!var8_filter_elements_nodename.moveNext()) {state = 21; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG43", ""), (new seq120_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_21() throws Exception {
-				state = 23;				
-				if( var8_filter_elements_nodename != null ) { var8_filter_elements_nodename.close(); var8_filter_elements_nodename = null; }
-				var9_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG44", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_23() throws Exception {
-				state = 23;				
-				if (!var9_filter_elements_nodename.moveNext()) {state = 24; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG44", ""), (new seq121_join(((com.altova.mapforce.IMFNode)(var9_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_24() throws Exception {
-				state = 26;				
-				if( var9_filter_elements_nodename != null ) { var9_filter_elements_nodename.close(); var9_filter_elements_nodename = null; }
-				var10_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG45", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_26() throws Exception {
-				state = 26;				
-				if (!var10_filter_elements_nodename.moveNext()) {state = 27; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG45", ""), (new seq122_join(((com.altova.mapforce.IMFNode)(var10_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_27() throws Exception {
-				state = 0;				
-				if( var10_filter_elements_nodename != null ) { var10_filter_elements_nodename.close(); var10_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
-				if( var8_filter_elements_nodename != null ) { var8_filter_elements_nodename.close(); var8_filter_elements_nodename = null; }
-				if( var9_filter_elements_nodename != null ) { var9_filter_elements_nodename.close(); var9_filter_elements_nodename = null; }
-				if( var10_filter_elements_nodename != null ) { var10_filter_elements_nodename.close(); var10_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq168_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq168_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq168_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq168_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("TDT", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_TDT", ""), (new seq76_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("G_SG47", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG47", ""), (new seq88_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 0;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq169_join implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq169_join(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq169_join closure;
-			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
 			IEnumerator var6_filter_elements_nodename;
@@ -20885,7 +20757,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var9_filter_elements_nodename;
 			IEnumerator var10_filter_elements_nodename;
 			IEnumerator var11_filter_elements_nodename;
-			public Enumerator(seq169_join closure) 
+			public Enumerator(seq166_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -21084,11 +20956,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq170_join implements IEnumerable
+	static class seq167_map implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq170_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq167_map(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -21100,167 +20972,9 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq170_join closure;
+			seq167_map closure;
 			IEnumerator var2_filter_elements_nodename;
-			IEnumerator var3_filter_elements_nodename;
-			IEnumerator var4_filter_elements_nodename;
-			IEnumerator var5_filter_elements_nodename;
-			IEnumerator var6_filter_elements_nodename;
-			IEnumerator var7_filter_elements_nodename;
-			public Enumerator(seq170_join closure) 
-			{
-				this.closure = closure;
-			}
-			
-			public Object current() {return current;}
-			
-			public int position() {return pos;}
-			
-			public boolean moveNext() throws Exception
-			{
-				while (state != 0)
-				{
-					switch (state) 
-					{
-					case 1:	if (moveNext_1()) return true; break;
-					case 2:	if (moveNext_2()) return true; break;
-					case 3:	if (moveNext_3()) return true; break;
-					case 5:	if (moveNext_5()) return true; break;
-					case 6:	if (moveNext_6()) return true; break;
-					case 8:	if (moveNext_8()) return true; break;
-					case 9:	if (moveNext_9()) return true; break;
-					case 11:	if (moveNext_11()) return true; break;
-					case 12:	if (moveNext_12()) return true; break;
-					case 14:	if (moveNext_14()) return true; break;
-					case 15:	if (moveNext_15()) return true; break;
-					case 17:	if (moveNext_17()) return true; break;
-					case 18:	if (moveNext_18()) return true; break;
- 					}
-				}
-				return false;
-			}
-
-			private boolean moveNext_1() throws Exception {
-				state = 2;				
-				var2_filter_elements_nodename = (com.altova.functions.Core.filterElements("EFI", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_2() throws Exception {
-				state = 2;				
-				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_EFI", ""), (new seq134_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_3() throws Exception {
-				state = 5;				
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				var3_filter_elements_nodename = (com.altova.functions.Core.filterElements("CED", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_5() throws Exception {
-				state = 5;				
-				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_CED", ""), (new seq137_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_6() throws Exception {
-				state = 8;				
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				var4_filter_elements_nodename = (com.altova.functions.Core.filterElements("COM", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_8() throws Exception {
-				state = 8;				
-				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_COM", ""), (new seq139_map(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_9() throws Exception {
-				state = 11;				
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				var5_filter_elements_nodename = (com.altova.functions.Core.filterElements("RFF", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_11() throws Exception {
-				state = 11;				
-				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_RFF", ""), (new seq38_map(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_12() throws Exception {
-				state = 14;				
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				var6_filter_elements_nodename = (com.altova.functions.Core.filterElements("DTM", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_14() throws Exception {
-				state = 14;				
-				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_DTM", ""), (new seq11_map(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_15() throws Exception {
-				state = 17;				
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				var7_filter_elements_nodename = (com.altova.functions.Core.filterElements("QTY", closure.var1_cur)).enumerator();
-				return false;
-			}
-			private boolean moveNext_17() throws Exception {
-				state = 17;				
-				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_QTY", ""), (new seq43_map(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
-				pos++;
-				return true;
-			}
-			private boolean moveNext_18() throws Exception {
-				state = 0;				
-				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
-				return false;
-			}
-
-			
-			public void close()
-			{
-				try
-				{
-				if( var2_filter_elements_nodename != null ) { var2_filter_elements_nodename.close(); var2_filter_elements_nodename = null; }
-				if( var3_filter_elements_nodename != null ) { var3_filter_elements_nodename.close(); var3_filter_elements_nodename = null; }
-				if( var4_filter_elements_nodename != null ) { var4_filter_elements_nodename.close(); var4_filter_elements_nodename = null; }
-				if( var5_filter_elements_nodename != null ) { var5_filter_elements_nodename.close(); var5_filter_elements_nodename = null; }
-				if( var6_filter_elements_nodename != null ) { var6_filter_elements_nodename.close(); var6_filter_elements_nodename = null; }
-				if( var7_filter_elements_nodename != null ) { var7_filter_elements_nodename.close(); var7_filter_elements_nodename = null; }
-				}
-				catch (Exception e)
-				{
-				}
-			}
-		}
-				
-	}
-	static class seq171_map implements IEnumerable
-	{
-		com.altova.mapforce.IMFNode var1_cur;
-	
-		public seq171_map(com.altova.mapforce.IMFNode var1_cur)
-		{
-			this.var1_cur = var1_cur;
-		}
-
-		public IEnumerator enumerator() {return new Enumerator(this);}
-		
-		public static class Enumerator implements IEnumerator
-		{
-			int pos = 0;
-			int state = 1;
-			Object current;
-			seq171_map closure;
-			IEnumerator var2_filter_elements_nodename;
-			public Enumerator(seq171_map closure) 
+			public Enumerator(seq167_map closure) 
 			{
 				this.closure = closure;
 			}
@@ -21315,11 +21029,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq172_map implements IEnumerable
+	static class seq168_map implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq172_map(com.altova.mapforce.IMFNode var1_cur)
+		public seq168_map(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -21331,9 +21045,9 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq172_map closure;
+			seq168_map closure;
 			IEnumerator var2_filter_elements_nodename;
-			public Enumerator(seq172_map closure) 
+			public Enumerator(seq168_map closure) 
 			{
 				this.closure = closure;
 			}
@@ -21364,7 +21078,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C270", ""), (new seq173_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_C270", ""), (new seq169_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -21388,11 +21102,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq173_join implements IEnumerable
+	static class seq169_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq173_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq169_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -21404,11 +21118,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq173_join closure;
+			seq169_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq173_join closure) 
+			public Enumerator(seq169_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -21495,11 +21209,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq174_join implements IEnumerable
+	static class seq170_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq174_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq170_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -21511,10 +21225,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq174_join closure;
+			seq170_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq174_join closure) 
+			public Enumerator(seq170_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -21560,7 +21274,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG53", ""), (new seq89_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("G_SG53", ""), (new seq59_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -21585,11 +21299,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq175_join implements IEnumerable
+	static class seq171_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq175_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq171_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -21601,12 +21315,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq175_join closure;
+			seq171_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq175_join closure) 
+			public Enumerator(seq171_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -21643,7 +21357,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_ALC", ""), (new seq113_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_ALC", ""), (new seq118_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -21709,11 +21423,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq176_join implements IEnumerable
+	static class seq172_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq176_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq172_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -21725,10 +21439,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq176_join closure;
+			seq172_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq176_join closure) 
+			public Enumerator(seq172_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -21799,11 +21513,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq177_join implements IEnumerable
+	static class seq173_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq177_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq173_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -21815,10 +21529,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq177_join closure;
+			seq173_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq177_join closure) 
+			public Enumerator(seq173_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -21851,7 +21565,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_2() throws Exception {
 				state = 2;				
 				if (!var2_filter_elements_nodename.moveNext()) {state = 3; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_UNO", ""), (new seq178_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_UNO", ""), (new seq174_join(((com.altova.mapforce.IMFNode)(var2_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -21864,7 +21578,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_UNP", ""), (new seq185_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("S_UNP", ""), (new seq181_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -21889,11 +21603,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq178_join implements IEnumerable
+	static class seq174_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq178_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq174_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -21905,7 +21619,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq178_join closure;
+			seq174_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
@@ -21914,7 +21628,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			IEnumerator var7_filter_elements_nodename;
 			IEnumerator var8_filter_elements_nodename;
 			IEnumerator var9_filter_elements_nodename;
-			public Enumerator(seq178_join closure) 
+			public Enumerator(seq174_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -21972,7 +21686,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_5() throws Exception {
 				state = 5;				
 				if (!var3_filter_elements_nodename.moveNext()) {state = 6; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S020", ""), (new seq179_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S020", ""), (new seq175_join(((com.altova.mapforce.IMFNode)(var3_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -21985,7 +21699,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_8() throws Exception {
 				state = 8;				
 				if (!var4_filter_elements_nodename.moveNext()) {state = 9; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S021", ""), (new seq180_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S021", ""), (new seq176_join(((com.altova.mapforce.IMFNode)(var4_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -21998,7 +21712,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_11() throws Exception {
 				state = 11;				
 				if (!var5_filter_elements_nodename.moveNext()) {state = 12; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S022", ""), (new seq181_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S022", ""), (new seq177_join(((com.altova.mapforce.IMFNode)(var5_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -22011,7 +21725,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_14() throws Exception {
 				state = 14;				
 				if (!var6_filter_elements_nodename.moveNext()) {state = 15; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S302", ""), (new seq182_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S302", ""), (new seq178_join(((com.altova.mapforce.IMFNode)(var6_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -22024,7 +21738,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_17() throws Exception {
 				state = 17;				
 				if (!var7_filter_elements_nodename.moveNext()) {state = 18; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S301", ""), (new seq183_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S301", ""), (new seq179_join(((com.altova.mapforce.IMFNode)(var7_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -22037,7 +21751,7 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			private boolean moveNext_20() throws Exception {
 				state = 20;				
 				if (!var8_filter_elements_nodename.moveNext()) {state = 21; return false; }
-				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S300", ""), (new seq184_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
+				current = com.altova.functions.Core.createElement(com.altova.functions.Core.createQName("C_S300", ""), (new seq180_join(((com.altova.mapforce.IMFNode)(var8_filter_elements_nodename.current())))));
 				pos++;
 				return true;
 			}
@@ -22081,11 +21795,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq179_join implements IEnumerable
+	static class seq175_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq179_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq175_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -22097,10 +21811,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq179_join closure;
+			seq175_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq179_join closure) 
+			public Enumerator(seq175_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -22171,11 +21885,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq180_join implements IEnumerable
+	static class seq176_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq180_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq176_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -22187,12 +21901,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq180_join closure;
+			seq176_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq180_join closure) 
+			public Enumerator(seq176_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -22295,11 +22009,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq181_join implements IEnumerable
+	static class seq177_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq181_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq177_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -22311,12 +22025,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq181_join closure;
+			seq177_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq181_join closure) 
+			public Enumerator(seq177_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -22419,11 +22133,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq182_join implements IEnumerable
+	static class seq178_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq182_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq178_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -22435,12 +22149,12 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq182_join closure;
+			seq178_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
 			IEnumerator var5_filter_elements_nodename;
-			public Enumerator(seq182_join closure) 
+			public Enumerator(seq178_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -22543,11 +22257,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq183_join implements IEnumerable
+	static class seq179_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq183_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq179_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -22559,11 +22273,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq183_join closure;
+			seq179_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq183_join closure) 
+			public Enumerator(seq179_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -22650,11 +22364,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq184_join implements IEnumerable
+	static class seq180_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq184_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq180_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -22666,11 +22380,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq184_join closure;
+			seq180_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
 			IEnumerator var4_filter_elements_nodename;
-			public Enumerator(seq184_join closure) 
+			public Enumerator(seq180_join closure) 
 			{
 				this.closure = closure;
 			}
@@ -22757,11 +22471,11 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 		}
 				
 	}
-	static class seq185_join implements IEnumerable
+	static class seq181_join implements IEnumerable
 	{
 		com.altova.mapforce.IMFNode var1_cur;
 	
-		public seq185_join(com.altova.mapforce.IMFNode var1_cur)
+		public seq181_join(com.altova.mapforce.IMFNode var1_cur)
 		{
 			this.var1_cur = var1_cur;
 		}
@@ -22773,10 +22487,10 @@ public class MappingMapToINVOIC_D14B_ISO20625 extends com.altova.TraceProvider
 			int pos = 0;
 			int state = 1;
 			Object current;
-			seq185_join closure;
+			seq181_join closure;
 			IEnumerator var2_filter_elements_nodename;
 			IEnumerator var3_filter_elements_nodename;
-			public Enumerator(seq185_join closure) 
+			public Enumerator(seq181_join closure) 
 			{
 				this.closure = closure;
 			}

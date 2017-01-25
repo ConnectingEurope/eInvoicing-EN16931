@@ -6366,7 +6366,7 @@ public class EnvelopeDocument extends TextDocument
 				new Particle[]{
 					new Particle("UNG", getStructureUNG(), 0, 1, 1, false, new String[]{}),
 					new Particle("Select", getStructureSelect(), 1, 1, 1, false, new String[]{}),
-					new Particle("Object", getStructureObject2(), 0, Integer.MAX_VALUE, 1, false, new String[]{}),
+					new Particle("Object", getStructureObject(), 0, Integer.MAX_VALUE, 1, false, new String[]{}),
 					new Particle("UNE", getStructureUNE(), 0, 1, 1, false, new String[]{}),
 					}
 				);
@@ -6426,10 +6426,10 @@ public class EnvelopeDocument extends TextDocument
 				);
 			}
 
-		static StructureItem mStructureObject2 = null;
-		static StructureItem getStructureObject2() { if (mStructureObject2 == null) { initStructureObject2(); } return mStructureObject2; }
-		static void initStructureObject2 () {
-			mStructureObject2 = new Group ("Object","", "", 
+		static StructureItem mStructureObject = null;
+		static StructureItem getStructureObject() { if (mStructureObject == null) { initStructureObject(); } return mStructureObject; }
+		static void initStructureObject () {
+			mStructureObject = new Group ("Object","", "", 
 				new Particle[]{
 					new Particle("UNO", getStructureUNO(), 1, 1, 1, false, new String[]{}),
 					new Particle("UNP", getStructureUNP(), 1, 1, 1, false, new String[]{}),
@@ -6487,7 +6487,7 @@ this.recordDecimalSeparator();
 			super.mSettings = new EDIFactSettings();
 			// EDIFact specific settings:
 			
-			((EDIFactSettings)super.mSettings).setSyntaxLevel('W');
+			((EDIFactSettings)super.mSettings).setSyntaxLevel('A');
 			
 			((EDIFactSettings)super.mSettings).setSyntaxVersionNumber(4);
 			
