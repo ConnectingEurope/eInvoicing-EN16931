@@ -19,6 +19,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
     * Contact points
       * Andreas Pelekies
       * Martin Krusch (Testing and QA)
+      * Philip Helger (Java applications)
   * `iso20022` - Invoice based on ISO 20022 (**discontinued**)
     * Contact points
       * Zsoltan Patkai
@@ -26,7 +27,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
 # Development
 
 For the Java projects contained in this repository, please consider the following prerequisites
-  * Java JDK 1.8.x (was tested only with a JDK and not with a JRE)
-  * Eclipse 4.x (JEE edition please!)
+  * Java JDK 1.8.x latest (was tested only with a JDK and not with a JRE)
+  * Eclipse 4.x latest (JEE edition please!)
   * For building on the commandline use Apache Maven 3.x (latest) 
  
