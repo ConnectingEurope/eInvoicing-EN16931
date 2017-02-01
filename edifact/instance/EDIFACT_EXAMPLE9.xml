@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <M_INVOIC>
 	<S_UNH>
 		<D_0062>20150483</D_0062>
@@ -15,7 +15,7 @@
 		</C_C002>
 		<C_C106>
 			<D_1004>20150483</D_1004>
-		</C_C106>		
+		</C_C106>
 	</S_BGM>
 	<S_DTM>
 		<C_C507>

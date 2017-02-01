@@ -5,12 +5,8 @@ package org.validool.xmlvalidator;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
-import javax.xml.XMLConstants;
 import javax.xml.transform.stream.StreamSource;
-import javax.xml.validation.Schema;
-import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 import org.apache.log4j.ConsoleAppender;
@@ -21,6 +17,7 @@ import org.apache.log4j.SimpleLayout;
 import org.oclc.purl.dsdl.svrl.SchematronOutputType;
 import org.xml.sax.SAXException;
 
+import com.helger.commons.collection.ext.ICommonsList;
 import com.helger.commons.io.resource.FileSystemResource;
 import com.helger.schematron.ISchematronResource;
 import com.helger.schematron.SchematronHelper;
@@ -28,13 +25,14 @@ import com.helger.schematron.pure.SchematronResourcePure;
 import com.helger.schematron.svrl.SVRLFailedAssert;
 import com.helger.schematron.svrl.SVRLHelper;
 import com.helger.schematron.svrl.SVRLMarshaller;
+import com.helger.xml.schema.XMLSchemaCache;
 
 /**
  * @author Andreas Pelekies (andreas.pelekies(at)validool.org)
  */
-public class XMLValidator
+public final class XMLValidator
 {
-  private static Logger logger = Logger.getRootLogger ();
+  private static final Logger logger = Logger.getRootLogger ();
 
   public static void main (final String [] args)
   {
@@ -50,7 +48,7 @@ public class XMLValidator
     }
     catch (final Exception ex)
     {
-      System.out.println (ex);
+      logger.info (ex);
     }
 
     boolean argsValid = true;
@@ -59,36 +57,36 @@ public class XMLValidator
     String xmlFile = null;
     String xsdFile = null;
     String schFile = null;
+    String svrlFile = "result.svrl";
 
     if (argsValid && args.length < 4)
     {
       argsValid = false;
     }
-    if (argsValid && args[0].compareTo ("-xml") == 0)
+    if (argsValid && args[0].equals ("-xml"))
     {
       final File f = new File (args[1]);
       if (!f.exists () || f.isDirectory ())
       {
-        System.out.println ("The xml instance file does not exist.");
+        logger.info ("The xml instance file does not exist.");
         argsValid = false;
       }
       else
       {
         xmlFile = args[1];
       }
-
     }
     else
     {
       argsValid = false;
     }
-    if (argsValid && args[2].compareTo ("-xsd") == 0)
+    if (argsValid && args[2].equals ("-xsd"))
     {
       final File f = new File (args[3]);
       xsdMode = true;
       if (!f.exists () || f.isDirectory ())
       {
-        System.out.println ("The schema file does not exist.");
+        logger.info ("The schema file does not exist.");
         argsValid = false;
       }
       else
@@ -96,18 +94,23 @@ public class XMLValidator
         xsdFile = args[3];
       }
     }
-    if (argsValid && args[2].compareTo ("-sch") == 0)
+    if (argsValid && args[2].equals ("-sch"))
     {
       final File f = new File (args[3]);
       schMode = true;
       if (!f.exists () || f.isDirectory ())
       {
-        System.out.println ("The schematron file does not exist.");
+        logger.info ("The schematron file does not exist.");
         argsValid = false;
       }
       else
       {
         schFile = args[3];
+        if (args.length >= 5)
+        {
+          // Optional SVRL filename - defaults to "result.svrl"
+          svrlFile = args[4];
+        }
       }
     }
     if (!schMode && !xsdMode)
@@ -117,25 +120,25 @@ public class XMLValidator
 
     if (!argsValid)
     {
-      System.out.println ("Usage: java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -xsd schema.xsd");
-      System.out.println ("or   : java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -sch schematron.sch");
+      logger.info ("Usage: java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -xsd schema.xsd");
+      logger.info ("or   : java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -sch schematron.sch [result.svrl]");
       return;
     }
 
-    System.out.println ("=========================================");
+    logger.info ("=========================================");
     System.out.print ("Starting validation against ");
     if (xsdMode)
     {
-      System.out.println ("schema");
-      System.out.println ("Result: " + validateXMLSchema (xsdFile, xmlFile));
+      logger.info ("schema");
+      logger.info ("Result: " + validateXMLSchema (xsdFile, xmlFile));
     }
     else
     {
-      System.out.println ("schematron");
-      System.out.println ("Result: " + validateXMLSchematron (schFile, xmlFile, "result.svrl"));
+      logger.info ("schematron");
+      logger.info ("Result: " + validateXMLSchematron (schFile, xmlFile, svrlFile));
     }
-    System.out.println ("Finished.");
-    System.out.println ("=========================================");
+    logger.info ("Finished.");
+    logger.info ("=========================================");
 
   }
 
@@ -145,15 +148,12 @@ public class XMLValidator
     try
     {
       System.setProperty ("jdk.xml.maxOccurLimit", "9999999");
-      final SchemaFactory factory = SchemaFactory.newInstance (XMLConstants.W3C_XML_SCHEMA_NS_URI);
-      final Schema schema = factory.newSchema (new File (xsdPath));
-      final Validator validator = schema.newValidator ();
-
+      final Validator validator = XMLSchemaCache.getInstance ().getValidator (new FileSystemResource (xsdPath));
       validator.validate (new StreamSource (new File (xmlPath)));
     }
     catch (IOException | SAXException e)
     {
-      System.out.println ("Exception: " + e.getMessage ());
+      logger.info ("Exception: " + e.getMessage ());
       return false;
     }
     return true;
@@ -168,19 +168,21 @@ public class XMLValidator
     final SchematronOutputType aSOT = SchematronHelper.applySchematron (aSchematron, aXML);
     if (aSOT == null)
     {
-      System.out.println ("Schematron file is malformed!");
+      logger.info ("Schematron file is malformed!");
       return false;
     }
+
+    // Write SVRL
     new SVRLMarshaller (false).write (aSOT, new FileSystemResource (svrlPath));
 
-    final List <SVRLFailedAssert> aFailedAsserts = SVRLHelper.getAllFailedAssertions (aSOT);
-    if (!aFailedAsserts.isEmpty ())
+    final ICommonsList <SVRLFailedAssert> aFailedAsserts = SVRLHelper.getAllFailedAssertions (aSOT);
+    if (aFailedAsserts.isNotEmpty ())
     {
-      System.out.println ("XML does not comply to Schematron! SVRL:");
+      logger.info ("XML does not comply to Schematron! See SVRL for details: " + svrlPath);
       return false;
     }
 
-    System.out.println ("XML complies to Schematron!");
+    logger.info ("XML complies to Schematron!");
     return true;
   }
 
