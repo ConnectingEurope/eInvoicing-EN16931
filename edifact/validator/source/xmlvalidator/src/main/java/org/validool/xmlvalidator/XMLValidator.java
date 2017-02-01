@@ -25,6 +25,7 @@ import com.helger.schematron.pure.SchematronResourcePure;
 import com.helger.schematron.svrl.SVRLFailedAssert;
 import com.helger.schematron.svrl.SVRLHelper;
 import com.helger.schematron.svrl.SVRLMarshaller;
+import com.helger.schematron.xslt.SchematronResourceSCH;
 import com.helger.xml.schema.XMLSchemaCache;
 
 /**
@@ -33,6 +34,7 @@ import com.helger.xml.schema.XMLSchemaCache;
 public final class XMLValidator
 {
   private static final Logger logger = Logger.getRootLogger ();
+  private static final boolean pureMode = false;
 
   public static void main (final String [] args)
   {
@@ -164,7 +166,9 @@ public final class XMLValidator
     final FileSystemResource aXML = new FileSystemResource (xmlPath);
     final FileSystemResource aSCH = new FileSystemResource (schPath);
 
-    final ISchematronResource aSchematron = new SchematronResourcePure (aSCH);
+    // Use pure implementation or XSLT to do the conversion?
+    final ISchematronResource aSchematron = pureMode ? new SchematronResourcePure (aSCH)
+                                                     : new SchematronResourceSCH (aSCH);
     final SchematronOutputType aSOT = SchematronHelper.applySchematron (aSchematron, aXML);
     if (aSOT == null)
     {
