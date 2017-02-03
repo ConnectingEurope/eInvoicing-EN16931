@@ -18,6 +18,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * `edifact` - UN/EDIFACT (and ISO 26025 based XML version)
     * Contact points
       * Andreas Pelekies
+      * Jörg Walther (XML Schema)
       * Martin Krusch (Testing and QA)
       * Philip Helger (Java applications)
   * `iso20022` - Invoice based on ISO 20022 (**discontinued**)
@@ -28,6 +29,6 @@ For each syntax a separate folder exists where all related artefacts are to be p
 
 For the Java projects contained in this repository, please consider the following prerequisites
   * Java JDK 1.8.x latest (was tested only with a JDK and not with a JRE)
-  * Eclipse 4.x latest (JEE edition please!)
+  * Eclipse 4.6.x latest (m2e - Maven for Eclipse - must be contained)
   * For building on the commandline use Apache Maven 3.x (latest) 
  
