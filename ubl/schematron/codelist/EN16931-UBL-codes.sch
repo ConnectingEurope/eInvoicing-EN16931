@@ -25,6 +25,12 @@
   <rule context="cac:PaymentMeans//cbc:PaymentMeansCode" flag="fatal">
     <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 60 61 62 63 64 65 66 67 70 74 75 76 77 78 91 92 93 94 95 96 97 98 57 58 ',concat(' ',normalize-space(.),' ') ) ) )" id="BR-CL-08" flag="fatal">[BR-CL-08]-Payment means in an invoice MUST be coded using UNCL4461 code list</assert>
   </rule>
+  <rule context="cac:TaxCategory/cbc:ID" flag="fatal">
+    <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' AE E S Z G O K L M ',concat(' ',normalize-space(.),' ') ) ) )" id="BR-CL-09" flag="fatal">[BR-CL-09]-Invoice tax categories MUST be coded using UNCL5305 code list</assert>
+  </rule>
+  <rule context="cac:ClassifiedTaxCategory/cbc:ID" flag="fatal">
+    <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' AE E S Z G O K L M ',concat(' ',normalize-space(.),' ') ) ) )" id="BR-CL-10" flag="fatal">[BR-CL-10]-Invoice tax categories MUST be coded using UNCL5305 code list</assert>
+  </rule>
   <rule context="@mimeCode" flag="fatal">
     <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' application/vnd.openxmlformats-officedocument.spreadsheetml.sheet application/vnd.oasis.opendocument.spreadsheet image/jpeg image/png text/csv application/pdf ',concat(' ',normalize-space(.),' ') ) ) )" id="BR-CL-12" flag="fatal">[BR-CL-12]-For Mime code in attribute use MIMEMediaType.</assert>
   </rule>
