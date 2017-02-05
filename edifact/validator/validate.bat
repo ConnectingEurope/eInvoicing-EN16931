@@ -8,6 +8,7 @@ set EXAMPLE_NUMBER=%1
 set CONVERT_PATH="1INVOIC2ISOXML\1INVOIC2ISOXML.exe"
 set XSD_PATH="..\schema\INVOIC_D14B_ISO20625.xsd"
 set SCHEMATRON_PATH="..\schematron\EN16931-EDIFACT-validation.sch"
+set SCHEMATRON_PATH="..\stylesheet\EN16931-EDIFACT-validation-compiled.xsl"
 set TXT_PATH="..\instance\EDIFACT_EXAMPLE%EXAMPLE_NUMBER%.txt"
 set XML_PATH="..\instance\EDIFACT_EXAMPLE%EXAMPLE_NUMBER%.xml"
 

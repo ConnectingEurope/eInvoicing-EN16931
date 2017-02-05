@@ -25,6 +25,8 @@ import com.helger.schematron.pure.SchematronResourcePure;
 import com.helger.schematron.svrl.SVRLFailedAssert;
 import com.helger.schematron.svrl.SVRLHelper;
 import com.helger.schematron.svrl.SVRLMarshaller;
+import com.helger.schematron.xslt.SchematronResourceSCH;
+import com.helger.schematron.xslt.SchematronResourceXSLT;
 import com.helger.xml.schema.XMLSchemaCache;
 
 /**
@@ -33,6 +35,7 @@ import com.helger.xml.schema.XMLSchemaCache;
 public final class XMLValidator
 {
   private static final Logger logger = Logger.getRootLogger ();
+  private static final boolean pureMode = false;
 
   public static void main (final String [] args)
   {
@@ -54,6 +57,7 @@ public final class XMLValidator
     boolean argsValid = true;
     boolean xsdMode = false;
     boolean schMode = false;
+    boolean schXsltMode = false;
     String xmlFile = null;
     String xsdFile = null;
     String schFile = null;
@@ -94,10 +98,11 @@ public final class XMLValidator
         xsdFile = args[3];
       }
     }
-    if (argsValid && args[2].equals ("-sch"))
+    if (argsValid && (args[2].equals ("-sch") || args[2].equals ("-xslt")))
     {
       final File f = new File (args[3]);
       schMode = true;
+      schXsltMode = args[2].equals ("-xslt");
       if (!f.exists () || f.isDirectory ())
       {
         logger.info ("The schematron file does not exist.");
@@ -120,8 +125,10 @@ public final class XMLValidator
 
     if (!argsValid)
     {
-      logger.info ("Usage: java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -xsd schema.xsd");
-      logger.info ("or   : java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -sch schematron.sch [result.svrl]");
+      logger.info ("Usage XSD mode:  java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -xsd schema.xsd");
+      logger.info ("Schematron mode: java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -sch schematron.sch [result.svrl]");
+      if (!pureMode)
+        logger.info ("Schematron mode: java -jar xmlvalidator-1.0-SNAPSHOT-jar-with-dependencies.jar -xml instance.xml -xslt schematron.xslt [result.svrl]");
       return;
     }
 
@@ -135,7 +142,7 @@ public final class XMLValidator
     else
     {
       logger.info ("schematron");
-      logger.info ("Result: " + validateXMLSchematron (schFile, xmlFile, svrlFile));
+      logger.info ("Result: " + validateXMLSchematron (schFile, schXsltMode, xmlFile, svrlFile));
     }
     logger.info ("Finished.");
     logger.info ("=========================================");
@@ -159,12 +166,18 @@ public final class XMLValidator
     return true;
   }
 
-  public static boolean validateXMLSchematron (final String schPath, final String xmlPath, final String svrlPath)
+  public static boolean validateXMLSchematron (final String schPath,
+                                               final boolean schXsltMode,
+                                               final String xmlPath,
+                                               final String svrlPath)
   {
     final FileSystemResource aXML = new FileSystemResource (xmlPath);
     final FileSystemResource aSCH = new FileSystemResource (schPath);
 
-    final ISchematronResource aSchematron = new SchematronResourcePure (aSCH);
+    // Use pure implementation or XSLT to do the conversion?
+    final ISchematronResource aSchematron = pureMode ? new SchematronResourcePure (aSCH)
+                                                     : schXsltMode ? new SchematronResourceXSLT (aSCH)
+                                                                   : new SchematronResourceSCH (aSCH);
     final SchematronOutputType aSOT = SchematronHelper.applySchematron (aSchematron, aXML);
     if (aSOT == null)
     {

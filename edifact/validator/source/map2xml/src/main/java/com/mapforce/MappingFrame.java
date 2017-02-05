@@ -131,7 +131,7 @@ public class MappingFrame extends JFrame implements com.altova.TraceTarget {
 		jINVOIC_D14B_ISO206252Label1.setText("Instance of INVOIC_D14B_ISO20625.xsd:");
 		jINVOIC_D14B_ISO206252Label1.setBounds(new Rectangle(15, 60, 438, 23));
 		jPanelStructures.add(jINVOIC_D14B_ISO206252Label1, null);
-		jINVOIC_D14B_ISO206252TextField1.setText("INVOIC D15 A.xml");
+		jINVOIC_D14B_ISO206252TextField1.setText("C:/GEFEG/Repositories/vda/Daten f\u00fcr XMLEDI/INVOIC_D14B_ISO20625.xml");
 		jINVOIC_D14B_ISO206252TextField1.setBounds(new Rectangle(15, 85, 438, 23));
 		jINVOIC_D14B_ISO206252TextField1.setEditable(false);
 		jPanelStructures.add(jINVOIC_D14B_ISO206252TextField1, null);

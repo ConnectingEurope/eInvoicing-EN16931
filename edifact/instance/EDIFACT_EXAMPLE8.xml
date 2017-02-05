@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <M_INVOIC>
 	<S_UNH>
 		<D_0062>1100512149</D_0062>
@@ -199,7 +199,7 @@
 		<S_IMD>
 			<D_7077>F</D_7077>
 			<C_C273>
-				<D_7008>Getransporteerde kWhs</D_7008>
+				<D_7008>Getransporteerde kWh&#146;s</D_7008>
 			</C_C273>
 		</S_IMD>
 		<S_QTY>
