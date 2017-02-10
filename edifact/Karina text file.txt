@@ -1,0 +1,423 @@
+﻿1	
+UNH+87846595+INVOIC:D:14B:UN:en16931:2017'
+MESSAGE HEADER To head, identify and specify a message.
++2	
+BGM+380:::+TOSL108::+9'
+BEGINNING OF MESSAGE To indicate the type and function of a message and to transmit the identifying number.
++3	
+DTM+137:20130630:102'
+DATE/TIME/PERIOD To specify date, and/or time, or period.
++4	
+DTM+131:20130630:102'
+DATE/TIME/PERIOD To specify date, and/or time, or period.
++5	
+DTM+167:20130601:102'
+DATE/TIME/PERIOD To specify date, and/or time, or period.
++6	
+DTM+168:20130630:102'
+DATE/TIME/PERIOD To specify date, and/or time, or period.
++7	
+DTM+35:20130615:102'
+DATE/TIME/PERIOD To specify date, and/or time, or period.
++8	
+FTX+GEN+++Ordered in our booth at the convention'
+FREE TEXT To provide free form or coded text information.
++9	
+FTX+AAB+++2 % discount if paid within 2 days Penalty percentage 10% from due date'
+FREE TEXT To provide free form or coded text information.
++10	
+RFF+AEF:1'
+REFERENCE To specify a reference.
++11	
+RFF+AIA:urn:cen.eu:en16931:2017'
+REFERENCE To specify a reference.
++12	
+RFF+CT:Contract321'
+REFERENCE To specify a reference.
++13	
+RFF+ON:123'
+REFERENCE To specify a reference.
++14	
+RFF+AOU:Project cost code 123'
+REFERENCE To specify a reference.
++15	
+RFF+PQ:0003434323213231'
+REFERENCE To specify a reference.
++16	
+NAD+SE+1238764941386::9++Salescompany ltd.:+Main street 34:Suite 123+Big city+303:::RegionA+54321+NO'
+NAME AND ADDRESS To specify the name/address and their related function, either by C082 only and/or unstructured by C058 or structured by C080 thru 3207.
++17	
+FII+RB+NO9386011117947+DNBANOKK:25:5:9710'
+FINANCIAL INSTITUTION INFORMATION To identify an account and a related financial institution.
++18	
+RFF+APA:123456789'
+REFERENCE To specify a reference.
++19	
+RFF+VA:123456789MVA'
+REFERENCE To specify a reference.
++20	
+CTA+IC+:Antonio Salesmacher'
+CONTACT INFORMATION To identify a person or a department to whom communication should be directed.
++21	
+COM+antonio@salescompany.no:EM'
+COMMUNICATION CONTACT To identify a communication number of a department or a person to whom communication should be directed.
++22	
+COM+46211230:TE'
+COMMUNICATION CONTACT To identify a communication number of a department or a person to whom communication should be directed.
++23	
+NAD+BY+3456789012098::9++The Buyercompany+Anystreet 8:Back door+Anytown+101:::RegionB+101+NO'
+NAME AND ADDRESS To specify the name/address and their related function, either by C082 only and/or unstructured by C058 or structured by C080 thru 3207.
++24	
+RFF+GN:987654321'
+REFERENCE To specify a reference.
++25	
+RFF+VA:987654321MVA'
+REFERENCE To specify a reference.
++26	
+CTA+PD+:John Doe'
+CONTACT INFORMATION To identify a person or a department to whom communication should be directed.
++27	
+COM+john@buyercompany.no:EM'
+COMMUNICATION CONTACT To identify a communication number of a department or a person to whom communication should be directed.
++28	
+COM+5121230:TE'
+COMMUNICATION CONTACT To identify a communication number of a department or a person to whom communication should be directed.
++29	
+NAD+PE+2298740918237::9++Ebeneser Scrooge AS'
+NAME AND ADDRESS To specify the name/address and their related function, either by C082 only and/or unstructured by C058 or structured by C080 thru 3207.
++30	
+FII+RB+7777-8976+SWEDSESS::20:CBANKING'
+FINANCIAL INSTITUTION INFORMATION To identify an account and a related financial institution.
++31	
+RFF+GN:989823401'
+REFERENCE To specify a reference.
++32	
+NAD+AE+++Tax handling company AS+Regent street:Front door+Newtown+:::RegionC+202+NO'
+NAME AND ADDRESS To specify the name/address and their related function, either by C082 only and/or unstructured by C058 or structured by C080 thru 3207.
++33	
+RFF+VA:967611265MVA'
+REFERENCE To specify a reference.
++34	
+NAD+DP+6754238987643::9+++Deliverystreet 2:Side door+DeliveryCity+:::RegionD+523427+NO'
+NAME AND ADDRESS To specify the name/address and their related function, either by C082 only and/or unstructured by C058 or structured by C080 thru 3207.
++35	
+CUX+2:NOK:4'
+CURRENCIES To specify currencies used in the transaction and relevant details for the rate of exchange.
++36	
+PYT+3++66+1'
+PAYMENT TERMS To specify the terms of payment.
++37	
+DTM+13:20130720:102'
+DATE/TIME/PERIOD To specify date, and/or time, or period.
++38	
+PYT+1+1'
+PAYMENT TERMS To specify the terms of payment.
++39	
+PAI+::31'
+PAYMENT INSTRUCTIONS To specify the instructions for payment.
++40	
+ALC+A+Promotion discount:100'
+ALLOWANCE OR CHARGE To identify allowance or charge details.
++41	
+MOA+204:100'
+MONETARY AMOUNT To specify a monetary amount.
++42	
+TAX+7+VAT+++:::25+S'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++43	
+ALC+C+:+++FC:::Freight'
+ALLOWANCE OR CHARGE To identify allowance or charge details.
++44	
+MOA+23:100'
+MONETARY AMOUNT To specify a monetary amount.
++45	
+TAX+7+VAT+++:::25+S'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++46	
+EFI+sheet001.html:Timesheet'
+EXTERNAL FILE LINK IDENTIFICATION To specify the link of one non-EDIFACT external file to an EDIFACT message.
++47	
+COM+http___RELEASED_ELEM_SEP___//www.suppliersite.eu/sheet001.html:AO'
+COMMUNICATION CONTACT To identify a communication number of a department or a person to whom communication should be directed.
++48	
+LIN+1++01234567890128:SRV'
+LINE ITEM To identify a line item and configuration.
++49	
+PIA+1+JB007:SA'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++50	
+PIA+1+65434568:STI'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++51	
+PIA+1+12344321:ZUN'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++52	
+IMD+F+57+:::Laptop computer'
+ITEM DESCRIPTION To describe an item in either an industry or free format.
++53	
+IMD+A++:::Processor___RELEASED_ELEM_SEP___ Intel Core 2 Duo SU9400 LV (1.4GHz). RAM___RELEASED_ELEM_SEP___ 3MB. Screen 1440x900'
+ITEM DESCRIPTION To describe an item in either an industry or free format.
++54	
+QTY+47:1:H87'
+QUANTITY To specify a pertinent quantity.
++55	
+ALI+DE'
+ADDITIONAL INFORMATION To indicate that special conditions due to the origin, customs preference, fiscal or commercial factors are applicable.
++56	
+DTM+167:20130601:102'
+DATE/TIME/PERIOD To specify date, and/or time, or period.
++57	
+DTM+168:20130630:102'
+DATE/TIME/PERIOD To specify date, and/or time, or period.
++58	
+FTX+ACB+1++Scratch on box'
+FREE TEXT To provide free form or coded text information.
++59	
+FTX+ACF+1++Color:Black'
+FREE TEXT To provide free form or coded text information.
++60	
+MOA+203:1273'
+MONETARY AMOUNT To specify a monetary amount.
++61	
+PRI+AAA:1273:::1:H87'
+PRICE DETAILS To specify price information.
++62	
+RFF+ON::1'
+REFERENCE To specify a reference.
++63	
+RFF+AWQ:BookingCode001'
+REFERENCE To specify a reference.
++64	
+TAX+7+VAT:::+++:::25+S'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++65	
+ALC+A+Damage:+2'
+ALLOWANCE OR CHARGE To identify allowance or charge details.
++66	
+MOA+204:12'
+MONETARY AMOUNT To specify a monetary amount.
++67	
+ALC+C+Testing:+6'
+ALLOWANCE OR CHARGE To identify allowance or charge details.
++68	
+MOA+23:12'
+MONETARY AMOUNT To specify a monetary amount.
++69	
+LIN+2++01234567890135:SRV'
+LINE ITEM To identify a line item and configuration.
++70	
+PIA+1+JB008:SA'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++71	
+PIA+1+65434567:STI'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++72	
+PIA+1+32344324:ZUN'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++73	
+IMD+F+57+:::Returned "Advanced computing" book'
+ITEM DESCRIPTION To describe an item in either an industry or free format.
++74	
+QTY+47:-1:H87'
+QUANTITY To specify a pertinent quantity.
++75	
+FTX+ACB+1++Cover is slightly damaged'
+FREE TEXT To provide free form or coded text information.
++76	
+MOA+203:-3.96'
+MONETARY AMOUNT To specify a monetary amount.
++77	
+PRI+AAA:3.96:::1:H87'
+PRICE DETAILS To specify price information.
++78	
+RFF+ON::5'
+REFERENCE To specify a reference.
++79	
+RFF+AWQ:BookingCode002'
+REFERENCE To specify a reference.
++80	
+TAX+7+VAT:::+++:::15+S'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++81	
+MOA+204:12'
+MONETARY AMOUNT To specify a monetary amount.
++82	
+LIN+3++01234567890142:SRV'
+LINE ITEM To identify a line item and configuration.
++83	
+PIA+1+JB009:SA'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++84	
+PIA+1+65434566:STI'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++85	
+PIA+1+32344324:ZUN'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++86	
+IMD+F+57+:::"Computing for dummies" book'
+ITEM DESCRIPTION To describe an item in either an industry or free format.
++87	
+QTY+47:2:H87'
+QUANTITY To specify a pertinent quantity.
++88	
+FTX+ACB+1++Cover is slightly damaged'
+FREE TEXT To provide free form or coded text information.
++89	
+MOA+203:4.96'
+MONETARY AMOUNT To specify a monetary amount.
++90	
+PRI+AAA:2.48:::1:H87'
+PRICE DETAILS To specify price information.
++91	
+PRI+AAB:2.75:::1:H87'
+PRICE DETAILS To specify price information.
++92	
+RFF+ON::3'
+REFERENCE To specify a reference.
++93	
+RFF+AWQ:BookingCode003'
+REFERENCE To specify a reference.
++94	
+TAX+7+VAT:::+++:::15+S'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++95	
+MOA+204:12'
+MONETARY AMOUNT To specify a monetary amount.
++96	
+ALC+A'
+ALLOWANCE OR CHARGE To identify allowance or charge details.
++97	
+MOA+509:0.275'
+MONETARY AMOUNT To specify a monetary amount.
++98	
+LIN+4++01234567890159:SRV'
+LINE ITEM To identify a line item and configuration.
++99	
+PIA+1+JB010:SA'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++100	
+PIA+1+65434565:STI'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++101	
+PIA+1+12344322:ZUN'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++102	
+IMD+F+57+:::Returned IBM 5150 desktop'
+ITEM DESCRIPTION To describe an item in either an industry or free format.
++103	
+QTY+47:-1:H87'
+QUANTITY To specify a pertinent quantity.
++104	
+FTX+ACB+1++Cover is slightly damaged'
+FREE TEXT To provide free form or coded text information.
++105	
+MOA+203:-25'
+MONETARY AMOUNT To specify a monetary amount.
++106	
+PRI+AAA:25:::1:H87'
+PRICE DETAILS To specify price information.
++107	
+RFF+ON::2'
+REFERENCE To specify a reference.
++108	
+RFF+AWQ:BookingCode004'
+REFERENCE To specify a reference.
++109	
+TAX+7+VAT:::+++:::0+E'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++110	
+LIN+5++01234567890166:SRV'
+LINE ITEM To identify a line item and configuration.
++111	
+PIA+1+JB011:SA'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++112	
+PIA+1+65434564:STI'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++113	
+PIA+1+12344325:ZUN'
+ADDITIONAL PRODUCT ID To specify additional or substitutional item identification codes.
++114	
+IMD+F+57+:::Network cable'
+ITEM DESCRIPTION To describe an item in either an industry or free format.
++115	
+QTY+47:250:MTR'
+QUANTITY To specify a pertinent quantity.
++116	
+FTX+ACB+1++Cover is slightly damaged'
+FREE TEXT To provide free form or coded text information.
++117	
+FTX+ACF+1++Type:Cat5'
+FREE TEXT To provide free form or coded text information.
++118	
+MOA+203:187.5'
+MONETARY AMOUNT To specify a monetary amount.
++119	
+PRI+AAA:0.75:::1:MTR'
+PRICE DETAILS To specify price information.
++120	
+RFF+ON::4'
+REFERENCE To specify a reference.
++121	
+RFF+AWQ:BookingCode005'
+REFERENCE To specify a reference.
++122	
+TAX+7+VAT:::+++:::25+S'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++123	
+UNS+S'
+SECTION CONTROL To separate header, detail and summary sections of a message.
++124	
+MOA+79:1436.5'
+MONETARY AMOUNT To specify a monetary amount.
++125	
+MOA+9:100'
+MONETARY AMOUNT To specify a monetary amount.
++126	
+MOA+260:100'
+MONETARY AMOUNT To specify a monetary amount.
++127	
+MOA+389:1436.5'
+MONETARY AMOUNT To specify a monetary amount.
++128	
+MOA+176:365.28'
+MONETARY AMOUNT To specify a monetary amount.
++129	
+MOA+388:1802'
+MONETARY AMOUNT To specify a monetary amount.
++130	
+MOA+11:1000'
+MONETARY AMOUNT To specify a monetary amount.
++131	
+MOA+9:802'
+MONETARY AMOUNT To specify a monetary amount.
++132	
+TAX+7+VAT+++:::25:+S'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++133	
+MOA+125:1460.5'
+MONETARY AMOUNT To specify a monetary amount.
++134	
+MOA+124:365.13'
+MONETARY AMOUNT To specify a monetary amount.
++135	
+TAX+7+VAT+++:::15:+S'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++136	
+MOA+125:1'
+MONETARY AMOUNT To specify a monetary amount.
++137	
+MOA+124:0.15'
+MONETARY AMOUNT To specify a monetary amount.
++138	
+TAX+7+VAT+++:::0:+E'
+DUTY/TAX/FEE DETAILS To specify relevant duty/tax/fee information.
++139	
+MOA+125:-25'
+MONETARY AMOUNT To specify a monetary amount.
++140	
+MOA+124:0'
+MONETARY AMOUNT To specify a monetary amount.
++141	
+UNT+141+87846595'
+MESSAGE TRAILER To end and check the completeness of a message.
