@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Invoice  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
- xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
- xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
- xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
- xmlns:ccts="urn:un:unece:uncefact:documentation:2"
- xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+    xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+    xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
     <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
     <cbc:ProfileID>1</cbc:ProfileID>
     <cbc:ID>TOSL110</cbc:ID>
@@ -21,8 +21,8 @@
         <cbc:EndDate>2013-04-10</cbc:EndDate>
     </cac:InvoicePeriod>
     <cac:OrderReference>
-       <cbc:ID>PO4711</cbc:ID>
-       <cbc:SalesOrderID>123</cbc:SalesOrderID>
+        <cbc:ID>PO4711</cbc:ID>
+        <cbc:SalesOrderID>123</cbc:SalesOrderID>
     </cac:OrderReference>
     <cac:BillingReference>
         <cac:InvoiceDocumentReference>
@@ -50,7 +50,8 @@
         <cbc:ID>sales slip</cbc:ID>
         <cbc:DocumentType>your sales slip</cbc:DocumentType>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="EHF.pdf">VGVzdGluZyBCYXNlNjQgZW5jb2Rpbmc=</cbc:EmbeddedDocumentBinaryObject>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="EHF.pdf"
+                >VGVzdGluZyBCYXNlNjQgZW5jb2Rpbmc=</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
     <cac:ProjectReference>
@@ -60,7 +61,7 @@
         <cac:Party>
             <cbc:EndpointID schemeID="EMAIL">info@selco.nl</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="GLN">5790000436101</cbc:ID>
+                <cbc:ID schemeID="0088">5790000436101</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyIdentification>
                 <cbc:ID schemeID="SEPA">DK5678</cbc:ID>
@@ -106,7 +107,7 @@
         <cac:Party>
             <cbc:EndpointID schemeID="MAIL">info@buyercompany.dk</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="GLN">5790000436057</cbc:ID>
+                <cbc:ID schemeID="0088">5790000436057</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Buyco</cbc:Name>
@@ -137,7 +138,7 @@
                 <cbc:ElectronicMail>john.hansen@buyercompany.dk</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
-   </cac:AccountingCustomerParty>
+    </cac:AccountingCustomerParty>
     <cac:PayeeParty>
         <cac:PartyIdentification>
             <cbc:ID>DK16356608</cbc:ID>
@@ -154,14 +155,14 @@
             <cbc:Name>Dick Panama</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
-                <cbc:StreetName>Anystreet, Building 1</cbc:StreetName>
-                <cbc:AdditionalStreetName>6th floor</cbc:AdditionalStreetName>
-                <cbc:CityName>Anytown</cbc:CityName>
-                <cbc:PostalZone>101</cbc:PostalZone>
-                <cbc:CountrySubentity>Jutland</cbc:CountrySubentity>
-                <cac:Country>
-                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
-                </cac:Country>
+            <cbc:StreetName>Anystreet, Building 1</cbc:StreetName>
+            <cbc:AdditionalStreetName>6th floor</cbc:AdditionalStreetName>
+            <cbc:CityName>Anytown</cbc:CityName>
+            <cbc:PostalZone>101</cbc:PostalZone>
+            <cbc:CountrySubentity>Jutland</cbc:CountrySubentity>
+            <cac:Country>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+            </cac:Country>
         </cac:PostalAddress>
         <cac:PartyTaxScheme>
             <cbc:CompanyID>DK16356609</cbc:CompanyID>
@@ -320,7 +321,7 @@
                 <cbc:IdentificationCode>NL</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="UNSPSC">12344321</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="ZZZ">12344321</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>

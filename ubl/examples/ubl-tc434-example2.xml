@@ -44,7 +44,7 @@
     <cac:AccountingSupplierParty>
         <cac:Party>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="GLN">1238764941386</cbc:ID>
+                <cbc:ID schemeID="0088">1238764941386</cbc:ID>
             </cac:PartyIdentification>
             <cac:PostalAddress>
                 <cbc:StreetName>Main street 34</cbc:StreetName>
@@ -64,7 +64,7 @@
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>Salescompany ltd.</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="NO:ORGNR">123456789</cbc:CompanyID>
+                <cbc:CompanyID>123456789</cbc:CompanyID>
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>Antonio Salesmacher</cbc:Name>
@@ -76,7 +76,7 @@
     <cac:AccountingCustomerParty>
         <cac:Party>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="GLN">3456789012098</cbc:ID>
+                <cbc:ID schemeID="0088">3456789012098</cbc:ID>
             </cac:PartyIdentification>
             <cac:PostalAddress>
                 <cbc:StreetName>Anystreet 8</cbc:StreetName>
@@ -96,7 +96,7 @@
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>The Buyercompany</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="NO:ORGNR">987654321</cbc:CompanyID>
+                <cbc:CompanyID>987654321</cbc:CompanyID>
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>John Doe</cbc:Name>
@@ -107,13 +107,13 @@
    </cac:AccountingCustomerParty>
     <cac:PayeeParty>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="GLN">2298740918237</cbc:ID>
+            <cbc:ID schemeID="0088">2298740918237</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Ebeneser Scrooge AS</cbc:Name>
         </cac:PartyName>
         <cac:PartyLegalEntity>
-            <cbc:CompanyID schemeID="NO:ORGNR">989823401</cbc:CompanyID>
+            <cbc:CompanyID>989823401</cbc:CompanyID>
         </cac:PartyLegalEntity>
     </cac:PayeeParty>
     <cac:TaxRepresentativeParty>
@@ -140,7 +140,7 @@
     <cac:Delivery>
         <cbc:ActualDeliveryDate>2013-06-15</cbc:ActualDeliveryDate>
         <cac:DeliveryLocation>
-            <cbc:ID schemeID="GLN">6754238987643</cbc:ID>
+            <cbc:ID schemeID="0088">6754238987643</cbc:ID>
             <cac:Address>
                 <cbc:StreetName>Deliverystreet 2</cbc:StreetName>
                 <cbc:AdditionalStreetName>Side door</cbc:AdditionalStreetName>
@@ -268,16 +268,16 @@
                 <cbc:ID>JB007</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="GLN">1234567890128</cbc:ID>
+                <cbc:ID schemeID="0088">1234567890128</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:OriginCountry>
                 <cbc:IdentificationCode>DE</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="UNSPSC">12344321</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="ZZZ">12344321</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="CPV">65434568</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">65434568</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>
@@ -318,10 +318,10 @@
                 <cbc:ID schemeID="GTIN">1234567890135</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="UNSPSC">32344324</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="ZZZ">32344324</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="CPV">65434567</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">65434567</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>
@@ -353,10 +353,10 @@
                 <cbc:ID schemeID="GTIN">1234567890135</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="UNSPSC">32344324</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="ZZZ">32344324</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="CPV">65434567</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">65434567</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>
@@ -393,10 +393,10 @@
                 <cbc:ID schemeID="GTIN">1234567890159</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="UNSPSC">12344322</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="ZZZ">12344322</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="CPV">65434565</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">65434565</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>E</cbc:ID>
@@ -428,10 +428,10 @@
                 <cbc:ID schemeID="GTIN">1234567890166</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="UNSPSC">12344325</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="ZZZ">12344325</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="CPV">65434564</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">65434564</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>

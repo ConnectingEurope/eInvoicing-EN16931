@@ -256,7 +256,7 @@
     </cac:InvoiceLine>
     <cac:InvoiceLine>
         <cbc:ID>5</cbc:ID>
-        <cbc:InvoicedQuantity unitCode="MO">1</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">36.75</cbc:LineExtensionAmount>
         <cac:Item>
             <cbc:Name>Vastrecht Transportdienst</cbc:Name>
@@ -286,12 +286,12 @@
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">441.00</cbc:PriceAmount>
-            <cbc:BaseQuantity unitCode="MO">12</cbc:BaseQuantity>
+            <cbc:BaseQuantity unitCode="MON">12</cbc:BaseQuantity>
         </cac:Price>
     </cac:InvoiceLine>
     <cac:InvoiceLine>
         <cbc:ID>6</cbc:ID>
-        <cbc:InvoicedQuantity unitCode="MO">1</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">56.50</cbc:LineExtensionAmount>
         <cac:Item>
             <cbc:Name>Vastrecht Aansluitdienst</cbc:Name>
@@ -321,12 +321,12 @@
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">678.00</cbc:PriceAmount>
-            <cbc:BaseQuantity unitCode="MO">12</cbc:BaseQuantity>
+            <cbc:BaseQuantity unitCode="MON">12</cbc:BaseQuantity>
         </cac:Price>
     </cac:InvoiceLine>
     <cac:InvoiceLine>
         <cbc:ID>7</cbc:ID>
-        <cbc:InvoicedQuantity unitCode="MO">1</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">83.34</cbc:LineExtensionAmount>
         <cac:Item>
             <cbc:Name>Huur Transformatoren</cbc:Name>
@@ -340,12 +340,12 @@
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">83.34</cbc:PriceAmount>
-            <cbc:BaseQuantity unitCode="MO">1</cbc:BaseQuantity>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
         </cac:Price>
     </cac:InvoiceLine>
     <cac:InvoiceLine>
         <cbc:ID>8</cbc:ID>
-        <cbc:InvoicedQuantity unitCode="MO">1</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">190.31</cbc:LineExtensionAmount>
         <cac:Item>
             <cbc:Name>Huur Schakelinstallaties</cbc:Name>
@@ -359,12 +359,12 @@
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">190.31</cbc:PriceAmount>
-            <cbc:BaseQuantity unitCode="MO">1</cbc:BaseQuantity>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
         </cac:Price>
     </cac:InvoiceLine>
     <cac:InvoiceLine>
         <cbc:ID>9</cbc:ID>
-        <cbc:InvoicedQuantity unitCode="MO">1</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">64.21</cbc:LineExtensionAmount>
         <cac:Item>
             <cbc:Name>Huur Overige Apparaten</cbc:Name>
@@ -378,12 +378,12 @@
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">64.21</cbc:PriceAmount>
-            <cbc:BaseQuantity unitCode="MO">1</cbc:BaseQuantity>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
         </cac:Price>
     </cac:InvoiceLine>
     <cac:InvoiceLine>
         <cbc:ID>10</cbc:ID>
-        <cbc:InvoicedQuantity unitCode="MO">1</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">64.46</cbc:LineExtensionAmount>
         <cac:Item>
             <cbc:Name>Huur Meterdiensten</cbc:Name>
@@ -397,7 +397,7 @@
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">64.46</cbc:PriceAmount>
-            <cbc:BaseQuantity unitCode="MO">1</cbc:BaseQuantity>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
         </cac:Price>
     </cac:InvoiceLine>
 </Invoice>
