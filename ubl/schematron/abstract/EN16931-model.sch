@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for model -->
-<!-- Timestamp: 2017-02-05 16:24:51 +0100 -->
+<!-- Timestamp: 2017-02-14 10:09:43 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="model">
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each additional supporting document shall contain a Supporting document identifier. </assert>
@@ -309,6 +309,6 @@
     <assert test="$BR-Z-05" flag="fatal" id="BR-Z-05">[BR-Z-05]-In an Invoice line where the Invoice item VAT category code (BT-151) is "Zero rated" the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
   </rule>
   <rule context="$Note">
-    <assert test="$BR-CL-19" flag="warning" id="BR-CL-19">[BR-CL-19]-Invoiced note subject code SHOULD be coded using UNCL4461</assert>
+    <assert test="$BR-CL-19" flag="fatal" id="BR-CL-19">[BR-CL-19]-Invoiced note subject code SHOULD be coded using UNCL4451</assert>
   </rule>
 </pattern>
