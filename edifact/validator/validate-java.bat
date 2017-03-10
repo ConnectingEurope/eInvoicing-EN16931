@@ -6,7 +6,7 @@ rem example number 1, 2, 3...
 set EXAMPLE_NUMBER=%1
 
 rem set CONVERT_PATH="1INVOIC2ISOXML\1INVOIC2ISOXML.exe"
-set CONVERT_PATH=java -jar map2xml-1.0-SNAPSHOT.jar
+set CONVERT_PATH=java -jar en16931-edifact-to-xml-0.1.0.jar
 set XSD_PATH="..\schema\INVOIC_D14B_ISO20625.xsd"
 set SCHEMATRON_PATH="..\schematron\EN16931-EDIFACT-validation.sch"
 set SCHEMATRON_PATH="..\stylesheet\EN16931-EDIFACT-validation-compiled.xsl"
