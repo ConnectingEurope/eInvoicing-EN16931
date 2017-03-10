@@ -3,4 +3,4 @@
 XSD_PATH=$1
 XML_PATH=$2
 
-java -jar xmlvalidator-0.1.jar -xml "$XML_PATH" -xsd "$XSD_PATH"
+java -jar en16931-xml-validator-0.1.0-jar-with-dependencies.jar -xml "$XML_PATH" -xsd "$XSD_PATH"
