@@ -4,12 +4,10 @@
 <!-- Timestamp: 2017-02-01 10:00:00 +0200 -->
 
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="EN16931-Codes">
-  <rule context="rsm:ExchangedDocument/ram:LanguageID" flag="warning">
+  <rule context="rsm:ExchangedDocument/ram:TypeCode" flag="fatal">
     <assert
-      test="((not(contains(normalize-space(.), ' ')) and contains(' aar abk ace ach ada ady afa afh afr ain aka akk alb ale alg alt amh ang anp apa ara arc arg arm arn arp art arw asm ast ath aus ava ave awa aym aze bad bai bak bal bam ban baq bas bat bej bel bem ben ber bho bih bik bin bis bla bnt bos bra bre btk bua bug bul bur byn cad cai car cat cau ceb cel cha chb che chg chi chk chm chn cho chp chr chu chv chy cmc cop cor cos cpe cpf cpp cre crh crp csb cus cze dak dan dar day del den dgr din div doi dra dsb dua dum dut dyu dzo efi egy eka elx eng enm epo est ewe ewo fan fao fat fij fil fin fiu fon fre frm fro frr frs fry ful fur gaa gay gba gem geo ger gez gil gla gle glg glv gmh goh gon gor got grb grc gre grn gsw guj gwi hai hat hau haw heb her hil him hin hit hmn hmo hsb hun hup iba ibo ice ido iii ijo iku ile ilo ina inc ind ine inh ipk ira iro ita jav jbo jpn jpr jrb kaa kab kac kal kam kan kar kas kau kaw kaz kbd kha khi khm kho kik kin kir kmb kok kom kon kor kos kpe krc krl kro kru kua kum kur kut lad lah lam lao lat lav lez lim lin lit lol loz ltz lua lub lug lui lun luo lus mac mad mag mah mai mak mal man mao map mar mas may mdf mdr men mga mic min mis mkh mlg mlt mnc mni mno moh mol mon mos mul mun mus mwl mwr myn myv nah nai nap nau nav nbl nde ndo nds nep new nia nic niu nno nob nog non nor nqo nso nub nwc nya nym nyn nyo nzi oci oji ori orm osa oss ota oto paa pag pal pam pan pap pau peo per phi phn pli pol pon por pra pro pus que raj rap rar roa roh rom rum run rup rus sad sag sah sai sal sam san sas sat scc scn sco scr sel sem sga sgn shn sid sin sio sit sla slo slv sma sme smi smj smn smo sms sna snd snk sog som son sot spa srd srn srr ssa ssw suk sun sus sux swa swe syr tah tai tam tat tel tem ter tet tgk tgl tha tib tig tir tiv tkl tlh tli tmh tog ton tpi tsi tsn tso tuk tum tup tur tut tvl twi tyv udm uga uig ukr umb und urd uzb vai ven vie vol vot wak wal war was wel wen wln wol xal xho yao yap yid yor ypk zap zen zha znd zul zun zxx zza ', concat(' ', normalize-space(.), ' '))))"
-      flag="warning">[CL-02]-The lists of valid languages are registered with the ISO 639
-      Maintenance Agency Codes for the Representation of Names of Languages. It is recommended to
-      use the ISO 639-2 alpha-3 representation</assert>
+      test="((not(contains(normalize-space(.), ' 80 81 82 83 84 130 202 203 204 211 261 262 295 296 308 325 326 380 381 383 384 385 386 387 388 389 390 393 394 395 396 420 456 457 458 527 575 623 633 751 780 935 ')) and contains('  ', concat(' ', normalize-space(.), ' '))))"
+      flag="warning">[CL-01]-The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.</assert>
   </rule>
 
   <rule context="@currencyID" flag="fatal">
@@ -90,7 +88,7 @@
 
   <rule context="ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode" flag="fatal">
     <assert
-      test="((not(contains(normalize-space(.), ' ')) and contains(' 10 20 30 31 48 54 55 57 58 97 98 ', concat(' ', normalize-space(.), ' '))))"
+      test="((not(contains(normalize-space(.), ' ')) and contains(' 10 20 30 31 48 54 55 57 58 59 97 ', concat(' ', normalize-space(.), ' '))))"
       flag="fatal">[CL-16]-Payment means in an invoice MUST be coded using UNTDID 4461 restricted
       code list</assert>
   </rule>
