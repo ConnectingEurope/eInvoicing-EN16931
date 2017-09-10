@@ -12,4 +12,5 @@ hs_err_pid*
 
 **/.DS_Store
 /.project
-*.fxt
+*.txt
+**/*.iml
