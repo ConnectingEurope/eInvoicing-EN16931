@@ -35,7 +35,7 @@
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>DK16356706</cbc:CompanyID>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>VA</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
@@ -63,7 +63,7 @@
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>NO987654321MVA</cbc:CompanyID>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>VA</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
@@ -87,7 +87,7 @@
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
             <cac:TaxScheme>
-                <cbc:ID>VAT</cbc:ID>
+                <cbc:ID>VA</cbc:ID>
             </cac:TaxScheme>
         </cac:TaxCategory>
     </cac:AllowanceCharge>
@@ -100,7 +100,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>VA</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
@@ -123,7 +123,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
+                    <cbc:ID>VA</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>
