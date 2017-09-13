@@ -13,6 +13,7 @@
   <ns prefix="qdt" uri="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"/>
   <ns prefix="udt" uri="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"/>  <ns prefix="cn" uri="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2"/>
   <ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"/>
+  <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
   <phase id="EN16931model_phase">
     <active pattern="UBL-model"/>
   </phase>
