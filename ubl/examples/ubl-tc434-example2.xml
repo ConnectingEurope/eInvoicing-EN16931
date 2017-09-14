@@ -315,7 +315,7 @@
                 <cbc:ID>JB008</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="GTIN">1234567890135</cbc:ID>
+                <cbc:ID schemeID="0088">1234567890135</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode listID="ZZZ">32344324</cbc:ItemClassificationCode>
@@ -350,7 +350,7 @@
                 <cbc:ID>JB009</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="GTIN">1234567890135</cbc:ID>
+                <cbc:ID schemeID="0088">1234567890135</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode listID="ZZZ">32344324</cbc:ItemClassificationCode>
@@ -390,7 +390,7 @@
                 <cbc:ID>JB010</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="GTIN">1234567890159</cbc:ID>
+                <cbc:ID schemeID="0088">1234567890159</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode listID="ZZZ">12344322</cbc:ItemClassificationCode>
@@ -425,7 +425,7 @@
                 <cbc:ID>JB011</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="GTIN">1234567890166</cbc:ID>
+                <cbc:ID schemeID="0088">1234567890166</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode listID="ZZZ">12344325</cbc:ItemClassificationCode>

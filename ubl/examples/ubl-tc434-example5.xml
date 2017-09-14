@@ -63,9 +63,6 @@
             <cac:PartyIdentification>
                 <cbc:ID schemeID="0088">5790000436101</cbc:ID>
             </cac:PartyIdentification>
-            <cac:PartyIdentification>
-                <cbc:ID schemeID="SEPA">DK5678</cbc:ID>
-            </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>SelCo</cbc:Name>
             </cac:PartyName>
@@ -315,7 +312,7 @@
                 <cbc:ID>JB007</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="GTIN">1234567890128</cbc:ID>
+                <cbc:ID schemeID="0088">1234567890128</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:OriginCountry>
                 <cbc:IdentificationCode>NL</cbc:IdentificationCode>
