@@ -1,6 +1,6 @@
 <!-- Schematron rules generated automatically by Validex Generator Midran ltd -->
 <!-- Abstract rules for model -->
-<!-- Timestamp: 2017-09-15 11:30:31 +0200 -->
+<!-- Timestamp: 2017-09-15 12:09:22 +0200 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="model">
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).    </assert>
@@ -195,10 +195,6 @@
   <rule context="$Tax_Representative_postal_address">
     <assert test="$BR-20" flag="fatal" id="BR-20">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
   </rule>
-  <rule context="$Tax_subtotal">
-    <assert test="$BR-DEC-19" flag="fatal" id="BR-DEC-19">[BR-DEC-19]-The allowed maximum number of decimals for the VAT category taxable amount (BT-116) is 2.</assert>
-    <assert test="$BR-DEC-20" flag="fatal" id="BR-DEC-20">[BR-DEC-20]-The allowed maximum number of decimals for the VAT category tax amount (BT-117) is 2.    </assert>
-  </rule>
   <rule context="$Tax_Total">
     <assert test="$BR-CO-14" flag="fatal" id="BR-CO-14">[BR-CO-14]-Invoice total VAT amount (BT-110) = Σ VAT category tax amount (BT-117).</assert>
   </rule>
@@ -208,6 +204,8 @@
     <assert test="$BR-47" flag="fatal" id="BR-47">[BR-47]-Each VATBReakdown (BG-23) shall be defined through a VAT category code (BT-118).</assert>
     <assert test="$BR-48" flag="fatal" id="BR-48">[BR-48]-Each VATBReakdown (BG-23) shall have a VAT category rate (BT-119), except if the Invoice is not subject to VAT.</assert>
     <assert test="$BR-CO-17" flag="fatal" id="BR-CO-17">[BR-CO-17]-VAT category tax amount (BT-117) = VAT category taxable amount (BT-116) x (VAT category rate (BT-119) / 100), rounded to two decimals.</assert>
+    <assert test="$BR-DEC-19" flag="fatal" id="BR-DEC-19">[BR-DEC-19]-The allowed maximum number of decimals for the VAT category taxable amount (BT-116) is 2.</assert>
+    <assert test="$BR-DEC-20" flag="fatal" id="BR-DEC-20">[BR-DEC-20]-The allowed maximum number of decimals for the VAT category tax amount (BT-117) is 2.    </assert>
   </rule>
   <rule context="$VAT_identifiers ">
     <assert test="$BR-CO-09" flag="fatal" id="BR-CO-09">[BR-CO-09]-The Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) shall have a prefix in accordance with ISO code ISO 3166-1 alpha-2 by which the country of issue may be identified. Nevertheless, Greece may use the prefix ‘EL’.</assert>
