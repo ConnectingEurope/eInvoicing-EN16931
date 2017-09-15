@@ -3,7 +3,7 @@
 
             UBL syntax binding to the model  
             Created by Validex Schematron Generator. (2015) Midran Ltd.
-            Timestamp: 2017-09-11 23:44:50 +0200
+            Timestamp: 2017-09-15 11:31:00 +0200
      -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cn="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" xmlns:UBL="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" queryBinding="xslt2">
   <title>EN16931  model bound to UBL</title>
@@ -32,5 +32,3 @@
   <!-- ======================== -->
   <include href="codelist/EN16931-UBL-codes.sch"/>
 </schema>
-
-
