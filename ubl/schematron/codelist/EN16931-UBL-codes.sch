@@ -125,7 +125,7 @@
   
   <rule context="@mimeCode" flag="fatal">
     <assert
-      test="((. = 'application/pdf' or . = 'image/png' or . = 'image/jpeg' or . = 'text/comma-separated-values' or . = 'application/vnd.openxmlformats-officedocument. spreadsheetml.sheet' or . = 'application/vnd.oasis.opendocument.spreadsheet'))"
+      test="((. = 'application/pdf' or . = 'image/png' or . = 'image/jpeg' or . = 'text/csv' or . = 'application/vnd.openxmlformats-officedocument. spreadsheetml.sheet' or . = 'application/vnd.oasis.opendocument.spreadsheet'))"
       flag="fatal">[BR-CL-24]-For Mime code in attribute use MIMEMediaType.</assert>
   </rule>
   
