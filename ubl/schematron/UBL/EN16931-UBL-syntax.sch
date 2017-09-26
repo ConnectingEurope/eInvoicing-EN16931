@@ -5,7 +5,7 @@
   <param name="UBL-SR-01" value="(count(cac:ContractDocumentReference/cbc:ID) &lt;= 1)"/>
   <param name="UBL-SR-02" value="(count(cac:ReceiptDocumentReference/cbc:ID) &lt;= 1)"/>
   <param name="UBL-SR-03" value="(count(cac:DespatchDocumentReference/cbc:ID) &lt;= 1)"/>
-  <param name="UBL-SR-04" value="(count(cac:AdditionalDocumentReference[cbc:DocumentType='ATS']/cbc:ID) &lt;= 1)"/>
+  <param name="UBL-SR-04" value="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='130']/cbc:ID) &lt;= 1)"/>
   <param name="UBL-SR-05" value="(count(cac:PaymentTerms/cbc:Note) &lt;= 1)"/>
   <param name="UBL-SR-06" value="(count(cac:InvoiceDocumentReference) &lt;= 1)"/>
   <param name="UBL-SR-07" value="(cac:InvoiceDocumentReference/cbc:ID)"/>
@@ -13,8 +13,8 @@
   <param name="UBL-SR-09" value="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) &lt;= 1)"/>
   <param name="UBL-SR-10" value="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) &lt;= 1)"/>
   <param name="UBL-SR-11" value="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID) &lt;= 1)"/>
-  <param name="UBL-SR-12" value="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID='VAT']/cbc:CompanyID) &lt;= 1)"/>
-  <param name="UBL-SR-13" value="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID!='VAT']/cbc:ID) &lt;= 1)"/>
+  <param name="UBL-SR-12" value="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID='VA']/cbc:CompanyID) &lt;= 1)"/>
+  <param name="UBL-SR-13" value="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID!='VA']/cbc:ID) &lt;= 1)"/>
   <param name="UBL-SR-14" value="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalForm) &lt;= 1)"/>
   <param name="UBL-SR-15" value="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) &lt;= 1)"/>
   <param name="UBL-SR-16" value="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID) &lt;= 1)"/>
