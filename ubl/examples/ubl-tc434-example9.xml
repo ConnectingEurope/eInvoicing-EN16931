@@ -35,7 +35,7 @@
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>NL809163160B01</cbc:CompanyID>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>

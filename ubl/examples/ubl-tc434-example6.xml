@@ -21,7 +21,7 @@
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>DK123456789MVA</cbc:CompanyID>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
@@ -50,7 +50,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
@@ -61,7 +61,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>12</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
@@ -82,7 +82,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>
@@ -100,7 +100,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>
@@ -118,7 +118,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>12</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>

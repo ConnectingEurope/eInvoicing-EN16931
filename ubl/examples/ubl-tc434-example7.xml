@@ -88,7 +88,7 @@
                 <cbc:Percent>0</cbc:Percent>
                 <cbc:TaxExemptionReason>Tax</cbc:TaxExemptionReason>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>  
@@ -115,7 +115,7 @@
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>O</cbc:ID>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>
@@ -136,7 +136,7 @@
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>O</cbc:ID>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>

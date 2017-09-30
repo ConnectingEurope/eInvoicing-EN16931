@@ -141,7 +141,6 @@
     <assert test="$UBL-CR-117" flag="warning" id="UBL-CR-117">[UBL-CR-117]-A UBL invoice should not include the AdditionalDocumentReference LocaleCode</assert>
     <assert test="$UBL-CR-118" flag="warning" id="UBL-CR-118">[UBL-CR-118]-A UBL invoice should not include the AdditionalDocumentReference VersionID</assert>
     <assert test="$UBL-CR-119" flag="warning" id="UBL-CR-119">[UBL-CR-119]-A UBL invoice should not include the AdditionalDocumentReference DocumentStatusCode</assert>
-    <assert test="$UBL-CR-120" flag="warning" id="UBL-CR-120">[UBL-CR-120]-A UBL invoice should not include the AdditionalDocumentReference DocumentDescription</assert>
     <assert test="$UBL-CR-121" flag="warning" id="UBL-CR-121">[UBL-CR-121]-A UBL invoice should not include the AdditionalDocumentReference Attachment External DocumentHash</assert>
     <assert test="$UBL-CR-122" flag="warning" id="UBL-CR-122">[UBL-CR-122]-A UBL invoice should not include the AdditionalDocumentReference Attachment External HashAlgorithmMethod</assert>
     <assert test="$UBL-CR-123" flag="warning" id="UBL-CR-123">[UBL-CR-123]-A UBL invoice should not include the AdditionalDocumentReference Attachment External ExpiryDate</assert>
