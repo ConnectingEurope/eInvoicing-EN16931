@@ -32,9 +32,9 @@
  
   <rule context="cac:InvoicePeriod/cbc:DescriptionCode" flag="fatal">
     <assert
-      test="((not(contains(normalize-space(.), ' ')) and contains(' 5 29 72 ', concat(' ', normalize-space(.), ' '))))"
+      test="((not(contains(normalize-space(.), ' ')) and contains(' 3 35 432 ', concat(' ', normalize-space(.), ' '))))"
       flag="fatal">[BR-CL-06]-Value added tax point date code MUST be coded using a restriction of
-      UNTDID 2475.</assert>
+      UNTDID 2005.</assert>
   </rule>
   
   <rule context="cac:AdditionalDocumentReference/cbc:ID/@schemeID" flag="fatal">
