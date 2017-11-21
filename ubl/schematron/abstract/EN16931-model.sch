@@ -163,7 +163,7 @@
     <assert test="$BR-64" flag="fatal" id="BR-64">[BR-64]-The Item standard identifier (BT-157) shall have a Scheme identifier.</assert>
   </rule>
   <rule context="$Note">
-    <assert test="$BR-CL-19" flag="fatal" id="BR-CL-19">[BR-CL-19]-Invoiced note subject code SHOULD be coded using UNCL4451</assert>
+    <assert test="$BR-CL-08" flag="fatal" id="BR-CL-08">[BR-CL-08]-Invoiced note subject code SHOULD be coded using UNCL4451</assert>
   </rule>
   <rule context="$Payee">
     <assert test="$BR-17" flag="fatal" id="BR-17">[BR-17]-The Payee name (BT-59) shall be provided in the Invoice, if the Payee (BG-10) is different from the Seller (BG-4)</assert>
