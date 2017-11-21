@@ -7,7 +7,7 @@
 
      -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="Codesmodel">
-  <rule context="cbc:InvoiceTypeCode" flag="fatal">
+  <rule context="cbc:InvoiceTypeCode | cbc:CreditNoteTypeCode" flag="fatal">
     <assert
       test="((not(contains(normalize-space(.), ' ')) and contains(' 80 81 82 83 84 130 202 203 204 211 261 262 295 296 308 325 326 380 381 383 384 385 386 387 388 389 390 393 394 395 396 420 456 457 458 527 575 623 633 751 780 935  ', concat(' ', normalize-space(.), ' '))))" id="BR-CL-01" 
       flag="warning">[BR-CL-01]-The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.</assert>
@@ -99,7 +99,7 @@
     flag="fatal">
     <assert
       test="((not(contains(normalize-space(.), ' ')) and contains(' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 ZZZ ', concat(' ', normalize-space(.), ' '))))"
-      flag="fatal">[BR-CL-19]-Coded allowance reasons MUST belong to the UNCL 4465 code list</assert>
+      flag="fatal">[BR-CL-19]-Coded allowance reasons MUST belong to the UNCL 5189 code list</assert>
   </rule>
   
   <rule
