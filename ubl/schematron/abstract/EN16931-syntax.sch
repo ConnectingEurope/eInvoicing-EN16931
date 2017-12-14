@@ -135,7 +135,7 @@
     <assert test="$UBL-CR-111" flag="warning" id="UBL-CR-111">[UBL-CR-111]-A UBL invoice should not include the AdditionalDocumentReference UUID</assert>
     <assert test="$UBL-CR-112" flag="warning" id="UBL-CR-112">[UBL-CR-112]-A UBL invoice should not include the AdditionalDocumentReference IssueDate</assert>
     <assert test="$UBL-CR-113" flag="warning" id="UBL-CR-113">[UBL-CR-113]-A UBL invoice should not include the AdditionalDocumentReference IssueTime</assert>
-    <assert test="$UBL-CR-114" flag="warning" id="UBL-CR-114">[UBL-CR-114]-A UBL invoice should not include the AdditionalDocumentReference DocumentTypeCode</assert>
+    <assert test="$UBL-CR-114" flag="warning" id="UBL-CR-114">[UBL-CR-114]-A UBL invoice should not include the AdditionalDocumentReference DocumentType</assert>
     <assert test="$UBL-CR-115" flag="warning" id="UBL-CR-115">[UBL-CR-115]-A UBL invoice should not include the AdditionalDocumentReference Xpath</assert>
     <assert test="$UBL-CR-116" flag="warning" id="UBL-CR-116">[UBL-CR-116]-A UBL invoice should not include the AdditionalDocumentReference LanguageID</assert>
     <assert test="$UBL-CR-117" flag="warning" id="UBL-CR-117">[UBL-CR-117]-A UBL invoice should not include the AdditionalDocumentReference LocaleCode</assert>
@@ -556,7 +556,6 @@
     <assert test="$UBL-CR-533" flag="warning" id="UBL-CR-533">[UBL-CR-533]-A UBL invoice should not include the InvoiceLine DocumentReference UUID</assert>
     <assert test="$UBL-CR-534" flag="warning" id="UBL-CR-534">[UBL-CR-534]-A UBL invoice should not include the InvoiceLine DocumentReference IssueDate</assert>
     <assert test="$UBL-CR-535" flag="warning" id="UBL-CR-535">[UBL-CR-535]-A UBL invoice should not include the InvoiceLine DocumentReference IssueTime</assert>
-    <assert test="$UBL-CR-536" flag="warning" id="UBL-CR-536">[UBL-CR-536]-A UBL invoice should not include the InvoiceLine DocumentReference DocumentTypeCode</assert>
     <assert test="$UBL-CR-537" flag="warning" id="UBL-CR-537">[UBL-CR-537]-A UBL invoice should not include the InvoiceLine DocumentReference DocumentType</assert>
     <assert test="$UBL-CR-538" flag="warning" id="UBL-CR-538">[UBL-CR-538]-A UBL invoice should not include the InvoiceLine DocumentReference Xpath</assert>
     <assert test="$UBL-CR-539" flag="warning" id="UBL-CR-539">[UBL-CR-539]-A UBL invoice should not include the InvoiceLine DocumentReference LanguageID</assert>

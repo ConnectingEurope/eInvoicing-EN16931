@@ -55,7 +55,7 @@
   <param name="UBL-DT-15" value="not(//@unitCodeListAgencyName)"/>
   <param name="UBL-DT-16" value="not(//@listAgencyName)"/>
   <param name="UBL-DT-17" value="not(//@listName)"/>
-  <param name="UBL-DT-18" value="not(//@name)"/>
+  <param name="UBL-DT-18" value="count(//@name) - count(//cbc:PaymentMeansCode/@name) &lt;= 0"/>
   <param name="UBL-DT-19" value="not(//@languageID)"/>
   <param name="UBL-DT-20" value="not(//@listURI)"/>
   <param name="UBL-DT-21" value="not(//@listSchemeURI)"/>
@@ -177,7 +177,7 @@
   <param name="UBL-CR-111" value="not(cac:AdditionalDocumentReference/cbc:UUID)"/>
   <param name="UBL-CR-112" value="not(cac:AdditionalDocumentReference/cbc:IssueDate)"/>
   <param name="UBL-CR-113" value="not(cac:AdditionalDocumentReference/cbc:IssueTime)"/>
-  <param name="UBL-CR-114" value="not(cac:AdditionalDocumentReference/cbc:DocumentTypeCode)"/>
+  <param name="UBL-CR-114" value="not(cac:AdditionalDocumentReference/cbc:DocumentType)"/>
   <param name="UBL-CR-115" value="not(cac:AdditionalDocumentReference/cbc:Xpath)"/>
   <param name="UBL-CR-116" value="not(cac:AdditionalDocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-117" value="not(cac:AdditionalDocumentReference/cbc:LocaleCode)"/>
@@ -598,7 +598,6 @@
   <param name="UBL-CR-533" value="not(cac:InvoiceLine/cac:DocumentReference/cbc:UUID)"/>
   <param name="UBL-CR-534" value="not(cac:InvoiceLine/cac:DocumentReference/cbc:IssueDate)"/>
   <param name="UBL-CR-535" value="not(cac:InvoiceLine/cac:DocumentReference/cbc:IssueTime)"/>
-  <param name="UBL-CR-536" value="not(cac:InvoiceLine/cac:DocumentReference/cbc:DocumentTypeCode)"/>
   <param name="UBL-CR-537" value="not(cac:InvoiceLine/cac:DocumentReference/cbc:DocumentType)"/>
   <param name="UBL-CR-538" value="not(cac:InvoiceLine/cac:DocumentReference/cbc:Xpath)"/>
   <param name="UBL-CR-539" value="not(cac:InvoiceLine/cac:DocumentReference/cbc:LanguageID)"/>
