@@ -44,11 +44,11 @@
     </cac:ContractDocumentReference>
     <cac:AdditionalDocumentReference>
         <cbc:ID>OBJ999</cbc:ID>
-        <cbc:DocumentType>ATS</cbc:DocumentType>
+        <cbc:DocumentDescription>ATS</cbc:DocumentDescription>
     </cac:AdditionalDocumentReference>
     <cac:AdditionalDocumentReference>
         <cbc:ID>sales slip</cbc:ID>
-        <cbc:DocumentType>your sales slip</cbc:DocumentType>
+        <cbc:DocumentDescription>your sales slip</cbc:DocumentDescription>
         <cac:Attachment>
             <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="EHF.pdf"
                 >VGVzdGluZyBCYXNlNjQgZW5jb2Rpbmc=</cbc:EmbeddedDocumentBinaryObject>

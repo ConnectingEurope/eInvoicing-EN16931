@@ -23,7 +23,7 @@
     </cac:InvoicePeriod>
     <cac:AdditionalDocumentReference>
         <cbc:ID>871694831000290806</cbc:ID>
-        <cbc:DocumentType>ATS</cbc:DocumentType>
+        <cbc:DocumentDescription>ATS</cbc:DocumentDescription>
     </cac:AdditionalDocumentReference>
     <cac:AccountingSupplierParty>
         <cac:Party>

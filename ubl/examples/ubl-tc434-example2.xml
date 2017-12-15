@@ -27,7 +27,7 @@
     </cac:ContractDocumentReference>
     <cac:AdditionalDocumentReference>
         <cbc:ID>Doc1</cbc:ID>
-        <cbc:DocumentType>Timesheet</cbc:DocumentType>
+        <cbc:DocumentDescription>Timesheet</cbc:DocumentDescription>
         <cac:Attachment>
             <cac:ExternalReference>
                 <cbc:URI>http://www.suppliersite.eu/sheet001.html</cbc:URI>
@@ -36,7 +36,7 @@
     </cac:AdditionalDocumentReference>
     <cac:AdditionalDocumentReference>
         <cbc:ID>Doc2</cbc:ID>
-        <cbc:DocumentType>EHF specification</cbc:DocumentType>
+        <cbc:DocumentDescription>EHF specification</cbc:DocumentDescription>
         <cac:Attachment>
             <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="test.pdf">VGVzdGluZyBCYXNlNjQgZW5jb2Rpbmc=</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
