@@ -23,7 +23,6 @@
   </rule>
   <rule context="$Invoice">
     <assert test="$UBL-CR-001" flag="warning" id="UBL-CR-001">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
-    <assert test="$UBL-CR-002" flag="warning" id="UBL-CR-002">[UBL-CR-002]-A UBL invoice should not include the UBLVersionID</assert>
     <assert test="$UBL-CR-003" flag="warning" id="UBL-CR-003">[UBL-CR-003]-A UBL invoice should not include the ProfileExecutionID </assert>
     <assert test="$UBL-CR-004" flag="warning" id="UBL-CR-004">[UBL-CR-004]-A UBL invoice should not include the CopyIndicator </assert>
     <assert test="$UBL-CR-005" flag="warning" id="UBL-CR-005">[UBL-CR-005]-A UBL invoice should not include the UUID </assert>

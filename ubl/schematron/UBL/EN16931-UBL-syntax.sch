@@ -65,7 +65,6 @@
   <param name="UBL-DT-25" value="not(//@characterSetCode)"/>
   <param name="UBL-DT-26" value="not(//@encodingCode)"/>
   <param name="UBL-CR-001" value="not(ext:UBLExtensions)"/>
-  <param name="UBL-CR-002" value="not(cbc:UBLVersionID)"/>
   <param name="UBL-CR-003" value="not(cbc:ProfileExecutionID)"/>
   <param name="UBL-CR-004" value="not(cbc:CopyIndicator)"/>
   <param name="UBL-CR-005" value="not(cbc:UUID)"/>
