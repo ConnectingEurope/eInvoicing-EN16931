@@ -32,3 +32,7 @@ For the Java projects contained in this repository, please consider the followin
   * Eclipse 4.6.x latest (m2e - Maven for Eclipse - must be contained)
   * For building on the commandline use Apache Maven 3.x (latest) 
  
+ ## Create XSLTs from Schematrons
+ 
+ Invoke `mvn process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
+ 
