@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.helger</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>1.10.0</version>
+  </parent>
+  <artifactId>centc434-validation-rules</artifactId>
+  <version>1.0.0</version>
+  <name>centc434-validation-rules</name>
+  <description>EN16931 - CEN/TC 434 validation rules</description>
+  <url>https://github.com/CenPC434/validation</url>
+  <inceptionYear>2016</inceptionYear>
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.mycila</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>**/LICENSE</exclude>
+            <exclude>**/NOTICE</exclude>
+            <exclude>src/main/resources/en16931/**</exclude>
+            <exclude>src/test/resources/test-files/**</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.helger.maven</groupId>
+        <artifactId>ph-sch2xslt-maven-plugin</artifactId>
+        <version>5.0.0</version>
+        <executions>
+          <execution>
+            <id>cii</id>
+            <goals>
+              <goal>convert</goal>
+            </goals>
+            <configuration>
+              <schematronDirectory>${basedir}/cii/schematron</schematronDirectory>
+              <xsltDirectory>${basedir}/cii/xslt</xsltDirectory>
+            </configuration>
+          </execution>
+          <execution>
+            <id>edifact</id>
+            <goals>
+              <goal>convert</goal>
+            </goals>
+            <configuration>
+              <schematronDirectory>${basedir}/edifact/schematron</schematronDirectory>
+              <xsltDirectory>${basedir}/edifact/xslt</xsltDirectory>
+            </configuration>
+          </execution>
+<!-- Currently fails because of XML parsing error -->
+<!--  
+          <execution>
+            <id>iso20022</id>
+            <goals>
+              <goal>convert</goal>
+            </goals>
+            <configuration>
+              <schematronDirectory>${basedir}/iso20022/schematron</schematronDirectory>
+              <xsltDirectory>${basedir}/iso20022/xslt</xsltDirectory>
+            </configuration>
+          </execution>
+-->
+          <execution>
+            <id>ubl</id>
+            <goals>
+              <goal>convert</goal>
+            </goals>
+            <configuration>
+              <schematronDirectory>${basedir}/ubl/schematron</schematronDirectory>
+              <xsltDirectory>${basedir}/ubl/xslt</xsltDirectory>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <schematronPattern>*.sch</schematronPattern>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
