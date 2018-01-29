@@ -6,7 +6,7 @@
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="EN16931-Codes">
   <rule context="rsm:ExchangedDocument/ram:TypeCode" flag="fatal">
     <assert
-      test="((not(contains(normalize-space(.), ' 80 81 82 83 84 130 202 203 204 211 261 262 295 296 308 325 326 380 381 383 384 385 386 387 388 389 390 393 394 395 396 420 456 457 458 527 575 623 633 751 780 935 ')) and contains('  ', concat(' ', normalize-space(.), ' '))))"
+      test="((not(contains(normalize-space(.), ' ')) and contains(' 80 81 82 83 84 130 202 203 204 211 261 262 295 296 308 325 326 380 381 383 384 385 386 387 388 389 390 393 394 395 396 420 456 457 458 527 575 623 633 751 780 935 ', concat(' ', normalize-space(.), ' '))))"
       flag="warning">[CL-01]-The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.</assert>
   </rule>
 
