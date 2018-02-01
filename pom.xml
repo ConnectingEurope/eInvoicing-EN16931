@@ -48,6 +48,8 @@
               <xsltDirectory>${basedir}/cii/xslt</xsltDirectory>
             </configuration>
           </execution>
+<!--
+-->
           <execution>
             <id>edifact</id>
             <goals>
@@ -70,6 +72,8 @@
               <xsltDirectory>${basedir}/iso20022/xslt</xsltDirectory>
             </configuration>
           </execution>
+-->
+<!--
 -->
           <execution>
             <id>ubl</id>
