@@ -71,7 +71,7 @@
                 <ram:ApplicableTradeTax>
                     <ram:TypeCode>VAT</ram:TypeCode>
                     <ram:CategoryCode>S</ram:CategoryCode>
-                    <ram:RateApplicablePercent>19</ram:RateApplicablePercent>
+                    <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
                     <ram:LineTotalAmount>1.26</ram:LineTotalAmount>
@@ -99,7 +99,7 @@
                 <ram:ApplicableTradeTax>
                     <ram:TypeCode>VAT</ram:TypeCode>
                     <ram:CategoryCode>S</ram:CategoryCode>
-                    <ram:RateApplicablePercent>19</ram:RateApplicablePercent>
+                    <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
                 </ram:ApplicableTradeTax>
                 <ram:SpecifiedTradeSettlementLineMonetarySummation>
                     <ram:LineTotalAmount>7.48</ram:LineTotalAmount>
@@ -142,7 +142,7 @@
         <ram:ApplicableHeaderTradeDelivery/>
         <ram:ApplicableHeaderTradeSettlement>
             <ram:PaymentReference>INV000013</ram:PaymentReference>
-            <ram:InvoiceCurrencyCode></ram:InvoiceCurrencyCode>
+            <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
             <ram:SpecifiedTradeSettlementPaymentMeans>
                 <ram:TypeCode>30</ram:TypeCode>
                 <ram:PayeePartyCreditorFinancialAccount>
@@ -174,12 +174,12 @@
                 <ram:ChargeIndicator>
                     <udt:Indicator>false</udt:Indicator>
                 </ram:ChargeIndicator>
-                <ram:ActualAmount>0.0000</ram:ActualAmount>
+                <ram:ActualAmount>0.00</ram:ActualAmount>
                 <ram:Reason>Rabatt</ram:Reason>
                 <ram:CategoryTradeTax>
                     <ram:TypeCode>VAT</ram:TypeCode>
                     <ram:CategoryCode>S</ram:CategoryCode>
-                    <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+                    <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
                 </ram:CategoryTradeTax>
             </ram:SpecifiedTradeAllowanceCharge>
             <ram:SpecifiedTradePaymentTerms>
@@ -188,10 +188,11 @@
             <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
                 <ram:ChargeTotalAmount>0.00</ram:ChargeTotalAmount>
+                <ram:AllowanceTotalAmount>0.00</ram:AllowanceTotalAmount>
                 <ram:TaxBasisTotalAmount>10.00</ram:TaxBasisTotalAmount>
-                <ram:TaxTotalAmount currencyID="">1.90</ram:TaxTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">1.90</ram:TaxTotalAmount>
                 <ram:GrandTotalAmount>11.90</ram:GrandTotalAmount>
-            
+                <ram:DuePayableAmount>11.90</ram:DuePayableAmount>
             </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
         </ram:ApplicableHeaderTradeSettlement>
     </rsm:SupplyChainTradeTransaction>

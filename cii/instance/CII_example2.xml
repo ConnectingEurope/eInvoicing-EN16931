@@ -300,7 +300,7 @@
                     <ram:CountrySubDivisionName>RegionA</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VA">123456789MVA</ram:ID>
+                    <ram:ID schemeID="VA">NO123456789MVA</ram:ID>
                 </ram:SpecifiedTaxRegistration>
             </ram:SellerTradeParty>
             <ram:BuyerTradeParty>
@@ -327,7 +327,7 @@
                     <ram:CountrySubDivisionName>RegionB</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VA">987654321MVA</ram:ID>
+                    <ram:ID schemeID="VA">NO987654321MVA</ram:ID>
                 </ram:SpecifiedTaxRegistration>
             </ram:BuyerTradeParty>
             <ram:SellerTaxRepresentativeTradeParty>
@@ -341,7 +341,7 @@
                     <ram:CountrySubDivisionName>RegionC</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VA">967611265MVA</ram:ID>
+                    <ram:ID schemeID="VA">NO967611265MVA</ram:ID>
                 </ram:SpecifiedTaxRegistration>
             </ram:SellerTaxRepresentativeTradeParty>
             <ram:BuyerOrderReferencedDocument>

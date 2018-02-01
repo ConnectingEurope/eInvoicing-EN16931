@@ -222,7 +222,7 @@
                     <ram:CountrySubDivisionName>Overijssel</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
                 <ram:URIUniversalCommunication>
-                    <ram:URIID>info@selco.nl</ram:URIID>
+                    <ram:URIID schemeID="email">info@selco.nl</ram:URIID>
                 </ram:URIUniversalCommunication>
                 <ram:SpecifiedTaxRegistration>
                     <ram:ID schemeID="VA">NL16356706</ram:ID>
@@ -256,7 +256,7 @@
                     <ram:CountrySubDivisionName>Jutland</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
                 <ram:URIUniversalCommunication>
-                    <ram:URIID>info@buyercompany.dk</ram:URIID>
+                    <ram:URIID schemeID="email">info@buyercompany.dk</ram:URIID>
                 </ram:URIUniversalCommunication>
                 <ram:SpecifiedTaxRegistration>
                     <ram:ID schemeID="VA">DK16356607</ram:ID>
@@ -287,11 +287,9 @@
             </ram:ContractReferencedDocument>
             <ram:AdditionalReferencedDocument>
                 <ram:IssuerAssignedID>Lot567</ram:IssuerAssignedID>
-                <ram:TypeCode>50</ram:TypeCode>
             </ram:AdditionalReferencedDocument>
             <ram:AdditionalReferencedDocument>
                 <ram:IssuerAssignedID>OBJ999</ram:IssuerAssignedID>
-                <ram:TypeCode>130</ram:TypeCode>
             </ram:AdditionalReferencedDocument>
             <ram:AdditionalReferencedDocument>
                 <ram:IssuerAssignedID>sales slip</ram:IssuerAssignedID>
