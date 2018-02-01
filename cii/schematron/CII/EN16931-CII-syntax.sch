@@ -521,7 +521,7 @@
 	<param name="CII-DT-015" value="not(ram:URIID) or (name()='ram:AdditionalReferencedDocument' and ram:TypeCode='916') "/>
 	<param name="CII-DT-016" value="not(ram:StatusCode)"/>
 	<param name="CII-DT-017" value="not(ram:CopyIndicator)"/>
-	<param name="CII-DT-018" value="not(ram:TypeCode) or (name()='ram:AdditionalReferencedDocument') and (ram:TypCode='50' or ram:TypeCode='130' or ram:TypeCode='916')"/>
+	<param name="CII-DT-018" value="not(ram:TypeCode) or (name()='ram:AdditionalReferencedDocument') and (ram:TypeCode='50' or ram:TypeCode='130' or ram:TypeCode='916')"/>
 	<param name="CII-DT-019" value="not(ram:GlobalID)"/>
 	<param name="CII-DT-020" value="not(ram:RevisionID)"/>
 	<param name="CII-DT-021" value="not(ram:Name) or (name()='ram:AdditionalReferencedDocument' and ram:TypeCode='916')"/>

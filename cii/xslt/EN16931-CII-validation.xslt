@@ -10486,9 +10486,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="not(ram:TypeCode) or (name()='ram:AdditionalReferencedDocument') and (ram:TypCode='50' or ram:TypeCode='130' or ram:TypeCode='916')" />
+      <xsl:when test="not(ram:TypeCode) or (name()='ram:AdditionalReferencedDocument') and (ram:TypeCode='50' or ram:TypeCode='130' or ram:TypeCode='916')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="not(ram:TypeCode) or (name()='ram:AdditionalReferencedDocument') and (ram:TypCode='50' or ram:TypeCode='130' or ram:TypeCode='916')">
+        <svrl:failed-assert test="not(ram:TypeCode) or (name()='ram:AdditionalReferencedDocument') and (ram:TypeCode='50' or ram:TypeCode='130' or ram:TypeCode='916')">
           <xsl:attribute name="id">CII-DT-018</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
