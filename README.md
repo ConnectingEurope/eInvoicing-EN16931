@@ -34,5 +34,5 @@ For the Java projects contained in this repository, please consider the followin
  
  ## Create XSLTs from Schematrons
  
- Invoke `mvn process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
+Invoke `mvn process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
  
