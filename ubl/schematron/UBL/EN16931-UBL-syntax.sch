@@ -720,7 +720,7 @@
   <param name="Tax_subtotal" value="cac:TaxSubtotal"/>
   <param name="Additional_supporting_documents" value="cac:AdditionalDocumentReference"/>
   <param name="Invoice" value="/ubl:Invoice"/>
-  <param name="Amount_data_type" value="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(../../cac:Price/cac:AllowanceCharge)]"/>
+  <param name="Amount_data_type" value="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
   <param name="Price_data_type" value="//*[ends-with(name(), 'PriceAmount')]"/>
   <param name="Quantity_data_type" value="//*[ends-with(name(), 'Quantity')]"/>
   <param name="Percent_data_type" value="//*[ends-with(name(), 'Rate')]"/>
