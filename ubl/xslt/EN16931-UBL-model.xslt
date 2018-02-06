@@ -3635,8 +3635,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount'))] " mode="M12" priority="1011">
-    <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount'))] " />
+<xsl:template match="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(../../cac:Price/cac:AllowanceCharge)]" mode="M12" priority="1011">
+    <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(../../cac:Price/cac:AllowanceCharge)]" />
 
 		<!--ASSERT -->
 <xsl:choose>
