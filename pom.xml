@@ -62,20 +62,7 @@
               <xsltDirectory>${basedir}/edifact/xslt</xsltDirectory>
             </configuration>
           </execution>
-<!-- Currently fails because of XML parsing error -->
-<!--  
-          <execution>
-            <id>iso20022</id>
-            <goals>
-              <goal>convert</goal>
-            </goals>
-            <configuration>
-              <schematronDirectory>${basedir}/iso20022/schematron</schematronDirectory>
-              <xsltDirectory>${basedir}/iso20022/xslt</xsltDirectory>
-            </configuration>
-          </execution>
--->
-<!--
+!--
 -->
           <execution>
             <id>ubl</id>

@@ -21,9 +21,6 @@ For each syntax a separate folder exists where all related artefacts are to be p
       * Jörg Walther (XML Schema)
       * Martin Krusch (Testing and QA)
       * Philip Helger (Java applications)
-  * `iso20022` - Invoice based on ISO 20022 (**discontinued**)
-    * Contact points
-      * Zsoltan Patkai
 
 # Development
 
