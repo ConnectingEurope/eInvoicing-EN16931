@@ -1,26 +1,28 @@
 # validation
-Schematron validation artefacts for CEN/TC 434
+Official Schematron validation artefacts for CEN/TC 434.
+
+Latest release **v1.0.0** - https://github.com/CenPC434/validation/releases/tag/validation-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
 
-  * `cii` - Cross Industry Invoice
-    * XML Schemas overview: http://www.unece.org/cefact/xml_schemas/index.html
-    * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
-    * Contact points
-      * Andreas Pelekies
-      * Tayfun Mermer (Testing and QA)
-  * `ubl` - UBL 2.1 (ISO/IEC 19845:2015)
-    * UBL Website: https://www.oasis-open.org/committees/ubl/
-    * Used XML Schemas: http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.zip
-    * Contact points
-      * Oriol Bausa (Rules)
-      * Siw Midtgard Meckelborg (Testing and QA)
-  * `edifact` - UN/EDIFACT (and ISO 26025 based XML version)
-    * Contact points
-      * Andreas Pelekies
-      * Jörg Walther (XML Schema)
-      * Martin Krusch (Testing and QA)
-      * Philip Helger (Java applications)
+* `cii` - Cross Industry Invoice
+  * XML Schemas overview: http://www.unece.org/cefact/xml_schemas/index.html
+  * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
+  * Contact points
+    * Andreas Pelekies
+    * Tayfun Mermer (Testing and QA)
+* `ubl` - UBL 2.1 (ISO/IEC 19845:2015)
+  * UBL Website: https://www.oasis-open.org/committees/ubl/
+  * Used XML Schemas: http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.zip
+  * Contact points
+    * Oriol Bausa (Rules)
+    * Siw Midtgard Meckelborg (Testing and QA)
+* `edifact` - UN/EDIFACT (and ISO 26025 based XML version)
+  * Contact points
+    * Andreas Pelekies
+    * Jörg Walther (XML Schema)
+    * Martin Krusch (Testing and QA)
+    * Philip Helger (Java applications)
 
 # Development
 
