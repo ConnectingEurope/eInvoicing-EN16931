@@ -62,7 +62,7 @@
               <xsltDirectory>${basedir}/edifact/xslt</xsltDirectory>
             </configuration>
           </execution>
-!--
+<!--
 -->
           <execution>
             <id>ubl</id>
