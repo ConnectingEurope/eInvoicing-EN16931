@@ -128,7 +128,7 @@
                     <ram:CountryID>DK</ram:CountryID>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VA">DK16356706</ram:ID>
+                    <ram:ID schemeID="VAT">DK16356706</ram:ID>
                 </ram:SpecifiedTaxRegistration>
             </ram:SellerTradeParty>
             <ram:BuyerTradeParty>

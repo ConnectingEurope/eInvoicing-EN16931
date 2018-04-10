@@ -411,7 +411,7 @@ www.enexis.nl</ram:Content>
                     <ram:CountryID>NL</ram:CountryID>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VA">NL809561074B01</ram:ID>
+                    <ram:ID schemeID="VAT">NL809561074B01</ram:ID>
                 </ram:SpecifiedTaxRegistration>
             </ram:SellerTradeParty>
             <ram:BuyerTradeParty>
