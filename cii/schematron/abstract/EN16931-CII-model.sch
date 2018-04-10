@@ -176,7 +176,7 @@
   </rule>
   <rule context="$VATAF_Line ">    
     <assert test="$BR-AF-02" flag="fatal" id="BR-AF-02">[BR-IG-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is “IGIC” shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
-    <assert test="$BR-AF-05" flag="fatal" id="BR-AF-05">[BR-IG-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IGIC" the invoiced item VAT rate (BT-152) shall be 0 (zero) or greater than zero.</assert>    
+    <assert test="$BR-AF-05" flag="fatal" id="BR-AF-05">[BR-IG-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IGIC" the invoiced item VAT rate (BT-152) shall be greater than 0 (zero).</assert>    
   </rule>
   <rule context="$VATAF_Allowance ">
     <assert test="$BR-AF-03" flag="fatal" id="BR-AF-03">[BR-IG-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is “IGIC” shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
