@@ -191,7 +191,7 @@
   <param name="UBL-CR-127" value="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:EncodingCode)"/>
   <param name="UBL-CR-128" value="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:CharacterSetCode)"/>
   <param name="UBL-CR-129" value="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:FileName)"/>
-  <param name="UBL-CR-130" value="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:Descriprion)"/>
+  <param name="UBL-CR-130" value="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:Description)"/>
   <param name="UBL-CR-131" value="not(cac:AdditionalDocumentReference/cac:ValidityPeriod)"/>
   <param name="UBL-CR-132" value="not(cac:AdditionalDocumentReference/cac:IssuerParty)"/>
   <param name="UBL-CR-133" value="not(cac:AdditionalDocumentReference/cac:ResultOfVerification)"/>
