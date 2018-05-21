@@ -189,9 +189,9 @@
   <param name="BR-DEC-10" value="string-length(substring-after(cbc:AllowanceTotalAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-11" value="string-length(substring-after(cbc:ChargeTotalAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-12" value="string-length(substring-after(cbc:TaxExclusiveAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-13" value="(//cac:TaxTotal/cbc:TaxAmount[@currencyID = //cbc:DocumentCurrencyCode] and (string-length(substring-after(//cac:TaxTotal/cbc:TaxAmount[@currencyID = //cbc:DocumentCurrencyCode],'.'))&lt;=2)) or (not(//cac:TaxTotal/cbc:TaxAmount[@currencyID = //cbc:DocumentCurrencyCode]))"/>
+  <param name="BR-DEC-13" value="(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode] and (string-length(substring-after(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode],'.'))&lt;=2)) or (not(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode]))"/>
   <param name="BR-DEC-14" value="string-length(substring-after(cbc:TaxInclusiveAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-15" value="(//cac:TaxTotal/cbc:TaxAmount[@currencyID = //cbc:TaxCurrencyCode] and (string-length(substring-after(//cac:TaxTotal/cbc:TaxAmount[@currencyID = //cbc:TaxCurrencyCode],'.'))&lt;=2)) or (not(//cac:TaxTotal/cbc:TaxAmount[@currencyID = //cbc:TaxCurrencyCode]))"/>
+  <param name="BR-DEC-15" value="(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:TaxCurrencyCode] and (string-length(substring-after(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:TaxCurrencyCode],'.'))&lt;=2)) or (not(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:TaxCurrencyCode]))"/>
   <param name="BR-DEC-16" value="string-length(substring-after(cbc:PrepaidAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-17" value="string-length(substring-after(cbc:PayableRoundingAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-18" value="string-length(substring-after(cbc:PayableAmount,'.'))&lt;=2"/>
