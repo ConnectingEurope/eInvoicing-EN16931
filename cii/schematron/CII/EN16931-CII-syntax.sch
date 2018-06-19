@@ -31,7 +31,7 @@
     <param name="CII-SR-026" value="not(ram:CategoryCode)"/>
     <param name="CII-SR-027" value="not(ram:IncludedNote/ram:Subject)"/>
     <param name="CII-SR-028" value="not(ram:IncludedNote/ram:ContentCode)"/>
-    <param name="CII-SR-030" value="count(ram:IncludedNote/ram:Content) &lt;= 1"/>
+    <param name="CII-SR-030" value="count(ram:Content) &lt;= 1"/>
     
     <param name="CII-SR-032" value="not(ram:IncludedNote/ram:ID)"/>
     <param name="CII-SR-033" value="not(ram:EffectiveSpecifiedPeriod)"/>
@@ -612,6 +612,7 @@
   <param name="Document_Context " value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext"/>
   <param name="DocumentContextParameter " value="//*[ends-with(name(), 'DocumentContextParameter')]"/>
   <param name="Exchanged_Document " value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument"/>
+  <param name="Exchanged_Document_Note " value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote"/>
   <param name="IDType " value="//ram:*[ends-with(name(), 'ID')]"/>
   <param name="IDTypeNoAttributes " value="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or
         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or

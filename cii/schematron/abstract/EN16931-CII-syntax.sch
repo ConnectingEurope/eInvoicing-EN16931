@@ -31,11 +31,13 @@
         <assert test="$CII-SR-026" flag="warning" id="CII-SR-026">[CII-SR-026] - CategoryCode should not be present</assert>
         <assert test="$CII-SR-027" flag="warning" id="CII-SR-027">[CII-SR-027] - Subject should not be present</assert>
         <assert test="$CII-SR-028" flag="warning" id="CII-SR-028">[CII-SR-028] - ContentCode should not be present</assert>
-        <assert test="$CII-SR-030" flag="warning" id="CII-SR-030">[CII-SR-030] - Content should exist maximum once</assert>
         
         <assert test="$CII-SR-032" flag="warning" id="CII-SR-032">[CII-SR-032] - ID should not be present</assert>
         <assert test="$CII-SR-033" flag="warning" id="CII-SR-033">[CII-SR-033] - EffectiveSpecifiedPeriod should not be present</assert>
         <assert test="$CII-SR-034" flag="warning" id="CII-SR-034">[CII-SR-034] - IssuerTradeParty should not be present</assert>
+    </rule>
+    <rule context="$Exchanged_Document_Note ">
+        <assert test="$CII-SR-030" flag="warning" id="CII-SR-030">[CII-SR-030] - Content should exist maximum once</assert>
     </rule>
     <rule context="$Invoice_line ">
         <assert test="$CII-SR-035" flag="warning" id="CII-SR-035">[CII-SR-035] - DescriptionCode should not be present</assert>
