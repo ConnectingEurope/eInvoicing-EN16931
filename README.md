@@ -10,7 +10,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * UBL Website: https://www.oasis-open.org/committees/ubl/
   * Used XML Schemas: http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.zip
   * Contact points
-    * Oriol Bausa (Rules)
+    * Oriol Bausà (Rules)
     * Siw Midtgard Meckelborg (Testing and QA)
 * `cii` - Cross Industry Invoice (D16B) - EN mandatory syntax
   * XML Schemas overview: http://www.unece.org/cefact/xml_schemas/index.html
