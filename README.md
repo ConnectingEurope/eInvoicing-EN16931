@@ -56,7 +56,16 @@ For the Java projects contained in this repository, please consider the followin
   * Eclipse 4.6.x latest (m2e - Maven for Eclipse - must be contained)
   * For building on the commandline use Apache Maven 3.x (latest) 
  
- ## Create XSLTs from Schematrons
- 
+## Create XSLTs from Schematrons
+  
 Invoke `mvn process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
+Don't forget to update the license headers afterwards (see below).
  
+## Update the license headers
+
+The template for the license header resides in the file `templates/license-template.txt`.
+To add the license header to all relevant files invoke the following command:
+
+```
+mvn license:format
+```
