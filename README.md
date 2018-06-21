@@ -1,23 +1,23 @@
 # CEN/TC 434 - EN-16931 - Validation artefacts
 Official Schematron validation artefacts for CEN/TC 434.
-This repoistory does not contain validation rules for any CIUS.
+This repository does not contain validation rules for any CIUS.
 
 Latest release **v1.0.0** (2018-02-08) - https://github.com/CenPC434/validation/releases/tag/validation-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
 
-* `cii` - Cross Industry Invoice (D16B) - EN mandatory syntax
-  * XML Schemas overview: http://www.unece.org/cefact/xml_schemas/index.html
-  * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
-  * Contact points
-    * Andreas Pelekies
-    * Tayfun Mermer (Testing and QA)
 * `ubl` - UBL 2.1 (ISO/IEC 19845:2015) - EN mandatory syntax
   * UBL Website: https://www.oasis-open.org/committees/ubl/
   * Used XML Schemas: http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.zip
   * Contact points
     * Oriol Bausa (Rules)
     * Siw Midtgard Meckelborg (Testing and QA)
+* `cii` - Cross Industry Invoice (D16B) - EN mandatory syntax
+  * XML Schemas overview: http://www.unece.org/cefact/xml_schemas/index.html
+  * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
+  * Contact points
+    * Andreas Pelekies
+    * Tayfun Mermer (Testing and QA)
 * `edifact` - UN/EDIFACT (and ISO 26025 based XML version) - EN optional syntax
   * Contact points
     * Andreas Pelekies
@@ -28,7 +28,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
 # News and noteworthy
 
 * v1.1.0 - work in progress (UBL and CII only)
-    * Note: this release does NOT contain the EDIFACT validation rules - the development of them is currently paused/stalled
+    * Note: this release does NOT contain the EDIFACT validation rules - its development is currently paused/stalled
     * New participant identifier schemes are supported
         * `0184` in [issue #64](https://github.com/CenPC434/validation/issues/64)
         * `0190` in [issue #70](https://github.com/CenPC434/validation/issues/70)
