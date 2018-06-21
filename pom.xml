@@ -25,11 +25,11 @@
         <groupId>com.mycila</groupId>
         <artifactId>license-maven-plugin</artifactId>
         <configuration>
+          <header>templates/license-template.txt</header>
           <excludes>
             <exclude>**/LICENSE</exclude>
             <exclude>**/NOTICE</exclude>
-            <exclude>src/main/resources/en16931/**</exclude>
-            <exclude>src/test/resources/test-files/**</exclude>
+            <exclude>**/*.pdf</exclude>
           </excludes>
         </configuration>
       </plugin>

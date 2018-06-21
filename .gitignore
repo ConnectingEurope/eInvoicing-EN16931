@@ -12,7 +12,6 @@ hs_err_pid*
 
 **/.DS_Store
 /.project
-*.txt
 **/*.iml
 /target/
-/zz
+/zz*
