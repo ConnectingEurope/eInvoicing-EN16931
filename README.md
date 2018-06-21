@@ -24,6 +24,30 @@ For each syntax a separate folder exists where all related artefacts are to be p
     * Martin Krusch (Testing and QA)
     * Philip Helger (Java applications)
 
+# News and noteworthy
+
+* v1.1.0 - work in progress (UBL and CII only)
+    * Note: this release does NOT contain the EDIFACT validation rules - the development of them is currently paused/stalled
+    * New participant identifier schemes are supported
+        * 0184 in [issue #64](https://github.com/CenPC434/validation/issues/64)
+        * 0190 in [issue #70](https://github.com/CenPC434/validation/issues/70)
+        * 0191 in [issue #58](https://github.com/CenPC434/validation/issues/58)
+        * 0192 in [issue #62](https://github.com/CenPC434/validation/issues/62)
+        * 0193 in [issue #71](https://github.com/CenPC434/validation/issues/71)
+    * The value `532` was not supported in `BR-CL-01` ([issue #63](https://github.com/CenPC434/validation/issues/63))
+    * Fixed error message of `BR-AF-05` CII ([issue #60](https://github.com/CenPC434/validation/issues/60))
+    * Error in rule `BR-Z-10` UBL was fixed ([issue #59](https://github.com/CenPC434/validation/issues/59))
+    * The value of the VAT `@schemeID` attribute is `VAT` (instead of `VA`) ([issue #57](https://github.com/CenPC434/validation/issues/57))
+    * Using `xs:decimal` instead of `xs:double` ([issue #55](https://github.com/CenPC434/validation/issues/55))
+    * Rule `CII-SR-029` was removed and the context of `CII-SR-030` was adopted ([issue #54](https://github.com/CenPC434/validation/issues/54))
+    * Some code list assertions had no `id` attributes ([issue #53](https://github.com/CenPC434/validation/issues/53))
+    * Fixed typo in `BR-CL-24` UBL ([issue #52](https://github.com/CenPC434/validation/issues/52))
+    * Rules targeting attributes were altered ([issue #50](https://github.com/CenPC434/validation/issues/50))
+    
+* v1.0.0 - 2018-02-08 (UBL, CII and EDIFACT)
+  * Initial release
+
+
 # Development
 
 For the Java projects contained in this repository, please consider the following prerequisites
