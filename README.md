@@ -2,7 +2,9 @@
 Official Schematron validation artefacts for CEN/TC 434.
 This repository does not contain validation rules for any CIUS.
 
-Latest release **v1.0.0** (2018-02-08) - https://github.com/CenPC434/validation/releases/tag/validation-1.0.0
+Latest release
+  * UBL & CII: **v1.1.0** (2018-06-26) - https://github.com/CenPC434/validation/releases/tag/validation-1.1.0
+  * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/CenPC434/validation/releases/tag/validation-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
 
@@ -27,7 +29,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
 
 # News and noteworthy
 
-* v1.1.0 - work in progress (UBL and CII only)
+* v1.1.0 - 2018-06-26 (UBL and CII only)
     * Note: this release does NOT contain the EDIFACT validation rules - its development is currently paused/stalled
     * New participant identifier schemes are supported
         * `0184` in [issue #64](https://github.com/CenPC434/validation/issues/64)
@@ -46,8 +48,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
     * The value `532` was not supported in `BR-CL-01` ([issue #63](https://github.com/CenPC434/validation/issues/63))
     
 * v1.0.0 - 2018-02-08 (UBL, CII and EDIFACT)
-  * Initial release
-
+    * Initial release
 
 # Development
 
