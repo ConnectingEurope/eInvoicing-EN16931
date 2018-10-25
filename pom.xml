@@ -56,6 +56,7 @@
             <exclude>edifact/schema/**</exclude>
             <exclude>edifact/validator/**</exclude>
             <exclude>ubl/businessrules/**</exclude>
+            <exclude>ubl/examples/**</exclude>
           </excludes>
         </configuration>
       </plugin>
