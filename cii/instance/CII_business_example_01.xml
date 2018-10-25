@@ -10,7 +10,6 @@
   </rsm:ExchangedDocumentContext>
   <rsm:ExchangedDocument>
     <ram:ID>2016166</ram:ID>
-    <ram:Name>Rechnung</ram:Name>
     <ram:TypeCode>380</ram:TypeCode>
     <ram:IssueDateTime>
       <udt:DateTimeString format="102">20150109</udt:DateTimeString>

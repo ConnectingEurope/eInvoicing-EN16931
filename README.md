@@ -62,6 +62,10 @@ For the Java projects contained in this repository, please consider the followin
 Invoke `mvn process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
 Don't forget to update the license headers afterwards (see below).
  
+## Check if the examples files match the rules from the XSLTs
+  
+Invoke `mvn valiate` after re-creating the XSLTs (see above).
+ 
 ## Update the license headers
 
 The template for the license header resides in the file `templates/license-template.txt`.

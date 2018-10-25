@@ -106,6 +106,48 @@
           <schematronPattern>*.sch</schematronPattern>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>com.helger.maven</groupId>
+        <artifactId>ph-schematron-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>cii</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>validate</goal>
+            </goals>
+            <configuration>
+              <xmlDirectory>cii/instance</xmlDirectory>
+              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
+              <schematronFile>cii/xslt/EN16931-CII-validation.xslt</schematronFile>
+            </configuration>
+          </execution>
+          <execution>
+            <id>edifact</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>validate</goal>
+            </goals>
+            <configuration>
+              <xmlDirectory>edifact/instance</xmlDirectory>
+              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
+              <schematronFile>edifact/xslt/EN16931-EDIFACT-validation.xslt</schematronFile>
+            </configuration>
+          </execution>
+          <execution>
+            <id>ubl</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>validate</goal>
+            </goals>
+            <configuration>
+              <xmlDirectory>ubl/examples</xmlDirectory>
+              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
+              <schematronFile>ubl/xslt/EN16931-UBL-model.xslt</schematronFile>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
