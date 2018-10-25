@@ -193,7 +193,7 @@
   <param name="UBL-CR-111" value="not(cac:AdditionalDocumentReference/cbc:UUID)"/>
   <param name="UBL-CR-112" value="not(cac:AdditionalDocumentReference/cbc:IssueDate)"/>
   <param name="UBL-CR-113" value="not(cac:AdditionalDocumentReference/cbc:IssueTime)"/>
-  <param name="UBL-CR-114" value="not(cac:AdditionalDocumentReference/cbc:DocumentType)"/>
+  <param name="UBL-CR-114" value="not(cac:AdditionalDocumentReference/cbc:DocumentTypeCode)"/>
   <param name="UBL-CR-115" value="not(cac:AdditionalDocumentReference/cbc:Xpath)"/>
   <param name="UBL-CR-116" value="not(cac:AdditionalDocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-117" value="not(cac:AdditionalDocumentReference/cbc:LocaleCode)"/>

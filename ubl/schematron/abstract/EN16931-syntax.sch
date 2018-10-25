@@ -151,7 +151,7 @@
     <assert test="$UBL-CR-111" flag="warning" id="UBL-CR-111">[UBL-CR-111]-A UBL invoice should not include the AdditionalDocumentReference UUID</assert>
     <assert test="$UBL-CR-112" flag="warning" id="UBL-CR-112">[UBL-CR-112]-A UBL invoice should not include the AdditionalDocumentReference IssueDate</assert>
     <assert test="$UBL-CR-113" flag="warning" id="UBL-CR-113">[UBL-CR-113]-A UBL invoice should not include the AdditionalDocumentReference IssueTime</assert>
-    <assert test="$UBL-CR-114" flag="warning" id="UBL-CR-114">[UBL-CR-114]-A UBL invoice should not include the AdditionalDocumentReference DocumentType</assert>
+    <assert test="$UBL-CR-114" flag="warning" id="UBL-CR-114">[UBL-CR-114]-A UBL invoice should not include the AdditionalDocumentReference DocumentTypeCode</assert>
     <assert test="$UBL-CR-115" flag="warning" id="UBL-CR-115">[UBL-CR-115]-A UBL invoice should not include the AdditionalDocumentReference Xpath</assert>
     <assert test="$UBL-CR-116" flag="warning" id="UBL-CR-116">[UBL-CR-116]-A UBL invoice should not include the AdditionalDocumentReference LanguageID</assert>
     <assert test="$UBL-CR-117" flag="warning" id="UBL-CR-117">[UBL-CR-117]-A UBL invoice should not include the AdditionalDocumentReference LocaleCode</assert>
