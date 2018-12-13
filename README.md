@@ -64,7 +64,7 @@ Don't forget to update the license headers afterwards (see below).
  
 ## Check if the examples files match the rules from the XSLTs
   
-Invoke `mvn valiate` after re-creating the XSLTs (see above).
+Invoke `mvn validate` after re-creating the XSLTs (see above).
  
 ## Update the license headers
 
