@@ -36,6 +36,8 @@ Standalone validation of EN-16931 rules can be performed on the following pages 
 
 If you also provide an open service that can validate EN-16931 artefacts and you want to be listed here send us an email to philip[at]helger.com  
 
+A simple demo implementation maintained by the project team can be found at https://github.com/CenPC434/java-tools/ - we do not recommend this for production usage.
+
 # News and noteworthy
 
 * v1.1.0 - 2018-06-26 (UBL and CII only)
