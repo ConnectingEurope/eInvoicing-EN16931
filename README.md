@@ -26,6 +26,15 @@ For each syntax a separate folder exists where all related artefacts are to be p
     * Jörg Walther (XML Schema)
     * Martin Krusch (Testing and QA)
     * Philip Helger (Java applications)
+    
+# Validation
+
+The action of performing validation of business documents is not directly supported by the artefacts in this repository.
+Standalone validation of EN-16931 rules can be performed on the following pages (in arbitrary order - please contact the operators directly):
+* https://peppol.helger.com/public/menuitem-validation-bis2 - manual upload and webservice
+* http://validex.net/en-service/ - registration needed
+
+If you also provide an open service that can validate EN-16931 artefacts and you want to be listed here send us an email to philip[at]helger.com  
 
 # News and noteworthy
 

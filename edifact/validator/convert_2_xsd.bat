@@ -1,4 +1,0 @@
-set CONVERT_PATH=%1
-set TXT_PATH=%2
-
-%CONVERT_PATH% /input %TXT_PATH%
