@@ -1,4 +1,5 @@
 # CEN/TC 434 - EN-16931 - Validation artefacts
+
 Official Schematron validation artefacts for CEN/TC 434.
 This repository does not contain validation rules for any CIUS.
 
@@ -33,6 +34,10 @@ The action of performing validation of business documents is not directly suppor
 Standalone validation of EN-16931 rules can be performed on the following pages (in arbitrary order - please contact the operators directly):
 * https://peppol.helger.com/public/menuitem-validation-bis2 - manual upload and webservice
 * http://validex.net/en-service/ - registration needed
+* https://www.itb.ec.europa.eu/invoice/upload - CEF e-Invoicing support - manual upload
+* https://www.itb.ec.europa.eu/invoice/api/validation?wsdl - CEF e-Invoicing support - web service
+* https://www.itb.ec.europa.eu/cenws8/upload - similar service for CEN/TC 434 editors - manual upload
+* https://www.itb.ec.europa.eu/cenws8/api/validation?wsdl - similar service for CEN/TC 434 editors - web service
 
 If you also provide an open service that can validate EN-16931 artefacts and you want to be listed here send us an email to philip[at]helger.com  
 
