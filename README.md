@@ -32,7 +32,8 @@ For each syntax a separate folder exists where all related artefacts are to be p
 
 The action of performing validation of business documents is not directly supported by the artefacts in this repository.
 Standalone validation of EN-16931 rules can be performed on the following pages (in arbitrary order - please contact the operators directly):
-* https://peppol.helger.com/public/menuitem-validation-bis2 - manual upload and webservice
+* https://peppol.helger.com/public/menuitem-validation-bis2 - manual upload
+* https://peppol.helger.com/public/menuitem-validation-ws2 - web service details page
 * http://validex.net/en-service/ - registration needed
 * https://www.itb.ec.europa.eu/invoice/upload - CEF e-Invoicing support - manual upload
 * https://www.itb.ec.europa.eu/invoice/api/validation?wsdl - CEF e-Invoicing support - web service
