@@ -501,7 +501,6 @@
   <param name="UBL-CR-420" value="not(cac:PaymentMeans/cac:CardAccount/cbc:CV2ID)"/>
   <param name="UBL-CR-421" value="not(cac:PaymentMeans/cac:CardAccount/cbc:CardChipCode)"/>
   <param name="UBL-CR-422" value="not(cac:PaymentMeans/cac:CardAccount/cbc:ChipApplicationID)"/>
-  <param name="UBL-CR-423" value="not(cac:PaymentMeans/cac:PayerFinancialAccount)"/>
   <param name="UBL-CR-424" value="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:AliasName)"/>
   <param name="UBL-CR-425" value="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:AccountTypeCode)"/>
   <param name="UBL-CR-426" value="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:AccountFormatCode)"/>
