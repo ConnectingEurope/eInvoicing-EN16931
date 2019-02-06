@@ -221,7 +221,7 @@
   <param name="BR-DEC-28" value="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2"/>
   <param name="Invoice_Period " value="cac:InvoicePeriod"/>
   <param name="Document_totals " value="cac:LegalMonetaryTotal"/>
-  <param name="Amount_due" value="cac:LegalMonetaryTotal/cbc:PayableAmount"/>
+  <param name="Amount_due" value="ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount"/>
   <param name="Payee_Financial_Account" value="cac:PaymentMeans[cbc:PaymentMeansCode='30' or cbc:PaymentMeansCode='58']/cac:PayeeFinancialAccount"/>
   <param name="Payee" value="cac:PayeeParty"/>
   <param name="Tax_Representative_postal_address" value="cac:TaxRepresentativeParty/cac:PostalAddress"/>
