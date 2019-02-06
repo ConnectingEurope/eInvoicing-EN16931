@@ -35,6 +35,7 @@ Standalone validation of EN-16931 rules can be performed on the following pages 
 * https://peppol.helger.com/public/menuitem-validation-bis2 - manual upload
 * https://peppol.helger.com/public/menuitem-validation-ws2 - web service details page
 * http://validex.net/en-service/ - registration needed
+* https://open.validex.net/en/login - manual upload
 * https://www.itb.ec.europa.eu/invoice/upload - CEF e-Invoicing support - manual upload
 * https://www.itb.ec.europa.eu/invoice/api/validation?wsdl - CEF e-Invoicing support - web service
 * https://www.itb.ec.europa.eu/cenws8/upload - similar service for CEN/TC 434 editors - manual upload
