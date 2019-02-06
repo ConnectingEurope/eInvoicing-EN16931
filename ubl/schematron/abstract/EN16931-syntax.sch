@@ -459,7 +459,6 @@
     <assert test="$UBL-CR-420" flag="warning" id="UBL-CR-420">[UBL-CR-420]-A UBL invoice should not include the PaymentMeans CardAccount CV2ID</assert>
     <assert test="$UBL-CR-421" flag="warning" id="UBL-CR-421">[UBL-CR-421]-A UBL invoice should not include the PaymentMeans CardAccount CardChipCode</assert>
     <assert test="$UBL-CR-422" flag="warning" id="UBL-CR-422">[UBL-CR-422]-A UBL invoice should not include the PaymentMeans CardAccount ChipApplicationID</assert>
-    <assert test="$UBL-CR-423" flag="warning" id="UBL-CR-423">[UBL-CR-423]-A UBL invoice should not include the PaymentMeans PayerFinancialAccount</assert>
     <assert test="$UBL-CR-424" flag="warning" id="UBL-CR-424">[UBL-CR-424]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount AliasName</assert>
     <assert test="$UBL-CR-425" flag="warning" id="UBL-CR-425">[UBL-CR-425]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount AccountTypeCode</assert>
     <assert test="$UBL-CR-426" flag="warning" id="UBL-CR-426">[UBL-CR-426]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount AccountFormatCode</assert>
