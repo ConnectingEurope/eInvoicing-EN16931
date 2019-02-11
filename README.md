@@ -40,6 +40,9 @@ Standalone validation of EN-16931 rules can be performed on the following pages 
 * https://www.itb.ec.europa.eu/invoice/api/validation?wsdl - CEF e-Invoicing support - web service
 * https://www.itb.ec.europa.eu/cenws8/upload - similar service for CEN/TC 434 editors - manual upload
 * https://www.itb.ec.europa.eu/cenws8/api/validation?wsdl - similar service for CEN/TC 434 editors - web service
+* https://invoice.fans/fr/validation-des-messages/  - in French, registration is necessary
+* https://invoice.fans/en/message-validation/ - in English, registration is necessary
+* https://invoice.fans/de/validierung-von-nachrichten/ - in German, registration is necessary 
 
 If you also provide an open service that can validate EN-16931 artefacts and you want to be listed here send us an email to philip[at]helger.com  
 
