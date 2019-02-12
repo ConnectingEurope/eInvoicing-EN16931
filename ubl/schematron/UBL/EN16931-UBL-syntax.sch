@@ -60,6 +60,7 @@
   <param name="UBL-SR-39" value="(count(cac:ProjectReference/cbc:ID) &lt;= 1)"/>
   <param name="UBL-SR-40" value="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name) &lt;= 1)"/>
   <param name="UBL-SR-41" value="((cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'] and not(cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'])) or (not(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']) and cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']) or (not(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']) and not(cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'])))"/>
+  <param name="UBL-SR-42" value="(count(cac:PartyTaxScheme) &lt;= 2)"/>
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>
   <param name="UBL-DT-07" value="(@filename)"/>
@@ -743,4 +744,5 @@
   <param name="Percent_data_type" value="//*[ends-with(name(), 'Rate')]"/>
   <param name="Code_data_type" value="//*[ends-with(name(), 'Code')]"/>
   <param name="Binary_object_data_type" value="//*[ends-with(name(), 'BinaryObject')]"/>
+  <param name="Accounting_supplier_party" value="cac:AccountingSupplierParty/cac:Party"/>
 </pattern>
