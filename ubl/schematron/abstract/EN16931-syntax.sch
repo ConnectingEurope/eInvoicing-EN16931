@@ -714,7 +714,7 @@
     <assert test="$UBL-SR-09" flag="warning" id="UBL-SR-09">[UBL-SR-09]-Seller name shall occur maximum once</assert>
     <assert test="$UBL-SR-10" flag="warning" id="UBL-SR-10">[UBL-SR-10]-Seller trader name shall occur maximum once</assert>
     <assert test="$UBL-SR-11" flag="warning" id="UBL-SR-11">[UBL-SR-11]-Seller legal registration identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-12" flag="warning" id="UBL-SR-12">[UBL-SR-12]-Seller VAT identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-12" flag="fatal" id="UBL-SR-12">[UBL-SR-12]-Seller VAT identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-13" flag="warning" id="UBL-SR-13">[UBL-SR-13]-Seller tax registration shall occur maximum once</assert>
     <assert test="$UBL-SR-14" flag="warning" id="UBL-SR-14">[UBL-SR-14]-Seller additional legal information shall occur maximum once</assert>
     <assert test="$UBL-SR-15" flag="warning" id="UBL-SR-15">[UBL-SR-15]-Buyer name shall occur maximum once</assert>
