@@ -38,7 +38,7 @@
   <param name="UBL-SR-17" value="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID) &lt;= 1)"/>
   <param name="UBL-SR-18" value="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/upper-case(cbc:ID)='VAT']/cbc:CompanyID) &lt;= 1)"/>
   <param name="UBL-SR-19" value="(count(cac:PartyName/cbc:Name) &lt;= 1) and ((cac:PartyName/cbc:Name) != (../cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName))"/>
-  <param name="UBL-SR-20" value="(count(cac:PartyIdentification/cbc:ID) &lt;= 1) and ((cac:PartyName/cbc:Name) != (../cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName))"/>
+  <param name="UBL-SR-20" value="(count(cac:PartyIdentification/cbc:ID[upper-case(@schemeID) != 'SEPA']) &lt;= 1) and ((cac:PartyName/cbc:Name) != (../cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName))"/>
   <param name="UBL-SR-21" value="(count(cac:PartyLegalEntity/cbc:CompanyID) &lt;= 1) and ((cac:PartyName/cbc:Name) != (../cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName))"/>
   <param name="UBL-SR-22" value="(count(cac:Party/cac:PartyName/cbc:Name) &lt;= 1)"/>
   <param name="UBL-SR-23" value="(count(cac:Party/cac:PartyTaxScheme/cbc:CompanyID) &lt;= 1)"/>
@@ -47,7 +47,7 @@
   <param name="UBL-SR-26" value="(count(cbc:PaymentID) &lt;= 1)"/>
   <param name="UBL-SR-27" value="(count(cbc:InstructionNote) &lt;= 1)"/>
   <param name="UBL-SR-28" value="(count(cac:PaymentMandate/cbc:ID) &lt;= 1)"/>
-  <param name="UBL-SR-29" value="(count(cac:PayeeParty/cac:PartyIdentification/cbc:ID) &lt;= 1)"/>
+  <param name="UBL-SR-29" value="(count(//cac:PartyIdentification/cbc:ID[upper-case(@schemeID) = 'SEPA']) &lt;= 1)"/>
   <param name="UBL-SR-30" value="(count(cbc:AllowanceChargeReason) &lt;= 1)"/>
   <param name="UBL-SR-31" value="(count(cbc:AllowanceChargeReason) &lt;= 1)"/>
   <param name="UBL-SR-32" value="(count(cac:TaxCategory/cbc:TaxExemptionReason) &lt;= 1)"/>
