@@ -723,7 +723,7 @@
     <assert test="$UBL-SR-17" flag="warning" id="UBL-SR-17">[UBL-SR-17]-Buyer legal registration identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-18" flag="fatal" id="UBL-SR-18">[UBL-SR-18]-Buyer VAT identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-24" flag="warning" id="UBL-SR-24">[UBL-SR-24]-Deliver to information shall occur maximum once</assert>
-    <assert test="$UBL-SR-29" flag="warning" id="UBL-SR-29">[UBL-SR-29]-Bank creditor reference shall occur maximum once</assert>
+    <assert test="$UBL-SR-29" flag="fatal" id="UBL-SR-29">[UBL-SR-29]-Bank creditor reference shall occur maximum once</assert>
     <assert test="$UBL-SR-39" flag="warning" id="UBL-SR-39">[UBL-SR-39]-Project reference shall occur maximum once.</assert>
     <assert test="$UBL-SR-40" flag="warning" id="UBL-SR-40">[UBL-SR-40]-Buyer trade name shall occur maximum once</assert>
     <assert test="$UBL-SR-41" flag="warning" id="UBL-SR-41">[UBL-SR-41]-Bank assigned creditor identifier shall occur maximum once</assert>
