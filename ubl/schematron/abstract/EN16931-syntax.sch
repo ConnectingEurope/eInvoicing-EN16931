@@ -24,7 +24,7 @@
   </rule>
   <rule context="$Additional_supporting_documents">
     <assert test="$UBL-SR-33" flag="warning" id="UBL-SR-33">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
-    <assert test="$UBL-SR-43" flag="warning" id="UBL-SR-43">[UBL-SR-43]-An invoiced object reference shall have a document type code with value 130 and an scheme identifier</assert>
+    <assert test="$UBL-SR-43" flag="warning" id="UBL-SR-43">[UBL-SR-43]-Scheme identifier shall only be used for invoiced object (document type code with value 130)</assert>
   </rule>
   <rule context="$Amount_data_type">
     <assert test="$UBL-DT-01" flag="fatal" id="UBL-DT-01">[UBL-DT-01]-Amounts shall be decimal up to two fraction digits</assert>
