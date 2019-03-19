@@ -63,6 +63,7 @@
   <param name="UBL-SR-42" value="(count(cac:PartyTaxScheme) &lt;= 2)"/>
   <param name="UBL-SR-43" value="((cbc:DocumentTypeCode='130') or (not(cbc:ID/@scheme) and not(cbc:DocumentTypeCode)))"/>
   <param name="UBL-SR-44" value="(count(cac:PaymentMeans/cbc:PaymentID) &lt;=1)"/>
+  <param name="UBL-SR-45" value="(count(cac:PaymentMeans/cbc:PaymentDueDate) &lt;=1)"/>
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>
   <param name="UBL-DT-07" value="(@filename)"/>

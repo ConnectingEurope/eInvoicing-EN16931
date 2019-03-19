@@ -727,7 +727,8 @@
     <assert test="$UBL-SR-39" flag="warning" id="UBL-SR-39">[UBL-SR-39]-Project reference shall occur maximum once.</assert>
     <assert test="$UBL-SR-40" flag="warning" id="UBL-SR-40">[UBL-SR-40]-Buyer trade name shall occur maximum once</assert>
     <assert test="$UBL-SR-41" flag="warning" id="UBL-SR-41">[UBL-SR-41]-Bank assigned creditor identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-44" flag="fatal" id="UBL-SR-44">[UBL-SR-44]-Payment ID shall occur maximum once</assert>
+    <assert test="$UBL-SR-44" flag="warning" id="UBL-SR-44">[UBL-SR-44]-Payment ID shall occur maximum once</assert>
+    <assert test="$UBL-SR-45" flag="warning" id="UBL-SR-45">[UBL-SR-45]-Due Date shall occur maximum once</assert>
   </rule>
   <rule context="$Invoice_line">
     <assert test="$UBL-SR-34" flag="warning" id="UBL-SR-34">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>
