@@ -735,8 +735,8 @@
   <param name="Tax_Representative" value="cac:TaxRepresentativeParty"/>
   <param name="Deliver_to" value="cac:Delivery"/>
   <param name="Payment_instructions" value="cac:PaymentMeans"/>
-  <param name="Document_level_allowances" value="cac:AllowanceCharge[cbc:ChargeIndicator = 'false']"/>
-  <param name="Document_level_charges" value="cac:AllowanceCharge[cbc:ChargeIndicator = 'true']"/>
+  <param name="Document_level_allowances" value="cac:AllowanceCharge[cbc:ChargeIndicator = false()]"/>
+  <param name="Document_level_charges" value="cac:AllowanceCharge[cbc:ChargeIndicator = true()]"/>
   <param name="Invoice_total_VAT" value="cac:TaxTotal"/>
   <param name="Tax_subtotal" value="cac:TaxSubtotal"/>
   <param name="Additional_supporting_documents" value="cac:AdditionalDocumentReference"/>
