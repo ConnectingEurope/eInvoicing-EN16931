@@ -64,7 +64,6 @@
     </cac:PaymentMeans>
     <cac:PaymentMeans>
         <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
-        <cbc:PaymentID>Deb. 10202 / Fact. 12115118</cbc:PaymentID>
         <cac:PayeeFinancialAccount>
             <cbc:ID>NL03 INGB 0004489902</cbc:ID>
         </cac:PayeeFinancialAccount>
