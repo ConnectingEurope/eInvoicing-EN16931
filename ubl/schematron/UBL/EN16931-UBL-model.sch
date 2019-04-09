@@ -72,7 +72,7 @@
   <param name="BR-55" value="exists(cac:InvoiceDocumentReference/cbc:ID)"/>
   <param name="BR-56" value="exists(cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/cbc:CompanyID)"/>
   <param name="BR-57" value="exists(cac:Country/cbc:IdentificationCode)"/>
-  <param name="BR-58" value="exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate) and (cbc:IssueDate &gt; cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate)"/>
+  <param name="BR-58" value="(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate) and (cbc:IssueDate &gt; cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate)) or not(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate))"/>
   <param name="BR-61" value="(exists(cac:PayeeFinancialAccount/cbc:ID) and ((normalize-space(cbc:PaymentMeansCode) = '30') or (normalize-space(cbc:PaymentMeansCode) = '58') )) or ((normalize-space(cbc:PaymentMeansCode) != '30') and (normalize-space(cbc:PaymentMeansCode) != '58'))"/>
   <param name="BR-62" value="exists(@schemeID)"/>
   <param name="BR-63" value="exists(@schemeID)"/>
