@@ -78,7 +78,7 @@
   <param name="BR-64" value="ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID!='' or not (ram:SpecifiedTradeProduct/ram:GlobalID)"/>
   <param name="BR-65" value="(ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID!='') or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)"/>
   <!--param name="BR-CO-02" value="((ram:TypeCode = ('30','57')) and (ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)) or not(ram:TypeCode =  ('30','57'))"/-->
-  <param name="BR-CO-03" value="((ram:TaxPointDate) and not(ram:DueDateTypeCode)) or (not (ram:TaxPointDate) and (ram:DueDateTypeCode)) or (not (ram:TaxPointDate) and not (ram:DueDateTypeCode))"/>
+  <param name="BR-CO-03" value="((//ram:TaxPointDate) and not(//ram:DueDateTypeCode)) or (not (//ram:TaxPointDate) and (//ram:DueDateTypeCode)) or (not (//ram:TaxPointDate) and not (//ram:DueDateTypeCode))"/>
   <param name="BR-CO-04" value="(ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)"/>
   <param name="BR-CO-05" value="true()"/>
   <param name="BR-CO-06" value="true()"/>
