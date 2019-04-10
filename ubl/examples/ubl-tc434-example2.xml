@@ -168,7 +168,7 @@
             Penalty percentage 10% from due date</cbc:Note>        
     </cac:PaymentTerms>
     <cac:AllowanceCharge>
-        <cbc:ChargeIndicator>0</cbc:ChargeIndicator>
+        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReasonCode>75</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Promotion discount</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="NOK">100.00</cbc:Amount>
