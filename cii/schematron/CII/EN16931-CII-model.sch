@@ -26,10 +26,10 @@
   <param name="BR-05" value="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode!='')"/>
   <param name="BR-06" value="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name!='')"/>
   <param name="BR-07" value="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name!='')"/>
-  <param name="BR-08" value="//ram:SellerTradeParty/ram:PostalTradeAddress"/>
-  <param name="BR-09" value="//ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''"/>
-  <param name="BR-10" value="//ram:BuyerTradeParty/ram:PostalTradeAddress"/>
-  <param name="BR-11" value="//ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''"/>
+  <param name="BR-08" value="ram:SellerTradeParty/ram:PostalTradeAddress"/>
+  <param name="BR-09" value="ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''"/>
+  <param name="BR-10" value="ram:BuyerTradeParty/ram:PostalTradeAddress"/>
+  <param name="BR-11" value="ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''"/>
   <param name="BR-12" value="(ram:LineTotalAmount)"/>
   <param name="BR-13" value="(ram:TaxBasisTotalAmount)"/>
   <param name="BR-14" value="(ram:GrandTotalAmount)"/>
