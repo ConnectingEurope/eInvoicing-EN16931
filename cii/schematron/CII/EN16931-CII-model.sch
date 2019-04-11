@@ -71,7 +71,7 @@
   <param name="BR-54" value="(ram:Description) and (ram:Value)"/>
   <param name="BR-55" value="(ram:IssuerAssignedID!='')"/>
   <param name="BR-56" value="(ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VAT']!='')"/>
-  <param name="BR-57" value="(e/ram:PostalTradeAddress and ram:ShipToTradeParty/ram:PostalTradeAddress/ram:CountryID!='') or not (ram:ShipToTradeParty/ram:PostalTradeAddress)"/>
+  <param name="BR-57" value="(ram:ShipToTradeParty/ram:PostalTradeAddress and ram:ShipToTradeParty/ram:PostalTradeAddress/ram:CountryID!='') or not (ram:ShipToTradeParty/ram:PostalTradeAddress)"/>
   <param name="BR-61" value="(ram:IBANID) or (ram:ProprietaryID)"/>
   <param name="BR-62" value="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID!='' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)"/>
   <param name="BR-63" value="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID!='' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)"/>
