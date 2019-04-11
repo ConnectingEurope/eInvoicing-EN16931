@@ -26,10 +26,10 @@
   <param name="BR-05" value="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode!='')"/>
   <param name="BR-06" value="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name!='')"/>
   <param name="BR-07" value="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name!='')"/>
-  <param name="BR-08" value="ram:SellerTradeParty/ram:PostalTradeAddress"/>
-  <param name="BR-09" value="ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''"/>
-  <param name="BR-10" value="ram:BuyerTradeParty/ram:PostalTradeAddress"/>
-  <param name="BR-11" value="ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''"/>
+  <param name="BR-08" value="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress"/>
+  <param name="BR-09" value="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''"/>
+  <param name="BR-10" value="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress"/>
+  <param name="BR-11" value="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''"/>
   <param name="BR-12" value="(ram:LineTotalAmount)"/>
   <param name="BR-13" value="(ram:TaxBasisTotalAmount)"/>
   <param name="BR-14" value="(ram:GrandTotalAmount)"/>
@@ -264,10 +264,10 @@
   <param name="Tax_Total " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]"/>
   <param name="Tax_subtotal " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>
   
-  <param name="VATS_Line " value="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']/"/>
+  <param name="VATS_Line " value="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']"/>
   <param name="VATS " value="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[.='S']"/>
                       
-  <param name="VATS_Allowance " value="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='false']/ram:CategoryTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']/"/>
+  <param name="VATS_Allowance " value="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='false']/ram:CategoryTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']"/>
   <param name="VATS_Charge " value="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator='true']/ram:CategoryTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']"/>
   <param name="VATAF_Line " value="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'L'][upper-case(ram:TypeCode) = 'VAT']"/>
   <param name="VATAF " value="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'L'][upper-case(ram:TypeCode) = 'VAT']"/>
