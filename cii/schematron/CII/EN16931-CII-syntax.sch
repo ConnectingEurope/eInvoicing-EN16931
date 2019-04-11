@@ -150,7 +150,7 @@
     <param name="CII-SR-118" value="not(ram:GrossPriceProductTradePrice/ram:OrderUnitConversionFactorNumeric)"/>
     <param name="CII-SR-439" value="count(ram:NetPriceProductTradePrice/ram:ChargeAmount) = 1"/>   
     
-    <param name="CII-SR-119" value="(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false'] and ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount) or (not (ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ChargeIndicator) and not (ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount))"/>
+    <param name="CII-SR-119" value="(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator=false()] and ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount) or (not (ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ChargeIndicator) and not (ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount))"/>
 	<param name="CII-SR-120" value="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ID)"/>
 	<param name="CII-SR-121" value="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:SequenceNumeric)"/>
 	<param name="CII-SR-122" value="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:CalculationPercent)"/>
