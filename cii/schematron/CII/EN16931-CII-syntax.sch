@@ -534,19 +534,19 @@
     <param name="CII-DT-013" value="not(@languageID)"/>
     <param name="CII-DT-014" value="not(@languageLocaleID)"/>
 	<!-- ReferencedDocumentType -->
-	<param name="CII-DT-015" value="not(ram:URIID) or (name()='ram:AdditionalReferencedDocument' and ram:TypeCode='916') "/>
+	<param name="CII-DT-015" value="not(ram:URIID) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916') "/>
 	<param name="CII-DT-016" value="not(ram:StatusCode)"/>
 	<param name="CII-DT-017" value="not(ram:CopyIndicator)"/>
-	<param name="CII-DT-018" value="not(ram:TypeCode) or (name()='ram:AdditionalReferencedDocument') and (ram:TypeCode='50' or ram:TypeCode='130' or ram:TypeCode='916')"/>
+	<param name="CII-DT-018" value="not(ram:TypeCode) or (self::ram:AdditionalReferencedDocument) and (ram:TypeCode='50' or ram:TypeCode='130' or ram:TypeCode='916')"/>
 	<param name="CII-DT-019" value="not(ram:GlobalID)"/>
 	<param name="CII-DT-020" value="not(ram:RevisionID)"/>
-	<param name="CII-DT-021" value="not(ram:Name) or (name()='ram:AdditionalReferencedDocument' and ram:TypeCode='916')"/>
-	<param name="CII-DT-022" value="not(ram:AttachmentBinaryObject) or (name()='ram:AdditionalReferencedDocument' and ram:TypeCode='916')"/>
+	<param name="CII-DT-021" value="not(ram:Name) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')"/>
+	<param name="CII-DT-022" value="not(ram:AttachmentBinaryObject) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')"/>
 	<param name="CII-DT-023" value="not(ram:Information)"/>
-	<param name="CII-DT-024" value="not(ram:ReferenceTypeCode) or (name()='ram:AdditionalReferencedDocument' and ram:TypeCode='130')"/>
+	<param name="CII-DT-024" value="not(ram:ReferenceTypeCode) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='130')"/>
 	<param name="CII-DT-025" value="not(ram:SectionName)"/>
 	<param name="CII-DT-026" value="not(ram:PreviousRevisionID)"/>
-	<param name="CII-DT-027" value="not(ram:FormattedIssueDateTime) or name()='ram:InvoiceReferencedDocument'"/>
+	<param name="CII-DT-027" value="not(ram:FormattedIssueDateTime) or self::ram:InvoiceReferencedDocument"/>
 	<param name="CII-DT-028" value="not(ram:EffectiveSpecifiedPeriod)"/>
 	<param name="CII-DT-029" value="not(ram:IssuerTradeParty)"/>
 	<param name="CII-DT-030" value="not(ram:AttachedSpecifiedBinaryFile)"/>
@@ -574,8 +574,8 @@
 	<param name="CII-DT-049" value="not(ram:CurrencyCode)"/>
 	<param name="CII-DT-050" value="not(ram:Jurisdiction)"/>
 	<param name="CII-DT-051" value="not(ram:CustomsDutyIndicator)"/>
-	<param name="CII-DT-052" value="not(ram:ExemptionReasonCode) or name()='ram:ApplicableTradeTax'"/>
-	<param name="CII-DT-098" value="not(ram:ExemptionReason) or name()='ram:ApplicableTradeTax'"/>
+	<param name="CII-DT-052" value="not(ram:ExemptionReasonCode) or self::ram:ApplicableTradeTax"/>
+	<param name="CII-DT-098" value="not(ram:ExemptionReason) or self::ram:ApplicableTradeTax"/>
 	<param name="CII-DT-053" value="not(ram:TaxBasisAllowanceRate)"/>
 	<param name="CII-DT-054" value="not(ram:TaxPointDate)  or (ancestor::ram:ApplicableHeaderTradeSettlement)"/>
 	<param name="CII-DT-055" value="not(ram:Type)"/>
