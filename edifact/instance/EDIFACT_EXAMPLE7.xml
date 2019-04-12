@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<M_INVOIC>
+<M_INVOIC  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../schema/INVOIC_D14B_ISO20625.xsd">
 	<S_UNH>
 		<D_0062>INVOICE_test_7</D_0062>
 		<C_S009>
