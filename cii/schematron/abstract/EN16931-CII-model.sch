@@ -145,6 +145,7 @@
   </rule>
   <rule context="$Payment_instructions ">
     <assert test="$BR-49" flag="fatal" id="BR-49">[BR-49]-A Payment instruction (BG-16) shall specify the Payment means type code (BT-81).</assert>
+    <assert test="$BR-CO-27" flag="fatal" id="BR-CO-27">[BR-CO-27]- Either the IBAN or a Proprietary ID (BT-84) shall be used.</assert>
   </rule>
   <rule context="$Preceding_Invoice ">
     <assert test="$BR-55" flag="fatal" id="BR-55">[BR-55]-Each Preceding Invoice reference (BG-3) shall contain a Preceding Invoice reference (BT-25).</assert>
