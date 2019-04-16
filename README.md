@@ -80,12 +80,12 @@ For the Java projects contained in this repository, please consider the followin
  
 ## Create XSLTs from Schematrons
   
-Invoke `mvn process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
+Invoke `mvn -f pom-xslt.xml process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
 Don't forget to update the license headers afterwards (see below).
  
 ## Check if the examples files match the rules from the XSLTs
   
-Invoke `mvn validate` after re-creating the XSLTs (see above).
+Invoke `mvn -f pom-validate.xml validate` after re-creating the XSLTs (see above).
  
 ## Update the license headers
 
