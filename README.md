@@ -93,5 +93,5 @@ The template for the license header resides in the file `templates/license-templ
 To add the license header to all relevant files invoke the following command:
 
 ```
-mvn license:format
+mvn -f pom-license.xml license:format
 ```
