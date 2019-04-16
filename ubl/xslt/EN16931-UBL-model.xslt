@@ -984,9 +984,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate) and (cbc:IssueDate > cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate)) or not(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate))" />
+      <xsl:when test="(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate) and (xs:date(cbc:IssueDate) > xs:date(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate))) or not(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate) and (cbc:IssueDate > cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate)) or not(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate))">
+        <svrl:failed-assert test="(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate) and (xs:date(cbc:IssueDate) > xs:date(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate))) or not(exists(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate))">
           <xsl:attribute name="id">BR-58</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2058,9 +2058,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(exists(cbc:EndDate) and exists(cbc:StartDate) and (cbc:EndDate) >= (cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))" />
+      <xsl:when test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(exists(cbc:EndDate) and exists(cbc:StartDate) and (cbc:EndDate) >= (cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">
+        <svrl:failed-assert test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">
           <xsl:attribute name="id">BR-30</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2094,9 +2094,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(exists(cbc:EndDate) and exists(cbc:StartDate) and (cbc:EndDate) >= (cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))" />
+      <xsl:when test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(exists(cbc:EndDate) and exists(cbc:StartDate) and (cbc:EndDate) >= (cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">
+        <svrl:failed-assert test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">
           <xsl:attribute name="id">BR-29</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -3820,6 +3820,21 @@
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
           <svrl:text>[UBL-CR-001]-A UBL invoice should not include extensions</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cbc:UBLVersionID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cbc:UBLVersionID)">
+          <xsl:attribute name="id">UBL-CR-002</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-002]-A UBL invoice should not include the UBLVersionID</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -14098,6 +14113,21 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="(count(cac:PaymentMeans/cbc:PaymentMeansCode/@name) &lt;=1)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="(count(cac:PaymentMeans/cbc:PaymentMeansCode/@name) &lt;=1)">
+          <xsl:attribute name="id">UBL-SR-46</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-SR-46]-Payment means text shall occur maximum once</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:apply-templates mode="M12" select="*" />
   </xsl:template>
 
@@ -14672,9 +14702,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="((not(contains(normalize-space(.), ' ')) and contains(' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 ZZZ ', concat(' ', normalize-space(.), ' '))))" />
+      <xsl:when test="((not(contains(normalize-space(.), ' ')) and contains(' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 ZZZ ', concat(' ', normalize-space(.), ' '))))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="((not(contains(normalize-space(.), ' ')) and contains(' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 ZZZ ', concat(' ', normalize-space(.), ' '))))">
+        <svrl:failed-assert test="((not(contains(normalize-space(.), ' ')) and contains(' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 ZZZ ', concat(' ', normalize-space(.), ' '))))">
           <xsl:attribute name="id">BR-CL-19</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
