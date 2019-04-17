@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (C) 2016-2018 Oriol Bausà, Andreas Pelekies, Philip Helger
+    Copyright (C) 2016-2019 Oriol Bausà, Andreas Pelekies, Philip Helger
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -35,9 +35,6 @@
   <phase id="EN16931model_phase">
     <active pattern="UBL-model"/>
   </phase>
-  <phase id="codelist_phase">
-    <active pattern="Codesmodel"/>
-  </phase>
   <!-- Abstract CEN BII patterns -->
   <!-- ========================= -->
   <include href="abstract/EN16931-model.sch"/>
@@ -48,5 +45,6 @@
   <include href="UBL/EN16931-UBL-syntax.sch"/>
   <!-- Code Lists Binding rules -->
   <!-- ======================== -->
-  <include href="codelist/EN16931-UBL-codes.sch"/>
+  <include href="codelist/EN16931-UBL-codes-contexts.sch"/>
+  <include href="../../common/schematron/codelist/EN16931-UBL-codes.sch"/>
 </schema>

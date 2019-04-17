@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (C) 2016-2018 Oriol Bausà, Andreas Pelekies, Philip Helger
+    Copyright (C) 2016-2019 Oriol Bausà, Andreas Pelekies, Philip Helger
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -40,9 +40,6 @@
   <phase id="EN16931-model-phase">
     <active pattern="EN16931-CII-Model"/>
   </phase>
-  <phase id="codelist_phase">
-    <active pattern="EN16931-Codes"/>
-  </phase>
   <phase id="syntax_phase">
     <active pattern="EN16931-CII-Syntax"/>
   </phase>
@@ -56,5 +53,6 @@
   <include href="CII/EN16931-CII-syntax.sch"/>
   <!-- Code Lists Binding rules -->
   <!-- ======================== -->
-  <include href="codelist/EN16931-CII-codes.sch"/>
+  <include href="codelist/EN16931-CII-codes-contexts.sch"/>
+  <include href="../../common/schematron/codelist/EN16931-CII-codes.sch"/>
 </schema>

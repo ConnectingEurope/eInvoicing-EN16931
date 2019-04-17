@@ -75,7 +75,7 @@
             <configuration>
               <xmlDirectory>ubl/examples</xmlDirectory>
               <schematronProcessingEngine>XSLT</schematronProcessingEngine>
-              <schematronFile>ubl/xslt/EN16931-UBL-model.xslt</schematronFile>
+              <schematronFile>ubl/xslt/EN16931-UBL-validation.xslt</schematronFile>
             </configuration>
           </execution>
         </executions>
