@@ -227,7 +227,7 @@
                     <ram:URIID schemeID="email">info@selco.nl</ram:URIID>
                 </ram:URIUniversalCommunication>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VAT">NL16356706</ram:ID>
+                    <ram:ID schemeID="VA">NL16356706</ram:ID>
                 </ram:SpecifiedTaxRegistration>
                 <ram:SpecifiedTaxRegistration>
                     <ram:ID schemeID="FC">NL16356706</ram:ID>
@@ -261,7 +261,7 @@
                     <ram:URIID schemeID="email">info@buyercompany.dk</ram:URIID>
                 </ram:URIUniversalCommunication>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VAT">DK16356607</ram:ID>
+                    <ram:ID schemeID="VA">DK16356607</ram:ID>
                 </ram:SpecifiedTaxRegistration>
             </ram:BuyerTradeParty>
             <ram:SellerTaxRepresentativeTradeParty>
@@ -275,7 +275,7 @@
                     <ram:CountrySubDivisionName>Jutland</ram:CountrySubDivisionName>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VAT">DK16356609</ram:ID>
+                    <ram:ID schemeID="VA">DK16356609</ram:ID>
                 </ram:SpecifiedTaxRegistration>
             </ram:SellerTaxRepresentativeTradeParty>
             <ram:SellerOrderReferencedDocument>
