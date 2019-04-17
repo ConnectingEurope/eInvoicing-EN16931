@@ -87,7 +87,7 @@ het factuurnummer. Het bankrekeningnummer is 37.78.15.500, Rabobank, t.n.v. Blue
                     <ram:CountryID>NL</ram:CountryID>
                 </ram:PostalTradeAddress>
                 <ram:SpecifiedTaxRegistration>
-                    <ram:ID schemeID="VAT">NL809163160B01</ram:ID>
+                    <ram:ID schemeID="VA">NL809163160B01</ram:ID>
                 </ram:SpecifiedTaxRegistration>
             </ram:SellerTradeParty>
             <ram:BuyerTradeParty>
