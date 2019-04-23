@@ -399,6 +399,8 @@
 	<param name="CII-SR-336" value="not(ram:ConsumptionReportReferencedDocument)"/>
 	<param name="CII-SR-337" value="not(ram:PreviousDeliverySupplyChainEvent)"/>
 	<param name="CII-SR-338" value="not(ram:PackingListReferencedDocument)"/>
+	<param name="CII-SR-449" value="(not(ram:ShipToTradeParty/ram:ID) and ram:ShipToTradeParty/ram:GlobalID) or (ram:ShipToTradeParty/ram:ID and not(ram:ShipToTradeParty/ram:GlobalID)) or (not(ram:ShipToTradeParty/ram:ID) and not(ram:ShipToTradeParty/ram:GlobalID))"/>
+	
 	<!--  ApplicableHeaderTradeSettlement -->
 	<param name="CII-SR-339" value="not(ram:DuePayableAmount)"/>
 	<param name="CII-SR-340" value="not(ram:CreditorReferenceTypeCode)"/>

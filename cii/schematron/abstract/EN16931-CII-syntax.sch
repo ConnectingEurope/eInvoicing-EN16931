@@ -417,7 +417,7 @@
 		<assert test="$CII-SR-336" flag="warning" id="CII-SR-336">[CII-SR-336] - ConsumptionReportReferencedDocument should not be present</assert>
 		<assert test="$CII-SR-337" flag="warning" id="CII-SR-337">[CII-SR-337] - PreviousDeliverySupplyChainEvent should not be present</assert>
 		<assert test="$CII-SR-338" flag="warning" id="CII-SR-338">[CII-SR-338] - PackingListReferencedDocument should not be present</assert>
-		
+		<assert test="$CII-SR-449" flag="warning" id="CII-SR-449">[CII-SR-449] - Only the ID or the Global ID should be present</assert>
 	</rule>
 	<rule context="$ApplicableHeaderTradeSettlement ">
 		<assert test="$CII-SR-339" flag="warning" id="CII-SR-339">[CII-SR-339] - DuePayableAmount should not be present</assert>
