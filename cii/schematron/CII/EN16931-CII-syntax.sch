@@ -364,7 +364,8 @@
 	<param name="CII-SR-306" value="not(ram:PurchaseConditionsReferencedDocument)"/>
 	<param name="CII-SR-307" value="not(ram:SpecifiedProcuringProject/ram:Description)"/>
 	<param name="CII-SR-448" value="not(ram:UltimateCustomerOrderReferencedDocument)"/>
-
+	<param name="CII-SR-450" value="(not(ram:BuyerTradeParty/ram:ID) and ram:BuyerTradeParty/ram:GlobalID) or (ram:BuyerTradeParty/ram:ID and not(ram:BuyerTradeParty/ram:GlobalID)) or (not(ram:BuyerTradeParty/ram:ID) and not(ram:BuyerTradeParty/ram:GlobalID))"/>
+	
 	<!-- ApplicableHeaderTradeDelivery -->
 	<param name="CII-SR-308" value="not(ram:RelatedSupplyChainConsignment)"/>
 	<param name="CII-SR-309" value="not(ram:ShipToTradeParty/ram:RoleCode)"/>

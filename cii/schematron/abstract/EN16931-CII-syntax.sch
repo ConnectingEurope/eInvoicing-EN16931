@@ -378,7 +378,7 @@
 		<assert test="$CII-SR-306" flag="warning" id="CII-SR-306">[CII-SR-306] - PurchaseConditionsReferencedDocument should not be present</assert>
 		<assert test="$CII-SR-307" flag="warning" id="CII-SR-307">[CII-SR-307] - Description should not be present</assert>
 		<assert test="$CII-SR-448" flag="warning" id="CII-SR-448">[CII-SR-448] - UltimateCustomerOrderReferencedDocument should not be present</assert>
-		
+		<assert test="$CII-SR-450" flag="warning" id="CII-SR-450">[CII-SR-450] - Only one  buyer identifier should be present (either the ID or the Global ID)</assert>
 		
 	</rule>
 	<rule context="$ApplicableHeaderTradeDelivery ">
@@ -417,7 +417,7 @@
 		<assert test="$CII-SR-336" flag="warning" id="CII-SR-336">[CII-SR-336] - ConsumptionReportReferencedDocument should not be present</assert>
 		<assert test="$CII-SR-337" flag="warning" id="CII-SR-337">[CII-SR-337] - PreviousDeliverySupplyChainEvent should not be present</assert>
 		<assert test="$CII-SR-338" flag="warning" id="CII-SR-338">[CII-SR-338] - PackingListReferencedDocument should not be present</assert>
-		<assert test="$CII-SR-449" flag="warning" id="CII-SR-449">[CII-SR-449] - Only the ID or the Global ID should be present</assert>
+		<assert test="$CII-SR-449" flag="warning" id="CII-SR-449">[CII-SR-449] - Only one delivery to location identifier should be present (either the ID or the Global ID)</assert>
 	</rule>
 	<rule context="$ApplicableHeaderTradeSettlement ">
 		<assert test="$CII-SR-339" flag="warning" id="CII-SR-339">[CII-SR-339] - DuePayableAmount should not be present</assert>
