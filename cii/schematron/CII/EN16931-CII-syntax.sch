@@ -430,6 +430,7 @@
 	<param name="CII-SR-362" value="not(ram:PayeeTradeParty/ram:SpecifiedTaxRegistration)"/>
 	<param name="CII-SR-363" value="not(ram:PayeeTradeParty/ram:EndPointURIUniversalCommunication)"/>
 	<param name="CII-SR-364" value="not(ram:PayeeTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)"/>
+	<param name="CII-SR-451" value="(not(ram:PayeeTradeParty/ram:ID) and ram:PayeeTradeParty/ram:GlobalID) or (ram:PayeeTradeParty/ram:ID and not(ram:PayeeTradeParty/ram:GlobalID)) or (not(ram:PayeeTradeParty/ram:ID) and not(ram:PayeeTradeParty/ram:GlobalID))"/>
 	
 	<param name="CII-SR-365" value="not(ram:PayerTradeParty)"/>
 	<param name="CII-SR-366" value="not(ram:TaxApplicableTradeCurrencyExchange)"/>

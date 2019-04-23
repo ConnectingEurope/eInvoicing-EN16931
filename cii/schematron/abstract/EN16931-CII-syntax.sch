@@ -447,6 +447,7 @@
 		<assert test="$CII-SR-362" flag="warning" id="CII-SR-362">[CII-SR-362] - SpecifiedTaxRegistration should not be present</assert>
 		<assert test="$CII-SR-363" flag="warning" id="CII-SR-363">[CII-SR-363] - EndPointURIUniversalCommunication should not be present</assert>
 		<assert test="$CII-SR-364" flag="warning" id="CII-SR-364">[CII-SR-364] - LogoAssociatedSpecifiedBinaryFile should not be present</assert>
+		<assert test="$CII-SR-451" flag="warning" id="CII-SR-451">[CII-SR-451] - Only one payee identifier should be present (either the ID or the Global ID)</assert>
 		
 		<assert test="$CII-SR-365" flag="warning" id="CII-SR-365">[CII-SR-365] - PayerTradeParty should not be present</assert>
 		<assert test="$CII-SR-366" flag="warning" id="CII-SR-366">[CII-SR-366] - TaxApplicableTradeCurrencyExchange should not be present</assert>
