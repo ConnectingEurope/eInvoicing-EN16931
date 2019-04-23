@@ -731,6 +731,7 @@
     <assert test="$UBL-SR-44" flag="warning" id="UBL-SR-44">[UBL-SR-44]-Payment ID shall occur maximum once</assert>
     <assert test="$UBL-SR-45" flag="warning" id="UBL-SR-45">[UBL-SR-45]-Due Date shall occur maximum once</assert>    
     <assert test="$UBL-SR-46" flag="warning" id="UBL-SR-46">[UBL-SR-46]-Payment means text shall occur maximum once</assert>
+    <assert test="$UBL-SR-47" flag="warning" id="UBL-SR-47">[UBL-SR-47]-When there are more than one payment means code, they shall be equal</assert>
   </rule>
   <rule context="$Invoice_line">
     <assert test="$UBL-SR-34" flag="warning" id="UBL-SR-34">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>
