@@ -41,6 +41,7 @@
       <plugin>
         <groupId>com.helger.maven</groupId>
         <artifactId>ph-schematron-maven-plugin</artifactId>
+        <version>5.0.8</version>
         <executions>
           <execution>
             <id>cii</id>
