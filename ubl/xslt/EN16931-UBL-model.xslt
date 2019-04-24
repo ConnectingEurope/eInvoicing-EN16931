@@ -13471,6 +13471,246 @@
 
 		<!--ASSERT -->
 <xsl:choose>
+      <xsl:when test="not(cbc:CustomizationID/@schemeID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cbc:CustomizationID/@schemeID)">
+          <xsl:attribute name="id">UBL-CR-648</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-648]-A UBL invoice should not include the CustomizationID scheme identifier</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cbc:ProfileID/@schemeID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cbc:ProfileID/@schemeID)">
+          <xsl:attribute name="id">UBL-CR-649</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-649]-A UBL invoice should not include the ProfileID scheme identifier</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cbc:ID/@schemeID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cbc:ID/@schemeID)">
+          <xsl:attribute name="id">UBL-CR-650</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-650]-A UBL invoice shall not include the Invoice ID scheme identifier</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cbc:SalesOrderID/@schemeID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cbc:SalesOrderID/@schemeID)">
+          <xsl:attribute name="id">UBL-CR-651</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-651]-A UBL invoice should not include the SalesOrderID scheme identifier</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(//cac:PartyTaxScheme/cbc:CompanyID/@schemeID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(//cac:PartyTaxScheme/cbc:CompanyID/@schemeID)">
+          <xsl:attribute name="id">UBL-CR-652</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-652]-A UBL invoice should not include the PartyTaxScheme CompanyID scheme identifier</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cac:PaymentMeans/cbc:PaymentID/@schemeID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cac:PaymentMeans/cbc:PaymentID/@schemeID)">
+          <xsl:attribute name="id">UBL-CR-653</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-653]-A UBL invoice should not include the PaymentID scheme identifier</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID/@schemeID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID/@schemeID)">
+          <xsl:attribute name="id">UBL-CR-654</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-654]-A UBL invoice should not include the PayeeFinancialAccount scheme identifier</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID/@schemeID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID/@schemeID)">
+          <xsl:attribute name="id">UBL-CR-655</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-655]-A UBL invoice shall not include the FinancialInstitutionBranch ID scheme identifier</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cbc:InvoiceTypeCode/@listID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cbc:InvoiceTypeCode/@listID)">
+          <xsl:attribute name="id">UBL-CR-656</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-656]-A UBL invoice should not include the InvoiceTypeCode listID</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cbc:DocumentCurrencyCode/@listID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cbc:DocumentCurrencyCode/@listID)">
+          <xsl:attribute name="id">UBL-CR-657</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-657]-A UBL invoice should not include the DocumentTypeCode listID</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cbc:TaxCurrencyCode/@listID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cbc:TaxCurrencyCode/@listID)">
+          <xsl:attribute name="id">UBL-CR-658</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-658]-A UBL invoice should not include the TaxCurrencyCode listID</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cac:AdditionalDocumentReference/cbc:DocumentTypeCode/@listID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cac:AdditionalDocumentReference/cbc:DocumentTypeCode/@listID)">
+          <xsl:attribute name="id">UBL-CR-659</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-659]-A UBL invoice shall not include the AdditionalDocumentReference DocumentTypeCode listID</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(//cac:Country/cbc:IdentificationCode/@listID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(//cac:Country/cbc:IdentificationCode/@listID)">
+          <xsl:attribute name="id">UBL-CR-660</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-660]-A UBL invoice should not include the Country Identification code listID</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cac:PaymentMeans/cbc:PaymentMeansCode/@listID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cac:PaymentMeans/cbc:PaymentMeansCode/@listID)">
+          <xsl:attribute name="id">UBL-CR-661</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-661]-A UBL invoice should not include the PaymentMeansCode listID</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(//cbc:AllowanceChargeReasonCode/@listID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(//cbc:AllowanceChargeReasonCode/@listID)">
+          <xsl:attribute name="id">UBL-CR-662</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-662]-A UBL invoice should not include the AllowanceChargeReasonCode listID</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(//@unitCodeListID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(//@unitCodeListID)">
+          <xsl:attribute name="id">UBL-CR-663</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-663]-A UBL invoice should not include the unitCodeListID</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
       <xsl:when test="not(//@schemeName)" />
       <xsl:otherwise>
         <svrl:failed-assert test="not(//@schemeName)">
@@ -14128,6 +14368,21 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="(count(cac:PaymentMeans) > 1 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode ))  or (count(cac:PaymentMeans) &lt; 1)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="(count(cac:PaymentMeans) > 1 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode )) or (count(cac:PaymentMeans) &lt; 1)">
+          <xsl:attribute name="id">UBL-SR-47</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-SR-47]-When there are more than one payment means code, they shall be equal</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:apply-templates mode="M12" select="*" />
   </xsl:template>
 
@@ -14405,9 +14660,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="((not(contains(normalize-space(.), ' ')) and contains(' 80 81 82 83 84 130 202 203 204 211 261 262 295 296 308 325 326 380 381 383 384 385 386 387 388 389 390 393 394 395 396 420 456 457 458 527 532 575 623 633 751 780 935  ', concat(' ', normalize-space(.), ' '))))" />
+      <xsl:when test="(self::cbc:InvoiceTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 80 82 84 130 202 203 204 211 295 325 326 380 383 384 385 386 387 388 389 390 393 394 395 456 457 527 575 623 633 751 780 935 ', concat(' ', normalize-space(.), ' '))))) or (self::cbc:CreditNoteTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 81 83 261 262 296 308 381 396 420 458 532 ', concat(' ', normalize-space(.), ' ')))))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="((not(contains(normalize-space(.), ' ')) and contains(' 80 81 82 83 84 130 202 203 204 211 261 262 295 296 308 325 326 380 381 383 384 385 386 387 388 389 390 393 394 395 396 420 456 457 458 527 532 575 623 633 751 780 935 ', concat(' ', normalize-space(.), ' '))))">
+        <svrl:failed-assert test="(self::cbc:InvoiceTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 80 82 84 130 202 203 204 211 295 325 326 380 383 384 385 386 387 388 389 390 393 394 395 456 457 527 575 623 633 751 780 935 ', concat(' ', normalize-space(.), ' '))))) or (self::cbc:CreditNoteTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 81 83 261 262 296 308 381 396 420 458 532 ', concat(' ', normalize-space(.), ' ')))))">
           <xsl:attribute name="id">BR-CL-01</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
