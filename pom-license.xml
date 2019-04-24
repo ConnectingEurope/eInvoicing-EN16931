@@ -45,7 +45,7 @@
         <configuration>
           <header>templates/license-template.txt</header>
           <excludes>
-            <exclude>**/.git</exclude>
+            <exclude>**/.git*</exclude>
             <exclude>**/LICENSE</exclude>
             <exclude>**/NOTICE</exclude>
             <exclude>**/*.pdf</exclude>
@@ -56,7 +56,6 @@
             <exclude>cii/schema/**</exclude>
             <exclude>edifact/examples/**</exclude>
             <exclude>edifact/schema/**</exclude>
-            <exclude>ubl/examples/**</exclude>
           </excludes>
         </configuration>
       </plugin>
