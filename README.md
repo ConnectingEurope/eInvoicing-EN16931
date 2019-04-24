@@ -75,7 +75,6 @@ A simple demo implementation maintained by the project team can be found at http
 
 For the Java projects contained in this repository, please consider the following prerequisites
   * Java JDK 1.8.x latest (was tested only with a JDK and not with a JRE)
-  * Eclipse 4.6.x latest (m2e - Maven for Eclipse - must be contained)
   * For building on the commandline use Apache Maven 3.x (latest) 
  
 ## Create XSLTs from Schematrons

@@ -1,6 +1,7 @@
 <!--
 
-    Copyright (C) 2016-2018 Oriol Bausà, Andreas Pelekies, Philip Helger
+    Copyright (C) 2016-2019 Oriol Bausà, Andreas Pelekies, Philip Helger
+    and contributors.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -15,7 +16,6 @@
     limitations under the License.
 
 -->
-
 <!-- 
         Syntax binding template 
     
