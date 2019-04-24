@@ -51,7 +51,7 @@
               <goal>validate</goal>
             </goals>
             <configuration>
-              <xmlDirectory>cii/instance</xmlDirectory>
+              <xmlDirectory>cii/examples</xmlDirectory>
               <schematronProcessingEngine>XSLT</schematronProcessingEngine>
               <schematronFile>cii/xslt/EN16931-CII-validation.xslt</schematronFile>
             </configuration>
@@ -63,7 +63,7 @@
               <goal>validate</goal>
             </goals>
             <configuration>
-              <xmlDirectory>edifact/instance</xmlDirectory>
+              <xmlDirectory>edifact/examples</xmlDirectory>
               <schematronProcessingEngine>XSLT</schematronProcessingEngine>
               <schematronFile>edifact/xslt/EN16931-EDIFACT-validation.xslt</schematronFile>
             </configuration>
