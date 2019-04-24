@@ -14389,9 +14389,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(count(cac:PaymentMeans) > 1 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode ))  or (count(cac:PaymentMeans) &lt; 1)" />
+      <xsl:when test="(count(cac:PaymentMeans) > 1 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode ))  or (count(cac:PaymentMeans) &lt;= 1)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(count(cac:PaymentMeans) > 1 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode )) or (count(cac:PaymentMeans) &lt; 1)">
+        <svrl:failed-assert test="(count(cac:PaymentMeans) > 1 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode )) or (count(cac:PaymentMeans) &lt;= 1)">
           <xsl:attribute name="id">UBL-SR-47</xsl:attribute>
           <xsl:attribute name="flag">warning</xsl:attribute>
           <xsl:attribute name="location">
