@@ -41,8 +41,8 @@
     <plugins>
       <plugin>
         <groupId>com.helger.maven</groupId>
-        <artifactId>ph-sch2xslt-maven-plugin</artifactId>
-        <version>5.0.8</version>
+        <artifactId>ph-schematron-maven-plugin</artifactId>
+        <version>5.0.9</version>
         <executions>
 <!--
 -->

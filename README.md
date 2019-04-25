@@ -78,6 +78,12 @@ For the Java projects contained in this repository, please consider the followin
   
 Invoke `mvn -f pom-xslt.xml process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
 Don't forget to update the license headers afterwards (see below).
+
+## Create preprocessed Schematrons
+
+After creating XSLTs, the preprocess Schematrons should be created.
+Preprocessing resolves all includes, abstract rules etc.
+Invoke `mvn -f pom-preprocess.xml generate-resources` to create all preprocessed Schematron files.
  
 ## Check if the examples files match the rules from the XSLTs
   
@@ -86,8 +92,4 @@ Invoke `mvn -f pom-validate.xml validate` after re-creating the XSLTs (see above
 ## Update the license headers
 
 The template for the license header resides in the file `templates/license-template.txt`.
-To add the license header to all relevant files invoke the following command:
-
-```
-mvn -f pom-license.xml license:format
-```
+To add the license header to all relevant files invoke `mvn -f pom-license.xml license:format`

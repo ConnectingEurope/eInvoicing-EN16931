@@ -42,13 +42,10 @@
       <plugin>
         <groupId>com.helger.maven</groupId>
         <artifactId>ph-schematron-maven-plugin</artifactId>
-        <version>5.0.9-SNAPSHOT</version>
+        <version>5.0.9</version>
         <executions>
-<!--
--->
           <execution>
             <id>cii</id>
-            
             <goals>
               <goal>preprocess</goal>
             </goals>
@@ -57,8 +54,6 @@
               <targetFile>${basedir}/cii/schematron/preprocessed/EN16931-CII-validation-preprocessed.sch</targetFile>
             </configuration>
           </execution>
-<!--
--->
           <execution>
             <id>edifact</id>
             <goals>
@@ -69,8 +64,6 @@
               <targetFile>${basedir}/edifact/schematron/preprocessed/EN16931-EDIFACT-validation-preprocessed.sch</targetFile>
             </configuration>
           </execution>
-<!--
--->
           <execution>
             <id>ubl</id>
             <goals>
