@@ -704,6 +704,7 @@
     <assert test="$UBL-CR-661" flag="warning" id="UBL-CR-661">[UBL-CR-661]-A UBL invoice should not include the PaymentMeansCode listID</assert>
     <assert test="$UBL-CR-662" flag="warning" id="UBL-CR-662">[UBL-CR-662]-A UBL invoice should not include the AllowanceChargeReasonCode listID</assert>
     <assert test="$UBL-CR-663" flag="warning" id="UBL-CR-663">[UBL-CR-663]-A UBL invoice should not include the unitCodeListID</assert>
+    <assert test="$UBL-CR-664" flag="warning" id="UBL-CR-664">[UBL-CR-664]-A UBL invoice should not include the FinancialInstitutionBranch FinancialInstitution</assert>
     
     <assert test="$UBL-DT-08" flag="warning" id="UBL-DT-08">[UBL-DT-08]-Scheme name attribute should not be present</assert>
     <assert test="$UBL-DT-09" flag="warning" id="UBL-DT-09">[UBL-DT-09]-Scheme agency name attribute should not be present</assert>
