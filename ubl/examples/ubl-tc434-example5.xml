@@ -79,7 +79,7 @@
     </cac:ProjectReference>
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="EMAIL">info@selco.nl</cbc:EndpointID>
+            <cbc:EndpointID schemeID="EM">info@selco.nl</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID schemeID="0088">5790000436101</cbc:ID>
             </cac:PartyIdentification>
@@ -122,7 +122,7 @@
     </cac:AccountingSupplierParty>
     <cac:AccountingCustomerParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="MAIL">info@buyercompany.dk</cbc:EndpointID>
+            <cbc:EndpointID schemeID="EM">info@buyercompany.dk</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID schemeID="0088">5790000436057</cbc:ID>
             </cac:PartyIdentification>
