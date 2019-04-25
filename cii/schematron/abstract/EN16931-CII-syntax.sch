@@ -548,12 +548,11 @@
         <assert test="$CII-DT-002" flag="fatal" id="CII-DT-002">[CII-DT-002] - schemeAgencyName should not be present</assert>
         <assert test="$CII-DT-003" flag="fatal" id="CII-DT-003">[CII-DT-003] - schemeDataURI should not be present</assert>
         <assert test="$CII-DT-004" flag="fatal" id="CII-DT-004">[CII-DT-004] - schemeURI should not be present</assert>
-    	<assert test="$CII-DT-097" flag="fatal" id="CII-DT-097">[CII-DT-097] - schemeVersionID should not be present</assert>
     </rule>
 	<rule context="$IDTypeNoAttributes ">
         <assert test="$CII-DT-005" flag="fatal" id="CII-DT-005">[CII-DT-005] - schemeID should not be present</assert>
         <assert test="$CII-DT-006" flag="fatal" id="CII-DT-006">[CII-DT-006] - schemeAgencyID should not be present</assert>
-        <assert test="$CII-DT-007" flag="fatal" id="CII-DT-007">[CII-DT-007] - schemeVersionID should not be present</assert>
+		<assert test="$CII-DT-007" flag="fatal" id="CII-DT-007">[CII-DT-007] - schemeVersionID should not be present</assert>
     </rule>
     <rule context="$TypeCodeType ">
         <assert test="$CII-DT-008" flag="fatal" id="CII-DT-008">[CII-DT-008] - name should not be present</assert>
@@ -564,6 +563,12 @@
         <assert test="$CII-DT-011" flag="fatal" id="CII-DT-011">[CII-DT-011] - listAgencyID should not be present</assert>
         <assert test="$CII-DT-012" flag="fatal" id="CII-DT-012">[CII-DT-012] - listVersionID should not be present</assert>
     </rule>
+	<rule context="$CategoryCodeNoAttributes ">
+		<assert test="$CII-DT-045" flag="warning" id="CII-DT-045">[CII-DT-045] - @listID should not be present</assert>
+		<assert test="$CII-DT-046" flag="warning" id="CII-DT-046">[CII-DT-046] - @listAgencyID should not be present</assert>
+		<assert test="$CII-DT-047" flag="warning" id="CII-DT-047">[CII-DT-047] - @listVersionID should not be present</assert>
+		<assert test="$CII-DT-048" flag="warning" id="CII-DT-048">[CII-DT-048] - @listURI should not be present</assert>
+	</rule>
     <rule context="$ReferencedDocumentType ">
         <assert test="$CII-DT-015" flag="fatal" id="CII-DT-015">[CII-DT-015] - URIID should not be present</assert>
         <assert test="$CII-DT-016" flag="fatal" id="CII-DT-016">[CII-DT-016] - StatusCode should not be present</assert>
@@ -601,10 +606,6 @@
         <assert test="$CII-DT-042" flag="warning" id="CII-DT-042">[CII-DT-042] - UnitBasisAmount should not be present</assert>
         <assert test="$CII-DT-043" flag="warning" id="CII-DT-043">[CII-DT-043] - LineTotalBasisAmount should not be present</assert>
         <assert test="$CII-DT-044" flag="warning" id="CII-DT-044">[CII-DT-044] - AllowanceChargeBasisAmount should not be present</assert>
-        <assert test="$CII-DT-045" flag="warning" id="CII-DT-045">[CII-DT-045] - @listID should not be present</assert>
-        <assert test="$CII-DT-046" flag="warning" id="CII-DT-046">[CII-DT-046] - @listAgencyID should not be present</assert>
-        <assert test="$CII-DT-047" flag="warning" id="CII-DT-047">[CII-DT-047] - @listVersionID should not be present</assert>
-        <assert test="$CII-DT-048" flag="warning" id="CII-DT-048">[CII-DT-048] - @listURI should not be present</assert>
         <assert test="$CII-DT-049" flag="warning" id="CII-DT-049">[CII-DT-049] - CurrencyCode should not be present</assert>
         <assert test="$CII-DT-050" flag="warning" id="CII-DT-050">[CII-DT-050] - Jurisdiction should not be present</assert>
         <assert test="$CII-DT-051" flag="warning" id="CII-DT-051">[CII-DT-051] - CustomsDutyIndicator should not be present</assert>
