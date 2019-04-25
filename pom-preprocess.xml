@@ -44,45 +44,42 @@
         <artifactId>ph-schematron-maven-plugin</artifactId>
         <version>5.0.9</version>
         <executions>
-<!--
--->
           <execution>
             <id>cii</id>
             <goals>
-              <goal>convert</goal>
+              <goal>preprocess</goal>
             </goals>
             <configuration>
-              <schematronDirectory>${basedir}/cii/schematron</schematronDirectory>
-              <xsltDirectory>${basedir}/cii/xslt</xsltDirectory>
+              <sourceFile>${basedir}/cii/schematron/EN16931-CII-validation.sch</sourceFile>
+              <targetFile>${basedir}/cii/schematron/preprocessed/EN16931-CII-validation-preprocessed.sch</targetFile>
             </configuration>
           </execution>
-<!--
--->
           <execution>
             <id>edifact</id>
             <goals>
-              <goal>convert</goal>
+              <goal>preprocess</goal>
             </goals>
             <configuration>
-              <schematronDirectory>${basedir}/edifact/schematron</schematronDirectory>
-              <xsltDirectory>${basedir}/edifact/xslt</xsltDirectory>
+              <sourceFile>${basedir}/edifact/schematron/EN16931-EDIFACT-validation.sch</sourceFile>
+              <targetFile>${basedir}/edifact/schematron/preprocessed/EN16931-EDIFACT-validation-preprocessed.sch</targetFile>
             </configuration>
           </execution>
-<!--
--->
           <execution>
             <id>ubl</id>
             <goals>
-              <goal>convert</goal>
+              <goal>preprocess</goal>
             </goals>
             <configuration>
-              <schematronDirectory>${basedir}/ubl/schematron</schematronDirectory>
-              <xsltDirectory>${basedir}/ubl/xslt</xsltDirectory>
+              <sourceFile>${basedir}/ubl/schematron/EN16931-UBL-validation.sch</sourceFile>
+              <targetFile>${basedir}/ubl/schematron/preprocessed/EN16931-UBL-validation-preprocessed.sch</targetFile>
             </configuration>
           </execution>
         </executions>
         <configuration>
-          <schematronPattern>*.sch</schematronPattern>
+          <keepTitles>false</keepTitles>
+          <keepDiagnostics>false</keepDiagnostics>
+          <keepReports>false</keepReports>
+          <keepEmptyPatterns>false</keepEmptyPatterns>
         </configuration>
       </plugin>
     </plugins>

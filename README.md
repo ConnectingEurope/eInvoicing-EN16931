@@ -12,21 +12,10 @@ For each syntax a separate folder exists where all related artefacts are to be p
 * `ubl` - UBL 2.1 (ISO/IEC 19845:2015) - EN mandatory syntax
   * UBL Website: https://www.oasis-open.org/committees/ubl/
   * Used XML Schemas: http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.zip
-  * Contact points
-    * Oriol Bausà (Rules)
-    * Siw Midtgard Meckelborg (Testing and QA)
 * `cii` - Cross Industry Invoice (D16B) - EN mandatory syntax
   * XML Schemas overview: http://www.unece.org/cefact/xml_schemas/index.html
   * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
-  * Contact points
-    * Andreas Pelekies
-    * Tayfun Mermer (Testing and QA)
 * `edifact` - UN/EDIFACT (and ISO 26025 based XML version) - EN optional syntax
-  * Contact points
-    * Andreas Pelekies
-    * Jörg Walther (XML Schema)
-    * Martin Krusch (Testing and QA)
-    * Philip Helger (Java applications)
     
 # Validation
 
@@ -50,6 +39,14 @@ A simple demo implementation maintained by the project team can be found at http
 
 # News and noteworthy
 
+* v1.2.0 - planned for 2019-04-26 (UBL and CII only)
+    * Note: this release does NOT contain the EDIFACT validation rules - its development is currently paused/stalled
+    * Note: this release is not backwards compatible, and the examples files were changed as well.
+    * See all fixed issues: https://github.com/CenPC434/validation/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.2
+    * The UBL ODS files were removed, because they were out of sync with the used rules
+    * The folder names for examples files were unified across the syntaxes
+    * The name of the UBL Schematron/XSLT files was changed from `EN16931-UBL-model.*` to `EN16931-UBL-validation.*`
+    
 * v1.1.0 - 2018-06-26 (UBL and CII only)
     * Note: this release does NOT contain the EDIFACT validation rules - its development is currently paused/stalled
     * New participant identifier schemes are supported
@@ -75,13 +72,18 @@ A simple demo implementation maintained by the project team can be found at http
 
 For the Java projects contained in this repository, please consider the following prerequisites
   * Java JDK 1.8.x latest (was tested only with a JDK and not with a JRE)
-  * Eclipse 4.6.x latest (m2e - Maven for Eclipse - must be contained)
   * For building on the commandline use Apache Maven 3.x (latest) 
  
 ## Create XSLTs from Schematrons
   
 Invoke `mvn -f pom-xslt.xml process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
 Don't forget to update the license headers afterwards (see below).
+
+## Create preprocessed Schematrons
+
+After creating XSLTs, the preprocess Schematrons should be created.
+Preprocessing resolves all includes, abstract rules etc.
+Invoke `mvn -f pom-preprocess.xml generate-resources` to create all preprocessed Schematron files.
  
 ## Check if the examples files match the rules from the XSLTs
   
@@ -90,8 +92,4 @@ Invoke `mvn -f pom-validate.xml validate` after re-creating the XSLTs (see above
 ## Update the license headers
 
 The template for the license header resides in the file `templates/license-template.txt`.
-To add the license header to all relevant files invoke the following command:
-
-```
-mvn -f pom-license.xml license:format
-```
+To add the license header to all relevant files invoke `mvn -f pom-license.xml license:format`
