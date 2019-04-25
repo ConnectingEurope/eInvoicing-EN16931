@@ -1053,6 +1053,7 @@
       <assert id="UBL-CR-661" flag="warning" test="not(cac:PaymentMeans/cbc:PaymentMeansCode/@listID)">[UBL-CR-661]-A UBL invoice should not include the PaymentMeansCode listID</assert>
       <assert id="UBL-CR-662" flag="warning" test="not(//cbc:AllowanceChargeReasonCode/@listID)">[UBL-CR-662]-A UBL invoice should not include the AllowanceChargeReasonCode listID</assert>
       <assert id="UBL-CR-663" flag="warning" test="not(//@unitCodeListID)">[UBL-CR-663]-A UBL invoice should not include the unitCodeListID</assert>
+      <assert id="UBL-CR-664" flag="warning" test="not(//cac:FinancialInstitution)">[UBL-CR-664]-A UBL invoice should not include the FinancialInstitutionBranch FinancialInstitution</assert>
       <assert id="UBL-DT-08" flag="warning" test="not(//@schemeName)">[UBL-DT-08]-Scheme name attribute should not be present</assert>
       <assert id="UBL-DT-09" flag="warning" test="not(//@schemeAgencyName)">[UBL-DT-09]-Scheme agency name attribute should not be present</assert>
       <assert id="UBL-DT-10" flag="warning" test="not(//@schemeDataURI)">[UBL-DT-10]-Scheme data uri attribute should not be present</assert>

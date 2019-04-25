@@ -13729,6 +13729,21 @@
 
 		<!--ASSERT -->
 <xsl:choose>
+      <xsl:when test="not(//cac:FinancialInstitution)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(//cac:FinancialInstitution)">
+          <xsl:attribute name="id">UBL-CR-664</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-CR-664]-A UBL invoice should not include the FinancialInstitutionBranch FinancialInstitution</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
       <xsl:when test="not(//@schemeName)" />
       <xsl:otherwise>
         <svrl:failed-assert test="not(//@schemeName)">
