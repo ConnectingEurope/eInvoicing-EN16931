@@ -53,6 +53,8 @@
             <exclude>**/*.docx</exclude>
             <exclude>**/*.ods</exclude>
             <exclude>**/*.TXT</exclude>
+            <exclude>**/*.cmd</exclude>
+            <exclude>**/*.sh</exclude>
             <exclude>cii/schema/**</exclude>
             <exclude>edifact/examples/**</exclude>
             <exclude>edifact/schema/**</exclude>
