@@ -1,10 +1,12 @@
 dist: xenial
 language: java
 
+install:
+  - mvn -f pom-xslt.xml process-resources
+
 script:
   - mvn -f pom-validate.xml validate
   
 cache:
   directories:
     - $HOME/.m2
-  
