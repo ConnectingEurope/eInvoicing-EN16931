@@ -2,7 +2,7 @@ dist: xenial
 language: java
 
 install:
-  - mvn -f pom-xslt.xml process-resources
+  - travis_wait mvn -f pom-xslt.xml process-resources
 
 script:
   - mvn -f pom-validate.xml validate
