@@ -63,10 +63,10 @@
   <param name="UBL-SR-41" value="((cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'] and not(cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'])) or (not(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']) and cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']) or (not(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']) and not(cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'])))"/>
   <param name="UBL-SR-42" value="(count(cac:PartyTaxScheme) &lt;= 2)"/>
   <param name="UBL-SR-43" value="((cbc:DocumentTypeCode='130') or (not(cbc:ID/@scheme) and not(cbc:DocumentTypeCode)))"/>
-  <param name="UBL-SR-44" value="(count(cac:PaymentMeans/cbc:PaymentID) &lt;=1)"/>
+  <param name="UBL-SR-44" value="((count(cac:PaymentMeans/cbc:PaymentID) = 2 and (cac:PaymentMeans[1]/cbc:PaymentID = cac:PaymentMeans[2]/cbc:PaymentID )) or count(cac:PaymentMeans/cbc:PaymentID) &lt;= 1)"/>
   <param name="UBL-SR-45" value="(count(cac:PaymentMeans/cbc:PaymentDueDate) &lt;=1)"/>
   <param name="UBL-SR-46" value="(count(cac:PaymentMeans/cbc:PaymentMeansCode/@name) &lt;=1)"/>
-  <param name="UBL-SR-47" value="(count(cac:PaymentMeans) &gt; 1 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode )) or (count(cac:PaymentMeans) &lt;= 1)"/>
+  <param name="UBL-SR-47" value="(count(cac:PaymentMeans) = 2 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode )) or (count(cac:PaymentMeans/cbc:PaymentMeansCode) &lt;= 1)"/>
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>
   <param name="UBL-DT-07" value="(@filename)"/>
