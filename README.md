@@ -39,6 +39,9 @@ A simple demo implementation maintained by the project team can be found at http
 
 # News and noteworthy
 
+* v1.2.1 - work in progress (UBL and CII only)
+    * See all fixed issues: https://github.com/CenPC434/validation/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.2.1
+
 * v1.2.0 - 2019-04-26 (UBL and CII only)
     * Note: this release does NOT contain the EDIFACT validation rules - its development is currently paused/stalled
     * Note: this release is not backwards compatible, and the examples files were changed as well.
