@@ -31,13 +31,12 @@
   xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
   queryBinding="xslt2">
   <title>EN16931 model bound to CII</title>
-  <ns prefix="rsm" uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"/>
-  <ns prefix="ccts"
-    uri="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"/>
-  <ns prefix="udt" uri="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"/>
-  <ns prefix="qdt" uri="urn:un:unece:uncefact:data:standard:QualifiedDataType:100"/>
-  <ns prefix="ram"
-    uri="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"/>
+  <ns prefix="rsm"  uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"/>
+  <ns prefix="ccts" uri="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"/>
+  <ns prefix="udt"  uri="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"/>
+  <ns prefix="qdt"  uri="urn:un:unece:uncefact:data:standard:QualifiedDataType:100"/>
+  <ns prefix="ram"  uri="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"/>
+  <ns prefix="xs"   uri="http://www.w3.org/2001/XMLSchema"/>
   <phase id="EN16931-model-phase">
     <active pattern="EN16931-CII-Model"/>
   </phase>
