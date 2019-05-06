@@ -39,7 +39,7 @@ A simple demo implementation maintained by the project team can be found at http
 
 # News and noteworthy
 
-* v1.2.1 - work in progress (UBL and CII only)
+* v1.2.1 - work in progress (UBL and CII only) - planned for 2019-05-10
     * See all fixed issues: https://github.com/CenPC434/validation/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.2.1
 
 * v1.2.0 - 2019-04-26 (UBL and CII only)
