@@ -112,7 +112,7 @@
         </cac:TaxCategory>
     </cac:AllowanceCharge>
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="DKK">225.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="DKK">305.00</cbc:TaxAmount>
         <cac:TaxSubtotal>
             <cbc:TaxableAmount currencyID="DKK">900.00</cbc:TaxableAmount>
             <cbc:TaxAmount currencyID="DKK">225.00</cbc:TaxAmount>
@@ -124,13 +124,24 @@
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="DKK">800.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="DKK">80.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>10</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
     </cac:TaxTotal>
     <cac:LegalMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="DKK">800.00</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="DKK">900.00</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="DKK">1125.00</cbc:TaxInclusiveAmount>
+        <cbc:LineExtensionAmount currencyID="DKK">1600.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="DKK">1700.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="DKK">2005.00</cbc:TaxInclusiveAmount>
         <cbc:ChargeTotalAmount currencyID="DKK">100.00</cbc:ChargeTotalAmount>
-        <cbc:PayableAmount currencyID="DKK">1125.00</cbc:PayableAmount>
+        <cbc:PayableAmount currencyID="DKK">2005.00</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <cac:InvoiceLine>
         <cbc:ID>1</cbc:ID>
@@ -142,6 +153,25 @@
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">800.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">2</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">800.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Description>Subscription fee 1st quarter</cbc:Description>
+            <cbc:Name>Paper subscription</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>10</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
