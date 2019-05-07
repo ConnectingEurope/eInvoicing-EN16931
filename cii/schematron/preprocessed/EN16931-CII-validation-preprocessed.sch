@@ -1,27 +1,10 @@
-<!--
-
-    Copyright (C) 2016-2019 Oriol Bausà, Andreas Pelekies, Philip Helger
-    and contributors.
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-            http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
--->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
   <ns prefix="rsm" uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" />
   <ns prefix="ccts" uri="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" />
   <ns prefix="udt" uri="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" />
   <ns prefix="qdt" uri="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" />
   <ns prefix="ram" uri="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" />
+  <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema" />
   <phase id="EN16931-model-phase">
     <active pattern="EN16931-CII-Model" />
   </phase>
