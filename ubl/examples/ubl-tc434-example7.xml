@@ -105,7 +105,6 @@
             <cbc:TaxAmount currencyID="SEK">0.00</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>O</cbc:ID>
-                <cbc:Percent>0</cbc:Percent>
                 <cbc:TaxExemptionReason>Tax</cbc:TaxExemptionReason>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
