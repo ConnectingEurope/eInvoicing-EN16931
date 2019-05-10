@@ -193,9 +193,6 @@
     <assert test="$BR-49" flag="fatal" id="BR-49">[BR-49]-A Payment instruction (BG-16) shall specify the Payment means type code (BT-81).</assert>
     <assert test="$BR-61" flag="fatal" id="BR-61">[BR-61]-If the Payment means type code (BT-81) means SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier (BT-84) shall be present.</assert>
   </rule>
-  <rule context="$Percent">
-    <assert test="$BR-66" flag="fatal" id="BR-66">[BR-66]-In the calculation of VAT the Invoice shall show a subtotal of the VAT taxable amount and the VAT tax amount for each VAT rate (i.e. each combination of the category code S and VAT tax rate on line level and for allowance and charges on document level).</assert>
-  </rule>
   <rule context="$Preceding_Invoice">
     <assert test="$BR-55" flag="fatal" id="BR-55">[BR-55]-Each Preceding Invoice reference (BG-3) shall contain a Preceding Invoice reference (BT-25).</assert>
   </rule>
