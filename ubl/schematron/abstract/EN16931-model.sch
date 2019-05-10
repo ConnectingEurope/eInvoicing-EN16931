@@ -195,7 +195,7 @@
     <assert test="$BR-61" flag="fatal" id="BR-61">[BR-61]-If the Payment means type code (BT-81) means SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier (BT-84) shall be present.</assert>
   </rule>
   <rule context="$Percent">
-    <assert test="$BR-66" flag="fatal" id="BR-66">[BR-66]-A tax percent is not found in the tax totals</assert>
+    <assert test="$BR-66" flag="fatal" id="BR-66">[BR-66]-In the calculation of VAT the Invoice shall show a subtotal of the VAT taxable amount and the VAT tax amount for each VAT rate (i.e. each combination of the category code S and VAT tax rate on line level and for allowance and charges on document level).</assert>
   </rule>
   <rule context="$Preceding_Invoice">
     <assert test="$BR-55" flag="fatal" id="BR-55">[BR-55]-Each Preceding Invoice reference (BG-3) shall contain a Preceding Invoice reference (BT-25).</assert>
@@ -225,7 +225,6 @@
     <assert test="$BR-46" flag="fatal" id="BR-46">[BR-46]-Each VAT breakdown (BG-23) shall have a VAT category tax amount (BT-117).</assert>
     <assert test="$BR-47" flag="fatal" id="BR-47">[BR-47]-Each VAT breakdown (BG-23) shall be defined through a VAT category code (BT-118).</assert>
     <assert test="$BR-48" flag="fatal" id="BR-48">[BR-48]-Each VAT breakdown (BG-23) shall have a VAT category rate (BT-119), except if the Invoice is not subject to VAT.</assert>
-    <assert test="$BR-67" flag="fatal" id="BR-67">[BR-67]-Each VAT breakdown percentage shall refer to an defined VAT percentage either in a line or in an allowance or charge</assert>
     <assert test="$BR-CO-17" flag="fatal" id="BR-CO-17">[BR-CO-17]-VAT category tax amount (BT-117) = VAT category taxable amount (BT-116) x (VAT category rate (BT-119) / 100), rounded to two decimals.</assert>
     <assert test="$BR-DEC-19" flag="fatal" id="BR-DEC-19">[BR-DEC-19]-The allowed maximum number of decimals for the VAT category taxable amount (BT-116) is 2.</assert>
     <assert test="$BR-DEC-20" flag="fatal" id="BR-DEC-20">[BR-DEC-20]-The allowed maximum number of decimals for the VAT category tax amount (BT-117) is 2.    </assert>
