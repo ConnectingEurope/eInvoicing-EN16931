@@ -28,11 +28,11 @@
     <assert test="$UBL-SR-43" flag="warning" id="UBL-SR-43">[UBL-SR-43]-Scheme identifier shall only be used for invoiced object (document type code with value 130)</assert>
   </rule>
   <rule context="$Amount_data_type">
-    <assert test="$UBL-DT-01" flag="warning" id="UBL-DT-01">[UBL-DT-01]-Amounts shall be decimal up to two fraction digits</assert>
+    <assert test="$UBL-DT-01" flag="fatal" id="UBL-DT-01">[UBL-DT-01]-Amounts shall be decimal up to two fraction digits</assert>
   </rule>
   <rule context="$Binary_object_data_type">
-    <assert test="$UBL-DT-06" flag="warning" id="UBL-DT-06">[UBL-DT-06]-Binary object elements shall contain the mime code attribute</assert>
-    <assert test="$UBL-DT-07" flag="warning" id="UBL-DT-07">[UBL-DT-07]-Binary object elements shall contain the file name attribute</assert>
+    <assert test="$UBL-DT-06" flag="fatal" id="UBL-DT-06">[UBL-DT-06]-Binary object elements shall contain the mime code attribute</assert>
+    <assert test="$UBL-DT-07" flag="fatal" id="UBL-DT-07">[UBL-DT-07]-Binary object elements shall contain the file name attribute</assert>
   </rule>
   <rule context="$Deliver_to">
     <assert test="$UBL-SR-25" flag="warning" id="UBL-SR-25">[UBL-SR-25]-Deliver to party name shall occur maximum once</assert>
