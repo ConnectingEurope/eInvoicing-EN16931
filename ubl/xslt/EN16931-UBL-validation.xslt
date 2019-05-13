@@ -249,9 +249,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="((. > 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)" />
+      <xsl:when test="((. > 0) and (exists(//cbc:DueDate) or exists(//cbc:PaymentDueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="((. > 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)">
+        <svrl:failed-assert test="((. > 0) and (exists(//cbc:DueDate) or exists(//cbc:PaymentDueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)">
           <xsl:attribute name="id">BR-CO-25</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
