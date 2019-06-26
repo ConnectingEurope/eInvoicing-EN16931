@@ -62,7 +62,7 @@
   <param name="UBL-SR-40" value="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name) &lt;= 1)"/>
   <param name="UBL-SR-42" value="(count(cac:PartyTaxScheme) &lt;= 2)"/>
   <param name="UBL-SR-43" value="((cbc:DocumentTypeCode='130') or ((name(/*) = 'CreditNote') and (cbc:DocumentTypeCode='50')) or (not(cbc:ID/@scheme) and not(cbc:DocumentTypeCode)))"/>
-  <param name="UBL-SR-44" value="((count(cac:PaymentMeans/cbc:PaymentID) = 2 and (cac:PaymentMeans[1]/cbc:PaymentID = cac:PaymentMeans[2]/cbc:PaymentID )) or count(cac:PaymentMeans/cbc:PaymentID) &lt;= 1)"/>
+  <param name="UBL-SR-44" value="count(//cbc:PaymentID[not(preceding::cbc:PaymentID/. = .)]) &lt;= 1"/>
   <param name="UBL-SR-45" value="(count(cac:PaymentMeans/cbc:PaymentDueDate) &lt;=1)"/>
   <param name="UBL-SR-46" value="(count(cac:PaymentMeans/cbc:PaymentMeansCode/@name) &lt;=1)"/>
   <param name="UBL-SR-47" value="(count(cac:PaymentMeans) = 2 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode )) or (count(cac:PaymentMeans/cbc:PaymentMeansCode) &lt;= 1)"/>
