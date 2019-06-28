@@ -65,7 +65,7 @@
   <param name="UBL-SR-44" value="count(//cbc:PaymentID[not(preceding::cbc:PaymentID/. = .)]) &lt;= 1"/>
   <param name="UBL-SR-45" value="(count(cac:PaymentMeans/cbc:PaymentDueDate) &lt;=1)"/>
   <param name="UBL-SR-46" value="(count(cac:PaymentMeans/cbc:PaymentMeansCode/@name) &lt;=1)"/>
-  <param name="UBL-SR-47" value="(count(cac:PaymentMeans) = 2 and (cac:PaymentMeans[1]/cbc:PaymentMeansCode = cac:PaymentMeans[2]/cbc:PaymentMeansCode )) or (count(cac:PaymentMeans/cbc:PaymentMeansCode) &lt;= 1)"/>
+  <param name="UBL-SR-47" value="count(//cbc:PaymentMeansCode[not(preceding::cbc:PaymentMeansCode/. = .)]) &lt;= 1"/>
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>
   <param name="UBL-DT-07" value="(@filename)"/>
