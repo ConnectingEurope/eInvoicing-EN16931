@@ -761,7 +761,7 @@
   <param name="Invoice_total_VAT" value="cac:TaxTotal"/>
   <param name="Tax_subtotal" value="cac:TaxSubtotal"/>
   <param name="Additional_supporting_documents" value="cac:AdditionalDocumentReference"/>
-  <param name="Invoice" value="/ubl:Invoice | /ubl:CreditNote"/>
+  <param name="Invoice" value="/ubl:Invoice | /cn:CreditNote"/>
   <param name="Amount_data_type" value="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]"/>
   <param name="Price_data_type" value="//*[ends-with(name(), 'PriceAmount')]"/>
   <param name="Quantity_data_type" value="//*[ends-with(name(), 'Quantity')]"/>
