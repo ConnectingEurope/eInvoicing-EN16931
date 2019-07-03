@@ -3809,8 +3809,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/ubl:Invoice | /ubl:CreditNote" mode="M12" priority="1006">
-    <svrl:fired-rule context="/ubl:Invoice | /ubl:CreditNote" />
+<xsl:template match="/ubl:Invoice | /cn:CreditNote" mode="M12" priority="1006">
+    <svrl:fired-rule context="/ubl:Invoice | /cn:CreditNote" />
 
 		<!--ASSERT -->
 <xsl:choose>

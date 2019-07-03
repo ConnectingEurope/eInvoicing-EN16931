@@ -391,7 +391,7 @@
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = true()]">
       <assert id="UBL-SR-31" flag="warning" test="(count(cbc:AllowanceChargeReason) &lt;= 1)">[UBL-SR-31]-Document level charge reason shall occur maximum once</assert>
     </rule>
-    <rule context="/ubl:Invoice | /ubl:CreditNote">
+    <rule context="/ubl:Invoice | /cn:CreditNote">
       <assert id="UBL-CR-001" flag="warning" test="not(ext:UBLExtensions)">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
       <assert id="UBL-CR-002" flag="warning" test="not(cbc:UBLVersionID)">[UBL-CR-002]-A UBL invoice should not include the UBLVersionID</assert>
       <assert id="UBL-CR-003" flag="warning" test="not(cbc:ProfileExecutionID)">[UBL-CR-003]-A UBL invoice should not include the ProfileExecutionID </assert>
