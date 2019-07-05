@@ -4,7 +4,7 @@ Official Schematron validation artefacts for CEN/TC 434.
 This repository does not contain validation rules for any CIUS.
 
 Latest release
-  * UBL & CII: **v1.2.1** (2019-05-14) - https://github.com/CenPC434/validation/releases/tag/validation-1.2.1
+  * UBL & CII: **v1.2.2** (2019-07-05) - https://github.com/CenPC434/validation/releases/tag/validation-1.2.2
   * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/CenPC434/validation/releases/tag/validation-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
@@ -38,6 +38,9 @@ If you also provide an open service that can validate EN-16931 artefacts and you
 A simple demo implementation maintained by the project team can be found at https://github.com/CenPC434/java-tools/ - we do not recommend this for production usage.
 
 # News and noteworthy
+
+* v1.2.2 - 2019-07-05 (UBL and CII only)
+    * See all fixed issues: https://github.com/CenPC434/validation/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.2.2
 
 * v1.2.1 - 2019-05-14 (UBL and CII only)
     * See all fixed issues: https://github.com/CenPC434/validation/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.2.1
