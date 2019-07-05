@@ -2634,9 +2634,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) and cbc:TaxExemptionReasonCode = 'vatex-eu-ae')" />
+      <xsl:when test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )" />
       <xsl:otherwise>
-        <svrl:failed-assert test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) and cbc:TaxExemptionReasonCode = 'vatex-eu-ae')">
+        <svrl:failed-assert test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )">
           <xsl:attribute name="id">BR-AE-10</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2862,9 +2862,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) and cbc:TaxExemptionReasonCode = 'vatex-eu-g')" />
+      <xsl:when test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )" />
       <xsl:otherwise>
-        <svrl:failed-assert test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) and cbc:TaxExemptionReasonCode = 'vatex-eu-g')">
+        <svrl:failed-assert test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )">
           <xsl:attribute name="id">BR-G-10</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2976,9 +2976,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) and cbc:TaxExemptionReasonCode = 'vatex-eu-ic')" />
+      <xsl:when test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )" />
       <xsl:otherwise>
-        <svrl:failed-assert test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) and cbc:TaxExemptionReasonCode = 'vatex-eu-ic')">
+        <svrl:failed-assert test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )">
           <xsl:attribute name="id">BR-IC-10</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -3318,9 +3318,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) and cbc:TaxExemptionReasonCode = 'vatex-eu-o')" />
+      <xsl:when test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )" />
       <xsl:otherwise>
-        <svrl:failed-assert test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) and cbc:TaxExemptionReasonCode = 'vatex-eu-o')">
+        <svrl:failed-assert test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )">
           <xsl:attribute name="id">BR-O-10</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -3809,8 +3809,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/ubl:Invoice | /ubl:CreditNote" mode="M12" priority="1006">
-    <svrl:fired-rule context="/ubl:Invoice | /ubl:CreditNote" />
+<xsl:template match="/ubl:Invoice | /cn:CreditNote" mode="M12" priority="1006">
+    <svrl:fired-rule context="/ubl:Invoice | /cn:CreditNote" />
 
 		<!--ASSERT -->
 <xsl:choose>
