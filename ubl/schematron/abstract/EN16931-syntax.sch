@@ -697,7 +697,7 @@
     <assert test="$UBL-CR-654" flag="warning" id="UBL-CR-654">[UBL-CR-654]-A UBL invoice should not include the PayeeFinancialAccount scheme identifier</assert>
     <assert test="$UBL-CR-655" flag="warning" id="UBL-CR-655">[UBL-CR-655]-A UBL invoice shall not include the FinancialInstitutionBranch ID scheme identifier</assert>
     <assert test="$UBL-CR-656" flag="warning" id="UBL-CR-656">[UBL-CR-656]-A UBL invoice should not include the InvoiceTypeCode listID</assert>
-    <assert test="$UBL-CR-657" flag="warning" id="UBL-CR-657">[UBL-CR-657]-A UBL invoice should not include the DocumentTypeCode listID</assert>
+    <assert test="$UBL-CR-657" flag="warning" id="UBL-CR-657">[UBL-CR-657]-A UBL invoice should not include the DocumentCurrencyCode listID</assert>
     <assert test="$UBL-CR-658" flag="warning" id="UBL-CR-658">[UBL-CR-658]-A UBL invoice should not include the TaxCurrencyCode listID</assert>
     <assert test="$UBL-CR-659" flag="warning" id="UBL-CR-659">[UBL-CR-659]-A UBL invoice shall not include the AdditionalDocumentReference DocumentTypeCode listID</assert>
     <assert test="$UBL-CR-660" flag="warning" id="UBL-CR-660">[UBL-CR-660]-A UBL invoice should not include the Country Identification code listID</assert>
