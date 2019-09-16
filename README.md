@@ -3,7 +3,7 @@
 Official Schematron validation artefacts for CEN/TC 434.
 This repository does not contain validation rules for any CIUS.
 
-## This repository will now be handed over to https://github.com/ConnectingEurope
+** This was the repository originally created at CenPC434/validation - it is now maintained here**
 
 Latest release
   * UBL & CII: **v1.2.3** (2019-07-05) - https://github.com/CenPC434/validation/releases/tag/validation-1.2.3
