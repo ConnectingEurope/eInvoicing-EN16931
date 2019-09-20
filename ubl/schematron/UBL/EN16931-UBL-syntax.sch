@@ -91,6 +91,8 @@
   <param name="UBL-DT-24" value="not(//@currencyCodeListVersionID)"/>
   <param name="UBL-DT-25" value="not(//@characterSetCode)"/>
   <param name="UBL-DT-26" value="not(//@encodingCode)"/>
+  <param name="UBL-DT-27" value="not(//@schemeAgencyID)"/>
+  <param name="UBL-DT-28" value="not(//@listAgencyID)"/>  
   <param name="UBL-CR-001" value="not(ext:UBLExtensions)"/>
   <param name="UBL-CR-002" value="not(cbc:UBLVersionID)"/>
   <param name="UBL-CR-003" value="not(cbc:ProfileExecutionID)"/>

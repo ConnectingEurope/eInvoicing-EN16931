@@ -732,6 +732,8 @@
     <assert test="$UBL-DT-24" flag="warning" id="UBL-DT-24">[UBL-DT-24]-Currency code list version id should not be present</assert>
     <assert test="$UBL-DT-25" flag="warning" id="UBL-DT-25">[UBL-DT-25]-CharacterSetCode attribute should not be present</assert>
     <assert test="$UBL-DT-26" flag="warning" id="UBL-DT-26">[UBL-DT-26]-EncodingCode attribute should not be present</assert>
+    <assert test="$UBL-DT-27" flag="warning" id="UBL-DT-27">[UBL-DT-27]-Scheme Agency ID attribute should not be present</assert>
+    <assert test="$UBL-DT-28" flag="warning" id="UBL-DT-28">[UBL-DT-28]-List Agency ID attribute should not be present</assert>
     <assert test="$UBL-SR-01" flag="warning" id="UBL-SR-01">[UBL-SR-01]-Contract identifier shall occur maximum once.</assert>
     <assert test="$UBL-SR-02" flag="warning" id="UBL-SR-02">[UBL-SR-02]-Receive advice identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-03" flag="warning" id="UBL-SR-03">[UBL-SR-03]-Despatch advice identifier shall occur maximum once</assert>
