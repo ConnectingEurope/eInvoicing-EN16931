@@ -756,6 +756,9 @@
   <param name="UBL-CR-666" value="not(//cac:AdditionalDocumentReference[cbc:DocumentTypeCode  = '130']/cac:Attachment)"/>
   <param name="UBL-CR-667" value="not(//cac:BuyersItemIdentification/cbc:ID/@schemeID)"/>
   <param name="UBL-CR-668" value="not(//cac:SellersItemIdentification/cbc:ID/@schemeID)"/>
+  <param name="UBL-CR-669" value="not(//cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode)"/>
+  <param name="UBL-CR-670" value="not(//cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReason)"/>
+  <param name="UBL-CR-671" value="not(//cac:Price/cac:AllowanceCharge/cbc:MultiplierFactorNumeric)"/>
   
   <param name="Invoice_line" value="cac:InvoiceLine | cac:CreditNoteLine"/>
   <param name="Preceding_Invoice" value="cac:BillingReference"/>
