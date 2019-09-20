@@ -751,6 +751,7 @@
   <param name="UBL-CR-662" value="not(//cbc:AllowanceChargeReasonCode/@listID)"/>
   <param name="UBL-CR-663" value="not(//@unitCodeListID)"/>
   <param name="UBL-CR-664" value="not(//cac:FinancialInstitution)"/>
+  <param name="UBL-CR-665" value="not(//cac:AdditionalDocumentReference[cbc:DocumentTypeCode  != '130' or not(cbc:DocumentTypeCode)]/cbc:ID/@schemeID)"/>
   
   <param name="Invoice_line" value="cac:InvoiceLine | cac:CreditNoteLine"/>
   <param name="Preceding_Invoice" value="cac:BillingReference"/>
