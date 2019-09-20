@@ -52,7 +52,7 @@
   <param name="UBL-SR-30" value="(count(cbc:AllowanceChargeReason) &lt;= 1)"/>
   <param name="UBL-SR-31" value="(count(cbc:AllowanceChargeReason) &lt;= 1)"/>
   <param name="UBL-SR-32" value="(count(cac:TaxCategory/cbc:TaxExemptionReason) &lt;= 1)"/>
-  <param name="UBL-SR-33" value="(count(cbc:DocumentType) &lt;= 1)"/>
+  <param name="UBL-SR-33" value="(count(cbc:DocumentDescription) &lt;= 1)"/>
   <param name="UBL-SR-34" value="(count(cbc:Note) &lt;= 1)"/>
   <param name="UBL-SR-35" value="(count(cac:OrderLineReference/cbc:LineID) &lt;= 1)"/>
   <param name="UBL-SR-36" value="(count(cac:InvoicePeriod) &lt;= 1)"/>
