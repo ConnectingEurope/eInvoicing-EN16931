@@ -761,6 +761,7 @@
   <param name="UBL-CR-669" value="not(//cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode)"/>
   <param name="UBL-CR-670" value="not(//cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReason)"/>
   <param name="UBL-CR-671" value="not(//cac:Price/cac:AllowanceCharge/cbc:MultiplierFactorNumeric)"/>
+  <param name="UBL-CR-672" value="not(cbc:CreditNoteTypeCode/@listID)"/>
   
   <param name="Invoice_line" value="cac:InvoiceLine | cac:CreditNoteLine"/>
   <param name="Preceding_Invoice" value="cac:BillingReference"/>

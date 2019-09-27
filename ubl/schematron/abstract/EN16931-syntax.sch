@@ -712,6 +712,7 @@
     <assert test="$UBL-CR-669" flag="warning" id="UBL-CR-669">[UBL-CR-669]-A UBL invoice should not include a Price Allowance Reason Code</assert>
     <assert test="$UBL-CR-670" flag="warning" id="UBL-CR-670">[UBL-CR-670]-A UBL invoice should not include a Price Allowance Reason</assert>
     <assert test="$UBL-CR-671" flag="warning" id="UBL-CR-671">[UBL-CR-671]-A UBL invoice should not include a Price Allowance Multiplier Factor</assert>
+    <assert test="$UBL-CR-672" flag="warning" id="UBL-CR-672">[UBL-CR-672]-A UBL credit note should not include the CreditNoteTypeCode listID</assert>
     
     <assert test="$UBL-DT-08" flag="warning" id="UBL-DT-08">[UBL-DT-08]-Scheme name attribute should not be present</assert>
     <assert test="$UBL-DT-09" flag="warning" id="UBL-DT-09">[UBL-DT-09]-Scheme agency name attribute should not be present</assert>
