@@ -52,7 +52,7 @@
   <param name="UBL-SR-30" value="(count(cbc:AllowanceChargeReason) &lt;= 1)"/>
   <param name="UBL-SR-31" value="(count(cbc:AllowanceChargeReason) &lt;= 1)"/>
   <param name="UBL-SR-32" value="(count(cac:TaxCategory/cbc:TaxExemptionReason) &lt;= 1)"/>
-  <param name="UBL-SR-33" value="(count(cbc:DocumentType) &lt;= 1)"/>
+  <param name="UBL-SR-33" value="(count(cbc:DocumentDescription) &lt;= 1)"/>
   <param name="UBL-SR-34" value="(count(cbc:Note) &lt;= 1)"/>
   <param name="UBL-SR-35" value="(count(cac:OrderLineReference/cbc:LineID) &lt;= 1)"/>
   <param name="UBL-SR-36" value="(count(cac:InvoicePeriod) &lt;= 1)"/>
@@ -66,7 +66,9 @@
   <param name="UBL-SR-45" value="(count(cac:PaymentMeans/cbc:PaymentDueDate) &lt;=1)"/>
   <param name="UBL-SR-46" value="(count(cac:PaymentMeans/cbc:PaymentMeansCode/@name) &lt;=1)"/>
   <param name="UBL-SR-47" value="count(//cbc:PaymentMeansCode[not(preceding::cbc:PaymentMeansCode/. = .)]) &lt;= 1"/>
-  <param name="UBL-SR-48" value="count(cac:ClassifiedTaxCategory) = 1"/>
+  <param name="UBL-SR-48" value="count(cac:Item/cac:ClassifiedTaxCategory) = 1"/>
+  <param name="UBL-SR-49" value="(count(cac:InvoicePeriod/cbc:DescriptionCode) &lt;=1)"/>
+  <param name="UBL-SR-50" value="count(cac:Item/cbc:Description) &lt;= 1"/>
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>
   <param name="UBL-DT-07" value="(@filename)"/>
@@ -89,6 +91,8 @@
   <param name="UBL-DT-24" value="not(//@currencyCodeListVersionID)"/>
   <param name="UBL-DT-25" value="not(//@characterSetCode)"/>
   <param name="UBL-DT-26" value="not(//@encodingCode)"/>
+  <param name="UBL-DT-27" value="not(//@schemeAgencyID)"/>
+  <param name="UBL-DT-28" value="not(//@listAgencyID)"/>  
   <param name="UBL-CR-001" value="not(ext:UBLExtensions)"/>
   <param name="UBL-CR-002" value="not(cbc:UBLVersionID)"/>
   <param name="UBL-CR-003" value="not(cbc:ProfileExecutionID)"/>
@@ -750,6 +754,13 @@
   <param name="UBL-CR-662" value="not(//cbc:AllowanceChargeReasonCode/@listID)"/>
   <param name="UBL-CR-663" value="not(//@unitCodeListID)"/>
   <param name="UBL-CR-664" value="not(//cac:FinancialInstitution)"/>
+  <param name="UBL-CR-665" value="not(//cac:AdditionalDocumentReference[cbc:DocumentTypeCode  != '130' or not(cbc:DocumentTypeCode)]/cbc:ID/@schemeID)"/>
+  <param name="UBL-CR-666" value="not(//cac:AdditionalDocumentReference[cbc:DocumentTypeCode  = '130']/cac:Attachment)"/>
+  <param name="UBL-CR-667" value="not(//cac:BuyersItemIdentification/cbc:ID/@schemeID)"/>
+  <param name="UBL-CR-668" value="not(//cac:SellersItemIdentification/cbc:ID/@schemeID)"/>
+  <param name="UBL-CR-669" value="not(//cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode)"/>
+  <param name="UBL-CR-670" value="not(//cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReason)"/>
+  <param name="UBL-CR-671" value="not(//cac:Price/cac:AllowanceCharge/cbc:MultiplierFactorNumeric)"/>
   
   <param name="Invoice_line" value="cac:InvoiceLine | cac:CreditNoteLine"/>
   <param name="Preceding_Invoice" value="cac:BillingReference"/>
