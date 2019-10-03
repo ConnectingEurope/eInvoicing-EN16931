@@ -19,6 +19,14 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
 * `edifact` - UN/EDIFACT (and ISO 26025 based XML version) - EN optional syntax
     
+# License
+
+Licensed under European Union Public Licence (EUPL) version 1.2.
+
+Derivative work created from https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.2.3 
+
+That was Licensed under the Apache License, Version 2.0
+
 # News and noteworthy
 
 * v1.2.3 - 2019-07-05 (UBL and CII only)
