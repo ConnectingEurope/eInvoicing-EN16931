@@ -19,26 +19,6 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
 * `edifact` - UN/EDIFACT (and ISO 26025 based XML version) - EN optional syntax
     
-# Validation
-
-The action of performing validation of business documents is not directly supported by the artefacts in this repository.
-Standalone validation of EN-16931 rules can be performed on the following pages (in arbitrary order - please contact the operators directly):
-* https://peppol.helger.com/public/menuitem-validation-bis2 - manual upload
-* https://peppol.helger.com/public/menuitem-validation-ws2 - web service details page
-* http://validex.net/en-service/ - registration needed
-* https://open.validex.net/en/login - manual upload
-* https://www.itb.ec.europa.eu/invoice/upload - CEF e-Invoicing support - manual upload
-* https://www.itb.ec.europa.eu/invoice/api/validation?wsdl - CEF e-Invoicing support - web service
-* https://www.itb.ec.europa.eu/cenws8/upload - similar service for CEN/TC 434 editors - manual upload
-* https://www.itb.ec.europa.eu/cenws8/api/validation?wsdl - similar service for CEN/TC 434 editors - web service
-* https://invoice.fans/fr/validation-des-messages/  - in French, registration is necessary
-* https://invoice.fans/en/message-validation/ - in English, registration is necessary
-* https://invoice.fans/de/validierung-von-nachrichten/ - in German, registration is necessary 
-
-If you also provide an open service that can validate EN-16931 artefacts and you want to be listed here send us an email to philip[at]helger.com  
-
-A simple demo implementation maintained by the project team can be found at https://github.com/CenPC434/java-tools/ - we do not recommend this for production usage.
-
 # News and noteworthy
 
 * v1.2.3 - 2019-07-05 (UBL and CII only)
@@ -80,28 +60,3 @@ A simple demo implementation maintained by the project team can be found at http
 * v1.0.0 - 2018-02-08 (UBL, CII and EDIFACT)
     * Initial release
 
-# Development
-
-For the Java projects contained in this repository, please consider the following prerequisites
-  * Java JDK 1.8.x latest (was tested only with a JDK and not with a JRE)
-  * For building on the commandline use Apache Maven 3.x (latest) 
- 
-## Create XSLTs from Schematrons
-  
-Invoke `mvn -f pom-xslt.xml process-resources` after changes - it will regenerate the XSLTs from the source SCHs.
-Don't forget to update the license headers afterwards (see below).
-
-## Create preprocessed Schematrons
-
-After creating XSLTs, the preprocess Schematrons should be created.
-Preprocessing resolves all includes, abstract rules etc.
-Invoke `mvn -f pom-preprocess.xml generate-resources` to create all preprocessed Schematron files.
- 
-## Check if the examples files match the rules from the XSLTs
-  
-Invoke `mvn -f pom-validate.xml validate` after re-creating the XSLTs (see above).
- 
-## Update the license headers
-
-The template for the license header resides in the file `templates/license-template.txt`.
-To add the license header to all relevant files invoke `mvn -f pom-license.xml license:format`

@@ -25,15 +25,15 @@
     <version>1.10.8</version>
   </parent>
   <artifactId>centc434-validation-rules</artifactId>
-  <version>1.0.0</version>
+  <version>1.3.0</version>
   <name>centc434-validation-rules</name>
-  <description>EN16931 - CEN/TC 434 validation rules</description>
-  <url>https://github.com/CenPC434/validation</url>
+  <description>EN16931 validation rules</description>
+  <url>https://github.com/ConnectingEurope/eInvoicing-EN16931</url>
   <inceptionYear>2016</inceptionYear>
   <licenses>
     <license>
-      <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <name>EUPL V2</name>
+      <url>https://eupl.eu/1.2/en/</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
