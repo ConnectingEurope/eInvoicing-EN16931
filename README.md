@@ -18,6 +18,13 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * XML Schemas overview: http://www.unece.org/cefact/xml_schemas/index.html
   * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
 * `edifact` - UN/EDIFACT (and ISO 26025 based XML version) - EN optional syntax
+
+CEF supported code lists are available here:
+ 
+* EAS  | [EAS code list - version 4.0](https://ec.europa.eu/cefdigital/wiki/download/attachments/106234259/VAT%20Exemption%20Reason%20Code%20list%20VATEX%20-%20verion%202%20-published.xlsx?version=2&modificationDate=1570442533285&api=v2)
+
+* VATEX | [VATEX code list - version 2.0](https://ec.europa.eu/cefdigital/wiki/download/attachments/106234259/VAT%20Exemption%20Reason%20Code%20list%20VATEX%20-%20verion%202%20-published.xlsx?version=2&modificationDate=1570442533285&api=v2) 
+
     
 # License
 
