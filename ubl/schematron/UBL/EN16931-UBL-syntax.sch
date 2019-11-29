@@ -81,7 +81,7 @@
   <param name="UBL-DT-27" value="not(//@schemeAgencyID)"/>
   <param name="UBL-DT-28" value="not(//@listAgencyID)"/>  
   <param name="UBL-CR-001" value="not(ext:UBLExtensions)"/>
-  <param name="UBL-CR-002" value="not(cbc:UBLVersionID)"/>
+  <param name="UBL-CR-002" value="not(cbc:UBLVersionID) or cbc:UBLVersionID = '2.1'"/>
   <param name="UBL-CR-003" value="not(cbc:ProfileExecutionID)"/>
   <param name="UBL-CR-004" value="not(cbc:CopyIndicator)"/>
   <param name="UBL-CR-005" value="not(cbc:UUID)"/>
