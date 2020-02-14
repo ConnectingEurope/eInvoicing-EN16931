@@ -74,6 +74,8 @@
     <assert test="$BR-10" flag="fatal" id="BR-10">[BR-10]-An Invoice shall contain the Buyer postal address (BG-8).</assert>
     <assert test="$BR-16" flag="fatal" id="BR-16">[BR-16]-An Invoice shall have at least one Invoice line (BG-25)</assert>
     <assert test="$BR-53" flag="fatal" id="BR-53">[BR-53]-If the VAT accounting currency code (BT-6) is present, then the Invoice total VAT amount in accounting currency (BT-111) shall be provided.</assert>
+    <assert test="$BR-66" flag="fatal" id="BR-66">[BR-66]-An Invoice shall contain maximum one Payment Card account (BG-18).</assert>
+    <assert test="$BR-67" flag="fatal" id="BR-67">[BR-67]-An Invoice shall contain maximum one Payment Mandate (BG-19).</assert>
     <assert test="$BR-AE-01" flag="fatal" id="BR-AE-01">[BR-AE-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Reverse charge" shall contain in the VAT Breakdown (BG-23) exactly one VAT category code (BT-118) equal with "VAT reverse charge".</assert>
     <assert test="$BR-AE-02" flag="fatal" id="BR-AE-02">[BR-AE-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Reverse charge" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) and/or the Buyer legal registration identifier (BT-47).</assert>
     <assert test="$BR-AE-03" flag="fatal" id="BR-AE-03">[BR-AE-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Reverse charge" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) and/or the Buyer legal registration identifier (BT-47).</assert>
@@ -168,7 +170,7 @@
     <assert test="$BR-64" flag="fatal" id="BR-64">[BR-64]-The Item standard identifier (BT-157) shall have a Scheme identifier.</assert>
   </rule>
   <rule context="$Note">
-    <assert test="$BR-CL-08" flag="fatal" id="BR-CL-08">[BR-CL-08]-Invoiced note subject code SHOULD be coded using UNCL4451</assert>
+    <assert test="$BR-CL-08" flag="fatal" id="BR-CL-08">[BR-CL-08]-Invoiced note subject code shall be coded using UNCL4451</assert>
   </rule>
   <rule context="$Payee">
     <assert test="$BR-17" flag="fatal" id="BR-17">[BR-17]-The Payee name (BT-59) shall be provided in the Invoice, if the Payee (BG-10) is different from the Seller (BG-4)</assert>

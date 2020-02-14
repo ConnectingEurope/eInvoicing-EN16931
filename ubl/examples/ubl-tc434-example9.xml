@@ -107,7 +107,7 @@
         <cac:Item>
             <cbc:Name>IExpress licentiekosten</cbc:Name>
             <cac:ClassifiedTaxCategory>
-                <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+                <cbc:ID>S</cbc:ID>
                 <cbc:Percent>21</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>

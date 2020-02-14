@@ -693,13 +693,20 @@
     <assert test="$UBL-CR-663" flag="warning" id="UBL-CR-663">[UBL-CR-663]-A UBL invoice should not include the unitCodeListID</assert>
     <assert test="$UBL-CR-664" flag="warning" id="UBL-CR-664">[UBL-CR-664]-A UBL invoice should not include the FinancialInstitutionBranch FinancialInstitution</assert>
     <assert test="$UBL-CR-665" flag="warning" id="UBL-CR-665">[UBL-CR-665]-A UBL invoice should not include the AdditonalDocumentReference ID schemeID unless the ID equals '130'</assert>
-    <assert test="$UBL-CR-666" flag="warning" id="UBL-CR-666">[UBL-CR-666]-A UBL invoice should not include the AdditonalDocumentReference referring to an Invoice Object Identifier should not include an Attachment</assert>
+    <assert test="$UBL-CR-666" flag="fatal" id="UBL-CR-666">[UBL-CR-666]-A UBL invoice should not include an AdditonalDocumentReference simultaneously referring an Invoice Object Identifier and an Attachment</assert>
     <assert test="$UBL-CR-667" flag="warning" id="UBL-CR-667">[UBL-CR-667]-A UBL invoice should not include a Buyer Item Identification schemeID</assert>
     <assert test="$UBL-CR-668" flag="warning" id="UBL-CR-668">[UBL-CR-668]-A UBL invoice should not include a Sellers Item Identification schemeID</assert>
     <assert test="$UBL-CR-669" flag="warning" id="UBL-CR-669">[UBL-CR-669]-A UBL invoice should not include a Price Allowance Reason Code</assert>
     <assert test="$UBL-CR-670" flag="warning" id="UBL-CR-670">[UBL-CR-670]-A UBL invoice should not include a Price Allowance Reason</assert>
     <assert test="$UBL-CR-671" flag="warning" id="UBL-CR-671">[UBL-CR-671]-A UBL invoice should not include a Price Allowance Multiplier Factor</assert>
     <assert test="$UBL-CR-672" flag="warning" id="UBL-CR-672">[UBL-CR-672]-A UBL credit note should not include the CreditNoteTypeCode listID</assert>
+    <assert test="$UBL-CR-673" flag="fatal" id="UBL-CR-673">[UBL-CR-673]-A UBL invoice should not include an AdditonalDocumentReference simultaneously referring an Invoice Object Identifier and an Document Description</assert>
+    <assert test="$UBL-CR-674" flag="warning" id="UBL-CR-674">[UBL-CR-674]-A UBL invoice should not include the PrimaryAccountNumber schemeID</assert>
+    <assert test="$UBL-CR-675" flag="warning" id="UBL-CR-675">[UBL-CR-675]-A UBL invoice should not include the NetworkID schemeID</assert>
+    <assert test="$UBL-CR-676" flag="warning" id="UBL-CR-676">[UBL-CR-676]-A UBL invoice should not include the PaymentMandate/ID schemeID</assert>
+    <assert test="$UBL-CR-677" flag="warning" id="UBL-CR-677">[UBL-CR-677]-A UBL invoice should not include the PayerFinancialAccount/ID schemeID</assert>
+    <assert test="$UBL-CR-678" flag="warning" id="UBL-CR-678">[UBL-CR-678]-A UBL invoice should not include the TaxCategory/ID schemeID</assert>
+    <assert test="$UBL-CR-679" flag="warning" id="UBL-CR-679">[UBL-CR-679]-A UBL invoice should not include the ClassifiedTaxCategory/ID schemeID</assert>
     
     <assert test="$UBL-DT-08" flag="warning" id="UBL-DT-08">[UBL-DT-08]-Scheme name attribute should not be present</assert>
     <assert test="$UBL-DT-09" flag="warning" id="UBL-DT-09">[UBL-DT-09]-Scheme agency name attribute should not be present</assert>
