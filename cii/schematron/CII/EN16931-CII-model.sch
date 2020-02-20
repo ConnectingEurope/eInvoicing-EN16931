@@ -231,7 +231,6 @@
   <param name="BR-DEC-28" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
   
   <param name="Invoice_Period " value="//ram:ApplicableHeaderTradeSettlement/ram:BillingSpecifiedPeriod"/>
-  <param name="Document_totals " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>  
   <param name="Payee " value="//ram:PayeeTradeParty"/>
   <param name="Seller " value="//ram:SellerTradeParty"/>
   <param name="Tax_Representative " value="//ram:SellerTaxRepresentativeTradeParty"/>
@@ -251,7 +250,7 @@
   <param name="Item_attributes " value="//ram:ApplicableProductCharacteristic"/>
   <param name="VAT_identifiers " value="//ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']"/>
   <param name="Tax_Total " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]"/>
-  <param name="Tax_subtotal " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>
+  <param name="Document_totals " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>  
   
   <param name="VATS_Line " value="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']"/>
   <param name="VATS " value="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[.='S']"/>
