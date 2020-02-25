@@ -15333,8 +15333,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//cbc:TaxExemptionReasonCode" mode="M13" priority="1003">
-    <svrl:fired-rule context="//cbc:TaxExemptionReasonCode" />
+<xsl:template match="cbc:TaxExemptionReasonCode" mode="M13" priority="1003">
+    <svrl:fired-rule context="cbc:TaxExemptionReasonCode" />
 
 		<!--ASSERT -->
 <xsl:choose>
