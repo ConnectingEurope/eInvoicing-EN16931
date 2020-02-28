@@ -21,9 +21,7 @@ For each syntax a separate folder exists where all related artefacts are to be p
 
 CEF supported code lists are available here:
  
-* EAS  | [EAS code list - version 4.0](https://ec.europa.eu/cefdigital/wiki/download/attachments/106234259/VAT%20Exemption%20Reason%20Code%20list%20VATEX%20-%20verion%202%20-published.xlsx?version=2&modificationDate=1570442533285&api=v2)
-
-* VATEX | [VATEX code list - version 2.0](https://ec.europa.eu/cefdigital/wiki/download/attachments/106234259/VAT%20Exemption%20Reason%20Code%20list%20VATEX%20-%20verion%202%20-published.xlsx?version=2&modificationDate=1570442533285&api=v2) 
+* https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Registry+of+supporting+artefacts+to+implement+EN16931
 
     
 # License
