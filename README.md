@@ -6,7 +6,7 @@ This repository does not contain eInvoicing-EN16931 rules for any CIUS.
 **This was the repository originally created at ConnectingEurope/eInvoicing-EN16931 - it is now maintained here**
 
 Latest release
-  * UBL & CII: **v1.3.1** (2020-02-28) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.1
+  * UBL & CII: **v1.3.2** (2020-05-25) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.2
   * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/eInvoicing-EN16931-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
@@ -34,6 +34,8 @@ That was Licensed under the Apache License, Version 2.0
 
 # News and noteworthy
 
+* v1.3.2 - 2020-05-25 (UBL and CII only)
+    * Added code 0208 in EAS and 0205 to 0208 in ICD code lists
 * v1.3.1 - 2020-02-28 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.3.1
     * Some codelist values have been added
