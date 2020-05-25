@@ -13754,7 +13754,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[UBL-CR-665]-A UBL invoice should not include the AdditonalDocumentReference ID schemeID unless the ID equals '130'</svrl:text>
+          <svrl:text>[UBL-CR-665]-A UBL invoice should not include the AdditionalDocumentReference ID schemeID unless the ID equals '130'</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -13769,7 +13769,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[UBL-CR-666]-A UBL invoice should not include an AdditonalDocumentReference simultaneously referring an Invoice Object Identifier and an Attachment</svrl:text>
+          <svrl:text>[UBL-CR-666]-A UBL invoice should not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Attachment</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -13874,7 +13874,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[UBL-CR-673]-A UBL invoice should not include an AdditonalDocumentReference simultaneously referring an Invoice Object Identifier and an Document Description</svrl:text>
+          <svrl:text>[UBL-CR-673]-A UBL invoice should not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Document Description</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
