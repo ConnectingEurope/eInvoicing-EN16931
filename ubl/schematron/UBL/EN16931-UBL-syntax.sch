@@ -605,7 +605,7 @@
   <param name="UBL-CR-525" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cbc:SalesOrderLineID)"/>
   <param name="UBL-CR-526" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cbc:UUID)"/>
   <param name="UBL-CR-527" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cbc:LineStatusCode)"/>
-  <param name="UBL-CR-528" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cbc:OrderReference)"/>
+  <param name="UBL-CR-528" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cac:OrderReference)"/>
   <param name="UBL-CR-529" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DespatchLineReference)"/>
   <param name="UBL-CR-530" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:ReceiptLineReference)"/>
   <param name="UBL-CR-531" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:BillingReference)"/>
