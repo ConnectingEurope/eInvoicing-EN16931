@@ -8,11 +8,11 @@
 <!-- Timestamp: 2016-12-01 22:31:03 +0100 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="syntax">
   <rule context="$Accounting_supplier_party">
-    <assert test="$UBL-SR-42" flag="warning" id="UBL-SR-42">[UBL-SR-42]-Party tax scheme shall occur maximum twice in accounting supplier party</assert>
+    <assert test="$UBL-SR-42" flag="fatal" id="UBL-SR-42">[UBL-SR-42]-Party tax scheme shall occur maximum twice in accounting supplier party</assert>
   </rule>
   <rule context="$Additional_supporting_documents">
-    <assert test="$UBL-SR-33" flag="warning" id="UBL-SR-33">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
-    <assert test="$UBL-SR-43" flag="warning" id="UBL-SR-43">[UBL-SR-43]-Scheme identifier shall only be used for invoiced object (document type code with value 130)</assert>
+    <assert test="$UBL-SR-33" flag="fatal" id="UBL-SR-33">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
+    <assert test="$UBL-SR-43" flag="fatal" id="UBL-SR-43">[UBL-SR-43]-Scheme identifier shall only be used for invoiced object (document type code with value 130)</assert>
   </rule>
   <rule context="$Amount_data_type">
     <assert test="$UBL-DT-01" flag="fatal" id="UBL-DT-01">[UBL-DT-01]-Amounts shall be decimal up to two fraction digits</assert>
@@ -22,13 +22,13 @@
     <assert test="$UBL-DT-07" flag="fatal" id="UBL-DT-07">[UBL-DT-07]-Binary object elements shall contain the file name attribute</assert>
   </rule>
   <rule context="$Deliver_to">
-    <assert test="$UBL-SR-25" flag="warning" id="UBL-SR-25">[UBL-SR-25]-Deliver to party name shall occur maximum once</assert>
+    <assert test="$UBL-SR-25" flag="fatal" id="UBL-SR-25">[UBL-SR-25]-Deliver to party name shall occur maximum once</assert>
   </rule>
   <rule context="$Document_level_allowances">
-    <assert test="$UBL-SR-30" flag="warning" id="UBL-SR-30">[UBL-SR-30]-Document level allowance reason shall occur maximum once</assert>
+    <assert test="$UBL-SR-30" flag="fatal" id="UBL-SR-30">[UBL-SR-30]-Document level allowance reason shall occur maximum once</assert>
   </rule>
   <rule context="$Document_level_charges">
-    <assert test="$UBL-SR-31" flag="warning" id="UBL-SR-31">[UBL-SR-31]-Document level charge reason shall occur maximum once</assert>
+    <assert test="$UBL-SR-31" flag="fatal" id="UBL-SR-31">[UBL-SR-31]-Document level charge reason shall occur maximum once</assert>
   </rule>
   <rule context="$Invoice">
     <assert test="$UBL-CR-001" flag="warning" id="UBL-CR-001">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
@@ -693,14 +693,14 @@
     <assert test="$UBL-CR-663" flag="warning" id="UBL-CR-663">[UBL-CR-663]-A UBL invoice should not include the unitCodeListID</assert>
     <assert test="$UBL-CR-664" flag="warning" id="UBL-CR-664">[UBL-CR-664]-A UBL invoice should not include the FinancialInstitutionBranch FinancialInstitution</assert>
     <assert test="$UBL-CR-665" flag="warning" id="UBL-CR-665">[UBL-CR-665]-A UBL invoice should not include the AdditionalDocumentReference ID schemeID unless the ID equals '130'</assert>
-    <assert test="$UBL-CR-666" flag="fatal" id="UBL-CR-666">[UBL-CR-666]-A UBL invoice should not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Attachment</assert>
+    <assert test="$UBL-CR-666" flag="fatal" id="UBL-CR-666">[UBL-CR-666]-A UBL invoice shall not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Attachment</assert>
     <assert test="$UBL-CR-667" flag="warning" id="UBL-CR-667">[UBL-CR-667]-A UBL invoice should not include a Buyer Item Identification schemeID</assert>
     <assert test="$UBL-CR-668" flag="warning" id="UBL-CR-668">[UBL-CR-668]-A UBL invoice should not include a Sellers Item Identification schemeID</assert>
     <assert test="$UBL-CR-669" flag="warning" id="UBL-CR-669">[UBL-CR-669]-A UBL invoice should not include a Price Allowance Reason Code</assert>
     <assert test="$UBL-CR-670" flag="warning" id="UBL-CR-670">[UBL-CR-670]-A UBL invoice should not include a Price Allowance Reason</assert>
     <assert test="$UBL-CR-671" flag="warning" id="UBL-CR-671">[UBL-CR-671]-A UBL invoice should not include a Price Allowance Multiplier Factor</assert>
     <assert test="$UBL-CR-672" flag="warning" id="UBL-CR-672">[UBL-CR-672]-A UBL credit note should not include the CreditNoteTypeCode listID</assert>
-    <assert test="$UBL-CR-673" flag="fatal" id="UBL-CR-673">[UBL-CR-673]-A UBL invoice should not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Document Description</assert>
+    <assert test="$UBL-CR-673" flag="fatal" id="UBL-CR-673">[UBL-CR-673]-A UBL invoice shall not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Document Description</assert>
     <assert test="$UBL-CR-674" flag="warning" id="UBL-CR-674">[UBL-CR-674]-A UBL invoice should not include the PrimaryAccountNumber schemeID</assert>
     <assert test="$UBL-CR-675" flag="warning" id="UBL-CR-675">[UBL-CR-675]-A UBL invoice should not include the NetworkID schemeID</assert>
     <assert test="$UBL-CR-676" flag="warning" id="UBL-CR-676">[UBL-CR-676]-A UBL invoice should not include the PaymentMandate/ID schemeID</assert>
@@ -729,60 +729,60 @@
     <assert test="$UBL-DT-26" flag="warning" id="UBL-DT-26">[UBL-DT-26]-EncodingCode attribute should not be present</assert>
     <assert test="$UBL-DT-27" flag="warning" id="UBL-DT-27">[UBL-DT-27]-Scheme Agency ID attribute should not be present</assert>
     <assert test="$UBL-DT-28" flag="warning" id="UBL-DT-28">[UBL-DT-28]-List Agency ID attribute should not be present</assert>
-    <assert test="$UBL-SR-01" flag="warning" id="UBL-SR-01">[UBL-SR-01]-Contract identifier shall occur maximum once.</assert>
-    <assert test="$UBL-SR-02" flag="warning" id="UBL-SR-02">[UBL-SR-02]-Receive advice identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-03" flag="warning" id="UBL-SR-03">[UBL-SR-03]-Despatch advice identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-04" flag="warning" id="UBL-SR-04">[UBL-SR-04]-Invoice object identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-05" flag="warning" id="UBL-SR-05">[UBL-SR-05]-Payment terms shall occur maximum once</assert>
-    <assert test="$UBL-SR-06" flag="warning" id="UBL-SR-06">[UBL-SR-06]-Preceding invoice reference shall occur maximum once</assert>
-    <assert test="$UBL-SR-08" flag="warning" id="UBL-SR-08">[UBL-SR-08]-Invoice period shall occur maximum once</assert>
-    <assert test="$UBL-SR-09" flag="warning" id="UBL-SR-09">[UBL-SR-09]-Seller name shall occur maximum once</assert>
-    <assert test="$UBL-SR-10" flag="warning" id="UBL-SR-10">[UBL-SR-10]-Seller trader name shall occur maximum once</assert>
-    <assert test="$UBL-SR-11" flag="warning" id="UBL-SR-11">[UBL-SR-11]-Seller legal registration identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-12" flag="warning" id="UBL-SR-12">[UBL-SR-12]-Seller VAT identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-13" flag="warning" id="UBL-SR-13">[UBL-SR-13]-Seller tax registration shall occur maximum once</assert>
-    <assert test="$UBL-SR-14" flag="warning" id="UBL-SR-14">[UBL-SR-14]-Seller additional legal information shall occur maximum once</assert>
-    <assert test="$UBL-SR-15" flag="warning" id="UBL-SR-15">[UBL-SR-15]-Buyer name shall occur maximum once</assert>
-    <assert test="$UBL-SR-16" flag="warning" id="UBL-SR-16">[UBL-SR-16]-Buyer identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-17" flag="warning" id="UBL-SR-17">[UBL-SR-17]-Buyer legal registration identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-18" flag="warning" id="UBL-SR-18">[UBL-SR-18]-Buyer VAT identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-24" flag="warning" id="UBL-SR-24">[UBL-SR-24]-Deliver to information shall occur maximum once</assert>
-    <assert test="$UBL-SR-29" flag="warning" id="UBL-SR-29">[UBL-SR-29]-Bank creditor reference shall occur maximum once</assert>
-    <assert test="$UBL-SR-39" flag="warning" id="UBL-SR-39">[UBL-SR-39]-Project reference shall occur maximum once.</assert>
-    <assert test="$UBL-SR-40" flag="warning" id="UBL-SR-40">[UBL-SR-40]-Buyer trade name shall occur maximum once</assert>
-    <assert test="$UBL-SR-44" flag="warning" id="UBL-SR-44">[UBL-SR-44]-Payment ID shall occur maximum once</assert>
-    <assert test="$UBL-SR-45" flag="warning" id="UBL-SR-45">[UBL-SR-45]-Due Date shall occur maximum once</assert>    
-    <assert test="$UBL-SR-46" flag="warning" id="UBL-SR-46">[UBL-SR-46]-Payment means text shall occur maximum once</assert>
-    <assert test="$UBL-SR-47" flag="warning" id="UBL-SR-47">[UBL-SR-47]-When there are more than one payment means code, they shall be equal</assert>
-    <assert test="$UBL-SR-49" flag="warning" id="UBL-SR-49">[UBL-SR-49]-Value tax point date shall occur maximum once</assert>
+    <assert test="$UBL-SR-01" flag="fatal" id="UBL-SR-01">[UBL-SR-01]-Contract identifier shall occur maximum once.</assert>
+    <assert test="$UBL-SR-02" flag="fatal" id="UBL-SR-02">[UBL-SR-02]-Receive advice identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-03" flag="fatal" id="UBL-SR-03">[UBL-SR-03]-Despatch advice identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-04" flag="fatal" id="UBL-SR-04">[UBL-SR-04]-Invoice object identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-05" flag="fatal" id="UBL-SR-05">[UBL-SR-05]-Payment terms shall occur maximum once</assert>
+    <assert test="$UBL-SR-06" flag="fatal" id="UBL-SR-06">[UBL-SR-06]-Preceding invoice reference shall occur maximum once</assert>
+    <assert test="$UBL-SR-08" flag="fatal" id="UBL-SR-08">[UBL-SR-08]-Invoice period shall occur maximum once</assert>
+    <assert test="$UBL-SR-09" flag="fatal" id="UBL-SR-09">[UBL-SR-09]-Seller name shall occur maximum once</assert>
+    <assert test="$UBL-SR-10" flag="fatal" id="UBL-SR-10">[UBL-SR-10]-Seller trader name shall occur maximum once</assert>
+    <assert test="$UBL-SR-11" flag="fatal" id="UBL-SR-11">[UBL-SR-11]-Seller legal registration identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-12" flag="fatal" id="UBL-SR-12">[UBL-SR-12]-Seller VAT identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-13" flag="fatal" id="UBL-SR-13">[UBL-SR-13]-Seller tax registration shall occur maximum once</assert>
+    <assert test="$UBL-SR-14" flag="fatal" id="UBL-SR-14">[UBL-SR-14]-Seller additional legal information shall occur maximum once</assert>
+    <assert test="$UBL-SR-15" flag="fatal" id="UBL-SR-15">[UBL-SR-15]-Buyer name shall occur maximum once</assert>
+    <assert test="$UBL-SR-16" flag="fatal" id="UBL-SR-16">[UBL-SR-16]-Buyer identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-17" flag="fatal" id="UBL-SR-17">[UBL-SR-17]-Buyer legal registration identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-18" flag="fatal" id="UBL-SR-18">[UBL-SR-18]-Buyer VAT identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-24" flag="fatal" id="UBL-SR-24">[UBL-SR-24]-Deliver to information shall occur maximum once</assert>
+    <assert test="$UBL-SR-29" flag="fatal" id="UBL-SR-29">[UBL-SR-29]-Bank creditor reference shall occur maximum once</assert>
+    <assert test="$UBL-SR-39" flag="fatal" id="UBL-SR-39">[UBL-SR-39]-Project reference shall occur maximum once.</assert>
+    <assert test="$UBL-SR-40" flag="fatal" id="UBL-SR-40">[UBL-SR-40]-Buyer trade name shall occur maximum once</assert>
+    <assert test="$UBL-SR-44" flag="fatal" id="UBL-SR-44">[UBL-SR-44]-Payment ID shall occur maximum once</assert>
+    <assert test="$UBL-SR-45" flag="fatal" id="UBL-SR-45">[UBL-SR-45]-Due Date shall occur maximum once</assert>    
+    <assert test="$UBL-SR-46" flag="fatal" id="UBL-SR-46">[UBL-SR-46]-Payment means text shall occur maximum once</assert>
+    <assert test="$UBL-SR-47" flag="fatal" id="UBL-SR-47">[UBL-SR-47]-When there are more than one payment means code, they shall be equal</assert>
+    <assert test="$UBL-SR-49" flag="fatal" id="UBL-SR-49">[UBL-SR-49]-Value tax point date shall occur maximum once</assert>
   </rule>
   <rule context="$Invoice_line">
-    <assert test="$UBL-SR-34" flag="warning" id="UBL-SR-34">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>
-    <assert test="$UBL-SR-35" flag="warning" id="UBL-SR-35">[UBL-SR-35]-Referenced purchase order line identifier shall occur maximum once</assert>
-    <assert test="$UBL-SR-36" flag="warning" id="UBL-SR-36">[UBL-SR-36]-Invoice line period shall occur maximum once</assert>
-    <assert test="$UBL-SR-37" flag="warning" id="UBL-SR-37">[UBL-SR-37]-Item price discount shall occur maximum once</assert>
-    <assert test="$UBL-SR-38" flag="warning" id="UBL-SR-38">[UBL-SR-38]-Invoiced item VAT exemption reason text shall occur maximum once</assert>
-    <assert test="$UBL-SR-48" flag="warning" id="UBL-SR-48">[UBL-SR-48]-Invoice lines shall have one and only one classified tax category.</assert>
-    <assert test="$UBL-SR-50" flag="warning" id="UBL-SR-50">[UBL-SR-50]-Item description shall occur maximum once</assert>
+    <assert test="$UBL-SR-34" flag="fatal" id="UBL-SR-34">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>
+    <assert test="$UBL-SR-35" flag="fatal" id="UBL-SR-35">[UBL-SR-35]-Referenced purchase order line identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-36" flag="fatal" id="UBL-SR-36">[UBL-SR-36]-Invoice line period shall occur maximum once</assert>
+    <assert test="$UBL-SR-37" flag="fatal" id="UBL-SR-37">[UBL-SR-37]-Item price discount shall occur maximum once</assert>
+    <assert test="$UBL-SR-38" flag="fatal" id="UBL-SR-38">[UBL-SR-38]-Invoiced item VAT exemption reason text shall occur maximum once</assert>
+    <assert test="$UBL-SR-48" flag="fatal" id="UBL-SR-48">[UBL-SR-48]-Invoice lines shall have one and only one classified tax category.</assert>
+    <assert test="$UBL-SR-50" flag="fatal" id="UBL-SR-50">[UBL-SR-50]-Item description shall occur maximum once</assert>
   </rule>
   <rule context="$Payee">
-    <assert test="$UBL-SR-19" flag="warning" id="UBL-SR-19">[UBL-SR-19]-Payee name shall occur maximum once, if the Payee is different from the Seller</assert>
-    <assert test="$UBL-SR-20" flag="warning" id="UBL-SR-20">[UBL-SR-20]-Payee identifier shall occur maximum once, if the Payee is different from the Seller</assert>
-    <assert test="$UBL-SR-21" flag="warning" id="UBL-SR-21">[UBL-SR-21]-Payee legal registration identifier shall occur maximum once, if the Payee is different from the Seller</assert>
+    <assert test="$UBL-SR-19" flag="fatal" id="UBL-SR-19">[UBL-SR-19]-Payee name shall occur maximum once, if the Payee is different from the Seller</assert>
+    <assert test="$UBL-SR-20" flag="fatal" id="UBL-SR-20">[UBL-SR-20]-Payee identifier shall occur maximum once, if the Payee is different from the Seller</assert>
+    <assert test="$UBL-SR-21" flag="fatal" id="UBL-SR-21">[UBL-SR-21]-Payee legal registration identifier shall occur maximum once, if the Payee is different from the Seller</assert>
   </rule>
   <rule context="$Payment_instructions">
-    <assert test="$UBL-SR-26" flag="warning" id="UBL-SR-26">[UBL-SR-26]-Payment reference shall occur maximum once</assert>
-    <assert test="$UBL-SR-27" flag="warning" id="UBL-SR-27">[UBL-SR-27]-Payment means text shall occur maximum once</assert>
-    <assert test="$UBL-SR-28" flag="warning" id="UBL-SR-28">[UBL-SR-28]-Mandate reference identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-26" flag="fatal" id="UBL-SR-26">[UBL-SR-26]-Payment reference shall occur maximum once</assert>
+    <assert test="$UBL-SR-27" flag="fatal" id="UBL-SR-27">[UBL-SR-27]-Payment means text shall occur maximum once</assert>
+    <assert test="$UBL-SR-28" flag="fatal" id="UBL-SR-28">[UBL-SR-28]-Mandate reference identifier shall occur maximum once</assert>
   </rule>
   <rule context="$Preceding_Invoice">
-    <assert test="$UBL-SR-07" flag="warning" id="UBL-SR-07">[UBL-SR-07]-If there is a preceding invoice reference, the preceding invoice number shall be present</assert>
+    <assert test="$UBL-SR-07" flag="fatal" id="UBL-SR-07">[UBL-SR-07]-If there is a preceding invoice reference, the preceding invoice number shall be present</assert>
   </rule>
   <rule context="$Tax_Representative">
-    <assert test="$UBL-SR-22" flag="warning" id="UBL-SR-22">[UBL-SR-22]-Seller tax representative name shall occur maximum once, if the Seller has a tax representative</assert>
-    <assert test="$UBL-SR-23" flag="warning" id="UBL-SR-23">[UBL-SR-23]-Seller tax representative VAT identifier shall occur maximum once, if the Seller has a tax representative</assert>
+    <assert test="$UBL-SR-22" flag="fatal" id="UBL-SR-22">[UBL-SR-22]-Seller tax representative name shall occur maximum once, if the Seller has a tax representative</assert>
+    <assert test="$UBL-SR-23" flag="fatal" id="UBL-SR-23">[UBL-SR-23]-Seller tax representative VAT identifier shall occur maximum once, if the Seller has a tax representative</assert>
   </rule>
   <rule context="$Tax_subtotal">
-    <assert test="$UBL-SR-32" flag="warning" id="UBL-SR-32">[UBL-SR-32]-VAT exemption reason text shall occur maximum once</assert>
+    <assert test="$UBL-SR-32" flag="fatal" id="UBL-SR-32">[UBL-SR-32]-VAT exemption reason text shall occur maximum once</assert>
   </rule>
 </pattern>
