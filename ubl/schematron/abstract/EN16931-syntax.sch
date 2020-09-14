@@ -324,7 +324,7 @@
     <assert test="$UBL-CR-292" flag="warning" id="UBL-CR-292">[UBL-CR-292]-A UBL invoice should not include the PayeeParty PowerOfAttorney</assert>
     <assert test="$UBL-CR-293" flag="warning" id="UBL-CR-293">[UBL-CR-293]-A UBL invoice should not include the PayeeParty FinancialAccount</assert>
     <assert test="$UBL-CR-294" flag="warning" id="UBL-CR-294">[UBL-CR-294]-A UBL invoice should not include the BuyerCustomerParty</assert>
-    <assert test="$UBL-CR-295" flag="warning" id="UBL-CR-295">[UBL-CR-295]-A UBL invoice should not include the SellerCustomerParty</assert>
+    <assert test="$UBL-CR-295" flag="warning" id="UBL-CR-295">[UBL-CR-295]-A UBL invoice should not include the SellerSupplierParty</assert>
     <assert test="$UBL-CR-296" flag="warning" id="UBL-CR-296">[UBL-CR-296]-A UBL invoice should not include the TaxRepresentativeParty MarkCareIndicator</assert>
     <assert test="$UBL-CR-297" flag="warning" id="UBL-CR-297">[UBL-CR-297]-A UBL invoice should not include the TaxRepresentativeParty MarkAttentionIndicator</assert>
     <assert test="$UBL-CR-298" flag="warning" id="UBL-CR-298">[UBL-CR-298]-A UBL invoice should not include the TaxRepresentativeParty WebsiteURI</assert>

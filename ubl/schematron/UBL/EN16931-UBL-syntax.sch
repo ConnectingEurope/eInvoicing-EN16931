@@ -373,7 +373,7 @@
   <param name="UBL-CR-292" value="not(cac:PayeeParty/cac:PowerOfAttorney)"/>
   <param name="UBL-CR-293" value="not(cac:PayeeParty/cac:FinancialAccount)"/>
   <param name="UBL-CR-294" value="not(cac:BuyerCustomerParty)"/>
-  <param name="UBL-CR-295" value="not(cac:SellerCustomerParty)"/>
+  <param name="UBL-CR-295" value="not(cac:SellerSupplierParty)"/>
   <param name="UBL-CR-296" value="not(cac:TaxRepresentativeParty/cbc:MarkCareIndicator)"/>
   <param name="UBL-CR-297" value="not(cac:TaxRepresentativeParty/cbc:MarkAttentionIndicator)"/>
   <param name="UBL-CR-298" value="not(cac:TaxRepresentativeParty/cbc:WebsiteURI)"/>
