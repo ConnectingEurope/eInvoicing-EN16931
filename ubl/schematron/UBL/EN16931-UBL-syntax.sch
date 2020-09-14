@@ -490,7 +490,7 @@
   <param name="UBL-CR-409" value="not(cac:Delivery/cac:Shipment)"/>
   <param name="UBL-CR-410" value="not(cac:DeliveryTerms)"/>
   <param name="UBL-CR-411" value="not(cac:PaymentMeans/cbc:ID)"/>
-  <param name="UBL-CR-412" value="not(cac:PaymentMeans/cbc:PaymentDueDate)"/>
+  <param name="UBL-CR-412" value="not(cac:PaymentMeans/cbc:PaymentDueDate) or ../cn:CreditNote"/>
   <param name="UBL-CR-413" value="not(cac:PaymentMeans/cbc:PaymentChannelCode)"/>
   <param name="UBL-CR-414" value="not(cac:PaymentMeans/cbc:InstructionID)"/>
   <param name="UBL-CR-415" value="not(cac:PaymentMeans/cac:CardAccount/cbc:CardTypeCode)"/>
