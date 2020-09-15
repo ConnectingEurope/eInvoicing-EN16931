@@ -8,7 +8,7 @@
 		<title>TC434 CII</title>
 		<declaration type="xml.uncefact">CrossIndustryInvoice::urn:cen.eu:en16931:2017</declaration>
 		<inherit>uncefact-d16b-uncoupled-crossindustryinvoice</inherit>
-		<file source="rules/cii/schematron/EN16931-CII-validation.sch" path="xsl/EN16931-CII-validation.xsl" />
+		<file source="cii/schematron/EN16931-CII-validation.sch" path="cii/xslt/EN16931-CII-validation.xsl" />
 	</configuration>
 
 </buildConfigurations>
