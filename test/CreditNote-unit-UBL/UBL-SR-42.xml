@@ -36,7 +36,7 @@
 	
 	<test id="2">
 		<assert>
-			<warning>UBL-SR-42</warning>
+			<error>UBL-SR-42</error>
 		</assert>
 		<CreditNote
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
