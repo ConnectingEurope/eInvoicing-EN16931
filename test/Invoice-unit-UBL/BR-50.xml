@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-50</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<description>Verify that a payment account identifier is be present if Credit Transfer identification information is provided in the Invoice.</description>
+			<success>BR-50</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>123</cbc:ID>
+				</cac:PayeeFinancialAccount>		
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	<test id="2">
+		<assert>
+			<description>Verify that a payment account identifier is be present if Credit Transfer identification information is provided in the Invoice.</description>
+			<success>BR-50</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>123</cbc:ID>
+				</cac:PayeeFinancialAccount>		
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	<test id="3">
+		<assert>
+			<description>Verify that a payment account identifier is be present if Credit Transfer identification information is provided in the Invoice.</description>
+			<success>BR-50</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>31</cbc:PaymentMeansCode>
+			<!--	<cac:PayeeFinancialAccount>
+					<cbc:ID>123</cbc:ID>
+				</cac:PayeeFinancialAccount>-->		
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+
+	<test id="4">
+		<assert>
+			<description>Trigger error if a payment account identifier is not present when Credit Transfer identification information is provided in the Invoice.</description>
+			<error>BR-50</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cac:PayeeFinancialAccount>
+					<!-- <cbc:ID>123</cbc:ID> -->
+				</cac:PayeeFinancialAccount>		
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	<test id="5">
+		<assert>
+			<description>Trigger error if a payment account identifier is not present when Credit Transfer identification information is provided in the Invoice.</description>
+			<error>BR-50</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
+				<cac:PayeeFinancialAccount>
+					<!-- <cbc:ID>123</cbc:ID> -->
+				</cac:PayeeFinancialAccount>		
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+
+
+</testSet>

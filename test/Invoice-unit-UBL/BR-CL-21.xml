@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Item standard identifier scheme identifier MUST belong to the ISO 6523 ICD code list</description>
+		<scope>BR-CL-21</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>BR-CL-21</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				
+				<cac:Item>
+					<cac:StandardItemIdentification>
+						<cbc:ID schemeID="0088"/>
+					</cac:StandardItemIdentification>
+				</cac:Item>
+				
+				<cac:Item>
+					<cac:StandardItemIdentification>
+						<cbc:ID schemeID="0007"/>
+					</cac:StandardItemIdentification>
+				</cac:Item>
+				
+				<cac:Item>
+					<cac:StandardItemIdentification>
+						<cbc:ID schemeID="0033"/>
+					</cac:StandardItemIdentification>
+				</cac:Item>
+				
+				<cac:Item>
+					<cac:StandardItemIdentification>
+						<cbc:ID schemeID="0180"/>
+					</cac:StandardItemIdentification>
+				</cac:Item>
+		
+			<cac:Item>
+				<cac:StandardItemIdentification>
+					<cbc:ID schemeID="0195"/>
+				</cac:StandardItemIdentification>
+			</cac:Item>
+			
+			<cac:Item>
+				<cac:StandardItemIdentification>
+					<cbc:ID schemeID="0196"/>
+				</cac:StandardItemIdentification>
+			</cac:Item>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	
+	<test id="2">
+		<assert>
+			<error number="3">BR-CL-21</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		
+			<cac:InvoiceLine>
+				
+				<cac:Item>
+					<cac:StandardItemIdentification>
+						<cbc:ID schemeID="0181"/>
+					</cac:StandardItemIdentification>
+				</cac:Item>
+				
+				<cac:Item>
+					<cac:StandardItemIdentification>
+						<cbc:ID schemeID="9901"/>
+					</cac:StandardItemIdentification>
+				</cac:Item>
+				
+				<cac:Item>
+					<cac:StandardItemIdentification>
+						<cbc:ID schemeID="0283"/>
+					</cac:StandardItemIdentification>
+				</cac:Item>
+
+			</cac:InvoiceLine>
+		
+		</Invoice>
+	</test>
+
+</testSet>

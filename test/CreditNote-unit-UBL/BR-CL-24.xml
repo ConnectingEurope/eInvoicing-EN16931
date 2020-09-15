@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Trigger error if Mime code in attribute is not a valid
+			MIMEMediaType</description>
+		<scope>BR-CL-24</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>BR-CL-24</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:AdditionalDocumentReference>
+				<cac:Attachment>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+						>test</cbc:EmbeddedDocumentBinaryObject>
+				</cac:Attachment>
+			</cac:AdditionalDocumentReference>
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<error>BR-CL-24</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:AdditionalDocumentReference>
+				<cac:Attachment>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pxf"
+						>test</cbc:EmbeddedDocumentBinaryObject>
+				</cac:Attachment>
+			</cac:AdditionalDocumentReference>
+		</CreditNote>
+	</test>
+
+</testSet>

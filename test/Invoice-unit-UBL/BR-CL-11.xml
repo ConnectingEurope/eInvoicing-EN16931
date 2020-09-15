@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Any registration identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list.</description>
+		<scope>BR-CL-11</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>BR-CL-11</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="0088"/>
+					</cac:PartyLegalEntity>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="0195"/>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="0007"/>
+					</cac:PartyLegalEntity>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="0196"/>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			
+			<cac:PayeeParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="0033"/>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:PayeeParty>
+			
+		</Invoice>
+	</test>
+	
+	<test id="2">
+		<assert>
+			<error number="3">BR-CL-11</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="0181"/>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="9901"/>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			
+			<cac:PayeeParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID schemeID="0283"/>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:PayeeParty>
+			
+
+		</Invoice>
+	</test>
+
+</testSet>

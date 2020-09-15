@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Party identification scheme identifier MUST be coded using ISO/IEC 6523</description>
+		<scope>BR-CL-10</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>BR-CL-10</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0088"/>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="SEPA"/>
+					</cac:PartyIdentification>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0007"/>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0195"/>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0196"/>
+					</cac:PartyIdentification>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			
+			<cac:PayeeParty>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="0033"/>
+				</cac:PartyIdentification>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="SEPA"/>
+				</cac:PartyIdentification>
+			</cac:PayeeParty>
+
+			<cac:TaxRepresentativeParty>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="0050"/>
+				</cac:PartyIdentification>
+			</cac:TaxRepresentativeParty>
+		</Invoice>
+	</test>
+	
+	<test id="2">
+		<assert>
+			<error number="6">BR-CL-10</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="9901"/>
+						</cac:PartyIdentification>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0181"/>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="SEPA"/>
+					</cac:PartyIdentification>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			
+			<cac:PayeeParty>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="0213"/>
+				</cac:PartyIdentification>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="0210"/>
+				</cac:PartyIdentification>
+			</cac:PayeeParty>
+			
+			<cac:TaxRepresentativeParty>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="9908"/>
+				</cac:PartyIdentification>
+			</cac:TaxRepresentativeParty>
+		</Invoice>
+	</test>
+
+</testSet>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-62</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that the Seller electronic address have a Scheme identifier</description>
+			<success>BR-62</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="NO:ORGNR">123456785</cbc:EndpointID>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when the Seller electronic address does not have a Scheme identifier</description>
+			<error>BR-62</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cbc:EndpointID>123456785</cbc:EndpointID>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+		</CreditNote>
+	</test>
+
+
+</testSet>

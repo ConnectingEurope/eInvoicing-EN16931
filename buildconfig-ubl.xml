@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
+
+	<package>CEN TC434 UBL</package>
+
+	<testfolder>rules/ubl/examples</testfolder>
+	<testfolder>test/Invoice-unit-UBL</testfolder>
+	<testfolder>test/CreditNote-unit-UBL</testfolder>
+
+	<configuration>
+		<identifier>tc434-ubl</identifier>
+		<title>TC434 UBL</title>
+		<declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017</declaration>
+		<inherit>ubl-invoice-2.1</inherit>
+		<inherit>ehf-t10-stylesheet-2.0</inherit>
+		<file source="rules/ubl/schematron/EN16931-UBL-validation.sch" path="xsl/EN16931-UBL-validation.xsl" />
+	</configuration>
+
+
+</buildConfigurations>

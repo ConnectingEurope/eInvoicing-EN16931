@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-53</scope>
+
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that total VAT amount in accounting currency is provided, when
+				invoice currency != VAT currency</description>
+			<success>BR-53</success>
+
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+			<cbc:TaxCurrencyCode>NOK</cbc:TaxCurrencyCode>
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">100</cbc:TaxAmount>
+			</cac:TaxTotal>
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="NOK">800</cbc:TaxAmount>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+
+
+	<test>
+		<assert>
+			<description>Trigger error when total VAT amount in accounting currency is missing, and
+				invoice currency != VAT currency</description>
+			<error>BR-53</error>
+
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+			<cbc:TaxCurrencyCode>NOK</cbc:TaxCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">1000</cbc:TaxAmount>
+			</cac:TaxTotal>
+
+		</Invoice>
+	</test>
+
+
+</testSet>

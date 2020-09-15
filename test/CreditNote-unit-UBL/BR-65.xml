@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-65</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that the Item classification identifier have a Scheme identifier</description>
+			<success>BR-65</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:CreditNoteLine>
+				<cac:Item>
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode listID="CPV">65434567</cbc:ItemClassificationCode>
+					</cac:CommodityClassification>
+				</cac:Item>
+			</cac:CreditNoteLine>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when the Item classification identifier does not have a Scheme identifier</description>
+			<error>BR-65</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:CreditNoteLine>
+				<cac:Item>
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode>65434567</cbc:ItemClassificationCode>
+					</cac:CommodityClassification>
+				</cac:Item>
+			</cac:CreditNoteLine>
+			
+		</CreditNote>
+	</test>
+
+
+</testSet>

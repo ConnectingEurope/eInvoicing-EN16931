@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-19</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that seller tax representative postal address is present</description>
+			<success>BR-19</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:TaxRepresentativeParty>
+				<cac:PostalAddress>
+					<cbc:StreetName>Regent street</cbc:StreetName>
+					<cbc:AdditionalStreetName>Front door</cbc:AdditionalStreetName>
+					<cbc:CityName>Newtown</cbc:CityName>
+					<cbc:PostalZone>101</cbc:PostalZone>
+					<cbc:CountrySubentity>RegionC</cbc:CountrySubentity>
+					<cac:Country>
+						<cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:PostalAddress>
+			</cac:TaxRepresentativeParty>
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Verify seller tax representative postal address is present</description>
+			<success>BR-19</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:TaxRepresentativeParty>
+				<cac:PostalAddress></cac:PostalAddress>
+			</cac:TaxRepresentativeParty>
+		</CreditNote>
+	</test>
+
+
+	<test>
+		<assert>
+			<description>Trigger error when seller tax representative postal address is missing</description>
+			<error>BR-19</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+
+			<cac:TaxRepresentativeParty>
+				<!-- <cac:PostalAddress></cac:PostalAddress> -->
+			</cac:TaxRepresentativeParty>
+		</CreditNote>
+	</test>
+	
+
+</testSet>

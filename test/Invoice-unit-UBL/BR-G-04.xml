@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+    <assert>
+        <description>Verify that an Invoice that contains a Document level charge (BG-21) where
+            the Document level allowance VAT category code (BT-95) is “Export outside the EU” shall
+            contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT
+            identifier (BT-63). </description>
+        <scope>BR-G-04</scope>
+    </assert>
+    <test>
+        <assert>
+            <success>BR-G-04</success>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:AccountingSupplierParty>
+                <cac:Party>
+                    <cac:PartyTaxScheme>
+                        <cbc:CompanyID>123456789MVA</cbc:CompanyID>
+                        <cac:TaxScheme>
+                            <cbc:ID>VAT</cbc:ID>
+                        </cac:TaxScheme>
+                    </cac:PartyTaxScheme>
+                </cac:Party>
+            </cac:AccountingSupplierParty>
+            
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                <cac:TaxCategory>
+                    <cbc:ID>G</cbc:ID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:AllowanceCharge>
+        </Invoice>
+    </test>
+    <test>
+        <assert>
+            <success>BR-G-04</success>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:TaxRepresentativeParty>
+                <cac:PartyTaxScheme>
+                    <cbc:CompanyID>99999</cbc:CompanyID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:PartyTaxScheme>
+            </cac:TaxRepresentativeParty>
+            
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                <cac:TaxCategory>
+                    <cbc:ID>G</cbc:ID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:AllowanceCharge>
+        </Invoice>
+    </test>
+    <test>
+        <assert>
+            <error>BR-G-04</error>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:AccountingSupplierParty>
+                <cac:Party>
+                    <cac:PartyTaxScheme>
+                        <!--<cbc:CompanyID>123456789MVA</cbc:CompanyID>-->
+                        <cac:TaxScheme>
+                            <cbc:ID>VAT</cbc:ID>
+                        </cac:TaxScheme>
+                    </cac:PartyTaxScheme>
+                </cac:Party>
+            </cac:AccountingSupplierParty>
+            
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                <cac:TaxCategory>
+                    <cbc:ID>G</cbc:ID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:AllowanceCharge>
+            
+        </Invoice>
+    </test>
+    <test>
+        <assert>
+            <error>BR-G-04</error>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:AccountingSupplierParty>
+                <cac:Party>
+                    <!--<cac:PartyTaxScheme>
+						<cbc:CompanyID>123456789MVA</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme> -->
+                </cac:Party>
+            </cac:AccountingSupplierParty>
+            
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                <cac:TaxCategory>
+                    <cbc:ID>G</cbc:ID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:AllowanceCharge>
+            
+        </Invoice>
+    </test>
+    <test>
+        <assert>
+            <error>BR-G-04</error>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:TaxRepresentativeParty>
+                <!--				<cac:PartyTaxScheme>
+					<cbc:CompanyID>999999999MVA</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+				</cac:PartyTaxScheme>-->
+            </cac:TaxRepresentativeParty>
+            
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                <cac:TaxCategory>
+                    <cbc:ID>G</cbc:ID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:AllowanceCharge>
+            
+        </Invoice>
+    </test>
+    <test>
+        <assert>
+            <error>BR-G-04</error>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:TaxRepresentativeParty>
+                <cac:PartyTaxScheme>
+                    <!--					<cbc:CompanyID>999999999MVA</cbc:CompanyID>-->
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:PartyTaxScheme>
+            </cac:TaxRepresentativeParty>
+            
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                <cac:TaxCategory>
+                    <cbc:ID>G</cbc:ID>
+                    <cac:TaxScheme>
+                        <cbc:ID>VAT</cbc:ID>
+                    </cac:TaxScheme>
+                </cac:TaxCategory>
+            </cac:AllowanceCharge>
+            
+        </Invoice>
+    </test>
+</testSet>

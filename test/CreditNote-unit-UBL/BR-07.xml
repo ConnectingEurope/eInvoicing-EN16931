@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-07</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify buyers name is present</description>
+			<success>BR-07</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Buyer Name</cbc:RegistrationName>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when buyers name is missing.</description>
+			<error>BR-07</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<!--  	
+				<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Buyer Name</cbc:RegistrationName>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			-->
+		</CreditNote>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error when buyers name is missing</description>
+			<error>BR-07</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:AccountingCustomerParty>
+				<!--
+				<cac:Party>
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Buyer Name</cbc:RegistrationName>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+				-->
+			</cac:AccountingCustomerParty>
+		</CreditNote>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error when buyers name is missing</description>
+			<error>BR-07</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<!-- 			
+					<cac:PartyLegalEntity>
+						<cbc:RegistrationName>Buyer Name</cbc:RegistrationName>
+					</cac:PartyLegalEntity>
+					 -->
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</CreditNote>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error when buyers name is missing</description>
+			<error>BR-07</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			
+			<cac:AccountingCustomerParty>
+				<cac:Party>				
+					<cac:PartyLegalEntity>
+						<!-- <cbc:RegistrationName>Buyer Name</cbc:RegistrationName>-->
+					</cac:PartyLegalEntity>	 
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</CreditNote>
+	</test>
+
+</testSet>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CO-03</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that value added tax point date and Value added tax point date code are mutually exclusive.</description>
+			<success>BR-CO-03</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cbc:TaxPointDate>2013-06-30</cbc:TaxPointDate>
+			<!--<cac:InvoicePeriod>
+				<cbc:DescriptionCode>12</cbc:DescriptionCode>
+			</cac:InvoicePeriod> -->
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that value added tax point date and Value added tax point date code are mutually exclusive.</description>
+			<success>BR-CO-03</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+<!--			<cbc:TaxPointDate>2013-06-30</cbc:TaxPointDate>-->
+			<cac:InvoicePeriod>
+				<cbc:DescriptionCode>12</cbc:DescriptionCode>
+			</cac:InvoicePeriod> 
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that value added tax point date and Value added tax point date code are mutually exclusive.</description>
+			<success>BR-CO-03</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cbc:TaxPointDate>2013-06-30</cbc:TaxPointDate>
+			<cac:InvoicePeriod>
+<!--				<cbc:DescriptionCode>12</cbc:DescriptionCode>-->
+			</cac:InvoicePeriod> 
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that value added tax point date and Value added tax point date code are mutually exclusive.</description>
+			<error>BR-CO-03</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cbc:TaxPointDate>2013-06-30</cbc:TaxPointDate>
+			<cac:InvoicePeriod>
+				<cbc:DescriptionCode>12</cbc:DescriptionCode>
+			</cac:InvoicePeriod> 
+		</Invoice>
+	</test>
+</testSet>

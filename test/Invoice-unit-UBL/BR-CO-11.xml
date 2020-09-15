@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CO-11</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that sum of allowances on document level = Σ Document level allowance amount</description>
+			<success>BR-CO-11</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">100</cbc:Amount>
+			</cac:AllowanceCharge>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Verify that sum of allowances on document level = Σ Document level allowance amount</description>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">100</cbc:Amount>
+			</cac:AllowanceCharge>
+
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">100</cbc:Amount>
+			</cac:AllowanceCharge>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that sum of allowances on document level = Σ Document level allowance amount</description>
+			<success>BR-CO-11</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">0</cbc:Amount>
+			</cac:AllowanceCharge>
+
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">100</cbc:Amount>
+			</cac:AllowanceCharge>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:AllowanceTotalAmount>0.00</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Verify that sum of allowances on document level = Σ Document level allowance amount</description>
+			<success>BR-CO-11</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">100</cbc:Amount>
+			</cac:AllowanceCharge>
+			
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">1000.0</cbc:Amount>
+			</cac:AllowanceCharge>
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:AllowanceTotalAmount>1100.00</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error if sum of allowances on document level != Σ Document level allowance amount</description>
+			<error>BR-CO-11</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">100</cbc:Amount>
+			</cac:AllowanceCharge>
+			
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">1000.0</cbc:Amount>
+			</cac:AllowanceCharge>
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:AllowanceTotalAmount>1000.00</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if sum of allowances on document level != Σ Document level allowance amount</description>
+			<error>BR-CO-11</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">1000</cbc:Amount>
+			</cac:AllowanceCharge>
+			
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="NOK">0.0</cbc:Amount>
+			</cac:AllowanceCharge>
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:AllowanceTotalAmount>1000.00</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>
+</testSet>

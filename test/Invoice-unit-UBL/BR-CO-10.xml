@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CO-10</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that sum of Invoice line net amount = Σ Invoice line net amount</description>
+			<success>BR-CO-10</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>100</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+			
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>100.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Verify that sum of Invoice line net amount = Σ Invoice line net amount</description>
+			<success>BR-CO-10</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>0</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+			
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>0.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that sum of Invoice line net amount = Σ Invoice line net amount</description>
+			<success>BR-CO-10</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>0</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+			
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>0</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Verify that sum of Invoice line net amount = Σ Invoice line net amount</description>
+			<success>BR-CO-10</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>200</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+			
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>110.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>90.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that sum of Invoice line net amount = Σ Invoice line net amount</description>
+			<success>BR-CO-10</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>20</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+			
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>110.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>-90.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that sum of Invoice line net amount = Σ Invoice line net amount</description>
+			<success>BR-CO-10</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>-20</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+			
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>-110.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>90.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that sum of Invoice line net amount = Σ Invoice line net amount</description>
+			<success>BR-CO-10</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>-100</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+			
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>-100.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if sum of Invoice line net amount != Σ Invoice line net amount</description>
+			<error>BR-CO-10</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>200.01</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+			
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>110.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>90.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if sum of Invoice line net amount != Σ Invoice line net amount</description>
+			<error>BR-CO-10</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>-91</cbc:LineExtensionAmount>
+			</cac:LegalMonetaryTotal>
+
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount>-90.00</cbc:LineExtensionAmount>
+			</cac:InvoiceLine>
+			
+		</Invoice>
+	</test>
+	
+</testSet>

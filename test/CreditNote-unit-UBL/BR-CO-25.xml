@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Verify that rule does not fire on Credit Notes</description>
+		<scope>BR-CO-25</scope>
+	</assert>
+	
+	<test>
+		<assert>
+			<description>Verify that rule does not fire on Credit Notes
+			</description>
+			<success>BR-CO-25</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:PaymentMeans>		
+				<cbc:PaymentDueDate>2018-08-08</cbc:PaymentDueDate>
+			</cac:PaymentMeans>
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="NOK">1000.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Verify that rule does not fire on Credit Notes
+			</description>
+			<success>BR-CO-25</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="NOK">1000.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Verify that rule does not fire on Credit Notes
+			</description>
+			<success>BR-CO-25</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="NOK">0.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Verify that rule does not fire on Credit Notes
+			</description>
+			<success>BR-CO-25</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="NOK">-1000.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Verify that rule does not fire on Credit Notes
+			</description>
+			<success>BR-CO-25</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:PaymentTerms>
+				<cbc:Note>Payment terms note</cbc:Note>
+			</cac:PaymentTerms>
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="NOK">-1000.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Verify that rule does not fire on Credit Notes
+			</description>
+			<success>BR-CO-25</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:PaymentTerms>
+				<cbc:Note>Payment terms note</cbc:Note>
+			</cac:PaymentTerms>
+			
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="NOK">1000.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</CreditNote>
+	</test>
+
+</testSet>

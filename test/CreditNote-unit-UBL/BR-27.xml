@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-27</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that price amount is zero or above</description>
+			<success>BR-27</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:CreditNoteLine>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="NOK">100</cbc:PriceAmount>
+				</cac:Price>
+			</cac:CreditNoteLine>
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Verify that price amount is zero or above</description>
+			<success>BR-27</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:CreditNoteLine>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="NOK">0</cbc:PriceAmount>
+				</cac:Price>
+			</cac:CreditNoteLine>
+		</CreditNote>
+	</test>
+
+
+	<test>
+		<assert>
+			<description>Trigger error when price amount is negative</description>
+			<error>BR-27</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:CreditNoteLine>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="NOK">-1</cbc:PriceAmount>
+				</cac:Price>
+			</cac:CreditNoteLine>
+		</CreditNote>
+	</test>
+
+
+</testSet>

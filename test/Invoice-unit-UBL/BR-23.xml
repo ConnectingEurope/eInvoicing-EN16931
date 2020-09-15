@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-23</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that invoiced quantity unitcode is present</description>
+			<success>BR-23</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<cbc:InvoicedQuantity unitCode="NAR">1</cbc:InvoicedQuantity>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+
+
+	<test>
+		<assert>
+			<description>Trigger error when invoiced quantity unitcode is missing</description>
+			<error>BR-23</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:InvoiceLine>
+				<cbc:InvoicedQuantity>1</cbc:InvoicedQuantity>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	
+
+</testSet>

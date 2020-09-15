@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-IC-11</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that in an Invoice with a VAT breakdown where the VAT category code
+				is "Intra-community supply" the actual delivery date or the delivery period is not
+				blank.</description>
+			<success>BR-IC-11</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:Delivery>
+				<cbc:ActualDeliveryDate>2016-06-01</cbc:ActualDeliveryDate>
+			</cac:Delivery>
+
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>K</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+
+
+	<test>
+		<assert>
+			<description>Verify that in an Invoice with a VAT breakdown where the VAT category code
+				is "Intra-community supply" the actual delivery date or the delivery period is not
+				blank.</description>
+			<success>BR-IC-11</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoicePeriod>
+				<cbc:StartDate>2013-06-01</cbc:StartDate>
+				<cbc:EndDate>2013-06-30</cbc:EndDate>
+			</cac:InvoicePeriod>
+
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>K</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if in an Invoice with a VAT breakdown where the VAT category
+				code is "Intra-community supply" the actual delivery date or the delivery period is
+				blank.</description>
+			<error>BR-IC-11</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:Delivery>
+				<cbc:ActualDeliveryDate/>
+			</cac:Delivery>
+
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>K</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if in an Invoice with a VAT breakdown where the VAT category
+				code is "Intra-community supply" the actual delivery date or the delivery period is
+				blank.</description>
+			<error>BR-IC-11</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoicePeriod/>
+
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>K</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error if in an Invoice with a VAT breakdown where the VAT category
+				code is "Intra-community supply" the actual delivery date or the delivery period is
+				blank.</description>
+			<error>BR-IC-11</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:Delivery>
+				<cbc:ActualDeliveryDate><!--comment only--></cbc:ActualDeliveryDate>
+			</cac:Delivery>
+
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>K</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error if in an Invoice with a VAT breakdown where the VAT category
+				code is "Intra-community supply" the actual delivery date or the delivery period is
+				blank.</description>
+			<error>BR-IC-11</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:Delivery>
+				<cbc:ActualDeliveryDate/>
+			</cac:Delivery>
+
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cac:TaxCategory>
+						<cbc:ID>K</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+</testSet>

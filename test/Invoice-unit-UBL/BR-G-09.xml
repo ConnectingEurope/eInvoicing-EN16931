@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-G-09</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that the VAT category tax amount in a VAT breakdown
+				where the VAT category code equals "G", = 0 (zero). </description>
+			<success>BR-G-09</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount>0</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:ID>G</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+			
+			
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Trigger error if the VAT category tax amount (BT-110) in a VAT breakdown
+				(BG-21) where the VAT category code (BT-111) equals "G", != 0 (zero). </description>
+			<error>BR-G-09</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount>10</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:ID>G</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+			
+		</Invoice>
+	</test>
+	
+	
+	<test>
+		<assert>
+			<description>Trigger error if the VAT category tax amount (BT-110) in a VAT breakdown
+				(BG-21) where the VAT category code (BT-111) equals "G", != 0 (zero). </description>
+			<error>BR-G-09</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount>-10</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:ID>G</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+			
+		</Invoice>
+	</test>
+</testSet>

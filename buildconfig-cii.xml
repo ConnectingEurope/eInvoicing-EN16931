@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
+
+	<testfolder>rules/cii/examples</testfolder>
+
+	<configuration>
+		<identifier>tc434-cii</identifier>
+		<title>TC434 CII</title>
+		<declaration type="xml.uncefact">CrossIndustryInvoice::urn:cen.eu:en16931:2017</declaration>
+		<inherit>uncefact-d16b-uncoupled-crossindustryinvoice</inherit>
+		<file source="rules/cii/schematron/EN16931-CII-validation.sch" path="xsl/EN16931-CII-validation.xsl" />
+	</configuration>
+
+</buildConfigurations>

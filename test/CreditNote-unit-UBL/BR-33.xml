@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-33</scope>
+
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that an allowance reason or reason code is present</description>
+			<success>BR-33</success>
+
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReason>Freight</cbc:AllowanceChargeReason>
+			</cac:AllowanceCharge>
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that an allowance reason or reason code is present</description>
+			<success>BR-33</success>
+
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>94</cbc:AllowanceChargeReasonCode>
+			</cac:AllowanceCharge>
+		</CreditNote>
+	</test>
+
+
+	<test>
+		<assert>
+			<description>Trigger error when allowance reason or reason code is missing</description>
+			<error>BR-33</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<!-- 	<cbc:AllowanceChargeReason>Freight</cbc:AllowanceChargeReason> -->
+				<!--    <cbc:AllowanceChargeReasonCode>94</cbc:AllowanceChargeReasonCode> -->
+			</cac:AllowanceCharge>
+
+		</CreditNote>
+	</test>
+
+
+</testSet>

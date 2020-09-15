@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-14</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify invoice total amount with VAT in document totals is present</description>
+			<success>BR-14</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount currencyID="NOK">1200</cbc:TaxInclusiveAmount>
+			</cac:LegalMonetaryTotal>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when invoice total amount with VAT in document totals is missing</description>
+			<error>BR-14</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:LegalMonetaryTotal>
+				<!-- <cbc:TaxInclusiveAmount currencyID="NOK">1200</cbc:TaxInclusiveAmount> -->
+			</cac:LegalMonetaryTotal>
+
+
+		</Invoice>
+	</test>
+
+</testSet>

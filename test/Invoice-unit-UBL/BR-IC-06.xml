@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-IC-06</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that in a document level allowance where the Invoice item VAT
+				category code (BT-95) is "K" the Invoiced item VAT rate (BT-96) shall be 0 (zero). </description>
+			<success>BR-IC-06</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cac:TaxCategory>
+					<cbc:ID schemeID="UNCL5305">K</cbc:ID>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+					</cac:TaxScheme>
+					<cbc:Percent>0</cbc:Percent>
+				</cac:TaxCategory>
+			</cac:AllowanceCharge>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when a document level allowance where the Invoice item VAT
+				category code (BT-95) is "K" the Invoiced item VAT rate (BT-96) is not 0 (zero). </description>
+			<error>BR-IC-06</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cac:TaxCategory>
+					<cbc:ID schemeID="UNCL5305">K</cbc:ID>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+					</cac:TaxScheme>
+					<cbc:Percent>10</cbc:Percent>
+				</cac:TaxCategory>
+			</cac:AllowanceCharge>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when a document level allowance where the Invoice item VAT
+				category code (BT-95) is "K" the Invoiced item VAT rate (BT-96) is not 0 (zero). </description>
+			<error>BR-IC-06</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cac:TaxCategory>
+					<cbc:ID schemeID="UNCL5305">K</cbc:ID>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+					</cac:TaxScheme>
+					<cbc:Percent>-10</cbc:Percent>
+				</cac:TaxCategory>
+			</cac:AllowanceCharge>
+
+		</Invoice>
+	</test>
+
+
+
+</testSet>

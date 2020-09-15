@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Unit code MUST be coded according to the UN/ECE Recommendation 20 with
+			Rec 21 extension</description>
+		<scope>BR-CL-23</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>BR-CL-23</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+
+			
+			<cac:InvoiceLine>
+			
+				<cbc:InvoicedQuantity unitCode="MON"></cbc:InvoicedQuantity>
+				
+				<cac:Price>
+					<cbc:BaseQuantity unitCode="KW"></cbc:BaseQuantity>
+				</cac:Price>
+				
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	
+	<test id="2">
+		<assert>
+			<error number="2">BR-CL-23</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			
+			<cac:InvoiceLine>
+				
+				<cbc:InvoicedQuantity unitCode="2D"></cbc:InvoicedQuantity>
+				
+				<cac:Price>
+					<cbc:BaseQuantity unitCode="MO"></cbc:BaseQuantity>
+				</cac:Price>
+				
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+
+</testSet>

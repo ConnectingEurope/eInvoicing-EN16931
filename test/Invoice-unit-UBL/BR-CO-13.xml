@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Verify that Invoice total amount without VAT = Σ Invoice line net amount -
+			Sum of allowances on document level + Sum of charges on document
+			level.</description>
+		<scope>BR-CO-13</scope>
+	</assert>
+	<test id="1">
+		<assert>
+
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>1000</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount>100</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+
+	<test id="2">
+		<assert>
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>900</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="3">
+		<assert>
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>1100</cbc:TaxExclusiveAmount>
+				<cbc:ChargeTotalAmount>100</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+
+	<test id="4">
+		<assert>
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>1000</cbc:TaxExclusiveAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="5">
+		<assert>
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>-100</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>00</cbc:TaxExclusiveAmount>
+				<cbc:ChargeTotalAmount>100</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="6">
+		<assert>
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>-1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>-1000</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount>100</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="7">
+		<assert>
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>0</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>-100</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="8">
+		<assert>
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>100.00</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>00.0</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+
+	<test id="9">
+		<assert>
+			<error>BR-CO-13</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>1000</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount>200</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="10">
+		<assert>
+			<error>BR-CO-13</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>-100</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>100</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount>200</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="11">
+		<assert>
+			<error>BR-CO-13</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1100</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>1000.01</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="12">
+		<assert>
+			<error>BR-CO-13</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>1001</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>0</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount>0</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="13">
+		<assert>
+			<error>BR-CO-13</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>-1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>-1000</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>100</cbc:AllowanceTotalAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	<test id="14">
+		<assert>
+			
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>1000</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>0</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount>0</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>
+	
+	<test id="15">
+		<assert>
+			
+			<success>BR-CO-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount>1000</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount>1000</cbc:TaxExclusiveAmount>
+				<cbc:AllowanceTotalAmount>0.0</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount>0.00</cbc:ChargeTotalAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>
+</testSet>

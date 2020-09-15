@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-61</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<description>Verify that if the Payment means type is SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier shall be present.</description>
+			<success>BR-61</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>123</cbc:ID>
+				</cac:PayeeFinancialAccount>		
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	<test id="2">
+		<assert>
+			<description>Verify that if the Payment means type is SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier shall be present.</description>
+			<success>BR-61</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>57</cbc:PaymentMeansCode>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>123</cbc:ID>
+				</cac:PayeeFinancialAccount>		
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	<test id="3">
+		<assert>
+			<description>Verify that if the Payment means type is SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier shall be present.</description>
+			<success>BR-61</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>49</cbc:PaymentMeansCode>
+				<!-- <cac:PayeeFinancialAccount>
+					<cbc:ID>123</cbc:ID>
+				</cac:PayeeFinancialAccount>	-->	
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+
+	<test id="4">
+		<assert>
+			<description>Trigger error if the Payment means type is SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer,  and the Payment account identifier is not present.</description>
+			<error>BR-61</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cac:PayeeFinancialAccount>
+					<!-- <cbc:ID>123</cbc:ID> -->
+				</cac:PayeeFinancialAccount>		
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	<test id="5">
+		<assert>
+			<description>Trigger error if the Payment means type is SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer,  and the Payment account identifier is not present.</description>
+			<error>BR-61</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
+				<!-- <cac:PayeeFinancialAccount>
+				<cbc:ID>123</cbc:ID>
+				</cac:PayeeFinancialAccount>	-->	
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+</testSet>

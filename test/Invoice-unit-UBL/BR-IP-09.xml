@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-IP-09</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that the VAT category tax amount in VAT breakdown where VAT category
+				code is "M" = the VAT category taxable amount multiplied by the VAT category rate </description>
+			<success>BR-IP-09</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount>180</cbc:TaxAmount>
+					<cbc:TaxableAmount>1200</cbc:TaxableAmount>
+					<cac:TaxCategory>
+						<cbc:ID>M</cbc:ID>
+						<cbc:Percent>15</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that the VAT category tax amount in VAT breakdown where VAT category
+				code is "M" = the VAT category taxable amount multiplied by the VAT category rate </description>
+			<success>BR-IP-09</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount>592.45</cbc:TaxAmount>
+					<cbc:TaxableAmount>12342.61</cbc:TaxableAmount>
+					<cac:TaxCategory>
+						<cbc:ID>M</cbc:ID>
+						<cbc:Percent>4.8</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that the VAT category tax amount in VAT breakdown where VAT category
+				code is "M" = the VAT category taxable amount multiplied by the VAT category rate </description>
+			<success>BR-IP-09</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount>130</cbc:TaxAmount>
+					<cbc:TaxableAmount>1000</cbc:TaxableAmount>
+					<cac:TaxCategory>
+						<cbc:ID>M</cbc:ID>
+						<cbc:Percent>13</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount>47</cbc:TaxAmount>
+					<cbc:TaxableAmount>979.15</cbc:TaxableAmount>
+					<cac:TaxCategory>
+						<cbc:ID>M</cbc:ID>
+						<cbc:Percent>4.8</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger errror if the VAT category tax amount in VAT breakdown where VAT
+				category code is "M" != the VAT category taxable amount multiplied by the VAT
+				category rate </description>
+			<error>BR-IP-09</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount>180</cbc:TaxAmount>
+					<cbc:TaxableAmount>1100</cbc:TaxableAmount>
+					<cac:TaxCategory>
+						<cbc:ID> M</cbc:ID>
+						<cbc:Percent>15</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+		</Invoice>
+	</test>
+
+</testSet>

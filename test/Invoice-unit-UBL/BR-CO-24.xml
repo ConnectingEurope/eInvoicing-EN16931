@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CO-24</scope>
+	</assert>
+
+	<test>
+		<assert>
+			<description>Verify that each Invoice line charge (BG-20) contain a Invoice line charge
+				reason or a Invoice line charge reason code, or both.</description>
+			<success>BR-CO-24</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<cbc:AllowanceChargeReasonCode>75</cbc:AllowanceChargeReasonCode>
+					<cbc:AllowanceChargeReason>Promotion discount</cbc:AllowanceChargeReason>
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that each Invoice line charge (BG-20) contain a Invoice line charge
+				reason or a Invoice line charge reason code, or both.</description>
+			<success>BR-CO-24</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<cbc:AllowanceChargeReasonCode>75</cbc:AllowanceChargeReasonCode>
+					<!--				<cbc:AllowanceChargeReason>Promotion discount</cbc:AllowanceChargeReason>-->
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that each Invoice line charge (BG-20) contain a Invoice line charge
+				reason or a Invoice line charge reason code, or both.</description>
+			<success>BR-CO-24</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<!--				<cbc:AllowanceChargeReasonCode>75</cbc:AllowanceChargeReasonCode>-->
+					<cbc:AllowanceChargeReason>Promotion discount</cbc:AllowanceChargeReason>
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if a Invoice line charge (BG-20) does not contain a Invoice
+				line charge reason or a Invoice line charge reason code, or both.</description>
+			<error>BR-CO-24</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<!--<cbc:AllowanceChargeReasonCode>75</cbc:AllowanceChargeReasonCode>
+				<cbc:AllowanceChargeReason>Promotion discount</cbc:AllowanceChargeReason>-->
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+
+</testSet>

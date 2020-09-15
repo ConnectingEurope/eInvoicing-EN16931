@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Buyer VAT identifier shall occur maximum once</description>
+		<scope>UBL-SR-18</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>UBL-SR-18</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0007">1234512345</cbc:EndpointID>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>AF</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>AF9988776655</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+
+		</Invoice>
+	</test>
+	
+	<test id="2">
+		<assert>
+			<error>UBL-SR-18</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0007">1234512345</cbc:EndpointID>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>AF</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>AF9988776655</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>232133213</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			
+		</Invoice>
+	</test>
+	
+	
+</testSet>

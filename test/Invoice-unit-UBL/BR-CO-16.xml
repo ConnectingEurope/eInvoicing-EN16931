@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl"> 
+	<assert>
+		<scope>BR-CO-16</scope>
+	</assert>
+	<test>
+		
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200</cbc:TaxInclusiveAmount>
+				<cbc:PrepaidAmount>1000</cbc:PrepaidAmount>
+				<cbc:PayableAmount>200.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+
+		</Invoice>
+	</test>
+	
+	<test>
+		
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount currencyID="EUR">6900.0</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount currencyID="EUR">7000.00</cbc:TaxExclusiveAmount>
+				<cbc:TaxInclusiveAmount currencyID="EUR">8250.00</cbc:TaxInclusiveAmount>
+				<cbc:AllowanceTotalAmount currencyID="EUR">100.00</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
+				<cbc:PayableAmount currencyID="EUR">8250.0</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>
+	
+	<test>
+		
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount currencyID="EUR">8250.00</cbc:TaxInclusiveAmount>
+				<cbc:PayableAmount currencyID="EUR">8250.0</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.00</cbc:TaxInclusiveAmount>
+				<cbc:PrepaidAmount>0</cbc:PrepaidAmount>
+				<cbc:PayableAmount>1200.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>	
+	
+	<test>
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.00</cbc:TaxInclusiveAmount>
+				<!-- <cbc:PrepaidAmount>1000</cbc:PrepaidAmount>-->
+				<cbc:PayableAmount>1200.0</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.00</cbc:TaxInclusiveAmount>
+				<cbc:PrepaidAmount>1200</cbc:PrepaidAmount>
+				<cbc:PayableAmount>0.0</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.78</cbc:TaxInclusiveAmount>
+				<cbc:PrepaidAmount>1000.0</cbc:PrepaidAmount>
+				<cbc:PayableRoundingAmount currencyID="NOK">0.22</cbc:PayableRoundingAmount>
+				<cbc:PayableAmount>201</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>	
+	<test>
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.78</cbc:TaxInclusiveAmount>
+				<cbc:PayableRoundingAmount currencyID="NOK">0.22</cbc:PayableRoundingAmount>
+				<cbc:PayableAmount>1201</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>	
+	<test>
+		<assert>
+			<description>Verify that Amount due for payment = Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<success>BR-CO-16</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.22</cbc:TaxInclusiveAmount>
+				<cbc:PayableRoundingAmount currencyID="NOK">-0.22</cbc:PayableRoundingAmount>
+				<cbc:PayableAmount>1200.0</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			
+		</Invoice>
+	</test>	
+
+	<test>
+		<assert>
+			<description>Trigger error if Amount due for payment != Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<error>BR-CO-16</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.00</cbc:TaxInclusiveAmount>
+				<cbc:PrepaidAmount>100</cbc:PrepaidAmount>
+				<cbc:PayableAmount>1200.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if Amount due for payment != Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<error>BR-CO-16</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.78</cbc:TaxInclusiveAmount>
+				<cbc:PrepaidAmount>100</cbc:PrepaidAmount>
+				<cbc:PayableRoundingAmount currencyID="NOK">0.22</cbc:PayableRoundingAmount>
+				<cbc:PayableAmount>1100.78</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Trigger error if Amount due for payment != Invoice total VAT amount-Paid amount + Rounding amount (BT-114).</description>
+			<error>BR-CO-16</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:LegalMonetaryTotal>
+				<cbc:TaxInclusiveAmount>1200.00</cbc:TaxInclusiveAmount>
+				<!-- <cbc:PrepaidAmount>100</cbc:PrepaidAmount>-->
+				<cbc:PayableAmount>1100.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+		</Invoice>
+	</test>
+	
+</testSet>

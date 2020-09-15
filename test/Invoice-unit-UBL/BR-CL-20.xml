@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CL-20</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Coded charge reasons SHOULD belong to the UNCL 7161 code list</description>
+			<success>BR-CL-20</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>AAA</cbc:AllowanceChargeReasonCode>
+			</cac:AllowanceCharge>
+			
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<cbc:AllowanceChargeReasonCode>TAB</cbc:AllowanceChargeReasonCode>
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger warning when coded charge reasons does not belong to the UNCL 7161 code list</description>
+			<error number="2">BR-CL-20</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>SB</cbc:AllowanceChargeReasonCode>
+			</cac:AllowanceCharge>
+			
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>17</cbc:AllowanceChargeReasonCode>
+			</cac:AllowanceCharge>
+			
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<cbc:AllowanceChargeReasonCode>XBB</cbc:AllowanceChargeReasonCode>
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+</testSet>

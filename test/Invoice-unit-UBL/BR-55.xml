@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-55</scope>
+
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that each preceding invoice references has in ID</description>
+			<success>BR-55</success>
+
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:BillingReference>
+				<cac:InvoiceDocumentReference>
+					<cbc:ID>InvoiceRef</cbc:ID>
+				</cac:InvoiceDocumentReference>
+			</cac:BillingReference>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<description>Trigger error when a preceding invoice references does not have in ID</description>
+			<error>BR-55</error>
+			
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:BillingReference>
+				<cac:InvoiceDocumentReference>
+					<!-- <cbc:ID>InvoiceRef</cbc:ID> -->
+				</cac:InvoiceDocumentReference>
+			</cac:BillingReference>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error when a preceding invoice references does not have in ID</description>
+			<error>BR-55</error>
+			
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:BillingReference>
+				<!-- <cac:InvoiceDocumentReference>
+					<cbc:ID>InvoiceRef</cbc:ID>
+				</cac:InvoiceDocumentReference> -->
+			</cac:BillingReference>
+		</Invoice>
+	</test>
+</testSet>

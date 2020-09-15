@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Object identifier identification scheme identifier MUST be coded using a
+			restriction of UNTDID 1153</description>
+		<scope>BR-CL-07</scope>
+	</assert>
+	<test>
+		<assert>
+
+			<success>BR-CL-07</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AdditionalDocumentReference>
+				<cbc:ID schemeID="ABF"/>
+				<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			
+			<success>BR-CL-07</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:DocumentReference>
+					<cbc:ID schemeID="AWV"/>
+					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+				</cac:DocumentReference>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	
+
+	<test>
+		<assert>
+
+			<error>BR-CL-07</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AdditionalDocumentReference>
+				<cbc:ID schemeID="XXA"/>
+				<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+
+			<success>BR-CL-07</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AdditionalDocumentReference>
+				<cbc:ID schemeID="XXA"/>
+				<cbc:DocumentTypeCode>100</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			
+			<error>BR-CL-07</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:DocumentReference>
+					<cbc:ID schemeID="XXA"/>
+					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+				</cac:DocumentReference>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			
+			<success>BR-CL-07</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:DocumentReference>
+					<cbc:ID schemeID="XXA"/>
+				</cac:DocumentReference>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+
+</testSet>

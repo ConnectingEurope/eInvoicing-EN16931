@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Item classification identifier identification scheme identifier MUST be
+			coded using one of the UNTDID 7143 list.</description>
+		<scope>BR-CL-13</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>BR-CL-13</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:InvoiceLine>
+			
+				<cac:Item>
+					
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode listID="STS"/>
+					</cac:CommodityClassification>
+					
+				</cac:Item>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>BR-CL-13</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:InvoiceLine>
+				
+				<cac:Item>
+					
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode listID="XXX"/>
+					</cac:CommodityClassification>
+					
+				</cac:Item>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+</testSet>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-16</scope>
+
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that each credit note has an credit note line</description>
+			<success>BR-16</success>
+
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:CreditNoteLine>
+			</cac:CreditNoteLine>
+		</CreditNote>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error if credit note line is missing</description>
+			<error>BR-16</error>
+
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<!-- <cac:CreditNoteLine></cac:CreditNoteLine> -->
+		</CreditNote>
+	</test>
+
+</testSet>

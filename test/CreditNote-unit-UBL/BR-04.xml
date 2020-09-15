@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-04</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify credit note type code is present</description>
+			<success>BR-04</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cbc:CreditNoteTypeCode>123</cbc:CreditNoteTypeCode>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when credit note type code is not defined.</description>
+			<error>BR-04</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<!--  <cbc:CreditNoteTypeCode>123</cbc:CreditNoteTypeCode> -->
+			
+		</CreditNote>
+	</test>
+
+</testSet>

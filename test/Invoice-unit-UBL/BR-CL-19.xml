@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Coded allowance reasons MUST belong to the UNCL 5189 code list</description>
+		<scope>BR-CL-19</scope>
+	</assert>
+	<test>
+		<assert>
+	
+			<success>BR-CL-19</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>41</cbc:AllowanceChargeReasonCode>
+			</cac:AllowanceCharge>
+			
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+					<cbc:AllowanceChargeReasonCode>71</cbc:AllowanceChargeReasonCode>
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error number="2">BR-CL-19</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>143</cbc:AllowanceChargeReasonCode>
+			</cac:AllowanceCharge>
+			
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+					<cbc:AllowanceChargeReasonCode>109</cbc:AllowanceChargeReasonCode>
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+</testSet>

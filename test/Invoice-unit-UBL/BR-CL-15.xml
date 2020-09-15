@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CL-15</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that country codes in an invoice MUST be coded using ISO code list
+				3166-1</description>
+			<success>BR-CL-15</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+			<cac:Item>
+				<cac:OriginCountry>
+					<cbc:IdentificationCode>DE</cbc:IdentificationCode>
+				</cac:OriginCountry>
+			</cac:Item>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if Country codes in an invoice is not coded using ISO code
+				list 3166-1</description>
+			<error>BR-CL-15</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:Item>
+					<cac:OriginCountry>
+						<cbc:IdentificationCode>HC</cbc:IdentificationCode>
+					</cac:OriginCountry>
+				</cac:Item>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	
+</testSet>

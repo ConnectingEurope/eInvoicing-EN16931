@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-18</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that tax representative name is present</description>
+			<success>BR-18</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:TaxRepresentativeParty>
+				<cac:PartyName>
+					<cbc:Name>Tax handling company AS</cbc:Name>
+				</cac:PartyName>
+			</cac:TaxRepresentativeParty>
+		</CreditNote>
+	</test>
+
+
+	<test>
+		<assert>
+			<description>Trigger error when tax representative name is missing</description>
+			<error>BR-18</error>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:TaxRepresentativeParty>
+				<!-- <cac:PartyName>
+					<cbc:Name>Tax handling company AS</cbc:Name>
+				</cac:PartyName> -->
+			</cac:TaxRepresentativeParty>
+		</CreditNote>
+	</test>
+	
+
+</testSet>

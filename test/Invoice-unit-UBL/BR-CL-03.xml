@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CL-03</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that @currencyID MUST be coded using ISO code list 4217
+				alpha-3</description>
+			<success>BR-CL-03</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AllowanceCharge>
+				<cbc:Amount currencyID="NOK">12</cbc:Amount>
+			</cac:AllowanceCharge>
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">365.28</cbc:TaxAmount>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount currencyID="USD">1460.5</cbc:TaxableAmount>
+					<cbc:TaxAmount currencyID="DKK">365.13</cbc:TaxAmount>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount currencyID="SEK">1436.5</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount currencyID="XBB">1436.5</cbc:TaxExclusiveAmount>
+				<cbc:TaxInclusiveAmount currencyID="RUB">1802.00</cbc:TaxInclusiveAmount>
+				<cbc:AllowanceTotalAmount currencyID="RSD">100</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount currencyID="MAD">100</cbc:ChargeTotalAmount>
+				<cbc:PrepaidAmount currencyID="LAK">1000</cbc:PrepaidAmount>
+				<cbc:PayableRoundingAmount currencyID="HUF">0.22</cbc:PayableRoundingAmount>
+				<cbc:PayableAmount currencyID="AMD">802.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount currencyID="EUR">1273</cbc:LineExtensionAmount>
+
+				<cac:AllowanceCharge>
+					<cbc:Amount currencyID="USD">12</cbc:Amount>
+				</cac:AllowanceCharge>
+
+
+				<cac:Price>
+					<cbc:PriceAmount currencyID="HUF">1273</cbc:PriceAmount>
+					<cac:AllowanceCharge>
+						<cbc:Amount currencyID="SEK">225</cbc:Amount>
+						<cbc:BaseAmount currencyID="ISK">1500</cbc:BaseAmount>
+					</cac:AllowanceCharge>
+				</cac:Price>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if @currencyID is not coded using ISO code list 4217
+				alpha-3</description>
+			<error number="17">BR-CL-03</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AllowanceCharge>
+				<cbc:Amount currencyID="NKK">12</cbc:Amount>
+			</cac:AllowanceCharge>
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EXR">365.28</cbc:TaxAmount>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount currencyID="UZD">1460.5</cbc:TaxableAmount>
+					<cbc:TaxAmount currencyID="MMM">365.13</cbc:TaxAmount>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+			<cac:LegalMonetaryTotal>
+				<cbc:LineExtensionAmount currencyID="NNN">1436.5</cbc:LineExtensionAmount>
+				<cbc:TaxExclusiveAmount currencyID="OOO">1436.5</cbc:TaxExclusiveAmount>
+				<cbc:TaxInclusiveAmount currencyID="OXX">1802.00</cbc:TaxInclusiveAmount>
+				<cbc:AllowanceTotalAmount currencyID="OAB">100</cbc:AllowanceTotalAmount>
+				<cbc:ChargeTotalAmount currencyID="BBB">100</cbc:ChargeTotalAmount>
+				<cbc:PrepaidAmount currencyID="AAA">1000</cbc:PrepaidAmount>
+				<cbc:PayableRoundingAmount currencyID="CCC">0.22</cbc:PayableRoundingAmount>
+				<cbc:PayableAmount currencyID="DDD">802.00</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount currencyID="EEE">1273</cbc:LineExtensionAmount>
+				
+				<cac:AllowanceCharge>
+					<cbc:Amount currencyID="FFF">12</cbc:Amount>
+				</cac:AllowanceCharge>
+				
+				
+				<cac:Price>
+					<cbc:PriceAmount currencyID="GGG">1273</cbc:PriceAmount>
+					<cac:AllowanceCharge>
+						<cbc:Amount currencyID="HHH">225</cbc:Amount>
+						<cbc:BaseAmount currencyID="III">1500</cbc:BaseAmount>
+					</cac:AllowanceCharge>
+				</cac:Price>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+	
+</testSet>

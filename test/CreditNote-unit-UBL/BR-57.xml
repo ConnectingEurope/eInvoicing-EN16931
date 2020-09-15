@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-57</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that each Deliver to address contain a Deliver to country code</description>
+			<success>BR-57</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:Delivery>
+			<cac:DeliveryLocation>
+				<cac:Address>
+					<cac:Country>
+						<cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:DeliveryLocation>
+			</cac:Delivery>
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when a Deliver to address does not contain a Deliver to country code</description>
+			<error>BR-57</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:Delivery>
+			<cac:DeliveryLocation>
+				<cac:Address>
+					<!-- <cac:Country>
+						<cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
+					</cac:Country> -->
+				</cac:Address>
+			</cac:DeliveryLocation>
+			</cac:Delivery>
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when a Deliver to address does not contain a Deliver to country code</description>
+			<error>BR-57</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:Delivery>
+			<cac:DeliveryLocation>
+				<cac:Address>
+					<cac:Country>
+						<!-- <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode> -->
+					</cac:Country>
+				</cac:Address>
+			</cac:DeliveryLocation>
+			</cac:Delivery>
+		</CreditNote>
+	</test>
+
+</testSet>

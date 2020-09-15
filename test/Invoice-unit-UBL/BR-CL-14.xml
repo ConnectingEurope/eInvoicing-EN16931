@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CL-14</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that country codes in an invoice MUST be coded using ISO code list
+				3166-1</description>
+			<success>BR-CL-14</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+
+					<cac:PartyLegalEntity>
+						<cac:RegistrationAddress>
+							<cac:Country>
+								<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+							</cac:Country>
+						</cac:RegistrationAddress>
+					</cac:PartyLegalEntity>
+
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>US</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					<cac:PartyLegalEntity>
+						<cac:RegistrationAddress>
+							<cac:Country>
+								<cbc:IdentificationCode>CN</cbc:IdentificationCode>
+							</cac:Country>
+						</cac:RegistrationAddress>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			<cac:TaxRepresentativeParty>
+				<cac:PostalAddress>
+					<cac:Country>
+						<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:PostalAddress>
+			</cac:TaxRepresentativeParty>
+			<cac:Delivery>
+				<cac:DeliveryLocation>
+					<cac:Address>
+						<cac:Country>
+							<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:Address>
+				</cac:DeliveryLocation>
+			</cac:Delivery>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if Country codes in an invoice is not coded using ISO code
+				list 3166-1</description>
+			<error number="6">BR-CL-14</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>AA</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					
+					<cac:PartyLegalEntity>
+						<cac:RegistrationAddress>
+							<cac:Country>
+								<cbc:IdentificationCode>AB</cbc:IdentificationCode>
+							</cac:Country>
+						</cac:RegistrationAddress>
+					</cac:PartyLegalEntity>
+					
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>XY</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					<cac:PartyLegalEntity>
+						<cac:RegistrationAddress>
+							<cac:Country>
+								<cbc:IdentificationCode>YY</cbc:IdentificationCode>
+							</cac:Country>
+						</cac:RegistrationAddress>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			<cac:TaxRepresentativeParty>
+				<cac:PostalAddress>
+					<cac:Country>
+						<cbc:IdentificationCode>ÅÅ</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:PostalAddress>
+			</cac:TaxRepresentativeParty>
+			<cac:Delivery>
+				<cac:DeliveryLocation>
+					<cac:Address>
+						<cac:Country>
+							<cbc:IdentificationCode>XY</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:Address>
+				</cac:DeliveryLocation>
+			</cac:Delivery>
+		</Invoice>
+	</test>
+	
+
+</testSet>

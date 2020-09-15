@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--     PEPPOL BIS Billing 3.0 - MINIMUM content: CREDIT NOTE (no VAT applies)     -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                       -->
+<!--                                                                                -->
+<!--     Note - The purpose is to illustrate a credit note instance with minimum    -->
+<!--     contents technically (but probably insufficient from business perspective) -->
+<!--     NB! Although VAT is not applicable, this format requires some VAT elements -->
+<!--                                                                                -->
+<!--     Revised with validation rules according to PEPPOL's Fall release 2020      -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<CreditNote 
+ xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>2018-112</cbc:ID>
+ 	<cbc:IssueDate>2018-07-31</cbc:IssueDate>
+ 	<cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode> 
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<!-- BuyerReference or OrderReference/ID is required: -->
+	<cbc:BuyerReference>ACE22</cbc:BuyerReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+ 			<cbc:EndpointID schemeID="0007">1234567890</cbc:EndpointID> 
+			<cac:PostalAddress>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+ 			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Säljbolaget AB</cbc:RegistrationName>
+				<!-- Rule BR-CO-26 requires either PartyIdentification/ID, legal ID or VAT no: -->
+				<cbc:CompanyID>1234567890</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">9876543210</cbc:EndpointID>  
+			<cac:PostalAddress>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Centrala Inköps Handelsbolag</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+<!-- Previously rule BR-CO-25 required the presence of either payment terms or payment due date when PayableAmount>0.  
+     The rule was removed from the credit note thru the version 3.0.4 hotfix 2019-08-15. The rule remains in the invoice.
+	<cac:PaymentTerms>
+		<cbc:Note>As per contract clasuse X.123</cbc:Note>
+	</cac:PaymentTerms>
+-->
+
+	<!-- In spite of its cardinality, TaxTotal is needed due to ClassifiedTaxCategory on CreditNoteLine: -->
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+		<!-- In spite of its cardinality, TaxSubTotal is needed due to ClassifiedTaxCategory on CreditNoteLine: -->
+ 		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">400</cbc:TaxableAmount>
+ 			<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>O</cbc:ID>
+				<cbc:TaxExemptionReason>Not subject to VAT law</cbc:TaxExemptionReason>
+ 				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+ 		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">400</cbc:LineExtensionAmount> 
+		<cbc:TaxExclusiveAmount currencyID="SEK">400</cbc:TaxExclusiveAmount> 
+		<cbc:TaxInclusiveAmount currencyID="SEK">400</cbc:TaxInclusiveAmount> 
+		<cbc:PayableAmount currencyID="SEK">400</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal> 
+
+	<cac:CreditNoteLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:CreditedQuantity unitCode="MON">1</cbc:CreditedQuantity> 
+		<cbc:LineExtensionAmount currencyID="SEK">400</cbc:LineExtensionAmount> 
+		<cac:Item>
+			<cbc:Name>Guarantee</cbc:Name> 
+			<!-- ClassifiedTaxCategory is mandatory on line level: -->
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>O</cbc:ID> 
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID> 
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory> 
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">400</cbc:PriceAmount> 
+		</cac:Price>
+	</cac:CreditNoteLine>
+
+</CreditNote>
+	

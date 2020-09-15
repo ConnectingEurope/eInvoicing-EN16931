@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-30</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that if an invoice line period has a start date and an end date, the
+				end date is equal to, or later than the start date </description>
+			<success>BR-29</success>
+			<success>BR-30</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:InvoicePeriod>
+					<cbc:StartDate>2013-06-01</cbc:StartDate>
+					<cbc:EndDate>2013-06-01</cbc:EndDate>
+				</cac:InvoicePeriod>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Verify that if an invoice line period has a start date and an end date, the
+				end date is equal to, or later than the start date </description>
+			<success>BR-30</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:InvoicePeriod>
+					<cbc:StartDate>2013-06-01</cbc:StartDate>
+					<cbc:EndDate>2013-08-01</cbc:EndDate>
+				</cac:InvoicePeriod>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Trigger error if an invoice line period has a start date and an end
+				date,and the end date is earlier than the start date</description>
+			<error>BR-30</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<cac:InvoicePeriod>
+					<cbc:StartDate>2013-06-01</cbc:StartDate>
+					<cbc:EndDate>2013-05-01</cbc:EndDate>
+				</cac:InvoicePeriod>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+
+
+</testSet>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CO-26</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) or the Seller VAT identifier (BT-31) shall be present.</description>
+			<success>BR-CO-26</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID>1238764941386</cbc:ID>
+					</cac:PartyIdentification>
+				
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>123456785MVA</cbc:CompanyID>
+					</cac:PartyTaxScheme>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID>123456785</cbc:CompanyID>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) or the Seller VAT identifier (BT-31) shall be present.</description>
+			<success>BR-CO-26</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+<!--					<cac:PartyIdentification>
+						<cbc:ID>1238764941386</cbc:ID>
+					</cac:PartyIdentification>-->
+					
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>123456785MVA</cbc:CompanyID>
+					</cac:PartyTaxScheme>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID>123456785</cbc:CompanyID>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<description>Verify that the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) or the Seller VAT identifier (BT-31) shall be present.</description>
+			<success>BR-CO-26</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID>1238764941386</cbc:ID>
+					</cac:PartyIdentification>
+					
+					<!--<cac:PartyTaxScheme>
+						<cbc:CompanyID>123456785MVA</cbc:CompanyID>
+					</cac:PartyTaxScheme>-->
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID>123456785</cbc:CompanyID>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Verify that the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) or the Seller VAT identifier (BT-31) shall be present.</description>
+			<success>BR-CO-26</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID>1238764941386</cbc:ID>
+					</cac:PartyIdentification>
+					
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>123456785MVA</cbc:CompanyID>
+					</cac:PartyTaxScheme>
+					<!--<cac:PartyLegalEntity>
+						<cbc:CompanyID>123456785</cbc:CompanyID>
+					</cac:PartyLegalEntity>-->
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error if neither the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) or the Seller VAT identifier (BT-31) is present.</description>
+			<error>BR-CO-26</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<!--<cac:PartyIdentification>
+						<cbc:ID>1238764941386</cbc:ID>
+					</cac:PartyIdentification>
+					
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>123456785MVA</cbc:CompanyID>
+					</cac:PartyTaxScheme>
+					<cac:PartyLegalEntity>
+						<cbc:CompanyID>123456785</cbc:CompanyID>
+					</cac:PartyLegalEntity>-->
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
+
+
+</testSet>

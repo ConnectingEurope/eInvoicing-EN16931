@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>Payment means can only be repeated if payment is credit transfer</description>
+		<scope>UBL-SR-44</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>UBL-SR-44</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Credit transfer">30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>Payment1</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>IBAN32423940</cbc:ID>
+					<cbc:Name>AccountName</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>BIC324098</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+
+		</CreditNote>
+	</test>
+	
+	<test id="2">
+		<assert>
+			<success>UBL-SR-44</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Credit transfer">30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>Payment1</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>IBAN32423940</cbc:ID>
+					<cbc:Name>AccountName</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>BIC324098</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>BBAN1234645</cbc:ID>
+					<cbc:Name>AccountName2</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>BIC998877</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+			
+		</CreditNote>
+	</test>
+	
+	<test id="3">
+		<assert>
+			<warning>UBL-SR-44</warning>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:PaymentMeans>
+			<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+			<cbc:PaymentID>Payment1</cbc:PaymentID>
+			<cac:PayeeFinancialAccount>
+				<cbc:ID>IBAN32423940</cbc:ID>
+				<cbc:Name>AccountName</cbc:Name>
+				<cac:FinancialInstitutionBranch>
+					<cbc:ID>BIC324098</cbc:ID>
+				</cac:FinancialInstitutionBranch>
+			</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>Payment2</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>BBAN1234645</cbc:ID>
+					<cbc:Name>AccountName2</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>BIC998877</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+			
+		</CreditNote>
+	</test>
+	
+	<test id="4">
+		<assert>
+			<success>UBL-SR-44</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>Payment1</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>IBAN32423940</cbc:ID>
+					<cbc:Name>AccountName</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>BIC324098</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>Payment1</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>BBAN98765432</cbc:ID>
+					<cbc:Name>AccountName2</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>BIC998877</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+			
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>Payment1</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>BBAN1234645</cbc:ID>
+					<cbc:Name>AccountName3</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>BIC485308</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+			
+		</CreditNote>
+	</test>
+	
+	
+</testSet>

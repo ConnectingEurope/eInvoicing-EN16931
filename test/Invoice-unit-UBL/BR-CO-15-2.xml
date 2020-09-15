@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+    <assert>
+        <scope>BR-CO-15</scope>
+    </assert>
+    <test>
+        <assert>
+            <description>Verify that Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount, when there exists TaxCurrency != Document Currency</description>
+            <success>BR-CO-15</success>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cbc:DocumentCurrencyCode>DKK</cbc:DocumentCurrencyCode>
+            <cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
+            
+            <cac:TaxTotal>
+                <cbc:TaxAmount currencyID="DKK">675.00</cbc:TaxAmount>
+            </cac:TaxTotal>
+            <cac:TaxTotal>
+                <cbc:TaxAmount currencyID="EUR">628.62</cbc:TaxAmount>
+            </cac:TaxTotal>
+            <cac:LegalMonetaryTotal>
+                <cbc:TaxExclusiveAmount currencyID="DKK">4000.00</cbc:TaxExclusiveAmount>
+                <cbc:TaxInclusiveAmount currencyID="DKK">4675.00</cbc:TaxInclusiveAmount>
+                <cbc:PayableAmount currencyID="DKK">4675.00</cbc:PayableAmount>
+            </cac:LegalMonetaryTotal>
+            
+        </Invoice>
+    </test>
+    
+    <test>
+        <assert>
+            <description>Verify that Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount, when there exists TaxCurrency != Document Currency</description>
+            <success>BR-CO-15</success>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cbc:DocumentCurrencyCode>DKK</cbc:DocumentCurrencyCode>
+            <cbc:TaxCurrencyCode>NOK</cbc:TaxCurrencyCode>
+            
+            <cac:TaxTotal>
+                <cbc:TaxAmount currencyID="DKK">700.00</cbc:TaxAmount>
+            </cac:TaxTotal>
+            <cac:TaxTotal>
+                <cbc:TaxAmount currencyID="NOK">715</cbc:TaxAmount>
+            </cac:TaxTotal>
+            <cac:LegalMonetaryTotal>
+                <cbc:TaxExclusiveAmount currencyID="DKK">5000.00</cbc:TaxExclusiveAmount>
+                <cbc:TaxInclusiveAmount currencyID="DKK">5700.00</cbc:TaxInclusiveAmount>
+                <cbc:PayableAmount currencyID="DKK">5700.00</cbc:PayableAmount>
+            </cac:LegalMonetaryTotal>
+            
+        </Invoice>
+    </test>
+    <test>
+        <assert>
+            <description>Trigger error if an Invoice total amount with VAT != Invoice total amount without VAT + Invoice total VAT amount, when there exists TaxCurrency != Document Currency</description>
+            <error>BR-CO-15</error>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cbc:DocumentCurrencyCode>NOK</cbc:DocumentCurrencyCode>
+            <cbc:TaxCurrencyCode>DKK</cbc:TaxCurrencyCode>
+            
+            <cac:TaxTotal>
+                <cbc:TaxAmount currencyID="DKK">700.00</cbc:TaxAmount>
+            </cac:TaxTotal>
+            <cac:TaxTotal>
+                <cbc:TaxAmount currencyID="NOK">715</cbc:TaxAmount>
+            </cac:TaxTotal>
+            <cac:LegalMonetaryTotal>
+                <cbc:TaxExclusiveAmount currencyID="NOK">5000.00</cbc:TaxExclusiveAmount>
+                <cbc:TaxInclusiveAmount currencyID="NOK">5700.00</cbc:TaxInclusiveAmount>
+                <cbc:PayableAmount currencyID="NOK">5700.00</cbc:PayableAmount>
+            </cac:LegalMonetaryTotal>
+            
+        </Invoice>
+    </test>
+</testSet>

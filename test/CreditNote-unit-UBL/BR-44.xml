@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+    <assert>
+
+        <scope>BR-44</scope>
+    </assert>
+    <test>
+        <assert>
+            <description>Verify that a charge reason or reason code is present</description>
+
+            <success>BR-44</success>
+        </assert>
+        <CreditNote
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+            <cac:CreditNoteLine>
+                <cac:AllowanceCharge>
+                    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                    <cbc:AllowanceChargeReason>Freight</cbc:AllowanceChargeReason>
+                </cac:AllowanceCharge>
+            </cac:CreditNoteLine>
+        </CreditNote>
+    </test>
+
+    <test>
+        <assert>
+            <description>Verify that a charge reason or reason code is present</description>
+
+            <success>BR-44</success>
+        </assert>
+        <CreditNote
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+            <cac:CreditNoteLine>
+                <cac:AllowanceCharge>
+                    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                    <cbc:AllowanceChargeReasonCode>1</cbc:AllowanceChargeReasonCode>
+                </cac:AllowanceCharge>
+            </cac:CreditNoteLine>
+        </CreditNote>
+    </test>
+
+
+    <test>
+        <assert>
+            <description>Trigger error when a charge reason is missing</description>
+
+            <error>BR-44</error>
+        </assert>
+        <CreditNote
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+            <cac:CreditNoteLine>
+                <cac:AllowanceCharge>
+                    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                    <!-- <cbc:AllowanceChargeReasonCode>1</cbc:AllowanceChargeReasonCode> -->
+                    <!-- <cbc:AllowanceChargeReason>Freight</cbc:AllowanceChargeReason> -->
+                </cac:AllowanceCharge>
+            </cac:CreditNoteLine>
+
+        </CreditNote>
+    </test>
+
+
+</testSet>

@@ -1,12 +1,12 @@
-dist: xenial
-language: java
+sudo: required
 
-install:
-  - travis_wait mvn -f pom-xslt.xml process-resources
+services:
+  - docker
+
+env:
+  - PERFORM=cii
+  - PERFORM=ubl
 
 script:
-  - mvn -f pom-validate.xml validate
-  
-cache:
-  directories:
-    - $HOME/.m2
+  - docker run --rm -it -v $(pwd):/src difi/vefa-validator build -x -t -p $PERFORM /src
+

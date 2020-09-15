@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<scope>BR-CO-17</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>1000</cbc:TaxableAmount>
+					<cbc:TaxAmount>250</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>25</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	
+	<test id="2">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>-6491.34</cbc:TaxableAmount>
+					<cbc:TaxAmount>-1622.84</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>25</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	
+	<test id="3">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>2141.05</cbc:TaxableAmount>
+					<cbc:TaxAmount>299.75</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>14</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+
+	<test id="4">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>2141.05</cbc:TaxableAmount>
+					<cbc:TaxAmount>.00</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<!--<cbc:Percent>14</cbc:Percent>-->
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	<test id="5">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>2141.19</cbc:TaxableAmount>
+					<cbc:TaxAmount>44.96</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>2.1</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	<test id="6">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>2141.19</cbc:TaxableAmount>
+					<cbc:TaxAmount>0.0</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>0</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+						
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	<test id="7">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>-2141.19</cbc:TaxableAmount>
+					<cbc:TaxAmount>-117.77</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>5.5</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	<test id="8">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>-25.00</cbc:TaxableAmount>
+					<cbc:TaxAmount>0.00</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>0</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	
+	
+	
+
+	<test id="9">
+		<assert>
+			<description>Trigger error if VAT category tax amount != VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<error>BR-CO-17</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>1000</cbc:TaxableAmount>
+					<cbc:TaxAmount>251</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>25</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	
+	<test id="10">
+		<assert>
+			<description>Trigger error if VAT category tax amount != VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<error>BR-CO-17</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>2141.19</cbc:TaxableAmount>
+					<cbc:TaxAmount>43.91</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>2.1</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	
+	<test id="11">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>-2141.19</cbc:TaxableAmount>
+					<cbc:TaxAmount>-117.77</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>5.5</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	
+	
+	<test id="12">
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:TaxTotal>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount>6491.34</cbc:TaxableAmount>
+					<cbc:TaxAmount>1622.84</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:Percent>25</cbc:Percent>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+</testSet>

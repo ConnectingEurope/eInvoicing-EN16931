@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>		
+		<description>The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.</description>
+		<scope>BR-CL-01</scope>
+	</assert>
+	<test id="1">
+		<assert>
+	
+			<success>BR-CL-01</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+		</Invoice>
+	</test>
+	<test id="2">
+		<assert>
+			<error>BR-CL-01</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cbc:InvoiceTypeCode>999</cbc:InvoiceTypeCode>
+		</Invoice>
+	</test>
+</testSet>
