@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--     PEPPOL BIS Billing 3.0 - MINIMUM INVOICE (no VAT applies)                    -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                         -->
+<!--                                                                                  -->
+<!--     Note - The purpose is to illustrate a use case where the buyer, at time of   -->
+<!--     ordering, pays a lumpsum in advance to the supplier to cover expenses        -->
+<!--     for production set-up, to be balanced in a final invocie after delivery.     -->
+<!--     - This instance shows the advance payment; the advace is without VAT.        --> 
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<Invoice 
+ xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>20180112</cbc:ID>
+ 	<cbc:IssueDate>2018-01-09</cbc:IssueDate>
+ 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode> 
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+
+	<cac:OrderReference>
+		<cbc:ID>20180007</cbc:ID>
+		<cbc:SalesOrderID>PRODSTAB/2018/EmPe</cbc:SalesOrderID>
+	</cac:OrderReference>
+	<cac:ProjectReference>
+		<cbc:ID>MÅL 2020</cbc:ID>
+	</cac:ProjectReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+ 			<cbc:EndpointID schemeID="0007">1234567890</cbc:EndpointID> 
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 789</cbc:AdditionalStreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>12345</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<!-- Seller's VAT number is not accepted as this invoice is out of scope of VAT -->
+ 			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>AB Intelligent Tooling</cbc:RegistrationName>
+				<cbc:CompanyID>1234567890</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Säte: Stockholm</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">9876543210</cbc:EndpointID>  
+			<cac:PostalAddress>
+				<cbc:StreetName>Fjordgatan 1</cbc:StreetName>
+				<cbc:CityName>Kista</cbc:CityName>
+				<cbc:PostalZone>16456</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Produktionsbolaget AB </cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:PaymentTerms>
+		<cbc:Note>Arbetet påbörjas 7 dagar efter mottagen förskottsbetalning.</cbc:Note>
+	</cac:PaymentTerms>
+
+	<!-- In spite of its cardinality, TaxTotal is needed due to ClassifiedTaxCategory on InvoiceLine: -->
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+ 		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">400000</cbc:TaxableAmount>
+ 			<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+			<!-- Out of scope of VAT: -->
+			<cac:TaxCategory>
+				<cbc:ID>O</cbc:ID>
+				<cbc:TaxExemptionReason>Finansiell transaktion</cbc:TaxExemptionReason>
+ 				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+ 		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">400000</cbc:LineExtensionAmount> 
+		<cbc:TaxExclusiveAmount currencyID="SEK">400000</cbc:TaxExclusiveAmount> 
+		<cbc:TaxInclusiveAmount currencyID="SEK">400000</cbc:TaxInclusiveAmount> 
+		<!-- No prevoius advace: -->   
+		<cbc:PrepaidAmount currencyID="SEK">0</cbc:PrepaidAmount>
+		<!-- Advance claimed thru this bill: -->
+ 		<cbc:PayableAmount currencyID="SEK">400000</cbc:PayableAmount> 
+	</cac:LegalMonetaryTotal> 
+
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity> 
+		<!-- Avance payment: -->
+		<cbc:LineExtensionAmount currencyID="SEK">400000</cbc:LineExtensionAmount> 
+		<cac:Item>
+			<cbc:Name>Förskott för produktionsmaterialkostnad</cbc:Name> 
+			<!-- Outside scope of VAT, but ClassifiedTaxCategory is required: -->
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>O</cbc:ID> 
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID> 
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory> 
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">400000</cbc:PriceAmount> 
+		</cac:Price>
+	</cac:InvoiceLine>
+
+</Invoice>
+	

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE (VAT does not apply)                 -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                  -->
+<!--                                                                           -->
+<!--     Note - The purpose is to illustrate a use case with intergovernmental -->
+<!--     billing; TaxCategory="O" (letter capital "O").                        -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
+xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>31208027214</cbc:ID>
+	<cbc:IssueDate>2008-06-12</cbc:IssueDate>
+	<cbc:DueDate>2008-07-12</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:AccountingCost>PePe</cbc:AccountingCost>
+	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
+
+	<cac:ContractDocumentReference>
+		<cbc:ID>3120000052</cbc:ID>
+	</cac:ContractDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>820101-xxxx 5/08</cbc:ID>
+		<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+	</cac:AdditionalDocumentReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">2021004508</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:StreetName>Vallby 4</cbc:StreetName>
+				<cbc:CityName>ENKÖPING</cbc:CityName>
+				<cbc:PostalZone>74598</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Åsens LVM-hem</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Statsinstitutet</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">2021004508</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>0171416600</cbc:Telephone>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">7350039110021</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 321</cbc:AdditionalStreetName>
+				<cbc:CityName>ÖREBRO</cbc:CityName>
+				<cbc:PostalZone>70146</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Region Mitt</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Näs-Vården</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>31208027214</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>47668033</cbc:ID>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>SE:PLUSGIRO</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>30 dagar. Dröjsmålsränta utgår enligt räntelagen.</cbc:Note>
+	</cac:PaymentTerms>
+
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">28250</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+			<!-- Kostnaden ligger utanför mervärdesskattelagen: -->
+			<cac:TaxCategory>
+				<cbc:ID>O</cbc:ID>
+				<cbc:TaxExemptionReason>Inomstatlig fakturering, ML är inte tillämplig</cbc:TaxExemptionReason>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">28250</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">28250</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">28250</cbc:TaxInclusiveAmount>
+		<cbc:PayableAmount currencyID="SEK">28250</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:Note>Åsens Storgård (Öppen avd) 080516-080525</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="DAY">10</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">28250</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Name>Vård enligt avtal</cbc:Name>
+			<!-- Kostnaden ligger utanför mervärdesskattelagen: -->
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>O</cbc:ID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">2825</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+</Invoice>

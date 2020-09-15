@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE                                      -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                  -->
+<!--                                                                           -->
+<!--     Note - The purpose is to illustrate a use case related to energy      -->
+<!--     - Billing for the supply of energy                                    -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
+xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>8220278</cbc:ID>
+	<cbc:IssueDate>2018-03-05</cbc:IssueDate>
+	<cbc:DueDate>2018-04-04</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:Note>Elområde 4, områdesID ABC. 98 % grön el (vattenkraft). Beräknad årsförbrukning: 12.628 kWh. </cbc:Note>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:AccountingCost>EH, 8144</cbc:AccountingCost>
+
+	<cac:InvoicePeriod>
+		<cbc:StartDate>2018-02-01</cbc:StartDate>
+		<cbc:EndDate>2018-02-28</cbc:EndDate>
+	</cac:InvoicePeriod>
+	<cac:OrderReference>
+		<cbc:ID>20180117</cbc:ID>
+	</cac:OrderReference>
+	<cac:ContractDocumentReference>
+		<cbc:ID>100206837</cbc:ID>
+	</cac:ContractDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>731234567890123456</cbc:ID>
+		<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+	</cac:AdditionalDocumentReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">7312345500001</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 1111</cbc:AdditionalStreetName>
+				<cbc:CityName>Malmö</cbc:CityName>
+				<cbc:PostalZone>20123</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Företagskundservice</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>TAX</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE556677889901</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>El-Handlar'n Sverige AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">5566778899</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Säte: Malmö</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">9876543210</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 167</cbc:AdditionalStreetName>
+				<cbc:CityName>Norrköping</cbc:CityName>
+				<cbc:PostalZone>12345</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>c/o HSA Fastigheter AB</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Fastighets AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:Delivery>
+		<cac:DeliveryLocation>
+			<cac:Address>
+				<cbc:StreetName>Stiggatan 11</cbc:StreetName>
+				<cbc:CityName>Malmö</cbc:CityName>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+	</cac:Delivery>
+
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>8220278</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>22224444</cbc:ID>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>SE:BANKGIRO</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>8220278</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>11100222</cbc:ID>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>SE:PLUSGIRO</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>8220278</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>99991234567</cbc:ID>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>BANKSBIC</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>Vid försenad betalning tillkommer avgift enligt gällande avtalsvillkor.</cbc:Note>
+	</cac:PaymentTerms>
+
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">148.50</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">593.99</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">148.50</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">50</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>E</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
+				<cbc:TaxExemptionReason>ML är inte tillämplig</cbc:TaxExemptionReason>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">643.99</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">643.99</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">792.49</cbc:TaxInclusiveAmount>
+		<cbc:PayableRoundingAmount currencyID="SEK">-0.49</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SEK">792</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:Note>Avläsning mätarnr 112233: periodstart 156.361, periodslut 158.062</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="KWH">1701</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">593.99</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2018-02-01</cbc:StartDate>
+			<cbc:EndDate>2018-02-28</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Description>Fast elpris, bundet 1 år</cbc:Description>
+			<cbc:Name>El-förbrukning</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">0.3492</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:Note>Faktura 8220111</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">50</cbc:LineExtensionAmount>
+		<cbc:AccountingCost>X, Övrigt</cbc:AccountingCost>
+		<cac:Item>
+			<cbc:Name>Påminnelseavgift</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>E</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">50</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+</Invoice>

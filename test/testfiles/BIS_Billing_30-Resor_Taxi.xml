@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE                                      -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                  -->
+<!--                                                                           -->
+<!--     Note - The purpose is to illustrate a use case related to travel      -->
+<!--     services. Check for rounding errors when taxi rides are billed on     -->
+<!--     periodic basis.                                                       -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
+xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>1002420</cbc:ID>
+	<cbc:IssueDate>2008-09-01</cbc:IssueDate>
+	<cbc:DueDate>2008-10-01</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:AccountingCost>PoPe</cbc:AccountingCost>
+	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
+
+	<cac:InvoicePeriod>
+		<cbc:StartDate>2008-08-15</cbc:StartDate>
+		<cbc:EndDate>2008-08-31</cbc:EndDate>
+	</cac:InvoicePeriod>
+	<cac:ContractDocumentReference>
+		<cbc:ID>K1002420</cbc:ID>
+	</cac:ContractDocumentReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5566778899</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 3</cbc:AdditionalStreetName>
+				<cbc:CityName>Göteborg</cbc:CityName>
+				<cbc:PostalZone>40010</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE556677889901</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>TAX</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Taxi- o Transportrörelsen HB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">5566778899</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Säte: Göteborg, SE</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Ekonomiavdelningen</cbc:Name>
+				<cbc:Telephone>071234567</cbc:Telephone>
+				<cbc:ElectronicMail>ekonomiavd@taxman.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">9876543210</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 1</cbc:AdditionalStreetName>
+				<cbc:CityName>Skellefteå</cbc:CityName>
+				<cbc:PostalZone>93100</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Skellefteå Sambruk AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">9876543210</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>B-E Ställman</cbc:Name>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>1002420</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>3334444</cbc:ID>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>SE:BANKGIRO</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>Enligt avtal</cbc:Note>
+	</cac:PaymentTerms>
+
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">42.44</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">707.3</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">42.44</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>6</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">707.30</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">707.30</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">749.74</cbc:TaxInclusiveAmount>
+		<cbc:PayableRoundingAmount currencyID="SEK">0.26</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SEK">750</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:Note>Stamkund 198, Wieselgenspl - Centralstationen</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="KMT">4.2</cbc:InvoicedQuantity>
+		<!-- Invoice line net amount rounded to 2 decimals (see BIS specification, section 8) -->
+		<cbc:LineExtensionAmount currencyID="SEK">130.19</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:EndDate>2008-08-18</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Startavg</cbc:AllowanceChargeReason>
+			<cbc:Amount currencyID="SEK">33</cbc:Amount>
+		</cac:AllowanceCharge>
+		<cac:Item>
+			<cbc:Name>Högtrafik</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>6</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">23.14</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:Note>Stamkund 198, Centralstationen - Wieselgenspl</cbc:Note>
+		<cbc:InvoicedQuantity  unitCode="KMT">4.4</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">143.4</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:EndDate>2008-08-19</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Startavg</cbc:AllowanceChargeReason>
+			<cbc:Amount currencyID="SEK">33</cbc:Amount>
+		</cac:AllowanceCharge>
+		<cac:Item>
+			<cbc:Name>Nattaxa</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>6</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">25.09</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>3</cbc:ID>
+		<cbc:Note>Beställare: HK/C, Landvetter - Zon 410, Startavg: 0 kr</cbc:Note>
+		<cbc:InvoicedQuantity  unitCode="KMT">29.5</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">433.71</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:EndDate>2008-02-29</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Lfv.avg</cbc:AllowanceChargeReason>
+			<cbc:Amount currencyID="SEK">35</cbc:Amount>
+		</cac:AllowanceCharge>
+		<!-- The "exact" calculation rules in the validation artefacts may --> 
+		<!-- be an issue when data are extracted from independent systems. -->
+		<!-- This simulates a validation error in the source system:       --> 
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Justering av avrundningsfel i kvitto</cbc:AllowanceChargeReason>
+			<cbc:Amount currencyID="SEK">0.13</cbc:Amount>
+		</cac:AllowanceCharge>
+		<cac:Item>
+			<cbc:Name>Fastpris</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>6</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">13.52</cbc:PriceAmount>
+		</cac:Price>
+
+	</cac:InvoiceLine>
+</Invoice>

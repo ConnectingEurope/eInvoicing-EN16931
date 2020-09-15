@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE                                        -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                    -->
+<!--                                                                             -->
+<!--     Note - The purpose is to give an example of an Data/IT invoice          -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   -->
+
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cnt="urn:oasis:names:specification:ubl:schema:xsd:CountryIdentificationCode-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>08/00355</cbc:ID>
+	<cbc:IssueDate>2008-02-08</cbc:IssueDate>
+	<cbc:DueDate>2008-03-07</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:AccountingCost>BES, 87392</cbc:AccountingCost>
+
+	<cac:OrderReference>
+		<cbc:ID>REKVISITION11</cbc:ID>
+	</cac:OrderReference>
+	<cac:ContractDocumentReference>
+		<cbc:ID>Statens ramavtalsnr 07-123</cbc:ID>
+	</cac:ContractDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>UITs nr 12345678</cbc:ID>
+		<cbc:DocumentDescription>Invoiced object</cbc:DocumentDescription>
+	</cac:AdditionalDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>0987654321</cbc:ID>
+		<cbc:DocumentDescription>Despatch advice</cbc:DocumentDescription>
+	</cac:AdditionalDocumentReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">1234567890</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 123</cbc:AdditionalStreetName>
+				<cbc:CityName>Aby</cbc:CityName>
+				<cbc:PostalZone>11122</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE123456789001</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>TAX</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Ubiquitous IT (UIT) Sweden AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">1234567890</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Säte: Aby, SE</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>0201234567</cbc:Telephone>
+				<cbc:ElectronicMail>info@UIT.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">0987654321</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>A-Kommunen</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 8</cbc:AdditionalStreetName>
+				<cbc:CityName>Öviken</cbc:CityName>
+				<cbc:PostalZone>10203</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Centrala inköp</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>A-Kommunen</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">0987654321</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>B. E. Ställman</cbc:Name>
+				<cbc:Telephone>070123456</cbc:Telephone>
+				<cbc:ElectronicMail>B.E.Stallman@A-kommunen.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:Delivery>
+		<cbc:ActualDeliveryDate>2008-02-07</cbc:ActualDeliveryDate>
+		<cac:DeliveryLocation>
+			<cac:Address>
+				<cbc:StreetName>Gågatan 9 A</cbc:StreetName>
+				<cbc:CityName>Öviken</cbc:CityName>
+				<cbc:PostalZone>10203</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Kansliet, rum 308</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+	</cac:Delivery>
+
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>08/00355</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>1234567</cbc:ID>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>SE:BANKGIRO</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>30 dagar netto. Dröjsmålsränta 12%</cbc:Note>
+	</cac:PaymentTerms>
+
+	<cac:AllowanceCharge>
+		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+		<cbc:AllowanceChargeReason>Frakt</cbc:AllowanceChargeReason>
+		<cbc:Amount currencyID="SEK">150</cbc:Amount>
+		<cac:TaxCategory>
+			<cbc:ID>S</cbc:ID>
+			<cbc:Percent>25</cbc:Percent>
+			<cac:TaxScheme>
+				<cbc:ID>VAT</cbc:ID>
+			</cac:TaxScheme>
+		</cac:TaxCategory>
+	</cac:AllowanceCharge>
+
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">1821.5</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">1050</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>E</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
+				<cbc:TaxExemptionReason>Undantag enl ML X kap, Y §</cbc:TaxExemptionReason>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">7286</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">1821.5</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">8186</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">8336</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">10157.5</cbc:TaxInclusiveAmount>
+		<cbc:ChargeTotalAmount currencyID="SEK">150</cbc:ChargeTotalAmount>
+		<cbc:PayableRoundingAmount currencyID="SEK">0.5</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SEK">10158</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:Note>Kvantitetsenhet "EA"=styck. Godmärke: "Kansliet, rum 308"</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">6688</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Name>UIT Desktop m/59, 2-160 GB</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>UIT-59</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0088">7310011796123</cbc:ID>
+			</cac:StandardItemIdentification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Seriennummer</cbc:Name>
+				<cbc:Value>6230i/355381773</cbc:Value>
+			</cac:AdditionalItemProperty>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">6688</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:Note> Avser rad 1. Kvantitetsenhet "ANN"=år.</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="ANN">3</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">1050</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Name>Underhållsförsäkring</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>E</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">350</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>3</cbc:ID>
+		<cbc:Note>Kvantitetsenhet "EA"=styck.</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA" >1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">448</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Name>Killer antivirusprogram</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>PGM-22</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">448</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>

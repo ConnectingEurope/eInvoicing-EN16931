@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE                                           -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/bis/#examples          -->
+<!--                                                                                -->
+<!--     Note - The purpose is to illustrate key elements to claim penalty interest.-->
+<!--     This usecase refers to penalty interest on a series of invoices.           -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<Invoice 
+xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>2018038</cbc:ID>
+	<cbc:IssueDate>2005-02-11</cbc:IssueDate>
+	<cbc:DueDate>2005-03-10</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:BuyerReference>Bevakningsärenden</cbc:BuyerReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5566556655</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:StreetName>Storgatan 5</cbc:StreetName>
+				<cbc:CityName>Stenstad</cbc:CityName>
+				<cbc:PostalZone>12543</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>TAX</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>QVK Montage AB</cbc:RegistrationName>
+				<cbc:CompanyID>5566556655</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Säte Stenstad, SE</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>0709112233</cbc:Telephone>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">9876543210</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:StreetName>Rådgatan 3</cbc:StreetName>
+				<cbc:CityName>Stocken</cbc:CityName>
+				<cbc:PostalZone>11000</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Johnssons Byggvaror HB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>45224585</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>3338929</cbc:ID>
+			<cbc:Name>AccountName</cbc:Name>
+			<cac:FinancialInstitutionBranch>
+				<cbc:ID>SE:BANKGIRO</cbc:ID>
+			</cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>Enligt avtal.</cbc:Note>
+	</cac:PaymentTerms>
+
+	<!-- TaxTotal required even if the invoice is outide the scope of VAT: -->
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">2416.16</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>O</cbc:ID>
+				<cbc:TaxExemptionReason>ML ej tillämplig</cbc:TaxExemptionReason>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">2416.16</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">2416.16</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">2416.16</cbc:TaxInclusiveAmount>
+		<cbc:PayableRoundingAmount currencyID="SEK">-0.16</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SEK">2416.00</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+    
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:Note>Faktura 123, datum 2005-02-01, fakturabelopp: 2890 kr</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">816.00</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2005-03-01</cbc:StartDate>
+			<cbc:EndDate>2007-01-31</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Description>Dröjsmålsränta 21 %</cbc:Description>
+			<cbc:Name>Räntekostnad</cbc:Name>
+			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of VAT: -->
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>O</cbc:ID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">816</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:Note>Faktura 134, datum 2005-03-01, fakturabelopp: 2900 kr</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">800.16</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2005-04-01</cbc:StartDate>
+			<cbc:EndDate>2007-01-31</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Description>Dröjsmålsränta 20 %</cbc:Description>
+			<cbc:Name>Räntekostnad</cbc:Name>
+			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of VAT: -->
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>O</cbc:ID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">800.16</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>3</cbc:ID>
+		<cbc:Note>Faktura 145, datum 2005-04-01, fakturabelopp: 2828 kr</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">800.00</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2005-05-01</cbc:StartDate>
+			<cbc:EndDate>2007-01-31</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Description>Dröjsmålsränta 20 %</cbc:Description>
+			<cbc:Name>Räntekostnad</cbc:Name>
+			<!-- ClassifiedTaxCategory required even if the invoice is outide the scope of VAT: -->
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>O</cbc:ID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">800</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+</Invoice>

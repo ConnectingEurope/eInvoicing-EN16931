@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE                                      -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                  -->
+<!--                                                                           -->
+<!--     Note - The purpose is to illustrate a use case related to the         -->
+<!--     invoicing of telephone services.                                      -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
+xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>2007-99123</cbc:ID>
+	<cbc:IssueDate>2007-02-05</cbc:IssueDate>
+	<cbc:DueDate>2007-03-05</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:AccountingCost>UserID111, 6081</cbc:AccountingCost>
+	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
+
+	<cac:ContractDocumentReference>
+		<cbc:ID>ABC1234</cbc:ID>
+	</cac:ContractDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>0765123456</cbc:ID>
+		<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+	</cac:AdditionalDocumentReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5566778899</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:StreetName>Genvägen 9</cbc:StreetName>
+				<cbc:CityName>Lilleby</cbc:CityName>
+				<cbc:PostalZone>97531</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>TAX</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE556677889901</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Telefonitjänster AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">5566778899</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Säte: Lilleby, SE</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>081230001</cbc:Telephone>
+				<cbc:ElectronicMail>info@telefonitjanst.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">2244668800</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Myndighet X</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>10012</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Administration och IT</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Myndighet X</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:Delivery>
+		<cac:DeliveryLocation>
+			<cac:Address>
+				<cbc:StreetName>Storgatan 1</cbc:StreetName>
+				<cbc:AdditionalStreetName>Intern service</cbc:AdditionalStreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+	</cac:Delivery>
+
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>123456789012345</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>33331234567</cbc:ID>
+			<cbc:Name>Account name</cbc:Name>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>BANKSBIC</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>123456789012345</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>44445555</cbc:ID>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>SE:BANKGIRO</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>30 dagar</cbc:Note>
+	</cac:PaymentTerms>
+
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">207.76</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">831.02</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">207.76</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">831.02</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">831.02</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">1038.78</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="SEK">0</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="SEK">0</cbc:ChargeTotalAmount>
+		<cbc:PayableRoundingAmount currencyID="SEK">0.22</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SEK">1039</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+
+	<cac:InvoiceLine>
+		<cbc:ID>10</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">77</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">53.9</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Samtal i Sverige: fasta nätet, öppn.avg</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">0.7</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>15</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="MIN">693.8</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">0</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Samtal i Sverige: fasta nätet, tid</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">0</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>20</cbc:ID>
+		<cbc:Note>"Ring mer"-kampanj: 100 samtal</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA">104</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">22.8</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Kampanj</cbc:AllowanceChargeReason>
+			<cbc:Amount currencyID="SEK">50</cbc:Amount>
+		</cac:AllowanceCharge>
+		<cac:Item>
+			<cbc:Name>Samtal i Sverige: vårt mobilnät, öppn.avg</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">0.7</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>25</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="MIN">411.5</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">205.75</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Samtal i Sverige: vårt mobilnät, tid</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">0.5</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>30</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">30</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">45</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Samtal i Sverige: andra mobilop., öppn.avg</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">1.5</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>35</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="MIN">75.3</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">192.02</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Samtal i Sverige: andra mobilop., tid</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">2.55</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>40</cbc:ID>
+		<cbc:Note>Quantity Unit: "4L"=Megabyte</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="4L">5.311</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">79.67</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Datatrafik: Internet/WAP</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">15</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>50</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">5</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">10</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Mobile4U, UK: Utgående samtal, öppn.avg</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">2</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>55</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="MIN">18.7</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">49.56</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Mobile4U, UK: Utgående samtal, tid</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">2.65</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>60</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">9</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">22.32</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Mobile4U, UK: Utgående SMS</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">2.48</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>70</cbc:ID>
+		<cbc:Note>Dagens Witz KB, tel 0777-123456</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA">2</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">50</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2006-11-05</cbc:StartDate>
+			<cbc:EndDate>2007-02-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Kvantitetsrabatt</cbc:AllowanceChargeReason>
+			<cbc:Amount currencyID="SEK">5</cbc:Amount>
+		</cac:AllowanceCharge>
+		<cac:Item>
+			<cbc:Name>Förmedlad tjänst</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">27.5</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>80</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">100</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2007-02-05</cbc:StartDate>
+			<cbc:EndDate>2007-05-04</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Abonnemang, förlängning</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">100</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>

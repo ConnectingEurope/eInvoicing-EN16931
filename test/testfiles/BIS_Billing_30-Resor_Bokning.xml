@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE                                      -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                  -->
+<!--                                                                           -->
+<!--     Note - The purpose is to illustrate a use case related to travel      -->
+<!--     services: - Bokning flygbiljett                                       -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
+xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>ABC123</cbc:ID>
+	<cbc:IssueDate>2007-11-05</cbc:IssueDate>
+	<cbc:DueDate>2007-11-15</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode >SEK</cbc:DocumentCurrencyCode>
+	<cbc:AccountingCost>UserID111, 6081</cbc:AccountingCost>
+	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
+
+	<cac:ContractDocumentReference>
+		<cbc:ID>1234</cbc:ID>
+	</cac:ContractDocumentReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">1234567890</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Prompt Air Carriers</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Genvägen 9</cbc:StreetName>
+				<cbc:CityName>Lilleby</cbc:CityName>
+				<cbc:PostalZone>97531</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE123456789001</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>Tax</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Nettoresor AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">1234567890</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Sätesort: Lilleby</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Säljtjänst</cbc:Name>
+				<cbc:Telephone>0707788899</cbc:Telephone>
+				<cbc:ElectronicMail>abc@nettoresor.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="GLN">7312345678909</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Myndighet X</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>10012</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+					<cbc:RegistrationName>Myndighet X</cbc:RegistrationName>
+			<cbc:CompanyID schemeID="0007">2233223322</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Konto ABC123</cbc:Name>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode listID="UNCL4461">30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>123456789012345</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>12345678</cbc:ID>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>SE:BANKGIRO</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>10 dagar, dröjsmålsränta 12.3 %</cbc:Note>
+	</cac:PaymentTerms>
+
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">88.86</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">856</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">51.36</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>6</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">150</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">37.5</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">1006</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">1006</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">1094.86</cbc:TaxInclusiveAmount>
+		<cbc:PayableRoundingAmount currencyID="SEK">0.14</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SEK">1095</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">150</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:EndDate>2001-10-29</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:Item>
+			<cbc:Name>Arvode flygbokning</cbc:Name>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0088">78111502999999</cbc:ID>
+			</cac:StandardItemIdentification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">150</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:Note>Beställare: EXP/1QJ853N</cbc:Note>
+		<cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">856</cbc:LineExtensionAmount>
+		<cac:InvoicePeriod>
+			<cbc:StartDate>2001-10-29</cbc:StartDate>
+			<cbc:EndDate>2001-10-29</cbc:EndDate>
+		</cac:InvoicePeriod>
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Priority</cbc:AllowanceChargeReason>
+			<cbc:Amount currencyID="SEK">6</cbc:Amount>
+		</cac:AllowanceCharge>
+		<cac:Item>
+			<cbc:Description>Stockholm - Lillby</cbc:Description>
+			<cbc:Name>Flygbiljett</cbc:Name>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0088">78111502888888</cbc:ID>
+			</cac:StandardItemIdentification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>6</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Biljettnummer</cbc:Name>
+				<cbc:Value>SK 175 23344556</cbc:Value>
+			</cac:AdditionalItemProperty>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">850</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE                                        -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                    -->
+<!--                                                                             -->
+<!--     Note - The purpose is to illustrate the crediting transaction, either   -->
+<!--     by means of a Creditnote or by means of a negative Invoice.             -->
+<!--     - This use case illustrates the option of crediting by means of         -->
+<!--       negative invoice: the entire initial invoice is credited.             --> 
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<Invoice 
+ xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>2018140</cbc:ID>
+	<cbc:IssueDate>2018-02-10</cbc:IssueDate>
+	<cbc:DueDate>2018-03-07</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:Note>Crediting of the entire initial invoice; a correct invoice will be issued through a separate process.</cbc:Note>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+
+	<cac:OrderReference>
+		<cbc:ID>2018117</cbc:ID>
+	</cac:OrderReference>
+	<cac:BillingReference>
+		<!-- Reference to the initial invoice is required for bookkeeping: -->
+		<cac:InvoiceDocumentReference>
+			<cbc:ID>2018133</cbc:ID>
+			<cbc:IssueDate>2018-02-08</cbc:IssueDate>
+		</cac:InvoiceDocumentReference>
+	</cac:BillingReference>
+	<cac:ContractDocumentReference>
+		<cbc:ID>2017-123</cbc:ID>
+	</cac:ContractDocumentReference>
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">1234567890</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">1230123456789</cbc:ID >
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>Lilla storgatan 1A</cbc:StreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>11122</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE123456789001</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>TAX</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Produtionsbolaget Sverige AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">1234567890</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Sätesort: Stockholm</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>0201234567</cbc:Telephone>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">9876543210</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">9876543210987</cbc:ID >
+	 		</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Project Services</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>Box 8</cbc:AdditionalStreetName>
+				<cbc:CityName>Aby</cbc:CityName>
+				<cbc:PostalZone>10203</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Project services AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">9876543210</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:Delivery>
+		<cbc:ActualDeliveryDate>2018-02-08</cbc:ActualDeliveryDate>
+	</cac:Delivery>
+
+	<cac:PaymentMeans> <!-- Credit transfer -->
+		<!-- The PaymentMeans class is kept here, but it should not have relevance: -->
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>1800355</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>1234567</cbc:ID>
+			<cbc:Name>Account name</cbc:Name>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>BANKSBIC</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>30 dagar netto. Dröjsmålsränta:12 %</cbc:Note>
+	</cac:PaymentTerms>
+
+	<cac:AllowanceCharge> <!-- Rabate, discount -->
+		<!-- The rebate, previously applied in the initial invoice, is reversed: -->
+		<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+		<cbc:AllowanceChargeReason>Campaign</cbc:AllowanceChargeReason>
+		<cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
+		<cbc:Amount currencyID="SEK">-1912</cbc:Amount>
+		<cbc:BaseAmount currencyID="SEK">-9560</cbc:BaseAmount>
+		<cac:TaxCategory>
+			<cbc:ID>S</cbc:ID>
+			<cbc:Percent>25</cbc:Percent>
+			<cac:TaxScheme>
+				<cbc:ID>VAT</cbc:ID>
+			</cac:TaxScheme>
+		</cac:TaxCategory>
+	</cac:AllowanceCharge>
+	<cac:AllowanceCharge> <!-- Charge, fee -->
+		<!-- The charge, previously applied in the initial invoice, is reversed: -->
+		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+		<cbc:AllowanceChargeReason>Warehousing</cbc:AllowanceChargeReason>
+		<cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+		<cbc:Amount currencyID="SEK">-1020</cbc:Amount>
+		<cbc:BaseAmount currencyID="SEK">-10200</cbc:BaseAmount>
+		<cac:TaxCategory>
+			<cbc:ID>S</cbc:ID>
+			<cbc:Percent>25</cbc:Percent>
+			<cac:TaxScheme>
+				<cbc:ID>VAT</cbc:ID>
+			</cac:TaxScheme>
+		</cac:TaxCategory>
+	</cac:AllowanceCharge>
+
+	<cac:TaxTotal>
+		<!-- Calculation formulae remain unchanged (allowing for negative values): -->
+		<cbc:TaxAmount currencyID="SEK">-2167</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">-8668</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="SEK">-2167</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<!-- Calculation formulae remain unchanged (allowing for negative values): -->
+		<cbc:LineExtensionAmount currencyID="SEK">-9560</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">-8668</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">-10835</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="SEK">-1912</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="SEK">-1020</cbc:ChargeTotalAmount>
+		<!-- The pre-payment is reversed, too, and is to be handled in the corrected invoice: -->
+		<cbc:PrepaidAmount currencyID="SEK">-834.9</cbc:PrepaidAmount>
+		<cbc:PayableRoundingAmount currencyID="SEK">+0.10</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="SEK">-10000</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<!-- The quantity, previously debited in the initial invoice, is credited: -->
+		<cbc:InvoicedQuantity unitCode="EA">-2000</cbc:InvoicedQuantity>
+		<!-- The corresponding amount is credited: -->
+		<cbc:LineExtensionAmount currencyID="SEK">-10200</cbc:LineExtensionAmount>
+
+		<cac:AllowanceCharge> <!-- Rabate, discount -->
+			<!-- The rebate, previously applied in the initial invoice, is reversed: -->
+			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Quantity discount</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>3</cbc:MultiplierFactorNumeric>
+			<cbc:Amount currencyID="SEK">-300</cbc:Amount>
+			<cbc:BaseAmount currencyID="SEK">-10000</cbc:BaseAmount>
+		</cac:AllowanceCharge>
+		<cac:AllowanceCharge> <!-- Charge, fee -->
+			<!-- The charge, previously applied in the initial invoice, is reversed: -->
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Repacking</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>5</cbc:MultiplierFactorNumeric>
+			<cbc:Amount currencyID="SEK">-500</cbc:Amount>
+			<cbc:BaseAmount currencyID="SEK">-10000</cbc:BaseAmount>
+		</cac:AllowanceCharge>
+
+		<cac:Item>
+			<cbc:Description>Mobile model B</cbc:Description>
+			<cbc:Name>Protection cover (plastic)</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+
+		<cac:Price>
+			<!-- Unit price is calculated in the same way as in the initial invoice: -->
+			<cbc:PriceAmount currencyID="SEK">10</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="EA">2</cbc:BaseQuantity>
+			<cac:AllowanceCharge>
+				<!-- EN 16931-1 provides for, at most, one rebate: -->
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="SEK">1</cbc:Amount>
+				<cbc:BaseAmount currencyID="SEK">11</cbc:BaseAmount>
+			</cac:AllowanceCharge>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:Note>This item is handled under industry recycling poslicy no. 2017/09</cbc:Note>
+		<!-- The quantity, previously credited in the initial invoice, is debited: -->
+		<cbc:InvoicedQuantity unitCode="EA">800</cbc:InvoicedQuantity>
+		<!-- The corresponding amount is debited: -->
+		<cbc:LineExtensionAmount currencyID="SEK">640</cbc:LineExtensionAmount>
+
+		<cac:Item>
+			<cbc:Description>Mobile model A</cbc:Description>
+			<cbc:Name>Protection cover, plastic</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+
+		<cac:Price>
+			<!-- Unit price is calculated in the same way as in the initial invoice: -->
+			<cbc:PriceAmount currencyID="SEK">4</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="EA">5</cbc:BaseQuantity>
+			<cac:AllowanceCharge>
+				<!-- EN 16931-1 provides for, at most, one rebate: -->
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:Amount currencyID="SEK">1</cbc:Amount>
+				<cbc:BaseAmount currencyID="SEK">5</cbc:BaseAmount>
+			</cac:AllowanceCharge>
+		</cac:Price>
+	</cac:InvoiceLine>
+
+</Invoice>

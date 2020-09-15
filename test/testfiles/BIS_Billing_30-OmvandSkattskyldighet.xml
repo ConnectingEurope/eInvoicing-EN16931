@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--     PEPPOL BIS Billing 3.0 - INVOICE                                      -->
+<!--     Reference - http://docs.peppol.eu/poacc/billing/3.0/                  -->
+<!--                                                                           -->
+<!--     Note - The purpose is to illustrate a VAT use case with reversed      -->
+<!--     charge.                                                               -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
+xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>912345</cbc:ID>
+	<cbc:IssueDate>2009-04-02</cbc:IssueDate>
+	<cbc:DueDate>2009-04-23</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:BuyerReference>PoPe</cbc:BuyerReference>
+
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>820101-5/09</cbc:ID>
+		<cbc:DocumentDescription>Materiallista</cbc:DocumentDescription>
+	</cac:AdditionalDocumentReference> 
+
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">7350039110021</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:StreetName>Storgatan 1</cbc:StreetName>
+				<cbc:CityName>Malmö</cbc:CityName>
+				<cbc:PostalZone>20001</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>TAX</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE012345678901</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Larm-, Lås- &amp; Nyckelservice KB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">0123456789</cbc:CompanyID>
+				<cbc:CompanyLegalForm>Säte: Malmö, SE</cbc:CompanyLegalForm>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>0120123400</cbc:Telephone>
+				<cbc:ElectronicMail>LLN-service@hotmail.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">9876543210</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cbc:AdditionalStreetName>BOX 1</cbc:AdditionalStreetName>
+				<cbc:CityName>Malmö</cbc:CityName>
+				<cbc:PostalZone>20000</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE098765432101</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Entrepenör &amp; Bygg AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Byggplatssamordnaren</cbc:Name>
+				<cbc:Telephone>011223344</cbc:Telephone>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+
+	<cac:Delivery>
+		<cbc:ActualDeliveryDate>2009-04-01</cbc:ActualDeliveryDate>
+		<cac:DeliveryLocation>
+			<cbc:ID schemeID="0088">9876543210999</cbc:ID>
+			<cac:Address>
+				<cbc:AdditionalStreetName>Byggplats 2:3A</cbc:AdditionalStreetName>
+				<cbc:CityName>Berga</cbc:CityName>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+	</cac:Delivery>
+
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>91234501</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>99991234567</cbc:ID>
+			<cbc:Name>Account name</cbc:Name>
+		        <cac:FinancialInstitutionBranch>
+			   <cbc:ID>BANKSBIC</cbc:ID>
+		        </cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+
+	<cac:PaymentTerms>
+		<cbc:Note>30 dagar netto</cbc:Note>
+	</cac:PaymentTerms>
+
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="SEK">140000</cbc:TaxableAmount> 
+			<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount> 
+			<cac:TaxCategory>
+  				<cbc:ID>AE</cbc:ID> 
+				<cbc:Percent>0</cbc:Percent> 
+				<cbc:TaxExemptionReason>Omvänd betalningsskyldighet</cbc:TaxExemptionReason> 
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID> 
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="SEK">140000</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="SEK">140000</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="SEK">140000</cbc:TaxInclusiveAmount>
+		<cbc:PayableAmount currencyID="SEK">140000</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+
+	<cac:InvoiceLine>
+		<cbc:ID>10</cbc:ID>
+		<cbc:Note>Paketpris med lås mod A123, slutbleck, dörrstopp</cbc:Note> 
+		<cbc:InvoicedQuantity unitCode="EA">28</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">126000</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Name>Säkerhetsdörr NP7.4</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>AE</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">4500</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>20</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">28</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="SEK">14000</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Name>Montering</cbc:Name>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>AE</cbc:ID>
+				<cbc:Percent>0</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="SEK">500</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>

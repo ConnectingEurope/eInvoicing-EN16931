@@ -10,9 +10,33 @@
 
 	<configuration>
 		<identifier>tc434-ubl</identifier>
-		<title>TC434 UBL</title>
+		<title>TC434 UBL Invoice</title>
 		<declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017</declaration>
 		<inherit>ubl-invoice-2.1</inherit>
+        <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
+	</configuration>
+
+	<configuration>
+		<identifier>tc434-ubl-cn</identifier>
+		<title>TC434 UBL Credit Note</title>
+		<declaration type="xml.ubl">CreditNote::urn:cen.eu:en16931:2017</declaration>
+		<inherit>ubl-creditnote-2.1</inherit>
+        <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
+	</configuration>
+
+	<configuration>
+		<identifier>tc434-ubl-peppol</identifier>
+		<title>TC434 UBL Example</title>
+		<declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
+		<inherit>ubl-invoice-2.1</inherit>
+        <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
+	</configuration>
+
+	<configuration>
+		<identifier>tc434-ubl-peppol-cn</identifier>
+		<title>TC434 UBL Example</title>
+		<declaration type="xml.ubl">CreditNote::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
+		<inherit>ubl-creditnote-2.1</inherit>
         <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
 	</configuration>
 
