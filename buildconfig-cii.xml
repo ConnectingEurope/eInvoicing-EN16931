@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
-	<testfolder>rules/cii/examples</testfolder>
+	<testfolder>cii/examples</testfolder>
 
 	<configuration>
 		<identifier>tc434-cii</identifier>

@@ -3,7 +3,7 @@
 
 	<package>CEN TC434 UBL</package>
 
-    <testfolder>test/testfiles</testfolder>
+    <testfolder>ubl/examples</testfolder>
 	<testfolder>test/Invoice-unit-UBL</testfolder>
 	<testfolder>test/CreditNote-unit-UBL</testfolder>
 
