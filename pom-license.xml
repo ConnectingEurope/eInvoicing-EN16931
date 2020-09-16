@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.helger</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>1.10.8</version>
+  </parent>
+  <artifactId>centc434-validation-rules</artifactId>
+  <version>1.3.0</version>
+  <name>centc434-validation-rules</name>
+  <description>EN16931 validation rules</description>
+  <url>https://github.com/ConnectingEurope/eInvoicing-EN16931</url>
+  <inceptionYear>2016</inceptionYear>
+  <licenses>
+    <license>
+      <name>EUPL V2</name>
+      <url>https://eupl.eu/1.2/en/</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.mycila</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <configuration>
+          <header>templates/license-template.txt</header>
+          <excludes>
+            <exclude>**/.git*</exclude>
+            <exclude>**/LICENSE</exclude>
+            <exclude>**/NOTICE</exclude>
+            <exclude>**/*.pdf</exclude>
+            <exclude>**/*.doc</exclude>
+            <exclude>**/*.docx</exclude>
+            <exclude>**/*.ods</exclude>
+            <exclude>**/*.TXT</exclude>
+            <exclude>**/*.cmd</exclude>
+            <exclude>**/*.sh</exclude>
+            <exclude>cii/schema/**</exclude>
+            <exclude>edifact/examples/**</exclude>
+            <exclude>edifact/schema/**</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
