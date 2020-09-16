@@ -99,7 +99,8 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	<cac:PaymentTerms>
 		<cbc:Note>30 dagar netto.
 Påminnelseavgift 45 kronor.
-Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
+Kravavgift 75 kronor.
+Penalty surcharge percent:8.5</cbc:Note>
 	</cac:PaymentTerms>
 
 	<cac:TaxTotal>
@@ -127,10 +128,11 @@ Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
 	</cac:LegalMonetaryTotal>
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
-		<cbc:Note>Quantity Unit: "EA"=Styck.Fyra ronder/natt mellan kl 2200-0500 under tiden 070812-070821 pga kopparstölder.
+		<cbc:Note>Quantity Unit: "EA"=Styck.
+Fyra ronder/natt mellan kl 2200-0500 under tiden 070812-070821 pga kopparstölder.
 		Adress: Västskolan, XSTAD.
                 Pris enl ök.</cbc:Note>
-		<cbc:InvoicedQuantity unitCode="EA" unitCodeListID="UNECERec20">40</cbc:InvoicedQuantity>
+		<cbc:InvoicedQuantity unitCode="EA">40</cbc:InvoicedQuantity>
 		<cbc:LineExtensionAmount currencyID="SEK">25000</cbc:LineExtensionAmount>
 		<!-- Invoiced objectt (line):  -->
 		<cac:DocumentReference>
@@ -140,7 +142,7 @@ Kravavgift 75 kronor.Penalty surcharge percent:8.5</cbc:Note>
 		<cac:Item>
 			<cbc:Name>ROND</cbc:Name>
 			<cac:ClassifiedTaxCategory>
-				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>

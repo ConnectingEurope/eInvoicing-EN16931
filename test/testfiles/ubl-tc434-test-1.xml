@@ -33,7 +33,6 @@
     </cac:AdditionalDocumentReference>
     <cac:AdditionalDocumentReference>
         <cbc:ID>Doc2</cbc:ID>
-        <cbc:DocumentType>EHF specification</cbc:DocumentType>
         <cac:Attachment>
             <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="test.pdf">VGVzdGluZyBCYXNlNjQgZW5jb2Rpbmc=</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
@@ -56,7 +55,7 @@
             <cac:PartyTaxScheme>
                 <cbc:CompanyID>NO123456789MVA</cbc:CompanyID>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
@@ -113,27 +112,6 @@
             <cbc:CompanyID>989823401</cbc:CompanyID>
         </cac:PartyLegalEntity>
     </cac:PayeeParty>
-    <cac:TaxRepresentativeParty>
-        <cac:PartyName>
-            <cbc:Name>Tax handling company AS</cbc:Name>
-        </cac:PartyName>
-        <cac:PostalAddress>
-            <cbc:StreetName>Regent street</cbc:StreetName>
-            <cbc:AdditionalStreetName>Front door</cbc:AdditionalStreetName>
-            <cbc:CityName>Newtown</cbc:CityName>
-            <cbc:PostalZone>202</cbc:PostalZone>
-            <cbc:CountrySubentity>RegionC</cbc:CountrySubentity>
-            <cac:Country>
-                <cbc:IdentificationCode>NO</cbc:IdentificationCode>
-            </cac:Country>
-        </cac:PostalAddress>
-        <cac:PartyTaxScheme>
-            <cbc:CompanyID>NO967611265MVA</cbc:CompanyID>
-            <cac:TaxScheme>
-                <cbc:ID>VA</cbc:ID>
-            </cac:TaxScheme>
-        </cac:PartyTaxScheme>
-    </cac:TaxRepresentativeParty>
     <cac:Delivery>
         <cbc:ActualDeliveryDate>2013-06-15</cbc:ActualDeliveryDate>
         <cac:DeliveryLocation>
@@ -166,14 +144,13 @@
     </cac:PaymentTerms>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReasonCode>75</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Promotion discount</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="NOK">100.00</cbc:Amount>
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
             <cac:TaxScheme>
-                <cbc:ID>VA</cbc:ID>
+                <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>
         </cac:TaxCategory>
     </cac:AllowanceCharge>
@@ -185,7 +162,7 @@
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
             <cac:TaxScheme>
-                <cbc:ID>VA</cbc:ID>
+                <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>
         </cac:TaxCategory>
     </cac:AllowanceCharge>
@@ -198,7 +175,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
@@ -209,7 +186,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>15</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
@@ -221,7 +198,7 @@
                 <cbc:Percent>0</cbc:Percent>
                 <cbc:TaxExemptionReason>Exempt New Means of Transport</cbc:TaxExemptionReason>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
@@ -280,7 +257,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
             <cac:AdditionalItemProperty>
@@ -324,7 +301,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>15</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>
@@ -359,7 +336,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>15</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>
@@ -399,7 +376,7 @@
                 <cbc:ID>E</cbc:ID>
                 <cbc:Percent>0</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
         </cac:Item>
@@ -434,7 +411,7 @@
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
-                    <cbc:ID>VA</cbc:ID>
+                    <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
             <cac:AdditionalItemProperty>

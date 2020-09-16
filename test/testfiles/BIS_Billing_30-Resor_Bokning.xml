@@ -67,7 +67,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
 	<cac:AccountingCustomerParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="GLN">7312345678909</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0088">7312345678909</cbc:EndpointID>
 			<cac:PartyName>
 				<cbc:Name>Myndighet X</cbc:Name>
 			</cac:PartyName>
@@ -89,7 +89,7 @@ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 	</cac:AccountingCustomerParty>
 
 	<cac:PaymentMeans>
-		<cbc:PaymentMeansCode listID="UNCL4461">30</cbc:PaymentMeansCode>
+		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
 		<cbc:PaymentID>123456789012345</cbc:PaymentID>
 		<cac:PayeeFinancialAccount>
 			<cbc:ID>12345678</cbc:ID>
