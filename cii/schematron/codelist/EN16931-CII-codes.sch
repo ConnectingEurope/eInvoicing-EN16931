@@ -100,14 +100,14 @@
 
   <rule context="ram:CategoryTradeTax/ram:CategoryCode" flag="fatal">
     <assert
-      test="((not(contains(normalize-space(.), ' ')) and contains(' AE L M E S Z G O K ', concat(' ', normalize-space(.), ' '))))"
+      test="((not(contains(normalize-space(.), ' ')) and contains(' AE L M E S Z G O K B ', concat(' ', normalize-space(.), ' '))))"
       flag="fatal" 
       id="BR-CL-17">[BR-CL-17]-Invoice tax categories MUST be coded using UNCL 5305 code list</assert>
   </rule>
 
   <rule context="ram:ApplicableTradeTax/ram:CategoryCode" flag="fatal">
     <assert
-      test="((not(contains(normalize-space(.), ' ')) and contains(' AE L M E S Z G O K ', concat(' ', normalize-space(.), ' '))))"
+      test="((not(contains(normalize-space(.), ' ')) and contains(' AE L M E S Z G O K B ', concat(' ', normalize-space(.), ' '))))"
       flag="fatal" 
       id="BR-CL-18">[BR-CL-18]-Invoice tax categories MUST be coded using UNCL 5305 code list</assert>
   </rule>

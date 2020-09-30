@@ -229,6 +229,8 @@
   <param name="BR-DEC-25" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-27" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-28" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
+  <param name="BR-B-01" value="(not(//ram:CountryID != 'IT') and //ram:CategoryCode ='B') or (not(//ram:CategoryCode ='B'))"/>
+  <param name="BR-B-02" value="(//ram:CategoryCode ='B' and (not(//ram:CategoryCode ='S'))) or (not(//ram:CategoryCode ='B'))"/>  
   
   <param name="Invoice_Period " value="//ram:ApplicableHeaderTradeSettlement/ram:BillingSpecifiedPeriod"/>
   <param name="Payee " value="//ram:PayeeTradeParty"/>

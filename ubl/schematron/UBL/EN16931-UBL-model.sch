@@ -209,6 +209,8 @@
   <param name="BR-DEC-25" value="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-27" value="string-length(substring-after(cbc:Amount,'.'))&lt;=2"/>
   <param name="BR-DEC-28" value="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2"/>
+  <param name="BR-B-01" value="(not(//cbc:IdentificationCode != 'IT') and (//cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B')) or (not(//cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B'))"/>
+  <param name="BR-B-02" value="((//cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B') and (not(//cac:TaxCategory/cbc:ID ='S' or //cac:ClassifiedTaxCategory/cbc:ID = 'S'))) or (not(//cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B'))"/>  
   <param name="Invoice_Period " value="cac:InvoicePeriod"/>
   <param name="Document_totals " value="cac:LegalMonetaryTotal"/>
   <param name="Amount_due" value="/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount "/>
