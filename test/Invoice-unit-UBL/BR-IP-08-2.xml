@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
 <!-- TestSet no 2 for rule BR-IP-08, testing calculation with allowance-->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
 	<assert>
