@@ -222,5 +222,26 @@
 			</cac:LegalMonetaryTotal>
 		</Invoice>
 	</test>
-	
+    <test>
+      <assert>
+        <description>Does not fire when adding PayableRoundingAmount = 0. </description>
+        <success>BR-CO-16</success>
+        </assert>
+        <Invoice
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+           <cac:LegalMonetaryTotal>
+                <cbc:LineExtensionAmount currencyID="EUR">10781.25</cbc:LineExtensionAmount>
+                <cbc:TaxExclusiveAmount currencyID="EUR">10781.25</cbc:TaxExclusiveAmount>
+                <cbc:TaxInclusiveAmount currencyID="EUR">12829.69</cbc:TaxInclusiveAmount>
+                <cbc:AllowanceTotalAmount currencyID="EUR">0</cbc:AllowanceTotalAmount>
+                <cbc:ChargeTotalAmount currencyID="EUR">0</cbc:ChargeTotalAmount>
+                <cbc:PrepaidAmount currencyID="EUR">12829.69</cbc:PrepaidAmount>
+                <cbc:PayableRoundingAmount currencyID="EUR">0</cbc:PayableRoundingAmount>
+                <cbc:PayableAmount currencyID="EUR">0</cbc:PayableAmount>
+           </cac:LegalMonetaryTotal>
+        </Invoice>
+      </test>
+
 </testSet>
