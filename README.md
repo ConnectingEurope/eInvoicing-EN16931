@@ -28,7 +28,7 @@ CEF supported code lists are available here:
 
 Licensed under European Union Public Licence (EUPL) version 1.2.
 
-Derivative work created from https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/eInvoicing-EN16931-1.2.3 
+Derivative work created from https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.2.3 
 
 That was Licensed under the Apache License, Version 2.0
 
