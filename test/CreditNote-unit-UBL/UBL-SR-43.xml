@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
+	<assert>
+		<description>x</description>
+		<scope>UBL-SR-43</scope>
+	</assert>
+
+	<test id="1">
+		<assert>
+			<success>UBL-SR-43</success>
+		</assert>
+		<CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+		  <cac:AdditionalDocumentReference>
+		    <cbc:ID>ID</cbc:ID>
+		    <cbc:DocumentTypeCode>50</cbc:DocumentTypeCode>
+		  </cac:AdditionalDocumentReference>
+
+		</CreditNote>
+	</test>
+
+	<test id="2">
+		<assert>
+			<description>When not using default namespace</description>
+			<success>UBL-SR-43</success>
+		</assert>
+		<ns:CreditNote
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns:ns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+		  <cac:AdditionalDocumentReference>
+		    <cbc:ID>ID</cbc:ID>
+		    <cbc:DocumentTypeCode>50</cbc:DocumentTypeCode>
+		  </cac:AdditionalDocumentReference>
+
+		</ns:CreditNote>
+	</test>
+
+
+</testSet>
