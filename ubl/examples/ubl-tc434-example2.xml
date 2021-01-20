@@ -19,7 +19,6 @@
     <cbc:DueDate>2013-07-20</cbc:DueDate>
     <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
     <cbc:Note>Ordered in our booth at the convention</cbc:Note>
-    <cbc:TaxPointDate>2013-06-30</cbc:TaxPointDate>
     <cbc:DocumentCurrencyCode>NOK</cbc:DocumentCurrencyCode>
     <cbc:AccountingCost>Project cost code 123</cbc:AccountingCost>
     <cac:InvoicePeriod>
