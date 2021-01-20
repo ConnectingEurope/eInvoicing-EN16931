@@ -73,4 +73,21 @@
 		</Invoice>
 	</test>
 	
+	<test>
+		<assert>
+			<description>Verify that BT-8 can be informed even if there is no Invoice period defined.</description>
+			<success>BR-CO-19</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoicePeriod>
+				<!--<cbc:StartDate>2013-06-01</cbc:StartDate>
+				<cbc:EndDate>2013-06-30</cbc:EndDate>-->
+                <cbc:DescriptionCode>3</cbc:DescriptionCode>  
+			</cac:InvoicePeriod>
+			
+		</Invoice>
+	</test>
 </testSet>
