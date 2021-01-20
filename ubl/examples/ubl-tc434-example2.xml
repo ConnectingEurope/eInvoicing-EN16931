@@ -25,6 +25,7 @@
     <cac:InvoicePeriod>
         <cbc:StartDate>2013-06-01</cbc:StartDate>
         <cbc:EndDate>2013-06-30</cbc:EndDate>
+        <cbc:DescriptionCode>3</cbc:DescriptionCode>
     </cac:InvoicePeriod>
     <cac:OrderReference>
         <cbc:ID>123</cbc:ID>
