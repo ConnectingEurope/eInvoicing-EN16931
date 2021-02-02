@@ -32,6 +32,7 @@
 	<test>
 		<assert>
 			<description>Verify that sum of allowances on document level = Σ Document level allowance amount</description>
+			<success>BR-CO-11</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
