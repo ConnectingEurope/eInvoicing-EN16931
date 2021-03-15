@@ -198,9 +198,9 @@
 	<param name="CII-SR-166" value="not(ram:ShipFromTradeParty)"/>
 	<param name="CII-SR-167" value="not(ram:ActualDespatchSupplyChainEvent)"/>
 	<param name="CII-SR-168" value="not(ram:ActualPickUpSupplyChainEvent)"/>
-	<param name="CII-SR-169" value="not(ram:ActualReceiptSupplyChainEvent)"/>
+	<param name="CII-SR-169" value="not(ram:RequestedDeliverySupplyChainEvent)"/>
 	<param name="CII-SR-170" value="not(ram:ActualDeliverySupplyChainEvent)"/>
-	<param name="CII-SR-171" value="not(ram:RequestedQuantity)"/>
+	<param name="CII-SR-171" value="not(ram:ActualReceiptSupplyChainEvent)"/>
 	<param name="CII-SR-172" value="not(ram:AdditionalReferencedDocument)"/>
 	<param name="CII-SR-173" value="not(ram:DespatchAdviceReferencedDocument)"/>
 	<param name="CII-SR-174" value="not(ram:ReceivingAdviceReferencedDocument)"/>
