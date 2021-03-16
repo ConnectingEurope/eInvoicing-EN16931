@@ -617,6 +617,7 @@
     <!-- Sections -->
     
   <param name="Invoice_line " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem"/>
+  <param name="AssociatedDocumentLineDocument " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument"/>	
   <param name="Invoice " value="/rsm:CrossIndustryInvoice"/>
   <param name="Document_Context " value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext"/>
   <param name="DocumentContextParameter " value="//*[ends-with(name(), 'DocumentContextParameter')]"/>

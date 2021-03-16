@@ -49,15 +49,18 @@
         <assert test="$CII-SR-036" flag="warning" id="CII-SR-036">[CII-SR-036] - ParentLineID should not be present</assert>
         <assert test="$CII-SR-037" flag="warning" id="CII-SR-037">[CII-SR-037] - LineStatusCode should not be present</assert>
         <assert test="$CII-SR-038" flag="warning" id="CII-SR-038">[CII-SR-038] - LineStatusReasonCode should not be present</assert>
-        <assert test="$CII-SR-039" flag="warning" id="CII-SR-039">[CII-SR-039] - IncludedNote should exist maximum once</assert>
-        <assert test="$CII-SR-040" flag="warning" id="CII-SR-040">[CII-SR-040] - Content should exist maximum once</assert>
-        <assert test="$CII-SR-041" flag="warning" id="CII-SR-041">[CII-SR-041] - SubjectCode should not be present</assert>
-        <assert test="$CII-SR-042" flag="warning" id="CII-SR-042">[CII-SR-042] - ID should not be present</assert>
-        <assert test="$CII-SR-043" flag="warning" id="CII-SR-043">[CII-SR-043] - CategoryCode should not be present</assert>
-        <assert test="$CII-SR-044" flag="warning" id="CII-SR-044">[CII-SR-044] - Subject should not be present</assert>
+
         <assert test="$CII-SR-221" flag="warning" id="CII-SR-221">[CII-SR-221] - IncludedSubordinateTradeLineItem should not be present</assert>
     </rule>
-    <rule context="$SpecifiedTradeProduct ">
+	<rule context="$AssociatedDocumentLineDocument ">
+		<assert test="$CII-SR-039" flag="warning" id="CII-SR-039">[CII-SR-039] - IncludedNote should exist maximum once</assert>
+		<assert test="$CII-SR-040" flag="warning" id="CII-SR-040">[CII-SR-040] - Content should exist maximum once</assert>
+		<assert test="$CII-SR-041" flag="warning" id="CII-SR-041">[CII-SR-041] - SubjectCode should not be present</assert>
+		<assert test="$CII-SR-042" flag="warning" id="CII-SR-042">[CII-SR-042] - ID should not be present</assert>
+		<assert test="$CII-SR-043" flag="warning" id="CII-SR-043">[CII-SR-043] - CategoryCode should not be present</assert>
+		<assert test="$CII-SR-044" flag="warning" id="CII-SR-044">[CII-SR-044] - Subject should not be present</assert>
+	</rule>
+	<rule context="$SpecifiedTradeProduct ">
         <assert test="$CII-SR-045" flag="warning" id="CII-SR-045">[CII-SR-045] - ID should not be present</assert>
         <assert test="$CII-SR-046" flag="fatal" id="CII-SR-046">[CII-SR-046] - schemeID must be present if GlobalID is present</assert>
         
