@@ -11,7 +11,7 @@
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>    
   </rule>
   <rule context="$Card_information ">
-    <assert test="$BR-51" flag="fatal" id="BR-51">[BR-51]-The last 4 to 6 digits of the Payment card primary account number (BT-87) shall be present if Payment card information (BG-18) is provided in the Invoice.</assert>
+    <assert test="$BR-51" flag="fatal" id="BR-51">[BR-51]-Only the last 4 to 6 digits of the Payment card primary account number (BT-87) shall be present if Payment card information (BG-18) is provided in the Invoice.</assert>
   </rule>
   <rule context="$CreditTransfer_information ">
     <assert test="$BR-50" flag="fatal" id="BR-50">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-16) information is provided in the Invoice.</assert>
