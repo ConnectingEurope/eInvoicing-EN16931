@@ -613,6 +613,8 @@
 	<param name="CII-DT-094" value="not(ram:BuildingNumber)"/>
 	<param name="CII-DT-095" value="not(ram:DepartmentName)"/>
 	<param name="CII-DT-096" value="not(ram:AdditionalStreetName)"/>
+	<!-- DateTimeString -->
+	<param name="CII-DT-097" value="matches(.,'(20\d{2})(\d{2})(\d{2})')"/>
 	
     <!-- Sections -->
     
@@ -645,4 +647,5 @@
   <param name="ApplicableHeaderTradeDelivery " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery"/>
 	<param name="ApplicableHeaderTradeSettlement " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement"/>    
 	<param name="SpecifiedTradeSettlementHeaderMonetarySummation " value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>          
+	<param name="DateTimeString " value="//udt:DateTimeString[@format = '102']"/>
 </pattern>
