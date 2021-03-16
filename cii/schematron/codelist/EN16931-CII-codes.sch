@@ -154,7 +154,7 @@
 
   <rule context="ram:AttachmentBinaryObject[@mimeCode]" flag="fatal">
     <assert
-      test="((@mimeCode = 'application/pdf' or @mimeCode  = 'image/png' or @mimeCode  = 'image/jpeg' or @mimeCode  = 'text/csv' or @mimeCode  = 'application/vnd.openxmlformats-officedocument. spreadsheetml.sheet' or @mimeCode  = 'application/vnd.oasis.opendocument.spreadsheet'))"
+      test="((@mimeCode = 'application/pdf' or @mimeCode  = 'image/png' or @mimeCode  = 'image/jpeg' or @mimeCode  = 'text/csv' or @mimeCode  = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' or @mimeCode  = 'application/vnd.oasis.opendocument.spreadsheet'))"
       flag="fatal" 
       id="BR-CL-24">[BR-CL-24]-For Mime code in attribute use MIMEMediaType.</assert>
   </rule>
