@@ -20,7 +20,7 @@
 	</cac:InvoicePeriod>
 	<cac:AccountingSupplierParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="9956">0000000196</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0201">0000000196</cbc:EndpointID>
 			<cac:PartyName>
 				<cbc:Name>My Supplier Company N.V.</cbc:Name>
 			</cac:PartyName>
@@ -49,7 +49,7 @@
 	</cac:AccountingSupplierParty>
 	<cac:AccountingCustomerParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="9956">0000000295</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0201">0000000295</cbc:EndpointID>
 			<cac:PartyName>
 				<cbc:Name>My Customer Company S.A.</cbc:Name>
 			</cac:PartyName>
