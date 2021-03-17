@@ -650,6 +650,6 @@
         <assert test="$CII-DT-096" flag="fatal" id="CII-DT-096">[CII-DT-096] - AdditionalStreetName shall not be used.</assert>
     </rule>
 	<rule context="$DateTimeString ">
-		<assert test="$CII-DT-097" flag="fatal" id="CII-DT-097">[CII-DT-097] - Date time string with format 102 shall be YYYYMMDD.</assert>
+		<assert test="$CII-DT-097" flag="fatal" id="CII-DT-097">[CII-DT-097] - Date time string with format attribute 102 shall be YYYYMMDD.</assert>
 	</rule>
 </pattern>
