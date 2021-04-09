@@ -2050,7 +2050,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[BR-CO-08]-Invoice line charge reason code (BT-145) and Invoice line charge reason (BT144) shall indicate the same type of charge reason.</svrl:text>
+          <svrl:text>[BR-CO-08]-Invoice line charge reason code (BT-145) and Invoice line charge reason (BT-144) shall indicate the same type of charge reason.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>

@@ -129,7 +129,7 @@
     <rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = true()]">
       <assert id="BR-43" flag="fatal" test="(ram:ActualAmount)">[BR-43]-Each Invoice line charge (BG-28) shall have an Invoice line charge amount (BT-141).</assert>
       <assert id="BR-44" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-44]-Each Invoice line charge (BG-28) shall have an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145).</assert>
-      <assert id="BR-CO-08" flag="fatal" test="true()">[BR-CO-08]-Invoice line charge reason code (BT-145) and Invoice line charge reason (BT144) shall indicate the same type of charge reason.</assert>
+      <assert id="BR-CO-08" flag="fatal" test="true()">[BR-CO-08]-Invoice line charge reason code (BT-145) and Invoice line charge reason (BT-144) shall indicate the same type of charge reason.</assert>
       <assert id="BR-CO-24" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-24]-Each Invoice line charge (BG-28) shall contain an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145), or both.</assert>
       <assert id="BR-DEC-27" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-27]-The allowed maximum number of decimals for the Invoice line charge amount (BT-141) is 2.</assert>
       <assert id="BR-DEC-28" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-28]-The allowed maximum number of decimals for the Invoice line charge base amount (BT-142) is 2.</assert>
