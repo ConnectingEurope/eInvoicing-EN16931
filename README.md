@@ -34,6 +34,7 @@ That was Licensed under the Apache License, Version 2.0
 
 # News and noteworthy
 * v1.3.6 - 2021-05-31 (UBL and CII only)
+    * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.3.6
     * Hot fix to support country codes 1A - Kosovo and XI - United Kingdom (Northern Ireland) in rule BR-CO-09
 * v1.3.5 - 2021-03-29 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.3.5
