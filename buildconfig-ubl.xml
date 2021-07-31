@@ -8,8 +8,8 @@
 
 	<package>CEN TC434 UBL</package>
 
-    <testfolder>ubl/examples</testfolder>
-    <testfolder>test/testfiles</testfolder>
+  <testfolder>ubl/examples</testfolder>
+  <testfolder>test/testfiles</testfolder>
 	<testfolder>test/Invoice-unit-UBL</testfolder>
 	<testfolder>test/CreditNote-unit-UBL</testfolder>
 
@@ -18,7 +18,7 @@
 		<title>TC434 UBL Invoice</title>
 		<declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017</declaration>
 		<inherit>ubl-invoice-2.1</inherit>
-        <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
+    <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
 	</configuration>
 
 	<configuration>
@@ -26,7 +26,7 @@
 		<title>TC434 UBL Credit Note</title>
 		<declaration type="xml.ubl">CreditNote::urn:cen.eu:en16931:2017</declaration>
 		<inherit>ubl-creditnote-2.1</inherit>
-        <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
+    <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
 	</configuration>
 
 	<configuration>
@@ -34,7 +34,7 @@
 		<title>TC434 UBL Example</title>
 		<declaration type="xml.ubl">Invoice::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
 		<inherit>ubl-invoice-2.1</inherit>
-        <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
+    <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
 	</configuration>
 
 	<configuration>
@@ -42,7 +42,7 @@
 		<title>TC434 UBL Example</title>
 		<declaration type="xml.ubl">CreditNote::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
 		<inherit>ubl-creditnote-2.1</inherit>
-        <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
+    <file source="ubl/schematron/EN16931-UBL-validation.sch" path="ubl/xslt/EN16931-UBL-validation.xsl" />
 	</configuration>
 
 </buildConfigurations>
