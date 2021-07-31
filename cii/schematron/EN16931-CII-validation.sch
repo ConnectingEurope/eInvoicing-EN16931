@@ -8,7 +8,6 @@
 
         	CII syntax binding to the TC434   
         	Author: Andreas Pelekies
-          Timestamp: 2017-07-30 00:00:00 +0200
  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
   xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
