@@ -1,6 +1,6 @@
 @echo off
 
-rem preprocess first - catches errors quickers
+rem preprocess first - catches errors quicker
 call mvn -f pom-preprocess.xml generate-resources
 if errorlevel 1 goto error
 
@@ -16,7 +16,7 @@ rem validate afterwards
 call mvn -f pom-validate.xml validate
 if errorlevel 1 goto error
 
-echo Sucessfully done
+echo Successfully done
 goto end
 
 :error

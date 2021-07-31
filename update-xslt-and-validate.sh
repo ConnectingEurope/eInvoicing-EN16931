@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# preprocess first - catches errors quickers
+# preprocess first - catches errors quicker
 mvn -f pom-preprocess.xml generate-resources || exit 1
 
 # convert to XSLT - takes forever
@@ -12,4 +12,4 @@ mvn -f pom-license.xml license:format || exit 1
 # validate afterwards
 mvn -f pom-validate.xml validate || exit 1
 
-echo "Sucessfully done"
+echo "Successfully done"
