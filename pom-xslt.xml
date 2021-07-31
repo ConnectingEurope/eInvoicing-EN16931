@@ -29,7 +29,7 @@
       <plugin>
         <groupId>com.helger.maven</groupId>
         <artifactId>ph-schematron-maven-plugin</artifactId>
-        <version>6.0.2</version>
+        <version>6.2.0</version>
         <executions>
 <!--
 -->
@@ -44,7 +44,6 @@
             </configuration>
           </execution>
 <!--
--->
           <execution>
             <id>edifact</id>
             <goals>
@@ -55,6 +54,7 @@
               <xsltDirectory>${basedir}/edifact/xslt</xsltDirectory>
             </configuration>
           </execution>
+-->
 <!--
 -->
           <execution>
