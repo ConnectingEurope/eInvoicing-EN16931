@@ -1,9 +1,5 @@
 @echo off
 
-echo running UBL tests
-docker run --rm -it -v %CD%:/src difi/vefa-validator build -x -t -p ubl /src
-if errorlevel 1 goto error
-
 echo running CII tests
 docker run --rm -it -v %CD%:/src difi/vefa-validator build -x -t -p cii /src
 if errorlevel 1 goto error
