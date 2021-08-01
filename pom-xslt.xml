@@ -29,7 +29,7 @@
       <plugin>
         <groupId>com.helger.maven</groupId>
         <artifactId>ph-schematron-maven-plugin</artifactId>
-        <version>6.2.0</version>
+        <version>6.2.1</version>
         <executions>
 <!--
 -->
