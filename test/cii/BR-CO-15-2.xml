@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-cii">
+    <assert>
+        <scope>BR-CO-15</scope>
+    </assert>
+    <test>
+        <assert>
+            <description>Verify that Invoice total amount with VAT = Invoice total amount without VAT + Invoice total VAT amount, when there exists TaxCurrency != Document Currency</description>
+            <success>BR-CO-15</success>
+        </assert>
+<rsm:CrossIndustryInvoice
+ xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100"
+ xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+ xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+ xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+    <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode>DKK</ram:InvoiceCurrencyCode>
+            <ram:TaxCurrencyCode>EUR</ram:TaxCurrencyCode>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:TaxBasisTotalAmount currencyID="DKK">4000.00</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount currencyID="DKK">675.00</ram:TaxTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">628.62</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount currencyID="DKK">4675.00</ram:GrandTotalAmount>
+                <ram:DuePayableAmount currencyID="DKK">4675.00</ram:DuePayableAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+    </test>
+    
+    <test>
+        <assert>
+            <description>Trigger error if an Invoice total amount with VAT != Invoice total amount without VAT + Invoice total VAT amount, when there exists TaxCurrency != Document Currency</description>
+            <error>BR-CO-15</error>
+        </assert>
+<rsm:CrossIndustryInvoice
+ xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100"
+ xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+ xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+ xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+    <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode>DKK</ram:InvoiceCurrencyCode>
+            <ram:TaxCurrencyCode>EUR</ram:TaxCurrencyCode>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:TaxBasisTotalAmount currencyID="DKK">4000.00</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount currencyID="DKK">1675.00</ram:TaxTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">628.62</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount currencyID="DKK">4675.00</ram:GrandTotalAmount>
+                <ram:DuePayableAmount currencyID="DKK">4675.00</ram:DuePayableAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+    </test>
+    
+    <test>
+        <assert>
+            <description>Trigger error if Tax Total currency != Document Currency</description>
+            <error>BR-CO-15</error>
+        </assert>
+<rsm:CrossIndustryInvoice
+ xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100"
+ xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+ xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+ xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+    <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode>DKK</ram:InvoiceCurrencyCode>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:TaxBasisTotalAmount currencyID="DKK">4000.00</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">675.00</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount currencyID="DKK">4675.00</ram:GrandTotalAmount>
+                <ram:DuePayableAmount currencyID="DKK">4675.00</ram:DuePayableAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
+    </test>
+</testSet>
