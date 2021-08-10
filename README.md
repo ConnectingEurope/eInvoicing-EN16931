@@ -33,6 +33,9 @@ Derivative work created from https://github.com/ConnectingEurope/eInvoicing-EN16
 That was Licensed under the Apache License, Version 2.0
 
 # News and noteworthy
+
+* v1.3.6a - 2021-08-03 (UBL and CII only)
+    * This contains a fix for BR-CO-15 as required by XRechnung 2.1.1 - when https://github.com/ConnectingEurope/eInvoicing-EN16931/pull/292 is merged, the next XRechnung release can be again based on the official rule release. No further hot fixes are assumed.
 * v1.3.6 - 2021-05-31 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.3.6
     * Hot fix to support country codes 1A - Kosovo and XI - United Kingdom (Northern Ireland) in rule BR-CO-09
