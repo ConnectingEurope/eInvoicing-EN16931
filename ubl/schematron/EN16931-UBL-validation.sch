@@ -4,12 +4,6 @@
     Licensed under European Union Public Licence (EUPL) version 1.2.
 
 -->
-<!-- 
-
-            UBL syntax binding to the model  
-            Created by Validex Schematron Generator. (2015) Midran Ltd.
-            Timestamp: 2017-09-15 12:09:57 +0200
-     -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cn="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" xmlns:UBL="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" queryBinding="xslt2">
   <title>EN16931  model bound to UBL</title>
   <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"/>

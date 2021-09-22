@@ -9,6 +9,7 @@
 	<package>CEN TC434 CII</package>
 
 	<testfolder>cii/examples</testfolder>
+  <testfolder>test/cii</testfolder>
 
 	<configuration>
 		<identifier>tc434-cii</identifier>
