@@ -154,12 +154,6 @@
                     <ram:IBANID>DK1212341234123412</ram:IBANID>
                 </ram:PayeePartyCreditorFinancialAccount>
             </ram:SpecifiedTradeSettlementPaymentMeans>
-            <ram:SpecifiedTradeSettlementPaymentMeans>
-                <ram:TypeCode>30</ram:TypeCode>
-                <ram:PayeePartyCreditorFinancialAccount>
-                    <ram:IBANID>DK1212341234123412</ram:IBANID>
-                </ram:PayeePartyCreditorFinancialAccount>
-            </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>
                 <ram:CalculatedAmount>1.90</ram:CalculatedAmount>
                 <ram:TypeCode>VAT</ram:TypeCode>
