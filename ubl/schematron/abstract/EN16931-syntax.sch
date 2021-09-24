@@ -733,7 +733,6 @@
     <assert test="$UBL-SR-03" flag="fatal" id="UBL-SR-03">[UBL-SR-03]-Despatch advice identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-04" flag="fatal" id="UBL-SR-04">[UBL-SR-04]-Invoice object identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-05" flag="fatal" id="UBL-SR-05">[UBL-SR-05]-Payment terms shall occur maximum once</assert>
-    <assert test="$UBL-SR-06" flag="fatal" id="UBL-SR-06">[UBL-SR-06]-Preceding invoice reference shall occur maximum once</assert>
     <assert test="$UBL-SR-08" flag="fatal" id="UBL-SR-08">[UBL-SR-08]-Invoice period shall occur maximum once</assert>
     <assert test="$UBL-SR-09" flag="fatal" id="UBL-SR-09">[UBL-SR-09]-Seller name shall occur maximum once</assert>
     <assert test="$UBL-SR-10" flag="fatal" id="UBL-SR-10">[UBL-SR-10]-Seller trader name shall occur maximum once</assert>
@@ -774,6 +773,7 @@
     <assert test="$UBL-SR-28" flag="fatal" id="UBL-SR-28">[UBL-SR-28]-Mandate reference identifier shall occur maximum once</assert>
   </rule>
   <rule context="$Preceding_Invoice">
+    <assert test="$UBL-SR-06" flag="fatal" id="UBL-SR-06">[UBL-SR-06]-Preceding invoice reference shall occur maximum once</assert>
     <assert test="$UBL-SR-07" flag="fatal" id="UBL-SR-07">[UBL-SR-07]-If there is a preceding invoice reference, the preceding invoice number shall be present</assert>
   </rule>
   <rule context="$Tax_Representative">
