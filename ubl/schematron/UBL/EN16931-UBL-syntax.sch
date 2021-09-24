@@ -31,7 +31,7 @@
   <param name="UBL-SR-24" value="(count(cac:Delivery) &lt;= 1)"/>
   <param name="UBL-SR-25" value="(count(cac:DeliveryParty/cac:PartyName/cbc:Name) &lt;= 1)"/>
   <param name="UBL-SR-26" value="(count(cbc:PaymentID) &lt;= 1)"/>
-  <param name="UBL-SR-27" value="(count(cbc:InstructionNote) &lt;= 1)"/>
+  <param name="UBL-SR-27" value="(count(cbc:PaymentMeansCode) &lt;= 1)"/>
   <param name="UBL-SR-28" value="(count(cac:PaymentMandate/cbc:ID) &lt;= 1)"/>
   <param name="UBL-SR-29" value="(count(//cac:PartyIdentification/cbc:ID[upper-case(@schemeID) = 'SEPA']) &lt;= 1)"/>
   <param name="UBL-SR-30" value="(count(cbc:AllowanceChargeReason) &lt;= 1)"/>
@@ -42,7 +42,6 @@
   <param name="UBL-SR-35" value="(count(cac:OrderLineReference/cbc:LineID) &lt;= 1)"/>
   <param name="UBL-SR-36" value="(count(cac:InvoicePeriod) &lt;= 1)"/>
   <param name="UBL-SR-37" value="(count(cac:Price/cac:AllowanceCharge/cbc:Amount) &lt;= 1)"/>
-  <param name="UBL-SR-38" value="(count(cac:Item/cac:ClassifiedTaxCategory/cbc:TaxExemptionReason) &lt;= 1)"/>
   <param name="UBL-SR-39" value="(count(cac:ProjectReference/cbc:ID) &lt;= 1)"/>
   <param name="UBL-SR-40" value="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name) &lt;= 1)"/>
   <param name="UBL-SR-42" value="(count(cac:PartyTaxScheme) &lt;= 2)"/>

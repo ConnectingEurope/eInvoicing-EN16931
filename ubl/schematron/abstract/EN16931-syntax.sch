@@ -760,7 +760,6 @@
     <assert test="$UBL-SR-35" flag="fatal" id="UBL-SR-35">[UBL-SR-35]-Referenced purchase order line identifier shall occur maximum once</assert>
     <assert test="$UBL-SR-36" flag="fatal" id="UBL-SR-36">[UBL-SR-36]-Invoice line period shall occur maximum once</assert>
     <assert test="$UBL-SR-37" flag="fatal" id="UBL-SR-37">[UBL-SR-37]-Item price discount shall occur maximum once</assert>
-    <assert test="$UBL-SR-38" flag="fatal" id="UBL-SR-38">[UBL-SR-38]-Invoiced item VAT exemption reason text shall occur maximum once</assert>
     <assert test="$UBL-SR-48" flag="fatal" id="UBL-SR-48">[UBL-SR-48]-Invoice lines shall have one and only one classified tax category.</assert>
     <assert test="$UBL-SR-50" flag="fatal" id="UBL-SR-50">[UBL-SR-50]-Item description shall occur maximum once</assert>
   </rule>
