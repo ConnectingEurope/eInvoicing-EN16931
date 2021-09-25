@@ -99,13 +99,13 @@
   <param name="UBL-CR-019" value="not(cac:OrderReference/cbc:IssueTime)"/>
   <param name="UBL-CR-020" value="not(cac:OrderReference/cbc:CustomerReference)"/>
   <param name="UBL-CR-021" value="not(cac:OrderReference/cbc:OrderTypeCode)"/>
-  <param name="UBL-CR-022" value="not(cac:OrderReference/cbc:DocumentReference)"/>
+  <param name="UBL-CR-022" value="not(cac:OrderReference/cac:DocumentReference)"/>
   <param name="UBL-CR-023" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:CopyIndicator)"/>
   <param name="UBL-CR-024" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:UUID)"/>
   <param name="UBL-CR-025" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueTime)"/>
   <param name="UBL-CR-026" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentTypeCode)"/>
   <param name="UBL-CR-027" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentType)"/>
-  <param name="UBL-CR-028" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:Xpath)"/>
+  <param name="UBL-CR-028" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:XPath)"/>
   <param name="UBL-CR-029" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-030" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:LocaleCode)"/>
   <param name="UBL-CR-031" value="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:VersionID)"/>
@@ -128,7 +128,7 @@
   <param name="UBL-CR-048" value="not(cac:DespatchDocumentReference/cbc:IssueTime)"/>
   <param name="UBL-CR-049" value="not(cac:DespatchDocumentReference/cbc:DocumentTypeCode)"/>
   <param name="UBL-CR-050" value="not(cac:DespatchDocumentReference/cbc:DocumentType)"/>
-  <param name="UBL-CR-051" value="not(cac:DespatchDocumentReference/cbc:Xpath)"/>
+  <param name="UBL-CR-051" value="not(cac:DespatchDocumentReference/cbc:XPath)"/>
   <param name="UBL-CR-052" value="not(cac:DespatchDocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-053" value="not(cac:DespatchDocumentReference/cbc:LocaleCode)"/>
   <param name="UBL-CR-054" value="not(cac:DespatchDocumentReference/cbc:VersionID)"/>
@@ -144,7 +144,7 @@
   <param name="UBL-CR-064" value="not(cac:ReceiptDocumentReference/cbc:IssueTime)"/>
   <param name="UBL-CR-065" value="not(cac:ReceiptDocumentReference/cbc:DocumentTypeCode)"/>
   <param name="UBL-CR-066" value="not(cac:ReceiptDocumentReference/cbc:DocumentType)"/>
-  <param name="UBL-CR-067" value="not(cac:ReceiptDocumentReference/cbc:Xpath)"/>
+  <param name="UBL-CR-067" value="not(cac:ReceiptDocumentReference/cbc:XPath)"/>
   <param name="UBL-CR-068" value="not(cac:ReceiptDocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-069" value="not(cac:ReceiptDocumentReference/cbc:LocaleCode)"/>
   <param name="UBL-CR-070" value="not(cac:ReceiptDocumentReference/cbc:VersionID)"/>
@@ -161,7 +161,7 @@
   <param name="UBL-CR-081" value="not(cac:OriginatorDocumentReference/cbc:IssueTime)"/>
   <param name="UBL-CR-082" value="not(cac:OriginatorDocumentReference/cbc:DocumentTypeCode)"/>
   <param name="UBL-CR-083" value="not(cac:OriginatorDocumentReference/cbc:DocumentType)"/>
-  <param name="UBL-CR-084" value="not(cac:OriginatorDocumentReference/cbc:Xpath)"/>
+  <param name="UBL-CR-084" value="not(cac:OriginatorDocumentReference/cbc:XPath)"/>
   <param name="UBL-CR-085" value="not(cac:OriginatorDocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-086" value="not(cac:OriginatorDocumentReference/cbc:LocaleCode)"/>
   <param name="UBL-CR-087" value="not(cac:OriginatorDocumentReference/cbc:VersionID)"/>
@@ -177,7 +177,7 @@
   <param name="UBL-CR-097" value="not(cac:ContractDocumentReference/cbc:IssueTime)"/>
   <param name="UBL-CR-098" value="not(cac:ContractDocumentReference/cbc:DocumentTypeCode)"/>
   <param name="UBL-CR-099" value="not(cac:ContractDocumentReference/cbc:DocumentType)"/>
-  <param name="UBL-CR-100" value="not(cac:ContractDocumentReference/cbc:Xpath)"/>
+  <param name="UBL-CR-100" value="not(cac:ContractDocumentReference/cbc:XPath)"/>
   <param name="UBL-CR-101" value="not(cac:ContractDocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-102" value="not(cac:ContractDocumentReference/cbc:LocaleCode)"/>
   <param name="UBL-CR-103" value="not(cac:ContractDocumentReference/cbc:VersionID)"/>
@@ -192,7 +192,7 @@
   <param name="UBL-CR-112" value="not(cac:AdditionalDocumentReference/cbc:IssueDate)"/>
   <param name="UBL-CR-113" value="not(cac:AdditionalDocumentReference/cbc:IssueTime)"/>
   <param name="UBL-CR-114" value="not(cac:AdditionalDocumentReference/cbc:DocumentType)"/>
-  <param name="UBL-CR-115" value="not(cac:AdditionalDocumentReference/cbc:Xpath)"/>
+  <param name="UBL-CR-115" value="not(cac:AdditionalDocumentReference/cbc:XPath)"/>
   <param name="UBL-CR-116" value="not(cac:AdditionalDocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-117" value="not(cac:AdditionalDocumentReference/cbc:LocaleCode)"/>
   <param name="UBL-CR-118" value="not(cac:AdditionalDocumentReference/cbc:VersionID)"/>
@@ -259,7 +259,7 @@
   <param name="UBL-CR-180" value="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalFormCode)"/>
   <param name="UBL-CR-181" value="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:SoleProprietorshipIndicator)"/>
   <param name="UBL-CR-182" value="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLiquidationStatusCode)"/>
-  <param name="UBL-CR-183" value="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CorporationStockAmount)"/>
+  <param name="UBL-CR-183" value="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CorporateStockAmount)"/>
   <param name="UBL-CR-184" value="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:FullyPaidSharesIndicator)"/>
   <param name="UBL-CR-185" value="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress)"/>
   <param name="UBL-CR-186" value="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:CorporateRegistrationScheme)"/>
@@ -323,7 +323,7 @@
   <param name="UBL-CR-244" value="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalForm)"/>
   <param name="UBL-CR-245" value="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:SoleProprietorshipIndicator)"/>
   <param name="UBL-CR-246" value="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLiquidationStatusCode)"/>
-  <param name="UBL-CR-247" value="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CorporationStockAmount)"/>
+  <param name="UBL-CR-247" value="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CorporateStockAmount)"/>
   <param name="UBL-CR-248" value="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:FullyPaidSharesIndicator)"/>
   <param name="UBL-CR-249" value="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress)"/>
   <param name="UBL-CR-250" value="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cac:CorporateRegistrationScheme)"/>
@@ -358,7 +358,7 @@
   <param name="UBL-CR-279" value="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:CompanyLegalForm)"/>
   <param name="UBL-CR-280" value="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:SoleProprietorshipIndicator)"/>
   <param name="UBL-CR-281" value="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:CompanyLiquidationStatusCode)"/>
-  <param name="UBL-CR-282" value="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:CorporationStockAmount)"/>
+  <param name="UBL-CR-282" value="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:CorporateStockAmount)"/>
   <param name="UBL-CR-283" value="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:FullyPaidSharesIndicator)"/>
   <param name="UBL-CR-284" value="not(cac:PayeeParty/cac:PartyLegalEntity/cac:RegistrationAddress)"/>
   <param name="UBL-CR-285" value="not(cac:PayeeParty/cac:PartyLegalEntity/cac:CorporateRegistrationScheme)"/>
@@ -434,7 +434,7 @@
   <param name="UBL-CR-355" value="not(cac:Delivery/cac:DeliveryLocation/cbc:LocationTypeCode)"/>
   <param name="UBL-CR-356" value="not(cac:Delivery/cac:DeliveryLocation/cbc:InformationURI)"/>
   <param name="UBL-CR-357" value="not(cac:Delivery/cac:DeliveryLocation/cbc:Name)"/>
-  <param name="UBL-CR-358" value="not(cac:Delivery/cac:DeliveryLocation/cac:ValidationPeriod)"/>
+  <param name="UBL-CR-358" value="not(cac:Delivery/cac:DeliveryLocation/cac:ValidityPeriod)"/>
   <param name="UBL-CR-359" value="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:ID)"/>
   <param name="UBL-CR-360" value="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:AddressTypeCode)"/>
   <param name="UBL-CR-361" value="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:AddressFormatCode)"/>
@@ -460,7 +460,7 @@
   <param name="UBL-CR-381" value="not(cac:Delivery/cac:DeliveryLocation/cac:LocationCoordinate)"/>
   <param name="UBL-CR-382" value="not(cac:Delivery/cac:AlternativeDeliveryLocation)"/>
   <param name="UBL-CR-383" value="not(cac:Delivery/cac:RequestedDeliveryPeriod)"/>
-  <param name="UBL-CR-384" value="not(cac:Delivery/cac:PromisedDeliveryPeriod)"/>
+  <param name="UBL-CR-384" value="not(cac:Delivery/cac:EstimatedDeliveryPeriod)"/>
   <param name="UBL-CR-385" value="not(cac:Delivery/cac:CarrierParty)"/>
   <param name="UBL-CR-386" value="not(cac:Delivery/cac:DeliveryParty/cbc:MarkCareIndicator)"/>
   <param name="UBL-CR-387" value="not(cac:Delivery/cac:DeliveryParty/cbc:MarkAttentionIndicator)"/>
@@ -490,12 +490,12 @@
   <param name="UBL-CR-411" value="not(cac:PaymentMeans/cbc:ID)"/>
   <param name="UBL-CR-412" value="not(cac:PaymentMeans/cbc:PaymentDueDate) or ../cn:CreditNote"/>
   <param name="UBL-CR-413" value="not(cac:PaymentMeans/cbc:PaymentChannelCode)"/>
-  <param name="UBL-CR-414" value="not(cac:PaymentMeans/cbc:InstructionID)"/>
+  <param name="UBL-CR-414" value="not(cac:PaymentMeans/cbc:InstructionNote)"/>
   <param name="UBL-CR-415" value="not(cac:PaymentMeans/cac:CardAccount/cbc:CardTypeCode)"/>
   <param name="UBL-CR-416" value="not(cac:PaymentMeans/cac:CardAccount/cbc:ValidityStartDate)"/>
   <param name="UBL-CR-417" value="not(cac:PaymentMeans/cac:CardAccount/cbc:ExpiryDate)"/>
   <param name="UBL-CR-418" value="not(cac:PaymentMeans/cac:CardAccount/cbc:IssuerID)"/>
-  <param name="UBL-CR-419" value="not(cac:PaymentMeans/cac:CardAccount/cbc:IssuerNumberID)"/>
+  <param name="UBL-CR-419" value="not(cac:PaymentMeans/cac:CardAccount/cbc:IssueNumberID)"/>
   <param name="UBL-CR-420" value="not(cac:PaymentMeans/cac:CardAccount/cbc:CV2ID)"/>
   <param name="UBL-CR-421" value="not(cac:PaymentMeans/cac:CardAccount/cbc:CardChipCode)"/>
   <param name="UBL-CR-422" value="not(cac:PaymentMeans/cac:CardAccount/cbc:ChipApplicationID)"/>
@@ -587,7 +587,7 @@
   <param name="UBL-CR-509" value="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:Name)"/>
   <param name="UBL-CR-510" value="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:TaxTypeCode)"/>
   <param name="UBL-CR-511" value="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:CurrencyCode)"/>
-  <param name="UBL-CR-512" value="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cac:JurisdiccionRegionAddress)"/>
+  <param name="UBL-CR-512" value="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cac:JurisdictionRegionAddress)"/>
   <param name="UBL-CR-513" value="not(cac:WithholdingTaxTotal)"/>
   <param name="UBL-CR-514" value="not(cac:LegalMonetaryTotal/cbc:PayableAlternativeAmount)"/>
   <param name="UBL-CR-515" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cbc:UUID)"/>
@@ -612,7 +612,7 @@
   <param name="UBL-CR-534" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:IssueDate)"/>
   <param name="UBL-CR-535" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:IssueTime)"/>
   <param name="UBL-CR-537" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:DocumentType)"/>
-  <param name="UBL-CR-538" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:Xpath)"/>
+  <param name="UBL-CR-538" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:XPath)"/>
   <param name="UBL-CR-539" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:LanguageID)"/>
   <param name="UBL-CR-540" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:LocaleCode)"/>
   <param name="UBL-CR-541" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:VersionID)"/>
@@ -646,18 +646,18 @@
   <param name="UBL-CR-569" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:BrandName)"/>
   <param name="UBL-CR-570" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:ModelName)"/>
   <param name="UBL-CR-571" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cbc:ExtendedID)"/>
-  <param name="UBL-CR-572" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cbc:BareCodeSymbologyID)"/>
+  <param name="UBL-CR-572" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cbc:BarecodeSymbologyID)"/>
   <param name="UBL-CR-573" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cac:PhysicalAttribute)"/>
   <param name="UBL-CR-574" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cac:MeasurementDimension)"/>
   <param name="UBL-CR-575" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cac:IssuerParty)"/>
   <param name="UBL-CR-576" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cbc:ExtendedID)"/>
-  <param name="UBL-CR-577" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cbc:BareCodeSymbologyID)"/>
+  <param name="UBL-CR-577" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cbc:BarecodeSymbologyID)"/>
   <param name="UBL-CR-578" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cac:PhysicalAttribute)"/>
   <param name="UBL-CR-579" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cac:MeasurementDimension)"/>
   <param name="UBL-CR-580" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cac:IssuerParty)"/>
   <param name="UBL-CR-581" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ManufacturersItemIdentification)"/>
   <param name="UBL-CR-582" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cbc:ExtendedID)"/>
-  <param name="UBL-CR-583" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cbc:BareCodeSymbologyID)"/>
+  <param name="UBL-CR-583" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cbc:BarecodeSymbologyID)"/>
   <param name="UBL-CR-584" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cac:PhysicalAttribute)"/>
   <param name="UBL-CR-585" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cac:MeasurementDimension)"/>
   <param name="UBL-CR-586" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cac:IssuerParty)"/>
@@ -681,7 +681,7 @@
   <param name="UBL-CR-604" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:Name)"/>
   <param name="UBL-CR-605" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:TaxTypeCode)"/>
   <param name="UBL-CR-606" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:CurrencyCode)"/>
-  <param name="UBL-CR-607" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cac:JurisdiccionRegionAddress)"/>
+  <param name="UBL-CR-607" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cac:JurisdictionRegionAddress)"/>
   <param name="UBL-CR-608" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:ID)"/>
   <param name="UBL-CR-609" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:NameCode)"/>
   <param name="UBL-CR-610" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:TestMethod)"/>
@@ -699,26 +699,26 @@
   <param name="UBL-CR-622" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ItemInstance)"/>
   <param name="UBL-CR-623" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Certificate)"/>
   <param name="UBL-CR-624" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Dimension)"/>
-  <param name="UBL-CR-625" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:PriceChangeReason)"/>
-  <param name="UBL-CR-626" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:PriceTypeCode)"/>
-  <param name="UBL-CR-627" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:PriceType)"/>
-  <param name="UBL-CR-628" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:OrderableUnitFactorRate)"/>
-  <param name="UBL-CR-629" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:ValidityPeriod)"/>
-  <param name="UBL-CR-630" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:PriceList)"/>
-  <param name="UBL-CR-631" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:OrderableUnitFactorRate)"/>
-  <param name="UBL-CR-632" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:ID)"/>
-  <param name="UBL-CR-633" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode)"/>
-  <param name="UBL-CR-634" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReason)"/>
-  <param name="UBL-CR-635" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:MultiplierFactorNumeric)"/>
-  <param name="UBL-CR-636" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:PrepaidIndicator)"/>
-  <param name="UBL-CR-637" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:SequenceNumeric)"/>
-  <param name="UBL-CR-638" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:AccountingCostCode)"/>
-  <param name="UBL-CR-639" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:AccountingCost)"/>
-  <param name="UBL-CR-640" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:PerUnitAmount)"/>
-  <param name="UBL-CR-641" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cac:TaxCategory)"/>
-  <param name="UBL-CR-642" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cac:TaxTotal)"/>
-  <param name="UBL-CR-643" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cac:PaymentMeans)"/>
-  <param name="UBL-CR-644" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:PricingExchangeRate)"/>
+  <param name="UBL-CR-625" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:PriceChangeReason)"/>
+  <param name="UBL-CR-626" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:PriceTypeCode)"/>
+  <param name="UBL-CR-627" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:PriceType)"/>
+  <param name="UBL-CR-628" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:OrderableUnitFactorRate)"/>
+  <param name="UBL-CR-629" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:ValidityPeriod)"/>
+  <param name="UBL-CR-630" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:PriceList)"/>
+  <param name="UBL-CR-631" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:OrderableUnitFactorRate)"/>
+  <param name="UBL-CR-632" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:ID)"/>
+  <param name="UBL-CR-633" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode)"/>
+  <param name="UBL-CR-634" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReason)"/>
+  <param name="UBL-CR-635" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:MultiplierFactorNumeric)"/>
+  <param name="UBL-CR-636" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:PrepaidIndicator)"/>
+  <param name="UBL-CR-637" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:SequenceNumeric)"/>
+  <param name="UBL-CR-638" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:AccountingCostCode)"/>
+  <param name="UBL-CR-639" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:AccountingCost)"/>
+  <param name="UBL-CR-640" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:PerUnitAmount)"/>
+  <param name="UBL-CR-641" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cac:TaxCategory)"/>
+  <param name="UBL-CR-642" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cac:TaxTotal)"/>
+  <param name="UBL-CR-643" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cac:PaymentMeans)"/>
+  <param name="UBL-CR-644" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:PricingExchangeRate)"/>
   <param name="UBL-CR-645" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DeliveryTerms)"/>
   <param name="UBL-CR-646" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:SubInvoiceLine)"/>
   <param name="UBL-CR-647" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:ItemPriceExtension)"/>
