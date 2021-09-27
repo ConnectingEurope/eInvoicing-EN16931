@@ -9,7 +9,7 @@
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.11.3</version>
+    <version>1.11.4</version>
   </parent>
   <artifactId>centc434-validation-rules</artifactId>
   <version>1.3.0</version>
