@@ -4,6 +4,8 @@
     Licensed under European Union Public Licence (EUPL) version 1.2.
 
 -->
+<!--Schematron version 1.3.7-DRAFT
+Last update: 2021-09-27-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
   <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" />
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" />
