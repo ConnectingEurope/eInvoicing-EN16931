@@ -18,7 +18,7 @@ jobs:
 
 # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - run: ls -la /github/home
+    - run: ls -la /__w/_actions
     # Runs a single command using the runners shell
     - name: Test CII
       run: build -x -t -p cii /src
