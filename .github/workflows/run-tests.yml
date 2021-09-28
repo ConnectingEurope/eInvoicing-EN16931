@@ -12,5 +12,10 @@ jobs:
       image: difi/vefa-validator
       options: -v /home/runner/work/_actions:/src
     steps:
-    - name: Test CII
-      run: docker run --rm --pull -it -v /home/runner/work/_actions:/src difi/vefa-validator build -x -t -p cii /src
+    - name: Test CII 1
+      run: build -x -t -p cii /src
+    - name: Test CII 2
+      run: docker run --rm --pull -it difi/vefa-validator build -x -t -p cii /src
+#    - name: Test CII
+#      run: docker run --rm --pull -it -v /home/runner/work/_actions:/src difi/vefa-validator build -x -t -p cii /src
+      
