@@ -14,10 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: difi/vefa-validator
-      options: v $(pwd):/src
+      options: -v $(pwd):/src
 
 # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - run: ls -la /github/home
     # Runs a single command using the runners shell
     - name: Test CII
       run: build -x -t -p cii /src
