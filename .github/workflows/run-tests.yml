@@ -21,6 +21,9 @@ jobs:
 
   run-tests:
     runs-on: ubuntu-latest
+    container:
+      image: difi/vefa-validator
+      options: -v /home/runner/work/_actions:/src
     steps:
       - uses: actions/checkout@master
       - name: Check container
