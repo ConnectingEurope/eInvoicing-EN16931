@@ -1,20 +1,16 @@
-# This is a basic workflow that is manually triggered
 name: Run tests
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   push:
     branches:
       - master
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-    container:
-      image: difi/vefa-validator
-      options: -v /home/runner/work/_actions:/src
+#    container:
+#      image: difi/vefa-validator
+#      options: -v /home/runner/work/_actions:/src
     steps:
     - name: Test CII
-      run: build -x -t -p cii /src
+      run: docker run --rm --pull -it -v /home/runner/work/_actions:/src difi/vefa-validator build -x -t -p cii /src
