@@ -198,7 +198,6 @@
     </cac:Delivery>
     <cac:PaymentMeans>
         <cbc:PaymentMeansCode>49</cbc:PaymentMeansCode>
-        <cbc:InstructionNote>Half prepaid</cbc:InstructionNote>
         <cbc:PaymentID>Payref1</cbc:PaymentID>
         <cac:PaymentMandate>
             <cbc:ID>123456</cbc:ID>
