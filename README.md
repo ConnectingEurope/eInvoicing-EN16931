@@ -3,8 +3,6 @@
 Official Schematron eInvoicing-EN16931 artefacts for CEN/TC 434.
 This repository does not contain eInvoicing-EN16931 rules for any CIUS.
 
-**This was the repository originally created at ConnectingEurope/eInvoicing-EN16931 - it is now maintained here**
-
 Latest release
   * UBL & CII: **v1.3.6** (2021-05-31) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.6
   * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/eInvoicing-EN16931-1.0.0
@@ -23,7 +21,6 @@ CEF supported code lists are available here:
  
 * https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Registry+of+supporting+artefacts+to+implement+EN16931
 
-    
 # License
 
 Licensed under European Union Public Licence (EUPL) version 1.2.
@@ -34,7 +31,7 @@ That was Licensed under the Apache License, Version 2.0
 
 # News and noteworthy
 
-* v1.3.6a - 2021-08-03 (UBL and CII only)
+* v1.3.6a - 2021-08-03 (UBL and CII only - KoSIT specific fix)
     * This contains a fix for BR-CO-15 as required by XRechnung 2.1.1 - when https://github.com/ConnectingEurope/eInvoicing-EN16931/pull/292 is merged, the next XRechnung release can be again based on the official rule release. No further hot fixes are assumed.
 * v1.3.6 - 2021-05-31 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.3.6
@@ -59,13 +56,10 @@ That was Licensed under the Apache License, Version 2.0
 * v1.2.3 - 2019-07-05 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.2.3
     * Some codelist values were missing
-
 * v1.2.2 - 2019-07-05 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.2.2
-
 * v1.2.1 - 2019-05-14 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av1.2.1
-
 * v1.2.0 - 2019-04-26 (UBL and CII only)
     * Note: this release does NOT contain the EDIFACT eInvoicing-EN16931 rules - its development is currently paused/stalled
     * Note: this release is not backwards compatible, and the examples files were changed as well.
@@ -73,7 +67,6 @@ That was Licensed under the Apache License, Version 2.0
     * The UBL ODS files were removed, because they were out of sync with the used rules
     * The folder names for examples files were unified across the syntaxes
     * The name of the UBL Schematron/XSLT files was changed from `EN16931-UBL-model.*` to `EN16931-UBL-eInvoicing-EN16931.*`
-    
 * v1.1.0 - 2018-06-26 (UBL and CII only)
     * Note: this release does NOT contain the EDIFACT eInvoicing-EN16931 rules - its development is currently paused/stalled
     * New participant identifier schemes are supported
@@ -91,7 +84,6 @@ That was Licensed under the Apache License, Version 2.0
     * Error in rule `BR-Z-10` UBL was fixed ([issue #59](https://github.com/ConnectingEurope/eInvoicing-EN16931/issues/59))
     * Fixed error message of `BR-AF-05` CII ([issue #60](https://github.com/ConnectingEurope/eInvoicing-EN16931/issues/60))
     * The value `532` was not supported in `BR-CL-01` ([issue #63](https://github.com/ConnectingEurope/eInvoicing-EN16931/issues/63))
-    
 * v1.0.0 - 2018-02-08 (UBL, CII and EDIFACT)
     * Initial release
 
