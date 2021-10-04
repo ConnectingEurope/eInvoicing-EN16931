@@ -4,7 +4,7 @@ Official Schematron eInvoicing-EN16931 artefacts for CEN/TC 434.
 This repository does not contain eInvoicing-EN16931 rules for any CIUS.
 
 Latest release
-  * UBL & CII: **v1.3.6** (2021-05-31) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.6
+  * UBL & CII: **v1.3.7** (2021-10-04) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.7
   * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/eInvoicing-EN16931-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
@@ -31,6 +31,9 @@ That was Licensed under the Apache License, Version 2.0
 
 # News and noteworthy
 
+* v1.3.7 - 2021-10-04 (UBL and CII only)
+    * Merged requirements from XRechnung
+    * Fix syntax issues
 * v1.3.6a - 2021-08-03 (UBL and CII only - KoSIT specific fix)
     * This contains a fix for BR-CO-15 as required by XRechnung 2.1.1 - when https://github.com/ConnectingEurope/eInvoicing-EN16931/pull/292 is merged, the next XRechnung release can be again based on the official rule release. No further hot fixes are assumed.
 * v1.3.6 - 2021-05-31 (UBL and CII only)
