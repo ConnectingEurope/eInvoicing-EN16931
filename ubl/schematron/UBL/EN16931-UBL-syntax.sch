@@ -490,7 +490,7 @@
   <param name="UBL-CR-411" value="not(cac:PaymentMeans/cbc:ID)"/>
   <param name="UBL-CR-412" value="not(cac:PaymentMeans/cbc:PaymentDueDate) or ../cn:CreditNote"/>
   <param name="UBL-CR-413" value="not(cac:PaymentMeans/cbc:PaymentChannelCode)"/>
-  <param name="UBL-CR-414" value="not(cac:PaymentMeans/cbc:InstructionNote)"/>
+  <param name="UBL-CR-414" value="not(cac:PaymentMeans/cbc:InstructionID)"/>
   <param name="UBL-CR-415" value="not(cac:PaymentMeans/cac:CardAccount/cbc:CardTypeCode)"/>
   <param name="UBL-CR-416" value="not(cac:PaymentMeans/cac:CardAccount/cbc:ValidityStartDate)"/>
   <param name="UBL-CR-417" value="not(cac:PaymentMeans/cac:CardAccount/cbc:ExpiryDate)"/>
@@ -755,6 +755,7 @@
   <param name="UBL-CR-678" value="not(//cac:TaxCategory/cbc:ID/@schemeID)"/>
   <param name="UBL-CR-679" value="not(//cac:ClassifiedTaxCategory/cbc:ID/@schemeID)"/>
   <param name="UBL-CR-680" value="not(//cac:PaymentMeans/cac:PayerFinancialAccount)"/>
+  <param name="UBL-CR-681" value="not(cac:PaymentMeans/cbc:InstructionNote)"/>
   
   <param name="Invoice_line" value="cac:InvoiceLine | cac:CreditNoteLine"/>
   <param name="Preceding_Invoice" value="cac:BillingReference"/>

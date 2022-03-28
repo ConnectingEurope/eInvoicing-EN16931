@@ -706,6 +706,7 @@
     <assert test="$UBL-CR-678" flag="warning" id="UBL-CR-678">[UBL-CR-678]-A UBL invoice should not include the TaxCategory/ID schemeID</assert>
     <assert test="$UBL-CR-679" flag="warning" id="UBL-CR-679">[UBL-CR-679]-A UBL invoice should not include the ClassifiedTaxCategory/ID schemeID</assert>
     <assert test="$UBL-CR-680" flag="warning" id="UBL-CR-680">[UBL-CR-680]-A UBL invoice should not include the PaymentMeans/PayerFinancialAccount</assert>
+    <assert test="$UBL-CR-681" flag="warning" id="UBL-CR-681">[UBL-CR-681]-A UBL invoice should not include the PaymentMeans InstructionNote</assert>
     
     <assert test="$UBL-DT-08" flag="warning" id="UBL-DT-08">[UBL-DT-08]-Scheme name attribute should not be present</assert>
     <assert test="$UBL-DT-09" flag="warning" id="UBL-DT-09">[UBL-DT-09]-Scheme agency name attribute should not be present</assert>
