@@ -109,7 +109,7 @@
     context="cac:AllowanceCharge[cbc:ChargeIndicator = false()]/cbc:AllowanceChargeReasonCode"
     flag="fatal">
     <assert
-      test="((not(contains(normalize-space(.), ' ')) and contains(' 41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 ', concat(' ', normalize-space(.), ' '))))" 
+      test="((not(contains(normalize-space(.), ' ')) and contains(' 41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 105 ', concat(' ', normalize-space(.), ' '))))" 
       id="BR-CL-19"
       flag="fatal">[BR-CL-19]-Coded allowance reasons MUST belong to the UNCL 5189 code list</assert>
   </rule>
