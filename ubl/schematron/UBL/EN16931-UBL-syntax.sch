@@ -756,6 +756,7 @@
   <param name="UBL-CR-679" value="not(//cac:ClassifiedTaxCategory/cbc:ID/@schemeID)"/>
   <param name="UBL-CR-680" value="not(//cac:PaymentMeans/cac:PayerFinancialAccount)"/>
   <param name="UBL-CR-681" value="not(cac:PaymentMeans/cbc:InstructionNote)"/>
+  <param name="UBL-CR-682" value="not(cac:Delivery/cac:DeliveryAddress)"/>
   
   <param name="Invoice_line" value="cac:InvoiceLine | cac:CreditNoteLine"/>
   <param name="Preceding_Invoice" value="cac:BillingReference"/>
