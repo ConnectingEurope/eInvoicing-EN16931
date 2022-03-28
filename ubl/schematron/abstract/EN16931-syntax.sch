@@ -750,7 +750,7 @@
     <assert test="$UBL-SR-29" flag="fatal" id="UBL-SR-29">[UBL-SR-29]-Bank creditor reference shall occur maximum once</assert>
     <assert test="$UBL-SR-39" flag="fatal" id="UBL-SR-39">[UBL-SR-39]-Project reference shall occur maximum once.</assert>
     <assert test="$UBL-SR-40" flag="fatal" id="UBL-SR-40">[UBL-SR-40]-Buyer trade name shall occur maximum once</assert>
-    <assert test="$UBL-SR-44" flag="fatal" id="UBL-SR-44">[UBL-SR-44]-Payment ID shall occur maximum once</assert>
+    <assert test="$UBL-SR-44" flag="fatal" id="UBL-SR-44">[UBL-SR-44]-An Invoice may only have one unique PaymentID, but the PaymentID may be used for multiple PaymentMeans</assert>
     <assert test="$UBL-SR-45" flag="fatal" id="UBL-SR-45">[UBL-SR-45]-Due Date shall occur maximum once</assert>    
     <assert test="$UBL-SR-46" flag="fatal" id="UBL-SR-46">[UBL-SR-46]-Payment means text shall occur maximum once</assert>
     <assert test="$UBL-SR-47" flag="fatal" id="UBL-SR-47">[UBL-SR-47]-When there are more than one payment means code, they shall be equal</assert>
