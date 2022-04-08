@@ -27,7 +27,7 @@
 	<test>
 		<assert>
 			<description>Trigger error if more than 10 digits is given in the card number</description>
-			<error>BR-51</error>
+			<warning>BR-51</warning>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
