@@ -25,7 +25,7 @@
       <assert id="BR-52" flag="fatal" test="(ram:IssuerAssignedID!='')">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>
     </rule>
     <rule context="//ram:ApplicableTradeSettlementFinancialCard">
-      <assert id="BR-51" flag="fatal" test="string-length(ram:ID)&lt;=6 and string-length(ram:ID)>=4">[BR-51]-Only the last 4 to 6 digits of the Payment card primary account number (BT-87) shall be present if Payment card information (BG-18) is provided in the Invoice.</assert>
+      <assert id="BR-51" flag="fatal" test="string-length(ram:ID)&lt;=10">[BR-51]-In accordance with card payments security standards an invoice should never include a full card primary account number (BT-97). At the moment PCI Security Standards Council has defined that the first 6 digits and last 4 digits are the maximum number of digits to be shown.</assert>
     </rule>
     <rule context="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayerPartyDebtorFinancialAccount">
       <assert id="BR-50" flag="fatal" test="(ram:IBANID) or (ram:ProprietaryID)">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-16) information is provided in the Invoice.</assert>

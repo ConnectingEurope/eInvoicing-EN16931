@@ -299,15 +299,15 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(cbc:PrimaryAccountNumberID)>=4 and string-length(cbc:PrimaryAccountNumberID)&lt;=6" />
+      <xsl:when test="string-length(cbc:PrimaryAccountNumberID)&lt;=10" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(cbc:PrimaryAccountNumberID)>=4 and string-length(cbc:PrimaryAccountNumberID)&lt;=6">
+        <svrl:failed-assert test="string-length(cbc:PrimaryAccountNumberID)&lt;=10">
           <xsl:attribute name="id">BR-51</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[BR-51]-The last 4 to 6 digits of the Payment card primary account number (BT-87) shall be present if Payment card information (BG-18) is provided in the Invoice.</svrl:text>
+          <svrl:text>[BR-51]-In accordance with card payments security standards an invoice should never include a full card primary account number (BT-87). At the moment PCI Security Standards Council has defined that the first 6 digits and last 4 digits are the maximum number of digits to be shown.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>

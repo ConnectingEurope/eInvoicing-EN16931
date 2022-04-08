@@ -52,7 +52,7 @@
   <param name="BR-48" value="(.[upper-case(ram:TypeCode) = 'VAT']/ram:RateApplicablePercent) or (.[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode = 'O')"/>
   <param name="BR-49" value="(ram:TypeCode)"/>
   <param name="BR-50" value="(ram:IBANID) or (ram:ProprietaryID)"/>
-  <param name="BR-51" value="string-length(ram:ID)&lt;=6 and string-length(ram:ID)&gt;=4"/>
+  <param name="BR-51" value="string-length(ram:ID)&lt;=10"/>
   <param name="BR-52" value="(ram:IssuerAssignedID!='')"/>
   <param name="BR-53" value="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode and (ram:TaxTotalAmount/@currencyID = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) and not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode))"/>
   <param name="BR-54" value="(ram:Description) and (ram:Value)"/>
