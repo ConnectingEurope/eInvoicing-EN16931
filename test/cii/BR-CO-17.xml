@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-cii">
+	<assert>
+		<scope>BR-CO-17</scope>
+	</assert>
+	<test>
+		<assert>
+			<description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+			<success>BR-CO-17</success>
+		</assert>
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
+                              xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+      <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:ApplicableTradeTax>
+            <ram:CalculatedAmount>-13.78</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>-72.50</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:DueDateTypeCode>29</ram:DueDateTypeCode>
+            <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+        </ram:ApplicableHeaderTradeSettlement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+	</test>
+
+  <test>
+    <assert>
+      <description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+      <success>BR-CO-17</success>
+    </assert>
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
+                              xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+      <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:ApplicableTradeTax>
+            <!-- Deviate by +1 -->
+            <ram:CalculatedAmount>-12.78</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>-72.50</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:DueDateTypeCode>29</ram:DueDateTypeCode>
+            <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+        </ram:ApplicableHeaderTradeSettlement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+  </test>
+
+  <test>
+    <assert>
+      <description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+      <success>BR-CO-17</success>
+    </assert>
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
+                              xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+      <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:ApplicableTradeTax>
+            <!-- Deviate by -1 -->
+            <ram:CalculatedAmount>-14.78</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>-72.50</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:DueDateTypeCode>29</ram:DueDateTypeCode>
+            <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+        </ram:ApplicableHeaderTradeSettlement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+  </test>
+
+  <test>
+    <assert>
+      <description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+      <error>BR-CO-17</error>
+    </assert>
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
+                              xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+      <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:ApplicableTradeTax>
+            <!-- Deviate by +1.01 -->
+            <ram:CalculatedAmount>-12.77</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>-72.50</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:DueDateTypeCode>29</ram:DueDateTypeCode>
+            <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+        </ram:ApplicableHeaderTradeSettlement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+  </test>
+
+  <test>
+    <assert>
+      <description>Verify that VAT category tax amount = VAT category taxable amount x (VAT category rate / 100), rounded "half up" to two decimals.</description>
+      <error>BR-CO-17</error>
+    </assert>
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
+                              xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+      <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:ApplicableTradeTax>
+            <!-- Deviate by -1.01 -->
+            <ram:CalculatedAmount>-14.79</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>-72.50</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:DueDateTypeCode>29</ram:DueDateTypeCode>
+            <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+        </ram:ApplicableHeaderTradeSettlement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+  </test>
+</testSet>
