@@ -562,7 +562,7 @@
   <param name="UBL-CR-484" value="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:Name)"/>
   <param name="UBL-CR-485" value="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:TaxTypeCode)"/>
   <param name="UBL-CR-486" value="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:CurrencyCode)"/>
-  <param name="UBL-CR-487" value="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cac:JurisdiccionRegionAddress)"/>
+  <param name="UBL-CR-487" value="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cac:JurisdictionRegionAddress)"/>
   <param name="UBL-CR-488" value="not(cac:AllowanceCharge/cac:TaxTotal)"/>
   <param name="UBL-CR-489" value="not(cac:AllowanceCharge/cac:PaymentMeans)"/>
   <param name="UBL-CR-490" value="not(cac:TaxExchangeRate)"/>
