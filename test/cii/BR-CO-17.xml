@@ -16,7 +16,7 @@
     <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
                               xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
       <rsm:SupplyChainTradeTransaction>
-        <ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeSettlement>
           <ram:ApplicableTradeTax>
             <ram:CalculatedAmount>-13.78</ram:CalculatedAmount>
             <ram:TypeCode>VAT</ram:TypeCode>
@@ -38,7 +38,7 @@
     <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
                               xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
       <rsm:SupplyChainTradeTransaction>
-        <ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeSettlement>
           <ram:ApplicableTradeTax>
             <!-- Deviate by +1 -->
             <ram:CalculatedAmount>-12.78</ram:CalculatedAmount>
@@ -61,7 +61,7 @@
     <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
                               xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
       <rsm:SupplyChainTradeTransaction>
-        <ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeSettlement>
           <ram:ApplicableTradeTax>
             <!-- Deviate by -1 -->
             <ram:CalculatedAmount>-14.78</ram:CalculatedAmount>
@@ -84,7 +84,7 @@
     <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
                               xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
       <rsm:SupplyChainTradeTransaction>
-        <ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeSettlement>
           <ram:ApplicableTradeTax>
             <!-- Deviate by +1.01 -->
             <ram:CalculatedAmount>-12.77</ram:CalculatedAmount>
@@ -107,7 +107,7 @@
     <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" 
                               xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
       <rsm:SupplyChainTradeTransaction>
-        <ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeSettlement>
           <ram:ApplicableTradeTax>
             <!-- Deviate by -1.01 -->
             <ram:CalculatedAmount>-14.79</ram:CalculatedAmount>
