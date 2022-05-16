@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Licensed under European Union Public Licence (EUPL) version 1.2.
-
--->
 <!--Schematron version 1.3.8 - Last update: 2022-04-08--><schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
   <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" />
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" />
@@ -868,7 +863,7 @@
       <assert id="UBL-CR-484" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:Name)">[UBL-CR-484]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme Name</assert>
       <assert id="UBL-CR-485" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:TaxTypeCode)">[UBL-CR-485]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme TaxTypeCode</assert>
       <assert id="UBL-CR-486" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:CurrencyCode)">[UBL-CR-486]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme CurrencyCode</assert>
-      <assert id="UBL-CR-487" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cac:JurisdiccionRegionAddress)">[UBL-CR-487]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme JurisdictionRegionAddress</assert>
+      <assert id="UBL-CR-487" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cac:JurisdictionRegionAddress)">[UBL-CR-487]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme JurisdictionRegionAddress</assert>
       <assert id="UBL-CR-488" flag="warning" test="not(cac:AllowanceCharge/cac:TaxTotal)">[UBL-CR-488]-A UBL invoice should not include the AllowanceCharge TaxTotal</assert>
       <assert id="UBL-CR-489" flag="warning" test="not(cac:AllowanceCharge/cac:PaymentMeans)">[UBL-CR-489]-A UBL invoice should not include the AllowanceCharge PaymentMeans</assert>
       <assert id="UBL-CR-490" flag="warning" test="not(cac:TaxExchangeRate)">[UBL-CR-490]-A UBL invoice should not include the TaxExchangeRate</assert>
