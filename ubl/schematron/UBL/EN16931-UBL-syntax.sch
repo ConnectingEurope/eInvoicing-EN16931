@@ -54,6 +54,7 @@
   <param name="UBL-SR-49" value="(count(cac:InvoicePeriod/cbc:DescriptionCode) &lt;=1)"/>
   <param name="UBL-SR-50" value="count(cac:Item/cbc:Description) &lt;= 1"/>
   <param name="UBL-SR-51" value="count(cbc:Line) = 1"/>
+  <param name="UBL-SR-52" value="count(cac:DocumentReference) &lt;= 1"/>
   
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>

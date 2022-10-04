@@ -766,6 +766,7 @@
     <assert test="$UBL-SR-37" flag="fatal" id="UBL-SR-37">[UBL-SR-37]-Item price discount shall occur maximum once</assert>
     <assert test="$UBL-SR-48" flag="fatal" id="UBL-SR-48">[UBL-SR-48]-Invoice lines shall have one and only one classified tax category.</assert>
     <assert test="$UBL-SR-50" flag="fatal" id="UBL-SR-50">[UBL-SR-50]-Item description shall occur maximum once</assert>
+    <assert test="$UBL-SR-52" flag="fatal" id="UBL-SR-52">[UBL-SR-52]-Document reference shall occur maximum once</assert>
   </rule>
   <rule context="$Payee">
     <assert test="$UBL-SR-19" flag="fatal" id="UBL-SR-19">[UBL-SR-19]-Payee name shall occur maximum once, if the Payee is different from the Seller</assert>
