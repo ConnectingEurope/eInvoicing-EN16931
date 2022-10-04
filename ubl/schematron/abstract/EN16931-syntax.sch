@@ -5,6 +5,9 @@
 -->
 <!-- Abstract rules for syntax -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="syntax">
+  <rule context="$AddressLine">
+    <assert test="$UBL-SR-51" flag="fatal" id="UBL-SR-51">[UBL-SR-51]-An address can only have one third line.</assert>
+  </rule>
   <rule context="$Accounting_supplier_party">
     <assert test="$UBL-SR-42" flag="fatal" id="UBL-SR-42">[UBL-SR-42]-Party tax scheme shall occur maximum twice in accounting supplier party</assert>
   </rule>
