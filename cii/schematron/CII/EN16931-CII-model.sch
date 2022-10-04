@@ -22,7 +22,7 @@
   <param name="BR-14" value="(ram:GrandTotalAmount)"/>
   <param name="BR-15" value="(ram:DuePayableAmount)"/>
   <param name="BR-16" value="//ram:IncludedSupplyChainTradeLineItem"/>  
-  <param name="BR-17" value="(ram:Name) and (not(ram:Name = ../ram:SellerTradeParty/ram:Name) and not(ram:ID = ../ram:SellerTradeParty/ram:ID) and not(ram:SpecifiedLegalOrganization/ram:ID = ../ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID))"/>
+  <param name="BR-17" value="(ram:Name) and (not(ram:Name = ../../ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) and not(ram:ID = ../../ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:ID) and not(ram:SpecifiedLegalOrganization/ram:ID = ../../ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID))"/>
   <param name="BR-18" value="(ram:Name)"/>
   <param name="BR-19" value="(ram:PostalTradeAddress)"/>
   <param name="BR-20" value="(ram:PostalTradeAddress/ram:CountryID)"/>  
