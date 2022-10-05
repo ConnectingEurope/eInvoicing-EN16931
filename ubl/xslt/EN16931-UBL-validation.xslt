@@ -215,9 +215,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cbc:ID) != ''" />
+      <xsl:when test="normalize-space(cbc:ID) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cbc:ID) != ''">
+        <svrl:failed-assert test="normalize-space(cbc:ID) != ''">
           <xsl:attribute name="id">BR-52</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -278,9 +278,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cac:Country/cbc:IdentificationCode) != ''" />
+      <xsl:when test="normalize-space(cac:Country/cbc:IdentificationCode) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cac:Country/cbc:IdentificationCode) != ''">
+        <svrl:failed-assert test="normalize-space(cac:Country/cbc:IdentificationCode) != ''">
           <xsl:attribute name="id">BR-11</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -824,9 +824,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cbc:CustomizationID) != ''" />
+      <xsl:when test="normalize-space(cbc:CustomizationID) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cbc:CustomizationID) != ''">
+        <svrl:failed-assert test="normalize-space(cbc:CustomizationID) != ''">
           <xsl:attribute name="id">BR-01</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -839,9 +839,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cbc:ID) !=''" />
+      <xsl:when test="normalize-space(cbc:ID) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cbc:ID) !=''">
+        <svrl:failed-assert test="normalize-space(cbc:ID) != ''">
           <xsl:attribute name="id">BR-02</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -854,9 +854,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cbc:IssueDate) !=''" />
+      <xsl:when test="normalize-space(cbc:IssueDate) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cbc:IssueDate) !=''">
+        <svrl:failed-assert test="normalize-space(cbc:IssueDate) != ''">
           <xsl:attribute name="id">BR-03</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -869,9 +869,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cbc:InvoiceTypeCode) !='' or (cbc:CreditNoteTypeCode) !=''" />
+      <xsl:when test="normalize-space(cbc:InvoiceTypeCode) != '' or normalize-space(cbc:CreditNoteTypeCode) !=''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cbc:InvoiceTypeCode) !='' or (cbc:CreditNoteTypeCode) !=''">
+        <svrl:failed-assert test="normalize-space(cbc:InvoiceTypeCode) != '' or normalize-space(cbc:CreditNoteTypeCode) !=''">
           <xsl:attribute name="id">BR-04</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -884,9 +884,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cbc:DocumentCurrencyCode) !=''" />
+      <xsl:when test="normalize-space(cbc:DocumentCurrencyCode) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cbc:DocumentCurrencyCode) !=''">
+        <svrl:failed-assert test="normalize-space(cbc:DocumentCurrencyCode) != ''">
           <xsl:attribute name="id">BR-05</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -899,9 +899,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''" />
+      <xsl:when test="normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''">
+        <svrl:failed-assert test="normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''">
           <xsl:attribute name="id">BR-06</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -914,9 +914,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''" />
+      <xsl:when test="normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''">
+        <svrl:failed-assert test="normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''">
           <xsl:attribute name="id">BR-07</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1760,9 +1760,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cbc:ID) != ''" />
+      <xsl:when test="normalize-space(cbc:ID) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cbc:ID) != ''">
+        <svrl:failed-assert test="normalize-space(cbc:ID) != ''">
           <xsl:attribute name="id">BR-21</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1820,9 +1820,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cac:Item/cbc:Name) != ''" />
+      <xsl:when test="normalize-space(cac:Item/cbc:Name) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cac:Item/cbc:Name) != ''">
+        <svrl:failed-assert test="normalize-space(cac:Item/cbc:Name) != ''">
           <xsl:attribute name="id">BR-25</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2285,9 +2285,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cbc:ID) != ''" />
+      <xsl:when test="normalize-space(cbc:ID) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cbc:ID) != ''">
+        <svrl:failed-assert test="normalize-space(cbc:ID) != ''">
           <xsl:attribute name="id">BR-50</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2405,9 +2405,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cac:Country/cbc:IdentificationCode) != ''" />
+      <xsl:when test="normalize-space(cac:Country/cbc:IdentificationCode) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cac:Country/cbc:IdentificationCode) != ''">
+        <svrl:failed-assert test="normalize-space(cac:Country/cbc:IdentificationCode) != ''">
           <xsl:attribute name="id">BR-09</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2426,9 +2426,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cac:PartyName/cbc:Name) != ''" />
+      <xsl:when test="normalize-space(cac:PartyName/cbc:Name) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cac:PartyName/cbc:Name) != ''">
+        <svrl:failed-assert test="normalize-space(cac:PartyName/cbc:Name) != ''">
           <xsl:attribute name="id">BR-18</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2477,9 +2477,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(cac:Country/cbc:IdentificationCode) != ''" />
+      <xsl:when test="normalize-space(cac:Country/cbc:IdentificationCode) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(cac:Country/cbc:IdentificationCode) != ''">
+        <svrl:failed-assert test="normalize-space(cac:Country/cbc:IdentificationCode) != ''">
           <xsl:attribute name="id">BR-20</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
