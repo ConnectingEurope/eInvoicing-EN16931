@@ -10,8 +10,8 @@
   <param name="BR-03" value="normalize-space(cbc:IssueDate) != ''"/>
   <param name="BR-04" value="normalize-space(cbc:InvoiceTypeCode) != '' or normalize-space(cbc:CreditNoteTypeCode) !=''"/>
   <param name="BR-05" value="normalize-space(cbc:DocumentCurrencyCode) != ''"/>
-  <param name="BR-06" value="normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''"/>
-  <param name="BR-07" value="normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''"/>
+  <param name="BR-06" value="normalize-space(string-join(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName)) != ''"/>
+  <param name="BR-07" value="normalize-space(string-join(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName)) != ''"/>
   <param name="BR-08" value="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)"/>
   <param name="BR-09" value="normalize-space(cac:Country/cbc:IdentificationCode) != ''"/>
   <param name="BR-10" value="exists(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)"/>
@@ -22,7 +22,7 @@
   <param name="BR-15" value="exists(cbc:PayableAmount)"/>
   <param name="BR-16" value="exists(cac:InvoiceLine) or exists(cac:CreditNoteLine)"/>
   <param name="BR-17" value="exists(cac:PartyName/cbc:Name) and (not(cac:PartyName/cbc:Name = ../cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) and not(cac:PartyIdentification/cbc:ID = ../cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID) )"/>
-  <param name="BR-18" value="normalize-space(cac:PartyName/cbc:Name) != ''"/>
+  <param name="BR-18" value="normalize-space(string-join(cac:PartyName/cbc:Name)) != ''"/>
   <param name="BR-19" value="exists(cac:PostalAddress)"/>
   <param name="BR-20" value="normalize-space(cac:Country/cbc:IdentificationCode) != ''"/>
   <param name="BR-21" value="normalize-space(cbc:ID) != ''"/>
