@@ -7,16 +7,16 @@
 <!-- Data binding to CII syntax for EN16931 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" is-a="EN16931" id="EN16931-CII-Model">
   <param name="BR-01" value="normalize-space(string-join(rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID)) != ''"/>
-  <param name="BR-02" value="normalize-space(rsm:ExchangedDocument/ram:ID) != ''"/>
-  <param name="BR-03" value="normalize-space(rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102']) != ''"/>
-  <param name="BR-04" value="normalize-space(rsm:ExchangedDocument/ram:TypeCode) != ''"/>
-  <param name="BR-05" value="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode) != ''"/>
-  <param name="BR-06" value="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) != ''"/>
-  <param name="BR-07" value="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name) != ''"/>
+  <param name="BR-02" value="normalize-space(string-join(rsm:ExchangedDocument/ram:ID)) != ''"/>
+  <param name="BR-03" value="normalize-space(string-join(rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102'])) != ''"/>
+  <param name="BR-04" value="normalize-space(string-join(rsm:ExchangedDocument/ram:TypeCode)) != ''"/>
+  <param name="BR-05" value="normalize-space(string-join(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode)) != ''"/>
+  <param name="BR-06" value="normalize-space(string-join(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name)) != ''"/>
+  <param name="BR-07" value="normalize-space(string-join(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name)) != ''"/>
   <param name="BR-08" value="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress"/>
-  <param name="BR-09" value="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) != ''"/>
+  <param name="BR-09" value="normalize-space(string-join(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID)) != ''"/>
   <param name="BR-10" value="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress"/>
-  <param name="BR-11" value="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID) != ''"/>
+  <param name="BR-11" value="normalize-space(string-join(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID)) != ''"/>
   <param name="BR-12" value="(ram:LineTotalAmount)"/>
   <param name="BR-13" value="(ram:TaxBasisTotalAmount)"/>
   <param name="BR-14" value="(ram:GrandTotalAmount)"/>
@@ -26,7 +26,7 @@
   <param name="BR-18" value="(ram:Name)"/>
   <param name="BR-19" value="(ram:PostalTradeAddress)"/>
   <param name="BR-20" value="(ram:PostalTradeAddress/ram:CountryID)"/>  
-  <param name="BR-21" value="normalize-space(ram:AssociatedDocumentLineDocument/ram:LineID) != ''"/>
+  <param name="BR-21" value="normalize-space(string-join(ram:AssociatedDocumentLineDocument/ram:LineID)) != ''"/>
   <param name="BR-22" value="(ram:SpecifiedLineTradeDelivery/ram:BilledQuantity)"/>
   <param name="BR-23" value="(ram:SpecifiedLineTradeDelivery/ram:BilledQuantity/@unitCode)"/>
   <param name="BR-24" value="(ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)"/>
@@ -53,16 +53,16 @@
   <param name="BR-49" value="(ram:TypeCode)"/>
   <param name="BR-50" value="(ram:IBANID) or (ram:ProprietaryID)"/>
   <param name="BR-51" value="string-length(ram:ID)&lt;=10"/>
-  <param name="BR-52" value="normalize-space(ram:IssuerAssignedID) != ''"/>
+  <param name="BR-52" value="normalize-space(string-join(ram:IssuerAssignedID)) != ''"/>
   <param name="BR-53" value="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode and (ram:TaxTotalAmount/@currencyID = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) and not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode))"/>
   <param name="BR-54" value="(ram:Description) and (ram:Value)"/>
-  <param name="BR-55" value="normalize-space(ram:IssuerAssignedID) != ''"/>
-  <param name="BR-56" value="normalize-space(ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']) != ''"/>
-  <param name="BR-57" value="(ram:ShipToTradeParty/ram:PostalTradeAddress and normalize-space(ram:ShipToTradeParty/ram:PostalTradeAddress/ram:CountryID) != '') or not (ram:ShipToTradeParty/ram:PostalTradeAddress)"/>
+  <param name="BR-55" value="normalize-space(string-join(ram:IssuerAssignedID)) != ''"/>
+  <param name="BR-56" value="normalize-space(string-join(ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA'])) != ''"/>
+  <param name="BR-57" value="(ram:ShipToTradeParty/ram:PostalTradeAddress and normalize-space(string-join(ram:ShipToTradeParty/ram:PostalTradeAddress/ram:CountryID)) != '') or not (ram:ShipToTradeParty/ram:PostalTradeAddress)"/>
   <param name="BR-61" value="(ram:IBANID) or (ram:ProprietaryID)"/>
   <param name="BR-62" value="normalize-space(string-join(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication))"/>
   <param name="BR-63" value="normalize-space(string-join(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID)) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)"/>
-  <param name="BR-64" value="normalize-space(ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) != '' or not (ram:SpecifiedTradeProduct/ram:GlobalID)"/>
+  <param name="BR-64" value="normalize-space(string-join(ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID)) != '' or not (ram:SpecifiedTradeProduct/ram:GlobalID)"/>
   <param name="BR-65" value="normalize-space(string-join(ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID)) != '' or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)"/>
   <!--param name="BR-CO-02" value="((ram:TypeCode = ('30','57')) and (ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)) or not(ram:TypeCode =  ('30','57'))"/-->
   <param name="BR-CO-03" value="((//ram:TaxPointDate) and not(//ram:DueDateTypeCode)) or (not (//ram:TaxPointDate) and (//ram:DueDateTypeCode)) or (not (//ram:TaxPointDate) and not (//ram:DueDateTypeCode))"/>
