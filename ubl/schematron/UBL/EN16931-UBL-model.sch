@@ -5,31 +5,31 @@
 -->
 <!-- Data binding to UBL syntax for model -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" is-a="model" id="UBL-model">
-  <param name="BR-01" value="normalize-space(cbc:CustomizationID) != ''"/>
-  <param name="BR-02" value="normalize-space(cbc:ID) != ''"/>
-  <param name="BR-03" value="normalize-space(cbc:IssueDate) != ''"/>
-  <param name="BR-04" value="normalize-space(cbc:InvoiceTypeCode) != '' or normalize-space(cbc:CreditNoteTypeCode) !=''"/>
-  <param name="BR-05" value="normalize-space(cbc:DocumentCurrencyCode) != ''"/>
-  <param name="BR-06" value="normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''"/>
-  <param name="BR-07" value="normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''"/>
+  <param name="BR-01" value="every $node in (cbc:CustomizationID) satisfies (normalize-space($node) != '')"/>
+  <param name="BR-02" value="every $node in (cbc:ID) satisfies (normalize-space($node) != '')"/>
+  <param name="BR-03" value="every $node in (cbc:IssueDate) satisfies (normalize-space($node) != '')"/>
+  <param name="BR-04" value="every $node in (cbc:InvoiceTypeCode) satisfies (normalize-space($node) != '') or normalize-space(cbc:CreditNoteTypeCode) !=''"/>
+  <param name="BR-05" value="every $node in (cbc:DocumentCurrencyCode) satisfies (normalize-space($node) != '')"/>
+  <param name="BR-06" value="every $node in (cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != '')"/>
+  <param name="BR-07" value="every $node in (cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != '')"/>
   <param name="BR-08" value="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)"/>
-  <param name="BR-09" value="normalize-space(cac:Country/cbc:IdentificationCode) != ''"/>
+  <param name="BR-09" value="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')"/>
   <param name="BR-10" value="exists(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)"/>
-  <param name="BR-11" value="normalize-space(cac:Country/cbc:IdentificationCode) != ''"/>
+  <param name="BR-11" value="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')"/>
   <param name="BR-12" value="exists(cbc:LineExtensionAmount)"/>
   <param name="BR-13" value="exists(cbc:TaxExclusiveAmount)"/>
   <param name="BR-14" value="exists(cbc:TaxInclusiveAmount)"/>
   <param name="BR-15" value="exists(cbc:PayableAmount)"/>
   <param name="BR-16" value="exists(cac:InvoiceLine) or exists(cac:CreditNoteLine)"/>
   <param name="BR-17" value="exists(cac:PartyName/cbc:Name) and (not(cac:PartyName/cbc:Name = ../cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) and not(cac:PartyIdentification/cbc:ID = ../cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID) )"/>
-  <param name="BR-18" value="normalize-space(cac:PartyName/cbc:Name) != ''"/>
+  <param name="BR-18" value="every $node in (string-join(cac:PartyName/cbc:Name)) satisfies (normalize-space($node) != '')"/>
   <param name="BR-19" value="exists(cac:PostalAddress)"/>
-  <param name="BR-20" value="normalize-space(cac:Country/cbc:IdentificationCode) != ''"/>
-  <param name="BR-21" value="normalize-space(cbc:ID) != ''"/>
+  <param name="BR-20" value="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')"/>
+  <param name="BR-21" value="every $node in (cbc:ID) satisfies (normalize-space($node) != '')"/>
   <param name="BR-22" value="exists(cbc:InvoicedQuantity) or exists(cbc:CreditedQuantity)"/>
   <param name="BR-23" value="exists(cbc:InvoicedQuantity/@unitCode) or exists(cbc:CreditedQuantity/@unitCode)"/>
   <param name="BR-24" value="exists(cbc:LineExtensionAmount)"/>
-  <param name="BR-25" value="normalize-space(cac:Item/cbc:Name) != ''"/>
+  <param name="BR-25" value="every $node in (cac:Item/cbc:Name) satisfies (normalize-space($node) != '')"/>
   <param name="BR-26" value="exists(cac:Price/cbc:PriceAmount)"/>
   <param name="BR-27" value="(cac:Price/cbc:PriceAmount) &gt;= 0"/>
   <param name="BR-28" value="(cac:Price/cac:AllowanceCharge/cbc:BaseAmount) &gt;= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))"/>
@@ -50,9 +50,9 @@
   <param name="BR-47" value="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID)"/>
   <param name="BR-48" value="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:Percent) or (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/normalize-space(cbc:ID)='O')"/>
   <param name="BR-49" value="exists(cbc:PaymentMeansCode)"/>
-  <param name="BR-50" value="normalize-space(cbc:ID) != ''"/>
+  <param name="BR-50" value="every $node in (cbc:ID) satisfies (normalize-space($node) != '')"/>
   <param name="BR-51" value="string-length(cbc:PrimaryAccountNumberID)&lt;=10"/>
-  <param name="BR-52" value="normalize-space(cbc:ID) != ''"/>
+  <param name="BR-52" value="every $node in (cbc:ID) satisfies (normalize-space($node) != '')"/>
   <param name="BR-53" value="every $taxcurrency in cbc:TaxCurrencyCode satisfies exists(//cac:TaxTotal/cbc:TaxAmount[@currencyID=$taxcurrency])"/>
   <param name="BR-54" value="exists(cbc:Name) and exists(cbc:Value)"/>
   <param name="BR-55" value="exists(cac:InvoiceDocumentReference/cbc:ID)"/>
