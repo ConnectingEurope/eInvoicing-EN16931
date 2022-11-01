@@ -215,9 +215,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cbc:ID) != ''" />
+      <xsl:when test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cbc:ID) != ''">
+        <svrl:failed-assert test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-52</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -278,9 +278,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cac:Country/cbc:IdentificationCode) != ''" />
+      <xsl:when test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cac:Country/cbc:IdentificationCode) != ''">
+        <svrl:failed-assert test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-11</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -824,9 +824,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cbc:CustomizationID) != ''" />
+      <xsl:when test="every $node in (cbc:CustomizationID) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cbc:CustomizationID) != ''">
+        <svrl:failed-assert test="every $node in (cbc:CustomizationID) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-01</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -839,9 +839,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cbc:ID) != ''" />
+      <xsl:when test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cbc:ID) != ''">
+        <svrl:failed-assert test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-02</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -854,9 +854,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cbc:IssueDate) != ''" />
+      <xsl:when test="every $node in (cbc:IssueDate) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cbc:IssueDate) != ''">
+        <svrl:failed-assert test="every $node in (cbc:IssueDate) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-03</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -869,9 +869,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cbc:InvoiceTypeCode) != '' or normalize-space(cbc:CreditNoteTypeCode) !=''" />
+      <xsl:when test="every $node in (cbc:InvoiceTypeCode) satisfies (normalize-space($node) != '') or normalize-space(cbc:CreditNoteTypeCode) !=''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cbc:InvoiceTypeCode) != '' or normalize-space(cbc:CreditNoteTypeCode) !=''">
+        <svrl:failed-assert test="every $node in (cbc:InvoiceTypeCode) satisfies (normalize-space($node) != '') or normalize-space(cbc:CreditNoteTypeCode) !=''">
           <xsl:attribute name="id">BR-04</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -884,9 +884,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cbc:DocumentCurrencyCode) != ''" />
+      <xsl:when test="every $node in (cbc:DocumentCurrencyCode) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cbc:DocumentCurrencyCode) != ''">
+        <svrl:failed-assert test="every $node in (cbc:DocumentCurrencyCode) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-05</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -899,9 +899,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''" />
+      <xsl:when test="every $node in (cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''">
+        <svrl:failed-assert test="every $node in (cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-06</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -914,9 +914,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''" />
+      <xsl:when test="every $node in (cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) != ''">
+        <svrl:failed-assert test="every $node in (cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-07</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1760,9 +1760,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cbc:ID) != ''" />
+      <xsl:when test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cbc:ID) != ''">
+        <svrl:failed-assert test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-21</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1820,9 +1820,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cac:Item/cbc:Name) != ''" />
+      <xsl:when test="every $node in (cac:Item/cbc:Name) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cac:Item/cbc:Name) != ''">
+        <svrl:failed-assert test="every $node in (cac:Item/cbc:Name) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-25</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2285,9 +2285,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cbc:ID) != ''" />
+      <xsl:when test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cbc:ID) != ''">
+        <svrl:failed-assert test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-50</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2405,9 +2405,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cac:Country/cbc:IdentificationCode) != ''" />
+      <xsl:when test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cac:Country/cbc:IdentificationCode) != ''">
+        <svrl:failed-assert test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-09</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2426,9 +2426,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cac:PartyName/cbc:Name) != ''" />
+      <xsl:when test="every $node in (string-join(cac:PartyName/cbc:Name)) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cac:PartyName/cbc:Name) != ''">
+        <svrl:failed-assert test="every $node in (string-join(cac:PartyName/cbc:Name)) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-18</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2477,9 +2477,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(cac:Country/cbc:IdentificationCode) != ''" />
+      <xsl:when test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(cac:Country/cbc:IdentificationCode) != ''">
+        <svrl:failed-assert test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')">
           <xsl:attribute name="id">BR-20</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
