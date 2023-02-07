@@ -11785,9 +11785,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="matches(.,'^\s*(\d{4})(1[0-2]|0[1-9]){1}(3[01]|[12][0-9]|0[1-9]){1}\s*$')" />
+      <xsl:when test="matches(.,'^\s*(\d{8})\s*$')" />
       <xsl:otherwise>
-        <svrl:failed-assert test="matches(.,'^\s*(\d{4})(1[0-2]|0[1-9]){1}(3[01]|[12][0-9]|0[1-9]){1}\s*$')">
+        <svrl:failed-assert test="matches(.,'^\s*(\d{8})\s*$')">
           <xsl:attribute name="id">CII-DT-097</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
