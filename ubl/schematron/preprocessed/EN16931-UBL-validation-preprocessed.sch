@@ -21,7 +21,7 @@
   </phase>
   <pattern id="UBL-model">
     <rule context="cac:AdditionalDocumentReference">
-      <assert id="BR-52" flag="fatal" test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>
+      <assert id="BR-52" flag="fatal" test="exists(cbc:ID) and (every $node in (cbc:ID) satisfies (normalize-space($node) != ''))">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>
     </rule>
     <rule context="/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount">
       <assert id="BR-CO-25" flag="fatal" test="((. > 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)">[BR-CO-25]-In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</assert>
@@ -30,7 +30,7 @@
       <assert id="BR-63" flag="fatal" test="exists(@schemeID)">[BR-63]-The Buyer electronic address (BT-49) shall have a Scheme identifier.</assert>
     </rule>
     <rule context="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress">
-      <assert id="BR-11" flag="fatal" test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')">[BR-11]-The Buyer postal address shall contain a Buyer country code (BT-55).</assert>
+      <assert id="BR-11" flag="fatal" test="exists(cac:Country/cbc:IdentificationCode) and (every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != ''))">[BR-11]-The Buyer postal address shall contain a Buyer country code (BT-55).</assert>
     </rule>
     <rule context="cac:PaymentMeans/cac:CardAccount">
       <assert id="BR-51" flag="warning" test="string-length(cbc:PrimaryAccountNumberID)&lt;=10">[BR-51]-In accordance with card payments security standards an invoice should never include a full card primary account number (BT-87). At the moment PCI Security Standards Council has defined that the first 6 digits and last 4 digits are the maximum number of digits to be shown.</assert>
@@ -76,13 +76,13 @@
       <assert id="BR-DEC-18" flag="fatal" test="string-length(substring-after(cbc:PayableAmount,'.'))&lt;=2">[BR-DEC-18]-The allowed maximum number of decimals for the Amount due for payment (BT-115) is 2.  </assert>
     </rule>
     <rule context="/ubl:Invoice | /cn:CreditNote">
-      <assert id="BR-01" flag="fatal" test="every $node in (cbc:CustomizationID) satisfies (normalize-space($node) != '')">[BR-01]-An Invoice shall have a Specification identifier (BT-24).   </assert>
-      <assert id="BR-02" flag="fatal" test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')">[BR-02]-An Invoice shall have an Invoice number (BT-1).</assert>
-      <assert id="BR-03" flag="fatal" test="every $node in (cbc:IssueDate) satisfies (normalize-space($node) != '')">[BR-03]-An Invoice shall have an Invoice issue date (BT-2).</assert>
-      <assert id="BR-04" flag="fatal" test="every $node in (cbc:InvoiceTypeCode) satisfies (normalize-space($node) != '') or normalize-space(cbc:CreditNoteTypeCode) !=''">[BR-04]-An Invoice shall have an Invoice type code (BT-3).</assert>
-      <assert id="BR-05" flag="fatal" test="every $node in (cbc:DocumentCurrencyCode) satisfies (normalize-space($node) != '')">[BR-05]-An Invoice shall have an Invoice currency code (BT-5).</assert>
-      <assert id="BR-06" flag="fatal" test="every $node in (cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != '')">[BR-06]-An Invoice shall contain the Seller name (BT-27).</assert>
-      <assert id="BR-07" flag="fatal" test="every $node in (cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != '')">[BR-07]-An Invoice shall contain the Buyer name (BT-44).</assert>
+      <assert id="BR-01" flag="fatal" test="exists(cbc:CustomizationID) and (every $node in (cbc:CustomizationID) satisfies (normalize-space($node) != ''))">[BR-01]-An Invoice shall have a Specification identifier (BT-24).   </assert>
+      <assert id="BR-02" flag="fatal" test="exists(cbc:ID) and (every $node in (cbc:ID) satisfies (normalize-space($node) != ''))">[BR-02]-An Invoice shall have an Invoice number (BT-1).</assert>
+      <assert id="BR-03" flag="fatal" test="exists(cbc:IssueDate) and (every $node in (cbc:IssueDate) satisfies (normalize-space($node) != ''))">[BR-03]-An Invoice shall have an Invoice issue date (BT-2).</assert>
+      <assert id="BR-04" flag="fatal" test="(exists(cbc:InvoiceTypeCode) and (every $node in (cbc:InvoiceTypeCode) satisfies (normalize-space($node) != '')) or exists(cbc:CreditNoteTypeCode) and (every $node in (cbc:CreditNoteTypeCode) satisfies (normalize-space($node) != '')))">[BR-04]-An Invoice shall have an Invoice type code (BT-3).</assert>
+      <assert id="BR-05" flag="fatal" test="exists(cbc:DocumentCurrencyCode) and (every $node in (cbc:DocumentCurrencyCode) satisfies (normalize-space($node) != ''))">[BR-05]-An Invoice shall have an Invoice currency code (BT-5).</assert>
+      <assert id="BR-06" flag="fatal" test="exists(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) and (every $node in (cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != ''))">[BR-06]-An Invoice shall contain the Seller name (BT-27).</assert>
+      <assert id="BR-07" flag="fatal" test="exists(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) and (every $node in (cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) satisfies (normalize-space($node) != ''))">[BR-07]-An Invoice shall contain the Buyer name (BT-44).</assert>
       <assert id="BR-08" flag="fatal" test="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)">[BR-08]-An Invoice shall contain the Seller postal address. </assert>
       <assert id="BR-10" flag="fatal" test="exists(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)">[BR-10]-An Invoice shall contain the Buyer postal address (BG-8).</assert>
       <assert id="BR-16" flag="fatal" test="exists(cac:InvoiceLine) or exists(cac:CreditNoteLine)">[BR-16]-An Invoice shall have at least one Invoice line (BG-25)</assert>
@@ -140,11 +140,11 @@
       <assert id="BR-B-02" flag="fatal" test="((cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B') and (not(cac:TaxTotal/cac:TaxSubtotal/cbc:ID ='S' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='S' or //cac:ClassifiedTaxCategory/cbc:ID = 'S'))) or (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B'))">[BR-B-02]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is “Split payment" shall not contain an invoice line (BG-25), a Document level allowance (BG-20) or  a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is “Standard rated”.</assert>
     </rule>
     <rule context="cac:InvoiceLine | cac:CreditNoteLine">
-      <assert id="BR-21" flag="fatal" test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')">[BR-21]-Each Invoice line (BG-25) shall have an Invoice line identifier (BT-126).</assert>
+      <assert id="BR-21" flag="fatal" test="exists(cbc:ID) and (every $node in (cbc:ID) satisfies (normalize-space($node) != ''))">[BR-21]-Each Invoice line (BG-25) shall have an Invoice line identifier (BT-126).</assert>
       <assert id="BR-22" flag="fatal" test="exists(cbc:InvoicedQuantity) or exists(cbc:CreditedQuantity)">[BR-22]-Each Invoice line (BG-25) shall have an Invoiced quantity (BT-129).</assert>
       <assert id="BR-23" flag="fatal" test="exists(cbc:InvoicedQuantity/@unitCode) or exists(cbc:CreditedQuantity/@unitCode)">[BR-23]-An Invoice line (BG-25) shall have an Invoiced quantity unit of measure code (BT-130).</assert>
       <assert id="BR-24" flag="fatal" test="exists(cbc:LineExtensionAmount)">[BR-24]-Each Invoice line (BG-25) shall have an Invoice line net amount (BT-131).</assert>
-      <assert id="BR-25" flag="fatal" test="every $node in (cac:Item/cbc:Name) satisfies (normalize-space($node) != '')">[BR-25]-Each Invoice line (BG-25) shall contain the Item name (BT-153).</assert>
+      <assert id="BR-25" flag="fatal" test="exists(cac:Item/cbc:Name) and (every $node in (cac:Item/cbc:Name) satisfies (normalize-space($node) != ''))">[BR-25]-Each Invoice line (BG-25) shall contain the Item name (BT-153).</assert>
       <assert id="BR-26" flag="fatal" test="exists(cac:Price/cbc:PriceAmount)">[BR-26]-Each Invoice line (BG-25) shall contain the Item net price (BT-146).</assert>
       <assert id="BR-27" flag="fatal" test="(cac:Price/cbc:PriceAmount) >= 0">[BR-27]-The Item net price (BT-146) shall NOT be negative.</assert>
       <assert id="BR-28" flag="fatal" test="(cac:Price/cac:AllowanceCharge/cbc:BaseAmount) >= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))">[BR-28]-The Item gross price (BT-148) shall NOT be negative.</assert>
@@ -191,7 +191,7 @@
       <assert id="BR-17" flag="fatal" test="exists(cac:PartyName/cbc:Name) and (not(cac:PartyName/cbc:Name = ../cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) and not(cac:PartyIdentification/cbc:ID = ../cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID) )">[BR-17]-The Payee name (BT-59) shall be provided in the Invoice, if the Payee (BG-10) is different from the Seller (BG-4)</assert>
     </rule>
     <rule context="cac:PaymentMeans[cbc:PaymentMeansCode='30' or cbc:PaymentMeansCode='58']/cac:PayeeFinancialAccount">
-      <assert id="BR-50" flag="fatal" test="every $node in (cbc:ID) satisfies (normalize-space($node) != '')">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-17) information is provided in the Invoice.</assert>
+      <assert id="BR-50" flag="fatal" test="exists(cbc:ID) and (every $node in (cbc:ID) satisfies (normalize-space($node) != ''))">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-17) information is provided in the Invoice.</assert>
     </rule>
     <rule context="cac:PaymentMeans">
       <assert id="BR-49" flag="fatal" test="exists(cbc:PaymentMeansCode)">[BR-49]-A Payment instruction (BG-16) shall specify the Payment means type code (BT-81).</assert>
@@ -207,15 +207,15 @@
       <assert id="BR-62" flag="fatal" test="exists(@schemeID)">[BR-62]-The Seller electronic address (BT-34) shall have a Scheme identifier.</assert>
     </rule>
     <rule context="cac:AccountingSupplierParty/cac:Party/cac:PostalAddress">
-      <assert id="BR-09" flag="fatal" test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')">[BR-09]-The Seller postal address (BG-5) shall contain a Seller country code (BT-40).</assert>
+      <assert id="BR-09" flag="fatal" test="exists(cac:Country/cbc:IdentificationCode) and (every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != ''))">[BR-09]-The Seller postal address (BG-5) shall contain a Seller country code (BT-40).</assert>
     </rule>
     <rule context="cac:TaxRepresentativeParty">
-      <assert id="BR-18" flag="fatal" test="every $node in (string-join(cac:PartyName/cbc:Name)) satisfies (normalize-space($node) != '')">[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11)</assert>
+      <assert id="BR-18" flag="fatal" test="exists(cac:PartyName/cbc:Name) and (every $node in (cac:PartyName/cbc:Name) satisfies (normalize-space($node) != ''))">[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11)</assert>
       <assert id="BR-19" flag="fatal" test="exists(cac:PostalAddress)">[BR-19]-The Seller tax representative postal address (BG-12) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
       <assert id="BR-56" flag="fatal" test="exists(cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)">[BR-56]-Each Seller tax representative party (BG-11) shall have a Seller tax representative VAT identifier (BT-63).</assert>
     </rule>
     <rule context="cac:TaxRepresentativeParty/cac:PostalAddress">
-      <assert id="BR-20" flag="fatal" test="every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != '')">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-20" flag="fatal" test="exists(cac:Country/cbc:IdentificationCode) and (every $node in (cac:Country/cbc:IdentificationCode) satisfies (normalize-space($node) != ''))">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
     </rule>
     <rule context="/ubl:Invoice/cac:TaxTotal | /cn:CreditNote/cac:TaxTotal">
       <assert id="BR-CO-14" flag="fatal" test="(xs:decimal(child::cbc:TaxAmount)= round((sum(cac:TaxSubtotal/xs:decimal(cbc:TaxAmount)) * 10 * 10)) div 100) or not(cac:TaxSubtotal)">[BR-CO-14]-Invoice total VAT amount (BT-110) = Σ VAT category tax amount (BT-117).</assert>

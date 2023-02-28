@@ -213,9 +213,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (ram:IssuerAssignedID) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(ram:IssuerAssignedID) and (every $node in (ram:IssuerAssignedID) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (ram:IssuerAssignedID) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(ram:IssuerAssignedID) and (every $node in (ram:IssuerAssignedID) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-52</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -840,9 +840,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID) and (every $node in (rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID) and (every $node in (rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-01</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -855,9 +855,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:ExchangedDocument/ram:ID) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:ExchangedDocument/ram:ID) and (every $node in (rsm:ExchangedDocument/ram:ID) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:ExchangedDocument/ram:ID) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:ExchangedDocument/ram:ID) and (every $node in (rsm:ExchangedDocument/ram:ID) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-02</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -870,9 +870,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102']) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102']) and (every $node in (rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102']) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102']) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102']) and (every $node in (rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102']) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-03</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -885,9 +885,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:ExchangedDocument/ram:TypeCode) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:ExchangedDocument/ram:TypeCode) and (every $node in (rsm:ExchangedDocument/ram:TypeCode) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:ExchangedDocument/ram:TypeCode) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:ExchangedDocument/ram:TypeCode) and (every $node in (rsm:ExchangedDocument/ram:TypeCode) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-04</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -900,9 +900,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-05</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -915,9 +915,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-06</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -930,9 +930,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-07</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -960,9 +960,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-09</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -990,9 +990,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-11</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1020,9 +1020,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) satisfies (normalize-space($node) != '')) or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)" />
+      <xsl:when test="(exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) satisfies (normalize-space($node) != ''))) or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) satisfies (normalize-space($node) != '')) or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)">
+        <svrl:failed-assert test="(exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) satisfies (normalize-space($node) != ''))) or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)">
           <xsl:attribute name="id">BR-62</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1035,9 +1035,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) satisfies (normalize-space($node) != '')) or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)" />
+      <xsl:when test="(exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) satisfies (normalize-space($node) != ''))) or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) satisfies (normalize-space($node) != '')) or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)">
+        <svrl:failed-assert test="(exists(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) and (every $node in (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) satisfies (normalize-space($node) != ''))) or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)">
           <xsl:attribute name="id">BR-63</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1251,9 +1251,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (ram:AssociatedDocumentLineDocument/ram:LineID) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(ram:AssociatedDocumentLineDocument/ram:LineID) and (every $node in (ram:AssociatedDocumentLineDocument/ram:LineID) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (ram:AssociatedDocumentLineDocument/ram:LineID) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(ram:AssociatedDocumentLineDocument/ram:LineID) and (every $node in (ram:AssociatedDocumentLineDocument/ram:LineID) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-21</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1311,9 +1311,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (ram:SpecifiedTradeProduct/ram:Name) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(ram:SpecifiedTradeProduct/ram:Name) and (every $node in (ram:SpecifiedTradeProduct/ram:Name) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (ram:SpecifiedTradeProduct/ram:Name) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(ram:SpecifiedTradeProduct/ram:Name) and (every $node in (ram:SpecifiedTradeProduct/ram:Name) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-25</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1371,9 +1371,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(every $node in (ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) satisfies (normalize-space($node) != '')) or not (ram:SpecifiedTradeProduct/ram:GlobalID)" />
+      <xsl:when test="(exists(ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) and (every $node in (ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) satisfies (normalize-space($node) != ''))) or not (ram:SpecifiedTradeProduct/ram:GlobalID)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(every $node in (ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) satisfies (normalize-space($node) != '')) or not (ram:SpecifiedTradeProduct/ram:GlobalID)">
+        <svrl:failed-assert test="(exists(ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) and (every $node in (ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) satisfies (normalize-space($node) != ''))) or not (ram:SpecifiedTradeProduct/ram:GlobalID)">
           <xsl:attribute name="id">BR-64</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1386,9 +1386,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(every $node in (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID) satisfies (normalize-space($node) != '')) or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)" />
+      <xsl:when test="(exists(ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID) and (every $node in (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID) satisfies (normalize-space($node) != ''))) or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(every $node in (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID) satisfies (normalize-space($node) != '')) or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)">
+        <svrl:failed-assert test="(exists(ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID) and (every $node in (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID) satisfies (normalize-space($node) != ''))) or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)">
           <xsl:attribute name="id">BR-65</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1794,9 +1794,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (ram:IssuerAssignedID) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(ram:IssuerAssignedID) and (every $node in (ram:IssuerAssignedID) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (ram:IssuerAssignedID) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(ram:IssuerAssignedID) and (every $node in (ram:IssuerAssignedID) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-55</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1881,9 +1881,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="every $node in (ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']) satisfies (normalize-space($node) != '')" />
+      <xsl:when test="exists(ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']) and (every $node in (ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']) satisfies (normalize-space($node) != ''))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="every $node in (ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']) satisfies (normalize-space($node) != '')">
+        <svrl:failed-assert test="exists(ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']) and (every $node in (ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']) satisfies (normalize-space($node) != ''))">
           <xsl:attribute name="id">BR-56</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
