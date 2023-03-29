@@ -51,7 +51,7 @@
   <param name="BR-48" value="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:Percent) or (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/normalize-space(cbc:ID)='O')"/>
   <param name="BR-49" value="exists(cbc:PaymentMeansCode)"/>
   <param name="BR-50" value="normalize-space(cbc:ID) != ''"/>
-  <param name="BR-51" value="string-length(cbc:PrimaryAccountNumberID)&lt;=10"/>
+  <param name="BR-51" value="string-length(normalize-space(.))&lt;=10"/>
   <param name="BR-52" value="normalize-space(cbc:ID) != ''"/>
   <param name="BR-53" value="every $taxcurrency in cbc:TaxCurrencyCode satisfies exists(//cac:TaxTotal/cbc:TaxAmount[@currencyID=$taxcurrency])"/>
   <param name="BR-54" value="exists(cbc:Name) and exists(cbc:Value)"/>
@@ -227,7 +227,7 @@
   <param name="Invoice_line_charges " value="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()]"/>
   <param name="VAT_breakdown " value="cac:TaxTotal/cac:TaxSubtotal"/>
   <param name="Payment_instructions " value="cac:PaymentMeans"/>
-  <param name="Card_information " value="cac:PaymentMeans/cac:CardAccount"/>
+  <param name="Card_information " value="cac:PaymentMeans/cac:CardAccount/cbc:PrimaryAccountNumberID"/>
   <param name="Additional_supporting_documents " value="cac:AdditionalDocumentReference"/>
   <param name="Item_attributes " value="//cac:AdditionalItemProperty"/>
   <param name="VAT_identifiers " value="//cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']"/>
