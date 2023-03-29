@@ -53,7 +53,7 @@
   <param name="UBL-SR-48" value="count(cac:Item/cac:ClassifiedTaxCategory) = 1"/>
   <param name="UBL-SR-49" value="(count(cac:InvoicePeriod/cbc:DescriptionCode) &lt;=1)"/>
   <param name="UBL-SR-50" value="count(cac:Item/cbc:Description) &lt;= 1"/>
-  <param name="UBL-SR-51" value="count(cac:AddressLine) = 1"/>
+  <param name="UBL-SR-51" value="not(cac:AddressLine) or count(cac:AddressLine) = 1"/>
   <param name="UBL-SR-52" value="count(cac:DocumentReference) &lt;= 1"/>
   
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
