@@ -612,7 +612,7 @@
 	<param name="CII-DT-095" value="not(ram:DepartmentName)"/>
 	<param name="CII-DT-096" value="not(ram:AdditionalStreetName)"/>
 	<!-- DateTimeString -->
-	<param name="CII-DT-097" value="matches(.,'^\s*(\d{8})\s*$')"/>
+	<param name="CII-DT-097" value="matches(.,'^\s*(\d{4})(1[0-2]|0[1-9])(3[01]|[12][0-9]|0[1-9])\s*$')"/>
 	
     <!-- Sections -->
     
