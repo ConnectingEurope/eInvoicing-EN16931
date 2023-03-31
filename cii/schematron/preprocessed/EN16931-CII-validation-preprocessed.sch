@@ -934,7 +934,7 @@
       <assert id="CII-DT-096" flag="fatal" test="not(ram:AdditionalStreetName)">[CII-DT-096] - AdditionalStreetName shall not be used.</assert>
     </rule>
     <rule context="//udt:DateTimeString[@format = '102']">
-      <assert id="CII-DT-097" flag="fatal" test="matches(.,'^\s*(\d{8})\s*$')">[CII-DT-097] - Date time string with format attribute 102 shall be YYYYMMDD.</assert>
+      <assert id="CII-DT-097" flag="fatal" test="matches(.,'^\s*(\d{4})(1[0-2]|0[1-9]){1}(3[01]|[12][0-9]|0[1-9]){1}\s*$')">[CII-DT-097] - Date time string with format attribute 102 shall be YYYYMMDD.</assert>
     </rule>
   </pattern>
   <pattern id="EN16931-Codes">
