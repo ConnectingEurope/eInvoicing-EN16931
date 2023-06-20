@@ -623,9 +623,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(xs:decimal(cbc:LineExtensionAmount) = xs:decimal(round(sum(//(cac:InvoiceLine|cac:CreditNoteLine)/xs:decimal(cbc:LineExtensionAmount)) * 10 * 10) div 100))" />
+      <xsl:when test="(xs:decimal(cbc:LineExtensionAmount) = xs:decimal(round(sum((//cac:InvoiceLine|//cac:CreditNoteLine)/cbc:LineExtensionAmount) * 10 * 10) div 100))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(xs:decimal(cbc:LineExtensionAmount) = xs:decimal(round(sum(//(cac:InvoiceLine|cac:CreditNoteLine)/xs:decimal(cbc:LineExtensionAmount)) * 10 * 10) div 100))">
+        <svrl:failed-assert test="(xs:decimal(cbc:LineExtensionAmount) = xs:decimal(round(sum((//cac:InvoiceLine|//cac:CreditNoteLine)/cbc:LineExtensionAmount) * 10 * 10) div 100))">
           <xsl:attribute name="id">BR-CO-10</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
