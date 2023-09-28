@@ -358,6 +358,8 @@
 	<param name="CII-SR-450" value="(not(ram:BuyerTradeParty/ram:ID) and ram:BuyerTradeParty/ram:GlobalID) or (ram:BuyerTradeParty/ram:ID and not(ram:BuyerTradeParty/ram:GlobalID)) or (not(ram:BuyerTradeParty/ram:ID) and not(ram:BuyerTradeParty/ram:GlobalID))"/>
 	<param name="CII-SR-455" value="( count(ram:SellerTradeParty/ram:DefinedTradeContact)  &lt;= 1)"/>
 	<param name="CII-SR-456" value="( count(ram:BuyerTradeParty/ram:DefinedTradeContact)  &lt;= 1)"/>
+	<param name="CII-SR-457" value="( count(ram:AdditionalReferencedDocument[ram:TypeCode='50'])  &lt;= 1)"/>
+	<param name="CII-SR-458" value="( count(ram:AdditionalReferencedDocument[ram:TypeCode='130'])  &lt;= 1)"/>
 	
 	<!-- ApplicableHeaderTradeDelivery -->
 	<param name="CII-SR-308" value="not(ram:RelatedSupplyChainConsignment)"/>

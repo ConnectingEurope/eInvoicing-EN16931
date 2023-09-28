@@ -372,6 +372,9 @@
 		<assert test="$CII-SR-450" flag="warning" id="CII-SR-450">[CII-SR-450] - Only one  buyer identifier should be present (either the ID or the Global ID)</assert>
 		<assert test="$CII-SR-455" flag="fatal" id="CII-SR-455">[CII-SR-455] - DefinedTradeContact of SellerTradeParty shall exist maximum once</assert>
 		<assert test="$CII-SR-456" flag="fatal" id="CII-SR-456">[CII-SR-456] - DefinedTradeContact of BuyerTradeParty shall exist maximum once</assert>
+		<assert test="$CII-SR-457" flag="warning" id="CII-SR-457">[CII-SR-457] - IssuerAssignedID with TypeCode 50 should exist maximum once</assert>
+		<assert test="$CII-SR-458" flag="warning" id="CII-SR-458">[CII-SR-458] - IssuerAssignedID with TypeCode 130 should exist maximum once</assert>
+		
 	</rule>
 	<rule context="$ApplicableHeaderTradeDelivery ">
 		<assert test="$CII-SR-308" flag="warning" id="CII-SR-308">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>
