@@ -265,6 +265,7 @@
 		<assert test="$CII-SR-218" flag="warning" id="CII-SR-218">[CII-SR-218] - PurchaseSpecifiedTradeAccountingAccount should not be present</assert>
 		<assert test="$CII-SR-219" flag="warning" id="CII-SR-219">[CII-SR-219] - SalesSpecifiedTradeAccountingAccount should not be present</assert>
 		<assert test="$CII-SR-220" flag="warning" id="CII-SR-220">[CII-SR-220] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
+		<assert test="$CII-SR-454" flag="warning" id="CII-SR-454">[CII-SR-454] - Only one ApplicableTradeTax should be present</assert>
 		
   </rule>		
 	<rule context="$ApplicableHeaderTradeAgreement ">

@@ -252,6 +252,8 @@
 	<param name="CII-SR-218" value="not(ram:PurchaseSpecifiedTradeAccountingAccount)"/>
 	<param name="CII-SR-219" value="not(ram:SalesSpecifiedTradeAccountingAccount)"/>
 	<param name="CII-SR-220" value="not(ram:SpecifiedTradeSettlementFinancialCard)"/>
+	<param name="CII-SR-454" value="count(ram:ApplicableTradeTax) = 1"/>
+	
 	<!-- ApplicableHeaderTradeAgreement -->
 	<param name="CII-SR-442" value="not(ram:Reference)"/>
 	<param name="CII-SR-222" value="not(ram:SellerTradeParty/ram:RoleCode)"/>
