@@ -779,5 +779,5 @@
   <param name="Code_data_type" value="//*[ends-with(name(), 'Code')]"/>
   <param name="Binary_object_data_type" value="//*[ends-with(name(), 'BinaryObject')]"/>
   <param name="Accounting_supplier_party" value="cac:AccountingSupplierParty/cac:Party"/>
-  <param name="AddressLine" value="//cac:PostalAddress | //cac:RegistrationAddress | cac:DeliveryAddress"/>
+  <param name="AddressLine" value="//cac:PostalAddress | //cac:Address "/>
 </pattern>
