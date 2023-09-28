@@ -63,7 +63,7 @@
   <param name="BR-62" value="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)"/>
   <param name="BR-63" value="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)"/>
   <param name="BR-64" value="normalize-space(ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) != '' or not (ram:SpecifiedTradeProduct/ram:GlobalID)"/>
-  <param name="BR-65" value="normalize-space(ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID) != '' or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)"/>
+  <param name="BR-65" value="normalize-space(string-join((ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID), ' ')) != '' or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)"/>
   <param name="BR-66" value="(ram:ChargeIndicator)"/>
   
   <!--param name="BR-CO-02" value="((ram:TypeCode = ('30','57')) and (ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)) or not(ram:TypeCode =  ('30','57'))"/-->
