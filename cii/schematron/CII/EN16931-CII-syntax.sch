@@ -266,6 +266,9 @@
 	<param name="CII-SR-229" value="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:JobTitle)"/>
 	<param name="CII-SR-230" value="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:Responsibility)"/>
 	<param name="CII-SR-231" value="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:PersonID)"/>
+	
+	
+	
 
 	<param name="CII-SR-232" value="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:TelephoneUniversalCommunication/ram:URIID)"/>
 	<param name="CII-SR-233" value="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:TelephoneUniversalCommunication/ram:ChannelCode)"/>
@@ -353,6 +356,8 @@
 	<param name="CII-SR-307" value="not(ram:SpecifiedProcuringProject/ram:Description)"/>
 	<param name="CII-SR-448" value="not(ram:UltimateCustomerOrderReferencedDocument)"/>
 	<param name="CII-SR-450" value="(not(ram:BuyerTradeParty/ram:ID) and ram:BuyerTradeParty/ram:GlobalID) or (ram:BuyerTradeParty/ram:ID and not(ram:BuyerTradeParty/ram:GlobalID)) or (not(ram:BuyerTradeParty/ram:ID) and not(ram:BuyerTradeParty/ram:GlobalID))"/>
+	<param name="CII-SR-455" value="( count(ram:SellerTradeParty/ram:DefinedTradeContact)  &lt;= 1)"/>
+	<param name="CII-SR-456" value="( count(ram:BuyerTradeParty/ram:DefinedTradeContact)  &lt;= 1)"/>
 	
 	<!-- ApplicableHeaderTradeDelivery -->
 	<param name="CII-SR-308" value="not(ram:RelatedSupplyChainConsignment)"/>

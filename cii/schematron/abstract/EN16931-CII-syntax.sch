@@ -370,6 +370,8 @@
 		<assert test="$CII-SR-307" flag="warning" id="CII-SR-307">[CII-SR-307] - Description should not be present</assert>
 		<assert test="$CII-SR-448" flag="warning" id="CII-SR-448">[CII-SR-448] - UltimateCustomerOrderReferencedDocument should not be present</assert>
 		<assert test="$CII-SR-450" flag="warning" id="CII-SR-450">[CII-SR-450] - Only one  buyer identifier should be present (either the ID or the Global ID)</assert>
+		<assert test="$CII-SR-455" flag="fatal" id="CII-SR-455">[CII-SR-455] - DefinedTradeContact of SellerTradeParty shall exist maximum once</assert>
+		<assert test="$CII-SR-456" flag="fatal" id="CII-SR-456">[CII-SR-456] - DefinedTradeContact of BuyerTradeParty shall exist maximum once</assert>
 	</rule>
 	<rule context="$ApplicableHeaderTradeDelivery ">
 		<assert test="$CII-SR-308" flag="warning" id="CII-SR-308">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>
