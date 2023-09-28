@@ -506,6 +506,8 @@
 		<assert test="$CII-SR-435" flag="warning" id="CII-SR-435">[CII-SR-435] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
 		<assert test="$CII-SR-436" flag="warning" id="CII-SR-436">[CII-SR-436] - SpecifiedAdvancePayment should not be present</assert>
 		<assert test="$CII-SR-437" flag="warning" id="CII-SR-437">[CII-SR-437] - UltimatePayeeTradeParty should not be present</assert>
+		<assert test="$CII-SR-452" flag="warning" id="CII-SR-452">[CII-SR-452] - Only one SpecifiedTradePaymentTerms should be present</assert>
+		<assert test="$CII-SR-453" flag="warning" id="CII-SR-453">[CII-SR-453] - Only one SpecifiedTradePaymentTerms Description should be present</assert>
 		
 	</rule>
 	<rule context="$SpecifiedTradeSettlementHeaderMonetarySummation ">
