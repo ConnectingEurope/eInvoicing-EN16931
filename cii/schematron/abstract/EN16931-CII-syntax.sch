@@ -265,6 +265,7 @@
 		<assert test="$CII-SR-218" flag="warning" id="CII-SR-218">[CII-SR-218] - PurchaseSpecifiedTradeAccountingAccount should not be present</assert>
 		<assert test="$CII-SR-219" flag="warning" id="CII-SR-219">[CII-SR-219] - SalesSpecifiedTradeAccountingAccount should not be present</assert>
 		<assert test="$CII-SR-220" flag="warning" id="CII-SR-220">[CII-SR-220] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
+		<assert test="$CII-SR-454" flag="warning" id="CII-SR-454">[CII-SR-454] - Only one ApplicableTradeTax should be present</assert>
 		
   </rule>		
 	<rule context="$ApplicableHeaderTradeAgreement ">
@@ -369,6 +370,11 @@
 		<assert test="$CII-SR-307" flag="warning" id="CII-SR-307">[CII-SR-307] - Description should not be present</assert>
 		<assert test="$CII-SR-448" flag="warning" id="CII-SR-448">[CII-SR-448] - UltimateCustomerOrderReferencedDocument should not be present</assert>
 		<assert test="$CII-SR-450" flag="warning" id="CII-SR-450">[CII-SR-450] - Only one  buyer identifier should be present (either the ID or the Global ID)</assert>
+		<assert test="$CII-SR-455" flag="fatal" id="CII-SR-455">[CII-SR-455] - DefinedTradeContact of SellerTradeParty shall exist maximum once</assert>
+		<assert test="$CII-SR-456" flag="fatal" id="CII-SR-456">[CII-SR-456] - DefinedTradeContact of BuyerTradeParty shall exist maximum once</assert>
+		<assert test="$CII-SR-457" flag="warning" id="CII-SR-457">[CII-SR-457] - IssuerAssignedID with TypeCode 50 should exist maximum once</assert>
+		<assert test="$CII-SR-458" flag="warning" id="CII-SR-458">[CII-SR-458] - IssuerAssignedID with TypeCode 130 should exist maximum once</assert>
+		
 	</rule>
 	<rule context="$ApplicableHeaderTradeDelivery ">
 		<assert test="$CII-SR-308" flag="warning" id="CII-SR-308">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>
@@ -506,6 +512,8 @@
 		<assert test="$CII-SR-435" flag="warning" id="CII-SR-435">[CII-SR-435] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
 		<assert test="$CII-SR-436" flag="warning" id="CII-SR-436">[CII-SR-436] - SpecifiedAdvancePayment should not be present</assert>
 		<assert test="$CII-SR-437" flag="warning" id="CII-SR-437">[CII-SR-437] - UltimatePayeeTradeParty should not be present</assert>
+		<assert test="$CII-SR-452" flag="warning" id="CII-SR-452">[CII-SR-452] - Only one SpecifiedTradePaymentTerms should be present</assert>
+		<assert test="$CII-SR-453" flag="warning" id="CII-SR-453">[CII-SR-453] - Only one SpecifiedTradePaymentTerms Description should be present</assert>
 		
 	</rule>
 	<rule context="$SpecifiedTradeSettlementHeaderMonetarySummation ">

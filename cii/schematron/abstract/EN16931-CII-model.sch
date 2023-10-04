@@ -9,6 +9,10 @@
   <rule context="$SpecifiedTradeAllowanceCharge">
     <assert test="$BR-66" flag="fatal" id="BR-66">[BR-66]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a Charge Indicator.</assert>
   </rule>  
+  <rule context="$DesignatedProductClassification">
+    <assert test="$BR-65" flag="fatal" id="BR-65">[BR-65]-The Item classification identifier (BT-158) shall have a Scheme identifier.</assert>
+  </rule>  
+  
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>    
   </rule>
@@ -101,7 +105,6 @@
     <assert test="$BR-27" flag="fatal" id="BR-27">[BR-27]-The Item net price (BT-146) shall NOT be negative.</assert>
     <assert test="$BR-28" flag="fatal" id="BR-28">[BR-28]-The Item gross price (BT-148) shall NOT be negative.</assert>
     <assert test="$BR-64" flag="fatal" id="BR-64">[BR-64]-The Item standard identifier (BT-157) shall have a Scheme identifier.</assert>
-    <assert test="$BR-65" flag="fatal" id="BR-65">[BR-65]-The Item classification identifier (BT-158) shall have a Scheme identifier.</assert>
     <assert test="$BR-CO-04" flag="fatal" id="BR-CO-04">[BR-CO-04]-Each Invoice line (BG-25) shall be categorized with an Invoiced item VAT category code (BT-151).</assert>
     <assert test="$BR-CO-18" flag="fatal" id="BR-CO-18">[BR-CO-18]-An Invoice shall at least have one VAT breakdown group (BG-23).</assert>
     <assert test="$BR-DEC-23" flag="fatal" id="BR-DEC-23">[BR-DEC-23]-The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2.</assert>    
