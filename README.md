@@ -17,9 +17,9 @@ For each syntax a separate folder exists where all related artefacts are to be p
   * Used XML Schemas: http://www.unece.org/fileadmin/DAM/cefact/xml_schemas/D16B_SCRDM__Subset__CII.zip
 * `edifact` - UN/EDIFACT (and ISO 26025 based XML version) - EN optional syntax
 
-CEF supported code lists are available here:
+Digital Europe supported code lists are available here:
  
-* https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Registry+of+supporting+artefacts+to+implement+EN16931
+* https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/Registry+of+supporting+artefacts+to+implement+EN16931
 
 # License
 
