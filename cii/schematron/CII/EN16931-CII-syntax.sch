@@ -624,6 +624,11 @@
 		value="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1"/>
 	<param name="CII-SR-460"
 		value="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1"/>
+	<param name="CII-SR-461"
+		value="count(ram:ApplicableTradeTax/ram:TaxPointDate) &lt;= 1"/>
+	<param name="CII-SR-462"
+		value="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) &lt;= 1"/>
+	
 	<!-- Invoice -->
 	<param name="CII-SR-438" value="not(ram:ValuationBreakdownStatement)"/>
 
@@ -712,13 +717,11 @@
 	<param name="CII-DT-052" value="not(ram:ExemptionReasonCode) or self::ram:ApplicableTradeTax"/>
 	<param name="CII-DT-098" value="not(ram:ExemptionReason) or self::ram:ApplicableTradeTax"/>
 	<param name="CII-DT-053" value="not(ram:TaxBasisAllowanceRate)"/>
-	<param name="CII-DT-054"
-		value="not(ram:TaxPointDate)  or (ancestor::ram:ApplicableHeaderTradeSettlement)"/>
+	<param name="CII-DT-054" value="not(ram:TaxPointDate)  or (ancestor::ram:ApplicableHeaderTradeSettlement)"/>
 	<param name="CII-DT-055" value="not(ram:Type)"/>
 	<param name="CII-DT-056" value="not(ram:InformationAmount)"/>
 	<param name="CII-DT-057" value="not(ram:CategoryName)"/>
-	<param name="CII-DT-058"
-		value="not(ram:DueDateTypeCode) or (ancestor::ram:ApplicableHeaderTradeSettlement)"/>
+	<param name="CII-DT-058" value="not(ram:DueDateTypeCode) or (ancestor::ram:ApplicableHeaderTradeSettlement)"/>
 	<param name="CII-DT-059" value="not(ram:RateApplicablePercent/@format)"/>
 	<param name="CII-DT-060" value="not(ram:SpecifiedTradeAccountingAccount)"/>
 	<param name="CII-DT-061" value="not(ram:ServiceSupplyTradeCountry)"/>
