@@ -486,7 +486,15 @@
 	<param name="CII-SR-435" value="not(ram:SpecifiedTradeSettlementFinancialCard)"/>
 	<param name="CII-SR-436" value="not(ram:SpecifiedAdvancePayment)"/>	
 	<param name="CII-SR-437" value="not(ram:UltimatePayeeTradeParty)"/>	
+<<<<<<< Updated upstream
 
+=======
+	<param name="CII-SR-452" value="count(ram:SpecifiedTradePaymentTerms) &lt;= 1"/>	
+	<param name="CII-SR-453" value="count(ram:SpecifiedTradePaymentTerms/ram:Description) &lt;= 1"/>	
+	<param name="CII-SR-459" value="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1"/>	
+	<param name="CII-SR-460" value="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1"/>	
+	
+>>>>>>> Stashed changes
 	<!-- Invoice -->
 	<param name="CII-SR-438" value="not(ram:ValuationBreakdownStatement)"/>	
 	

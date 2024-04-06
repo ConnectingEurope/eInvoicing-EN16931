@@ -69,7 +69,7 @@
           <keepDiagnostics>false</keepDiagnostics>
           <keepReports>false</keepReports>
           <keepEmptyPatterns>false</keepEmptyPatterns>
-          <schHeader> Schematron version 1.3.10 - Last update: 2023-04-08 </schHeader>
+          <schHeader> Schematron version 1.3.11 - Last update: 2023-10-04 </schHeader>
         </configuration>
       </plugin>
     </plugins>
