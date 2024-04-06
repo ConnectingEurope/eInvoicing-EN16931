@@ -31,7 +31,7 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 			<cac:PaymentMeans>
-				<cbc:PaymentMeansCode>98</cbc:PaymentMeansCode>
+				<cbc:PaymentMeansCode>99</cbc:PaymentMeansCode>
 			</cac:PaymentMeans>
 		</CreditNote>
 	</test>
