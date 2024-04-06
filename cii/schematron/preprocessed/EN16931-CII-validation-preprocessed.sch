@@ -37,23 +37,23 @@
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery">
       <assert id="BR-57" flag="fatal" test="(ram:ShipToTradeParty/ram:PostalTradeAddress and normalize-space(ram:ShipToTradeParty/ram:PostalTradeAddress/ram:CountryID) != '') or not (ram:ShipToTradeParty/ram:PostalTradeAddress)">[BR-57]-Each Deliver to address (BG-15) shall contain a Deliver to country code (BT-80).</assert>
     </rule>
-    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]">
-      <assert id="BR-31" flag="fatal" test="(ram:ActualAmount)">[BR-31]-Each Document level allowance (BG-20) shall have a Document level allowance amount (BT-92).</assert>
-      <assert id="BR-32" flag="fatal" test="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-32]-Each Document level allowance (BG-20) shall have a Document level allowance VAT category code (BT-95).</assert>
-      <assert id="BR-33" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-33]-Each Document level allowance (BG-20) shall have a Document level allowance reason (BT-97) or a Document level allowance reason code (BT-98).</assert>
+    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false']">
+      <assert id="BR-31" flag="fatal" test="(../ram:ActualAmount)">[BR-31]-Each Document level allowance (BG-20) shall have a Document level allowance amount (BT-92).</assert>
+      <assert id="BR-32" flag="fatal" test="(../ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-32]-Each Document level allowance (BG-20) shall have a Document level allowance VAT category code (BT-95).</assert>
+      <assert id="BR-33" flag="fatal" test="(../ram:Reason) or (../ram:ReasonCode)">[BR-33]-Each Document level allowance (BG-20) shall have a Document level allowance reason (BT-97) or a Document level allowance reason code (BT-98).</assert>
       <assert id="BR-CO-05" flag="fatal" test="true()">[BR-CO-05]-Document level allowance reason code (BT-98) and Document level allowance reason (BT-97) shall indicate the same type of allowance.</assert>
-      <assert id="BR-CO-21" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-21]-Each Document level allowance (BG-20) shall contain a Document level allowance reason (BT-97) or a Document level allowance reason code (BT-98), or both.</assert>
-      <assert id="BR-DEC-01" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-01]-The allowed maximum number of decimals for the Document level allowance amount (BT-92) is 2.</assert>
-      <assert id="BR-DEC-02" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-02]-The allowed maximum number of decimals for the Document level allowance base amount (BT-93) is 2.</assert>
+      <assert id="BR-CO-21" flag="fatal" test="(../ram:Reason) or (../ram:ReasonCode)">[BR-CO-21]-Each Document level allowance (BG-20) shall contain a Document level allowance reason (BT-97) or a Document level allowance reason code (BT-98), or both.</assert>
+      <assert id="BR-DEC-01" flag="fatal" test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2">[BR-DEC-01]-The allowed maximum number of decimals for the Document level allowance amount (BT-92) is 2.</assert>
+      <assert id="BR-DEC-02" flag="fatal" test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2">[BR-DEC-02]-The allowed maximum number of decimals for the Document level allowance base amount (BT-93) is 2.</assert>
     </rule>
-    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]">
-      <assert id="BR-36" flag="fatal" test="(ram:ActualAmount)">[BR-36]-Each Document level charge (BG-21) shall have a Document level charge amount (BT-99). </assert>
-      <assert id="BR-37" flag="fatal" test="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-37]-Each Document level charge (BG-21) shall have a Document level charge VAT category code (BT-102).</assert>
-      <assert id="BR-38" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-38]-Each Document level charge (BG-21) shall have a Document level charge reason (BT-104) or a Document level charge reason code (BT-105).</assert>
+    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='true']">
+      <assert id="BR-36" flag="fatal" test="(../ram:ActualAmount)">[BR-36]-Each Document level charge (BG-21) shall have a Document level charge amount (BT-99). </assert>
+      <assert id="BR-37" flag="fatal" test="(../ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-37]-Each Document level charge (BG-21) shall have a Document level charge VAT category code (BT-102).</assert>
+      <assert id="BR-38" flag="fatal" test="(../ram:Reason) or (../ram:ReasonCode)">[BR-38]-Each Document level charge (BG-21) shall have a Document level charge reason (BT-104) or a Document level charge reason code (BT-105).</assert>
       <assert id="BR-CO-06" flag="fatal" test="true()">[BR-CO-06]-Document level charge reason code (BT-105) and Document level charge reason (BT-104) shall indicate the same type of charge. </assert>
-      <assert id="BR-CO-22" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-22]-Each Document level charge (BG-21) shall contain a Document level charge reason (BT-104) or a Document level charge reason code (BT-105), or both.</assert>
-      <assert id="BR-DEC-05" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-05]-The allowed maximum number of decimals for the Document level charge amount (BT-99) is 2.</assert>
-      <assert id="BR-DEC-06" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-06]-The allowed maximum number of decimals for the Document level charge base amount (BT-100) is 2.</assert>
+      <assert id="BR-CO-22" flag="fatal" test="(../ram:Reason) or (../ram:ReasonCode)">[BR-CO-22]-Each Document level charge (BG-21) shall contain a Document level charge reason (BT-104) or a Document level charge reason code (BT-105), or both.</assert>
+      <assert id="BR-DEC-05" flag="fatal" test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2">[BR-DEC-05]-The allowed maximum number of decimals for the Document level charge amount (BT-99) is 2.</assert>
+      <assert id="BR-DEC-06" flag="fatal" test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2">[BR-DEC-06]-The allowed maximum number of decimals for the Document level charge base amount (BT-100) is 2.</assert>
     </rule>
     <rule context="//ram:SpecifiedTradeSettlementHeaderMonetarySummation">
       <assert id="BR-12" flag="fatal" test="(ram:LineTotalAmount)">[BR-12]-An Invoice shall have the Sum of Invoice line net amount (BT-106). </assert>
@@ -121,21 +121,21 @@
       <assert id="BR-CO-18" flag="fatal" test="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax">[BR-CO-18]-An Invoice shall at least have one VAT breakdown group (BG-23).</assert>
       <assert id="BR-DEC-23" flag="fatal" test="string-length(substring-after(ram:SpecifiedTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2">[BR-DEC-23]-The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2.</assert>
     </rule>
-    <rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = false()]">
-      <assert id="BR-41" flag="fatal" test="(ram:ActualAmount)">[BR-41]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance amount (BT-136).</assert>
-      <assert id="BR-42" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-42]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance reason (BT-139) or an Invoice line allowance reason code (BT-140).</assert>
+    <rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'false']">
+      <assert id="BR-41" flag="fatal" test="(../ram:ActualAmount)">[BR-41]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance amount (BT-136).</assert>
+      <assert id="BR-42" flag="fatal" test="(../ram:Reason) or (../ram:ReasonCode)">[BR-42]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance reason (BT-139) or an Invoice line allowance reason code (BT-140).</assert>
       <assert id="BR-CO-07" flag="fatal" test="true()">[BR-CO-07]-Invoice line allowance reason code (BT-140) and Invoice line allowance reason (BT-139) shall indicate the same type of allowance reason.</assert>
-      <assert id="BR-CO-23" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-23]-Each Invoice line allowance (BG-27) shall contain an Invoice line allowance reason (BT-139) or an Invoice line allowance reason code (BT-140), or both.</assert>
-      <assert id="BR-DEC-24" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-24]-The allowed maximum number of decimals for the Invoice line allowance amount (BT-136) is 2.</assert>
-      <assert id="BR-DEC-25" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-25]-The allowed maximum number of decimals for the Invoice line allowance base amount (BT-137) is 2.</assert>
+      <assert id="BR-CO-23" flag="fatal" test="(../ram:Reason) or (../ram:ReasonCode)">[BR-CO-23]-Each Invoice line allowance (BG-27) shall contain an Invoice line allowance reason (BT-139) or an Invoice line allowance reason code (BT-140), or both.</assert>
+      <assert id="BR-DEC-24" flag="fatal" test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2">[BR-DEC-24]-The allowed maximum number of decimals for the Invoice line allowance amount (BT-136) is 2.</assert>
+      <assert id="BR-DEC-25" flag="fatal" test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2">[BR-DEC-25]-The allowed maximum number of decimals for the Invoice line allowance base amount (BT-137) is 2.</assert>
     </rule>
-    <rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = true()]">
-      <assert id="BR-43" flag="fatal" test="(ram:ActualAmount)">[BR-43]-Each Invoice line charge (BG-28) shall have an Invoice line charge amount (BT-141).</assert>
-      <assert id="BR-44" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-44]-Each Invoice line charge (BG-28) shall have an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145).</assert>
+    <rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'true']">
+      <assert id="BR-43" flag="fatal" test="(../ram:ActualAmount)">[BR-43]-Each Invoice line charge (BG-28) shall have an Invoice line charge amount (BT-141).</assert>
+      <assert id="BR-44" flag="fatal" test="(../ram:Reason) or (../ram:ReasonCode)">[BR-44]-Each Invoice line charge (BG-28) shall have an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145).</assert>
       <assert id="BR-CO-08" flag="fatal" test="true()">[BR-CO-08]-Invoice line charge reason code (BT-145) and Invoice line charge reason (BT-144) shall indicate the same type of charge reason.</assert>
-      <assert id="BR-CO-24" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-24]-Each Invoice line charge (BG-28) shall contain an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145), or both.</assert>
-      <assert id="BR-DEC-27" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-27]-The allowed maximum number of decimals for the Invoice line charge amount (BT-141) is 2.</assert>
-      <assert id="BR-DEC-28" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-28]-The allowed maximum number of decimals for the Invoice line charge base amount (BT-142) is 2.</assert>
+      <assert id="BR-CO-24" flag="fatal" test="(../ram:Reason) or (../ram:ReasonCode)">[BR-CO-24]-Each Invoice line charge (BG-28) shall contain an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145), or both.</assert>
+      <assert id="BR-DEC-27" flag="fatal" test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2">[BR-DEC-27]-The allowed maximum number of decimals for the Invoice line charge amount (BT-141) is 2.</assert>
+      <assert id="BR-DEC-28" flag="fatal" test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2">[BR-DEC-28]-The allowed maximum number of decimals for the Invoice line charge base amount (BT-142) is 2.</assert>
     </rule>
     <rule context="//ram:SpecifiedLineTradeSettlement/ram:BillingSpecifiedPeriod">
       <assert id="BR-30" flag="fatal" test="(ram:EndDateTime/udt:DateTimeString[@format = '102']) >= (ram:StartDateTime/udt:DateTimeString[@format = '102']) or not (ram:EndDateTime) or not (ram:StartDateTime)">[BR-30]-If both Invoice line period start date (BT-134) and Invoice line period end date (BT-135) are given then the Invoice line period end date (BT-135) shall be later or equal to the Invoice line period start date (BT-134).</assert>
@@ -999,14 +999,10 @@
 			not be present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode">
-      <assert id="CII-DT-045" flag="warning" test="not(@listID)">[CII-DT-045] - @listID should not
-			be present</assert>
-      <assert id="CII-DT-046" flag="warning" test="not(@listAgencyID)">[CII-DT-046] - @listAgencyID
-			should not be present</assert>
-      <assert id="CII-DT-047" flag="warning" test="not(@listVersionID)">[CII-DT-047] - @listVersionID
-			should not be present</assert>
-      <assert id="CII-DT-048" flag="warning" test="not(@listURI)">[CII-DT-048] - @listURI should not
-			be present</assert>
+      <assert id="CII-DT-045" flag="warning" test="not(@listID)">[CII-DT-045] - @listID should not be present</assert>
+      <assert id="CII-DT-046" flag="warning" test="not(@listAgencyID)">[CII-DT-046] - @listAgencyID should not be present</assert>
+      <assert id="CII-DT-047" flag="warning" test="not(@listVersionID)">[CII-DT-047] - @listVersionID should not be present</assert>
+      <assert id="CII-DT-048" flag="warning" test="not(@listURI)">[CII-DT-048] - @listURI should not be present</assert>
     </rule>
     <rule context="//ram:*[ends-with(name(), 'ReferencedDocument')]">
       <assert id="CII-DT-015" flag="fatal" test="not(ram:URIID) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-015] - URIID should not be

@@ -770,14 +770,14 @@
 	<param name="Document_Context" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext"/>
 	<param name="DocumentContextParameter" value="//*[ends-with(name(), 'DocumentContextParameter')]"/>
 	<param name="Exchanged_Document" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument"/>
-	<param name="Exchanged_Document_Note" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote"/>
+	<param name="Note_Exchanged_Document" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote"/>
 	<param name="IDTypeNoAttributes"
 		value="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or
         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or
         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]"/>
 	<param name="IDType" value="//ram:*[ends-with(name(), 'ID')]"/>
 	<param name="TypeCodeType" value="//ram:TypeCode"/>
-	<param name="TypeCodeTypeNoAttributes"
+	<param name="NoAttributesTypeCodeType"
 		value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode"/>
 	<param name="CategoryCodeNoAttributes"
 		value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode"/>

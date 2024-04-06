@@ -40,7 +40,7 @@
 		<assert test="$CII-SR-033" flag="warning" id="CII-SR-033">[CII-SR-033] - EffectiveSpecifiedPeriod should not be present</assert>
 		<assert test="$CII-SR-034" flag="warning" id="CII-SR-034">[CII-SR-034] - IssuerTradeParty should not be present</assert>
 	</rule>
-	<rule context="$Exchanged_Document_Note">
+	<rule context="$Note_Exchanged_Document">
 		<assert test="$CII-SR-030" flag="warning" id="CII-SR-030">[CII-SR-030] - Content should exist maximum once</assert>
 	</rule>
 	<rule context="$Invoice_line">
@@ -701,7 +701,7 @@
 		<assert test="$CII-DT-009" flag="fatal" id="CII-DT-009">[CII-DT-009] - listURI should not be
 			present</assert>
 	</rule>
-	<rule context="$TypeCodeTypeNoAttributes">
+	<rule context="$NoAttributesTypeCodeType">
 		<assert test="$CII-DT-010" flag="fatal" id="CII-DT-010">[CII-DT-010] - listID should not be
 			present</assert>
 		<assert test="$CII-DT-011" flag="fatal" id="CII-DT-011">[CII-DT-011] - listAgencyID should
@@ -710,14 +710,10 @@
 			not be present</assert>
 	</rule>
 	<rule context="$CategoryCodeNoAttributes">
-		<assert test="$CII-DT-045" flag="warning" id="CII-DT-045">[CII-DT-045] - @listID should not
-			be present</assert>
-		<assert test="$CII-DT-046" flag="warning" id="CII-DT-046">[CII-DT-046] - @listAgencyID
-			should not be present</assert>
-		<assert test="$CII-DT-047" flag="warning" id="CII-DT-047">[CII-DT-047] - @listVersionID
-			should not be present</assert>
-		<assert test="$CII-DT-048" flag="warning" id="CII-DT-048">[CII-DT-048] - @listURI should not
-			be present</assert>
+		<assert test="$CII-DT-045" flag="warning" id="CII-DT-045">[CII-DT-045] - @listID should not be present</assert>
+		<assert test="$CII-DT-046" flag="warning" id="CII-DT-046">[CII-DT-046] - @listAgencyID should not be present</assert>
+		<assert test="$CII-DT-047" flag="warning" id="CII-DT-047">[CII-DT-047] - @listVersionID should not be present</assert>
+		<assert test="$CII-DT-048" flag="warning" id="CII-DT-048">[CII-DT-048] - @listURI should not be present</assert>
 	</rule>
 	<rule context="$ReferencedDocumentType">
 		<assert test="$CII-DT-015" flag="fatal" id="CII-DT-015">[CII-DT-015] - URIID should not be

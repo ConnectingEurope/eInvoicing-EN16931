@@ -36,16 +36,16 @@
   <param name="BR-28" value="(ram:SpecifiedLineTradeAgreement/ram:GrossPriceProductTradePrice/ram:ChargeAmount &gt;= 0) or not(ram:SpecifiedLineTradeAgreement/ram:GrossPriceProductTradePrice/ram:ChargeAmount)"/>
   <param name="BR-29" value="(ram:EndDateTime/udt:DateTimeString[@format = '102']) &gt;= (ram:StartDateTime/udt:DateTimeString[@format = '102']) or not (ram:EndDateTime) or not (ram:StartDateTime)"/>
   <param name="BR-30" value="(ram:EndDateTime/udt:DateTimeString[@format = '102']) &gt;= (ram:StartDateTime/udt:DateTimeString[@format = '102']) or not (ram:EndDateTime) or not (ram:StartDateTime)"/>
-  <param name="BR-31" value="(ram:ActualAmount)"/>
-  <param name="BR-32" value="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)"/>
-  <param name="BR-33" value="(ram:Reason) or (ram:ReasonCode)"/>
-  <param name="BR-36" value="(ram:ActualAmount)"/>
-  <param name="BR-37" value="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)"/>
-  <param name="BR-38" value="(ram:Reason) or (ram:ReasonCode)"/>
-  <param name="BR-41" value="(ram:ActualAmount)"/>
-  <param name="BR-42" value="(ram:Reason) or (ram:ReasonCode)"/>
-  <param name="BR-43" value="(ram:ActualAmount)"/>
-  <param name="BR-44" value="(ram:Reason) or (ram:ReasonCode)"/>
+  <param name="BR-31" value="(../ram:ActualAmount)"/>
+  <param name="BR-32" value="(../ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)"/>
+  <param name="BR-33" value="(../ram:Reason) or (../ram:ReasonCode)"/>
+  <param name="BR-36" value="(../ram:ActualAmount)"/>
+  <param name="BR-37" value="(../ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)"/>
+  <param name="BR-38" value="(../ram:Reason) or (../ram:ReasonCode)"/>
+  <param name="BR-41" value="(../ram:ActualAmount)"/>
+  <param name="BR-42" value="(../ram:Reason) or (../ram:ReasonCode)"/>
+  <param name="BR-43" value="(../ram:ActualAmount)"/>
+  <param name="BR-44" value="(../ram:Reason) or (../ram:ReasonCode)"/>
   <param name="BR-45" value="(ram:BasisAmount)"/>
   <param name="BR-46" value="(ram:CalculatedAmount)"/>
   <param name="BR-47" value="(.[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)"/>
@@ -106,10 +106,10 @@
   <param name="BR-CO-18" value="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax"/>
   <param name="BR-CO-19" value="(ram:StartDateTime) or (ram:EndDateTime)"/>
   <param name="BR-CO-20" value="(ram:StartDateTime) or (ram:EndDateTime)"/>
-  <param name="BR-CO-21" value="(ram:Reason) or (ram:ReasonCode)"/>
-  <param name="BR-CO-22" value="(ram:Reason) or (ram:ReasonCode)"/>
-  <param name="BR-CO-23" value="(ram:Reason) or (ram:ReasonCode)"/>
-  <param name="BR-CO-24" value="(ram:Reason) or (ram:ReasonCode)"/>
+  <param name="BR-CO-21" value="(../ram:Reason) or (../ram:ReasonCode)"/>
+  <param name="BR-CO-22" value="(../ram:Reason) or (../ram:ReasonCode)"/>
+  <param name="BR-CO-23" value="(../ram:Reason) or (../ram:ReasonCode)"/>
+  <param name="BR-CO-24" value="(../ram:Reason) or (../ram:ReasonCode)"/>
   <param name="BR-CO-25" value="(number(//ram:DuePayableAmount) &gt; 0 and ((//ram:SpecifiedTradePaymentTerms/ram:DueDateDateTime) or (//ram:SpecifiedTradePaymentTerms/ram:Description))) or not(number(//ram:DuePayableAmount)&gt;0)"/>
   <param name="BR-CO-26" value="(ram:ID) or (ram:GlobalID) or (ram:SpecifiedLegalOrganization/ram:ID) or (ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA'])"/>
   <param name="BR-CO-27" value="(ram:PayeePartyCreditorFinancialAccount/ram:IBANID) or (ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID) or (not(ram:PayeePartyCreditorFinancialAccount/ram:IBANID) and not(ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID))"/>
@@ -221,10 +221,10 @@
   <param name="BR-O-13" value="not(//ram:CategoryTradeTax[ram:CategoryCode != 'O'])"/>
   <param name="BR-O-14" value="not(//ram:CategoryTradeTax[ram:CategoryCode != 'O'])"/>
   
-  <param name="BR-DEC-01" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-02" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-05" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-06" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-01" value="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-02" value="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-05" value="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-06" value="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-09" value="string-length(substring-after(ram:LineTotalAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-10" value="string-length(substring-after(ram:AllowanceTotalAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-11" value="string-length(substring-after(ram:ChargeTotalAmount,'.'))&lt;=2"/>
@@ -238,10 +238,10 @@
   <param name="BR-DEC-19" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-20" value="string-length(substring-after(ram:CalculatedAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-23" value="string-length(substring-after(ram:SpecifiedTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-24" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-25" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-27" value="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-28" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-24" value="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-25" value="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-27" value="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-28" value="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2"/>
   <param name="BR-B-01" value="(not(//ram:CountryID != 'IT') and //ram:CategoryCode ='B') or (not(//ram:CategoryCode ='B'))"/>
   <param name="BR-B-02" value="(//ram:CategoryCode ='B' and (not(//ram:CategoryCode ='S'))) or (not(//ram:CategoryCode ='B'))"/>  
   
@@ -251,10 +251,10 @@
   <param name="Tax_Representative " value="//ram:SellerTaxRepresentativeTradeParty"/>
   <param name="Invoice_Line " value="//ram:IncludedSupplyChainTradeLineItem"/>
   <param name="Invoice_Line_Period " value="//ram:SpecifiedLineTradeSettlement/ram:BillingSpecifiedPeriod"/>
-  <param name="Document_level_allowances " value="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]"/>
-  <param name="Document_level_charges " value="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]"/>
-  <param name="Invoice_line_allowances " value="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = false()]"/>
-  <param name="Invoice_line_charges " value="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = true()]"/>
+  <param name="Document_level_allowances " value="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false']"/>
+  <param name="Document_level_charges " value="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='true']"/>
+  <param name="Invoice_line_allowances " value="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'false']"/>
+  <param name="Invoice_line_charges " value="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'true']"/>
   
   <param name="VAT_breakdown " value="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax"/>
   

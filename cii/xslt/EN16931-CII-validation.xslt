@@ -328,14 +328,14 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]" mode="M10" priority="1053">
-    <svrl:fired-rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]" />
+<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false']" mode="M10" priority="1053">
+    <svrl:fired-rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false']" />
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:ActualAmount)" />
+      <xsl:when test="(../ram:ActualAmount)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:ActualAmount)">
+        <svrl:failed-assert test="(../ram:ActualAmount)">
           <xsl:attribute name="id">BR-31</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -348,9 +348,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)" />
+      <xsl:when test="(../ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">
+        <svrl:failed-assert test="(../ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">
           <xsl:attribute name="id">BR-32</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -363,9 +363,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Reason) or (ram:ReasonCode)" />
+      <xsl:when test="(../ram:Reason) or (../ram:ReasonCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Reason) or (ram:ReasonCode)">
+        <svrl:failed-assert test="(../ram:Reason) or (../ram:ReasonCode)">
           <xsl:attribute name="id">BR-33</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -393,9 +393,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Reason) or (ram:ReasonCode)" />
+      <xsl:when test="(../ram:Reason) or (../ram:ReasonCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Reason) or (ram:ReasonCode)">
+        <svrl:failed-assert test="(../ram:Reason) or (../ram:ReasonCode)">
           <xsl:attribute name="id">BR-CO-21</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -408,9 +408,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-01</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -423,9 +423,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-02</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -439,14 +439,14 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]" mode="M10" priority="1052">
-    <svrl:fired-rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]" />
+<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='true']" mode="M10" priority="1052">
+    <svrl:fired-rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='true']" />
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:ActualAmount)" />
+      <xsl:when test="(../ram:ActualAmount)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:ActualAmount)">
+        <svrl:failed-assert test="(../ram:ActualAmount)">
           <xsl:attribute name="id">BR-36</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -459,9 +459,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)" />
+      <xsl:when test="(../ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">
+        <svrl:failed-assert test="(../ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">
           <xsl:attribute name="id">BR-37</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -474,9 +474,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Reason) or (ram:ReasonCode)" />
+      <xsl:when test="(../ram:Reason) or (../ram:ReasonCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Reason) or (ram:ReasonCode)">
+        <svrl:failed-assert test="(../ram:Reason) or (../ram:ReasonCode)">
           <xsl:attribute name="id">BR-38</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -504,9 +504,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Reason) or (ram:ReasonCode)" />
+      <xsl:when test="(../ram:Reason) or (../ram:ReasonCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Reason) or (ram:ReasonCode)">
+        <svrl:failed-assert test="(../ram:Reason) or (../ram:ReasonCode)">
           <xsl:attribute name="id">BR-CO-22</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -519,9 +519,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-05</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -534,9 +534,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-06</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1468,14 +1468,14 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = false()]" mode="M10" priority="1048">
-    <svrl:fired-rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = false()]" />
+<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'false']" mode="M10" priority="1048">
+    <svrl:fired-rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'false']" />
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:ActualAmount)" />
+      <xsl:when test="(../ram:ActualAmount)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:ActualAmount)">
+        <svrl:failed-assert test="(../ram:ActualAmount)">
           <xsl:attribute name="id">BR-41</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1488,9 +1488,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Reason) or (ram:ReasonCode)" />
+      <xsl:when test="(../ram:Reason) or (../ram:ReasonCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Reason) or (ram:ReasonCode)">
+        <svrl:failed-assert test="(../ram:Reason) or (../ram:ReasonCode)">
           <xsl:attribute name="id">BR-42</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1518,9 +1518,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Reason) or (ram:ReasonCode)" />
+      <xsl:when test="(../ram:Reason) or (../ram:ReasonCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Reason) or (ram:ReasonCode)">
+        <svrl:failed-assert test="(../ram:Reason) or (../ram:ReasonCode)">
           <xsl:attribute name="id">BR-CO-23</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1533,9 +1533,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-24</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1548,9 +1548,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-25</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1564,14 +1564,14 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = true()]" mode="M10" priority="1047">
-    <svrl:fired-rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = true()]" />
+<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'true']" mode="M10" priority="1047">
+    <svrl:fired-rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'true']" />
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:ActualAmount)" />
+      <xsl:when test="(../ram:ActualAmount)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:ActualAmount)">
+        <svrl:failed-assert test="(../ram:ActualAmount)">
           <xsl:attribute name="id">BR-43</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1584,9 +1584,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Reason) or (ram:ReasonCode)" />
+      <xsl:when test="(../ram:Reason) or (../ram:ReasonCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Reason) or (ram:ReasonCode)">
+        <svrl:failed-assert test="(../ram:Reason) or (../ram:ReasonCode)">
           <xsl:attribute name="id">BR-44</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1614,9 +1614,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Reason) or (ram:ReasonCode)" />
+      <xsl:when test="(../ram:Reason) or (../ram:ReasonCode)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Reason) or (ram:ReasonCode)">
+        <svrl:failed-assert test="(../ram:Reason) or (../ram:ReasonCode)">
           <xsl:attribute name="id">BR-CO-24</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1629,9 +1629,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-27</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1644,9 +1644,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-28</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -4061,8 +4061,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument_Note" mode="M11" priority="1025">
-    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument_Note" />
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote" mode="M11" priority="1025">
+    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote" />
 
 		<!--ASSERT -->
 <xsl:choose>
@@ -10664,8 +10664,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:TypeCodeNoAttributes" mode="M11" priority="1008">
-    <svrl:fired-rule context="//ram:TypeCodeNoAttributes" />
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode" mode="M11" priority="1008">
+    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode" />
 
 		<!--ASSERT -->
 <xsl:choose>
@@ -10731,8 +10731,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-045] - @listID should not
-			be present</svrl:text>
+          <svrl:text>[CII-DT-045] - @listID should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10747,8 +10746,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-046] - @listAgencyID
-			should not be present</svrl:text>
+          <svrl:text>[CII-DT-046] - @listAgencyID should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10763,8 +10761,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-047] - @listVersionID
-			should not be present</svrl:text>
+          <svrl:text>[CII-DT-047] - @listVersionID should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10779,8 +10776,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-048] - @listURI should not
-			be present</svrl:text>
+          <svrl:text>[CII-DT-048] - @listURI should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
