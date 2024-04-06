@@ -213,7 +213,7 @@
     <assert test="$UBL-CR-180" flag="warning" id="UBL-CR-180">[UBL-CR-180]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CompanyLegalFormCode</assert>
     <assert test="$UBL-CR-181" flag="warning" id="UBL-CR-181">[UBL-CR-181]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity SoleProprietorshipIndicator</assert>
     <assert test="$UBL-CR-182" flag="warning" id="UBL-CR-182">[UBL-CR-182]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CompanyLiquidationStatusCode</assert>
-    <assert test="$UBL-CR-183" flag="warning" id="UBL-CR-183">[UBL-CR-183]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CorporationStockAmount</assert>
+    <assert test="$UBL-CR-183" flag="warning" id="UBL-CR-183">[UBL-CR-183]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CorporateStockAmount</assert>
     <assert test="$UBL-CR-184" flag="warning" id="UBL-CR-184">[UBL-CR-184]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity FullyPaidSharesIndicator</assert>
     <assert test="$UBL-CR-185" flag="warning" id="UBL-CR-185">[UBL-CR-185]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity RegistrationAddress</assert>
     <assert test="$UBL-CR-186" flag="warning" id="UBL-CR-186">[UBL-CR-186]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CorporateRegistrationScheme</assert>
@@ -277,7 +277,7 @@
     <assert test="$UBL-CR-244" flag="warning" id="UBL-CR-244">[UBL-CR-244]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CompanyLegalForm</assert>
     <assert test="$UBL-CR-245" flag="warning" id="UBL-CR-245">[UBL-CR-245]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity SoleProprietorshipIndicator</assert>
     <assert test="$UBL-CR-246" flag="warning" id="UBL-CR-246">[UBL-CR-246]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CompanyLiquidationStatusCode</assert>
-    <assert test="$UBL-CR-247" flag="warning" id="UBL-CR-247">[UBL-CR-247]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CorporationStockAmount</assert>
+    <assert test="$UBL-CR-247" flag="warning" id="UBL-CR-247">[UBL-CR-247]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CorporateStockAmount</assert>
     <assert test="$UBL-CR-248" flag="warning" id="UBL-CR-248">[UBL-CR-248]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity FullyPaidSharesIndicator</assert>
     <assert test="$UBL-CR-249" flag="warning" id="UBL-CR-249">[UBL-CR-249]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity RegistrationAddress</assert>
     <assert test="$UBL-CR-250" flag="warning" id="UBL-CR-250">[UBL-CR-250]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CorporateRegistrationScheme</assert>
@@ -312,7 +312,7 @@
     <assert test="$UBL-CR-279" flag="warning" id="UBL-CR-279">[UBL-CR-279]-A UBL invoice should not include the PayeeParty PartyLegalEntity CompanyLegalForm</assert>
     <assert test="$UBL-CR-280" flag="warning" id="UBL-CR-280">[UBL-CR-280]-A UBL invoice should not include the PayeeParty PartyLegalEntity SoleProprietorshipIndicator</assert>
     <assert test="$UBL-CR-281" flag="warning" id="UBL-CR-281">[UBL-CR-281]-A UBL invoice should not include the PayeeParty PartyLegalEntity CompanyLiquidationStatusCode</assert>
-    <assert test="$UBL-CR-282" flag="warning" id="UBL-CR-282">[UBL-CR-282]-A UBL invoice should not include the PayeeParty PartyLegalEntity CorporationStockAmount</assert>
+    <assert test="$UBL-CR-282" flag="warning" id="UBL-CR-282">[UBL-CR-282]-A UBL invoice should not include the PayeeParty PartyLegalEntity CorporateStockAmount</assert>
     <assert test="$UBL-CR-283" flag="warning" id="UBL-CR-283">[UBL-CR-283]-A UBL invoice should not include the PayeeParty PartyLegalEntity FullyPaidSharesIndicator</assert>
     <assert test="$UBL-CR-284" flag="warning" id="UBL-CR-284">[UBL-CR-284]-A UBL invoice should not include the PayeeParty PartyLegalEntity RegistrationAddress</assert>
     <assert test="$UBL-CR-285" flag="warning" id="UBL-CR-285">[UBL-CR-285]-A UBL invoice should not include the PayeeParty PartyLegalEntity CorporateRegistrationScheme</assert>
@@ -600,18 +600,18 @@
     <assert test="$UBL-CR-569" flag="warning" id="UBL-CR-569">[UBL-CR-569]-A UBL invoice should not include the InvoiceLine Item BrandName</assert>
     <assert test="$UBL-CR-570" flag="warning" id="UBL-CR-570">[UBL-CR-570]-A UBL invoice should not include the InvoiceLine Item ModelName</assert>
     <assert test="$UBL-CR-571" flag="warning" id="UBL-CR-571">[UBL-CR-571]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification ExtendedID</assert>
-    <assert test="$UBL-CR-572" flag="warning" id="UBL-CR-572">[UBL-CR-572]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification BareCodeSymbologyID</assert>
+    <assert test="$UBL-CR-572" flag="warning" id="UBL-CR-572">[UBL-CR-572]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification BarecodeSymbologyID</assert>
     <assert test="$UBL-CR-573" flag="warning" id="UBL-CR-573">[UBL-CR-573]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification PhysicalAttribute</assert>
     <assert test="$UBL-CR-574" flag="warning" id="UBL-CR-574">[UBL-CR-574]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification MeasurementDimension</assert>
     <assert test="$UBL-CR-575" flag="warning" id="UBL-CR-575">[UBL-CR-575]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification IssuerParty</assert>
     <assert test="$UBL-CR-576" flag="warning" id="UBL-CR-576">[UBL-CR-576]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification ExtendedID</assert>
-    <assert test="$UBL-CR-577" flag="warning" id="UBL-CR-577">[UBL-CR-577]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification BareCodeSymbologyID</assert>
+    <assert test="$UBL-CR-577" flag="warning" id="UBL-CR-577">[UBL-CR-577]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification BarecodeSymbologyID</assert>
     <assert test="$UBL-CR-578" flag="warning" id="UBL-CR-578">[UBL-CR-578]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification PhysicalAttribute</assert>
     <assert test="$UBL-CR-579" flag="warning" id="UBL-CR-579">[UBL-CR-579]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification MeasurementDimension</assert>
     <assert test="$UBL-CR-580" flag="warning" id="UBL-CR-580">[UBL-CR-580]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification IssuerParty</assert>
     <assert test="$UBL-CR-581" flag="warning" id="UBL-CR-581">[UBL-CR-581]-A UBL invoice should not include the InvoiceLine Item ManufacturersItemIdentification</assert>
     <assert test="$UBL-CR-582" flag="warning" id="UBL-CR-582">[UBL-CR-582]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification ExtendedID</assert>
-    <assert test="$UBL-CR-583" flag="warning" id="UBL-CR-583">[UBL-CR-583]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification BareCodeSymbologyID</assert>
+    <assert test="$UBL-CR-583" flag="warning" id="UBL-CR-583">[UBL-CR-583]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification BarecodeSymbologyID</assert>
     <assert test="$UBL-CR-584" flag="warning" id="UBL-CR-584">[UBL-CR-584]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification PhysicalAttribute</assert>
     <assert test="$UBL-CR-585" flag="warning" id="UBL-CR-585">[UBL-CR-585]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification MeasurementDimension</assert>
     <assert test="$UBL-CR-586" flag="warning" id="UBL-CR-586">[UBL-CR-586]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification IssuerParty</assert>
