@@ -4,7 +4,7 @@
     Licensed under European Union Public Licence (EUPL) version 1.2.
 
 -->
-<!--Schematron version 1.3.10 - Last update: 2023-04-08--><xsl:stylesheet xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:iso="http://purl.oclc.org/dsdl/schematron" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:saxon="http://saxon.sf.net/" xmlns:schold="http://www.ascc.net/xml/schematron" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+<!--Schematron version 1.3.12 - Last update: 2024-04-06--><xsl:stylesheet xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:iso="http://purl.oclc.org/dsdl/schematron" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:saxon="http://saxon.sf.net/" xmlns:schold="http://www.ascc.net/xml/schematron" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 <!--Implementers: please note that overriding process-prolog or process-root is 
     the preferred method for meta-stylesheets to use where possible. -->
 
@@ -1041,9 +1041,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)" />
+      <xsl:when test="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication[1]/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)">
+        <svrl:failed-assert test="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication[1]/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)">
           <xsl:attribute name="id">BR-62</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1056,9 +1056,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)" />
+      <xsl:when test="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication[1]/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)">
+        <svrl:failed-assert test="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication[1]/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)">
           <xsl:attribute name="id">BR-63</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -4061,8 +4061,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote" mode="M11" priority="1025">
-    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote" />
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument_Note" mode="M11" priority="1025">
+    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument_Note" />
 
 		<!--ASSERT -->
 <xsl:choose>
@@ -5067,7 +5067,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-101] - BrandOwnerTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-101] -BrandOwnerTradeParty should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -5082,7 +5082,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-102] - IncludedReferencedProduct should not be present</svrl:text>
+          <svrl:text>[CII-SR-102] -IncludedReferencedProduct should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -5097,7 +5097,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-103] - InformationNote should not be present</svrl:text>
+          <svrl:text>[CII-SR-103] - InformationNoteshould not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -5469,7 +5469,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-124] - BasisQuantityshould not be present</svrl:text>
+          <svrl:text>[CII-SR-124] - BasisQuantity should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8127,7 +8127,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-298] - LineID should not be present</svrl:text>
+          <svrl:text>[CII-SR-298] - LineID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8142,7 +8143,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-299] - DemandForecastReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-299] -
+			DemandForecastReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8157,7 +8159,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-300] - SupplyInstructionReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-300] -
+			SupplyInstructionReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8172,7 +8175,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-301] - PromotionalDealReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-301] -
+			PromotionalDealReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8187,7 +8191,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-302] - PriceListReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-302] -
+			PriceListReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8202,7 +8207,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-303] - LineID should not be present</svrl:text>
+          <svrl:text>[CII-SR-303] - LineID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8217,7 +8223,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-304] - RequisitionerReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-304] -
+			RequisitionerReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8232,7 +8239,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-305] - BuyerAgentTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-305] -
+			BuyerAgentTradeParty should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8247,7 +8255,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-306] - PurchaseConditionsReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-306] -
+			PurchaseConditionsReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8262,7 +8271,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-307] - Description should not be present</svrl:text>
+          <svrl:text>[CII-SR-307] - Description should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8277,7 +8287,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-448] - UltimateCustomerOrderReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-448] -
+			UltimateCustomerOrderReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8292,7 +8303,40 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-450] - Only one  buyer identifier should be present (either the ID or the Global ID)</svrl:text>
+          <svrl:text>[CII-SR-450] - Only one buyer
+			identifier should be present (either the ID or the Global ID)</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1">
+          <xsl:attribute name="id">CII-SR-459</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-SR-459] - SellerTradeParty
+			URIUniversalCommunication should exist maximum once</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1">
+          <xsl:attribute name="id">CII-SR-460</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-SR-460] - BuyerTradeParty
+			URIUniversalCommunication should exist maximum once</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8313,7 +8357,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-308] - RelatedSupplyChainConsignment should not be present</svrl:text>
+          <svrl:text>[CII-SR-308] -
+			RelatedSupplyChainConsignment should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8328,7 +8373,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-309] - RoleCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-309] - RoleCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8343,7 +8389,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-310] - Description should not be present</svrl:text>
+          <svrl:text>[CII-SR-310] - Description should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8358,7 +8405,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-311] - SpecifiedLegalOrganization should not be present</svrl:text>
+          <svrl:text>[CII-SR-311] -
+			SpecifiedLegalOrganization should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8373,7 +8421,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-312] - DefinedTradeContact should not be present</svrl:text>
+          <svrl:text>[CII-SR-312] - DefinedTradeContact
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8388,7 +8437,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-313] - URIUniversalCommunication should not be present</svrl:text>
+          <svrl:text>[CII-SR-313] -
+			URIUniversalCommunication should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8403,7 +8453,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-314] - SpecifiedTaxRegistration should not be present</svrl:text>
+          <svrl:text>[CII-SR-314] -
+			SpecifiedTaxRegistration should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8418,7 +8469,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-315] - EndPointURIUniversalCommunication should not be present</svrl:text>
+          <svrl:text>[CII-SR-315] -
+			EndPointURIUniversalCommunication should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8433,7 +8485,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-316] - LogoAssociatedSpecifiedBinaryFile should not be present</svrl:text>
+          <svrl:text>[CII-SR-316] -
+			LogoAssociatedSpecifiedBinaryFile should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8448,7 +8501,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-317] - UltimateShipToTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-317] -
+			UltimateShipToTradeParty should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8463,7 +8517,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-318] - ShipFromTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-318] - ShipFromTradeParty
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8478,7 +8533,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-319] - ActualDespatchSupplyChainEvent should not be present</svrl:text>
+          <svrl:text>[CII-SR-319] -
+			ActualDespatchSupplyChainEvent should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8493,7 +8549,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-320] - ActualPickUpSupplyChainEvent should not be present</svrl:text>
+          <svrl:text>[CII-SR-320] -
+			ActualPickUpSupplyChainEvent should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8508,7 +8565,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-321] - ID should not be present</svrl:text>
+          <svrl:text>[CII-SR-321] - ID should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8523,7 +8581,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-322] - DateTime should not be present</svrl:text>
+          <svrl:text>[CII-SR-322] - DateTime should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8538,7 +8597,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-323] - TypeCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-323] - TypeCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8553,7 +8613,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-324] - Description should not be present</svrl:text>
+          <svrl:text>[CII-SR-324] - Description should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8568,7 +8629,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-325] - DescriptionBinaryObject should not be present</svrl:text>
+          <svrl:text>[CII-SR-325] -
+			DescriptionBinaryObject should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8583,7 +8645,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-326] - UnitQuantity should not be present</svrl:text>
+          <svrl:text>[CII-SR-326] - UnitQuantity should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8598,7 +8661,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-327] - LatestOccurrenceDateTime should not be present</svrl:text>
+          <svrl:text>[CII-SR-327] -
+			LatestOccurrenceDateTime should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8613,7 +8677,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-328] - EarliestOccurrenceDateTime should not be present</svrl:text>
+          <svrl:text>[CII-SR-328] -
+			EarliestOccurrenceDateTime should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8628,7 +8693,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-329] - OccurrenceSpecifiedPeriod should not be present</svrl:text>
+          <svrl:text>[CII-SR-329] -
+			OccurrenceSpecifiedPeriod should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8643,7 +8709,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-330] - OccurrenceLogisticsLocation should not be present</svrl:text>
+          <svrl:text>[CII-SR-330] -
+			OccurrenceLogisticsLocation should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8658,7 +8725,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-331] - ActualReceiptSupplyChainEvent should not be present</svrl:text>
+          <svrl:text>[CII-SR-331] -
+			ActualReceiptSupplyChainEvent should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8673,7 +8741,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-332] - AdditionalReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-332] -
+			AdditionalReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8688,7 +8757,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-333] - LineID should not be present</svrl:text>
+          <svrl:text>[CII-SR-333] - LineID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8703,7 +8773,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-334] - LineID should not be present</svrl:text>
+          <svrl:text>[CII-SR-334] - LineID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8718,7 +8789,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-335] - DeliveryNoteReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-335] -
+			DeliveryNoteReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8733,7 +8805,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-336] - ConsumptionReportReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-336] -
+			ConsumptionReportReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8748,7 +8821,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-337] - PreviousDeliverySupplyChainEvent should not be present</svrl:text>
+          <svrl:text>[CII-SR-337] -
+			PreviousDeliverySupplyChainEvent should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8763,7 +8837,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-338] - PackingListReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-338] -
+			PackingListReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8778,7 +8853,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-449] - Only one delivery to location identifier should be present (either the ID or the Global ID)</svrl:text>
+          <svrl:text>[CII-SR-449] - Only one delivery
+			to location identifier should be present (either the ID or the Global ID)</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8799,7 +8875,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-339] - DuePayableAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-339] - DuePayableAmount
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8814,7 +8891,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-340] - CreditorReferenceTypeCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-340] -
+			CreditorReferenceTypeCode should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8829,7 +8907,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-341] - CreditorReferenceType should not be present</svrl:text>
+          <svrl:text>[CII-SR-341] -
+			CreditorReferenceType should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8844,7 +8923,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-342] - CreditorReferenceIssuerID should not be present</svrl:text>
+          <svrl:text>[CII-SR-342] -
+			CreditorReferenceIssuerID should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8859,7 +8939,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-344] - PaymentCurrencyCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-344] - PaymentCurrencyCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8874,7 +8955,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-345] - InvoiceIssuerReference should not be present</svrl:text>
+          <svrl:text>[CII-SR-345] -
+			InvoiceIssuerReference should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8889,7 +8971,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-346] - InvoiceDateTime should not be present</svrl:text>
+          <svrl:text>[CII-SR-346] - InvoiceDateTime
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8904,7 +8987,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-347] - NextInvoiceDateTime should not be present</svrl:text>
+          <svrl:text>[CII-SR-347] - NextInvoiceDateTime
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8919,7 +9003,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-348] - CreditReasonCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-348] - CreditReasonCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8934,7 +9019,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-349] - CreditReason should not be present</svrl:text>
+          <svrl:text>[CII-SR-349] - CreditReason should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8949,7 +9035,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-350] - InvoicerTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-350] - InvoicerTradeParty
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8964,7 +9051,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-351] - InvoiceeTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-351] - InvoiceeTradeParty
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8979,7 +9067,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-352] - RoleCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-352] - RoleCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8994,7 +9083,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-353] - Description should not be present</svrl:text>
+          <svrl:text>[CII-SR-353] - Description should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9009,7 +9099,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-354] - LegalClassificationCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-354] -
+			LegalClassificationCode should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9024,7 +9115,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-355] - Name should not be present</svrl:text>
+          <svrl:text>[CII-SR-355] - Name should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9039,7 +9131,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-356] - TradingBusinessName should not be present</svrl:text>
+          <svrl:text>[CII-SR-356] - TradingBusinessName
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9054,7 +9147,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-357] - PostalTradeAddress should not be present</svrl:text>
+          <svrl:text>[CII-SR-357] - PostalTradeAddress
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9069,7 +9163,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-358] - AuthorizedLegalRegistration should not be present</svrl:text>
+          <svrl:text>[CII-SR-358] -
+			AuthorizedLegalRegistration should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9084,7 +9179,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-359] - DefinedTradeContact should not be present</svrl:text>
+          <svrl:text>[CII-SR-359] - DefinedTradeContact
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9099,7 +9195,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-360] - PostalTradeAddress should not be present</svrl:text>
+          <svrl:text>[CII-SR-360] - PostalTradeAddress
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9114,7 +9211,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-361] - URIUniversalCommunication should not be present</svrl:text>
+          <svrl:text>[CII-SR-361] -
+			URIUniversalCommunication should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9129,7 +9227,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-362] - SpecifiedTaxRegistration should not be present</svrl:text>
+          <svrl:text>[CII-SR-362] -
+			SpecifiedTaxRegistration should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9144,7 +9243,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-363] - EndPointURIUniversalCommunication should not be present</svrl:text>
+          <svrl:text>[CII-SR-363] -
+			EndPointURIUniversalCommunication should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9159,7 +9259,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-364] - LogoAssociatedSpecifiedBinaryFile should not be present</svrl:text>
+          <svrl:text>[CII-SR-364] -
+			LogoAssociatedSpecifiedBinaryFile should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9174,7 +9275,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-451] - Only one payee identifier should be present (either the ID or the Global ID)</svrl:text>
+          <svrl:text>[CII-SR-451] - Only one payee
+			identifier should be present (either the ID or the Global ID)</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9189,7 +9291,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-365] - PayerTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-365] - PayerTradeParty
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9204,7 +9307,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-366] - TaxApplicableTradeCurrencyExchange should not be present</svrl:text>
+          <svrl:text>[CII-SR-366] -
+			TaxApplicableTradeCurrencyExchange should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9219,7 +9323,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-367] - InvoiceApplicableTradeCurrencyExchange should not be present</svrl:text>
+          <svrl:text>[CII-SR-367] -
+			InvoiceApplicableTradeCurrencyExchange should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9234,7 +9339,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-368] - PaymentApplicableTradeCurrencyExchange should not be present</svrl:text>
+          <svrl:text>[CII-SR-368] -
+			PaymentApplicableTradeCurrencyExchange should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9249,7 +9355,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-369] - PaymentChannelCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-369] - PaymentChannelCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9264,7 +9371,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-370] - GuaranteeMethodCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-370] - GuaranteeMethodCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9279,7 +9387,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-371] - PaymentMethodCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-371] - PaymentMethodCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9294,7 +9403,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-443] - ID should not be present</svrl:text>
+          <svrl:text>[CII-SR-443] - ID should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9309,7 +9419,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-372] - MicrochipIndicator should not be present</svrl:text>
+          <svrl:text>[CII-SR-372] - MicrochipIndicator
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9324,7 +9435,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-373] - TypeCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-373] - TypeCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9339,7 +9451,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-375] - ExpiryDate should not be present</svrl:text>
+          <svrl:text>[CII-SR-375] - ExpiryDate should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9354,7 +9467,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-376] - VerificationNumeric should not be present</svrl:text>
+          <svrl:text>[CII-SR-376] - VerificationNumeric
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9369,7 +9483,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-377] - ValidFromDateTime should not be present</svrl:text>
+          <svrl:text>[CII-SR-377] - ValidFromDateTime
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9384,7 +9499,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-378] - CreditLimitAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-378] - CreditLimitAmount
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9399,7 +9515,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-379] - CreditAvailableAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-379] -
+			CreditAvailableAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9414,7 +9531,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-380] - InterestRatePercent should not be present</svrl:text>
+          <svrl:text>[CII-SR-380] - InterestRatePercent
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9429,7 +9547,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-381] - Description should not be present</svrl:text>
+          <svrl:text>[CII-SR-381] - Description should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9444,7 +9563,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-382] - AccountName should not be present</svrl:text>
+          <svrl:text>[CII-SR-382] - AccountName should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9459,7 +9579,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-444] - ProprietaryID should not be present</svrl:text>
+          <svrl:text>[CII-SR-444] - ProprietaryID
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9474,7 +9595,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-384] - ClearingSystemName should not be present</svrl:text>
+          <svrl:text>[CII-SR-384] - ClearingSystemName
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9489,7 +9611,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-385] - Name should not be present</svrl:text>
+          <svrl:text>[CII-SR-385] - Name should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9504,7 +9627,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-386] - LocationFinancialInstitutionAddress should not be present</svrl:text>
+          <svrl:text>[CII-SR-386] -
+			LocationFinancialInstitutionAddress should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9519,7 +9643,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-388] - ID should not be present</svrl:text>
+          <svrl:text>[CII-SR-388] - ID should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9534,7 +9659,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-389] - SequenceNumeric should not be present</svrl:text>
+          <svrl:text>[CII-SR-389] - SequenceNumeric
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9549,7 +9675,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-390] - BasisQuantity should not be present</svrl:text>
+          <svrl:text>[CII-SR-390] - BasisQuantity
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9564,7 +9691,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-391] - PrepaidIndicator should not be present</svrl:text>
+          <svrl:text>[CII-SR-391] - PrepaidIndicator
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9579,7 +9707,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-392] - UnitBasisAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-392] - UnitBasisAmount
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9594,7 +9723,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-393] - TypeCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-393] - TypeCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9609,7 +9739,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-394] - ActualTradeCurrencyExchange should not be present</svrl:text>
+          <svrl:text>[CII-SR-394] -
+			ActualTradeCurrencyExchange should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9624,7 +9755,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-395] - SubtotalCalculatedTradeTax should not be present</svrl:text>
+          <svrl:text>[CII-SR-395] -
+			SubtotalCalculatedTradeTax should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9639,7 +9771,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-396] - SpecifiedLogisticsServiceCharge should not be present</svrl:text>
+          <svrl:text>[CII-SR-396] -
+			SpecifiedLogisticsServiceCharge should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9654,7 +9787,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-397] - ID should not be present</svrl:text>
+          <svrl:text>[CII-SR-397] - ID should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9669,7 +9803,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-398] - FromEventCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-398] - FromEventCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9684,7 +9819,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-399] - SettlementPeriodMeasure should not be present</svrl:text>
+          <svrl:text>[CII-SR-399] -
+			SettlementPeriodMeasure should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9699,7 +9835,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-400] - DateTime should not be present</svrl:text>
+          <svrl:text>[CII-SR-400] - DateTime should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9714,7 +9851,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-401] - TypeCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-401] - TypeCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9729,7 +9867,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-402] - InstructionTypeCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-402] - InstructionTypeCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9744,7 +9883,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-404] - PartialPaymentPercent should not be present</svrl:text>
+          <svrl:text>[CII-SR-404] -
+			PartialPaymentPercent should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9759,7 +9899,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-405] - PaymentMeansID should not be present</svrl:text>
+          <svrl:text>[CII-SR-405] - PaymentMeansID
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9774,7 +9915,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-406] - PartialPaymentAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-406] -
+			PartialPaymentAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9789,7 +9931,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-407] - ApplicableTradePaymentPenaltyTerms should not be present</svrl:text>
+          <svrl:text>[CII-SR-407] -
+			ApplicableTradePaymentPenaltyTerms should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9804,7 +9947,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-408] - ApplicableTradePaymentDiscountTerms should not be present</svrl:text>
+          <svrl:text>[CII-SR-408] -
+			ApplicableTradePaymentDiscountTerms should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9819,7 +9963,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-409] - PayeeTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-409] - PayeeTradeParty
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9834,7 +9979,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-421] - SpecifiedFinancialAdjustment should not be present</svrl:text>
+          <svrl:text>[CII-SR-421] -
+			SpecifiedFinancialAdjustment should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9849,7 +9995,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-422] - LineID should not be present</svrl:text>
+          <svrl:text>[CII-SR-422] - LineID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9864,7 +10011,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-423] - ProFormaInvoiceReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-423] -
+			ProFormaInvoiceReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9879,7 +10027,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-424] - LetterOfCreditReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-424] -
+			LetterOfCreditReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9894,7 +10043,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-425] - FactoringAgreementReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-425] -
+			FactoringAgreementReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9909,7 +10059,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-426] - FactoringListReferencedDocument should not be present</svrl:text>
+          <svrl:text>[CII-SR-426] -
+			FactoringListReferencedDocument should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9924,7 +10075,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-427] - PayableSpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-SR-427] -
+			PayableSpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9939,7 +10091,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-428] - SetTriggerCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-428] - SetTriggerCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9954,7 +10107,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-429] - TypeCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-429] - TypeCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9969,7 +10123,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-430] - AmountTypeCode should not be present</svrl:text>
+          <svrl:text>[CII-SR-430] - AmountTypeCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9984,7 +10139,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-431] - Name should not be present</svrl:text>
+          <svrl:text>[CII-SR-431] - Name should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -9999,7 +10155,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-432] - CostReferenceDimensionPattern should not be present</svrl:text>
+          <svrl:text>[CII-SR-432] -
+			CostReferenceDimensionPattern should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10014,7 +10171,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-433] - PurchaseSpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-SR-433] -
+			PurchaseSpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10029,7 +10187,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-434] - SalesSpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-SR-434] -
+			SalesSpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10044,7 +10203,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-435] - SpecifiedTradeSettlementFinancialCard should not be present</svrl:text>
+          <svrl:text>[CII-SR-435] -
+			SpecifiedTradeSettlementFinancialCard should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10059,7 +10219,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-436] - SpecifiedAdvancePayment should not be present</svrl:text>
+          <svrl:text>[CII-SR-436] -
+			SpecifiedAdvancePayment should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10074,7 +10235,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-437] - UltimatePayeeTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-SR-437] -
+			UltimatePayeeTradeParty should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10095,7 +10257,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-411] - InformationAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-411] - InformationAmount
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10110,7 +10273,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-412] - TotalDiscountAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-412] - TotalDiscountAmount
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10125,7 +10289,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-413] - TotalAllowanceChargeAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-413] -
+			TotalAllowanceChargeAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10140,7 +10305,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-414] - RetailValueExcludingTaxInformationAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-414] -
+			RetailValueExcludingTaxInformationAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10155,7 +10321,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-415] - TotalDepositFeeInformationAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-415] -
+			TotalDepositFeeInformationAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10170,7 +10337,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-416] - ProductValueExcludingTobaccoTaxInformationAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-416] -
+			ProductValueExcludingTobaccoTaxInformationAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10185,7 +10353,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-417] - TotalRetailValueInformationAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-417] -
+			TotalRetailValueInformationAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10200,7 +10369,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-418] - GrossLineTotalAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-418] -
+			GrossLineTotalAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10215,7 +10385,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-419] - NetLineTotalAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-419] - NetLineTotalAmount
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10230,7 +10401,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-420] - NetIncludingTaxesLineTotalAmount should not be present</svrl:text>
+          <svrl:text>[CII-SR-420] -
+			NetIncludingTaxesLineTotalAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10251,7 +10423,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-013] - languageID should not be present</svrl:text>
+          <svrl:text>[CII-DT-013] - languageID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10266,7 +10439,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-014] - languageLocaleID should not be present</svrl:text>
+          <svrl:text>[CII-DT-014] - languageLocaleID
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10281,7 +10455,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-438] - ValuationBreakdownStatement should not be present</svrl:text>
+          <svrl:text>[CII-SR-438] -
+			ValuationBreakdownStatement should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10302,7 +10477,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-004] - Value should not be present</svrl:text>
+          <svrl:text>[CII-SR-004] - Value should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10317,7 +10493,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-005] - SpecifiedDocumentVersion should not be present</svrl:text>
+          <svrl:text>[CII-SR-005] -
+			SpecifiedDocumentVersion should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10325,73 +10502,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:*[ends-with(name(), 'ID')]" mode="M11" priority="1011">
-    <svrl:fired-rule context="//ram:*[ends-with(name(), 'ID')]" />
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="not(@schemeName)" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="not(@schemeName)">
-          <xsl:attribute name="id">CII-DT-001</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[CII-DT-001] - schemeName should not be present</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="not(@schemeAgencyName)" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="not(@schemeAgencyName)">
-          <xsl:attribute name="id">CII-DT-002</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[CII-DT-002] - schemeAgencyName should not be present</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="not(@schemeDataURI)" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="not(@schemeDataURI)">
-          <xsl:attribute name="id">CII-DT-003</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[CII-DT-003] - schemeDataURI should not be present</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="not(@schemeURI)" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="not(@schemeURI)">
-          <xsl:attribute name="id">CII-DT-004</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[CII-DT-004] - schemeURI should not be present</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-    <xsl:apply-templates mode="M11" select="@*|*" />
-  </xsl:template>
-
-	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]" mode="M11" priority="1010">
+<xsl:template match="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]" mode="M11" priority="1011">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]" />
 
 		<!--ASSERT -->
@@ -10404,7 +10515,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-005] - schemeID should not be present</svrl:text>
+          <svrl:text>[CII-DT-005] - schemeID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10419,7 +10531,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-006] - schemeAgencyID should not be present</svrl:text>
+          <svrl:text>[CII-DT-006] - schemeAgencyID should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10434,7 +10547,78 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-007] - schemeVersionID should not be present</svrl:text>
+          <svrl:text>[CII-DT-007] - schemeVersionID
+			should not be present</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+    <xsl:apply-templates mode="M11" select="@*|*" />
+  </xsl:template>
+
+	<!--RULE -->
+<xsl:template match="//ram:*[ends-with(name(), 'ID')]" mode="M11" priority="1010">
+    <svrl:fired-rule context="//ram:*[ends-with(name(), 'ID')]" />
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(@schemeName)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(@schemeName)">
+          <xsl:attribute name="id">CII-DT-001</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-DT-001] - schemeName should not
+			be present</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(@schemeAgencyName)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(@schemeAgencyName)">
+          <xsl:attribute name="id">CII-DT-002</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-DT-002] - schemeAgencyName
+			should not be present</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(@schemeDataURI)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(@schemeDataURI)">
+          <xsl:attribute name="id">CII-DT-003</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-DT-003] - schemeDataURI should
+			not be present</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(@schemeURI)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(@schemeURI)">
+          <xsl:attribute name="id">CII-DT-004</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-DT-004] - schemeURI should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10455,7 +10639,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-008] - name should not be present</svrl:text>
+          <svrl:text>[CII-DT-008] - name should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10470,7 +10655,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-009] - listURI should not be present</svrl:text>
+          <svrl:text>[CII-DT-009] - listURI should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10478,8 +10664,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode" mode="M11" priority="1008">
-    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode" />
+<xsl:template match="//ram:TypeCodeNoAttributes" mode="M11" priority="1008">
+    <svrl:fired-rule context="//ram:TypeCodeNoAttributes" />
 
 		<!--ASSERT -->
 <xsl:choose>
@@ -10491,7 +10677,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-010] - listID should not be present</svrl:text>
+          <svrl:text>[CII-DT-010] - listID should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10506,7 +10693,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-011] - listAgencyID should not be present</svrl:text>
+          <svrl:text>[CII-DT-011] - listAgencyID should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10521,7 +10709,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-012] - listVersionID should not be present</svrl:text>
+          <svrl:text>[CII-DT-012] - listVersionID should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10542,7 +10731,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-045] - @listID should not be present</svrl:text>
+          <svrl:text>[CII-DT-045] - @listID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10557,7 +10747,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-046] - @listAgencyID should not be present</svrl:text>
+          <svrl:text>[CII-DT-046] - @listAgencyID
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10572,7 +10763,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-047] - @listVersionID should not be present</svrl:text>
+          <svrl:text>[CII-DT-047] - @listVersionID
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10587,7 +10779,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-048] - @listURI should not be present</svrl:text>
+          <svrl:text>[CII-DT-048] - @listURI should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10608,7 +10801,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-015] - URIID should not be present</svrl:text>
+          <svrl:text>[CII-DT-015] - URIID should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10623,7 +10817,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-016] - StatusCode should not be present</svrl:text>
+          <svrl:text>[CII-DT-016] - StatusCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10638,7 +10833,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-017] - CopyIndicator should not be present</svrl:text>
+          <svrl:text>[CII-DT-017] - CopyIndicator should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10653,7 +10849,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-018] - TypeCode should not be present</svrl:text>
+          <svrl:text>[CII-DT-018] - TypeCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10668,7 +10865,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-019] - GlobalID should not be present</svrl:text>
+          <svrl:text>[CII-DT-019] - GlobalID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10683,7 +10881,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-020] - RevisionID should not be present</svrl:text>
+          <svrl:text>[CII-DT-020] - RevisionID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10698,7 +10897,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-021] - Name should not be present</svrl:text>
+          <svrl:text>[CII-DT-021] - Name should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10713,7 +10913,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-022] - AttachmentBinaryObject should not be present</svrl:text>
+          <svrl:text>[CII-DT-022] -
+			AttachmentBinaryObject should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10728,7 +10929,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-023] - Information should not be present</svrl:text>
+          <svrl:text>[CII-DT-023] - Information should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10743,7 +10945,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-024] - ReferenceTypeCode should not be present</svrl:text>
+          <svrl:text>[CII-DT-024] - ReferenceTypeCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10758,7 +10961,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-025] - SectionName should not be present</svrl:text>
+          <svrl:text>[CII-DT-025] - SectionName should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10773,7 +10977,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-026] - PreviousRevisionID should not be present</svrl:text>
+          <svrl:text>[CII-DT-026] - PreviousRevisionID
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10788,7 +10993,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-027] - FormattedIssueDateTime should not be present</svrl:text>
+          <svrl:text>[CII-DT-027] -
+			FormattedIssueDateTime should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10803,7 +11009,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-028] - EffectiveSpecifiedPeriod should not be present</svrl:text>
+          <svrl:text>[CII-DT-028] -
+			EffectiveSpecifiedPeriod should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10818,7 +11025,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-029] - IssuerTradeParty should not be present</svrl:text>
+          <svrl:text>[CII-DT-029] - IssuerTradeParty
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10833,7 +11041,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-030] - AttachedSpecifiedBinaryFile should not be present</svrl:text>
+          <svrl:text>[CII-DT-030] -
+			AttachedSpecifiedBinaryFile should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10854,7 +11063,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-031] - currencyID should not be present</svrl:text>
+          <svrl:text>[CII-DT-031] - currencyID should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10869,7 +11079,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-032] - currencyCodeListVersionID should not be present</svrl:text>
+          <svrl:text>[CII-DT-032] -
+			currencyCodeListVersionID should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10890,7 +11101,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-033] - unitCode should not be present</svrl:text>
+          <svrl:text>[CII-DT-033] - unitCode should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10905,7 +11117,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-034] - unitCodeListID should not be present</svrl:text>
+          <svrl:text>[CII-DT-034] - unitCodeListID should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10920,7 +11133,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-035] - unitCodeListAgencyID should not be present</svrl:text>
+          <svrl:text>[CII-DT-035] - unitCodeListAgencyID
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10935,7 +11149,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-036] - unitCodeListAgencyName should not be present</svrl:text>
+          <svrl:text>[CII-DT-036] -
+			unitCodeListAgencyName should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10956,7 +11171,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-037] - TypeCode shall be 'VAT'</svrl:text>
+          <svrl:text>[CII-DT-037] - TypeCode shall be
+			'VAT'</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10971,7 +11187,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-038] - CalculatedRate should not be present</svrl:text>
+          <svrl:text>[CII-DT-038] - CalculatedRate
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -10986,7 +11203,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-039] - CalculationSequenceNumeric should not be present</svrl:text>
+          <svrl:text>[CII-DT-039] -
+			CalculationSequenceNumeric should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11001,7 +11219,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-040] - BasisQuantity should not be present</svrl:text>
+          <svrl:text>[CII-DT-040] - BasisQuantity
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11016,7 +11235,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-041] - BasisAmount should not be present</svrl:text>
+          <svrl:text>[CII-DT-041] - BasisAmount should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11031,7 +11251,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-042] - UnitBasisAmount should not be present</svrl:text>
+          <svrl:text>[CII-DT-042] - UnitBasisAmount
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11046,7 +11267,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-043] - LineTotalBasisAmount should not be present</svrl:text>
+          <svrl:text>[CII-DT-043] -
+			LineTotalBasisAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11061,7 +11283,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-044] - AllowanceChargeBasisAmount should not be present</svrl:text>
+          <svrl:text>[CII-DT-044] -
+			AllowanceChargeBasisAmount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11076,7 +11299,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-049] - CurrencyCode should not be present</svrl:text>
+          <svrl:text>[CII-DT-049] - CurrencyCode should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11091,7 +11315,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-050] - Jurisdiction should not be present</svrl:text>
+          <svrl:text>[CII-DT-050] - Jurisdiction should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11106,7 +11331,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-051] - CustomsDutyIndicator should not be present</svrl:text>
+          <svrl:text>[CII-DT-051] -
+			CustomsDutyIndicator should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11121,7 +11347,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-052] - ExemptionReasonCode should not be present</svrl:text>
+          <svrl:text>[CII-DT-052] - ExemptionReasonCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11136,7 +11363,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-098] - ExemptionReason should not be present</svrl:text>
+          <svrl:text>[CII-DT-098] - ExemptionReason
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11151,7 +11379,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-053] - TaxBasisAllowanceRate should not be present</svrl:text>
+          <svrl:text>[CII-DT-053] -
+			TaxBasisAllowanceRate should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11166,7 +11395,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-054] - TaxPointDate should not be present</svrl:text>
+          <svrl:text>[CII-DT-054] - TaxPointDate should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11181,7 +11411,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-055] - Type should not be present</svrl:text>
+          <svrl:text>[CII-DT-055] - Type should not be
+			present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11196,7 +11427,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-056] - InformationAmount should not be present</svrl:text>
+          <svrl:text>[CII-DT-056] - InformationAmount
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11211,7 +11443,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-057] - CategoryName should not be present</svrl:text>
+          <svrl:text>[CII-DT-057] - CategoryName should
+			not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11226,7 +11459,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-058] - DueDateTypeCode should not be present</svrl:text>
+          <svrl:text>[CII-DT-058] - DueDateTypeCode
+			should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11241,7 +11475,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-059] - @format should not be present</svrl:text>
+          <svrl:text>[CII-DT-059] - @format should not
+			be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11256,7 +11491,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-060] - SpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-DT-060] -
+			SpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11271,7 +11507,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-061] - ServiceSupplyTradeCountry should not be present</svrl:text>
+          <svrl:text>[CII-DT-061] -
+			ServiceSupplyTradeCountry should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11286,7 +11523,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-062] - BuyerRepayableTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-DT-062] -
+			BuyerRepayableTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11301,7 +11539,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-063] - SellerPayableTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-DT-063] -
+			SellerPayableTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11316,7 +11555,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-064] - SellerRefundableTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-DT-064] -
+			SellerRefundableTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11331,7 +11571,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-065] - BuyerDeductibleTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-DT-065] -
+			BuyerDeductibleTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11346,7 +11587,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-066] - BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
+          <svrl:text>[CII-DT-066] -
+			BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11361,7 +11603,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-067] - PlaceApplicableTradeLocation should not be present</svrl:text>
+          <svrl:text>[CII-DT-067] -
+			PlaceApplicableTradeLocation should not be present</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11382,7 +11625,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-068] - DateTime shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-068] - DateTime shall not be
+			used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11397,7 +11641,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-069] - DurationMeasure shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-069] - DurationMeasure shall
+			not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11412,7 +11657,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-070] - InclusiveIndicator shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-070] - InclusiveIndicator
+			shall not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11427,7 +11673,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-071] - Description shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-071] - Description shall not
+			be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11442,7 +11689,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-072] - DateTime shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-072] - DateTime shall not be
+			used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11457,7 +11705,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-073] - CompleteDateTime shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-073] - CompleteDateTime
+			shall not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11472,7 +11721,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-074] - OpenIndicator shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-074] - OpenIndicator shall
+			not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11487,7 +11737,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-075] - SeasonCode shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-075] - SeasonCode shall not
+			be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11502,7 +11753,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-076] - ID shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-076] - ID shall not be
+			used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11517,7 +11769,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-077] - Name shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-077] - Name shall not be
+			used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11532,7 +11785,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-078] - SequenceNumeric shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-078] - SequenceNumeric shall
+			not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11547,7 +11801,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-079] - StartDateFlexibilityCode shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-079] -
+			StartDateFlexibilityCode shall not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11562,7 +11817,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-080] - ContinuousIndicator shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-080] - ContinuousIndicator
+			shall not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11577,7 +11833,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-081] - PurposeCode shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-081] - PurposeCode shall not
+			be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11598,7 +11855,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-082] - ID shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-082] - ID shall not be
+			used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11613,7 +11871,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-083] - PostOfficeBox shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-083] - PostOfficeBox shall
+			not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11628,7 +11887,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-084] - BuildingName shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-084] - BuildingName shall
+			not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11643,7 +11903,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-086] - LineFour shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-086] - LineFour shall not be
+			used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11658,7 +11919,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-087] - LineFive shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-087] - LineFive shall not be
+			used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11673,7 +11935,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-088] - StreetName shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-088] - StreetName shall not
+			be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11688,7 +11951,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-089] - CitySubDivisionName shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-089] - CitySubDivisionName
+			shall not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11703,7 +11967,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-090] - CountryName shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-090] - CountryName shall not
+			be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11718,7 +11983,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-091] - CountrySubDivisionID shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-091] - CountrySubDivisionID
+			shall not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11733,7 +11999,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-092] - AttentionOf shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-092] - AttentionOf shall not
+			be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11748,7 +12015,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-093] - CareOf shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-093] - CareOf shall not be
+			used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11763,7 +12031,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-094] - BuildingNumber shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-094] - BuildingNumber shall
+			not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11778,7 +12047,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-095] - DepartmentName shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-095] - DepartmentName shall
+			not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11793,7 +12063,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-096] - AdditionalStreetName shall not be used.</svrl:text>
+          <svrl:text>[CII-DT-096] - AdditionalStreetName
+			shall not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -11814,7 +12085,8 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-DT-097] - Date time string with format attribute 102 shall be YYYYMMDD.</svrl:text>
+          <svrl:text>[CII-DT-097] - Date time string with
+			format attribute 102 shall be YYYYMMDD.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>

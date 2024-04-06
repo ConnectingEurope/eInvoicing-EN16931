@@ -4,7 +4,7 @@
     Licensed under European Union Public Licence (EUPL) version 1.2.
 
 -->
-<!--Schematron version 1.3.10 - Last update: 2023-04-08--><schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+<!--Schematron version 1.3.12 - Last update: 2024-04-06--><schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
   <ns prefix="rsm" uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" />
   <ns prefix="ccts" uri="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" />
   <ns prefix="udt" uri="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" />
@@ -449,9 +449,9 @@
       <assert id="CII-SR-098" flag="warning" test="not(ram:MSDSReferenceReferencedDocument)">[CII-SR-098] - MSDSReferenceReferencedDocument should not be present</assert>
       <assert id="CII-SR-099" flag="warning" test="not(ram:AdditionalReferenceReferencedDocument)">[CII-SR-099] - AdditionalReferenceReferencedDocument should not be present</assert>
       <assert id="CII-SR-100" flag="warning" test="not(ram:LegalRightsOwnerTradeParty)">[CII-SR-100] - LegalRightsOwnerTradeParty should not be present</assert>
-      <assert id="CII-SR-101" flag="warning" test="not(ram:BrandOwnerTradeParty)">[CII-SR-101] - BrandOwnerTradeParty should not be present</assert>
-      <assert id="CII-SR-102" flag="warning" test="not(ram:IncludedReferencedProduct)">[CII-SR-102] - IncludedReferencedProduct should not be present</assert>
-      <assert id="CII-SR-103" flag="warning" test="not(ram:InformationNote)">[CII-SR-103] - InformationNote should not be present</assert>
+      <assert id="CII-SR-101" flag="warning" test="not(ram:BrandOwnerTradeParty)">[CII-SR-101] -BrandOwnerTradeParty should not be present</assert>
+      <assert id="CII-SR-102" flag="warning" test="not(ram:IncludedReferencedProduct)">[CII-SR-102] -IncludedReferencedProduct should not be present</assert>
+      <assert id="CII-SR-103" flag="warning" test="not(ram:InformationNote)">[CII-SR-103] - InformationNoteshould not be present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:ApplicableProductCharacteristic">
       <assert id="CII-SR-069" flag="fatal" test="(count(ram:Description) =1)">[CII-SR-069] - Description should exist maximum once.</assert>
@@ -479,7 +479,7 @@
       <assert id="CII-SR-121" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:SequenceNumeric)">[CII-SR-121] - SequenceNumeric should not be present</assert>
       <assert id="CII-SR-122" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:CalculationPercent)">[CII-SR-122] - CalculationPercent should not be present</assert>
       <assert id="CII-SR-123" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:BasisAmount)">[CII-SR-123] - BasisAmount should not be present</assert>
-      <assert id="CII-SR-124" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:BasisQuantity)">[CII-SR-124] - BasisQuantityshould not be present</assert>
+      <assert id="CII-SR-124" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:BasisQuantity)">[CII-SR-124] - BasisQuantity should not be present</assert>
       <assert id="CII-SR-125" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:PrepaidIndicator)">[CII-SR-125] - PrepaidIndicator should not be present</assert>
       <assert id="CII-SR-126" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:UnitBasisAmount)">[CII-SR-126] - UnitBasisAmount should not be present</assert>
       <assert id="CII-SR-127" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ReasonCode)">[CII-SR-127] - ReasonCode should not be present</assert>
@@ -661,280 +661,524 @@
       <assert id="CII-SR-295" flag="warning" test="not(ram:BuyerOrderReferencedDocument/ram:LineID)">[CII-SR-295] - LineID should not be present</assert>
       <assert id="CII-SR-296" flag="warning" test="not(ram:QuotationReferencedDocument)">[CII-SR-296] - QuotationReferencedDocument should not be present</assert>
       <assert id="CII-SR-297" flag="warning" test="not(ram:OrderResponseReferencedDocument)">[CII-SR-297] - OrderResponseReferencedDocument should not be present</assert>
-      <assert id="CII-SR-298" flag="warning" test="not(ram:ContractReferencedDocument/ram:LineID)">[CII-SR-298] - LineID should not be present</assert>
-      <assert id="CII-SR-299" flag="warning" test="not(ram:DemandForecastReferencedDocument)">[CII-SR-299] - DemandForecastReferencedDocument should not be present</assert>
-      <assert id="CII-SR-300" flag="warning" test="not(ram:SupplyInstructionReferencedDocument)">[CII-SR-300] - SupplyInstructionReferencedDocument should not be present</assert>
-      <assert id="CII-SR-301" flag="warning" test="not(ram:PromotionalDealReferencedDocument)">[CII-SR-301] - PromotionalDealReferencedDocument should not be present</assert>
-      <assert id="CII-SR-302" flag="warning" test="not(ram:PriceListReferencedDocument)">[CII-SR-302] - PriceListReferencedDocument should not be present</assert>
-      <assert id="CII-SR-303" flag="warning" test="not(ram:AdditionalReferencedDocument/ram:LineID)">[CII-SR-303] - LineID should not be present</assert>
-      <assert id="CII-SR-304" flag="warning" test="not(ram:RequisitionerReferencedDocument)">[CII-SR-304] - RequisitionerReferencedDocument should not be present</assert>
-      <assert id="CII-SR-305" flag="warning" test="not(ram:BuyerAgentTradeParty)">[CII-SR-305] - BuyerAgentTradeParty should not be present</assert>
-      <assert id="CII-SR-306" flag="warning" test="not(ram:PurchaseConditionsReferencedDocument)">[CII-SR-306] - PurchaseConditionsReferencedDocument should not be present</assert>
-      <assert id="CII-SR-307" flag="warning" test="not(ram:SpecifiedProcuringProject/ram:Description)">[CII-SR-307] - Description should not be present</assert>
-      <assert id="CII-SR-448" flag="warning" test="not(ram:UltimateCustomerOrderReferencedDocument)">[CII-SR-448] - UltimateCustomerOrderReferencedDocument should not be present</assert>
-      <assert id="CII-SR-450" flag="warning" test="(not(ram:BuyerTradeParty/ram:ID) and ram:BuyerTradeParty/ram:GlobalID) or (ram:BuyerTradeParty/ram:ID and not(ram:BuyerTradeParty/ram:GlobalID)) or (not(ram:BuyerTradeParty/ram:ID) and not(ram:BuyerTradeParty/ram:GlobalID))">[CII-SR-450] - Only one  buyer identifier should be present (either the ID or the Global ID)</assert>
+      <assert id="CII-SR-298" flag="warning" test="not(ram:ContractReferencedDocument/ram:LineID)">[CII-SR-298] - LineID should not
+			be present</assert>
+      <assert id="CII-SR-299" flag="warning" test="not(ram:DemandForecastReferencedDocument)">[CII-SR-299] -
+			DemandForecastReferencedDocument should not be present</assert>
+      <assert id="CII-SR-300" flag="warning" test="not(ram:SupplyInstructionReferencedDocument)">[CII-SR-300] -
+			SupplyInstructionReferencedDocument should not be present</assert>
+      <assert id="CII-SR-301" flag="warning" test="not(ram:PromotionalDealReferencedDocument)">[CII-SR-301] -
+			PromotionalDealReferencedDocument should not be present</assert>
+      <assert id="CII-SR-302" flag="warning" test="not(ram:PriceListReferencedDocument)">[CII-SR-302] -
+			PriceListReferencedDocument should not be present</assert>
+      <assert id="CII-SR-303" flag="warning" test="not(ram:AdditionalReferencedDocument/ram:LineID)">[CII-SR-303] - LineID should not
+			be present</assert>
+      <assert id="CII-SR-304" flag="warning" test="not(ram:RequisitionerReferencedDocument)">[CII-SR-304] -
+			RequisitionerReferencedDocument should not be present</assert>
+      <assert id="CII-SR-305" flag="warning" test="not(ram:BuyerAgentTradeParty)">[CII-SR-305] -
+			BuyerAgentTradeParty should not be present</assert>
+      <assert id="CII-SR-306" flag="warning" test="not(ram:PurchaseConditionsReferencedDocument)">[CII-SR-306] -
+			PurchaseConditionsReferencedDocument should not be present</assert>
+      <assert id="CII-SR-307" flag="warning" test="not(ram:SpecifiedProcuringProject/ram:Description)">[CII-SR-307] - Description should
+			not be present</assert>
+      <assert id="CII-SR-448" flag="warning" test="not(ram:UltimateCustomerOrderReferencedDocument)">[CII-SR-448] -
+			UltimateCustomerOrderReferencedDocument should not be present</assert>
+      <assert id="CII-SR-450" flag="warning" test="(not(ram:BuyerTradeParty/ram:ID) and ram:BuyerTradeParty/ram:GlobalID) or (ram:BuyerTradeParty/ram:ID and not(ram:BuyerTradeParty/ram:GlobalID)) or (not(ram:BuyerTradeParty/ram:ID) and not(ram:BuyerTradeParty/ram:GlobalID))">[CII-SR-450] - Only one buyer
+			identifier should be present (either the ID or the Global ID)</assert>
+      <assert id="CII-SR-459" flag="warning" test="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1">[CII-SR-459] - SellerTradeParty
+			URIUniversalCommunication should exist maximum once</assert>
+      <assert id="CII-SR-460" flag="warning" test="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1">[CII-SR-460] - BuyerTradeParty
+			URIUniversalCommunication should exist maximum once</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery">
-      <assert id="CII-SR-308" flag="warning" test="not(ram:RelatedSupplyChainConsignment)">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>
-      <assert id="CII-SR-309" flag="warning" test="not(ram:ShipToTradeParty/ram:RoleCode)">[CII-SR-309] - RoleCode should not be present</assert>
-      <assert id="CII-SR-310" flag="warning" test="not(ram:ShipToTradeParty/ram:Description)">[CII-SR-310] - Description should not be present</assert>
-      <assert id="CII-SR-311" flag="warning" test="not(ram:ShipToTradeParty/ram:SpecifiedLegalOrganization)">[CII-SR-311] - SpecifiedLegalOrganization should not be present</assert>
-      <assert id="CII-SR-312" flag="warning" test="not(ram:ShipToTradeParty/ram:DefinedTradeContact)">[CII-SR-312] - DefinedTradeContact should not be present</assert>
-      <assert id="CII-SR-313" flag="warning" test="not(ram:ShipToTradeParty/ram:URIUniversalCommunication)">[CII-SR-313] - URIUniversalCommunication should not be present</assert>
-      <assert id="CII-SR-314" flag="warning" test="not(ram:ShipToTradeParty/ram:SpecifiedTaxRegistration)">[CII-SR-314] - SpecifiedTaxRegistration should not be present</assert>
-      <assert id="CII-SR-315" flag="warning" test="not(ram:ShipToTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-315] - EndPointURIUniversalCommunication should not be present</assert>
-      <assert id="CII-SR-316" flag="warning" test="not(ram:ShipToTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-316] - LogoAssociatedSpecifiedBinaryFile should not be present</assert>
-      <assert id="CII-SR-317" flag="warning" test="not(ram:UltimateShipToTradeParty)">[CII-SR-317] - UltimateShipToTradeParty should not be present</assert>
-      <assert id="CII-SR-318" flag="warning" test="not(ram:ShipFromTradeParty)">[CII-SR-318] - ShipFromTradeParty should not be present</assert>
-      <assert id="CII-SR-319" flag="warning" test="not(ram:ActualDespatchSupplyChainEvent)">[CII-SR-319] - ActualDespatchSupplyChainEvent should not be present</assert>
-      <assert id="CII-SR-320" flag="warning" test="not(ram:ActualPickUpSupplyChainEvent)">[CII-SR-320] - ActualPickUpSupplyChainEvent should not be present</assert>
-      <assert id="CII-SR-321" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:ID)">[CII-SR-321] - ID should not be present</assert>
-      <assert id="CII-SR-322" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceDateTime/udt:DateTime)">[CII-SR-322] - DateTime should not be present</assert>
-      <assert id="CII-SR-323" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:TypeCode)">[CII-SR-323] - TypeCode should not be present</assert>
-      <assert id="CII-SR-324" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:Description)">[CII-SR-324] - Description should not be present</assert>
-      <assert id="CII-SR-325" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:DescriptionBinaryObject)">[CII-SR-325] - DescriptionBinaryObject should not be present</assert>
-      <assert id="CII-SR-326" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:UnitQuantity)">[CII-SR-326] - UnitQuantity should not be present</assert>
-      <assert id="CII-SR-327" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:LatestOccurrenceDateTime)">[CII-SR-327] - LatestOccurrenceDateTime should not be present</assert>
-      <assert id="CII-SR-328" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:EarliestOccurrenceDateTime)">[CII-SR-328] - EarliestOccurrenceDateTime should not be present</assert>
-      <assert id="CII-SR-329" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceSpecifiedPeriod)">[CII-SR-329] - OccurrenceSpecifiedPeriod should not be present</assert>
-      <assert id="CII-SR-330" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceLogisticsLocation)">[CII-SR-330] - OccurrenceLogisticsLocation should not be present</assert>
-      <assert id="CII-SR-331" flag="warning" test="not(ram:ActualReceiptSupplyChainEvent)">[CII-SR-331] - ActualReceiptSupplyChainEvent should not be present</assert>
-      <assert id="CII-SR-332" flag="warning" test="not(ram:AdditionalReferencedDocument)">[CII-SR-332] - AdditionalReferencedDocument should not be present</assert>
-      <assert id="CII-SR-333" flag="warning" test="not(ram:DespatchAdviceReferencedDocument/ram:LineID)">[CII-SR-333] - LineID should not be present</assert>
-      <assert id="CII-SR-334" flag="warning" test="not(ram:DespatchAdviceReferencedDocument/ram:LineID)">[CII-SR-334] - LineID should not be present</assert>
-      <assert id="CII-SR-335" flag="warning" test="not(ram:DeliveryNoteReferencedDocument)">[CII-SR-335] - DeliveryNoteReferencedDocument should not be present</assert>
-      <assert id="CII-SR-336" flag="warning" test="not(ram:ConsumptionReportReferencedDocument)">[CII-SR-336] - ConsumptionReportReferencedDocument should not be present</assert>
-      <assert id="CII-SR-337" flag="warning" test="not(ram:PreviousDeliverySupplyChainEvent)">[CII-SR-337] - PreviousDeliverySupplyChainEvent should not be present</assert>
-      <assert id="CII-SR-338" flag="warning" test="not(ram:PackingListReferencedDocument)">[CII-SR-338] - PackingListReferencedDocument should not be present</assert>
-      <assert id="CII-SR-449" flag="warning" test="(not(ram:ShipToTradeParty/ram:ID) and ram:ShipToTradeParty/ram:GlobalID) or (ram:ShipToTradeParty/ram:ID and not(ram:ShipToTradeParty/ram:GlobalID)) or (not(ram:ShipToTradeParty/ram:ID) and not(ram:ShipToTradeParty/ram:GlobalID))">[CII-SR-449] - Only one delivery to location identifier should be present (either the ID or the Global ID)</assert>
+      <assert id="CII-SR-308" flag="warning" test="not(ram:RelatedSupplyChainConsignment)">[CII-SR-308] -
+			RelatedSupplyChainConsignment should not be present</assert>
+      <assert id="CII-SR-309" flag="warning" test="not(ram:ShipToTradeParty/ram:RoleCode)">[CII-SR-309] - RoleCode should not
+			be present</assert>
+      <assert id="CII-SR-310" flag="warning" test="not(ram:ShipToTradeParty/ram:Description)">[CII-SR-310] - Description should
+			not be present</assert>
+      <assert id="CII-SR-311" flag="warning" test="not(ram:ShipToTradeParty/ram:SpecifiedLegalOrganization)">[CII-SR-311] -
+			SpecifiedLegalOrganization should not be present</assert>
+      <assert id="CII-SR-312" flag="warning" test="not(ram:ShipToTradeParty/ram:DefinedTradeContact)">[CII-SR-312] - DefinedTradeContact
+			should not be present</assert>
+      <assert id="CII-SR-313" flag="warning" test="not(ram:ShipToTradeParty/ram:URIUniversalCommunication)">[CII-SR-313] -
+			URIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-314" flag="warning" test="not(ram:ShipToTradeParty/ram:SpecifiedTaxRegistration)">[CII-SR-314] -
+			SpecifiedTaxRegistration should not be present</assert>
+      <assert id="CII-SR-315" flag="warning" test="not(ram:ShipToTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-315] -
+			EndPointURIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-316" flag="warning" test="not(ram:ShipToTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-316] -
+			LogoAssociatedSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-317" flag="warning" test="not(ram:UltimateShipToTradeParty)">[CII-SR-317] -
+			UltimateShipToTradeParty should not be present</assert>
+      <assert id="CII-SR-318" flag="warning" test="not(ram:ShipFromTradeParty)">[CII-SR-318] - ShipFromTradeParty
+			should not be present</assert>
+      <assert id="CII-SR-319" flag="warning" test="not(ram:ActualDespatchSupplyChainEvent)">[CII-SR-319] -
+			ActualDespatchSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-320" flag="warning" test="not(ram:ActualPickUpSupplyChainEvent)">[CII-SR-320] -
+			ActualPickUpSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-321" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:ID)">[CII-SR-321] - ID should not be
+			present</assert>
+      <assert id="CII-SR-322" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceDateTime/udt:DateTime)">[CII-SR-322] - DateTime should not
+			be present</assert>
+      <assert id="CII-SR-323" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:TypeCode)">[CII-SR-323] - TypeCode should not
+			be present</assert>
+      <assert id="CII-SR-324" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:Description)">[CII-SR-324] - Description should
+			not be present</assert>
+      <assert id="CII-SR-325" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:DescriptionBinaryObject)">[CII-SR-325] -
+			DescriptionBinaryObject should not be present</assert>
+      <assert id="CII-SR-326" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:UnitQuantity)">[CII-SR-326] - UnitQuantity should
+			not be present</assert>
+      <assert id="CII-SR-327" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:LatestOccurrenceDateTime)">[CII-SR-327] -
+			LatestOccurrenceDateTime should not be present</assert>
+      <assert id="CII-SR-328" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:EarliestOccurrenceDateTime)">[CII-SR-328] -
+			EarliestOccurrenceDateTime should not be present</assert>
+      <assert id="CII-SR-329" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceSpecifiedPeriod)">[CII-SR-329] -
+			OccurrenceSpecifiedPeriod should not be present</assert>
+      <assert id="CII-SR-330" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceLogisticsLocation)">[CII-SR-330] -
+			OccurrenceLogisticsLocation should not be present</assert>
+      <assert id="CII-SR-331" flag="warning" test="not(ram:ActualReceiptSupplyChainEvent)">[CII-SR-331] -
+			ActualReceiptSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-332" flag="warning" test="not(ram:AdditionalReferencedDocument)">[CII-SR-332] -
+			AdditionalReferencedDocument should not be present</assert>
+      <assert id="CII-SR-333" flag="warning" test="not(ram:DespatchAdviceReferencedDocument/ram:LineID)">[CII-SR-333] - LineID should not
+			be present</assert>
+      <assert id="CII-SR-334" flag="warning" test="not(ram:DespatchAdviceReferencedDocument/ram:LineID)">[CII-SR-334] - LineID should not
+			be present</assert>
+      <assert id="CII-SR-335" flag="warning" test="not(ram:DeliveryNoteReferencedDocument)">[CII-SR-335] -
+			DeliveryNoteReferencedDocument should not be present</assert>
+      <assert id="CII-SR-336" flag="warning" test="not(ram:ConsumptionReportReferencedDocument)">[CII-SR-336] -
+			ConsumptionReportReferencedDocument should not be present</assert>
+      <assert id="CII-SR-337" flag="warning" test="not(ram:PreviousDeliverySupplyChainEvent)">[CII-SR-337] -
+			PreviousDeliverySupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-338" flag="warning" test="not(ram:PackingListReferencedDocument)">[CII-SR-338] -
+			PackingListReferencedDocument should not be present</assert>
+      <assert id="CII-SR-449" flag="warning" test="(not(ram:ShipToTradeParty/ram:ID) and ram:ShipToTradeParty/ram:GlobalID) or (ram:ShipToTradeParty/ram:ID and not(ram:ShipToTradeParty/ram:GlobalID)) or (not(ram:ShipToTradeParty/ram:ID) and not(ram:ShipToTradeParty/ram:GlobalID))">[CII-SR-449] - Only one delivery
+			to location identifier should be present (either the ID or the Global ID)</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement">
-      <assert id="CII-SR-339" flag="warning" test="not(ram:DuePayableAmount)">[CII-SR-339] - DuePayableAmount should not be present</assert>
-      <assert id="CII-SR-340" flag="warning" test="not(ram:CreditorReferenceTypeCode)">[CII-SR-340] - CreditorReferenceTypeCode should not be present</assert>
-      <assert id="CII-SR-341" flag="warning" test="not(ram:CreditorReferenceType)">[CII-SR-341] - CreditorReferenceType should not be present</assert>
-      <assert id="CII-SR-342" flag="warning" test="not(ram:CreditorReferenceIssuerID)">[CII-SR-342] - CreditorReferenceIssuerID should not be present</assert>
-      <assert id="CII-SR-344" flag="warning" test="not(ram:PaymentCurrencyCode)">[CII-SR-344] - PaymentCurrencyCode should not be present</assert>
-      <assert id="CII-SR-345" flag="warning" test="not(ram:InvoiceIssuerReference)">[CII-SR-345] - InvoiceIssuerReference should not be present</assert>
-      <assert id="CII-SR-346" flag="warning" test="not(ram:InvoiceDateTime)">[CII-SR-346] - InvoiceDateTime should not be present</assert>
-      <assert id="CII-SR-347" flag="warning" test="not(ram:NextInvoiceDateTime)">[CII-SR-347] - NextInvoiceDateTime should not be present</assert>
-      <assert id="CII-SR-348" flag="warning" test="not(ram:CreditReasonCode)">[CII-SR-348] - CreditReasonCode should not be present</assert>
-      <assert id="CII-SR-349" flag="warning" test="not(ram:CreditReason)">[CII-SR-349] - CreditReason should not be present</assert>
-      <assert id="CII-SR-350" flag="warning" test="not(ram:InvoicerTradeParty)">[CII-SR-350] - InvoicerTradeParty should not be present</assert>
-      <assert id="CII-SR-351" flag="warning" test="not(ram:InvoiceeTradeParty)">[CII-SR-351] - InvoiceeTradeParty should not be present</assert>
-      <assert id="CII-SR-352" flag="warning" test="not(ram:PayeeTradeParty/ram:RoleCode)">[CII-SR-352] - RoleCode should not be present</assert>
-      <assert id="CII-SR-353" flag="warning" test="not(ram:PayeeTradeParty/ram:Description)">[CII-SR-353] - Description should not be present</assert>
-      <assert id="CII-SR-354" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:LegalClassificationCode)">[CII-SR-354] - LegalClassificationCode should not be present</assert>
-      <assert id="CII-SR-355" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:Name)">[CII-SR-355] - Name should not be present</assert>
-      <assert id="CII-SR-356" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:TradingBusinessName)">[CII-SR-356] - TradingBusinessName should not be present</assert>
-      <assert id="CII-SR-357" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:PostalTradeAddress)">[CII-SR-357] - PostalTradeAddress should not be present</assert>
-      <assert id="CII-SR-358" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:AuthorizedLegalRegistration)">[CII-SR-358] - AuthorizedLegalRegistration should not be present</assert>
-      <assert id="CII-SR-359" flag="warning" test="not(ram:PayeeTradeParty/ram:DefinedTradeContact)">[CII-SR-359] - DefinedTradeContact should not be present</assert>
-      <assert id="CII-SR-360" flag="warning" test="not(ram:PayeeTradeParty/ram:PostalTradeAddress)">[CII-SR-360] - PostalTradeAddress should not be present</assert>
-      <assert id="CII-SR-361" flag="warning" test="not(ram:PayeeTradeParty/ram:URIUniversalCommunication)">[CII-SR-361] - URIUniversalCommunication should not be present</assert>
-      <assert id="CII-SR-362" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedTaxRegistration)">[CII-SR-362] - SpecifiedTaxRegistration should not be present</assert>
-      <assert id="CII-SR-363" flag="warning" test="not(ram:PayeeTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-363] - EndPointURIUniversalCommunication should not be present</assert>
-      <assert id="CII-SR-364" flag="warning" test="not(ram:PayeeTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-364] - LogoAssociatedSpecifiedBinaryFile should not be present</assert>
-      <assert id="CII-SR-451" flag="warning" test="(not(ram:PayeeTradeParty/ram:ID) and ram:PayeeTradeParty/ram:GlobalID) or (ram:PayeeTradeParty/ram:ID and not(ram:PayeeTradeParty/ram:GlobalID)) or (not(ram:PayeeTradeParty/ram:ID) and not(ram:PayeeTradeParty/ram:GlobalID))">[CII-SR-451] - Only one payee identifier should be present (either the ID or the Global ID)</assert>
-      <assert id="CII-SR-365" flag="warning" test="not(ram:PayerTradeParty)">[CII-SR-365] - PayerTradeParty should not be present</assert>
-      <assert id="CII-SR-366" flag="warning" test="not(ram:TaxApplicableTradeCurrencyExchange)">[CII-SR-366] - TaxApplicableTradeCurrencyExchange should not be present</assert>
-      <assert id="CII-SR-367" flag="warning" test="not(ram:InvoiceApplicableTradeCurrencyExchange)">[CII-SR-367] - InvoiceApplicableTradeCurrencyExchange should not be present</assert>
-      <assert id="CII-SR-368" flag="warning" test="not(ram:PaymentApplicableTradeCurrencyExchange)">[CII-SR-368] - PaymentApplicableTradeCurrencyExchange should not be present</assert>
-      <assert id="CII-SR-369" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentChannelCode)">[CII-SR-369] - PaymentChannelCode should not be present</assert>
-      <assert id="CII-SR-370" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:GuaranteeMethodCode)">[CII-SR-370] - GuaranteeMethodCode should not be present</assert>
-      <assert id="CII-SR-371" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentMethodCode)">[CII-SR-371] - PaymentMethodCode should not be present</assert>
-      <assert id="CII-SR-443" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ID)">[CII-SR-443] - ID should not be present</assert>
-      <assert id="CII-SR-372" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:MicrochipIndicator)">[CII-SR-372] - MicrochipIndicator should not be present</assert>
-      <assert id="CII-SR-373" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:TypeCode)">[CII-SR-373] - TypeCode should not be present</assert>
-      <assert id="CII-SR-375" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:ExpiryDate)">[CII-SR-375] - ExpiryDate should not be present</assert>
-      <assert id="CII-SR-376" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:VerificationNumeric)">[CII-SR-376] - VerificationNumeric should not be present</assert>
-      <assert id="CII-SR-377" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:ValidFromDateTime)">[CII-SR-377] - ValidFromDateTime should not be present</assert>
-      <assert id="CII-SR-378" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:CreditLimitAmount)">[CII-SR-378] - CreditLimitAmount should not be present</assert>
-      <assert id="CII-SR-379" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:CreditAvailableAmount)">[CII-SR-379] - CreditAvailableAmount should not be present</assert>
-      <assert id="CII-SR-380" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:InterestRatePercent)">[CII-SR-380] - InterestRatePercent should not be present</assert>
-      <assert id="CII-SR-381" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:Description)">[CII-SR-381] - Description should not be present</assert>
-      <assert id="CII-SR-382" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount/ram:AccountName)">[CII-SR-382] - AccountName should not be present</assert>
-      <assert id="CII-SR-444" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount/ram:ProprietaryID)">[CII-SR-444] - ProprietaryID should not be present</assert>
-      <assert id="CII-SR-384" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:ClearingSystemName)">[CII-SR-384] - ClearingSystemName should not be present</assert>
-      <assert id="CII-SR-385" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:Name)">[CII-SR-385] - Name should not be present</assert>
-      <assert id="CII-SR-386" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:LocationFinancialInstitutionAddress)">[CII-SR-386] - LocationFinancialInstitutionAddress should not be present</assert>
-      <assert id="CII-SR-388" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ID)">[CII-SR-388] - ID should not be present</assert>
-      <assert id="CII-SR-389" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:SequenceNumeric)">[CII-SR-389] - SequenceNumeric should not be present</assert>
-      <assert id="CII-SR-390" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:BasisQuantity)">[CII-SR-390] - BasisQuantity should not be present</assert>
-      <assert id="CII-SR-391" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:PrepaidIndicator)">[CII-SR-391] - PrepaidIndicator should not be present</assert>
-      <assert id="CII-SR-392" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:UnitBasisAmount)">[CII-SR-392] - UnitBasisAmount should not be present</assert>
-      <assert id="CII-SR-393" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:TypeCode)">[CII-SR-393] - TypeCode should not be present</assert>
-      <assert id="CII-SR-394" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ActualTradeCurrencyExchange)">[CII-SR-394] - ActualTradeCurrencyExchange should not be present</assert>
-      <assert id="CII-SR-395" flag="warning" test="not(ram:SubtotalCalculatedTradeTax)">[CII-SR-395] - SubtotalCalculatedTradeTax should not be present</assert>
-      <assert id="CII-SR-396" flag="warning" test="not(ram:SpecifiedLogisticsServiceCharge)">[CII-SR-396] - SpecifiedLogisticsServiceCharge should not be present</assert>
-      <assert id="CII-SR-397" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ID)">[CII-SR-397] - ID should not be present</assert>
-      <assert id="CII-SR-398" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:FromEventCode)">[CII-SR-398] - FromEventCode should not be present</assert>
-      <assert id="CII-SR-399" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:SettlementPeriodMeasure)">[CII-SR-399] - SettlementPeriodMeasure should not be present</assert>
-      <assert id="CII-SR-400" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:DueDateDateTime/udt:DateTime)">[CII-SR-400] - DateTime should not be present</assert>
-      <assert id="CII-SR-401" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:TypeCode)">[CII-SR-401] - TypeCode should not be present</assert>
-      <assert id="CII-SR-402" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:InstructionTypeCode)">[CII-SR-402] - InstructionTypeCode should not be present</assert>
-      <assert id="CII-SR-404" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PartialPaymentPercent)">[CII-SR-404] - PartialPaymentPercent should not be present</assert>
-      <assert id="CII-SR-405" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PaymentMeansID)">[CII-SR-405] - PaymentMeansID should not be present</assert>
-      <assert id="CII-SR-406" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PartialPaymentAmount)">[CII-SR-406] - PartialPaymentAmount should not be present</assert>
-      <assert id="CII-SR-407" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ApplicableTradePaymentPenaltyTerms)">[CII-SR-407] - ApplicableTradePaymentPenaltyTerms should not be present</assert>
-      <assert id="CII-SR-408" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ApplicableTradePaymentDiscountTerms)">[CII-SR-408] - ApplicableTradePaymentDiscountTerms should not be present</assert>
-      <assert id="CII-SR-409" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PayeeTradeParty)">[CII-SR-409] - PayeeTradeParty should not be present</assert>
-      <assert id="CII-SR-421" flag="warning" test="not(ram:SpecifiedFinancialAdjustment)">[CII-SR-421] - SpecifiedFinancialAdjustment should not be present</assert>
-      <assert id="CII-SR-422" flag="warning" test="not(ram:InvoiceReferencedDocument/ram:LineID)">[CII-SR-422] - LineID should not be present</assert>
-      <assert id="CII-SR-423" flag="warning" test="not(ram:ProFormaInvoiceReferencedDocument)">[CII-SR-423] - ProFormaInvoiceReferencedDocument should not be present</assert>
-      <assert id="CII-SR-424" flag="warning" test="not(ram:LetterOfCreditReferencedDocument)">[CII-SR-424] - LetterOfCreditReferencedDocument should not be present</assert>
-      <assert id="CII-SR-425" flag="warning" test="not(ram:FactoringAgreementReferencedDocument)">[CII-SR-425] - FactoringAgreementReferencedDocument should not be present</assert>
-      <assert id="CII-SR-426" flag="warning" test="not(ram:FactoringListReferencedDocument)">[CII-SR-426] - FactoringListReferencedDocument should not be present</assert>
-      <assert id="CII-SR-427" flag="warning" test="not(ram:PayableSpecifiedTradeAccountingAccount)">[CII-SR-427] - PayableSpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-SR-428" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:SetTriggerCode)">[CII-SR-428] - SetTriggerCode should not be present</assert>
-      <assert id="CII-SR-429" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:TypeCode)">[CII-SR-429] - TypeCode should not be present</assert>
-      <assert id="CII-SR-430" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:AmountTypeCode)">[CII-SR-430] - AmountTypeCode should not be present</assert>
-      <assert id="CII-SR-431" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:Name)">[CII-SR-431] - Name should not be present</assert>
-      <assert id="CII-SR-432" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:CostReferenceDimensionPattern)">[CII-SR-432] - CostReferenceDimensionPattern should not be present</assert>
-      <assert id="CII-SR-433" flag="warning" test="not(ram:PurchaseSpecifiedTradeAccountingAccount)">[CII-SR-433] - PurchaseSpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-SR-434" flag="warning" test="not(ram:SalesSpecifiedTradeAccountingAccount)">[CII-SR-434] - SalesSpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-SR-435" flag="warning" test="not(ram:SpecifiedTradeSettlementFinancialCard)">[CII-SR-435] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
-      <assert id="CII-SR-436" flag="warning" test="not(ram:SpecifiedAdvancePayment)">[CII-SR-436] - SpecifiedAdvancePayment should not be present</assert>
-      <assert id="CII-SR-437" flag="warning" test="not(ram:UltimatePayeeTradeParty)">[CII-SR-437] - UltimatePayeeTradeParty should not be present</assert>
+      <assert id="CII-SR-339" flag="warning" test="not(ram:DuePayableAmount)">[CII-SR-339] - DuePayableAmount
+			should not be present</assert>
+      <assert id="CII-SR-340" flag="warning" test="not(ram:CreditorReferenceTypeCode)">[CII-SR-340] -
+			CreditorReferenceTypeCode should not be present</assert>
+      <assert id="CII-SR-341" flag="warning" test="not(ram:CreditorReferenceType)">[CII-SR-341] -
+			CreditorReferenceType should not be present</assert>
+      <assert id="CII-SR-342" flag="warning" test="not(ram:CreditorReferenceIssuerID)">[CII-SR-342] -
+			CreditorReferenceIssuerID should not be present</assert>
+      <assert id="CII-SR-344" flag="warning" test="not(ram:PaymentCurrencyCode)">[CII-SR-344] - PaymentCurrencyCode
+			should not be present</assert>
+      <assert id="CII-SR-345" flag="warning" test="not(ram:InvoiceIssuerReference)">[CII-SR-345] -
+			InvoiceIssuerReference should not be present</assert>
+      <assert id="CII-SR-346" flag="warning" test="not(ram:InvoiceDateTime)">[CII-SR-346] - InvoiceDateTime
+			should not be present</assert>
+      <assert id="CII-SR-347" flag="warning" test="not(ram:NextInvoiceDateTime)">[CII-SR-347] - NextInvoiceDateTime
+			should not be present</assert>
+      <assert id="CII-SR-348" flag="warning" test="not(ram:CreditReasonCode)">[CII-SR-348] - CreditReasonCode
+			should not be present</assert>
+      <assert id="CII-SR-349" flag="warning" test="not(ram:CreditReason)">[CII-SR-349] - CreditReason should
+			not be present</assert>
+      <assert id="CII-SR-350" flag="warning" test="not(ram:InvoicerTradeParty)">[CII-SR-350] - InvoicerTradeParty
+			should not be present</assert>
+      <assert id="CII-SR-351" flag="warning" test="not(ram:InvoiceeTradeParty)">[CII-SR-351] - InvoiceeTradeParty
+			should not be present</assert>
+      <assert id="CII-SR-352" flag="warning" test="not(ram:PayeeTradeParty/ram:RoleCode)">[CII-SR-352] - RoleCode should not
+			be present</assert>
+      <assert id="CII-SR-353" flag="warning" test="not(ram:PayeeTradeParty/ram:Description)">[CII-SR-353] - Description should
+			not be present</assert>
+      <assert id="CII-SR-354" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:LegalClassificationCode)">[CII-SR-354] -
+			LegalClassificationCode should not be present</assert>
+      <assert id="CII-SR-355" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:Name)">[CII-SR-355] - Name should not be
+			present</assert>
+      <assert id="CII-SR-356" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:TradingBusinessName)">[CII-SR-356] - TradingBusinessName
+			should not be present</assert>
+      <assert id="CII-SR-357" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:PostalTradeAddress)">[CII-SR-357] - PostalTradeAddress
+			should not be present</assert>
+      <assert id="CII-SR-358" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:AuthorizedLegalRegistration)">[CII-SR-358] -
+			AuthorizedLegalRegistration should not be present</assert>
+      <assert id="CII-SR-359" flag="warning" test="not(ram:PayeeTradeParty/ram:DefinedTradeContact)">[CII-SR-359] - DefinedTradeContact
+			should not be present</assert>
+      <assert id="CII-SR-360" flag="warning" test="not(ram:PayeeTradeParty/ram:PostalTradeAddress)">[CII-SR-360] - PostalTradeAddress
+			should not be present</assert>
+      <assert id="CII-SR-361" flag="warning" test="not(ram:PayeeTradeParty/ram:URIUniversalCommunication)">[CII-SR-361] -
+			URIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-362" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedTaxRegistration)">[CII-SR-362] -
+			SpecifiedTaxRegistration should not be present</assert>
+      <assert id="CII-SR-363" flag="warning" test="not(ram:PayeeTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-363] -
+			EndPointURIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-364" flag="warning" test="not(ram:PayeeTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-364] -
+			LogoAssociatedSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-451" flag="warning" test="(not(ram:PayeeTradeParty/ram:ID) and ram:PayeeTradeParty/ram:GlobalID) or (ram:PayeeTradeParty/ram:ID and not(ram:PayeeTradeParty/ram:GlobalID)) or (not(ram:PayeeTradeParty/ram:ID) and not(ram:PayeeTradeParty/ram:GlobalID))">[CII-SR-451] - Only one payee
+			identifier should be present (either the ID or the Global ID)</assert>
+      <assert id="CII-SR-365" flag="warning" test="not(ram:PayerTradeParty)">[CII-SR-365] - PayerTradeParty
+			should not be present</assert>
+      <assert id="CII-SR-366" flag="warning" test="not(ram:TaxApplicableTradeCurrencyExchange)">[CII-SR-366] -
+			TaxApplicableTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-367" flag="warning" test="not(ram:InvoiceApplicableTradeCurrencyExchange)">[CII-SR-367] -
+			InvoiceApplicableTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-368" flag="warning" test="not(ram:PaymentApplicableTradeCurrencyExchange)">[CII-SR-368] -
+			PaymentApplicableTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-369" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentChannelCode)">[CII-SR-369] - PaymentChannelCode
+			should not be present</assert>
+      <assert id="CII-SR-370" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:GuaranteeMethodCode)">[CII-SR-370] - GuaranteeMethodCode
+			should not be present</assert>
+      <assert id="CII-SR-371" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentMethodCode)">[CII-SR-371] - PaymentMethodCode
+			should not be present</assert>
+      <assert id="CII-SR-443" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ID)">[CII-SR-443] - ID should not be
+			present</assert>
+      <assert id="CII-SR-372" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:MicrochipIndicator)">[CII-SR-372] - MicrochipIndicator
+			should not be present</assert>
+      <assert id="CII-SR-373" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:TypeCode)">[CII-SR-373] - TypeCode should not
+			be present</assert>
+      <assert id="CII-SR-375" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:ExpiryDate)">[CII-SR-375] - ExpiryDate should
+			not be present</assert>
+      <assert id="CII-SR-376" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:VerificationNumeric)">[CII-SR-376] - VerificationNumeric
+			should not be present</assert>
+      <assert id="CII-SR-377" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:ValidFromDateTime)">[CII-SR-377] - ValidFromDateTime
+			should not be present</assert>
+      <assert id="CII-SR-378" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:CreditLimitAmount)">[CII-SR-378] - CreditLimitAmount
+			should not be present</assert>
+      <assert id="CII-SR-379" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:CreditAvailableAmount)">[CII-SR-379] -
+			CreditAvailableAmount should not be present</assert>
+      <assert id="CII-SR-380" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:InterestRatePercent)">[CII-SR-380] - InterestRatePercent
+			should not be present</assert>
+      <assert id="CII-SR-381" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:Description)">[CII-SR-381] - Description should
+			not be present</assert>
+      <assert id="CII-SR-382" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount/ram:AccountName)">[CII-SR-382] - AccountName should
+			not be present</assert>
+      <assert id="CII-SR-444" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount/ram:ProprietaryID)">[CII-SR-444] - ProprietaryID
+			should not be present</assert>
+      <assert id="CII-SR-384" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:ClearingSystemName)">[CII-SR-384] - ClearingSystemName
+			should not be present</assert>
+      <assert id="CII-SR-385" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:Name)">[CII-SR-385] - Name should not be
+			present</assert>
+      <assert id="CII-SR-386" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:LocationFinancialInstitutionAddress)">[CII-SR-386] -
+			LocationFinancialInstitutionAddress should not be present</assert>
+      <assert id="CII-SR-388" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ID)">[CII-SR-388] - ID should not be
+			present</assert>
+      <assert id="CII-SR-389" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:SequenceNumeric)">[CII-SR-389] - SequenceNumeric
+			should not be present</assert>
+      <assert id="CII-SR-390" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:BasisQuantity)">[CII-SR-390] - BasisQuantity
+			should not be present</assert>
+      <assert id="CII-SR-391" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:PrepaidIndicator)">[CII-SR-391] - PrepaidIndicator
+			should not be present</assert>
+      <assert id="CII-SR-392" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:UnitBasisAmount)">[CII-SR-392] - UnitBasisAmount
+			should not be present</assert>
+      <assert id="CII-SR-393" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:TypeCode)">[CII-SR-393] - TypeCode should not
+			be present</assert>
+      <assert id="CII-SR-394" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ActualTradeCurrencyExchange)">[CII-SR-394] -
+			ActualTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-395" flag="warning" test="not(ram:SubtotalCalculatedTradeTax)">[CII-SR-395] -
+			SubtotalCalculatedTradeTax should not be present</assert>
+      <assert id="CII-SR-396" flag="warning" test="not(ram:SpecifiedLogisticsServiceCharge)">[CII-SR-396] -
+			SpecifiedLogisticsServiceCharge should not be present</assert>
+      <assert id="CII-SR-397" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ID)">[CII-SR-397] - ID should not be
+			present</assert>
+      <assert id="CII-SR-398" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:FromEventCode)">[CII-SR-398] - FromEventCode
+			should not be present</assert>
+      <assert id="CII-SR-399" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:SettlementPeriodMeasure)">[CII-SR-399] -
+			SettlementPeriodMeasure should not be present</assert>
+      <assert id="CII-SR-400" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:DueDateDateTime/udt:DateTime)">[CII-SR-400] - DateTime should not
+			be present</assert>
+      <assert id="CII-SR-401" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:TypeCode)">[CII-SR-401] - TypeCode should not
+			be present</assert>
+      <assert id="CII-SR-402" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:InstructionTypeCode)">[CII-SR-402] - InstructionTypeCode
+			should not be present</assert>
+      <assert id="CII-SR-404" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PartialPaymentPercent)">[CII-SR-404] -
+			PartialPaymentPercent should not be present</assert>
+      <assert id="CII-SR-405" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PaymentMeansID)">[CII-SR-405] - PaymentMeansID
+			should not be present</assert>
+      <assert id="CII-SR-406" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PartialPaymentAmount)">[CII-SR-406] -
+			PartialPaymentAmount should not be present</assert>
+      <assert id="CII-SR-407" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ApplicableTradePaymentPenaltyTerms)">[CII-SR-407] -
+			ApplicableTradePaymentPenaltyTerms should not be present</assert>
+      <assert id="CII-SR-408" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ApplicableTradePaymentDiscountTerms)">[CII-SR-408] -
+			ApplicableTradePaymentDiscountTerms should not be present</assert>
+      <assert id="CII-SR-409" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PayeeTradeParty)">[CII-SR-409] - PayeeTradeParty
+			should not be present</assert>
+      <assert id="CII-SR-421" flag="warning" test="not(ram:SpecifiedFinancialAdjustment)">[CII-SR-421] -
+			SpecifiedFinancialAdjustment should not be present</assert>
+      <assert id="CII-SR-422" flag="warning" test="not(ram:InvoiceReferencedDocument/ram:LineID)">[CII-SR-422] - LineID should not
+			be present</assert>
+      <assert id="CII-SR-423" flag="warning" test="not(ram:ProFormaInvoiceReferencedDocument)">[CII-SR-423] -
+			ProFormaInvoiceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-424" flag="warning" test="not(ram:LetterOfCreditReferencedDocument)">[CII-SR-424] -
+			LetterOfCreditReferencedDocument should not be present</assert>
+      <assert id="CII-SR-425" flag="warning" test="not(ram:FactoringAgreementReferencedDocument)">[CII-SR-425] -
+			FactoringAgreementReferencedDocument should not be present</assert>
+      <assert id="CII-SR-426" flag="warning" test="not(ram:FactoringListReferencedDocument)">[CII-SR-426] -
+			FactoringListReferencedDocument should not be present</assert>
+      <assert id="CII-SR-427" flag="warning" test="not(ram:PayableSpecifiedTradeAccountingAccount)">[CII-SR-427] -
+			PayableSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-428" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:SetTriggerCode)">[CII-SR-428] - SetTriggerCode
+			should not be present</assert>
+      <assert id="CII-SR-429" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:TypeCode)">[CII-SR-429] - TypeCode should not
+			be present</assert>
+      <assert id="CII-SR-430" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:AmountTypeCode)">[CII-SR-430] - AmountTypeCode
+			should not be present</assert>
+      <assert id="CII-SR-431" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:Name)">[CII-SR-431] - Name should not be
+			present</assert>
+      <assert id="CII-SR-432" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:CostReferenceDimensionPattern)">[CII-SR-432] -
+			CostReferenceDimensionPattern should not be present</assert>
+      <assert id="CII-SR-433" flag="warning" test="not(ram:PurchaseSpecifiedTradeAccountingAccount)">[CII-SR-433] -
+			PurchaseSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-434" flag="warning" test="not(ram:SalesSpecifiedTradeAccountingAccount)">[CII-SR-434] -
+			SalesSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-435" flag="warning" test="not(ram:SpecifiedTradeSettlementFinancialCard)">[CII-SR-435] -
+			SpecifiedTradeSettlementFinancialCard should not be present</assert>
+      <assert id="CII-SR-436" flag="warning" test="not(ram:SpecifiedAdvancePayment)">[CII-SR-436] -
+			SpecifiedAdvancePayment should not be present</assert>
+      <assert id="CII-SR-437" flag="warning" test="not(ram:UltimatePayeeTradeParty)">[CII-SR-437] -
+			UltimatePayeeTradeParty should not be present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation">
-      <assert id="CII-SR-411" flag="warning" test="not(ram:InformationAmount)">[CII-SR-411] - InformationAmount should not be present</assert>
-      <assert id="CII-SR-412" flag="warning" test="not(ram:TotalDiscountAmount)">[CII-SR-412] - TotalDiscountAmount should not be present</assert>
-      <assert id="CII-SR-413" flag="warning" test="not(ram:TotalAllowanceChargeAmount)">[CII-SR-413] - TotalAllowanceChargeAmount should not be present</assert>
-      <assert id="CII-SR-414" flag="warning" test="not(ram:RetailValueExcludingTaxInformationAmount)">[CII-SR-414] - RetailValueExcludingTaxInformationAmount should not be present</assert>
-      <assert id="CII-SR-415" flag="warning" test="not(ram:TotalDepositFeeInformationAmount)">[CII-SR-415] - TotalDepositFeeInformationAmount should not be present</assert>
-      <assert id="CII-SR-416" flag="warning" test="not(ram:ProductValueExcludingTobaccoTaxInformationAmount)">[CII-SR-416] - ProductValueExcludingTobaccoTaxInformationAmount should not be present</assert>
-      <assert id="CII-SR-417" flag="warning" test="not(ram:TotalRetailValueInformationAmount)">[CII-SR-417] - TotalRetailValueInformationAmount should not be present</assert>
-      <assert id="CII-SR-418" flag="warning" test="not(ram:GrossLineTotalAmount)">[CII-SR-418] - GrossLineTotalAmount should not be present</assert>
-      <assert id="CII-SR-419" flag="warning" test="not(ram:NetLineTotalAmount)">[CII-SR-419] - NetLineTotalAmount should not be present</assert>
-      <assert id="CII-SR-420" flag="warning" test="not(ram:NetIncludingTaxesLineTotalAmount)">[CII-SR-420] - NetIncludingTaxesLineTotalAmount should not be present</assert>
+      <assert id="CII-SR-411" flag="warning" test="not(ram:InformationAmount)">[CII-SR-411] - InformationAmount
+			should not be present</assert>
+      <assert id="CII-SR-412" flag="warning" test="not(ram:TotalDiscountAmount)">[CII-SR-412] - TotalDiscountAmount
+			should not be present</assert>
+      <assert id="CII-SR-413" flag="warning" test="not(ram:TotalAllowanceChargeAmount)">[CII-SR-413] -
+			TotalAllowanceChargeAmount should not be present</assert>
+      <assert id="CII-SR-414" flag="warning" test="not(ram:RetailValueExcludingTaxInformationAmount)">[CII-SR-414] -
+			RetailValueExcludingTaxInformationAmount should not be present</assert>
+      <assert id="CII-SR-415" flag="warning" test="not(ram:TotalDepositFeeInformationAmount)">[CII-SR-415] -
+			TotalDepositFeeInformationAmount should not be present</assert>
+      <assert id="CII-SR-416" flag="warning" test="not(ram:ProductValueExcludingTobaccoTaxInformationAmount)">[CII-SR-416] -
+			ProductValueExcludingTobaccoTaxInformationAmount should not be present</assert>
+      <assert id="CII-SR-417" flag="warning" test="not(ram:TotalRetailValueInformationAmount)">[CII-SR-417] -
+			TotalRetailValueInformationAmount should not be present</assert>
+      <assert id="CII-SR-418" flag="warning" test="not(ram:GrossLineTotalAmount)">[CII-SR-418] -
+			GrossLineTotalAmount should not be present</assert>
+      <assert id="CII-SR-419" flag="warning" test="not(ram:NetLineTotalAmount)">[CII-SR-419] - NetLineTotalAmount
+			should not be present</assert>
+      <assert id="CII-SR-420" flag="warning" test="not(ram:NetIncludingTaxesLineTotalAmount)">[CII-SR-420] -
+			NetIncludingTaxesLineTotalAmount should not be present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice">
-      <assert id="CII-DT-013" flag="fatal" test="not(@languageID)">[CII-DT-013] - languageID should not be present</assert>
-      <assert id="CII-DT-014" flag="fatal" test="not(@languageLocaleID)">[CII-DT-014] - languageLocaleID should not be present</assert>
-      <assert id="CII-SR-438" flag="warning" test="not(ram:ValuationBreakdownStatement)">[CII-SR-438] - ValuationBreakdownStatement should not be present</assert>
+      <assert id="CII-DT-013" flag="fatal" test="not(@languageID)">[CII-DT-013] - languageID should not
+			be present</assert>
+      <assert id="CII-DT-014" flag="fatal" test="not(@languageLocaleID)">[CII-DT-014] - languageLocaleID
+			should not be present</assert>
+      <assert id="CII-SR-438" flag="warning" test="not(ram:ValuationBreakdownStatement)">[CII-SR-438] -
+			ValuationBreakdownStatement should not be present</assert>
     </rule>
     <rule context="//*[ends-with(name(), 'DocumentContextParameter')]">
-      <assert id="CII-SR-04" flag="warning" test="not(ram:Value)">[CII-SR-004] - Value should not be present</assert>
-      <assert id="CII-SR-05" flag="warning" test="not(ram:SpecifiedDocumentVersion)">[CII-SR-005] - SpecifiedDocumentVersion should not be present</assert>
-    </rule>
-    <rule context="//ram:*[ends-with(name(), 'ID')]">
-      <assert id="CII-DT-001" flag="fatal" test="not(@schemeName)">[CII-DT-001] - schemeName should not be present</assert>
-      <assert id="CII-DT-002" flag="fatal" test="not(@schemeAgencyName)">[CII-DT-002] - schemeAgencyName should not be present</assert>
-      <assert id="CII-DT-003" flag="fatal" test="not(@schemeDataURI)">[CII-DT-003] - schemeDataURI should not be present</assert>
-      <assert id="CII-DT-004" flag="fatal" test="not(@schemeURI)">[CII-DT-004] - schemeURI should not be present</assert>
+      <assert id="CII-SR-04" flag="warning" test="not(ram:Value)">[CII-SR-004] - Value should not be
+			present</assert>
+      <assert id="CII-SR-05" flag="warning" test="not(ram:SpecifiedDocumentVersion)">[CII-SR-005] -
+			SpecifiedDocumentVersion should not be present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]">
-      <assert id="CII-DT-005" flag="fatal" test="not(@schemeID)">[CII-DT-005] - schemeID should not be present</assert>
-      <assert id="CII-DT-006" flag="fatal" test="not(@schemeAgencyID)">[CII-DT-006] - schemeAgencyID should not be present</assert>
-      <assert id="CII-DT-007" flag="fatal" test="not(@schemeVersionID)">[CII-DT-007] - schemeVersionID should not be present</assert>
+      <assert id="CII-DT-005" flag="fatal" test="not(@schemeID)">[CII-DT-005] - schemeID should not
+			be present</assert>
+      <assert id="CII-DT-006" flag="fatal" test="not(@schemeAgencyID)">[CII-DT-006] - schemeAgencyID should
+			not be present</assert>
+      <assert id="CII-DT-007" flag="fatal" test="not(@schemeVersionID)">[CII-DT-007] - schemeVersionID
+			should not be present</assert>
+    </rule>
+    <rule context="//ram:*[ends-with(name(), 'ID')]">
+      <assert id="CII-DT-001" flag="fatal" test="not(@schemeName)">[CII-DT-001] - schemeName should not
+			be present</assert>
+      <assert id="CII-DT-002" flag="fatal" test="not(@schemeAgencyName)">[CII-DT-002] - schemeAgencyName
+			should not be present</assert>
+      <assert id="CII-DT-003" flag="fatal" test="not(@schemeDataURI)">[CII-DT-003] - schemeDataURI should
+			not be present</assert>
+      <assert id="CII-DT-004" flag="fatal" test="not(@schemeURI)">[CII-DT-004] - schemeURI should not
+			be present</assert>
     </rule>
     <rule context="//ram:TypeCode">
-      <assert id="CII-DT-008" flag="fatal" test="not(@name)">[CII-DT-008] - name should not be present</assert>
-      <assert id="CII-DT-009" flag="fatal" test="not(@listURI)">[CII-DT-009] - listURI should not be present</assert>
+      <assert id="CII-DT-008" flag="fatal" test="not(@name)">[CII-DT-008] - name should not be
+			present</assert>
+      <assert id="CII-DT-009" flag="fatal" test="not(@listURI)">[CII-DT-009] - listURI should not be
+			present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode">
-      <assert id="CII-DT-010" flag="fatal" test="not(@listID)">[CII-DT-010] - listID should not be present</assert>
-      <assert id="CII-DT-011" flag="fatal" test="not(@listAgencyID)">[CII-DT-011] - listAgencyID should not be present</assert>
-      <assert id="CII-DT-012" flag="fatal" test="not(@listVersionID)">[CII-DT-012] - listVersionID should not be present</assert>
+      <assert id="CII-DT-010" flag="fatal" test="not(@listID)">[CII-DT-010] - listID should not be
+			present</assert>
+      <assert id="CII-DT-011" flag="fatal" test="not(@listAgencyID)">[CII-DT-011] - listAgencyID should
+			not be present</assert>
+      <assert id="CII-DT-012" flag="fatal" test="not(@listVersionID)">[CII-DT-012] - listVersionID should
+			not be present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode">
-      <assert id="CII-DT-045" flag="warning" test="not(@listID)">[CII-DT-045] - @listID should not be present</assert>
-      <assert id="CII-DT-046" flag="warning" test="not(@listAgencyID)">[CII-DT-046] - @listAgencyID should not be present</assert>
-      <assert id="CII-DT-047" flag="warning" test="not(@listVersionID)">[CII-DT-047] - @listVersionID should not be present</assert>
-      <assert id="CII-DT-048" flag="warning" test="not(@listURI)">[CII-DT-048] - @listURI should not be present</assert>
+      <assert id="CII-DT-045" flag="warning" test="not(@listID)">[CII-DT-045] - @listID should not
+			be present</assert>
+      <assert id="CII-DT-046" flag="warning" test="not(@listAgencyID)">[CII-DT-046] - @listAgencyID
+			should not be present</assert>
+      <assert id="CII-DT-047" flag="warning" test="not(@listVersionID)">[CII-DT-047] - @listVersionID
+			should not be present</assert>
+      <assert id="CII-DT-048" flag="warning" test="not(@listURI)">[CII-DT-048] - @listURI should not
+			be present</assert>
     </rule>
     <rule context="//ram:*[ends-with(name(), 'ReferencedDocument')]">
-      <assert id="CII-DT-015" flag="fatal" test="not(ram:URIID) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-015] - URIID should not be present</assert>
-      <assert id="CII-DT-016" flag="fatal" test="not(ram:StatusCode)">[CII-DT-016] - StatusCode should not be present</assert>
-      <assert id="CII-DT-017" flag="fatal" test="not(ram:CopyIndicator)">[CII-DT-017] - CopyIndicator should not be present</assert>
-      <assert id="CII-DT-018" flag="fatal" test="not(ram:TypeCode) or (self::ram:AdditionalReferencedDocument) and (ram:TypeCode='50' or ram:TypeCode='130' or ram:TypeCode='916')">[CII-DT-018] - TypeCode should not be present</assert>
-      <assert id="CII-DT-019" flag="fatal" test="not(ram:GlobalID)">[CII-DT-019] - GlobalID should not be present</assert>
-      <assert id="CII-DT-020" flag="fatal" test="not(ram:RevisionID)">[CII-DT-020] - RevisionID should not be present</assert>
-      <assert id="CII-DT-021" flag="fatal" test="not(ram:Name) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-021] - Name should not be present</assert>
-      <assert id="CII-DT-022" flag="fatal" test="not(ram:AttachmentBinaryObject) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-022] - AttachmentBinaryObject should not be present</assert>
-      <assert id="CII-DT-023" flag="fatal" test="not(ram:Information)">[CII-DT-023] - Information should not be present</assert>
-      <assert id="CII-DT-024" flag="fatal" test="not(ram:ReferenceTypeCode) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='130')">[CII-DT-024] - ReferenceTypeCode should not be present</assert>
-      <assert id="CII-DT-025" flag="fatal" test="not(ram:SectionName)">[CII-DT-025] - SectionName should not be present</assert>
-      <assert id="CII-DT-026" flag="fatal" test="not(ram:PreviousRevisionID)">[CII-DT-026] - PreviousRevisionID should not be present</assert>
-      <assert id="CII-DT-027" flag="fatal" test="not(ram:FormattedIssueDateTime) or self::ram:InvoiceReferencedDocument">[CII-DT-027] - FormattedIssueDateTime should not be present</assert>
-      <assert id="CII-DT-028" flag="fatal" test="not(ram:EffectiveSpecifiedPeriod)">[CII-DT-028] - EffectiveSpecifiedPeriod should not be present</assert>
-      <assert id="CII-DT-029" flag="fatal" test="not(ram:IssuerTradeParty)">[CII-DT-029] - IssuerTradeParty should not be present</assert>
-      <assert id="CII-DT-030" flag="fatal" test="not(ram:AttachedSpecifiedBinaryFile)">[CII-DT-030] - AttachedSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-DT-015" flag="fatal" test="not(ram:URIID) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-015] - URIID should not be
+			present</assert>
+      <assert id="CII-DT-016" flag="fatal" test="not(ram:StatusCode)">[CII-DT-016] - StatusCode should not
+			be present</assert>
+      <assert id="CII-DT-017" flag="fatal" test="not(ram:CopyIndicator)">[CII-DT-017] - CopyIndicator should
+			not be present</assert>
+      <assert id="CII-DT-018" flag="fatal" test="not(ram:TypeCode) or (self::ram:AdditionalReferencedDocument) and (ram:TypeCode='50' or ram:TypeCode='130' or ram:TypeCode='916')">[CII-DT-018] - TypeCode should not
+			be present</assert>
+      <assert id="CII-DT-019" flag="fatal" test="not(ram:GlobalID)">[CII-DT-019] - GlobalID should not
+			be present</assert>
+      <assert id="CII-DT-020" flag="fatal" test="not(ram:RevisionID)">[CII-DT-020] - RevisionID should not
+			be present</assert>
+      <assert id="CII-DT-021" flag="fatal" test="not(ram:Name) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-021] - Name should not be
+			present</assert>
+      <assert id="CII-DT-022" flag="fatal" test="not(ram:AttachmentBinaryObject) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-022] -
+			AttachmentBinaryObject should not be present</assert>
+      <assert id="CII-DT-023" flag="fatal" test="not(ram:Information)">[CII-DT-023] - Information should
+			not be present</assert>
+      <assert id="CII-DT-024" flag="fatal" test="not(ram:ReferenceTypeCode) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='130')">[CII-DT-024] - ReferenceTypeCode
+			should not be present</assert>
+      <assert id="CII-DT-025" flag="fatal" test="not(ram:SectionName)">[CII-DT-025] - SectionName should
+			not be present</assert>
+      <assert id="CII-DT-026" flag="fatal" test="not(ram:PreviousRevisionID)">[CII-DT-026] - PreviousRevisionID
+			should not be present</assert>
+      <assert id="CII-DT-027" flag="fatal" test="not(ram:FormattedIssueDateTime) or self::ram:InvoiceReferencedDocument">[CII-DT-027] -
+			FormattedIssueDateTime should not be present</assert>
+      <assert id="CII-DT-028" flag="fatal" test="not(ram:EffectiveSpecifiedPeriod)">[CII-DT-028] -
+			EffectiveSpecifiedPeriod should not be present</assert>
+      <assert id="CII-DT-029" flag="fatal" test="not(ram:IssuerTradeParty)">[CII-DT-029] - IssuerTradeParty
+			should not be present</assert>
+      <assert id="CII-DT-030" flag="fatal" test="not(ram:AttachedSpecifiedBinaryFile)">[CII-DT-030] -
+			AttachedSpecifiedBinaryFile should not be present</assert>
     </rule>
     <rule context="//ram:*[ends-with(name(), 'Amount') and not (self::ram:TaxTotalAmount)]">
-      <assert id="CII-DT-031" flag="fatal" test="not(@currencyID)">[CII-DT-031] - currencyID should not be present</assert>
-      <assert id="CII-DT-032" flag="fatal" test="not(@currencyCodeListVersionID)">[CII-DT-032] - currencyCodeListVersionID should not be present</assert>
+      <assert id="CII-DT-031" flag="fatal" test="not(@currencyID)">[CII-DT-031] - currencyID should not
+			be present</assert>
+      <assert id="CII-DT-032" flag="fatal" test="not(@currencyCodeListVersionID)">[CII-DT-032] -
+			currencyCodeListVersionID should not be present</assert>
     </rule>
     <rule context="//ram:*[ends-with(name(), 'Quantity')]">
-      <assert id="CII-DT-033" flag="fatal" test="not(@unitCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeDelivery/ram:BilledQuantity/@unitCode)">[CII-DT-033] - unitCode should not be present</assert>
-      <assert id="CII-DT-034" flag="fatal" test="not(@unitCodeListID)">[CII-DT-034] - unitCodeListID should not be present</assert>
-      <assert id="CII-DT-035" flag="fatal" test="not(@unitCodeListAgencyID)">[CII-DT-035] - unitCodeListAgencyID should not be present</assert>
-      <assert id="CII-DT-036" flag="fatal" test="not(@unitCodeListAgencyName)">[CII-DT-036] - unitCodeListAgencyName should not be present</assert>
+      <assert id="CII-DT-033" flag="fatal" test="not(@unitCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeDelivery/ram:BilledQuantity/@unitCode)">[CII-DT-033] - unitCode should not
+			be present</assert>
+      <assert id="CII-DT-034" flag="fatal" test="not(@unitCodeListID)">[CII-DT-034] - unitCodeListID should
+			not be present</assert>
+      <assert id="CII-DT-035" flag="fatal" test="not(@unitCodeListAgencyID)">[CII-DT-035] - unitCodeListAgencyID
+			should not be present</assert>
+      <assert id="CII-DT-036" flag="fatal" test="not(@unitCodeListAgencyName)">[CII-DT-036] -
+			unitCodeListAgencyName should not be present</assert>
     </rule>
     <rule context="//ram:*[ends-with(name(), 'TradeTax')]">
-      <assert id="CII-DT-037" flag="fatal" test="not(ram:TypeCode) or (ram:TypeCode = 'VAT')">[CII-DT-037] - TypeCode shall be 'VAT'</assert>
-      <assert id="CII-DT-038" flag="warning" test="not(ram:CalculatedRate)">[CII-DT-038] - CalculatedRate should not be present</assert>
-      <assert id="CII-DT-039" flag="warning" test="not(ram:CalculationSequenceNumeric)">[CII-DT-039] - CalculationSequenceNumeric should not be present</assert>
-      <assert id="CII-DT-040" flag="warning" test="not(ram:BasisQuantity)">[CII-DT-040] - BasisQuantity should not be present</assert>
-      <assert id="CII-DT-041" flag="warning" test="not(ram:BasisAmount) or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-041] - BasisAmount should not be present</assert>
-      <assert id="CII-DT-042" flag="warning" test="not(ram:UnitBasisAmount)">[CII-DT-042] - UnitBasisAmount should not be present</assert>
-      <assert id="CII-DT-043" flag="warning" test="not(ram:LineTotalBasisAmount)">[CII-DT-043] - LineTotalBasisAmount should not be present</assert>
-      <assert id="CII-DT-044" flag="warning" test="not(ram:AllowanceChargeBasisAmount)">[CII-DT-044] - AllowanceChargeBasisAmount should not be present</assert>
-      <assert id="CII-DT-049" flag="warning" test="not(ram:CurrencyCode)">[CII-DT-049] - CurrencyCode should not be present</assert>
-      <assert id="CII-DT-050" flag="warning" test="not(ram:Jurisdiction)">[CII-DT-050] - Jurisdiction should not be present</assert>
-      <assert id="CII-DT-051" flag="warning" test="not(ram:CustomsDutyIndicator)">[CII-DT-051] - CustomsDutyIndicator should not be present</assert>
-      <assert id="CII-DT-052" flag="warning" test="not(ram:ExemptionReasonCode) or self::ram:ApplicableTradeTax">[CII-DT-052] - ExemptionReasonCode should not be present</assert>
-      <assert id="CII-DT-098" flag="warning" test="not(ram:ExemptionReason) or self::ram:ApplicableTradeTax">[CII-DT-098] - ExemptionReason should not be present</assert>
-      <assert id="CII-DT-053" flag="warning" test="not(ram:TaxBasisAllowanceRate)">[CII-DT-053] - TaxBasisAllowanceRate should not be present</assert>
-      <assert id="CII-DT-054" flag="warning" test="not(ram:TaxPointDate)  or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-054] - TaxPointDate should not be present</assert>
-      <assert id="CII-DT-055" flag="warning" test="not(ram:Type)">[CII-DT-055] - Type should not be present</assert>
-      <assert id="CII-DT-056" flag="warning" test="not(ram:InformationAmount)">[CII-DT-056] - InformationAmount should not be present</assert>
-      <assert id="CII-DT-057" flag="warning" test="not(ram:CategoryName)">[CII-DT-057] - CategoryName should not be present</assert>
-      <assert id="CII-DT-058" flag="warning" test="not(ram:DueDateTypeCode) or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-058] - DueDateTypeCode should not be present</assert>
-      <assert id="CII-DT-059" flag="warning" test="not(ram:RateApplicablePercent/@format)">[CII-DT-059] - @format should not be present</assert>
-      <assert id="CII-DT-060" flag="warning" test="not(ram:SpecifiedTradeAccountingAccount)">[CII-DT-060] - SpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-DT-061" flag="warning" test="not(ram:ServiceSupplyTradeCountry)">[CII-DT-061] - ServiceSupplyTradeCountry should not be present</assert>
-      <assert id="CII-DT-062" flag="warning" test="not(ram:BuyerRepayableTaxSpecifiedTradeAccountingAccount)">[CII-DT-062] - BuyerRepayableTaxSpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-DT-063" flag="warning" test="not(ram:SellerPayableTaxSpecifiedTradeAccountingAccount)">[CII-DT-063] - SellerPayableTaxSpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-DT-064" flag="warning" test="not(ram:SellerRefundableTaxSpecifiedTradeAccountingAccount)">[CII-DT-064] - SellerRefundableTaxSpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-DT-065" flag="warning" test="not(ram:BuyerDeductibleTaxSpecifiedTradeAccountingAccount)">[CII-DT-065] - BuyerDeductibleTaxSpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-DT-066" flag="warning" test="not(ram:BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount)">[CII-DT-066] - BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount should not be present</assert>
-      <assert id="CII-DT-067" flag="warning" test="not(ram:PlaceApplicableTradeLocation)">[CII-DT-067] - PlaceApplicableTradeLocation should not be present</assert>
+      <assert id="CII-DT-037" flag="fatal" test="not(ram:TypeCode) or (ram:TypeCode = 'VAT')">[CII-DT-037] - TypeCode shall be
+			'VAT'</assert>
+      <assert id="CII-DT-038" flag="warning" test="not(ram:CalculatedRate)">[CII-DT-038] - CalculatedRate
+			should not be present</assert>
+      <assert id="CII-DT-039" flag="warning" test="not(ram:CalculationSequenceNumeric)">[CII-DT-039] -
+			CalculationSequenceNumeric should not be present</assert>
+      <assert id="CII-DT-040" flag="warning" test="not(ram:BasisQuantity)">[CII-DT-040] - BasisQuantity
+			should not be present</assert>
+      <assert id="CII-DT-041" flag="warning" test="not(ram:BasisAmount) or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-041] - BasisAmount should
+			not be present</assert>
+      <assert id="CII-DT-042" flag="warning" test="not(ram:UnitBasisAmount)">[CII-DT-042] - UnitBasisAmount
+			should not be present</assert>
+      <assert id="CII-DT-043" flag="warning" test="not(ram:LineTotalBasisAmount)">[CII-DT-043] -
+			LineTotalBasisAmount should not be present</assert>
+      <assert id="CII-DT-044" flag="warning" test="not(ram:AllowanceChargeBasisAmount)">[CII-DT-044] -
+			AllowanceChargeBasisAmount should not be present</assert>
+      <assert id="CII-DT-049" flag="warning" test="not(ram:CurrencyCode)">[CII-DT-049] - CurrencyCode should
+			not be present</assert>
+      <assert id="CII-DT-050" flag="warning" test="not(ram:Jurisdiction)">[CII-DT-050] - Jurisdiction should
+			not be present</assert>
+      <assert id="CII-DT-051" flag="warning" test="not(ram:CustomsDutyIndicator)">[CII-DT-051] -
+			CustomsDutyIndicator should not be present</assert>
+      <assert id="CII-DT-052" flag="warning" test="not(ram:ExemptionReasonCode) or self::ram:ApplicableTradeTax">[CII-DT-052] - ExemptionReasonCode
+			should not be present</assert>
+      <assert id="CII-DT-098" flag="warning" test="not(ram:ExemptionReason) or self::ram:ApplicableTradeTax">[CII-DT-098] - ExemptionReason
+			should not be present</assert>
+      <assert id="CII-DT-053" flag="warning" test="not(ram:TaxBasisAllowanceRate)">[CII-DT-053] -
+			TaxBasisAllowanceRate should not be present</assert>
+      <assert id="CII-DT-054" flag="warning" test="not(ram:TaxPointDate)  or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-054] - TaxPointDate should
+			not be present</assert>
+      <assert id="CII-DT-055" flag="warning" test="not(ram:Type)">[CII-DT-055] - Type should not be
+			present</assert>
+      <assert id="CII-DT-056" flag="warning" test="not(ram:InformationAmount)">[CII-DT-056] - InformationAmount
+			should not be present</assert>
+      <assert id="CII-DT-057" flag="warning" test="not(ram:CategoryName)">[CII-DT-057] - CategoryName should
+			not be present</assert>
+      <assert id="CII-DT-058" flag="warning" test="not(ram:DueDateTypeCode) or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-058] - DueDateTypeCode
+			should not be present</assert>
+      <assert id="CII-DT-059" flag="warning" test="not(ram:RateApplicablePercent/@format)">[CII-DT-059] - @format should not
+			be present</assert>
+      <assert id="CII-DT-060" flag="warning" test="not(ram:SpecifiedTradeAccountingAccount)">[CII-DT-060] -
+			SpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-061" flag="warning" test="not(ram:ServiceSupplyTradeCountry)">[CII-DT-061] -
+			ServiceSupplyTradeCountry should not be present</assert>
+      <assert id="CII-DT-062" flag="warning" test="not(ram:BuyerRepayableTaxSpecifiedTradeAccountingAccount)">[CII-DT-062] -
+			BuyerRepayableTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-063" flag="warning" test="not(ram:SellerPayableTaxSpecifiedTradeAccountingAccount)">[CII-DT-063] -
+			SellerPayableTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-064" flag="warning" test="not(ram:SellerRefundableTaxSpecifiedTradeAccountingAccount)">[CII-DT-064] -
+			SellerRefundableTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-065" flag="warning" test="not(ram:BuyerDeductibleTaxSpecifiedTradeAccountingAccount)">[CII-DT-065] -
+			BuyerDeductibleTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-066" flag="warning" test="not(ram:BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount)">[CII-DT-066] -
+			BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-067" flag="warning" test="not(ram:PlaceApplicableTradeLocation)">[CII-DT-067] -
+			PlaceApplicableTradeLocation should not be present</assert>
     </rule>
     <rule context="//ram:BillingSpecifiedPeriod">
-      <assert id="CII-DT-068" flag="fatal" test="not(ram:StartDateTime/udt:DateTime)">[CII-DT-068] - DateTime shall not be used.</assert>
-      <assert id="CII-DT-069" flag="fatal" test="not(ram:DurationMeasure)">[CII-DT-069] - DurationMeasure shall not be used.</assert>
-      <assert id="CII-DT-070" flag="fatal" test="not(ram:InclusiveIndicator)">[CII-DT-070] - InclusiveIndicator shall not be used.</assert>
-      <assert id="CII-DT-071" flag="fatal" test="not(ram:Description)">[CII-DT-071] - Description shall not be used.</assert>
-      <assert id="CII-DT-072" flag="fatal" test="not(ram:EndDateTime/udt:DateTime)">[CII-DT-072] - DateTime shall not be used.</assert>
-      <assert id="CII-DT-073" flag="fatal" test="not(ram:CompleteDateTime)">[CII-DT-073] - CompleteDateTime shall not be used.</assert>
-      <assert id="CII-DT-074" flag="fatal" test="not(ram:OpenIndicator)">[CII-DT-074] - OpenIndicator shall not be used.</assert>
-      <assert id="CII-DT-075" flag="fatal" test="not(ram:SeasonCode)">[CII-DT-075] - SeasonCode shall not be used.</assert>
-      <assert id="CII-DT-076" flag="fatal" test="not(ram:ID)">[CII-DT-076] - ID shall not be used.</assert>
-      <assert id="CII-DT-077" flag="fatal" test="not(ram:Name)">[CII-DT-077] - Name shall not be used.</assert>
-      <assert id="CII-DT-078" flag="fatal" test="not(ram:SequenceNumeric)">[CII-DT-078] - SequenceNumeric shall not be used.</assert>
-      <assert id="CII-DT-079" flag="fatal" test="not(ram:StartDateFlexibilityCode)">[CII-DT-079] - StartDateFlexibilityCode shall not be used.</assert>
-      <assert id="CII-DT-080" flag="fatal" test="not(ram:ContinuousIndicator)">[CII-DT-080] - ContinuousIndicator shall not be used.</assert>
-      <assert id="CII-DT-081" flag="fatal" test="not(ram:PurposeCode)">[CII-DT-081] - PurposeCode shall not be used.</assert>
+      <assert id="CII-DT-068" flag="fatal" test="not(ram:StartDateTime/udt:DateTime)">[CII-DT-068] - DateTime shall not be
+			used.</assert>
+      <assert id="CII-DT-069" flag="fatal" test="not(ram:DurationMeasure)">[CII-DT-069] - DurationMeasure shall
+			not be used.</assert>
+      <assert id="CII-DT-070" flag="fatal" test="not(ram:InclusiveIndicator)">[CII-DT-070] - InclusiveIndicator
+			shall not be used.</assert>
+      <assert id="CII-DT-071" flag="fatal" test="not(ram:Description)">[CII-DT-071] - Description shall not
+			be used.</assert>
+      <assert id="CII-DT-072" flag="fatal" test="not(ram:EndDateTime/udt:DateTime)">[CII-DT-072] - DateTime shall not be
+			used.</assert>
+      <assert id="CII-DT-073" flag="fatal" test="not(ram:CompleteDateTime)">[CII-DT-073] - CompleteDateTime
+			shall not be used.</assert>
+      <assert id="CII-DT-074" flag="fatal" test="not(ram:OpenIndicator)">[CII-DT-074] - OpenIndicator shall
+			not be used.</assert>
+      <assert id="CII-DT-075" flag="fatal" test="not(ram:SeasonCode)">[CII-DT-075] - SeasonCode shall not
+			be used.</assert>
+      <assert id="CII-DT-076" flag="fatal" test="not(ram:ID)">[CII-DT-076] - ID shall not be
+			used.</assert>
+      <assert id="CII-DT-077" flag="fatal" test="not(ram:Name)">[CII-DT-077] - Name shall not be
+			used.</assert>
+      <assert id="CII-DT-078" flag="fatal" test="not(ram:SequenceNumeric)">[CII-DT-078] - SequenceNumeric shall
+			not be used.</assert>
+      <assert id="CII-DT-079" flag="fatal" test="not(ram:StartDateFlexibilityCode)">[CII-DT-079] -
+			StartDateFlexibilityCode shall not be used.</assert>
+      <assert id="CII-DT-080" flag="fatal" test="not(ram:ContinuousIndicator)">[CII-DT-080] - ContinuousIndicator
+			shall not be used.</assert>
+      <assert id="CII-DT-081" flag="fatal" test="not(ram:PurposeCode)">[CII-DT-081] - PurposeCode shall not
+			be used.</assert>
     </rule>
     <rule context="//ram:PostalTradeAddress">
-      <assert id="CII-DT-082" flag="fatal" test="not(ram:ID)">[CII-DT-082] - ID shall not be used.</assert>
-      <assert id="CII-DT-083" flag="fatal" test="not(ram:PostOfficeBox)">[CII-DT-083] - PostOfficeBox shall not be used.</assert>
-      <assert id="CII-DT-084" flag="fatal" test="not(ram:BuildingName)">[CII-DT-084] - BuildingName shall not be used.</assert>
-      <assert id="CII-DT-086" flag="fatal" test="not(ram:LineFour)">[CII-DT-086] - LineFour shall not be used.</assert>
-      <assert id="CII-DT-087" flag="fatal" test="not(ram:LineFive)">[CII-DT-087] - LineFive shall not be used.</assert>
-      <assert id="CII-DT-088" flag="fatal" test="not(ram:StreetName)">[CII-DT-088] - StreetName shall not be used.</assert>
-      <assert id="CII-DT-089" flag="fatal" test="not(ram:CitySubDivisionName)">[CII-DT-089] - CitySubDivisionName shall not be used.</assert>
-      <assert id="CII-DT-090" flag="fatal" test="not(ram:CountryName)">[CII-DT-090] - CountryName shall not be used.</assert>
-      <assert id="CII-DT-091" flag="fatal" test="not(ram:CountrySubDivisionID)">[CII-DT-091] - CountrySubDivisionID shall not be used.</assert>
-      <assert id="CII-DT-092" flag="fatal" test="not(ram:AttentionOf)">[CII-DT-092] - AttentionOf shall not be used.</assert>
-      <assert id="CII-DT-093" flag="fatal" test="not(ram:CareOf)">[CII-DT-093] - CareOf shall not be used.</assert>
-      <assert id="CII-DT-094" flag="fatal" test="not(ram:BuildingNumber)">[CII-DT-094] - BuildingNumber shall not be used.</assert>
-      <assert id="CII-DT-095" flag="fatal" test="not(ram:DepartmentName)">[CII-DT-095] - DepartmentName shall not be used.</assert>
-      <assert id="CII-DT-096" flag="fatal" test="not(ram:AdditionalStreetName)">[CII-DT-096] - AdditionalStreetName shall not be used.</assert>
+      <assert id="CII-DT-082" flag="fatal" test="not(ram:ID)">[CII-DT-082] - ID shall not be
+			used.</assert>
+      <assert id="CII-DT-083" flag="fatal" test="not(ram:PostOfficeBox)">[CII-DT-083] - PostOfficeBox shall
+			not be used.</assert>
+      <assert id="CII-DT-084" flag="fatal" test="not(ram:BuildingName)">[CII-DT-084] - BuildingName shall
+			not be used.</assert>
+      <assert id="CII-DT-086" flag="fatal" test="not(ram:LineFour)">[CII-DT-086] - LineFour shall not be
+			used.</assert>
+      <assert id="CII-DT-087" flag="fatal" test="not(ram:LineFive)">[CII-DT-087] - LineFive shall not be
+			used.</assert>
+      <assert id="CII-DT-088" flag="fatal" test="not(ram:StreetName)">[CII-DT-088] - StreetName shall not
+			be used.</assert>
+      <assert id="CII-DT-089" flag="fatal" test="not(ram:CitySubDivisionName)">[CII-DT-089] - CitySubDivisionName
+			shall not be used.</assert>
+      <assert id="CII-DT-090" flag="fatal" test="not(ram:CountryName)">[CII-DT-090] - CountryName shall not
+			be used.</assert>
+      <assert id="CII-DT-091" flag="fatal" test="not(ram:CountrySubDivisionID)">[CII-DT-091] - CountrySubDivisionID
+			shall not be used.</assert>
+      <assert id="CII-DT-092" flag="fatal" test="not(ram:AttentionOf)">[CII-DT-092] - AttentionOf shall not
+			be used.</assert>
+      <assert id="CII-DT-093" flag="fatal" test="not(ram:CareOf)">[CII-DT-093] - CareOf shall not be
+			used.</assert>
+      <assert id="CII-DT-094" flag="fatal" test="not(ram:BuildingNumber)">[CII-DT-094] - BuildingNumber shall
+			not be used.</assert>
+      <assert id="CII-DT-095" flag="fatal" test="not(ram:DepartmentName)">[CII-DT-095] - DepartmentName shall
+			not be used.</assert>
+      <assert id="CII-DT-096" flag="fatal" test="not(ram:AdditionalStreetName)">[CII-DT-096] - AdditionalStreetName
+			shall not be used.</assert>
     </rule>
     <rule context="//udt:DateTimeString[@format = '102']">
-      <assert id="CII-DT-097" flag="fatal" test="matches(.,'^\s*(\d{4})(1[0-2]|0[1-9]){1}(3[01]|[12][0-9]|0[1-9]){1}\s*$')">[CII-DT-097] - Date time string with format attribute 102 shall be YYYYMMDD.</assert>
+      <assert id="CII-DT-097" flag="fatal" test="matches(.,'^\s*(\d{4})(1[0-2]|0[1-9]){1}(3[01]|[12][0-9]|0[1-9]){1}\s*$')">[CII-DT-097] - Date time string with
+			format attribute 102 shall be YYYYMMDD.</assert>
     </rule>
   </pattern>
   <pattern id="EN16931-Codes">
