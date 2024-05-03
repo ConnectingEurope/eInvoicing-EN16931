@@ -779,9 +779,10 @@
 	<param name="Exchanged_Document" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument"/>
 	<param name="Note_Exchanged_Document" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote"/>
 	<param name="IDTypeNoAttributes"
-		value="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or
-        self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or
-        self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]"/>
+		value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or
+           /rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:ID or 
+           /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or
+           /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID"/>
 	<param name="IDType" value="//ram:*[ends-with(name(), 'ID')]"/>
 	<param name="TypeCodeType" value="//ram:TypeCode"/>
 	<param name="NoAttributesTypeCodeType"
