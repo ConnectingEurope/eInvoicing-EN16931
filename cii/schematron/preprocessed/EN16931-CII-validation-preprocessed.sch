@@ -806,8 +806,8 @@
       <assert id="CII-SR-437" flag="warning" test="not(ram:UltimatePayeeTradeParty)">[CII-SR-437] - UltimatePayeeTradeParty should not be present</assert>
       <assert id="CII-SR-452" flag="warning" test="count(ram:SpecifiedTradePaymentTerms) &lt;= 1">[CII-SR-452] - Only one SpecifiedTradePaymentTerms should be present</assert>
       <assert id="CII-SR-453" flag="warning" test="count(ram:SpecifiedTradePaymentTerms/ram:Description) &lt;= 1">[CII-SR-453] - Only one SpecifiedTradePaymentTerms Description should be present</assert>
-      <assert id="CII-SR-461" flag="fatal" test="count(ram:ApplicableTradeTax/ram:TaxPointDate[2]) &lt; 1">[CII-SR-461] - Only one TaxPointDate shall be present</assert>
-      <assert id="CII-SR-462" flag="fatal" test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode[2]) &lt; 1">[CII-SR-462] - Only one DueDateTypeCode shall be present</assert>
+      <assert id="CII-SR-461" flag="fatal" test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '5']) or           count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '29']) or           count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '72'])">[CII-SR-461] - Only one kind of TaxPointDate value shall be present in the document</assert>
+      <assert id="CII-SR-462" flag="fatal" test="count(ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString) = count(ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString[text() = (//ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString)[1]/text()])">[CII-SR-462] - Only one kind of DueDateTypeCode value shall be present in the document</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation">
       <assert id="CII-SR-411" flag="warning" test="not(ram:InformationAmount)">[CII-SR-411] - InformationAmount should not be present</assert>

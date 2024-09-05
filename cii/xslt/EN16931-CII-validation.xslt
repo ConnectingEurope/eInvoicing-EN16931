@@ -10222,30 +10222,30 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(ram:ApplicableTradeTax/ram:TaxPointDate[2]) &lt; 1" />
+      <xsl:when test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '5']) or           count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '29']) or           count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '72'])" />
       <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:TaxPointDate[2]) &lt; 1">
+        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '5']) or count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '29']) or count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '72'])">
           <xsl:attribute name="id">CII-SR-461</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-461] - Only one TaxPointDate shall be present</svrl:text>
+          <svrl:text>[CII-SR-461] - Only one kind of TaxPointDate value shall be present in the document</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode[2]) &lt; 1" />
+      <xsl:when test="count(ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString) = count(ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString[text() = (//ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString)[1]/text()])" />
       <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode[2]) &lt; 1">
+        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString) = count(ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString[text() = (//ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString)[1]/text()])">
           <xsl:attribute name="id">CII-SR-462</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-462] - Only one DueDateTypeCode shall be present</svrl:text>
+          <svrl:text>[CII-SR-462] - Only one kind of DueDateTypeCode value shall be present in the document</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>

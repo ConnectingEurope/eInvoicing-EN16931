@@ -513,8 +513,8 @@
 		<assert test="$CII-SR-437" flag="warning" id="CII-SR-437">[CII-SR-437] - UltimatePayeeTradeParty should not be present</assert>
 		<assert test="$CII-SR-452" flag="warning" id="CII-SR-452">[CII-SR-452] - Only one SpecifiedTradePaymentTerms should be present</assert>
 		<assert test="$CII-SR-453" flag="warning" id="CII-SR-453">[CII-SR-453] - Only one SpecifiedTradePaymentTerms Description should be present</assert>
-		<assert test="$CII-SR-461" flag="fatal" id="CII-SR-461">[CII-SR-461] - Only one TaxPointDate shall be present</assert>		
-		<assert test="$CII-SR-462" flag="fatal" id="CII-SR-462">[CII-SR-462] - Only one DueDateTypeCode shall be present</assert>		
+		<assert test="$CII-SR-461" flag="fatal" id="CII-SR-461">[CII-SR-461] - Only one kind of TaxPointDate value shall be present in the document</assert>
+		<assert test="$CII-SR-462" flag="fatal" id="CII-SR-462">[CII-SR-462] - Only one kind of DueDateTypeCode value shall be present in the document</assert>
 	</rule>
 	<rule context="$SpecifiedTradeSettlementHeaderMonetarySummation">
 

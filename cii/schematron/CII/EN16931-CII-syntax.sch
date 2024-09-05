@@ -630,8 +630,10 @@
 	<param name="CII-SR-453" value="count(ram:SpecifiedTradePaymentTerms/ram:Description) &lt;= 1"/>
 	<param name="CII-SR-459" value="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1"/>
 	<param name="CII-SR-460" value="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1"/>
-	<param name="CII-SR-461" value="count(ram:ApplicableTradeTax/ram:TaxPointDate[2]) &lt; 1"/>
-	<param name="CII-SR-462" value="count(ram:ApplicableTradeTax/ram:DueDateTypeCode[2]) &lt; 1"/>
+	<param name="CII-SR-461" value="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '5']) or 
+									count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '29']) or 
+									count(ram:ApplicableTradeTax/ram:DueDateTypeCode) = count(ram:ApplicableTradeTax/ram:DueDateTypeCode[text() = '72'])"/>
+	<param name="CII-SR-462" value="count(ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString) = count(ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString[text() = (//ram:ApplicableTradeTax/ram:TaxPointDate/udt:DateString)[1]/text()])"/>
 	
 	<!-- Invoice -->
 	<param name="CII-SR-438" value="not(ram:ValuationBreakdownStatement)"/>
