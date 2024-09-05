@@ -1458,9 +1458,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(substring-after(ram:SpecifiedTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2" />
+      <xsl:when test="string-length(substring-after(ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(substring-after(ram:SpecifiedTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2">
+        <svrl:failed-assert test="string-length(substring-after(ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2">
           <xsl:attribute name="id">BR-DEC-23</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -10222,9 +10222,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(ram:ApplicableTradeTax/ram:TaxPointDate) &lt;= 1" />
+      <xsl:when test="count(ram:ApplicableTradeTax/ram:TaxPointDate[2]) &lt; 1" />
       <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:TaxPointDate) &lt;= 1">
+        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:TaxPointDate[2]) &lt; 1">
           <xsl:attribute name="id">CII-SR-461</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -10237,9 +10237,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) &lt;= 1" />
+      <xsl:when test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode[2]) &lt; 1" />
       <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) &lt;= 1">
+        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode[2]) &lt; 1">
           <xsl:attribute name="id">CII-SR-462</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -10496,8 +10496,68 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]" mode="M11" priority="1011">
-    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]" />
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID |            /rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:ID |            /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID |            /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID" mode="M11" priority="1011">
+    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID |            /rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:ID |            /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID |            /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID" />
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(@schemeName)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(@schemeName)">
+          <xsl:attribute name="id">CII-DT-001</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-DT-001] - schemeName should not be present</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(@schemeAgencyName)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(@schemeAgencyName)">
+          <xsl:attribute name="id">CII-DT-002</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-DT-002] - schemeAgencyName should not be present</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(@schemeDataURI)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(@schemeDataURI)">
+          <xsl:attribute name="id">CII-DT-003</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-DT-003] - schemeDataURI should not be present</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(@schemeURI)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(@schemeURI)">
+          <xsl:attribute name="id">CII-DT-004</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-DT-004] - schemeURI should not be present</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
 
 		<!--ASSERT -->
 <xsl:choose>

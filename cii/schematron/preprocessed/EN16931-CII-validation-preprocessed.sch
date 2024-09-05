@@ -121,7 +121,7 @@
       <assert id="BR-64" flag="fatal" test="normalize-space(ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) != '' or not (ram:SpecifiedTradeProduct/ram:GlobalID)">[BR-64]-The Item standard identifier (BT-157) shall have a Scheme identifier.</assert>
       <assert id="BR-CO-04" flag="fatal" test="(ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-CO-04]-Each Invoice line (BG-25) shall be categorized with an Invoiced item VAT category code (BT-151).</assert>
       <assert id="BR-CO-18" flag="fatal" test="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax">[BR-CO-18]-An Invoice shall at least have one VAT breakdown group (BG-23).</assert>
-      <assert id="BR-DEC-23" flag="fatal" test="string-length(substring-after(ram:SpecifiedTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2">[BR-DEC-23]-The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2.</assert>
+      <assert id="BR-DEC-23" flag="fatal" test="string-length(substring-after(ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2">[BR-DEC-23]-The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2.</assert>
     </rule>
     <rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'false']">
       <assert id="BR-41" flag="fatal" test="(../ram:ActualAmount)">[BR-41]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance amount (BT-136).</assert>
@@ -806,8 +806,8 @@
       <assert id="CII-SR-437" flag="warning" test="not(ram:UltimatePayeeTradeParty)">[CII-SR-437] - UltimatePayeeTradeParty should not be present</assert>
       <assert id="CII-SR-452" flag="warning" test="count(ram:SpecifiedTradePaymentTerms) &lt;= 1">[CII-SR-452] - Only one SpecifiedTradePaymentTerms should be present</assert>
       <assert id="CII-SR-453" flag="warning" test="count(ram:SpecifiedTradePaymentTerms/ram:Description) &lt;= 1">[CII-SR-453] - Only one SpecifiedTradePaymentTerms Description should be present</assert>
-      <assert id="CII-SR-461" flag="fatal" test="count(ram:ApplicableTradeTax/ram:TaxPointDate) &lt;= 1">[CII-SR-461] - Only one TaxPointDate shall be present</assert>
-      <assert id="CII-SR-462" flag="fatal" test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) &lt;= 1">[CII-SR-462] - Only one DueDateTypeCode shall be present</assert>
+      <assert id="CII-SR-461" flag="fatal" test="count(ram:ApplicableTradeTax/ram:TaxPointDate[2]) &lt; 1">[CII-SR-461] - Only one TaxPointDate shall be present</assert>
+      <assert id="CII-SR-462" flag="fatal" test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode[2]) &lt; 1">[CII-SR-462] - Only one DueDateTypeCode shall be present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation">
       <assert id="CII-SR-411" flag="warning" test="not(ram:InformationAmount)">[CII-SR-411] - InformationAmount should not be present</assert>
@@ -830,16 +830,20 @@
       <assert id="CII-SR-04" flag="warning" test="not(ram:Value)">[CII-SR-004] - Value should not be present</assert>
       <assert id="CII-SR-05" flag="warning" test="not(ram:SpecifiedDocumentVersion)">[CII-SR-005] - SpecifiedDocumentVersion should not be present</assert>
     </rule>
-    <rule context="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]">
+    <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID |            /rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:ID |            /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID |            /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID">
+      <assert id="CII-DT-001" flag="fatal" test="not(@schemeName)">[CII-DT-001] - schemeName should not be present</assert>
+      <assert id="CII-DT-002" flag="fatal" test="not(@schemeAgencyName)">[CII-DT-002] - schemeAgencyName should not be present</assert>
+      <assert id="CII-DT-003" flag="fatal" test="not(@schemeDataURI)">[CII-DT-003] - schemeDataURI should not be present</assert>
+      <assert id="CII-DT-004" flag="fatal" test="not(@schemeURI)">[CII-DT-004] - schemeURI should not be present</assert>
       <assert id="CII-DT-005" flag="fatal" test="not(@schemeID)">[CII-DT-005] - schemeID should not be present</assert>
       <assert id="CII-DT-006" flag="fatal" test="not(@schemeAgencyID)">[CII-DT-006] - schemeAgencyID should not be present</assert>
       <assert id="CII-DT-007" flag="fatal" test="not(@schemeVersionID)">[CII-DT-007] - schemeVersionID should not be present</assert>
     </rule>
     <rule context="//ram:*[ends-with(name(), 'ID')]">
-      <assert id="CII-DT-001" flag="fatal" test="not(@schemeName)">[CII-DT-001] - schemeName should not be present</assert>
-      <assert id="CII-DT-002" flag="fatal" test="not(@schemeAgencyName)">[CII-DT-002] - schemeAgencyName should not be present</assert>
-      <assert id="CII-DT-003" flag="fatal" test="not(@schemeDataURI)">[CII-DT-003] - schemeDataURI should not be present</assert>
-      <assert id="CII-DT-004" flag="fatal" test="not(@schemeURI)">[CII-DT-004] - schemeURI should not be present</assert>
+      <assert id="CII-DT-0010" flag="fatal" test="not(@schemeName)">[CII-DT-001] - schemeName should not be present</assert>
+      <assert id="CII-DT-0020" flag="fatal" test="not(@schemeAgencyName)">[CII-DT-002] - schemeAgencyName should not be present</assert>
+      <assert id="CII-DT-0030" flag="fatal" test="not(@schemeDataURI)">[CII-DT-003] - schemeDataURI should not be present</assert>
+      <assert id="CII-DT-0040" flag="fatal" test="not(@schemeURI)">[CII-DT-004] - schemeURI should not be present</assert>
     </rule>
     <rule context="//ram:TypeCode">
       <assert id="CII-DT-008" flag="fatal" test="not(@name)">[CII-DT-008] - name should not be present</assert>
