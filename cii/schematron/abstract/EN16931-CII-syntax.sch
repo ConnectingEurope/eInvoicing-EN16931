@@ -540,6 +540,11 @@
 		<assert test="$CII-SR-005" flag="warning" id="CII-SR-05">[CII-SR-005] - SpecifiedDocumentVersion should not be present</assert>
 	</rule>
 	<rule context="$IDTypeNoAttributes">
+    <!-- Rules DT-001 to DT-004 need to be copied here to take effect -->
+    <assert test="$CII-DT-001" flag="fatal" id="CII-DT-001">[CII-DT-001] - schemeName should not be present</assert>
+    <assert test="$CII-DT-002" flag="fatal" id="CII-DT-002">[CII-DT-002] - schemeAgencyName should not be present</assert>
+    <assert test="$CII-DT-003" flag="fatal" id="CII-DT-003">[CII-DT-003] - schemeDataURI should not be present</assert>
+    <assert test="$CII-DT-004" flag="fatal" id="CII-DT-004">[CII-DT-004] - schemeURI should not be present</assert>
 		<assert test="$CII-DT-005" flag="fatal" id="CII-DT-005">[CII-DT-005] - schemeID should not be present</assert>
 		<assert test="$CII-DT-006" flag="fatal" id="CII-DT-006">[CII-DT-006] - schemeAgencyID should not be present</assert>
 		<assert test="$CII-DT-007" flag="fatal" id="CII-DT-007">[CII-DT-007] - schemeVersionID should not be present</assert>
