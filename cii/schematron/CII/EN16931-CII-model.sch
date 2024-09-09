@@ -237,7 +237,7 @@
   <param name="BR-DEC-18" value="string-length(substring-after(ram:DuePayableAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-19" value="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-20" value="string-length(substring-after(ram:CalculatedAmount,'.'))&lt;=2"/>
-  <param name="BR-DEC-23" value="string-length(substring-after(ram:SpecifiedTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2"/>
+  <param name="BR-DEC-23" value="string-length(substring-after(ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-24" value="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-25" value="string-length(substring-after(../ram:BasisAmount,'.'))&lt;=2"/>
   <param name="BR-DEC-27" value="string-length(substring-after(../ram:ActualAmount,'.'))&lt;=2"/>
