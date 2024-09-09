@@ -39,6 +39,7 @@
             <configuration>
               <sourceFile>${basedir}/cii/schematron/EN16931-CII-validation.sch</sourceFile>
               <targetFile>${basedir}/cii/schematron/preprocessed/EN16931-CII-validation-preprocessed.sch</targetFile>
+              <keepTitles>true</keepTitles>
             </configuration>
           </execution>
           <!-- 
@@ -61,6 +62,7 @@
             <configuration>
               <sourceFile>${basedir}/ubl/schematron/EN16931-UBL-validation.sch</sourceFile>
               <targetFile>${basedir}/ubl/schematron/preprocessed/EN16931-UBL-validation-preprocessed.sch</targetFile>
+              <keepTitles>true</keepTitles>
             </configuration>
           </execution>
         </executions>
