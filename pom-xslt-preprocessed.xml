@@ -31,43 +31,36 @@
         <artifactId>ph-schematron-maven-plugin</artifactId>
         <version>8.0.3</version>
         <executions>
+<!--
+-->
           <execution>
             <id>cii</id>
-            <phase>validate</phase>
             <goals>
-              <goal>validate</goal>
+              <goal>convert</goal>
             </goals>
             <configuration>
-              <xmlDirectory>cii/examples</xmlDirectory>
-              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
-              <schematronFile>cii/xslt/EN16931-CII-validation.xslt</schematronFile>
+              <schematronDirectory>${basedir}/cii/schematron/preprocessed</schematronDirectory>
+              <xsltDirectory>${basedir}/cii/xslt</xsltDirectory>
             </configuration>
           </execution>
-          <execution>
-            <id>edifact</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>validate</goal>
-            </goals>
-            <configuration>
-              <xmlDirectory>edifact/examples</xmlDirectory>
-              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
-              <schematronFile>edifact/xslt/EN16931-EDIFACT-validation.xslt</schematronFile>
-            </configuration>
-          </execution>
+<!--
+-->
           <execution>
             <id>ubl</id>
-            <phase>validate</phase>
             <goals>
-              <goal>validate</goal>
+              <goal>convert</goal>
             </goals>
             <configuration>
-              <xmlDirectory>ubl/examples</xmlDirectory>
-              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
-              <schematronFile>ubl/xslt/EN16931-UBL-validation.xslt</schematronFile>
+              <schematronDirectory>${basedir}/ubl/schematron/preprocessed</schematronDirectory>
+              <xsltDirectory>${basedir}/ubl/xslt</xsltDirectory>
             </configuration>
           </execution>
         </executions>
+        <configuration>
+          <schematronPattern>*.sch</schematronPattern>
+          <xsltHeader> Schematron version 1.3.12 - Last update: 2024-04-06 </xsltHeader>
+          <showProgress>true</showProgress>
+        </configuration>
       </plugin>
     </plugins>
   </build>
