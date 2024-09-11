@@ -8384,7 +8384,7 @@
       <xsl:otherwise>
         <svrl:failed-assert test="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1">
           <xsl:attribute name="id">CII-SR-459</xsl:attribute>
-          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
@@ -8399,7 +8399,7 @@
       <xsl:otherwise>
         <svrl:failed-assert test="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1">
           <xsl:attribute name="id">CII-SR-460</xsl:attribute>
-          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>

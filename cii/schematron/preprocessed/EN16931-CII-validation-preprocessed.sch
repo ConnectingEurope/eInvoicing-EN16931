@@ -680,8 +680,8 @@
       <assert id="CII-SR-456" flag="fatal" test="( count(ram:BuyerTradeParty/ram:DefinedTradeContact)  &lt;= 1)">[CII-SR-456] - DefinedTradeContact of BuyerTradeParty shall exist maximum once</assert>
       <assert id="CII-SR-457" flag="warning" test="( count(ram:AdditionalReferencedDocument[ram:TypeCode='50'])  &lt;= 1)">[CII-SR-457] - IssuerAssignedID with TypeCode 50 should exist maximum once</assert>
       <assert id="CII-SR-458" flag="warning" test="( count(ram:AdditionalReferencedDocument[ram:TypeCode='130'])  &lt;= 1)">[CII-SR-458] - IssuerAssignedID with TypeCode 130 should exist maximum once</assert>
-      <assert id="CII-SR-459" flag="warning" test="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1">[CII-SR-459] - SellerTradeParty URIUniversalCommunication should exist maximum once</assert>
-      <assert id="CII-SR-460" flag="warning" test="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1">[CII-SR-460] - BuyerTradeParty URIUniversalCommunication should exist maximum once</assert>
+      <assert id="CII-SR-459" flag="fatal" test="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1">[CII-SR-459] - SellerTradeParty URIUniversalCommunication should exist maximum once</assert>
+      <assert id="CII-SR-460" flag="fatal" test="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1">[CII-SR-460] - BuyerTradeParty URIUniversalCommunication should exist maximum once</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery">
       <assert id="CII-SR-308" flag="warning" test="not(ram:RelatedSupplyChainConsignment)">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>
