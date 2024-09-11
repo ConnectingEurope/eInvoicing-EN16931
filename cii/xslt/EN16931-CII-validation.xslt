@@ -10237,9 +10237,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) &lt;= 1" />
+      <xsl:when test="count(//ram:ApplicableTradeTax/ram:DueDateTypeCode) = 0 or count(distinct-values(//ram:ApplicableTradeTax/ram:DueDateTypeCode)) = 1" />
       <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) &lt;= 1">
+        <svrl:failed-assert test="count(//ram:ApplicableTradeTax/ram:DueDateTypeCode) = 0 or count(distinct-values(//ram:ApplicableTradeTax/ram:DueDateTypeCode)) = 1">
           <xsl:attribute name="id">CII-SR-462</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">

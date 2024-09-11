@@ -807,7 +807,7 @@
       <assert id="CII-SR-452" flag="warning" test="count(ram:SpecifiedTradePaymentTerms) &lt;= 1">[CII-SR-452] - Only one SpecifiedTradePaymentTerms should be present</assert>
       <assert id="CII-SR-453" flag="warning" test="count(ram:SpecifiedTradePaymentTerms/ram:Description) &lt;= 1">[CII-SR-453] - Only one SpecifiedTradePaymentTerms Description should be present</assert>
       <assert id="CII-SR-461" flag="fatal" test="count(ram:ApplicableTradeTax/ram:TaxPointDate) &lt;= 1">[CII-SR-461] - Only one TaxPointDate shall be present</assert>
-      <assert id="CII-SR-462" flag="fatal" test="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) &lt;= 1">[CII-SR-462] - Only one DueDateTypeCode shall be present</assert>
+      <assert id="CII-SR-462" flag="fatal" test="count(//ram:ApplicableTradeTax/ram:DueDateTypeCode) = 0 or count(distinct-values(//ram:ApplicableTradeTax/ram:DueDateTypeCode)) = 1">[CII-SR-462] - Only one DueDateTypeCode shall be present</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation">
       <assert id="CII-SR-411" flag="warning" test="not(ram:InformationAmount)">[CII-SR-411] - InformationAmount should not be present</assert>
