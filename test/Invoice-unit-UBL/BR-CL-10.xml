@@ -72,7 +72,7 @@
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PartyIdentification>
-						<cbc:ID schemeID="0001"/>
+						<cbc:ID schemeID="9901"/>
 						</cac:PartyIdentification>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
@@ -80,7 +80,7 @@
 			<cac:AccountingCustomerParty>
 				<cac:Party>
 					<cac:PartyIdentification>
-						<cbc:ID schemeID="0185"/>
+						<cbc:ID schemeID="0181"/>
 					</cac:PartyIdentification>
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="SEPA"/>
@@ -90,16 +90,16 @@
 			
 			<cac:PayeeParty>
 				<cac:PartyIdentification>
-					<cbc:ID schemeID="0233"/>
+					<cbc:ID schemeID="0239"/>
 				</cac:PartyIdentification>
 				<cac:PartyIdentification>
-					<cbc:ID schemeID="0238"/>
+					<cbc:ID schemeID="0250"/>
 				</cac:PartyIdentification>
 			</cac:PayeeParty>
 			
 			<cac:TaxRepresentativeParty>
 				<cac:PartyIdentification>
-					<cbc:ID schemeID="0232"/>
+					<cbc:ID schemeID="9908"/>
 				</cac:PartyIdentification>
 			</cac:TaxRepresentativeParty>
 		</Invoice>
