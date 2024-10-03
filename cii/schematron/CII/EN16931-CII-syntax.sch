@@ -171,9 +171,6 @@
 		value="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:CategoryTradeTax)"/>
 	<param name="CII-SR-131"
 		value="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualTradeCurrencyExchange)"/>
-	<param name="CII-SR-440"
-		value="count(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount) &lt;= 1"/>
-
 	<param name="CII-SR-445" value="not(ram:GrossPriceProductTradePrice/ram:IncludedTradeTax)"/>
 	<param name="CII-SR-132"
 		value="not(ram:GrossPriceProductTradePrice/ram:ValiditySpecifiedPeriod)"/>
@@ -207,6 +204,11 @@
 	<param name="CII-SR-150" value="not(ram:IncludedSpecifiedMarketplace)"/>
 	<param name="CII-SR-447" value="not(ram:UltimateCustomerOrderReferencedDocument)"/>
 
+	<!-- AppliedTradeAllowanceCharge -->
+	<param name="CII-SR-440"
+		value="count(ram:ActualAmount) &lt;= 1"/>
+	
+	
 	<!-- SpecifiedLineTradeDelivery -->
 	<param name="CII-SR-151" value="not(ram:RequestedQuantity)"/>
 	<param name="CII-SR-152" value="not(ram:ReceivedQuantity)"/>
@@ -631,7 +633,7 @@
 	<param name="CII-SR-459" value="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1"/>
 	<param name="CII-SR-460" value="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1"/>
 	<param name="CII-SR-461" value="count(ram:ApplicableTradeTax/ram:TaxPointDate) &lt;= 1"/>
-	<param name="CII-SR-462" value="count(ram:ApplicableTradeTax/ram:DueDateTypeCode) &lt;= 1"/>
+	<param name="CII-SR-462" value="count(//ram:ApplicableTradeTax/ram:DueDateTypeCode) = 0 or count(distinct-values(//ram:ApplicableTradeTax/ram:DueDateTypeCode)) = 1"/>
 	
 	<!-- Invoice -->
 	<param name="CII-SR-438" value="not(ram:ValuationBreakdownStatement)"/>
@@ -815,4 +817,5 @@
 	<param name="SpecifiedTradeSettlementHeaderMonetarySummation"
 		value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>
 	<param name="DateTimeString" value="//udt:DateTimeString[@format = '102']"/>
+	<param name="AppliedTradeAllowanceCharge"  value="//ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge"/>
 </pattern>
