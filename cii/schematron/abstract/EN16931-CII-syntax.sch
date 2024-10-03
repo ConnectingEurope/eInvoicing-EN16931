@@ -160,7 +160,6 @@
 		<assert test="$CII-SR-129" flag="warning" id="CII-SR-129">[CII-SR-129] - TypeCode should not be present</assert>
 		<assert test="$CII-SR-130" flag="warning" id="CII-SR-130">[CII-SR-130] - CategoryTradeTax should not be present</assert>
 		<assert test="$CII-SR-131" flag="warning" id="CII-SR-131">[CII-SR-131] - ActualTradeCurrencyExchange should not be present</assert>
-		<assert test="$CII-SR-440" flag="fatal" id="CII-SR-440">[CII-SR-440] - ActualAmount should exist maximum once</assert>
 
 		<assert test="$CII-SR-445" flag="warning" id="CII-SR-445">[CII-SR-445] - IncludedTradeTax should not be present</assert>
 		<assert test="$CII-SR-132" flag="warning" id="CII-SR-132">[CII-SR-132] - ValiditySpecifiedPeriod should not be present</assert>
@@ -188,6 +187,9 @@
 		<assert test="$CII-SR-150" flag="warning" id="CII-SR-150">[CII-SR-150] - IncludedSpecifiedMarketplace should not be present</assert>
 		<assert test="$CII-SR-447" flag="warning" id="CII-SR-447">[CII-SR-447] - UltimateCustomerOrderReferencedDocument should not be present</assert>
 
+	</rule>
+	<rule context="$AppliedTradeAllowanceCharge">
+		<assert test="$CII-SR-440" flag="fatal" id="CII-SR-440">[CII-SR-440] - ActualAmount should exist maximum once</assert>
 	</rule>
 	<rule context="$SpecifiedLineTradeDelivery">
 		<assert test="$CII-SR-151" flag="warning" id="CII-SR-151">[CII-SR-151] - RequestedQuantity should not be present</assert>
