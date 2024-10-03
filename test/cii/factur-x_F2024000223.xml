@@ -530,7 +530,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <ram:BasisAmount>60.00</ram:BasisAmount>
                     <ram:CategoryCode>E</ram:CategoryCode>
                     <ram:ExemptionReasonCode>VATEX-EU-79-C</ram:ExemptionReasonCode>
-                    <ram:DueDateTypeCode>72</ram:DueDateTypeCode>
+                    <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
                     <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
                </ram:ApplicableTradeTax>
                <ram:ApplicableTradeTax>
