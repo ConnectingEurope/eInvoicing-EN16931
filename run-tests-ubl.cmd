@@ -1,7 +1,7 @@
 @echo off
 
 echo running UBL tests
-docker run --rm --pull -it -v %CD%:/src phelger/vefa-validator build -x -t -p ubl /src
+docker run --rm --pull always -it -v %CD%:/src phelger/vefa-validator build -x -t -p ubl /src
 if errorlevel 1 goto error
 
 goto end
