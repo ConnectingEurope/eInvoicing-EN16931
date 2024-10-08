@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- PEPPOL BIS Billing 3.0 - MAXIMUM content INVOICE -->
+<!-- Reference - http://docs.peppol.eu/poacc/billing/3.0/ -->
+<!-- -->
+<!-- Note - The purpose is to illustrate a test case with mixed taxes, but -->
+<!-- where class TaxTotal fails to show the relevant TaxSubTotal:s -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<Invoice
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+    <cbc:ID>2018210</cbc:ID>
+    <cbc:IssueDate>2018-02-08</cbc:IssueDate>
+    <cbc:DueDate>2018-03-07</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+    <cbc:BuyerReference>Buyer reference</cbc:BuyerReference>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0007">5566778899</cbc:EndpointID>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>AF</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>SE123456789001</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>SÄLJARNAMNET</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="0007">1234567890</cbc:CompanyID>
+                <cbc:CompanyLegalForm>Säte: Big CIty</cbc:CompanyLegalForm>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0007">1234512345</cbc:EndpointID>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>AF</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>SE123451234501</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Project services AB</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="0007">1234512345</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:PaymentTerms>
+        <cbc:Note>30 dagar netto. Dröjsmålsränta:12 %</cbc:Note>
+    </cac:PaymentTerms>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Discount2</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="SEK">0</cbc:Amount>
+        <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>6</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID> VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Discount1</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="SEK">1</cbc:Amount>
+        <cac:TaxCategory>
+            <cbc:ID>E</cbc:ID>
+            <cbc:Percent>0</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Standard charge</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="SEK">1</cbc:Amount>
+        <cac:TaxCategory>
+            <cbc:ID>E</cbc:ID>
+            <cbc:Percent>0</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Extra charge</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="SEK">0</cbc:Amount>
+        <cac:TaxCategory>
+            <cbc:ID>E</cbc:ID>
+            <cbc:Percent>0</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="SEK">130</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="SEK">100</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="SEK">6</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>6</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="SEK">400</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="SEK">100</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+            <!-- Error: No cost component (on invoiceLine or on document -->
+            <!-- level AllowanceCharge) corresponds to this TaxSubtotal: -->
+            <cbc:TaxableAmount currencyID="SEK">200</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="SEK">24</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>12</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="SEK">0</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>E</cbc:ID>
+                <cbc:Percent>0</cbc:Percent>
+                <cbc:TaxExemptionReason>Skatteundantag</cbc:TaxExemptionReason>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="SEK">700</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="SEK">700</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="SEK">830</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="SEK">1</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="SEK">1</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="SEK">0</cbc:PrepaidAmount>
+        <cbc:PayableRoundingAmount currencyID="SEK">0</cbc:PayableRoundingAmount>
+        <cbc:PayableAmount currencyID="SEK">830</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="SEK">100</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Newspaper (VAT 6%)</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>6</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID> VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="SEK">100</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="SEK">50</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Food (VAT 12%)</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>12</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="SEK">50</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="SEK">150</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Food (VAT 12%)</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>12</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="SEK">150</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>4</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="SEK">400</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Petrol (VAT 25%)</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="SEK">400</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>
