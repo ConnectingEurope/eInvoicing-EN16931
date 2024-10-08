@@ -5,7 +5,7 @@ call mvn -f pom-preprocess.xml generate-resources
 if errorlevel 1 goto error
 
 rem convert to XSLT - takes forever
-call mvn -f pom-xslt.xml process-resources
+call mvn -f pom-xslt-preprocessed.xml process-resources
 if errorlevel 1 goto error
 
 rem Add license headers to all relevant files
