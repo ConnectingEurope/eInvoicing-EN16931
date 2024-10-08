@@ -48,6 +48,8 @@
                 <exclude>cii/schema/**</exclude>
                 <exclude>edifact/examples/**</exclude>
                 <exclude>edifact/schema/**</exclude>
+                <!-- temp files -->
+                <exclude>zz*</exclude>
                 <!-- test output -->
                 <exclude>target-cii/**</exclude>
                 <exclude>target-ubl/**</exclude>

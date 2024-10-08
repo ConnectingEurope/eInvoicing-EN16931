@@ -15,7 +15,7 @@
     <title>TC434 CII Invoice</title>
     <declaration type="xml.uncefact">CrossIndustryInvoice::urn:cen.eu:en16931:2017</declaration>
     <inherit>uncefact-d16b-uncoupled-crossindustryinvoice</inherit>
-    <file source="cii/schematron/EN16931-CII-validation.sch" path="cii/xslt/EN16931-CII-validation.xsl" />
+    <file source="cii/schematron/preprocessed/EN16931-CII-validation-preprocessed.sch" path="cii/xslt/EN16931-CII-validation.xsl" />
   </configuration>
 
   <configuration>
@@ -23,7 +23,7 @@
     <title>TC434 CII Invoice FERD</title>
     <declaration type="xml.uncefact">CrossIndustryInvoice::urn:ferd:CrossIndustryDocument:invoice:1p0:comfort</declaration>
     <inherit>uncefact-d16b-uncoupled-crossindustryinvoice</inherit>
-    <file source="cii/schematron/EN16931-CII-validation.sch" path="cii/xslt/EN16931-CII-validation.xsl" />
+    <file source="cii/schematron/preprocessed/EN16931-CII-validation-preprocessed.sch" path="cii/xslt/EN16931-CII-validation.xsl" />
   </configuration>
 
 </buildConfigurations>
