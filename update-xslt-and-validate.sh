@@ -9,7 +9,7 @@ mvn -f pom-preprocess.xml generate-resources || exit 1
 mvn -f pom-xslt-preprocessed.xml process-resources || exit 1
 
 # adopt filenames
-rm cii\xslt/EN16931-CII-validation.xslt
+rm cii/xslt/EN16931-CII-validation.xslt
 mv cii/xslt/EN16931-CII-validation-preprocessed.xslt cii/xslt/EN16931-CII-validation.xslt 
 rm ubl/xslt/EN16931-UBL-validation.xslt
 mv ubl/xslt/EN16931-UBL-validation-preprocessed.xslt ubl/xslt/EN16931-UBL-validation.xslt 
