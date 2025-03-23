@@ -15028,9 +15028,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(count(cac:Party/cac:PartyName/cbc:Name) &lt;= 1)" />
+      <xsl:when test="(count(cac:PartyName/cbc:Name) &lt;= 1)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(count(cac:Party/cac:PartyName/cbc:Name) &lt;= 1)">
+        <svrl:failed-assert test="(count(cac:PartyName/cbc:Name) &lt;= 1)">
           <xsl:attribute name="id">UBL-SR-22</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
