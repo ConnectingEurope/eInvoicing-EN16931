@@ -259,7 +259,7 @@
   <param name="VAT_breakdown " value="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax"/>
   
   <param name="Payment_instructions " value="//ram:SpecifiedTradeSettlementPaymentMeans"/>
-  <param name="CreditTransfer_information " value="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayerPartyDebtorFinancialAccount"/>
+  <param name="CreditTransfer_information " value="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyDebtorFinancialAccount"/>
   <param name="Card_information " value="//ram:ApplicableTradeSettlementFinancialCard"/>
   <param name="Additional_supporting_documents " value="//ram:AdditionalReferencedDocument"/>
   <param name="Item_attributes " value="//ram:ApplicableProductCharacteristic"/>
