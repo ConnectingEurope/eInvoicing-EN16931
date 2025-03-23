@@ -31,6 +31,9 @@
   <rule context="$Document_level_charges">
     <assert test="$UBL-SR-31" flag="fatal" id="UBL-SR-31">[UBL-SR-31]-Document level charge reason shall occur maximum once</assert>
   </rule>
+  <rule context="$PartyTaxScheme">
+    <assert test="$UBL-SR-53" flag="fatal" id="UBL-SR-53">[UBL-SR-53]- CompanyID (VAT Identifier) must be stated when providing the PartyTaxScheme/TaxScheme/ID.</assert>
+  </rule>
   <rule context="$Invoice">
     <assert test="$UBL-CR-001" flag="warning" id="UBL-CR-001">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
     <assert test="$UBL-CR-002" flag="warning" id="UBL-CR-002">[UBL-CR-002]-A UBL invoice should not include the UBLVersionID or it should be 2.1</assert>

@@ -382,6 +382,9 @@
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = true()]">
       <assert id="UBL-SR-31" flag="fatal" test="(count(cbc:AllowanceChargeReason) &lt;= 1)">[UBL-SR-31]-Document level charge reason shall occur maximum once</assert>
     </rule>
+    <rule context="cac:PartyTaxScheme">
+      <assert id="UBL-SR-53" flag="fatal" test="exists(cac:TaxScheme/cbc:ID) and exists(cbc:CompanyID)">[UBL-SR-53]- CompanyID (VAT Identifier) must be stated when providing the PartyTaxScheme/TaxScheme/ID.</assert>
+    </rule>
     <rule context="/ubl:Invoice | /cn:CreditNote">
       <assert id="UBL-CR-001" flag="warning" test="not(ext:UBLExtensions)">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
       <assert id="UBL-CR-002" flag="warning" test="not(cbc:UBLVersionID) or cbc:UBLVersionID = '2.1'">[UBL-CR-002]-A UBL invoice should not include the UBLVersionID or it should be 2.1</assert>

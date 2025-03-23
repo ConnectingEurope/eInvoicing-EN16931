@@ -3674,7 +3674,7 @@
 
 
 	<!--RULE -->
-<xsl:template match="//cac:PostalAddress | //cac:Address" mode="M12" priority="1014">
+<xsl:template match="//cac:PostalAddress | //cac:Address" mode="M12" priority="1015">
     <svrl:fired-rule context="//cac:PostalAddress | //cac:Address" />
 
 		<!--ASSERT -->
@@ -3695,7 +3695,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AccountingSupplierParty/cac:Party" mode="M12" priority="1013">
+<xsl:template match="cac:AccountingSupplierParty/cac:Party" mode="M12" priority="1014">
     <svrl:fired-rule context="cac:AccountingSupplierParty/cac:Party" />
 
 		<!--ASSERT -->
@@ -3716,7 +3716,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AdditionalDocumentReference" mode="M12" priority="1012">
+<xsl:template match="cac:AdditionalDocumentReference" mode="M12" priority="1013">
     <svrl:fired-rule context="cac:AdditionalDocumentReference" />
 
 		<!--ASSERT -->
@@ -3752,7 +3752,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]" mode="M12" priority="1011">
+<xsl:template match="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]" mode="M12" priority="1012">
     <svrl:fired-rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]" />
 
 		<!--ASSERT -->
@@ -3773,7 +3773,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//*[ends-with(name(), 'BinaryObject')]" mode="M12" priority="1010">
+<xsl:template match="//*[ends-with(name(), 'BinaryObject')]" mode="M12" priority="1011">
     <svrl:fired-rule context="//*[ends-with(name(), 'BinaryObject')]" />
 
 		<!--ASSERT -->
@@ -3809,7 +3809,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:Delivery" mode="M12" priority="1009">
+<xsl:template match="cac:Delivery" mode="M12" priority="1010">
     <svrl:fired-rule context="cac:Delivery" />
 
 		<!--ASSERT -->
@@ -3830,7 +3830,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AllowanceCharge[cbc:ChargeIndicator = false()]" mode="M12" priority="1008">
+<xsl:template match="cac:AllowanceCharge[cbc:ChargeIndicator = false()]" mode="M12" priority="1009">
     <svrl:fired-rule context="cac:AllowanceCharge[cbc:ChargeIndicator = false()]" />
 
 		<!--ASSERT -->
@@ -3851,7 +3851,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AllowanceCharge[cbc:ChargeIndicator = true()]" mode="M12" priority="1007">
+<xsl:template match="cac:AllowanceCharge[cbc:ChargeIndicator = true()]" mode="M12" priority="1008">
     <svrl:fired-rule context="cac:AllowanceCharge[cbc:ChargeIndicator = true()]" />
 
 		<!--ASSERT -->
@@ -3865,6 +3865,27 @@
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
           <svrl:text>[UBL-SR-31]-Document level charge reason shall occur maximum once</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+    <xsl:apply-templates mode="M12" select="@*|*" />
+  </xsl:template>
+
+	<!--RULE -->
+<xsl:template match="cac:PartyTaxScheme" mode="M12" priority="1007">
+    <svrl:fired-rule context="cac:PartyTaxScheme" />
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="exists(cac:TaxScheme/cbc:ID) and exists(cbc:CompanyID)" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="exists(cac:TaxScheme/cbc:ID) and exists(cbc:CompanyID)">
+          <xsl:attribute name="id">UBL-SR-53</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-SR-53]- CompanyID (VAT Identifier) must be stated when providing the PartyTaxScheme/TaxScheme/ID.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>

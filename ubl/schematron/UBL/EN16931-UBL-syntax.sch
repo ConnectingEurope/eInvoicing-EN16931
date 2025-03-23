@@ -55,7 +55,7 @@
   <param name="UBL-SR-50" value="count(cac:Item/cbc:Description) &lt;= 1"/>
   <param name="UBL-SR-51" value="not(cac:AddressLine) or count(cac:AddressLine) = 1"/>
   <param name="UBL-SR-52" value="count(cac:DocumentReference) &lt;= 1"/>
-  
+  <param name="UBL-SR-53" value="exists(cac:TaxScheme/cbc:ID) and exists(cbc:CompanyID)"/>
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>
   <param name="UBL-DT-07" value="(@filename)"/>
@@ -761,6 +761,7 @@
   <param name="UBL-CR-682" value="not(cac:Delivery/cac:DeliveryAddress)"/>
   
   <param name="Invoice_line" value="cac:InvoiceLine | cac:CreditNoteLine"/>
+  <param name="PartyTaxScheme" value="cac:PartyTaxScheme"/>
   <param name="Preceding_Invoice" value="cac:BillingReference"/>
   <param name="Payee" value="cac:PayeeParty"/>
   <param name="Tax_Representative" value="cac:TaxRepresentativeParty"/>
