@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--
-
-    Licensed under European Union Public Licence (EUPL) version 1.2.
-
--->
 <!--Schematron version 1.3.13 - Last update: 2024-10-08--><xsl:stylesheet xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:iso="http://purl.oclc.org/dsdl/schematron" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:saxon="http://saxon.sf.net/" xmlns:schold="http://www.ascc.net/xml/schematron" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 <!--Implementers: please note that overriding process-prolog or process-root is 
     the preferred method for meta-stylesheets to use where possible. -->
@@ -292,8 +287,8 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayerPartyDebtorFinancialAccount" mode="M10" priority="1055">
-    <svrl:fired-rule context="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayerPartyDebtorFinancialAccount" />
+<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyDebtorFinancialAccount" mode="M10" priority="1055">
+    <svrl:fired-rule context="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyDebtorFinancialAccount" />
 
 		<!--ASSERT -->
 <xsl:choose>
@@ -2391,9 +2386,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="ram:RateApplicablePercent > 0" />
+      <xsl:when test="ram:RateApplicablePercent >= 0" />
       <xsl:otherwise>
-        <svrl:failed-assert test="ram:RateApplicablePercent > 0">
+        <svrl:failed-assert test="ram:RateApplicablePercent >= 0">
           <xsl:attribute name="id">BR-AG-06</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -2427,9 +2422,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="ram:RateApplicablePercent > 0" />
+      <xsl:when test="ram:RateApplicablePercent >= 0" />
       <xsl:otherwise>
-        <svrl:failed-assert test="ram:RateApplicablePercent > 0">
+        <svrl:failed-assert test="ram:RateApplicablePercent >= 0">
           <xsl:attribute name="id">BR-AG-07</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
