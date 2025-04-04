@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rsm:CrossIndustryInvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<rsm:CrossIndustryInvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
   xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
   <rsm:ExchangedDocumentContext>
     <ram:GuidelineSpecifiedDocumentContextParameter>
@@ -53,8 +57,8 @@
       <ram:SpecifiedLineTradeSettlement>
         <ram:ApplicableTradeTax>
           <ram:TypeCode>VAT</ram:TypeCode>
-          <ram:CategoryCode>Z</ram:CategoryCode>
-          <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
         </ram:ApplicableTradeTax>
         <ram:SpecifiedTradeSettlementLineMonetarySummation>
           <ram:LineTotalAmount>12122.59</ram:LineTotalAmount>
@@ -81,8 +85,8 @@
       <ram:SpecifiedLineTradeSettlement>
         <ram:ApplicableTradeTax>
           <ram:TypeCode>VAT</ram:TypeCode>
-          <ram:CategoryCode>Z</ram:CategoryCode>
-          <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
         </ram:ApplicableTradeTax>
         <ram:SpecifiedTradeSettlementLineMonetarySummation>
           <ram:LineTotalAmount>-606.13</ram:LineTotalAmount>
@@ -109,8 +113,8 @@
       <ram:SpecifiedLineTradeSettlement>
         <ram:ApplicableTradeTax>
           <ram:TypeCode>VAT</ram:TypeCode>
-          <ram:CategoryCode>Z</ram:CategoryCode>
-          <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
         </ram:ApplicableTradeTax>
         <ram:SpecifiedTradeSettlementLineMonetarySummation>
           <ram:LineTotalAmount>177.41</ram:LineTotalAmount>
@@ -166,11 +170,11 @@
         </ram:PayeePartyCreditorFinancialAccount>
       </ram:SpecifiedTradeSettlementPaymentMeans>
       <ram:ApplicableTradeTax>
-        <ram:CalculatedAmount>0.00</ram:CalculatedAmount>
+        <ram:CalculatedAmount>2221.84</ram:CalculatedAmount>
         <ram:TypeCode>VAT</ram:TypeCode>
         <ram:BasisAmount>11693.87</ram:BasisAmount>
-        <ram:CategoryCode>Z</ram:CategoryCode>
-        <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
       </ram:ApplicableTradeTax>
       <ram:SpecifiedTradePaymentTerms>
         <ram:DueDateDateTime>
@@ -180,9 +184,9 @@
       <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
         <ram:LineTotalAmount>11693.87</ram:LineTotalAmount>
         <ram:TaxBasisTotalAmount>11693.87</ram:TaxBasisTotalAmount>
-        <ram:TaxTotalAmount currencyID="EUR">0.0</ram:TaxTotalAmount>
-        <ram:GrandTotalAmount>11693.87</ram:GrandTotalAmount>
-        <ram:DuePayableAmount>11693.87</ram:DuePayableAmount>
+        <ram:TaxTotalAmount currencyID="EUR">2221.84</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount>13915.71</ram:GrandTotalAmount>
+        <ram:DuePayableAmount>13915.71</ram:DuePayableAmount>
       </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
     </ram:ApplicableHeaderTradeSettlement>
   </rsm:SupplyChainTradeTransaction>
