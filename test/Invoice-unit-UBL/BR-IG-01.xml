@@ -6,7 +6,7 @@
 -->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
 	<assert>
-		<scope>BR-IG-01</scope>
+		<scope>BR-AF-01</scope>
 	</assert>
 	<test>
 		<assert>
@@ -14,7 +14,7 @@
 				a document level charge where the Invoiced item VAT category code is “L” does
 				contain in the VAT breakdown at least one VAT category code equal with
 				"L"</description>
-			<success>BR-IG-01</success>
+			<success>BR-AF-01</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -69,7 +69,7 @@
 				a document level charge where the Invoiced item VAT category code is “L” does
 				contain in the VAT breakdown at least one VAT category code equal with
 				"L"</description>
-			<success>BR-IG-01</success>
+			<success>BR-AF-01</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -105,7 +105,7 @@
 				a document level charge where the Invoiced item VAT category code is “L” does
 				contain in the VAT breakdown at least one VAT category code equal with
 				"L"</description>
-			<success>BR-IG-01</success>
+			<success>BR-AF-01</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -140,7 +140,7 @@
 				a document level charge where the Invoiced item VAT category code is “L” does
 				contain in the VAT breakdown at least one VAT category code equal with
 				"L"</description>
-			<success>BR-IG-01</success>
+			<success>BR-AF-01</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -175,7 +175,7 @@
 				allowance or a document level charge where the Invoiced item VAT category code is
 				“L” does not contain in the VAT breakdown at least one VAT category code equal with
 				"L"</description>
-			<error>BR-IG-01</error>
+			<error>BR-AF-01</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -210,7 +210,7 @@
 				allowance or a document level charge where the Invoiced item VAT category code is
 				“L” does not contain in the VAT breakdown at least one VAT category code equal with
 				"L"</description>
-			<error>BR-IG-01</error>
+			<error>BR-AF-01</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -242,7 +242,7 @@
 				allowance or a document level charge where the Invoiced item VAT category code is
 				“L” does not contain in the VAT breakdown at least one VAT category code equal with
 				"L"</description>
-			<error>BR-IG-01</error>
+			<error>BR-AF-01</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -275,7 +275,7 @@
 				allowance or a document level charge where the Invoiced item VAT category code is
 				“L” does not contain in the VAT breakdown at least one VAT category code equal with
 				"L"</description>
-			<error>BR-IG-01</error>
+			<error>BR-AF-01</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
