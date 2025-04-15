@@ -6,13 +6,13 @@
 -->
  <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
 	<assert>
-		<scope>BR-IP-01</scope>
+		<scope>BR-AG-01</scope>
 	</assert>
 	<test>
 		<assert>
 			<description>Verify that an Invoice that contains a line, a document level allowance or a document level charge 
 				where the Invoiced item VAT category code is “M” does contain in the VAT breakdown at least one VAT category code equal with "M"</description>
-			<success>BR-IP-01</success>
+			<success>BR-AG-01</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -52,7 +52,7 @@
 	<test>
 		<assert>
 			<description>Verify that an Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code is “M” does contain in the VAT breakdown at least one VAT category code equal with "M"</description>
-			<success>BR-IP-01</success>
+			<success>BR-AG-01</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -79,7 +79,7 @@
 	<test>
 		<assert>
 			<description>Verify that an Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code is “M” does contain in the VAT breakdown at least one VAT category code equal with "M"</description>
-			<success>BR-IP-01</success>
+			<success>BR-AG-01</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -105,7 +105,7 @@
 	<test>
 		<assert>
 			<description>Verify that an Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code is “M” does contain in the VAT breakdown at least one VAT category code equal with "M"</description>
-			<success>BR-IP-01</success>
+			<success>BR-AG-01</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -131,7 +131,7 @@
 	<test>
 		<assert>
 			<description>Trigger error if an Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code is “M” does not contain in the VAT breakdown at least one VAT category code equal with "M"</description>
-			<error>BR-IP-01</error>
+			<error>BR-AG-01</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -160,7 +160,7 @@
 	<test>
 		<assert>
 			<description>Trigger error if an Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code is “M” does not contain in the VAT breakdown at least one VAT category code equal with "M"</description>
-			<error>BR-IP-01</error>
+			<error>BR-AG-01</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -186,7 +186,7 @@
 	<test>
 		<assert>
 			<description>Trigger error if an Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code is “M” does not contain in the VAT breakdown at least one VAT category code equal with "M"</description>
-			<error>BR-IP-01</error>
+			<error>BR-AG-01</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -213,7 +213,7 @@
 	<test>
 		<assert>
 			<description>Trigger error if an Invoice that contains a line, a document level allowance or a document level  charge where the Invoiced item VAT category code is “M” does not contain in the VAT breakdown at least one VAT category code equal with "M"</description>
-			<error>BR-IP-01</error>
+			<error>BR-AG-01</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

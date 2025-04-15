@@ -6,12 +6,12 @@
 -->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
 	<assert>
-		<scope>BR-IP-10</scope>
+		<scope>BR-AG-10</scope>
 	</assert>
 	<test>
 		<assert>
 			<description>Verify that VAT Breakdown with VAT Category code "M" shall not have a VAT Exemption reason code or VAT Exemption reason text </description>
-			<success>BR-IP-10</success>
+			<success>BR-AG-10</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -33,7 +33,7 @@
 	<test>
 		<assert>
 			<description>Trigger error if a VAT Breakdown with VAT Category code "M" shall has a VAT Exemption reason code or VAT Exemption reason text </description>
-			<error>BR-IP-10</error>
+			<error>BR-AG-10</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -58,7 +58,7 @@
 	<test>
 		<assert>
 			<description>Trigger error if a VAT Breakdown with VAT Category code "M" shall has a VAT Exemption reason code or VAT Exemption reason text </description>
-			<error>BR-IP-10</error>
+			<error>BR-AG-10</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -82,7 +82,7 @@
 	<test>
 		<assert>
 			<description>Trigger error if a VAT Breakdown with VAT Category code "M" shall has a VAT Exemption reason code or VAT Exemption reason text </description>
-			<error>BR-IP-10</error>
+			<error>BR-AG-10</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

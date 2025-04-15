@@ -10,12 +10,12 @@
 			category code (BT-151) is “IPSI” shall contain the Seller VAT Identifier (BT-31), the
 			Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT
 			identifier (BT-63)</description>
-		<scope>BR-IP-02</scope>
+		<scope>BR-AG-02</scope>
 	</assert>
 	<test id="1">
 		<assert>
 
-			<success>BR-IP-02</success>
+			<success>BR-AG-02</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -46,7 +46,7 @@
 	</test>
 	<test id="2">
 		<assert>
-			<success>BR-IP-02</success>
+			<success>BR-AG-02</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -75,7 +75,7 @@
 	</test>
 	<test id="3">
 		<assert>
-			<error>BR-IP-02</error>
+			<error>BR-AG-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -107,7 +107,7 @@
 	</test>
 	<test id="4">
 		<assert>
-			<error>BR-IP-02</error>
+			<error>BR-AG-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -141,7 +141,7 @@
 
 	<test id="5">
 		<assert>
-			<error>BR-IP-02</error>
+			<error>BR-AG-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -174,7 +174,7 @@
 
 	<test id="6">
 		<assert>
-			<error>BR-IP-02</error>
+			<error>BR-AG-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -204,7 +204,7 @@
 	</test>
 	<test id="7">
 		<assert>
-			<error>BR-IP-02</error>
+			<error>BR-AG-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
