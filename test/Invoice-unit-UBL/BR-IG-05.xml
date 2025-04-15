@@ -6,13 +6,13 @@
 -->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
 	<assert>
-		<scope>BR-IG-05</scope>
+		<scope>BR-AF-05</scope>
 	</assert>
 	<test>
 		<assert>
 			<description>Verify that in an Invoice line where the Invoice item VAT category code is
 				"L" the Invoiced item VAT rate shall be >= 0.</description>
-			<success>BR-IG-05</success>
+			<success>BR-AF-05</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -37,7 +37,7 @@
 		<assert>
 			<description>Verify that in an Invoice line where the Invoice item VAT category code is
 				"L" the Invoiced item VAT rate shall be >= 0.</description>
-			<success>BR-IG-05</success>
+			<success>BR-AF-05</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -62,7 +62,7 @@
 		<assert>
 			<description>Trigger error if an Invoice line where the Invoice item VAT category code
 				is "L" the Invoiced item VAT rate is negative.</description>
-			<error>BR-IG-05</error>
+			<error>BR-AF-05</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

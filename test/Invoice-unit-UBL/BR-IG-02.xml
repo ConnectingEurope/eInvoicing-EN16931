@@ -10,12 +10,12 @@
 			category code (BT-151) is “IGIC” shall contain the Seller VAT Identifier (BT-31), the
 			Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT
 			identifier (BT-63)</description>
-		<scope>BR-IG-02</scope>
+		<scope>BR-AF-02</scope>
 	</assert>
 	<test id="1">
 		<assert>
 			<description>BT-31 present</description>
-			<success>BR-IG-02</success>
+			<success>BR-AF-02</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -47,7 +47,7 @@
 	<test id="2">
 		<assert>
 			<description>BT-63 present</description>
-			<success>BR-IG-02</success>
+			<success>BR-AF-02</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -78,7 +78,7 @@
 	<test id="3">
 		<assert>
 			<description>BT-32 present</description>
-			<success>BR-IG-02</success>
+			<success>BR-AF-02</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -109,7 +109,7 @@
 	</test>
 	<test id="4">
 		<assert>
-			<error>BR-IG-02</error>
+			<error>BR-AF-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -141,7 +141,7 @@
 	</test>
 	<test id="5">
 		<assert>
-			<error>BR-IG-02</error>
+			<error>BR-AF-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -175,7 +175,7 @@
 
 	<test id="6">
 		<assert>
-			<error>BR-IG-02</error>
+			<error>BR-AF-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -208,7 +208,7 @@
 
 	<test id="7">
 		<assert>
-			<error>BR-IG-02</error>
+			<error>BR-AF-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -238,7 +238,7 @@
 	</test>
 	<test id="8">
 		<assert>
-			<error>BR-IG-02</error>
+			<error>BR-AF-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -271,7 +271,7 @@
 
 	<test id="9">
 		<assert>
-			<error>BR-IG-02</error>
+			<error>BR-AF-02</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
