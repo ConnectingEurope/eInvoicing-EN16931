@@ -90,7 +90,7 @@
 			
 			<cac:PayeeParty>
 				<cac:PartyIdentification>
-					<cbc:ID schemeID="0239"/>
+					<cbc:ID schemeID="0241"/>
 				</cac:PartyIdentification>
 				<cac:PartyIdentification>
 					<cbc:ID schemeID="0250"/>

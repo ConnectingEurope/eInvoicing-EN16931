@@ -6,13 +6,13 @@
 -->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="tc434-ubl">
 	<assert>
-		<scope>BR-IG-09</scope>
+		<scope>BR-AF-09</scope>
 	</assert>
 	<test>
 		<assert>
 			<description>Verify that the VAT category tax amount in VAT breakdown where VAT category
 				code is "L" = the VAT category taxable amount multiplied by the VAT category rate </description>
-			<success>BR-IG-09</success>
+			<success>BR-AF-09</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -38,7 +38,7 @@
 		<assert>
 			<description>Verify that the VAT category tax amount in VAT breakdown where VAT category
 				code is "L" = the VAT category taxable amount multiplied by the VAT category rate </description>
-			<success>BR-IG-09</success>
+			<success>BR-AF-09</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -64,7 +64,7 @@
 		<assert>
 			<description>Verify that the VAT category tax amount in VAT breakdown where VAT category
 				code is "L" = the VAT category taxable amount multiplied by the VAT category rate </description>
-			<success>BR-IG-09</success>
+			<success>BR-AF-09</success>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -103,7 +103,7 @@
 			<description>Trigger errror if the VAT category tax amount in VAT breakdown where VAT
 				category code is "L" != the VAT category taxable amount multiplied by the VAT
 				category rate </description>
-			<error>BR-IG-09</error>
+			<error>BR-AF-09</error>
 		</assert>
 		<Invoice
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
