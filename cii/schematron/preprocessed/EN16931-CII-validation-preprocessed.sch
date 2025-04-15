@@ -4,7 +4,7 @@
     Licensed under European Union Public Licence (EUPL) version 1.2.
 
 -->
-<!--Schematron version 1.3.13 - Last update: 2024-10-08--><schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+<!--Schematron version 1.3.14 - Last update: 2025-04-11--><schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
   <title>EN16931 model bound to CII</title>
   <ns prefix="rsm" uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" />
   <ns prefix="ccts" uri="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" />
