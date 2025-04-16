@@ -4,7 +4,7 @@
     Licensed under European Union Public Licence (EUPL) version 1.2.
 
 -->
-<!--Schematron version 1.3.14 - Last update: 2025-04-11--><schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+<!--Schematron version 1.3.14.1 - Last update: 2025-04-16--><schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
   <title>EN16931  model bound to UBL</title>
   <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" />
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" />
