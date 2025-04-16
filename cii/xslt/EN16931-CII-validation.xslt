@@ -217,7 +217,7 @@
 
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedTradeAllowanceCharge" mode="M10" priority="1059">
+<xsl:template match="//ram:SpecifiedTradeAllowanceCharge" mode="M10" priority="1060">
     <svrl:fired-rule context="//ram:SpecifiedTradeAllowanceCharge" />
 
 		<!--ASSERT -->
@@ -238,7 +238,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:DesignatedProductClassification" mode="M10" priority="1058">
+<xsl:template match="//ram:DesignatedProductClassification" mode="M10" priority="1059">
     <svrl:fired-rule context="//ram:DesignatedProductClassification" />
 
 		<!--ASSERT -->
@@ -259,7 +259,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:AdditionalReferencedDocument" mode="M10" priority="1057">
+<xsl:template match="//ram:AdditionalReferencedDocument" mode="M10" priority="1058">
     <svrl:fired-rule context="//ram:AdditionalReferencedDocument" />
 
 		<!--ASSERT -->
@@ -280,7 +280,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:ApplicableTradeSettlementFinancialCard" mode="M10" priority="1056">
+<xsl:template match="//ram:ApplicableTradeSettlementFinancialCard" mode="M10" priority="1057">
     <svrl:fired-rule context="//ram:ApplicableTradeSettlementFinancialCard" />
 
 		<!--ASSERT -->
@@ -301,7 +301,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyDebtorFinancialAccount" mode="M10" priority="1055">
+<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyDebtorFinancialAccount" mode="M10" priority="1056">
     <svrl:fired-rule context="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyDebtorFinancialAccount" />
 
 		<!--ASSERT -->
@@ -337,7 +337,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery" mode="M10" priority="1054">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery" mode="M10" priority="1055">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery" />
 
 		<!--ASSERT -->
@@ -358,7 +358,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false']" mode="M10" priority="1053">
+<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false']" mode="M10" priority="1054">
     <svrl:fired-rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='false']" />
 
 		<!--ASSERT -->
@@ -469,7 +469,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='true']" mode="M10" priority="1052">
+<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='true']" mode="M10" priority="1053">
     <svrl:fired-rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator='true']" />
 
 		<!--ASSERT -->
@@ -580,7 +580,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedTradeSettlementHeaderMonetarySummation" mode="M10" priority="1051">
+<xsl:template match="//ram:SpecifiedTradeSettlementHeaderMonetarySummation" mode="M10" priority="1052">
     <svrl:fired-rule context="//ram:SpecifiedTradeSettlementHeaderMonetarySummation" />
 
 		<!--ASSERT -->
@@ -886,7 +886,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice" mode="M10" priority="1050">
+<xsl:template match="/rsm:CrossIndustryInvoice" mode="M10" priority="1051">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice" />
 
 		<!--ASSERT -->
@@ -1297,7 +1297,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:IncludedSupplyChainTradeLineItem" mode="M10" priority="1049">
+<xsl:template match="//ram:IncludedSupplyChainTradeLineItem" mode="M10" priority="1050">
     <svrl:fired-rule context="//ram:IncludedSupplyChainTradeLineItem" />
 
 		<!--ASSERT -->
@@ -1483,7 +1483,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'false']" mode="M10" priority="1048">
+<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'false']" mode="M10" priority="1049">
     <svrl:fired-rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'false']" />
 
 		<!--ASSERT -->
@@ -1579,7 +1579,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'true']" mode="M10" priority="1047">
+<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'true']" mode="M10" priority="1048">
     <svrl:fired-rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator = 'true']" />
 
 		<!--ASSERT -->
@@ -1675,7 +1675,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:BillingSpecifiedPeriod" mode="M10" priority="1046">
+<xsl:template match="//ram:SpecifiedLineTradeSettlement/ram:BillingSpecifiedPeriod" mode="M10" priority="1047">
     <svrl:fired-rule context="//ram:SpecifiedLineTradeSettlement/ram:BillingSpecifiedPeriod" />
 
 		<!--ASSERT -->
@@ -1711,7 +1711,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:BillingSpecifiedPeriod" mode="M10" priority="1045">
+<xsl:template match="//ram:ApplicableHeaderTradeSettlement/ram:BillingSpecifiedPeriod" mode="M10" priority="1046">
     <svrl:fired-rule context="//ram:ApplicableHeaderTradeSettlement/ram:BillingSpecifiedPeriod" />
 
 		<!--ASSERT -->
@@ -1747,7 +1747,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:ApplicableProductCharacteristic" mode="M10" priority="1044">
+<xsl:template match="//ram:ApplicableProductCharacteristic" mode="M10" priority="1045">
     <svrl:fired-rule context="//ram:ApplicableProductCharacteristic" />
 
 		<!--ASSERT -->
@@ -1768,7 +1768,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:PayeeTradeParty" mode="M10" priority="1043">
+<xsl:template match="//ram:PayeeTradeParty" mode="M10" priority="1044">
     <svrl:fired-rule context="//ram:PayeeTradeParty" />
 
 		<!--ASSERT -->
@@ -1789,7 +1789,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans" mode="M10" priority="1042">
+<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans" mode="M10" priority="1043">
     <svrl:fired-rule context="//ram:SpecifiedTradeSettlementPaymentMeans" />
 
 		<!--ASSERT -->
@@ -1806,6 +1806,12 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
+    <xsl:apply-templates mode="M10" select="@*|*" />
+  </xsl:template>
+
+	<!--RULE -->
+<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans[some $code in tokenize('49 59', '\s')  satisfies normalize-space(ram:TypeCode) = $code]" mode="M10" priority="1042">
+    <svrl:fired-rule context="//ram:SpecifiedTradeSettlementPaymentMeans[some $code in tokenize('49 59', '\s')  satisfies normalize-space(ram:TypeCode) = $code]" />
 
 		<!--ASSERT -->
 <xsl:choose>

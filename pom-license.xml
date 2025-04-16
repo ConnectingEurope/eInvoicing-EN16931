@@ -12,7 +12,7 @@
     <version>2.0.8</version>
   </parent>
   <artifactId>centc434-validation-rules</artifactId>
-  <version>1.3.14</version>
+  <version>1.3.14.1</version>
   <name>centc434-validation-rules</name>
   <description>EN16931 validation rules</description>
   <url>https://github.com/ConnectingEurope/eInvoicing-EN16931</url>
