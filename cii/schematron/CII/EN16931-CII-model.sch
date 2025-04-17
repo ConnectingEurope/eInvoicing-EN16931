@@ -260,7 +260,7 @@
   
   <param name="Payment_instructions " value="//ram:SpecifiedTradeSettlementPaymentMeans"/>
   <param name="Credit_Payment_instructions " value="//ram:SpecifiedTradeSettlementPaymentMeans[some $code in tokenize('49 59', '\s')  satisfies normalize-space(ram:TypeCode) = $code]"/>
-  <param name="CreditTransfer_information " value="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyDebtorFinancialAccount"/>
+  <param name="CreditTransfer_information " value="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyCreditorFinancialAccount"/>
   <param name="Card_information " value="//ram:ApplicableTradeSettlementFinancialCard"/>
   <param name="Additional_supporting_documents " value="//ram:AdditionalReferencedDocument"/>
   <param name="Item_attributes " value="//ram:ApplicableProductCharacteristic"/>
