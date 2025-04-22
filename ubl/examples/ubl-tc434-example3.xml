@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<Invoice  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+ xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+ xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+ xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd"> 
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
+    <cbc:ID>TOSL108</cbc:ID>
+    <cbc:IssueDate>2013-04-10</cbc:IssueDate>
+    <cbc:DueDate>2013-05-10</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:Note>Contract was established through our website</cbc:Note>
+    <cbc:DocumentCurrencyCode>DKK</cbc:DocumentCurrencyCode>
+    <cac:InvoicePeriod>
+        <cbc:StartDate>2013-01-01</cbc:StartDate>
+        <cbc:EndDate>2013-04-01</cbc:EndDate>
+    </cac:InvoicePeriod>
+    <cac:ContractDocumentReference>
+        <cbc:ID>SUBSCR571</cbc:ID>
+    </cac:ContractDocumentReference>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">1238764941386</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PostalAddress>
+                <cbc:StreetName>Main street 2, Building 4</cbc:StreetName>
+                <cbc:CityName>Big city</cbc:CityName>
+                <cbc:PostalZone>54321</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>DK16356706</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>SubscriptionSeller</cbc:RegistrationName>
+                <cbc:CompanyID>DK16356706</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ElectronicMail>antonio@SubscriptionsSeller.dk</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">5790000435975</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PostalAddress>
+                <cbc:StreetName>Anystreet, Building 1</cbc:StreetName>
+                <cbc:CityName>Anytown</cbc:CityName>
+                <cbc:PostalZone>101</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>NO987654321MVA</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Buyercompany ltd</cbc:RegistrationName>
+                <cbc:CompanyID>987654321</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+   </cac:AccountingCustomerParty>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cbc:PaymentID>Payref1</cbc:PaymentID>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>DK1212341234123412</cbc:ID>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Freight charge</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="DKK">100.00</cbc:Amount>
+        <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="DKK">305.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="DKK">900.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="DKK">225.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="DKK">800.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="DKK">80.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>10</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="DKK">1600.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="DKK">1700.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="DKK">2005.00</cbc:TaxInclusiveAmount>
+        <cbc:ChargeTotalAmount currencyID="DKK">100.00</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="DKK">2005.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">2</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">800.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Description>Subscription fee 1st quarter</cbc:Description>
+            <cbc:Name>Paper subscription</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">800.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">2</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">800.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Description>Subscription fee 1st quarter</cbc:Description>
+            <cbc:Name>Paper subscription</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>10</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">800.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>

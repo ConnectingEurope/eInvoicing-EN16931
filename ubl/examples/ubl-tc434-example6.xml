@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<Invoice  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+ xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+ xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+ xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd"> 
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
+    <cbc:ID>TOSL110</cbc:ID>
+    <cbc:IssueDate>2013-04-10</cbc:IssueDate>
+    <cbc:DueDate>2013-05-10</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>DKK</cbc:DocumentCurrencyCode>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>DK123456789MVA</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>SellerCompany</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Buyercompany ltd</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+   </cac:AccountingCustomerParty>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="DKK">675.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="DKK">1500.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="DKK">375.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="DKK">2500.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="DKK">300.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>12</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="DKK">4000.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="DKK">4000.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="DKK">4675.00</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="DKK">4675.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">1000</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">1000.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Printing paper</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">1.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">100</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">500.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Parker Pen</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">5.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">500</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">2500.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>American Cookies</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>12</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">5.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>

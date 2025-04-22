@@ -346,8 +346,15 @@
             </ram:PayeeTradeParty>
             <ram:SpecifiedTradeSettlementPaymentMeans>
                 <ram:TypeCode>58</ram:TypeCode>
-                <ram:PayeePartyCreditorFinancialAccount>
+                <ram:Information>Half prepaid</ram:Information>
+                <ram:PayerPartyDebtorFinancialAccount>
                     <ram:IBANID>DK1212341234123412</ram:IBANID>
+                </ram:PayerPartyDebtorFinancialAccount>
+            </ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:SpecifiedTradeSettlementPaymentMeans>
+                <ram:TypeCode>58</ram:TypeCode>
+                <ram:PayeePartyCreditorFinancialAccount>
+                    <ram:IBANID/>
                 </ram:PayeePartyCreditorFinancialAccount>
             </ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:ApplicableTradeTax>

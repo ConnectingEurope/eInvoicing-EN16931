@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<Invoice  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+ xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+ xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+ xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd"> 
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
+    <cbc:ID>20150483</cbc:ID>
+    <cbc:IssueDate>2015-04-01</cbc:IssueDate>
+    <cbc:DueDate>2015-04-14</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:Note>Vriendelijk verzoeken wij u ervoor te zorgen dat het bedrag voor de vervaldatum op onze rekening staat onder vermelding van
+        het factuurnummer. Het bankrekeningnummer is 37.78.15.500, Rabobank, t.n.v. Bluem te Amersfoort. Reclames gaarne binnen
+        10 dagen. Gelieve bij navraag en correspondentie uw firma naam en factuurnummer vermelden. 
+        </cbc:Note>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:InvoicePeriod>
+        <cbc:StartDate>2016-04-01</cbc:StartDate>
+        <cbc:EndDate>2016-06-30</cbc:EndDate>
+    </cac:InvoicePeriod>
+    <cac:ContractDocumentReference>
+        <cbc:ID>iExpress 20110412</cbc:ID>
+    </cac:ContractDocumentReference>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PostalAddress>
+                <cbc:StreetName>Lindeboomseweg 41</cbc:StreetName>
+                <cbc:CityName>Amersfoort</cbc:CityName>
+                <cbc:PostalZone>3825 AL</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>NL809163160B01</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Bluem BV</cbc:RegistrationName>
+                <cbc:CompanyID>32081330 Amersfoort</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Telephone>033-4549055</cbc:Telephone>
+                <cbc:ElectronicMail>info@bluem.nl</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PostalAddress>
+                <cbc:StreetName>Henry Dunantweg 42</cbc:StreetName>
+                <cbc:CityName>Alphen aan den Rijn</cbc:CityName>
+                <cbc:PostalZone>2402 NR</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Provide Verzekeringen</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+   </cac:AccountingCustomerParty>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>NL13RABO0377815500</cbc:ID>
+            <cac:FinancialInstitutionBranch>
+                <cbc:ID>RABONL2U</cbc:ID>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">30.87</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">147.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">30.87</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>  
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">147.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">147.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">177.87</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="EUR">177.87</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="MON">3</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">147.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>IExpress licentiekosten</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>Verbruikscategorie</cbc:Name>
+                <cbc:Value>Start</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">49.00</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>

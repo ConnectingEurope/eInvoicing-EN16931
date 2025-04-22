@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+    xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+    xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">    
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
+    <cbc:ProfileID>1</cbc:ProfileID>
+    <cbc:ID>TOSL110</cbc:ID>
+    <cbc:IssueDate>2013-04-10</cbc:IssueDate>
+    <cbc:DueDate>2013-05-10</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:Note>Ordered through our website#Ordering information</cbc:Note>
+    <cbc:DocumentCurrencyCode>DKK</cbc:DocumentCurrencyCode>
+    <cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
+    <cbc:AccountingCost>67543</cbc:AccountingCost>
+    <cbc:BuyerReference>qwerty</cbc:BuyerReference>
+    <cac:InvoicePeriod>
+        <cbc:StartDate>2013-03-10</cbc:StartDate>
+        <cbc:EndDate>2013-04-10</cbc:EndDate>
+    </cac:InvoicePeriod>
+    <cac:OrderReference>
+        <cbc:ID>PO4711</cbc:ID>
+        <cbc:SalesOrderID>123</cbc:SalesOrderID>
+    </cac:OrderReference>
+    <cac:BillingReference>
+        <cac:InvoiceDocumentReference>
+            <cbc:ID>TOSL109</cbc:ID>
+            <cbc:IssueDate>2013-03-10</cbc:IssueDate>
+        </cac:InvoiceDocumentReference>
+    </cac:BillingReference>
+    <cac:DespatchDocumentReference>
+        <cbc:ID>5433</cbc:ID>
+    </cac:DespatchDocumentReference>
+    <cac:ReceiptDocumentReference>
+        <cbc:ID>3544</cbc:ID>
+    </cac:ReceiptDocumentReference>
+    <cac:OriginatorDocumentReference>
+        <cbc:ID>Lot567</cbc:ID>
+    </cac:OriginatorDocumentReference>
+    <cac:ContractDocumentReference>
+        <cbc:ID>2013-05</cbc:ID>
+    </cac:ContractDocumentReference>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>OBJ999</cbc:ID>
+        <cbc:DocumentDescription>ATS</cbc:DocumentDescription>
+    </cac:AdditionalDocumentReference>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>sales slip</cbc:ID>
+        <cbc:DocumentDescription>your sales slip</cbc:DocumentDescription>
+        <cac:Attachment>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="EHF.pdf"
+                >VGVzdGluZyBCYXNlNjQgZW5jb2Rpbmc=</cbc:EmbeddedDocumentBinaryObject>
+        </cac:Attachment>
+    </cac:AdditionalDocumentReference>
+    <cac:ProjectReference>
+        <cbc:ID>Project345</cbc:ID>
+    </cac:ProjectReference>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="EM">info@selco.nl</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">5790000436101</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>SelCo</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Hoofdstraat 4</cbc:StreetName>
+                <cbc:AdditionalStreetName>Om de hoek</cbc:AdditionalStreetName>
+                <cbc:CityName>Grootstad</cbc:CityName>
+                <cbc:PostalZone>54321</cbc:PostalZone>
+                <cbc:CountrySubentity>Overijssel</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>NL16356706</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>NL16356706</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>LOC</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>SellerCompany</cbc:RegistrationName>
+                <cbc:CompanyID>NL16356706</cbc:CompanyID>
+                <cbc:CompanyLegalForm>Export</cbc:CompanyLegalForm>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Name>Anthon Larsen</cbc:Name>
+                <cbc:Telephone>+3198989898</cbc:Telephone>
+                <cbc:ElectronicMail>Anthon@Selco.nl</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="EM">info@buyercompany.dk</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">5790000436057</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Buyco</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Anystreet, Building 1</cbc:StreetName>
+                <cbc:AdditionalStreetName>5th floor</cbc:AdditionalStreetName>
+                <cbc:CityName>Anytown</cbc:CityName>
+                <cbc:PostalZone>101</cbc:PostalZone>
+                <cbc:CountrySubentity>Jutland</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>DK16356607</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Buyercompany ltd</cbc:RegistrationName>
+                <cbc:CompanyID>DK16356607</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Name>John Hansen</cbc:Name>
+                <cbc:Telephone>+4598989898</cbc:Telephone>
+                <cbc:ElectronicMail>john.hansen@buyercompany.dk</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:PayeeParty>
+        <cac:PartyIdentification>
+            <cbc:ID>DK16356608</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Dagobert Duck</cbc:Name>
+        </cac:PartyName>
+        <cac:PartyLegalEntity>
+            <cbc:CompanyID>DK16356608</cbc:CompanyID>
+        </cac:PartyLegalEntity>
+    </cac:PayeeParty>
+    <cac:TaxRepresentativeParty>
+        <cac:PartyName>
+            <cbc:Name>Dick Panama</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:StreetName>Anystreet, Building 1</cbc:StreetName>
+            <cbc:AdditionalStreetName>6th floor</cbc:AdditionalStreetName>
+            <cbc:CityName>Anytown</cbc:CityName>
+            <cbc:PostalZone>101</cbc:PostalZone>
+            <cbc:CountrySubentity>Jutland</cbc:CountrySubentity>
+            <cac:Country>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyTaxScheme>
+            <cbc:CompanyID>DK16356609</cbc:CompanyID>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:PartyTaxScheme>
+    </cac:TaxRepresentativeParty>
+    <cac:Delivery>
+        <cbc:ActualDeliveryDate>2013-04-15</cbc:ActualDeliveryDate>
+        <cac:DeliveryLocation>
+            <cbc:ID>5790000436068</cbc:ID>
+            <cac:Address>
+                <cbc:StreetName>Deliverystreet</cbc:StreetName>
+                <cbc:AdditionalStreetName>Gate 15</cbc:AdditionalStreetName>
+                <cbc:CityName>Deliverycity</cbc:CityName>
+                <cbc:PostalZone>9000</cbc:PostalZone>
+                <cbc:CountrySubentity>Jutland</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+        </cac:DeliveryLocation>
+        <cac:DeliveryParty>
+            <cac:PartyName>
+                <cbc:Name>Logistic service Ltd</cbc:Name>
+            </cac:PartyName>
+        </cac:DeliveryParty>
+    </cac:Delivery>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>49</cbc:PaymentMeansCode>
+        <cbc:PaymentID>Payref1</cbc:PaymentID>
+        <cac:PaymentMandate>
+            <cbc:ID>123456</cbc:ID>
+            <cac:PayerFinancialAccount>
+                <cbc:ID>DK1212341234123412</cbc:ID>
+            </cac:PayerFinancialAccount>
+        </cac:PaymentMandate>
+    </cac:PaymentMeans>
+    <cac:PaymentTerms>
+        <cbc:Note>50% prepaid, 50% within one month</cbc:Note>
+    </cac:PaymentTerms>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReasonCode>100</cbc:AllowanceChargeReasonCode>
+        <cbc:AllowanceChargeReason>Loyal customer</cbc:AllowanceChargeReason>
+        <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+        <cbc:Amount currencyID="DKK">150.00</cbc:Amount>
+        <cbc:BaseAmount currencyID="DKK">1500.00</cbc:BaseAmount>
+        <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReasonCode>ABL</cbc:AllowanceChargeReasonCode>
+        <cbc:AllowanceChargeReason>Packaging</cbc:AllowanceChargeReason>
+        <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+        <cbc:Amount currencyID="DKK">150.00</cbc:Amount>
+        <cbc:BaseAmount currencyID="DKK">1500.00</cbc:BaseAmount>
+        <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="DKK">675.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="DKK">1500.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="DKK">375.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="DKK">2500.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="DKK">300.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>12</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">628.62</cbc:TaxAmount>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="DKK">4000.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="DKK">4000.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="DKK">4675.00</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="DKK">150.00</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="DKK">150.00</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="DKK">2337.50</cbc:PrepaidAmount>
+        <cbc:PayableAmount currencyID="DKK">2337.50</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:Note>first line</cbc:Note>
+        <cbc:InvoicedQuantity unitCode="EA">1000</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">1000.00</cbc:LineExtensionAmount>
+        <cbc:AccountingCost>ACC7654</cbc:AccountingCost>
+        <cac:InvoicePeriod>
+            <cbc:StartDate>2013-03-10</cbc:StartDate>
+            <cbc:EndDate>2013-04-10</cbc:EndDate>
+        </cac:InvoicePeriod>
+        <cac:OrderLineReference>
+            <cbc:LineID>1</cbc:LineID>
+        </cac:OrderLineReference>
+        <cac:DocumentReference>
+            <cbc:ID>Object2</cbc:ID>
+        </cac:DocumentReference>
+        <cac:AllowanceCharge>
+            <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReasonCode>100</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Loyal customer</cbc:AllowanceChargeReason>
+            <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+            <cbc:Amount currencyID="DKK">100.00</cbc:Amount>
+            <cbc:BaseAmount currencyID="DKK">1000.00</cbc:BaseAmount>
+        </cac:AllowanceCharge>
+        <cac:AllowanceCharge>
+            <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReasonCode>ABL</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Packaging</cbc:AllowanceChargeReason>
+            <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+            <cbc:Amount currencyID="DKK">100.00</cbc:Amount>
+            <cbc:BaseAmount currencyID="DKK">1000.00</cbc:BaseAmount>
+        </cac:AllowanceCharge>
+        <cac:Item>
+            <cbc:Description>Printing paper, 2mm</cbc:Description>
+            <cbc:Name>Printing paper</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>BUY123</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>JB007</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0088">1234567890128</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:OriginCountry>
+                <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:OriginCountry>
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="ZZZ">12344321</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>Thickness</cbc:Name>
+                <cbc:Value>2 mm</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">1.00</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="EA">1</cbc:BaseQuantity>
+            <cac:AllowanceCharge>
+                <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                <cbc:Amount currencyID="DKK">0.10</cbc:Amount>
+                <cbc:BaseAmount currencyID="DKK">1.10</cbc:BaseAmount>
+            </cac:AllowanceCharge>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:Note>second line</cbc:Note>
+        <cbc:InvoicedQuantity unitCode="EA">100</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">500.00</cbc:LineExtensionAmount>
+        <cbc:AccountingCost>ACC7654</cbc:AccountingCost>
+        <cac:InvoicePeriod>
+            <cbc:StartDate>2013-03-10</cbc:StartDate>
+            <cbc:EndDate>2013-04-10</cbc:EndDate>
+        </cac:InvoicePeriod>
+        <cac:OrderLineReference>
+            <cbc:LineID>2</cbc:LineID>
+        </cac:OrderLineReference>
+        <cac:DocumentReference>
+            <cbc:ID>Object2</cbc:ID>
+        </cac:DocumentReference>
+        <cac:Item>
+            <cbc:Description>Parker Pen, Black, model Sansa</cbc:Description>
+            <cbc:Name>Parker Pen</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>JB008</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:OriginCountry>
+                <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:OriginCountry>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">5.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">500</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="DKK">2500.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>American Cookies</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>JB009</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>12</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="DKK">5.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed under European Union Public Licence (EUPL) version 1.2.
+
+-->
+<Invoice  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+ xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+ xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+ xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+ xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd"> 
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
+    <cbc:ID>1100512149</cbc:ID>
+    <cbc:IssueDate>2014-11-10</cbc:IssueDate>
+    <cbc:DueDate>2014-11-24</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:Note>Periodieke afrekening
+        U vindt een toelichting op uw factuur via www.enexis.nl/factuur_grootzakelijk
+        Op alle diensten en overeenkomsten zijn de algemene voorwaarden aansluiting en
+        transport grootverbruik elektriciteit, respectievelijk gas van toepassing
+        www.enexis.nl</cbc:Note>
+    <cbc:TaxPointDate>2013-06-30</cbc:TaxPointDate>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:InvoicePeriod>
+        <cbc:StartDate>2014-08-01</cbc:StartDate>
+        <cbc:EndDate>2014-08-31</cbc:EndDate>
+    </cac:InvoicePeriod>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>871694831000290806</cbc:ID>
+        <cbc:DocumentDescription>ATS</cbc:DocumentDescription>
+    </cac:AdditionalDocumentReference>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyName>
+                <cbc:Name>Enexis</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Magistratenlaan 116</cbc:StreetName>
+                <cbc:CityName>'S-HERTOGENBOSCH</cbc:CityName>
+                <cbc:PostalZone>5223MB</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>NL809561074B01</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Enexis B.V.</cbc:RegistrationName>
+                <cbc:CompanyID>17131139</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ElectronicMail>klantenservice.zakelijk@enexis.nl</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>1081119</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PostalAddress>
+                <cbc:StreetName>Bedrijfslaan 4</cbc:StreetName>
+                <cbc:CityName>ONDERNEMERSTAD</cbc:CityName>
+                <cbc:PostalZone>9999 XX</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Klant</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+   </cac:AccountingCustomerParty>
+    <cac:Delivery>
+        <cac:DeliveryLocation>
+            <cac:Address>
+                <cbc:StreetName>Bedrijfslaan 4,</cbc:StreetName>
+                <cbc:CityName>ONDERNEMERSTAD</cbc:CityName>
+                <cbc:PostalZone>9999 XX</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+        </cac:DeliveryLocation>
+    </cac:Delivery>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cbc:PaymentID>1100512149</cbc:PaymentID>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>NL28RBOS0420242228</cbc:ID>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:PaymentTerms>
+        <cbc:Note>Enexis brengt wettelijke rente in rekening over te laat betaalde
+            facturen. Kijk voor informatie op www.enexis.nl/rentenota</cbc:Note>        
+    </cac:PaymentTerms>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">190.87</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">908.91</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">190.87</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">908.91</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">908.91</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">1099.78</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="EUR">1099.78</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="KWH">16000</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">140.80</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Getransporteerde kWh’s</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>contract transportvermogen</cbc:Name>
+                <cbc:Value>132,00 kW</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>transporttarief</cbc:Name>
+                <cbc:Value>Netvlak MSD Enexis</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>netvlak</cbc:Name>
+                <cbc:Value>MS-D</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>correctiefactor</cbc:Name>
+                <cbc:Value>1,0130</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.00880</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="KWH">1</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="KWH">16000</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">16.16</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Systeemdiensten</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>contract transportvermogen</cbc:Name>
+                <cbc:Value>132,00 kW</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>transporttarief</cbc:Name>
+                <cbc:Value>Netvlak MSD Enexis</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>netvlak</cbc:Name>
+                <cbc:Value>MS-D</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>correctiefactor</cbc:Name>
+                <cbc:Value>1,0130</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">0.00101</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="KWH">1</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="KW">132</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">167.64</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Contract transportvermogen</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>contract transportvermogen</cbc:Name>
+                <cbc:Value>132,00 kW</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>transporttarief</cbc:Name>
+                <cbc:Value>Netvlak MSD Enexis</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>netvlak</cbc:Name>
+                <cbc:Value>MS-D</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>correctiefactor</cbc:Name>
+                <cbc:Value>1,0130</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">15.24</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="KW">12</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>4</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="KW">58</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">88.74</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Maximaal afgenomen vermogen</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>contract transportvermogen</cbc:Name>
+                <cbc:Value>132,00 kW</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>transporttarief</cbc:Name>
+                <cbc:Value>Netvlak MSD Enexis</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>netvlak</cbc:Name>
+                <cbc:Value>MS-D</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>correctiefactor</cbc:Name>
+                <cbc:Value>1,0130</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">1.53</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="KW">1</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>5</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">36.75</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Vastrecht Transportdienst</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>contract transportvermogen</cbc:Name>
+                <cbc:Value>132,00 kW</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>transporttarief</cbc:Name>
+                <cbc:Value>Netvlak MSD Enexis</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>netvlak</cbc:Name>
+                <cbc:Value>MS-D</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>correctiefactor</cbc:Name>
+                <cbc:Value>1,0130</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">441.00</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="MON">12</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>6</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">56.50</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Vastrecht Aansluitdienst</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>contract transportvermogen</cbc:Name>
+                <cbc:Value>132,00 kW</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>transporttarief</cbc:Name>
+                <cbc:Value>Netvlak MSD Enexis</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>netvlak</cbc:Name>
+                <cbc:Value>MS-D</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>correctiefactor</cbc:Name>
+                <cbc:Value>1,0130</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">678.00</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="MON">12</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>7</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">83.34</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Huur Transformatoren</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">83.34</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>8</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">190.31</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Huur Schakelinstallaties</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">190.31</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>9</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">64.21</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Huur Overige Apparaten</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">64.21</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>10</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="MON">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">64.46</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Huur Meterdiensten</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">64.46</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="MON">1</cbc:BaseQuantity>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>
