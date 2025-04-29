@@ -4,7 +4,7 @@ Official Schematron eInvoicing-EN16931 artefacts for CEN/TC 434.
 This repository does not contain eInvoicing-EN16931 rules for any CIUS.
 
 Latest release
-  * UBL & CII: **v1.3.14.1** (2025-04-16) - [https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.14](https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.14)
+  * UBL & CII: **v1.3.14.1** (2025-04-16) - [https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.14.1](https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.14.1)
   * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/eInvoicing-EN16931-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
