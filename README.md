@@ -32,7 +32,7 @@ That was Licensed under the Apache License, Version 2.0
 # News and noteworthy
 
 * v1.3.14.1 - 2024-04-16 (UBL and CII only)
-    * This refers to [#423](https://github.com/ConnectingEurope/eInvoicing-EN16931/issues/423)
+    * This refers to [#396](https://github.com/ConnectingEurope/eInvoicing-EN16931/issues/396) and [#423](https://github.com/ConnectingEurope/eInvoicing-EN16931/issues/423)
 * v1.3.14 - 2024-04-11 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.3.14
 * v1.3.13 - 2024-10-08 (UBL and CII only)
