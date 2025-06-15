@@ -58,7 +58,7 @@
         </executions>
         <configuration>
           <schematronPattern>*.sch</schematronPattern>
-          <xsltHeader> Schematron version 1.3.14.1 - Last update: 2025-04-22 </xsltHeader>
+          <xsltHeader> Schematron version 1.3.14.2 - Last update: 2025-06-15 </xsltHeader>
           <showProgress>true</showProgress>
         </configuration>
       </plugin>
