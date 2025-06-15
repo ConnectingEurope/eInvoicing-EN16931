@@ -4,7 +4,7 @@ Official Schematron eInvoicing-EN16931 artefacts for CEN/TC 434.
 This repository does not contain eInvoicing-EN16931 rules for any CIUS.
 
 Latest release
-  * UBL & CII: **v1.3.14.1** (2025-04-22) - [https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.14.1](https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.14.1)
+  * UBL & CII: **v1.3.14.2** (2025-06-15) - [https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.14.2](https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.14.2)
   * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/eInvoicing-EN16931-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
@@ -31,9 +31,11 @@ That was Licensed under the Apache License, Version 2.0
 
 # News and noteworthy
 
-* v1.3.14.1 - 2024-04-16 (UBL and CII only)
+* v1.3.14.2 - 2025-06-15 (UBL and CII only)
+    * This refers to [#437](https://github.com/ConnectingEurope/eInvoicing-EN16931/pull/437)
+* v1.3.14.1 - 2025-04-16 (UBL and CII only)
     * This refers to [#396](https://github.com/ConnectingEurope/eInvoicing-EN16931/issues/396) and [#423](https://github.com/ConnectingEurope/eInvoicing-EN16931/issues/423)
-* v1.3.14 - 2024-04-11 (UBL and CII only)
+* v1.3.14 - 2025-04-11 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.3.14
 * v1.3.13 - 2024-10-08 (UBL and CII only)
     * See all fixed issues: https://github.com/ConnectingEurope/eInvoicing-EN16931/issues?q=is%3Aissue+is%3Aclosed+milestone%3A1.3.13
