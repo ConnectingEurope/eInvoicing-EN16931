@@ -709,7 +709,6 @@
   <param name="UBL-CR-628" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:OrderableUnitFactorRate)"/>
   <param name="UBL-CR-629" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:ValidityPeriod)"/>
   <param name="UBL-CR-630" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:PriceList)"/>
-  <param name="UBL-CR-631" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cbc:OrderableUnitFactorRate)"/>
   <param name="UBL-CR-632" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:ID)"/>
   <param name="UBL-CR-633" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode)"/>
   <param name="UBL-CR-634" value="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReason)"/>
