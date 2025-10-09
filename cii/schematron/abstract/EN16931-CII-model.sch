@@ -4,10 +4,7 @@
 
 -->
 <!-- Abstract rules for EN16931 -->
-<pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931">
-  <rule context="$SpecifiedTradeAllowanceCharge">
-    <assert test="$BR-66" flag="fatal" id="BR-66">[BR-66]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a Charge Indicator.</assert>
-  </rule>  
+<pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931"> 
   <rule context="$DesignatedProductClassification">
     <assert test="$BR-65" flag="fatal" id="BR-65">[BR-65]-The Item classification identifier (BT-158) shall have a Scheme identifier.</assert>
   </rule>  

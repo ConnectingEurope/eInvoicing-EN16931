@@ -64,7 +64,6 @@
   <param name="BR-63" value="normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication[1]/ram:URIID/@schemeID) != '' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)"/>
   <param name="BR-64" value="normalize-space(ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID) != '' or not (ram:SpecifiedTradeProduct/ram:GlobalID)"/>
   <param name="BR-65" value="normalize-space(ram:ClassCode/@listID) != '' or not (ram:ClassCode)"/>
-  <param name="BR-66" value="(ram:ChargeIndicator)"/>
   
   <!--param name="BR-CO-02" value="((ram:TypeCode = ('30','57')) and (ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)) or not(ram:TypeCode =  ('30','57'))"/-->
   <param name="BR-CO-03" value="((//ram:TaxPointDate) and not(//ram:DueDateTypeCode)) or (not (//ram:TaxPointDate) and (//ram:DueDateTypeCode)) or (not (//ram:TaxPointDate) and not (//ram:DueDateTypeCode))"/>
@@ -267,9 +266,8 @@
   <param name="VAT_identifiers " value="//ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']"/>
   <param name="Tax_Total " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]"/>
   <param name="Document_totals " value="//ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>  
-  <param name="SpecifiedTradeAllowanceCharge" value="//ram:SpecifiedTradeAllowanceCharge"/>
   <param name="DesignatedProductClassification" value="//ram:DesignatedProductClassification"/>
-  
+
   <param name="VATS_Line " value="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']"/>
   <param name="VATS " value="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[.='S']"/>
                       

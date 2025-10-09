@@ -188,6 +188,9 @@
 		<assert test="$CII-SR-447" flag="warning" id="CII-SR-447">[CII-SR-447] - UltimateCustomerOrderReferencedDocument should not be present</assert>
 
 	</rule>
+	<rule context="$SpecifiedTradeAllowanceCharge">
+		<assert test="$CII-SR-463" flag="fatal" id="CII-SR-463">[CII-SR-463]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a Charge Indicator.</assert>
+	</rule> 
 	<rule context="$AppliedTradeAllowanceCharge">
 		<assert test="$CII-SR-440" flag="fatal" id="CII-SR-440">[CII-SR-440] - ActualAmount should exist maximum once</assert>
 	</rule>
@@ -552,10 +555,10 @@
 		<assert test="$CII-DT-007" flag="fatal" id="CII-DT-007">[CII-DT-007] - schemeVersionID should not be present</assert>
 	</rule>
 	<rule context="$IDType">
-		<assert test="$CII-DT-001" flag="fatal" id="CII-DT-001">[CII-DT-001] - schemeName should not be present</assert>
-		<assert test="$CII-DT-002" flag="fatal" id="CII-DT-002">[CII-DT-002] - schemeAgencyName should not be present</assert>
-		<assert test="$CII-DT-003" flag="fatal" id="CII-DT-003">[CII-DT-003] - schemeDataURI should not be present</assert>
-		<assert test="$CII-DT-004" flag="fatal" id="CII-DT-004">[CII-DT-004] - schemeURI should not be present</assert>
+		<assert test="$CII-DT-101" flag="fatal" id="CII-DT-101">[CII-DT-101] - schemeName should not be present</assert>
+		<assert test="$CII-DT-102" flag="fatal" id="CII-DT-102">[CII-DT-102] - schemeAgencyName should not be present</assert>
+		<assert test="$CII-DT-103" flag="fatal" id="CII-DT-103">[CII-DT-103] - schemeDataURI should not be present</assert>
+		<assert test="$CII-DT-104" flag="fatal" id="CII-DT-104">[CII-DT-104] - schemeURI should not be present</assert>
 	</rule>
 	<rule context="$TypeCodeType">
 		<assert test="$CII-DT-008" flag="fatal" id="CII-DT-008">[CII-DT-008] - name should not be present</assert>

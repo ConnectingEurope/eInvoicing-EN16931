@@ -56,6 +56,8 @@
   <param name="UBL-SR-51" value="not(cac:AddressLine) or count(cac:AddressLine) = 1"/>
   <param name="UBL-SR-52" value="count(cac:DocumentReference) &lt;= 1"/>
   <param name="UBL-SR-53" value="exists(cac:TaxScheme/cbc:ID) and exists(cbc:CompanyID)"/>
+  <param name="UBL-SR-54" value="count(cac:PaymentMeans/cac:CardAccount) &lt;= 1"/>
+  <param name="UBL-SR-55" value="count(cac:PaymentMeans/cac:PaymentMandate) &lt;= 1"/>
   <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>
   <param name="UBL-DT-07" value="(@filename)"/>

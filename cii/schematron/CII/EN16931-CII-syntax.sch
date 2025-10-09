@@ -650,13 +650,18 @@
 	<param name="CII-SR-418" value="not(ram:GrossLineTotalAmount)"/>
 	<param name="CII-SR-419" value="not(ram:NetLineTotalAmount)"/>
 	<param name="CII-SR-420" value="not(ram:NetIncludingTaxesLineTotalAmount)"/>
-
+	<param name="CII-SR-463" value="(ram:ChargeIndicator)"/>
+	
 
 	<!-- ID Type -->
 	<param name="CII-DT-001" value="not(@schemeName)"/>
 	<param name="CII-DT-002" value="not(@schemeAgencyName)"/>
 	<param name="CII-DT-003" value="not(@schemeDataURI)"/>
 	<param name="CII-DT-004" value="not(@schemeURI)"/>
+	<param name="CII-DT-101" value="not(@schemeName)"/>
+	<param name="CII-DT-102" value="not(@schemeAgencyName)"/>
+	<param name="CII-DT-103" value="not(@schemeDataURI)"/>
+	<param name="CII-DT-104" value="not(@schemeURI)"/>
 	<!-- ID Type without attributes -->
 	<param name="CII-DT-005" value="not(@schemeID)"/>
 	<param name="CII-DT-006" value="not(@schemeAgencyID)"/>
@@ -814,6 +819,7 @@
 		value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery"/>
 	<param name="ApplicableHeaderTradeSettlement"
 		value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement"/>
+	<param name="SpecifiedTradeAllowanceCharge" value="//ram:SpecifiedTradeAllowanceCharge"/>
 	<param name="SpecifiedTradeSettlementHeaderMonetarySummation"
 		value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>
 	<param name="DateTimeString" value="//udt:DateTimeString[@format = '102']"/>

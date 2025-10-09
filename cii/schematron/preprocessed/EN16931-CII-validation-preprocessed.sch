@@ -22,9 +22,6 @@
     <active pattern="EN16931-CII-Syntax" />
   </phase>
   <pattern id="EN16931-CII-Model">
-    <rule context="//ram:SpecifiedTradeAllowanceCharge">
-      <assert id="BR-66" flag="fatal" test="(ram:ChargeIndicator)">[BR-66]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a Charge Indicator.</assert>
-    </rule>
     <rule context="//ram:DesignatedProductClassification">
       <assert id="BR-65" flag="fatal" test="normalize-space(ram:ClassCode/@listID) != '' or not (ram:ClassCode)">[BR-65]-The Item classification identifier (BT-158) shall have a Scheme identifier.</assert>
     </rule>
@@ -515,6 +512,9 @@
       <assert id="CII-SR-150" flag="warning" test="not(ram:IncludedSpecifiedMarketplace)">[CII-SR-150] - IncludedSpecifiedMarketplace should not be present</assert>
       <assert id="CII-SR-447" flag="warning" test="not(ram:UltimateCustomerOrderReferencedDocument)">[CII-SR-447] - UltimateCustomerOrderReferencedDocument should not be present</assert>
     </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge">
+      <assert id="CII-SR-463" flag="fatal" test="(ram:ChargeIndicator)">[CII-SR-463]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a Charge Indicator.</assert>
+    </rule>
     <rule context="//ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge">
       <assert id="CII-SR-440" flag="fatal" test="count(ram:ActualAmount) &lt;= 1">[CII-SR-440] - ActualAmount should exist maximum once</assert>
     </rule>
@@ -845,10 +845,10 @@
       <assert id="CII-DT-007" flag="fatal" test="not(@schemeVersionID)">[CII-DT-007] - schemeVersionID should not be present</assert>
     </rule>
     <rule context="//ram:*[ends-with(name(), 'ID')]">
-      <assert id="CII-DT-0010" flag="fatal" test="not(@schemeName)">[CII-DT-001] - schemeName should not be present</assert>
-      <assert id="CII-DT-0020" flag="fatal" test="not(@schemeAgencyName)">[CII-DT-002] - schemeAgencyName should not be present</assert>
-      <assert id="CII-DT-0030" flag="fatal" test="not(@schemeDataURI)">[CII-DT-003] - schemeDataURI should not be present</assert>
-      <assert id="CII-DT-0040" flag="fatal" test="not(@schemeURI)">[CII-DT-004] - schemeURI should not be present</assert>
+      <assert id="CII-DT-101" flag="fatal" test="not(@schemeName)">[CII-DT-101] - schemeName should not be present</assert>
+      <assert id="CII-DT-102" flag="fatal" test="not(@schemeAgencyName)">[CII-DT-102] - schemeAgencyName should not be present</assert>
+      <assert id="CII-DT-103" flag="fatal" test="not(@schemeDataURI)">[CII-DT-103] - schemeDataURI should not be present</assert>
+      <assert id="CII-DT-104" flag="fatal" test="not(@schemeURI)">[CII-DT-104] - schemeURI should not be present</assert>
     </rule>
     <rule context="//ram:TypeCode">
       <assert id="CII-DT-008" flag="fatal" test="not(@name)">[CII-DT-008] - name should not be present</assert>
