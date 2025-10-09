@@ -203,6 +203,7 @@
 	<param name="CII-SR-149" value="not(ram:ItemBuyerTradeParty)"/>
 	<param name="CII-SR-150" value="not(ram:IncludedSpecifiedMarketplace)"/>
 	<param name="CII-SR-447" value="not(ram:UltimateCustomerOrderReferencedDocument)"/>
+	<param name="CII-SR-464" value="(ram:PayeeSpecifiedCreditorFinancialInstitution or ram:PayerSpecifiedDebtorFinancialInstitution) or (not(ram:PayeeSpecifiedCreditorFinancialInstitution) and not(ram:PayerSpecifiedDebtorFinancialInstitution))"/>
 
 	<!-- AppliedTradeAllowanceCharge -->
 	<param name="CII-SR-440"
@@ -824,4 +825,5 @@
 		value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation"/>
 	<param name="DateTimeString" value="//udt:DateTimeString[@format = '102']"/>
 	<param name="AppliedTradeAllowanceCharge"  value="//ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge"/>
+	<param name="Specified_Trade_Settlement_PaymentMeans" value="//ram:SpecifiedTradeSettlementPaymentMeans"/>
 </pattern>

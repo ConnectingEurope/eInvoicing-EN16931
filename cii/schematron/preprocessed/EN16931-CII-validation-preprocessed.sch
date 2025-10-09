@@ -346,6 +346,9 @@
     </rule>
   </pattern>
   <pattern id="EN16931-CII-Syntax">
+    <rule context="//ram:SpecifiedTradeSettlementPaymentMeans">
+      <assert id="CII-SR-464" flag="warning" test="(ram:PayeeSpecifiedCreditorFinancialInstitution or ram:PayerSpecifiedDebtorFinancialInstitution) or (not(ram:PayeeSpecifiedCreditorFinancialInstitution) and not(ram:PayerSpecifiedDebtorFinancialInstitution))">[CII-SR-464] - Only one BT-86 element is allowed on an invoice.</assert>
+    </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext">
       <assert id="CII-SR-001" flag="warning" test="not(ram:SpecifiedTransactionID)">[CII-SR-001] - SpecifiedTransactionID should not be present</assert>
       <assert id="CII-SR-002" flag="warning" test="not(ram:TestIndicator)">[CII-SR-002] - TestIndicator should not be present</assert>
