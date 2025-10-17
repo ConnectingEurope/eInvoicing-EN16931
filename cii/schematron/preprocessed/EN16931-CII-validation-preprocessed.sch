@@ -690,6 +690,8 @@
       <assert id="CII-SR-458" flag="warning" test="( count(ram:AdditionalReferencedDocument[ram:TypeCode='130'])  &lt;= 1)">[CII-SR-458] - IssuerAssignedID with TypeCode 130 should exist maximum once</assert>
       <assert id="CII-SR-459" flag="fatal" test="count(ram:SellerTradeParty/ram:URIUniversalCommunication) &lt;= 1">[CII-SR-459] - SellerTradeParty URIUniversalCommunication should exist maximum once</assert>
       <assert id="CII-SR-460" flag="fatal" test="count(ram:BuyerTradeParty/ram:URIUniversalCommunication) &lt;= 1">[CII-SR-460] - BuyerTradeParty URIUniversalCommunication should exist maximum once</assert>
+      <assert id="CII-SR-465" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:PersonName and ram:SellerTradeParty/ram:DefinedTradeContact/ram:DepartmentName)">[CII-SR-465] - Only one BT-41 element is allowed on an invoice.</assert>
+      <assert id="CII-SR-466" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:PersonName and ram:BuyerTradeParty/ram:DefinedTradeContact/ram:DepartmentName)">[CII-SR-466] - Only one BT-56 element is allowed on an invoice.</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery">
       <assert id="CII-SR-308" flag="warning" test="not(ram:RelatedSupplyChainConsignment)">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>
