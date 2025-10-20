@@ -662,7 +662,6 @@
     <assert test="$UBL-CR-628" flag="warning" id="UBL-CR-628">[UBL-CR-628]-A UBL invoice should not include the InvoiceLine Item Price OrderableUnitFactorRate</assert>
     <assert test="$UBL-CR-629" flag="warning" id="UBL-CR-629">[UBL-CR-629]-A UBL invoice should not include the InvoiceLine Item Price ValidityPeriod</assert>
     <assert test="$UBL-CR-630" flag="warning" id="UBL-CR-630">[UBL-CR-630]-A UBL invoice should not include the InvoiceLine Item Price PriceList</assert>
-    <assert test="$UBL-CR-631" flag="warning" id="UBL-CR-631">[UBL-CR-631]-A UBL invoice should not include the InvoiceLine Item Price OrderableUnitFactorRate</assert>
     <assert test="$UBL-CR-632" flag="warning" id="UBL-CR-632">[UBL-CR-632]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge ID</assert>
     <assert test="$UBL-CR-633" flag="warning" id="UBL-CR-633">[UBL-CR-633]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge AllowanceChargeReasonCode</assert>
     <assert test="$UBL-CR-634" flag="warning" id="UBL-CR-634">[UBL-CR-634]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge AllowanceChargeReason</assert>
@@ -761,6 +760,8 @@
     <assert test="$UBL-SR-46" flag="fatal" id="UBL-SR-46">[UBL-SR-46]-Payment means text shall occur maximum once</assert>
     <assert test="$UBL-SR-47" flag="fatal" id="UBL-SR-47">[UBL-SR-47]-When there are more than one payment means code, they shall be equal</assert>
     <assert test="$UBL-SR-49" flag="fatal" id="UBL-SR-49">[UBL-SR-49]-Value tax point date shall occur maximum once</assert>
+    <assert test="$UBL-SR-54" flag="fatal" id="UBL-SR-54">[UBL-SR-54]-An Invoice shall contain maximum one Payment Card account (BG-18).</assert>
+    <assert test="$UBL-SR-55" flag="fatal" id="UBL-SR-55">[UBL-SR-55]-An Invoice shall contain maximum one Payment Mandate (BG-19).</assert>
   </rule>
   <rule context="$Invoice_line">
     <assert test="$UBL-SR-34" flag="fatal" id="UBL-SR-34">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>
