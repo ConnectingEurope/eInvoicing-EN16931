@@ -111,7 +111,6 @@
   <param name="BR-CO-24" value="(../ram:Reason) or (../ram:ReasonCode)"/>
   <param name="BR-CO-25" value="(number(//ram:DuePayableAmount) &gt; 0 and ((//ram:SpecifiedTradePaymentTerms/ram:DueDateDateTime) or (//ram:SpecifiedTradePaymentTerms/ram:Description))) or not(number(//ram:DuePayableAmount)&gt;0)"/>
   <param name="BR-CO-26" value="(ram:ID) or (ram:GlobalID) or (ram:SpecifiedLegalOrganization/ram:ID) or (ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA'])"/>
-  <param name="BR-CO-27" value="(ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID) and not(ram:PayeePartyCreditorFinancialAccount/ram:IBANID and ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)"/>
   <param name="BR-S-01" value="((count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='S']) + count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='S'])) &gt;=2 or not (//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='S'])) and 
     ((count(//ram:CategoryTradeTax[ram:CategoryCode='S']) + count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='S'])) &gt;=2 or not (//ram:CategoryTradeTax[ram:CategoryCode='S']))"/>
   <param name="BR-S-02" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']"/>
@@ -258,7 +257,6 @@
   <param name="VAT_breakdown " value="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax"/>
   
   <param name="Payment_instructions " value="//ram:SpecifiedTradeSettlementPaymentMeans"/>
-  <param name="Credit_Payment_instructions " value="//ram:SpecifiedTradeSettlementPaymentMeans[some $code in tokenize('49 59', '\s')  satisfies normalize-space(ram:TypeCode) = $code]"/>
   <param name="CreditTransfer_information " value="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyCreditorFinancialAccount"/>
   <param name="Card_information " value="//ram:ApplicableTradeSettlementFinancialCard"/>
   <param name="Additional_supporting_documents " value="//ram:AdditionalReferencedDocument"/>

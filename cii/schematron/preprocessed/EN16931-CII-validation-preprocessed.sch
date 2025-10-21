@@ -154,9 +154,6 @@
     <rule context="//ram:SpecifiedTradeSettlementPaymentMeans">
       <assert id="BR-49" flag="fatal" test="(ram:TypeCode)">[BR-49]-A Payment instruction (BG-16) shall specify the Payment means type code (BT-81).</assert>
     </rule>
-    <rule context="//ram:SpecifiedTradeSettlementPaymentMeans[some $code in tokenize('49 59', '\s')  satisfies normalize-space(ram:TypeCode) = $code]">
-      <assert id="BR-CO-27" flag="fatal" test="(ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID) and not(ram:PayeePartyCreditorFinancialAccount/ram:IBANID and ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)">[BR-CO-27]- Either the IBAN or a Proprietary ID (BT-84) shall be used.</assert>
-    </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceReferencedDocument">
       <assert id="BR-55" flag="fatal" test="normalize-space(ram:IssuerAssignedID) != ''">[BR-55]-Each Preceding Invoice reference (BG-3) shall contain a Preceding Invoice reference (BT-25).</assert>
     </rule>

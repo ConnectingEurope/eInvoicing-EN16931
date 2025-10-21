@@ -2,7 +2,8 @@
 if [ -n "${JAVA_HOME+1}" ]; then
   echo "JAVA_HOME is set to $JAVA_HOME"
 else
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home
+#  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
   export PATH=/opt/apache-maven-3.9.9/bin:$PATH
 fi
 
