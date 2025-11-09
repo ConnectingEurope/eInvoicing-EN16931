@@ -5,7 +5,7 @@ This repository does not contain eInvoicing-EN16931 rules for any CIUS.
 
 Latest release
   * UBL & CII: **v1.3.15** (2025-10-20) - [https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.15](https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.15)
-  * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/eInvoicing-EN16931-1.0.0
+  * EDIFACT:   **v1.0.0** (2018-02-08) - https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.0.0
 
 For each syntax a separate folder exists where all related artefacts are to be published.
 
