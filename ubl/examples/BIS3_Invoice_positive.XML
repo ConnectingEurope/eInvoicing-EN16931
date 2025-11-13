@@ -27,9 +27,9 @@
   </cac:ContractDocumentReference>
   <cac:AccountingSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0184">12345678</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0184">DK12345678</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0184">12345678</cbc:ID>
+        <cbc:ID schemeID="0184">DK12345678</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>Company A</cbc:Name>
@@ -50,15 +50,15 @@
       </cac:PartyTaxScheme>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>Company A</cbc:RegistrationName>
-        <cbc:CompanyID schemeID="0184">12345678</cbc:CompanyID>
+        <cbc:CompanyID schemeID="0184">DK12345678</cbc:CompanyID>
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:AccountingSupplierParty>
   <cac:AccountingCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0184">87654321</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0184">DK87654321</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0184">87654321</cbc:ID>
+        <cbc:ID schemeID="0184">DK87654321</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>Company B</cbc:Name>
@@ -79,7 +79,7 @@
       </cac:PartyTaxScheme>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>Company B</cbc:RegistrationName>
-        <cbc:CompanyID schemeID="0184">87654321</cbc:CompanyID>
+        <cbc:CompanyID schemeID="0184">DK87654321</cbc:CompanyID>
       </cac:PartyLegalEntity>
       <cac:Contact>
         <cbc:Name>n/a</cbc:Name>
