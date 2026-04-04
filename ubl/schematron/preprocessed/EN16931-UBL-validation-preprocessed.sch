@@ -24,9 +24,6 @@
     <rule context="cac:AdditionalDocumentReference">
       <assert id="BR-52" flag="fatal" test="normalize-space(cbc:ID) != ''">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>
     </rule>
-    <rule context="/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount">
-      <assert id="BR-CO-25" flag="fatal" test="((. > 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)">[BR-CO-25]-In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</assert>
-    </rule>
     <rule context="cac:AccountingCustomerParty/cac:Party/cbc:EndpointID">
       <assert id="BR-63" flag="fatal" test="exists(@schemeID)">[BR-63]-The Buyer electronic address (BT-49) shall have a Scheme identifier.</assert>
     </rule>

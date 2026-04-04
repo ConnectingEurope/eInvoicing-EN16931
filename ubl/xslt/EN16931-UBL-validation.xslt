@@ -219,7 +219,7 @@
 
 
 	<!--RULE -->
-<xsl:template match="cac:AdditionalDocumentReference" mode="M11" priority="1066">
+<xsl:template match="cac:AdditionalDocumentReference" mode="M11" priority="1065">
     <svrl:fired-rule context="cac:AdditionalDocumentReference" />
 
 		<!--ASSERT -->
@@ -233,27 +233,6 @@
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
           <svrl:text>[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-    <xsl:apply-templates mode="M11" select="@*|*" />
-  </xsl:template>
-
-	<!--RULE -->
-<xsl:template match="/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount" mode="M11" priority="1065">
-    <svrl:fired-rule context="/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount" />
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="((. > 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="((. > 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)">
-          <xsl:attribute name="id">BR-CO-25</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[BR-CO-25]-In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>

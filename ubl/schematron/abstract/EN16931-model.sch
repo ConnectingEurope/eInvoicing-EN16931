@@ -8,9 +8,6 @@
   <rule context="$Additional_supporting_documents ">
     <assert test="$BR-52" flag="fatal" id="BR-52">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>
   </rule>
-  <rule context="$Amount_due">
-    <assert test="$BR-CO-25" flag="fatal" id="BR-CO-25">[BR-CO-25]-In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</assert>
-  </rule>
   <rule context="$Buyer_electronic_address">
     <assert test="$BR-63" flag="fatal" id="BR-63">[BR-63]-The Buyer electronic address (BT-49) shall have a Scheme identifier.</assert>
   </rule>
