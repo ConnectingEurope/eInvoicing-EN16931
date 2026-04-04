@@ -1718,15 +1718,15 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="((cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B') and (not(cac:TaxTotal/cac:TaxSubtotal/cbc:ID ='S' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='S' or //cac:ClassifiedTaxCategory/cbc:ID = 'S'))) or (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B'))" />
+      <xsl:when test="((cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B') and (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='S' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='S' or //cac:ClassifiedTaxCategory/cbc:ID = 'S'))) or (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B'))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="((cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B') and (not(cac:TaxTotal/cac:TaxSubtotal/cbc:ID ='S' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='S' or //cac:ClassifiedTaxCategory/cbc:ID = 'S'))) or (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B'))">
+        <svrl:failed-assert test="((cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B') and (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='S' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='S' or //cac:ClassifiedTaxCategory/cbc:ID = 'S'))) or (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID ='B' or cac:AllowanceCharge/cac:TaxCategory/cbc:ID ='B' or //cac:ClassifiedTaxCategory/cbc:ID = 'B'))">
           <xsl:attribute name="id">BR-B-02</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[BR-B-02]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is “Split payment" shall not contain an invoice line (BG-25), a Document level allowance (BG-20) or  a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is “Standard rated”.</svrl:text>
+          <svrl:text>[BR-B-02]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95, BT-118 or BT-102) is “Split payment" shall not contain an invoice line (BG-25), a Document level allowance (BG-20) or  a Document level charge (BG-21) where the VAT category code (BT-151, BT-95, BT-118 or BT-102) is “Standard rated”.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
