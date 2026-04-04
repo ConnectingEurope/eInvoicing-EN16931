@@ -1141,7 +1141,7 @@
     </rule>
     <rule context="cac:TaxRepresentativeParty">
       <assert id="UBL-SR-22" flag="fatal" test="(count(cac:PartyName/cbc:Name) &lt;= 1)">[UBL-SR-22]-Seller tax representative name shall occur maximum once, if the Seller has a tax representative</assert>
-      <assert id="UBL-SR-23" flag="fatal" test="(count(cac:Party/cac:PartyTaxScheme/cbc:CompanyID) &lt;= 1)">[UBL-SR-23]-Seller tax representative VAT identifier shall occur maximum once, if the Seller has a tax representative</assert>
+      <assert id="UBL-SR-23" flag="fatal" test="(count(cac:PartyTaxScheme/cbc:CompanyID) &lt;= 1)">[UBL-SR-23]-Seller tax representative VAT identifier shall occur maximum once, if the Seller has a tax representative</assert>
     </rule>
     <rule context="cac:TaxSubtotal">
       <assert id="UBL-SR-32" flag="fatal" test="(count(cac:TaxCategory/cbc:TaxExemptionReason) &lt;= 1)">[UBL-SR-32]-VAT exemption reason text shall occur maximum once</assert>
