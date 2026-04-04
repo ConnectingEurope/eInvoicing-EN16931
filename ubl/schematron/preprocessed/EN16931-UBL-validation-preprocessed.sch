@@ -197,7 +197,7 @@
       <assert id="BR-55" flag="fatal" test="exists(cac:InvoiceDocumentReference/cbc:ID)">[BR-55]-Each Preceding Invoice reference (BG-3) shall contain a Preceding Invoice reference (BT-25).</assert>
     </rule>
     <rule context="cac:AccountingSupplierParty">
-      <assert id="BR-CO-26" flag="fatal" test="exists(cac:Party/cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)">[BR-CO-26]-In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present.  </assert>
+      <assert id="BR-CO-26" flag="fatal" test="exists(cac:Party/cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID[not(@schemeID = 'SEPA')]) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)">[BR-CO-26]-In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present.  </assert>
     </rule>
     <rule context="cac:AccountingSupplierParty/cac:Party/cbc:EndpointID">
       <assert id="BR-62" flag="fatal" test="exists(@schemeID)">[BR-62]-The Seller electronic address (BT-34) shall have a Scheme identifier.</assert>

@@ -2321,9 +2321,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="exists(cac:Party/cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)" />
+      <xsl:when test="exists(cac:Party/cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID[not(@schemeID = 'SEPA')]) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)" />
       <xsl:otherwise>
-        <svrl:failed-assert test="exists(cac:Party/cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)">
+        <svrl:failed-assert test="exists(cac:Party/cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID[not(@schemeID = 'SEPA')]) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)">
           <xsl:attribute name="id">BR-CO-26</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
