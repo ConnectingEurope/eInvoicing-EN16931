@@ -1058,7 +1058,7 @@
       <assert id="UBL-CR-671" flag="warning" test="not(//cac:Price/cac:AllowanceCharge/cbc:MultiplierFactorNumeric)">[UBL-CR-671]-A UBL invoice should not include a Price Allowance Multiplier Factor</assert>
       <assert id="UBL-CR-672" flag="warning" test="not(cbc:CreditNoteTypeCode/@listID)">[UBL-CR-672]-A UBL credit note should not include the CreditNoteTypeCode listID</assert>
       <assert id="UBL-CR-673" flag="fatal" test="not(//cac:AdditionalDocumentReference[cbc:DocumentTypeCode  = '130']/cbc:DocumentDescription)">[UBL-CR-673]-A UBL invoice shall not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Document Description</assert>
-      <assert id="UBL-CR-674" flag="warning" test="not(//cbc:PrimaryAccountNumber/@schemeID)">[UBL-CR-674]-A UBL invoice should not include the PrimaryAccountNumber schemeID</assert>
+      <assert id="UBL-CR-674" flag="warning" test="not(//cbc:PrimaryAccountNumberID/@schemeID)">[UBL-CR-674]-A UBL invoice should not include the PrimaryAccountNumber schemeID</assert>
       <assert id="UBL-CR-675" flag="warning" test="not(//cac:CardAccount/cbc:NetworkID/@schemeID)">[UBL-CR-675]-A UBL invoice should not include the NetworkID schemeID</assert>
       <assert id="UBL-CR-676" flag="warning" test="not(//cac:PaymentMandate/cbc:ID/@schemeID)">[UBL-CR-676]-A UBL invoice should not include the PaymentMandate/ID schemeID</assert>
       <assert id="UBL-CR-677" flag="warning" test="not(//cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID/@schemeID)">[UBL-CR-677]-A UBL invoice should not include the PayerFinancialAccount/ID schemeID</assert>

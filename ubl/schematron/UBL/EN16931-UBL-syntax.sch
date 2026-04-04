@@ -751,7 +751,7 @@
   <param name="UBL-CR-671" value="not(//cac:Price/cac:AllowanceCharge/cbc:MultiplierFactorNumeric)"/>
   <param name="UBL-CR-672" value="not(cbc:CreditNoteTypeCode/@listID)"/>
   <param name="UBL-CR-673" value="not(//cac:AdditionalDocumentReference[cbc:DocumentTypeCode  = '130']/cbc:DocumentDescription)"/>
-  <param name="UBL-CR-674" value="not(//cbc:PrimaryAccountNumber/@schemeID)"/>
+  <param name="UBL-CR-674" value="not(//cbc:PrimaryAccountNumberID/@schemeID)"/>
   <param name="UBL-CR-675" value="not(//cac:CardAccount/cbc:NetworkID/@schemeID)"/>
   <param name="UBL-CR-676" value="not(//cac:PaymentMandate/cbc:ID/@schemeID)"/>
   <param name="UBL-CR-677" value="not(//cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID/@schemeID)"/>
