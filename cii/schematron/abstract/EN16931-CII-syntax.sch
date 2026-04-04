@@ -525,6 +525,7 @@
 		<assert test="$CII-SR-453" flag="warning" id="CII-SR-453">[CII-SR-453] - Only one SpecifiedTradePaymentTerms Description should be present</assert>
 		<assert test="$CII-SR-461" flag="fatal" id="CII-SR-461">[CII-SR-461] - Only one TaxPointDate shall be present</assert>		
 		<assert test="$CII-SR-462" flag="fatal" id="CII-SR-462">[CII-SR-462] - Only one DueDateTypeCode shall be present</assert>		
+		<assert test="$CII-SR-470" flag="fatal" id="CII-SR-470">[CII-SR-470] - Either the IBAN or a Proprietary ID (BT-84) shall be used.</assert>
 	</rule>
 	<rule context="$SpecifiedTradeSettlementHeaderMonetarySummation">
 
