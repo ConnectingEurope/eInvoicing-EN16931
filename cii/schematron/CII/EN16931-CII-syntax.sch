@@ -203,7 +203,7 @@
 	<param name="CII-SR-149" value="not(ram:ItemBuyerTradeParty)"/>
 	<param name="CII-SR-150" value="not(ram:IncludedSpecifiedMarketplace)"/>
 	<param name="CII-SR-447" value="not(ram:UltimateCustomerOrderReferencedDocument)"/>
-	<param name="CII-SR-464" value="(ram:PayeeSpecifiedCreditorFinancialInstitution or ram:PayerSpecifiedDebtorFinancialInstitution) or (not(ram:PayeeSpecifiedCreditorFinancialInstitution) and not(ram:PayerSpecifiedDebtorFinancialInstitution))"/>
+	<param name="CII-SR-464" value="not(ram:PayerSpecifiedDebtorFinancialInstitution)"/>
 
 	<!-- AppliedTradeAllowanceCharge -->
 	<param name="CII-SR-440"
