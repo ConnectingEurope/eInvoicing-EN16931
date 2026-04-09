@@ -647,7 +647,7 @@
 	<param name="CII-SR-466" value="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:PersonName and ram:BuyerTradeParty/ram:DefinedTradeContact/ram:DepartmentName)"/>
 	<param name="CII-SR-467" value="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode[normalize-space(.) != normalize-space((//ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode)[1])]) = 0"/>
 	<param name="CII-SR-468" value="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:Information[normalize-space(.) != normalize-space((//ram:SpecifiedTradeSettlementPaymentMeans/ram:Information)[1])]) = 0"/>	
-	<param name="CII-SR-469" value="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentReference) &lt;= 1"/>
+	<param name="CII-SR-469" value="count(//ram:ApplicableHeaderTradeSettlement/ram:PaymentReference) &lt;= 1"/>
 	
 	
 	<!-- Invoice -->
