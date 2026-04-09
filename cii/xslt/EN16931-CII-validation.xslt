@@ -10585,9 +10585,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentReference) &lt;= 1" />
+      <xsl:when test="count(//ram:ApplicableHeaderTradeSettlement/ram:PaymentReference) &lt;= 1" />
       <xsl:otherwise>
-        <svrl:failed-assert test="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentReference) &lt;= 1">
+        <svrl:failed-assert test="count(//ram:ApplicableHeaderTradeSettlement/ram:PaymentReference) &lt;= 1">
           <xsl:attribute name="id">CII-SR-469</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
