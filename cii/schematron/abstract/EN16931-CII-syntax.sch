@@ -276,7 +276,7 @@
 		<assert test="$CII-SR-219" flag="warning" id="CII-SR-219">[CII-SR-219] - SalesSpecifiedTradeAccountingAccount should not be present</assert>
 		<assert test="$CII-SR-220" flag="warning" id="CII-SR-220">[CII-SR-220] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
 		<assert test="$CII-SR-454" flag="warning" id="CII-SR-454">[CII-SR-454] - Only one ApplicableTradeTax should be present</assert>
-		
+		<assert test="$CII-SR-474" flag="warning" id="CII-SR-474">[CII-SR-474] - An invoice line shall not contain more than one AdditionalReferencedDocument with TypeCode 130.</assert>		
   </rule>		
 	<rule context="$ApplicableHeaderTradeAgreement ">
 		<assert test="$CII-SR-442" flag="warning" id="CII-SR-442">[CII-SR-442] - Reference should not be present</assert>

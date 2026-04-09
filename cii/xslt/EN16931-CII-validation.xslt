@@ -7042,6 +7042,21 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '130']) &lt;= 1" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '130']) &lt;= 1">
+          <xsl:attribute name="id">CII-SR-474</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-SR-474] - An invoice line shall not contain more than one AdditionalReferencedDocument with TypeCode 130.</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:apply-templates mode="M11" select="@*|*" />
   </xsl:template>
 

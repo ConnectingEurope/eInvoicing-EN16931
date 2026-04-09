@@ -54,6 +54,7 @@
 	<param name="CII-SR-043" value="not(ram:IncludedNote/ram:Subject)"/>
 	<param name="CII-SR-044" value="not(ram:IncludedNote/ram:ContentCode)"/>
 	<param name="CII-SR-221" value="not(ram:IncludedSubordinateTradeLineItem)"/>
+	
 	<!-- Product information -->
 	<param name="CII-SR-045" value="not(ram:ID)"/>
 	<param name="CII-SR-046" value="not(ram:GlobalID) or (ram:GlobalID/@schemeID)"/>
@@ -310,6 +311,8 @@
 	<param name="CII-SR-219" value="not(ram:SalesSpecifiedTradeAccountingAccount)"/>
 	<param name="CII-SR-220" value="not(ram:SpecifiedTradeSettlementFinancialCard)"/>
 	<param name="CII-SR-454" value="count(ram:ApplicableTradeTax) = 1"/>
+	<param name="CII-SR-474" value="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '130']) &lt;= 1"/>
+	
 	
 	<!-- ApplicableHeaderTradeAgreement -->
 	<param name="CII-SR-442" value="not(ram:Reference)"/>

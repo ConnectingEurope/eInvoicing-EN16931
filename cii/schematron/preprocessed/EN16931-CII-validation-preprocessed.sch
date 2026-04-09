@@ -593,6 +593,7 @@
       <assert id="CII-SR-219" flag="warning" test="not(ram:SalesSpecifiedTradeAccountingAccount)">[CII-SR-219] - SalesSpecifiedTradeAccountingAccount should not be present</assert>
       <assert id="CII-SR-220" flag="warning" test="not(ram:SpecifiedTradeSettlementFinancialCard)">[CII-SR-220] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
       <assert id="CII-SR-454" flag="warning" test="count(ram:ApplicableTradeTax) = 1">[CII-SR-454] - Only one ApplicableTradeTax should be present</assert>
+      <assert id="CII-SR-474" flag="warning" test="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '130']) &lt;= 1">[CII-SR-474] - An invoice line shall not contain more than one AdditionalReferencedDocument with TypeCode 130.</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement">
       <assert id="CII-SR-442" flag="warning" test="not(ram:Reference)">[CII-SR-442] - Reference should not be present</assert>
