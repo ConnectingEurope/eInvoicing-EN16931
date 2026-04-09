@@ -388,6 +388,8 @@
 		<assert test="$CII-SR-460" flag="fatal" id="CII-SR-460">[CII-SR-460] - BuyerTradeParty URIUniversalCommunication should exist maximum once</assert>
 		<assert test="$CII-SR-465" flag="warning" id="CII-SR-465">[CII-SR-465] - Only one BT-41 element is allowed on an invoice.</assert>
 		<assert test="$CII-SR-466" flag="warning" id="CII-SR-466">[CII-SR-466] - Only one BT-56 element is allowed on an invoice.</assert>
+		<assert test="$CII-SR-475" flag="warning" id="CII-SR-475">[CII-SR-475] - Only one AdditionalReferencedDocument Name BT-123 is allowed with TypeCode 916.</assert>		
+		<assert test="$CII-SR-476" flag="warning" id="CII-SR-476">[CII-SR-476] - Only one AdditionalReferencedDocument AttachmentBinaryObject BT-125 is allowed with TypeCode 916.</assert>		
 	</rule>
 	<rule context="$ApplicableHeaderTradeDelivery">
 		<assert test="$CII-SR-308" flag="warning" id="CII-SR-308">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>

@@ -467,7 +467,9 @@
 	<param name="CII-SR-457" value="( count(ram:AdditionalReferencedDocument[ram:TypeCode='50'])  &lt;= 1)"/>
 	<param name="CII-SR-458" value="( count(ram:AdditionalReferencedDocument[ram:TypeCode='130'])  &lt;= 1)"/>
 	<param name="CII-SR-470" value="count(ram:SpecifiedTradeSettlementPaymentMeans[(normalize-space(ram:TypeCode) = '30' or normalize-space(ram:TypeCode) = '58') and not(ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)]) = 0"/>
-
+	<param name="CII-SR-475" value="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '916']/ram:Name) &lt;= 1"/>
+	<param name="CII-SR-476" value="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '916']/ram:AttachmentBinaryObject) &lt;= 1"/>
+	
 	<!-- ApplicableHeaderTradeDelivery -->
 	<param name="CII-SR-308" value="not(ram:RelatedSupplyChainConsignment)"/>
 	<param name="CII-SR-309" value="not(ram:ShipToTradeParty/ram:RoleCode)"/>
