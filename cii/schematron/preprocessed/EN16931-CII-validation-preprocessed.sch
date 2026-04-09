@@ -29,10 +29,10 @@
       <assert id="BR-52" flag="fatal" test="normalize-space(ram:IssuerAssignedID) != ''">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>
     </rule>
     <rule context="//ram:ApplicableTradeSettlementFinancialCard">
-      <assert id="BR-51" flag="fatal" test="string-length(ram:ID)&lt;=10">[BR-51]-In accordance with card payments security standards an invoice should never include a full card primary account number (BT-97). At the moment PCI Security Standards Council has defined that the first 6 digits and last 4 digits are the maximum number of digits to be shown.</assert>
+      <assert id="BR-51" flag="fatal" test="string-length(normalize-space(ram:ID)) &lt;= 10">[BR-51]-In accordance with card payments security standards an invoice should never include a full card primary account number (BT-97). At the moment PCI Security Standards Council has defined that the first 6 digits and last 4 digits are the maximum number of digits to be shown.</assert>
     </rule>
     <rule context="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayeePartyCreditorFinancialAccount">
-      <assert id="BR-50" flag="fatal" test="(ram:IBANID) or (ram:ProprietaryID)">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-16) information is provided in the Invoice.</assert>
+      <assert id="BR-50" flag="fatal" test="normalize-space(ram:IBANID) != '' or normalize-space(ram:ProprietaryID) != ''">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-16) information is provided in the Invoice.</assert>
       <assert id="BR-61" flag="fatal" test="(ram:IBANID) or (ram:ProprietaryID)">[BR-61]-If the Payment means type code (BT-81) means SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier (BT-84) shall be present.</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery">
@@ -160,9 +160,9 @@
       <assert id="BR-CO-26" flag="fatal" test="(ram:ID) or (ram:GlobalID) or (ram:SpecifiedLegalOrganization/ram:ID) or (ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA'])">[BR-CO-26]-In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present.</assert>
     </rule>
     <rule context="//ram:SellerTaxRepresentativeTradeParty">
-      <assert id="BR-18" flag="fatal" test="(ram:Name)">[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-18" flag="fatal" test="normalize-space(ram:Name) != ''">[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
       <assert id="BR-19" flag="fatal" test="(ram:PostalTradeAddress)">[BR-19]-The Seller tax representative postal address (BG-12) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
-      <assert id="BR-20" flag="fatal" test="(ram:PostalTradeAddress/ram:CountryID)">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-20" flag="fatal" test="normalize-space(ram:PostalTradeAddress/ram:CountryID) != ''">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
       <assert id="BR-56" flag="fatal" test="normalize-space(ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']) != ''">[BR-56]-Each Seller tax representative party (BG-11) shall have a Seller tax representative VAT identifier (BT-63).</assert>
     </rule>
     <rule context="//ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]">

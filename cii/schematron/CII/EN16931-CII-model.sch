@@ -23,9 +23,9 @@
   <param name="BR-15" value="(ram:DuePayableAmount)"/>
   <param name="BR-16" value="//ram:IncludedSupplyChainTradeLineItem"/>  
   <param name="BR-17" value="(ram:Name) and (not(ram:Name = ../../ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name) and not(ram:ID = ../../ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:ID) and not(ram:SpecifiedLegalOrganization/ram:ID = ../../ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID))"/>
-  <param name="BR-18" value="(ram:Name)"/>
+  <param name="BR-18" value="normalize-space(ram:Name) != ''"/>
   <param name="BR-19" value="(ram:PostalTradeAddress)"/>
-  <param name="BR-20" value="(ram:PostalTradeAddress/ram:CountryID)"/>  
+  <param name="BR-20" value="normalize-space(ram:PostalTradeAddress/ram:CountryID) != ''"/>  
   <param name="BR-21" value="normalize-space(ram:AssociatedDocumentLineDocument/ram:LineID) != ''"/>
   <param name="BR-22" value="(ram:SpecifiedLineTradeDelivery/ram:BilledQuantity)"/>
   <param name="BR-23" value="(ram:SpecifiedLineTradeDelivery/ram:BilledQuantity/@unitCode)"/>
@@ -51,8 +51,8 @@
   <param name="BR-47" value="(.[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)"/>
   <param name="BR-48" value="(.[upper-case(ram:TypeCode) = 'VAT']/ram:RateApplicablePercent) or (.[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode = 'O')"/>
   <param name="BR-49" value="(ram:TypeCode)"/>
-  <param name="BR-50" value="(ram:IBANID) or (ram:ProprietaryID)"/>
-  <param name="BR-51" value="string-length(ram:ID)&lt;=10"/>
+  <param name="BR-50" value="normalize-space(ram:IBANID) != '' or normalize-space(ram:ProprietaryID) != ''"/>
+  <param name="BR-51" value="string-length(normalize-space(ram:ID)) &lt;= 10"/>
   <param name="BR-52" value="normalize-space(ram:IssuerAssignedID) != ''"/>
   <param name="BR-53" value="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode and (ram:TaxTotalAmount/@currencyID = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) and not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode))"/>
   <param name="BR-54" value="(ram:Description) and (ram:Value)"/>

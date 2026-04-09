@@ -264,9 +264,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length(ram:ID)&lt;=10" />
+      <xsl:when test="string-length(normalize-space(ram:ID)) &lt;= 10" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length(ram:ID)&lt;=10">
+        <svrl:failed-assert test="string-length(normalize-space(ram:ID)) &lt;= 10">
           <xsl:attribute name="id">BR-51</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -285,9 +285,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:IBANID) or (ram:ProprietaryID)" />
+      <xsl:when test="normalize-space(ram:IBANID) != '' or normalize-space(ram:ProprietaryID) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:IBANID) or (ram:ProprietaryID)">
+        <svrl:failed-assert test="normalize-space(ram:IBANID) != '' or normalize-space(ram:ProprietaryID) != ''">
           <xsl:attribute name="id">BR-50</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1821,9 +1821,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:Name)" />
+      <xsl:when test="normalize-space(ram:Name) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:Name)">
+        <svrl:failed-assert test="normalize-space(ram:Name) != ''">
           <xsl:attribute name="id">BR-18</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
@@ -1851,9 +1851,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="(ram:PostalTradeAddress/ram:CountryID)" />
+      <xsl:when test="normalize-space(ram:PostalTradeAddress/ram:CountryID) != ''" />
       <xsl:otherwise>
-        <svrl:failed-assert test="(ram:PostalTradeAddress/ram:CountryID)">
+        <svrl:failed-assert test="normalize-space(ram:PostalTradeAddress/ram:CountryID) != ''">
           <xsl:attribute name="id">BR-20</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
