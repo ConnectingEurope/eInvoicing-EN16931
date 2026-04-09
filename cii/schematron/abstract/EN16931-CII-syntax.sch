@@ -544,6 +544,24 @@
 		<assert test="$CII-SR-418" flag="warning" id="CII-SR-418">[CII-SR-418] - GrossLineTotalAmount should not be present</assert>
 		<assert test="$CII-SR-419" flag="warning" id="CII-SR-419">[CII-SR-419] - NetLineTotalAmount should not be present</assert>
 		<assert test="$CII-SR-420" flag="warning" id="CII-SR-420">[CII-SR-420] - NetIncludingTaxesLineTotalAmount should not be present</assert>
+		<assert test="$CII-SR-477" flag="fatal" id="CII-SR-477">[CII-SR-477] - LineTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-478" flag="fatal" id="CII-SR-478">[CII-SR-478] - ChargeTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-479" flag="fatal" id="CII-SR-479">[CII-SR-479] - AllowanceTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-480" flag="fatal" id="CII-SR-480">[CII-SR-480] - TaxBasisTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-481" flag="fatal" id="CII-SR-481">[CII-SR-481] - RoundingAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-482" flag="fatal" id="CII-SR-482">[CII-SR-482] - GrandTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-483" flag="fatal" id="CII-SR-483">[CII-SR-483] - InformationAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-484" flag="fatal" id="CII-SR-484">[CII-SR-484] - TotalPrepaidAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-485" flag="fatal" id="CII-SR-485">[CII-SR-485] - TotalDiscountAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-486" flag="fatal" id="CII-SR-486">[CII-SR-486] - TotalAllowanceChargeAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-487" flag="fatal" id="CII-SR-487">[CII-SR-487] - DuePayableAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-488" flag="fatal" id="CII-SR-488">[CII-SR-488] - RetailValueExcludingTaxInformationAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-489" flag="fatal" id="CII-SR-489">[CII-SR-489] - TotalDepositFeeInformationAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-490" flag="fatal" id="CII-SR-490">[CII-SR-490] - ProductValueExcludingTobaccoTaxInformationAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-491" flag="fatal" id="CII-SR-491">[CII-SR-491] - TotalRetailValueInformationAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-492" flag="fatal" id="CII-SR-492">[CII-SR-492] - GrossLineTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-493" flag="fatal" id="CII-SR-493">[CII-SR-493] - NetLineTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
+		<assert test="$CII-SR-494" flag="fatal" id="CII-SR-494">[CII-SR-494] - NetIncludingTaxesLineTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
 	</rule>
 	<rule context="$Invoice">
 		<assert test="$CII-DT-013" flag="fatal" id="CII-DT-013">[CII-DT-013] - languageID should not be present</assert>

@@ -671,6 +671,24 @@
 	<param name="CII-SR-419" value="not(ram:NetLineTotalAmount)"/>
 	<param name="CII-SR-420" value="not(ram:NetIncludingTaxesLineTotalAmount)"/>
 	<param name="CII-SR-463" value="(ram:ChargeIndicator)"/>
+	<param name="CII-SR-477" value="count(ram:LineTotalAmount) &lt;= 1"/>
+	<param name="CII-SR-478" value="count(ram:ChargeTotalAmount) &lt;= 1"/>
+	<param name="CII-SR-479" value="count(ram:AllowanceTotalAmount) &lt;= 1"/>
+	<param name="CII-SR-480" value="count(ram:TaxBasisTotalAmount) &lt;= 1"/>
+	<param name="CII-SR-481" value="count(ram:RoundingAmount) &lt;= 1"/>
+	<param name="CII-SR-482" value="count(ram:GrandTotalAmount) &lt;= 1"/>
+	<param name="CII-SR-483" value="count(ram:InformationAmount) &lt;= 1"/>
+	<param name="CII-SR-484" value="count(ram:TotalPrepaidAmount) &lt;= 1"/>
+	<param name="CII-SR-485" value="count(ram:TotalDiscountAmount) &lt;= 1"/>
+	<param name="CII-SR-486" value="count(ram:TotalAllowanceChargeAmount) &lt;= 1"/>
+	<param name="CII-SR-487" value="count(ram:DuePayableAmount) &lt;= 1"/>
+	<param name="CII-SR-488" value="count(ram:RetailValueExcludingTaxInformationAmount) &lt;= 1"/>
+	<param name="CII-SR-489" value="count(ram:TotalDepositFeeInformationAmount) &lt;= 1"/>
+	<param name="CII-SR-490" value="count(ram:ProductValueExcludingTobaccoTaxInformationAmount) &lt;= 1"/>
+	<param name="CII-SR-491" value="count(ram:TotalRetailValueInformationAmount) &lt;= 1"/>
+	<param name="CII-SR-492" value="count(ram:GrossLineTotalAmount) &lt;= 1"/>
+	<param name="CII-SR-493" value="count(ram:NetLineTotalAmount) &lt;= 1"/>
+	<param name="CII-SR-494" value="count(ram:NetIncludingTaxesLineTotalAmount) &lt;= 1"/>
 	<!-- ID Type -->
 	<param name="CII-DT-001" value="not(@schemeName)"/>
 	<param name="CII-DT-002" value="not(@schemeAgencyName)"/>
