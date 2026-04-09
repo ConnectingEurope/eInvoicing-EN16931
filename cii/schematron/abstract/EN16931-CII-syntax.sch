@@ -195,6 +195,7 @@
 		<assert test="$CII-SR-463" flag="fatal" id="CII-SR-463">[CII-SR-463]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a Charge Indicator.</assert>
 		<assert test="$CII-SR-471" flag="fatal" id="CII-SR-471">[CII-SR-471]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a VAT category code (BT-95).</assert>		
 		<assert test="$CII-SR-472" flag="fatal" id="CII-SR-472">[CII-SR-472]-Each Specified Trade Allowance Charge (BG-20)(BG-21) should contain a VAT rate (BT-96).</assert>
+		<assert test="$CII-SR-473" flag="fatal" id="CII-SR-473">[CII-SR-473] - ActualAmount should exist maximum once</assert>
 	</rule> 
 	<rule context="$AppliedTradeAllowanceCharge">
 		<assert test="$CII-SR-440" flag="fatal" id="CII-SR-440">[CII-SR-440] - ActualAmount should exist maximum once</assert>

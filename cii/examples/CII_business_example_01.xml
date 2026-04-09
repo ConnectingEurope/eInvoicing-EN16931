@@ -444,7 +444,6 @@
                     <udt:Indicator>false</udt:Indicator>
                 </ram:ChargeIndicator>
                 <ram:ActualAmount>100</ram:ActualAmount>
-                <ram:ActualAmount>100</ram:ActualAmount>
                 <ram:ReasonCode>95</ram:ReasonCode>
                 <ram:Reason>Promotion discount</ram:Reason>
                 <ram:CategoryTradeTax>
