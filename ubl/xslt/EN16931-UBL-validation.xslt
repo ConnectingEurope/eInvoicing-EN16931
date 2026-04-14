@@ -14748,6 +14748,21 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="count(cac:OriginatorDocumentReference/cbc:ID) &lt;= 1" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="count(cac:OriginatorDocumentReference/cbc:ID) &lt;= 1">
+          <xsl:attribute name="id">UBL-SR-56</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-SR-56]-An Invoice shall contain maximum one Originator document reference identifier (BT-17).</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:apply-templates mode="M12" select="@*|*" />
   </xsl:template>
 
