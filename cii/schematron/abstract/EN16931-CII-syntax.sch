@@ -51,7 +51,6 @@
 		<assert test="$CII-SR-036" flag="warning" id="CII-SR-036">[CII-SR-036] - ParentLineID should not be present</assert>
 		<assert test="$CII-SR-037" flag="warning" id="CII-SR-037">[CII-SR-037] - LineStatusCode should not be present</assert>
 		<assert test="$CII-SR-038" flag="warning" id="CII-SR-038">[CII-SR-038] - LineStatusReasonCode should not be present</assert>
-
 		<assert test="$CII-SR-221" flag="warning" id="CII-SR-221">[CII-SR-221] - IncludedSubordinateTradeLineItem should not be present</assert>
 	</rule>
 	<rule context="$AssociatedDocumentLineDocument">

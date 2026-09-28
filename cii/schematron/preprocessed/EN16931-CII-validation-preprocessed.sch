@@ -381,7 +381,7 @@
     <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote">
       <assert id="CII-SR-030" flag="warning" test="count(ram:Content) &lt;= 1">[CII-SR-030] - Content should exist maximum once</assert>
     </rule>
-    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem">
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument">
       <assert id="CII-SR-035" flag="warning" test="not(ram:DescriptionCode)">[CII-SR-035] - DescriptionCode should not be present</assert>
       <assert id="CII-SR-036" flag="warning" test="not(ram:ParentLineID)">[CII-SR-036] - ParentLineID should not be present</assert>
       <assert id="CII-SR-037" flag="warning" test="not(ram:LineStatusCode)">[CII-SR-037] - LineStatusCode should not be present</assert>
