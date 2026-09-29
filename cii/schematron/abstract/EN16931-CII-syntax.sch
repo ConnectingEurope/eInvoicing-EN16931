@@ -7,7 +7,7 @@
 <!-- Abstract rules for binding CII to EN16931 -->
 <pattern xmlns="http://purl.oclc.org/dsdl/schematron" abstract="true" id="EN16931-CII">
 	<rule context="$Specified_Trade_Settlement_PaymentMeans">
-		<assert test="$CII-SR-464" flag="warning" id="CII-SR-464">[CII-SR-464] - PayerSpecifiedDebtorFincancialInstitution shall not be used.</assert>
+		<assert test="$CII-SR-464" flag="warning" id="CII-SR-464">[CII-SR-464] - PayerSpecifiedDebtorFincancialInstitution should not be used.</assert>
 	</rule>	
 	<rule context="$Document_Context">
 		<assert test="$CII-SR-001" flag="warning" id="CII-SR-001">[CII-SR-001] - SpecifiedTransactionID should not be present</assert>

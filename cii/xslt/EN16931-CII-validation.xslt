@@ -3591,7 +3591,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-464] - PayerSpecifiedDebtorFincancialInstitution shall not be used.</svrl:text>
+          <svrl:text>[CII-SR-464] - PayerSpecifiedDebtorFincancialInstitution should not be used.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
