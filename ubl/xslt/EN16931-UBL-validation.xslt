@@ -14763,6 +14763,21 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity) &lt;= 1 and count(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity) &lt;= 1 and count(cac:PayeeParty/cac:PartyLegalEntity) &lt;= 1 and count(cac:TaxRepresentativeParty/cac:PartyLegalEntity) &lt;= 1" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity) &lt;= 1 and count(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity) &lt;= 1 and count(cac:PayeeParty/cac:PartyLegalEntity) &lt;= 1 and count(cac:TaxRepresentativeParty/cac:PartyLegalEntity) &lt;= 1">
+          <xsl:attribute name="id">UBL-SR-57</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-SR-57]-PartyLegalEntity shall occur maximum once within a Party.</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:apply-templates mode="M12" select="@*|*" />
   </xsl:template>
 

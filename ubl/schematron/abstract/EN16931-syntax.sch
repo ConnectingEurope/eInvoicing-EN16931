@@ -763,6 +763,7 @@
     <assert test="$UBL-SR-54" flag="fatal" id="UBL-SR-54">[UBL-SR-54]-An Invoice shall contain maximum one Payment Card account (BG-18).</assert>
     <assert test="$UBL-SR-55" flag="fatal" id="UBL-SR-55">[UBL-SR-55]-An Invoice shall contain maximum one Payment Mandate (BG-19).</assert>    
     <assert test="$UBL-SR-56" flag="fatal" id="UBL-SR-56">[UBL-SR-56]-An Invoice shall contain maximum one Originator document reference identifier (BT-17).</assert>
+    <assert test="$UBL-SR-57" flag="fatal" id="UBL-SR-57">[UBL-SR-57]-PartyLegalEntity shall occur maximum once within a Party.</assert>
   </rule>
   <rule context="$Invoice_line">
     <assert test="$UBL-SR-34" flag="fatal" id="UBL-SR-34">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>

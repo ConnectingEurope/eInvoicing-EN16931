@@ -1113,6 +1113,7 @@
       <assert id="UBL-SR-54" flag="fatal" test="count(cac:PaymentMeans/cac:CardAccount) &lt;= 1">[UBL-SR-54]-An Invoice shall contain maximum one Payment Card account (BG-18).</assert>
       <assert id="UBL-SR-55" flag="fatal" test="count(cac:PaymentMeans/cac:PaymentMandate) &lt;= 1">[UBL-SR-55]-An Invoice shall contain maximum one Payment Mandate (BG-19).</assert>
       <assert id="UBL-SR-56" flag="fatal" test="count(cac:OriginatorDocumentReference/cbc:ID) &lt;= 1">[UBL-SR-56]-An Invoice shall contain maximum one Originator document reference identifier (BT-17).</assert>
+      <assert id="UBL-SR-57" flag="fatal" test="count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity) &lt;= 1 and count(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity) &lt;= 1 and count(cac:PayeeParty/cac:PartyLegalEntity) &lt;= 1 and count(cac:TaxRepresentativeParty/cac:PartyLegalEntity) &lt;= 1">[UBL-SR-57]-PartyLegalEntity shall occur maximum once within a Party.</assert>
     </rule>
     <rule context="cac:InvoiceLine | cac:CreditNoteLine">
       <assert id="UBL-SR-34" flag="fatal" test="(count(cbc:Note) &lt;= 1)">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>
