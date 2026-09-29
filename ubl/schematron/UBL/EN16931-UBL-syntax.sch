@@ -29,7 +29,7 @@
   <param name="UBL-SR-22" value="(count(cac:PartyName/cbc:Name) &lt;= 1)"/>
   <param name="UBL-SR-23" value="(count(cac:PartyTaxScheme/cbc:CompanyID) &lt;= 1)"/>
   <param name="UBL-SR-24" value="(count(cac:Delivery) &lt;= 1)"/>
-  <param name="UBL-SR-25" value="(count(cac:DeliveryParty/cac:PartyName/cbc:Name) &lt;= 1)"/>
+  <param name="UBL-SR-25" value="not(cac:DeliveryParty) or count(cac:DeliveryParty/cac:PartyName/cbc:Name) = 1"/>
   <param name="UBL-SR-26" value="(count(cbc:PaymentID) &lt;= 1)"/>
   <param name="UBL-SR-27" value="(count(cbc:PaymentMeansCode) &lt;= 1)"/>
   <param name="UBL-SR-28" value="(count(cac:PaymentMandate/cbc:ID) &lt;= 1)"/>

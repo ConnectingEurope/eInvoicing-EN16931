@@ -374,7 +374,7 @@
       <assert id="UBL-DT-07" flag="fatal" test="(@filename)">[UBL-DT-07]-Binary object elements shall contain the file name attribute</assert>
     </rule>
     <rule context="cac:Delivery">
-      <assert id="UBL-SR-25" flag="fatal" test="(count(cac:DeliveryParty/cac:PartyName/cbc:Name) &lt;= 1)">[UBL-SR-25]-Deliver to party name shall occur maximum once</assert>
+      <assert id="UBL-SR-25" flag="fatal" test="not(cac:DeliveryParty) or count(cac:DeliveryParty/cac:PartyName/cbc:Name) = 1">[UBL-SR-25]-Deliver to party name shall occur maximum once</assert>
     </rule>
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = false()]">
       <assert id="UBL-SR-30" flag="fatal" test="(count(cbc:AllowanceChargeReason) &lt;= 1)">[UBL-SR-30]-Document level allowance reason shall occur maximum once</assert>
