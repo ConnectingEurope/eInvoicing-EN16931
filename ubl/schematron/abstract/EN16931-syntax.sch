@@ -704,7 +704,7 @@
     <assert test="$UBL-CR-671" flag="warning" id="UBL-CR-671">[UBL-CR-671]-A UBL invoice should not include a Price Allowance Multiplier Factor</assert>
     <assert test="$UBL-CR-672" flag="warning" id="UBL-CR-672">[UBL-CR-672]-A UBL credit note should not include the CreditNoteTypeCode listID</assert>
     <assert test="$UBL-CR-673" flag="fatal" id="UBL-CR-673">[UBL-CR-673]-A UBL invoice shall not include an AdditionalDocumentReference simultaneously referring an Invoice Object Identifier and an Document Description</assert>
-    <assert test="$UBL-CR-674" flag="warning" id="UBL-CR-674">[UBL-CR-674]-A UBL invoice should not include the PrimaryAccountNumber schemeID</assert>
+    <assert test="$UBL-CR-674" flag="warning" id="UBL-CR-674">[UBL-CR-674]-A UBL invoice should not include the PrimaryAccountNumberID schemeID</assert>
     <assert test="$UBL-CR-675" flag="warning" id="UBL-CR-675">[UBL-CR-675]-A UBL invoice should not include the NetworkID schemeID</assert>
     <assert test="$UBL-CR-676" flag="warning" id="UBL-CR-676">[UBL-CR-676]-A UBL invoice should not include the PaymentMandate/ID schemeID</assert>
     <assert test="$UBL-CR-677" flag="warning" id="UBL-CR-677">[UBL-CR-677]-A UBL invoice should not include the PayerFinancialAccount/ID schemeID</assert>

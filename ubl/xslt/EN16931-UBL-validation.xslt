@@ -13904,7 +13904,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[UBL-CR-674]-A UBL invoice should not include the PrimaryAccountNumber schemeID</svrl:text>
+          <svrl:text>[UBL-CR-674]-A UBL invoice should not include the PrimaryAccountNumberID schemeID</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
