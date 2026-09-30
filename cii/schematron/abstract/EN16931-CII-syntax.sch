@@ -566,11 +566,12 @@
 	<rule context="$Invoice">
 		<assert test="$CII-DT-013" flag="fatal" id="CII-DT-013">[CII-DT-013] - languageID should not be present</assert>
 		<assert test="$CII-DT-014" flag="fatal" id="CII-DT-014">[CII-DT-014] - languageLocaleID should not be present</assert>
-
 		<assert test="$CII-SR-438" flag="warning" id="CII-SR-438">[CII-SR-438] - ValuationBreakdownStatement should not be present</assert>
 		<assert test="$CII-SR-467" flag="fatal" id="CII-SR-467">[CII-SR-467] - All Payment means type codes (BT-81) shall have the same value across all SpecifiedTradeSettlementPaymentMeans.</assert>
 		<assert test="$CII-SR-468" flag="fatal" id="CII-SR-468">[CII-SR-468] - All Payment means texts (BT-82) shall have the same value across all SpecifiedTradeSettlementPaymentMeans.</assert>
 		<assert test="$CII-SR-469" flag="fatal" id="CII-SR-469">[CII-SR-469] - Payment reference (BT-83) shall occur at most once in the document.</assert>
+		<assert test="$CII-SR-495" flag="fatal" id="CII-SR-495">[CII-SR-495] - An Invoice shall contain maximum one Payment Card account (BG-18).</assert>
+		<assert test="$CII-SR-496" flag="fatal" id="CII-SR-496">[CII-SR-496] - An Invoice shall contain maximum one Payment Mandate (BG-19).</assert>
 	</rule>
 	<rule context="$DocumentContextParameter">
 		<assert test="$CII-SR-004" flag="warning" id="CII-SR-04">[CII-SR-004] - Value should not be present</assert>

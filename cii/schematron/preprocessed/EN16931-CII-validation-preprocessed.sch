@@ -860,6 +860,8 @@
       <assert id="CII-SR-467" flag="fatal" test="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode[normalize-space(.) != normalize-space((//ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode)[1])]) = 0">[CII-SR-467] - All Payment means type codes (BT-81) shall have the same value across all SpecifiedTradeSettlementPaymentMeans.</assert>
       <assert id="CII-SR-468" flag="fatal" test="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:Information[normalize-space(.) != normalize-space((//ram:SpecifiedTradeSettlementPaymentMeans/ram:Information)[1])]) = 0">[CII-SR-468] - All Payment means texts (BT-82) shall have the same value across all SpecifiedTradeSettlementPaymentMeans.</assert>
       <assert id="CII-SR-469" flag="fatal" test="count(//ram:ApplicableHeaderTradeSettlement/ram:PaymentReference) &lt;= 1">[CII-SR-469] - Payment reference (BT-83) shall occur at most once in the document.</assert>
+      <assert id="CII-SR-495" flag="fatal" test="count(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard) &lt;= 1">[CII-SR-495] - An Invoice shall contain maximum one Payment Card account (BG-18).</assert>
+      <assert id="CII-SR-496" flag="fatal" test="count(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount) &lt;= 1">[CII-SR-496] - An Invoice shall contain maximum one Payment Mandate (BG-19).</assert>
     </rule>
     <rule context="//*[ends-with(name(), 'DocumentContextParameter')]">
       <assert id="CII-SR-04" flag="warning" test="not(ram:Value)">[CII-SR-004] - Value should not be present</assert>

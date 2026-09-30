@@ -656,6 +656,8 @@
 	
 	<!-- Invoice -->
 	<param name="CII-SR-438" value="not(ram:ValuationBreakdownStatement)"/>
+	<param name="CII-SR-495" value="count(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard) &lt;= 1"/>
+	<param name="CII-SR-496" value="count(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount) &lt;= 1"/>
 
 	<!-- SpecifiedTradeSettlementHeaderMonetarySummation -->
 
