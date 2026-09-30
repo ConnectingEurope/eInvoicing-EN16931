@@ -577,6 +577,17 @@
 		<assert test="$CII-SR-004" flag="warning" id="CII-SR-04">[CII-SR-004] - Value should not be present</assert>
 		<assert test="$CII-SR-005" flag="warning" id="CII-SR-05">[CII-SR-005] - SpecifiedDocumentVersion should not be present</assert>
 	</rule>
+	<rule context="$AttachmentBinaryObject">
+		
+		<assert test="$CII-DT-105" flag="fatal" id="CII-DT-105">
+			[CII-DT-105] - Attached document Mime code (BT-125-1) shall be provided.
+		</assert>
+		
+		<assert test="$CII-DT-106" flag="fatal" id="CII-DT-106">
+			[CII-DT-106] - Attached document Filename (BT-125-2) shall be provided.
+		</assert>
+		
+	</rule>
 	<rule context="$IDTypeNoAttributes">
     <!-- Rules DT-001 to DT-004 need to be copied here to take effect -->
     <assert test="$CII-DT-001" flag="fatal" id="CII-DT-001">[CII-DT-001] - schemeName should not be present</assert>
