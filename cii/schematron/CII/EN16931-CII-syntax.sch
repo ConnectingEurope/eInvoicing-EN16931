@@ -467,8 +467,8 @@
 	<param name="CII-SR-457" value="( count(ram:AdditionalReferencedDocument[ram:TypeCode='50'])  &lt;= 1)"/>
 	<param name="CII-SR-458" value="( count(ram:AdditionalReferencedDocument[ram:TypeCode='130'])  &lt;= 1)"/>
 	<param name="CII-SR-470" value="count(ram:SpecifiedTradeSettlementPaymentMeans[(normalize-space(ram:TypeCode) = '30' or normalize-space(ram:TypeCode) = '58') and not(ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)]) = 0"/>
-	<param name="CII-SR-475" value="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '916']/ram:Name) &lt;= 1"/>
-	<param name="CII-SR-476" value="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '916']/ram:AttachmentBinaryObject) &lt;= 1"/>
+	<param name="CII-SR-475" value="normalize-space(ram:TypeCode) != '916' or count(ram:Name) &lt;= 1"/>
+	<param name="CII-SR-476" value="normalize-space(ram:TypeCode) != '916' or count(ram:AttachmentBinaryObject) &lt;= 1"/>
 	
 	<!-- ApplicableHeaderTradeDelivery -->
 	<param name="CII-SR-308" value="not(ram:RelatedSupplyChainConsignment)"/>
@@ -814,7 +814,7 @@
 
 	<!-- Sections -->
 
-	<param name="Invoice_line" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument"/>
+	<param name="AdditionalReferencedDocument" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:AdditionalReferencedDocument"/>	<param name="Invoice_line" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument"/>
 	<param name="AssociatedDocumentLineDocument" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument"/>
 	<param name="Invoice" value="/rsm:CrossIndustryInvoice"/>
 	<param name="Document_Context" value="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext"/>

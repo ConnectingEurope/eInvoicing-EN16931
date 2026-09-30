@@ -3578,7 +3578,7 @@
 
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans" mode="M11" priority="1030">
+<xsl:template match="//ram:SpecifiedTradeSettlementPaymentMeans" mode="M11" priority="1031">
     <svrl:fired-rule context="//ram:SpecifiedTradeSettlementPaymentMeans" />
 
 		<!--ASSERT -->
@@ -3599,7 +3599,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext" mode="M11" priority="1029">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext" mode="M11" priority="1030">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext" />
 
 		<!--ASSERT -->
@@ -3755,7 +3755,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument" mode="M11" priority="1028">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument" mode="M11" priority="1029">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument" />
 
 		<!--ASSERT -->
@@ -4046,7 +4046,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote" mode="M11" priority="1027">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote" mode="M11" priority="1028">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote" />
 
 		<!--ASSERT -->
@@ -4067,7 +4067,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument" mode="M11" priority="1026">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument" mode="M11" priority="1027">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument" />
 
 		<!--ASSERT -->
@@ -4148,7 +4148,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument" mode="M11" priority="1025">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument" mode="M11" priority="1026">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument" />
 
 		<!--ASSERT -->
@@ -4244,7 +4244,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct" mode="M11" priority="1024">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct" mode="M11" priority="1025">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct" />
 
 		<!--ASSERT -->
@@ -5090,7 +5090,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:ApplicableProductCharacteristic" mode="M11" priority="1023">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:ApplicableProductCharacteristic" mode="M11" priority="1024">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:ApplicableProductCharacteristic" />
 
 		<!--ASSERT -->
@@ -5126,7 +5126,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeAgreement" mode="M11" priority="1022">
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeAgreement" mode="M11" priority="1023">
     <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeAgreement" />
 
 		<!--ASSERT -->
@@ -5897,7 +5897,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:SpecifiedTradeAllowanceCharge" mode="M11" priority="1021">
+<xsl:template match="//ram:SpecifiedTradeAllowanceCharge" mode="M11" priority="1022">
     <svrl:fired-rule context="//ram:SpecifiedTradeAllowanceCharge" />
 
 		<!--ASSERT -->
@@ -5963,7 +5963,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge" mode="M11" priority="1020">
+<xsl:template match="//ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge" mode="M11" priority="1021">
     <svrl:fired-rule context="//ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge" />
 
 		<!--ASSERT -->
@@ -5977,6 +5977,42 @@
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
           <svrl:text>[CII-SR-440] - ActualAmount should exist maximum once</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+    <xsl:apply-templates mode="M11" select="@*|*" />
+  </xsl:template>
+
+	<!--RULE -->
+<xsl:template match="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:AdditionalReferencedDocument" mode="M11" priority="1020">
+    <svrl:fired-rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:AdditionalReferencedDocument" />
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="normalize-space(ram:TypeCode) != '916' or count(ram:Name) &lt;= 1" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="normalize-space(ram:TypeCode) != '916' or count(ram:Name) &lt;= 1">
+          <xsl:attribute name="id">CII-SR-475</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-SR-475] - Only one AdditionalReferencedDocument Name BT-123 is allowed with TypeCode 916.</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="normalize-space(ram:TypeCode) != '916' or count(ram:AttachmentBinaryObject) &lt;= 1" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="normalize-space(ram:TypeCode) != '916' or count(ram:AttachmentBinaryObject) &lt;= 1">
+          <xsl:attribute name="id">CII-SR-476</xsl:attribute>
+          <xsl:attribute name="flag">warning</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[CII-SR-476] - Only one AdditionalReferencedDocument AttachmentBinaryObject BT-125 is allowed with TypeCode 916.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -8500,36 +8536,6 @@
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
           <svrl:text>[CII-SR-466] - Only one BT-56 element is allowed on an invoice.</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '916']/ram:Name) &lt;= 1" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '916']/ram:Name) &lt;= 1">
-          <xsl:attribute name="id">CII-SR-475</xsl:attribute>
-          <xsl:attribute name="flag">warning</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[CII-SR-475] - Only one AdditionalReferencedDocument Name BT-123 is allowed with TypeCode 916.</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '916']/ram:AttachmentBinaryObject) &lt;= 1" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:AdditionalReferencedDocument[normalize-space(ram:TypeCode) = '916']/ram:AttachmentBinaryObject) &lt;= 1">
-          <xsl:attribute name="id">CII-SR-476</xsl:attribute>
-          <xsl:attribute name="flag">warning</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[CII-SR-476] - Only one AdditionalReferencedDocument AttachmentBinaryObject BT-125 is allowed with TypeCode 916.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
