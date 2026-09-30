@@ -5917,21 +5917,6 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(ram:RateApplicablePercent) &lt;= 1" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:RateApplicablePercent) &lt;= 1">
-          <xsl:attribute name="id">CII-SR-471</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[CII-SR-471]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a VAT category code (BT-95).</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-
-		<!--ASSERT -->
-<xsl:choose>
       <xsl:when test="count(ram:CategoryTradeTax) &lt;= 1" />
       <xsl:otherwise>
         <svrl:failed-assert test="count(ram:CategoryTradeTax) &lt;= 1">
@@ -5940,7 +5925,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[CII-SR-472]-Each Specified Trade Allowance Charge (BG-20)(BG-21) should contain a VAT rate (BT-96).</svrl:text>
+          <svrl:text>[CII-SR-472] - CategoryTradeTax shall occur at most once in a Specified Trade Allowance Charge.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>

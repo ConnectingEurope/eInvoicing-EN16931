@@ -213,7 +213,6 @@
 	
 	<!-- SpecifiedTradeAllowanceCharge -->
 	
-	<param name="CII-SR-471" value="count(ram:RateApplicablePercent) &lt;= 1"/>
 	<param name="CII-SR-472" value="count(ram:CategoryTradeTax) &lt;= 1"/>
 	<param name="CII-SR-473" value="count(ram:ActualAmount) &lt;= 1"/>
 	

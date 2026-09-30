@@ -513,8 +513,7 @@
     </rule>
     <rule context="//ram:SpecifiedTradeAllowanceCharge">
       <assert id="CII-SR-463" flag="fatal" test="(ram:ChargeIndicator)">[CII-SR-463]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a Charge Indicator.</assert>
-      <assert id="CII-SR-471" flag="fatal" test="count(ram:RateApplicablePercent) &lt;= 1">[CII-SR-471]-Each Specified Trade Allowance Charge (BG-20)(BG-21) shall contain a VAT category code (BT-95).</assert>
-      <assert id="CII-SR-472" flag="fatal" test="count(ram:CategoryTradeTax) &lt;= 1">[CII-SR-472]-Each Specified Trade Allowance Charge (BG-20)(BG-21) should contain a VAT rate (BT-96).</assert>
+      <assert id="CII-SR-472" flag="fatal" test="count(ram:CategoryTradeTax) &lt;= 1">[CII-SR-472] - CategoryTradeTax shall occur at most once in a Specified Trade Allowance Charge.</assert>
       <assert id="CII-SR-473" flag="fatal" test="count(ram:ActualAmount) &lt;= 1">[CII-SR-473] - ActualAmount should exist maximum once</assert>
     </rule>
     <rule context="//ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge">
