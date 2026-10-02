@@ -14991,6 +14991,21 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
+
+		<!--ASSERT -->
+<xsl:choose>
+      <xsl:when test="not(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch) or count(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID) = 1" />
+      <xsl:otherwise>
+        <svrl:failed-assert test="not(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch) or count(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID) = 1">
+          <xsl:attribute name="id">UBL-SR-58</xsl:attribute>
+          <xsl:attribute name="flag">fatal</xsl:attribute>
+          <xsl:attribute name="location">
+            <xsl:apply-templates mode="schematron-select-full-path" select="." />
+          </xsl:attribute>
+          <svrl:text>[UBL-SR-58]-A Financial Institution Branch shall contain exactly one Payment service provider identifier (BT-86).</svrl:text>
+        </svrl:failed-assert>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:apply-templates mode="M12" select="@*|*" />
   </xsl:template>
 

@@ -1133,6 +1133,7 @@
       <assert id="UBL-SR-26" flag="fatal" test="(count(cbc:PaymentID) &lt;= 1)">[UBL-SR-26]-Payment reference shall occur maximum once</assert>
       <assert id="UBL-SR-27" flag="fatal" test="(count(cbc:PaymentMeansCode) &lt;= 1)">[UBL-SR-27]-Payment means text shall occur maximum once</assert>
       <assert id="UBL-SR-28" flag="fatal" test="(count(cac:PaymentMandate/cbc:ID) &lt;= 1)">[UBL-SR-28]-Mandate reference identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-58" flag="fatal" test="not(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch) or count(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID) = 1">[UBL-SR-58]-A Financial Institution Branch shall contain exactly one Payment service provider identifier (BT-86).</assert>
     </rule>
     <rule context="cac:BillingReference">
       <assert id="UBL-SR-06" flag="fatal" test="(count(cac:InvoiceDocumentReference) &lt;= 1)">[UBL-SR-06]-Preceding invoice reference shall occur maximum once</assert>

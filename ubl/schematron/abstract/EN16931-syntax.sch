@@ -783,6 +783,7 @@
     <assert test="$UBL-SR-26" flag="fatal" id="UBL-SR-26">[UBL-SR-26]-Payment reference shall occur maximum once</assert>
     <assert test="$UBL-SR-27" flag="fatal" id="UBL-SR-27">[UBL-SR-27]-Payment means text shall occur maximum once</assert>
     <assert test="$UBL-SR-28" flag="fatal" id="UBL-SR-28">[UBL-SR-28]-Mandate reference identifier shall occur maximum once</assert>
+    <assert test="$UBL-SR-58" flag="fatal" id="UBL-SR-58">[UBL-SR-58]-A Financial Institution Branch shall contain exactly one Payment service provider identifier (BT-86).</assert>
   </rule>
   <rule context="$Preceding_Invoice">
     <assert test="$UBL-SR-06" flag="fatal" id="UBL-SR-06">[UBL-SR-06]-Preceding invoice reference shall occur maximum once</assert>

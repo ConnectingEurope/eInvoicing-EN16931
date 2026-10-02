@@ -60,7 +60,7 @@
   <param name="UBL-SR-55" value="count(cac:PaymentMeans/cac:PaymentMandate) &lt;= 1"/>
   <param name="UBL-SR-56" value="count(cac:OriginatorDocumentReference/cbc:ID) &lt;= 1"/>
   <param name="UBL-SR-57" value="count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity) &lt;= 1 and count(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity) &lt;= 1 and count(cac:PayeeParty/cac:PartyLegalEntity) &lt;= 1 and count(cac:TaxRepresentativeParty/cac:PartyLegalEntity) &lt;= 1"/>
-  <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
+  <param name="UBL-SR-58" value="not(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch) or count(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID) = 1"/> <param name="UBL-DT-01" value="string-length(substring-after(.,'.'))&lt;=2"/>
   <param name="UBL-DT-06" value="(@mimeCode)"/>
   <param name="UBL-DT-07" value="(@filename)"/>
   <param name="UBL-DT-08" value="not(//@schemeName)"/>
