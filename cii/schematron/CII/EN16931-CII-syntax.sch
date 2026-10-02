@@ -509,8 +509,7 @@
 	<param name="CII-SR-336" value="not(ram:ConsumptionReportReferencedDocument)"/>
 	<param name="CII-SR-337" value="not(ram:PreviousDeliverySupplyChainEvent)"/>
 	<param name="CII-SR-338" value="not(ram:PackingListReferencedDocument)"/>
-	<param name="CII-SR-449"
-		value="(not(ram:ShipToTradeParty/ram:ID) and ram:ShipToTradeParty/ram:GlobalID) or (ram:ShipToTradeParty/ram:ID and not(ram:ShipToTradeParty/ram:GlobalID)) or (not(ram:ShipToTradeParty/ram:ID) and not(ram:ShipToTradeParty/ram:GlobalID))"/>
+	<param name="CII-SR-449" value="(not(ram:ShipToTradeParty/ram:ID) and ram:ShipToTradeParty/ram:GlobalID) or (ram:ShipToTradeParty/ram:ID and not(ram:ShipToTradeParty/ram:GlobalID)) or (not(ram:ShipToTradeParty/ram:ID) and not(ram:ShipToTradeParty/ram:GlobalID))"/>
 
 	<!--  ApplicableHeaderTradeSettlement -->
 	<param name="CII-SR-339" value="not(ram:DuePayableAmount)"/>
@@ -652,13 +651,14 @@
 	<param name="CII-SR-467" value="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode[normalize-space(.) != normalize-space((//ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode)[1])]) = 0"/>
 	<param name="CII-SR-468" value="count(//ram:SpecifiedTradeSettlementPaymentMeans/ram:Information[normalize-space(.) != normalize-space((//ram:SpecifiedTradeSettlementPaymentMeans/ram:Information)[1])]) = 0"/>	
 	<param name="CII-SR-469" value="count(//ram:ApplicableHeaderTradeSettlement/ram:PaymentReference) &lt;= 1"/>
-	
+	<param name="CII-SR-497" value="count(ram:SpecifiedTradePaymentTerms/ram:DirectDebitMandateID) &lt;= 1"/>
 	
 	<!-- Invoice -->
 	<param name="CII-SR-438" value="not(ram:ValuationBreakdownStatement)"/>
 	<param name="CII-SR-495" value="count(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard) &lt;= 1"/>
 	<param name="CII-SR-496" value="count(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount) &lt;= 1"/>
 
+	
 	<!-- SpecifiedTradeSettlementHeaderMonetarySummation -->
 
 	<param name="CII-SR-411" value="not(ram:InformationAmount)"/>
