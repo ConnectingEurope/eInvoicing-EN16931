@@ -10810,9 +10810,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(ram:SpecifiedTradePaymentTerms/ram:DirectDebitMandateID) &lt;= 1" />
+      <xsl:when test="count(//ram:SpecifiedTradePaymentTerms/ram:DirectDebitMandateID) &lt;= 1" />
       <xsl:otherwise>
-        <svrl:failed-assert test="count(ram:SpecifiedTradePaymentTerms/ram:DirectDebitMandateID) &lt;= 1">
+        <svrl:failed-assert test="count(//ram:SpecifiedTradePaymentTerms/ram:DirectDebitMandateID) &lt;= 1">
           <xsl:attribute name="id">CII-SR-497</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
