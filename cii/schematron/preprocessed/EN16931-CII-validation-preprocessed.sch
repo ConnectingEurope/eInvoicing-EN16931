@@ -822,6 +822,7 @@
       <assert id="CII-SR-461" flag="fatal" test="count(ram:ApplicableTradeTax/ram:TaxPointDate) &lt;= 1">[CII-SR-461] - Only one TaxPointDate shall be present</assert>
       <assert id="CII-SR-462" flag="fatal" test="count(//ram:ApplicableTradeTax/ram:DueDateTypeCode) = 0 or count(distinct-values(//ram:ApplicableTradeTax/ram:DueDateTypeCode)) = 1">[CII-SR-462] - Only one DueDateTypeCode shall be present</assert>
       <assert id="CII-SR-470" flag="fatal" test="count(ram:SpecifiedTradeSettlementPaymentMeans[(normalize-space(ram:TypeCode) = '30' or normalize-space(ram:TypeCode) = '58') and not(ram:PayeePartyCreditorFinancialAccount/ram:IBANID or ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID)]) = 0">[CII-SR-470] - Either the IBAN or a Proprietary ID (BT-84) shall be used.</assert>
+      <assert id="CII-SR-497" flag="fatal" test="count(ram:SpecifiedTradePaymentTerms/ram:DirectDebitMandateID) &lt;= 1">[CII-SR-497] - Mandate reference identifier (BT-89) shall occur maximum once.</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation">
       <assert id="CII-SR-411" flag="warning" test="not(ram:InformationAmount)">[CII-SR-411] - InformationAmount should not be present</assert>
@@ -852,7 +853,6 @@
       <assert id="CII-SR-492" flag="fatal" test="count(ram:GrossLineTotalAmount) &lt;= 1">[CII-SR-492] - GrossLineTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
       <assert id="CII-SR-493" flag="fatal" test="count(ram:NetLineTotalAmount) &lt;= 1">[CII-SR-493] - NetLineTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
       <assert id="CII-SR-494" flag="fatal" test="count(ram:NetIncludingTaxesLineTotalAmount) &lt;= 1">[CII-SR-494] - NetIncludingTaxesLineTotalAmount shall occur at most once in SpecifiedTradeSettlementHeaderMonetarySummation.</assert>
-      <assert id="CII-SR-497" flag="fatal" test="count(ram:SpecifiedTradePaymentTerms/ram:DirectDebitMandateID) &lt;= 1">[CII-SR-497] - Mandate reference identifier (BT-89) shall occur maximum once.</assert>
     </rule>
     <rule context="/rsm:CrossIndustryInvoice">
       <assert id="CII-DT-013" flag="fatal" test="not(@languageID)">[CII-DT-013] - languageID should not be present</assert>
