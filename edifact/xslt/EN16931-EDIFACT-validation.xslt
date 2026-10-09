@@ -4,10 +4,11 @@
     Licensed under European Union Public Licence (EUPL) version 1.2.
 
 -->
+<!--Schematron version 1.3.17 - Last update: 2026-10-09-->
 <xsl:stylesheet xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:iso="http://purl.oclc.org/dsdl/schematron" xmlns:saxon="http://saxon.sf.net/" xmlns:schold="http://www.ascc.net/xml/schematron" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
-<!--Implementers: please note that overriding process-prolog or process-root is 
+  <!-- Created with ph-schematron version of ISO Schematron XSLTs. -->
+<!-- Implementers: please note that overriding process-prolog or process-root is 
     the preferred method for meta-stylesheets to use where possible. -->
-
 <xsl:param name="archiveDirParameter" />
   <xsl:param name="archiveNameParameter" />
   <xsl:param name="fileNameParameter" />
@@ -54,9 +55,9 @@
         <xsl:text>']</xsl:text>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:variable name="preceding" select="count(preceding-sibling::*[local-name()=local-name(current())                                   and namespace-uri() = namespace-uri(current())])" />
+    <xsl:variable name="preceding" select="count(preceding-sibling::*[local-name()=local-name(current())                                       and namespace-uri() = namespace-uri(current())])" />
     <xsl:text>[</xsl:text>
-    <xsl:value-of select="1+ $preceding" />
+    <xsl:value-of select="1 + $preceding" />
     <xsl:text>]</xsl:text>
   </xsl:template>
   <xsl:template match="@*" mode="schematron-get-full-path">
@@ -91,10 +92,9 @@
       <xsl:text />/@<xsl:value-of select="name(.)" />
     </xsl:if>
   </xsl:template>
-<!--MODE: SCHEMATRON-FULL-PATH-3-->
+  <!--MODE: SCHEMATRON-FULL-PATH-3-->
 <!--This mode can be used to generate prefixed XPath for humans 
 	(Top-level element has index)-->
-
 <xsl:template match="node() | @*" mode="schematron-get-full-path-3">
     <xsl:for-each select="ancestor-or-self::*">
       <xsl:text>/</xsl:text>
@@ -154,11 +154,12 @@
     <xsl:text>_</xsl:text>
     <xsl:value-of select="translate(name(),':','.')" />
   </xsl:template>
-<!--Strip characters-->  <xsl:template match="text()" priority="-1" />
+  <!--Strip characters-->
+  <xsl:template match="text()" priority="-1" />
 
 <!--SCHEMA SETUP-->
 <xsl:template match="/">
-    <svrl:schematron-output schemaVersion="" title="EN16931 model bound to EDIFACT">
+    <svrl:schematron-output schemaVersion="" title="">
       <xsl:comment>
         <xsl:value-of select="$archiveDirParameter" />   
 		 <xsl:value-of select="$archiveNameParameter" />  
@@ -166,43 +167,40 @@
 		 <xsl:value-of select="$fileDirParameter" />
       </xsl:comment>
       <svrl:active-pattern>
-        <xsl:attribute name="document">
+        <xsl:attribute name="documents">
           <xsl:value-of select="document-uri(/)" />
         </xsl:attribute>
         <xsl:attribute name="id">EN16931-EDIFACT-Model</xsl:attribute>
         <xsl:attribute name="name">EN16931-EDIFACT-Model</xsl:attribute>
-        <xsl:apply-templates />
       </svrl:active-pattern>
-      <xsl:apply-templates mode="M4" select="/" />
+      <xsl:apply-templates mode="M3" select="/" />
       <svrl:active-pattern>
-        <xsl:attribute name="document">
+        <xsl:attribute name="documents">
           <xsl:value-of select="document-uri(/)" />
         </xsl:attribute>
         <xsl:attribute name="id">EN16931-EDIFACT-Syntax</xsl:attribute>
         <xsl:attribute name="name">EN16931-EDIFACT-Syntax</xsl:attribute>
-        <xsl:apply-templates />
       </svrl:active-pattern>
-      <xsl:apply-templates mode="M5" select="/" />
+      <xsl:apply-templates mode="M4" select="/" />
       <svrl:active-pattern>
-        <xsl:attribute name="document">
+        <xsl:attribute name="documents">
           <xsl:value-of select="document-uri(/)" />
         </xsl:attribute>
         <xsl:attribute name="id">EN16931-Codes</xsl:attribute>
         <xsl:attribute name="name">EN16931-Codes</xsl:attribute>
-        <xsl:apply-templates />
       </svrl:active-pattern>
-      <xsl:apply-templates mode="M6" select="/" />
+      <xsl:apply-templates mode="M5" select="/" />
     </svrl:schematron-output>
   </xsl:template>
 
 <!--SCHEMATRON PATTERNS-->
-<svrl:text>EN16931 model bound to EDIFACT</svrl:text>
+
 
 <!--PATTERN EN16931-EDIFACT-Model-->
 
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG26/S_RFF" mode="M4" priority="1057">
+<xsl:template match="/M_INVOIC/G_SG26/S_RFF" mode="M3" priority="1057">
     <svrl:fired-rule context="/M_INVOIC/G_SG26/S_RFF" />
 
 		<!--ASSERT -->
@@ -220,11 +218,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG2[S_NAD/C_C082/D_3039='BY']/S_FII[D_3035='BI']" mode="M4" priority="1056">
+<xsl:template match="/M_INVOIC/G_SG2[S_NAD/C_C082/D_3039='BY']/S_FII[D_3035='BI']" mode="M3" priority="1056">
     <svrl:fired-rule context="/M_INVOIC/G_SG2[S_NAD/C_C082/D_3039='BY']/S_FII[D_3035='BI']" />
 
 		<!--ASSERT -->
@@ -243,11 +241,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC[G_SG8/S_PYT/D_4279='1' and G_SG8/S_PAI/C_C534/D_D4461=('30', '57')]/G_SG2[S_NAD/C_C082/D_3039='PE' or S_NAD/C_C082/D_3039='SE']/S_FII[D_3035='RB']" mode="M4" priority="1055">
+<xsl:template match="/M_INVOIC[G_SG8/S_PYT/D_4279='1' and G_SG8/S_PAI/C_C534/D_D4461=('30', '57')]/G_SG2[S_NAD/C_C082/D_3039='PE' or S_NAD/C_C082/D_3039='SE']/S_FII[D_3035='RB']" mode="M3" priority="1055">
     <svrl:fired-rule context="/M_INVOIC[G_SG8/S_PYT/D_4279='1' and G_SG8/S_PAI/C_C534/D_D4461=('30', '57')]/G_SG2[S_NAD/C_C082/D_3039='PE' or S_NAD/C_C082/D_3039='SE']/S_FII[D_3035='RB']" />
 
 		<!--ASSERT -->
@@ -265,11 +263,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']" mode="M4" priority="1054">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']" mode="M3" priority="1054">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']" />
 
 		<!--ASSERT -->
@@ -416,11 +414,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']" mode="M4" priority="1053">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']" mode="M3" priority="1053">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']" />
 
 		<!--ASSERT -->
@@ -567,11 +565,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG52" mode="M4" priority="1052">
+<xsl:template match="/M_INVOIC/G_SG52" mode="M3" priority="1052">
     <svrl:fired-rule context="/M_INVOIC/G_SG52" />
 
 		<!--ASSERT -->
@@ -733,11 +731,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC" mode="M4" priority="1051">
+<xsl:template match="/M_INVOIC" mode="M3" priority="1051">
     <svrl:fired-rule context="/M_INVOIC" />
 
 		<!--ASSERT -->
@@ -1316,11 +1314,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27" mode="M4" priority="1050">
+<xsl:template match="/M_INVOIC/G_SG27" mode="M3" priority="1050">
     <svrl:fired-rule context="/M_INVOIC/G_SG27" />
 
 		<!--ASSERT -->
@@ -1482,11 +1480,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='A' and S_ALC/D_4471='2']" mode="M4" priority="1049">
+<xsl:template match="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='A' and S_ALC/D_4471='2']" mode="M3" priority="1049">
     <svrl:fired-rule context="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='A' and S_ALC/D_4471='2']" />
 
 		<!--ASSERT -->
@@ -1585,11 +1583,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='C' and S_ALC/D_4471='2']" mode="M4" priority="1048">
+<xsl:template match="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='C' and S_ALC/D_4471='2']" mode="M3" priority="1048">
     <svrl:fired-rule context="/M_INVOIC/G_SG27/G_SG40[S_ALC/D_5463='C' and S_ALC/D_4471='2']" />
 
 		<!--ASSERT -->
@@ -1688,11 +1686,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27/S_DTM/C_C507[D_2005 = ('167', '168')]" mode="M4" priority="1047">
+<xsl:template match="/M_INVOIC/G_SG27/S_DTM/C_C507[D_2005 = ('167', '168')]" mode="M3" priority="1047">
     <svrl:fired-rule context="/M_INVOIC/G_SG27/S_DTM/C_C507[D_2005 = ('167', '168')]" />
 
 		<!--ASSERT -->
@@ -1728,11 +1726,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/S_DTM/C_C507[D_2005 = ('167', '168')]" mode="M4" priority="1046">
+<xsl:template match="/M_INVOIC/S_DTM/C_C507[D_2005 = ('167', '168')]" mode="M3" priority="1046">
     <svrl:fired-rule context="/M_INVOIC/S_DTM/C_C507[D_2005 = ('167', '168')]" />
 
 		<!--ASSERT -->
@@ -1768,11 +1766,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27/S_FTX[D_4451='ACF' and D_4453='1']/C_C108" mode="M4" priority="1045">
+<xsl:template match="/M_INVOIC/G_SG27/S_FTX[D_4451='ACF' and D_4453='1']/C_C108" mode="M3" priority="1045">
     <svrl:fired-rule context="/M_INVOIC/G_SG27/S_FTX[D_4451='ACF' and D_4453='1']/C_C108" />
 
 		<!--ASSERT -->
@@ -1790,11 +1788,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG2/S_NAD[D_3035='PE']" mode="M4" priority="1044">
+<xsl:template match="/M_INVOIC/G_SG2/S_NAD[D_3035='PE']" mode="M3" priority="1044">
     <svrl:fired-rule context="/M_INVOIC/G_SG2/S_NAD[D_3035='PE']" />
 
 		<!--ASSERT -->
@@ -1812,11 +1810,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC" mode="M4" priority="1043">
+<xsl:template match="/M_INVOIC" mode="M3" priority="1043">
     <svrl:fired-rule context="/M_INVOIC" />
 
 		<!--ASSERT -->
@@ -1850,11 +1848,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG1/S_RFF/C_C506[D_1153='OI']" mode="M4" priority="1042">
+<xsl:template match="/M_INVOIC/G_SG1/S_RFF/C_C506[D_1153='OI']" mode="M3" priority="1042">
     <svrl:fired-rule context="/M_INVOIC/G_SG1/S_RFF/C_C506[D_1153='OI']" />
 
 		<!--ASSERT -->
@@ -1872,11 +1870,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG2/S_NAD[D_3035='SE']" mode="M4" priority="1041">
+<xsl:template match="/M_INVOIC/G_SG2/S_NAD[D_3035='SE']" mode="M3" priority="1041">
     <svrl:fired-rule context="/M_INVOIC/G_SG2/S_NAD[D_3035='SE']" />
 
 		<!--ASSERT -->
@@ -1896,11 +1894,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG2/S_NAD[D_3035='AE']" mode="M4" priority="1040">
+<xsl:template match="/M_INVOIC/G_SG2/S_NAD[D_3035='AE']" mode="M3" priority="1040">
     <svrl:fired-rule context="/M_INVOIC/G_SG2/S_NAD[D_3035='AE']" />
 
 		<!--ASSERT -->
@@ -1951,11 +1949,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC[not(G_SG7/S_CUX/C_C504[D_6347='6']/D_6345 = G_SG7/S_CUX/C_C504[D_6347='2']/D_6345)]" mode="M4" priority="1039">
+<xsl:template match="/M_INVOIC[not(G_SG7/S_CUX/C_C504[D_6347='6']/D_6345 = G_SG7/S_CUX/C_C504[D_6347='2']/D_6345)]" mode="M3" priority="1039">
     <svrl:fired-rule context="/M_INVOIC[not(G_SG7/S_CUX/C_C504[D_6347='6']/D_6345 = G_SG7/S_CUX/C_C504[D_6347='2']/D_6345)]" />
 
 		<!--ASSERT -->
@@ -1974,16 +1972,16 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_MOA/C_C516[D_5025='176']/D_5004" mode="M4" priority="1038">
+<xsl:template match="/M_INVOIC/G_SG54/S_MOA/C_C516[D_5025='176']/D_5004" mode="M3" priority="1038">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_MOA/C_C516[D_5025='176']/D_5004" />
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test=". =      (     round(     sum(     /M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='124']/D_5004     )*10*10     )div 100     ) " />
+      <xsl:when test=". =      (     round(     sum(     /M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='124']/D_5004     )*10*10     )div 100     )" />
       <xsl:otherwise>
         <svrl:failed-assert test=". = ( round( sum( /M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']/S_MOA/C_C516[D_5025='124']/D_5004 )*10*10 )div 100 )">
           <xsl:attribute name="id">BR-CO-14</xsl:attribute>
@@ -1996,11 +1994,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']" mode="M4" priority="1037">
+<xsl:template match="/M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']" mode="M3" priority="1037">
     <svrl:fired-rule context="/M_INVOIC/G_SG54[S_TAX/D_5283='7' and S_TAX/C_C241/D_5153='VAT']" />
 
 		<!--ASSERT -->
@@ -2114,11 +2112,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC" mode="M4" priority="1036">
+<xsl:template match="/M_INVOIC" mode="M3" priority="1036">
     <svrl:fired-rule context="/M_INVOIC" />
 
 		<!--ASSERT -->
@@ -2138,11 +2136,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'AE']" mode="M4" priority="1035">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'AE']" mode="M3" priority="1035">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'AE']" />
 
 		<!--ASSERT -->
@@ -2197,11 +2195,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='AE']" mode="M4" priority="1034">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='AE']" mode="M3" priority="1034">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='AE']" />
 
 		<!--ASSERT -->
@@ -2239,11 +2237,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='AE']" mode="M4" priority="1033">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='AE']" mode="M3" priority="1033">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='AE']" />
 
 		<!--ASSERT -->
@@ -2281,11 +2279,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27/G_SG35/S_TAX[D_5305 = 'AE']" mode="M4" priority="1032">
+<xsl:template match="/M_INVOIC/G_SG27/G_SG35/S_TAX[D_5305 = 'AE']" mode="M3" priority="1032">
     <svrl:fired-rule context="/M_INVOIC/G_SG27/G_SG35/S_TAX[D_5305 = 'AE']" />
 
 		<!--ASSERT -->
@@ -2323,11 +2321,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'L']" mode="M4" priority="1031">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'L']" mode="M3" priority="1031">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'L']" />
 
 		<!--ASSERT -->
@@ -2383,11 +2381,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'L']" mode="M4" priority="1030">
+<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'L']" mode="M3" priority="1030">
     <svrl:fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'L']" />
 
 		<!--ASSERT -->
@@ -2424,11 +2422,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='L']" mode="M4" priority="1029">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='L']" mode="M3" priority="1029">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='L']" />
 
 		<!--ASSERT -->
@@ -2465,11 +2463,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='L']" mode="M4" priority="1028">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='L']" mode="M3" priority="1028">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='L']" />
 
 		<!--ASSERT -->
@@ -2506,11 +2504,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'M']" mode="M4" priority="1027">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'M']" mode="M3" priority="1027">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'M']" />
 
 		<!--ASSERT -->
@@ -2566,11 +2564,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'M']" mode="M4" priority="1026">
+<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'M']" mode="M3" priority="1026">
     <svrl:fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'M']" />
 
 		<!--ASSERT -->
@@ -2607,11 +2605,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='M']" mode="M4" priority="1025">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='M']" mode="M3" priority="1025">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='M']" />
 
 		<!--ASSERT -->
@@ -2648,11 +2646,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='M']" mode="M4" priority="1024">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='M']" mode="M3" priority="1024">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='M']" />
 
 		<!--ASSERT -->
@@ -2689,11 +2687,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']" mode="M4" priority="1023">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']" mode="M3" priority="1023">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'E']" />
 
 		<!--ASSERT -->
@@ -2748,11 +2746,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='E']" mode="M4" priority="1022">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='E']" mode="M3" priority="1022">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='E']" />
 
 		<!--ASSERT -->
@@ -2789,11 +2787,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='E']" mode="M4" priority="1021">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='E']" mode="M3" priority="1021">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='E']" />
 
 		<!--ASSERT -->
@@ -2830,11 +2828,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'E']" mode="M4" priority="1020">
+<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'E']" mode="M3" priority="1020">
     <svrl:fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'E']" />
 
 		<!--ASSERT -->
@@ -2871,11 +2869,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'G']" mode="M4" priority="1019">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'G']" mode="M3" priority="1019">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'G']" />
 
 		<!--ASSERT -->
@@ -2964,11 +2962,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='G']" mode="M4" priority="1018">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='G']" mode="M3" priority="1018">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='G']" />
 
 		<!--ASSERT -->
@@ -3006,11 +3004,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='G']" mode="M4" priority="1017">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='G']" mode="M3" priority="1017">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='G']" />
 
 		<!--ASSERT -->
@@ -3048,11 +3046,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'G']" mode="M4" priority="1016">
+<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'G']" mode="M3" priority="1016">
     <svrl:fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'G']" />
 
 		<!--ASSERT -->
@@ -3088,11 +3086,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'K']" mode="M4" priority="1015">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'K']" mode="M3" priority="1015">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'K']" />
 
 		<!--ASSERT -->
@@ -3181,11 +3179,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='K']" mode="M4" priority="1014">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='K']" mode="M3" priority="1014">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='K']" />
 
 		<!--ASSERT -->
@@ -3223,11 +3221,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='K']" mode="M4" priority="1013">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='K']" mode="M3" priority="1013">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='K']" />
 
 		<!--ASSERT -->
@@ -3265,11 +3263,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'K']" mode="M4" priority="1012">
+<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'K']" mode="M3" priority="1012">
     <svrl:fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'K']" />
 
 		<!--ASSERT -->
@@ -3306,11 +3304,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'O']" mode="M4" priority="1011">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'O']" mode="M3" priority="1011">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'O']" />
 
 		<!--ASSERT -->
@@ -3401,11 +3399,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='O']" mode="M4" priority="1010">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='O']" mode="M3" priority="1010">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5305='O']" />
 
 		<!--ASSERT -->
@@ -3442,11 +3440,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='O']" mode="M4" priority="1009">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='O']" mode="M3" priority="1009">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5305='O']" />
 
 		<!--ASSERT -->
@@ -3483,11 +3481,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27/G_SG35/S_TAX[D_5305 = 'O']" mode="M4" priority="1008">
+<xsl:template match="/M_INVOIC/G_SG27/G_SG35/S_TAX[D_5305 = 'O']" mode="M3" priority="1008">
     <svrl:fired-rule context="/M_INVOIC/G_SG27/G_SG35/S_TAX[D_5305 = 'O']" />
 
 		<!--ASSERT -->
@@ -3524,11 +3522,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']" mode="M4" priority="1007">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']" mode="M3" priority="1007">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'S']" />
 
 		<!--ASSERT -->
@@ -3585,11 +3583,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'S']" mode="M4" priority="1006">
+<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'S']" mode="M3" priority="1006">
     <svrl:fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'S']" />
 
 		<!--ASSERT -->
@@ -3626,11 +3624,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='S']" mode="M4" priority="1005">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='S']" mode="M3" priority="1005">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='S']" />
 
 		<!--ASSERT -->
@@ -3667,11 +3665,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='S']" mode="M4" priority="1004">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='S']" mode="M3" priority="1004">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='S']" />
 
 		<!--ASSERT -->
@@ -3708,11 +3706,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'Z']" mode="M4" priority="1003">
+<xsl:template match="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'Z']" mode="M3" priority="1003">
     <svrl:fired-rule context="/M_INVOIC/G_SG54/S_TAX[D_5283='7' and C_C241/D_5153='VAT' and D_5305 = 'Z']" />
 
 		<!--ASSERT -->
@@ -3767,11 +3765,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='Z']" mode="M4" priority="1002">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='Z']" mode="M3" priority="1002">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='A']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='Z']" />
 
 		<!--ASSERT -->
@@ -3808,11 +3806,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='Z']" mode="M4" priority="1001">
+<xsl:template match="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='Z']" mode="M3" priority="1001">
     <svrl:fired-rule context="/M_INVOIC/G_SG16[S_ALC/D_5463='C']/G_SG22/S_TAX[D_5283='7' and C_C241/D5153='VAT' and D_5305='Z']" />
 
 		<!--ASSERT -->
@@ -3849,11 +3847,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'Z']" mode="M4" priority="1000">
+<xsl:template match="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'Z']" mode="M3" priority="1000">
     <svrl:fired-rule context="/M_INVOIC/G_SG27[G_SG35/S_TAX/D_5305 = 'Z']" />
 
 		<!--ASSERT -->
@@ -3890,18 +3888,18 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M4" select="*" />
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
-  <xsl:template match="text()" mode="M4" priority="-1" />
-  <xsl:template match="@*|node()" mode="M4" priority="-2">
-    <xsl:apply-templates mode="M4" select="*" />
+  <xsl:template match="text()" mode="M3" priority="-1" />
+  <xsl:template match="@*|node()" mode="M3" priority="-2">
+    <xsl:apply-templates mode="M3" select="*" />
   </xsl:template>
 
 <!--PATTERN EN16931-EDIFACT-Syntax-->
 
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/S_UNH" mode="M5" priority="1012">
+<xsl:template match="/M_INVOIC/S_UNH" mode="M4" priority="1012">
     <svrl:fired-rule context="/M_INVOIC/S_UNH" />
 
 		<!--ASSERT -->
@@ -3935,11 +3933,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/S_BGM" mode="M5" priority="1011">
+<xsl:template match="/M_INVOIC/S_BGM" mode="M4" priority="1011">
     <svrl:fired-rule context="/M_INVOIC/S_BGM" />
 
 		<!--ASSERT -->
@@ -4085,11 +4083,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC" mode="M5" priority="1010">
+<xsl:template match="/M_INVOIC" mode="M4" priority="1010">
     <svrl:fired-rule context="/M_INVOIC" />
 
 		<!--ASSERT -->
@@ -4507,11 +4505,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/S_FTX" mode="M5" priority="1009">
+<xsl:template match="/M_INVOIC/S_FTX" mode="M4" priority="1009">
     <svrl:fired-rule context="/M_INVOIC/S_FTX" />
 
 		<!--ASSERT -->
@@ -4593,11 +4591,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG1" mode="M5" priority="1008">
+<xsl:template match="/M_INVOIC/G_SG1" mode="M4" priority="1008">
     <svrl:fired-rule context="/M_INVOIC/G_SG1" />
 
 		<!--ASSERT -->
@@ -4966,11 +4964,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG2" mode="M5" priority="1007">
+<xsl:template match="/M_INVOIC/G_SG2" mode="M4" priority="1007">
     <svrl:fired-rule context="/M_INVOIC/G_SG2" />
 
 		<!--ASSERT -->
@@ -5486,7 +5484,7 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="not(G_SG5[S_CTA/D_3139='IC']) or G_SG5[S_CTA/D_3139='IC']/S_COM/C_C076/D_3148    " />
+      <xsl:when test="not(G_SG5[S_CTA/D_3139='IC']) or G_SG5[S_CTA/D_3139='IC']/S_COM/C_C076/D_3148" />
       <xsl:otherwise>
         <svrl:failed-assert test="not(G_SG5[S_CTA/D_3139='IC']) or G_SG5[S_CTA/D_3139='IC']/S_COM/C_C076/D_3148">
           <xsl:attribute name="id">EDIFACT-SR-098</xsl:attribute>
@@ -5515,11 +5513,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG7" mode="M5" priority="1006">
+<xsl:template match="/M_INVOIC/G_SG7" mode="M4" priority="1006">
     <svrl:fired-rule context="/M_INVOIC/G_SG7" />
 
 		<!--ASSERT -->
@@ -5617,11 +5615,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG8" mode="M5" priority="1005">
+<xsl:template match="/M_INVOIC/G_SG8" mode="M4" priority="1005">
     <svrl:fired-rule context="/M_INVOIC/G_SG8" />
 
 		<!--ASSERT -->
@@ -5735,11 +5733,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG16" mode="M5" priority="1004">
+<xsl:template match="/M_INVOIC/G_SG16" mode="M4" priority="1004">
     <svrl:fired-rule context="/M_INVOIC/G_SG16" />
 
 		<!--ASSERT -->
@@ -6318,11 +6316,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG26" mode="M5" priority="1003">
+<xsl:template match="/M_INVOIC/G_SG26" mode="M4" priority="1003">
     <svrl:fired-rule context="/M_INVOIC/G_SG26" />
 
 		<!--ASSERT -->
@@ -6414,11 +6412,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG27" mode="M5" priority="1002">
+<xsl:template match="/M_INVOIC/G_SG27" mode="M4" priority="1002">
     <svrl:fired-rule context="/M_INVOIC/G_SG27" />
 
 		<!--ASSERT -->
@@ -7698,7 +7696,7 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="not (G_SG40) or G_SG40[S_ALC/D_5463='A']/G_SG43/S_MOA/C_C516[D_5025='509']/D_5004 or    G_SG40[G_SG43/S_MOA/C_C516/D_5025='204']/S_ALC[D_5463='A']/C_C552/D_1230 or   G_SG40[G_SG43/S_MOA/C_C516/D_5025='23']/S_ALC[D_5463='C']/C_C552/D_1230 " />
+      <xsl:when test="not (G_SG40) or G_SG40[S_ALC/D_5463='A']/G_SG43/S_MOA/C_C516[D_5025='509']/D_5004 or    G_SG40[G_SG43/S_MOA/C_C516/D_5025='204']/S_ALC[D_5463='A']/C_C552/D_1230 or   G_SG40[G_SG43/S_MOA/C_C516/D_5025='23']/S_ALC[D_5463='C']/C_C552/D_1230" />
       <xsl:otherwise>
         <svrl:failed-assert test="not (G_SG40) or G_SG40[S_ALC/D_5463='A']/G_SG43/S_MOA/C_C516[D_5025='509']/D_5004 or G_SG40[G_SG43/S_MOA/C_C516/D_5025='204']/S_ALC[D_5463='A']/C_C552/D_1230 or G_SG40[G_SG43/S_MOA/C_C516/D_5025='23']/S_ALC[D_5463='C']/C_C552/D_1230">
           <xsl:attribute name="id">EDIFACT-SR-243</xsl:attribute>
@@ -8115,11 +8113,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG52" mode="M5" priority="1001">
+<xsl:template match="/M_INVOIC/G_SG52" mode="M4" priority="1001">
     <svrl:fired-rule context="/M_INVOIC/G_SG52" />
 
 		<!--ASSERT -->
@@ -8196,11 +8194,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/M_INVOIC/G_SG54" mode="M5" priority="1000">
+<xsl:template match="/M_INVOIC/G_SG54" mode="M4" priority="1000">
     <svrl:fired-rule context="/M_INVOIC/G_SG54" />
 
 		<!--ASSERT -->
@@ -8457,18 +8455,18 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M5" select="*" />
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
-  <xsl:template match="text()" mode="M5" priority="-1" />
-  <xsl:template match="@*|node()" mode="M5" priority="-2">
-    <xsl:apply-templates mode="M5" select="*" />
+  <xsl:template match="text()" mode="M4" priority="-1" />
+  <xsl:template match="@*|node()" mode="M4" priority="-2">
+    <xsl:apply-templates mode="M4" select="*" />
   </xsl:template>
 
 <!--PATTERN EN16931-Codes-->
 
 
 	<!--RULE -->
-<xsl:template match="//D_3453" mode="M6" priority="1014">
+<xsl:template match="//D_3453" mode="M5" priority="1014">
     <svrl:fired-rule context="//D_3453" />
 
 		<!--ASSERT -->
@@ -8486,11 +8484,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_6345" mode="M6" priority="1013">
+<xsl:template match="//D_6345" mode="M5" priority="1013">
     <svrl:fired-rule context="//D_6345" />
 
 		<!--ASSERT -->
@@ -8506,11 +8504,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_2005[not (../D_2380)]" mode="M6" priority="1012">
+<xsl:template match="//D_2005[not (../D_2380)]" mode="M5" priority="1012">
     <svrl:fired-rule context="//D_2005[not (../D_2380)]" />
 
 		<!--ASSERT -->
@@ -8526,11 +8524,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_1153" mode="M6" priority="1011">
+<xsl:template match="//D_1153" mode="M5" priority="1011">
     <svrl:fired-rule context="//D_1153" />
 
 		<!--ASSERT -->
@@ -8546,11 +8544,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_4451" mode="M6" priority="1010">
+<xsl:template match="//D_4451" mode="M5" priority="1010">
     <svrl:fired-rule context="//D_4451" />
 
 		<!--ASSERT -->
@@ -8566,11 +8564,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//S_FTX[D_4451='DOC']/C_C107/D_4441" mode="M6" priority="1009">
+<xsl:template match="//S_FTX[D_4451='DOC']/C_C107/D_4441" mode="M5" priority="1009">
     <svrl:fired-rule context="//S_FTX[D_4451='DOC']/C_C107/D_4441" />
 
 		<!--ASSERT -->
@@ -8586,11 +8584,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_1131" mode="M6" priority="1008">
+<xsl:template match="//D_1131" mode="M5" priority="1008">
     <svrl:fired-rule context="//D_1131" />
 
 		<!--ASSERT -->
@@ -8606,11 +8604,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_3207" mode="M6" priority="1007">
+<xsl:template match="//D_3207" mode="M5" priority="1007">
     <svrl:fired-rule context="//D_3207" />
 
 		<!--ASSERT -->
@@ -8627,11 +8625,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_4461" mode="M6" priority="1006">
+<xsl:template match="//D_4461" mode="M5" priority="1006">
     <svrl:fired-rule context="//D_4461" />
 
 		<!--ASSERT -->
@@ -8648,11 +8646,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_5305" mode="M6" priority="1005">
+<xsl:template match="//D_5305" mode="M5" priority="1005">
     <svrl:fired-rule context="//D_5305" />
 
 		<!--ASSERT -->
@@ -8668,11 +8666,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_7143" mode="M6" priority="1004">
+<xsl:template match="//D_7143" mode="M5" priority="1004">
     <svrl:fired-rule context="//D_7143" />
 
 		<!--ASSERT -->
@@ -8688,11 +8686,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_5189" mode="M6" priority="1003">
+<xsl:template match="//D_5189" mode="M5" priority="1003">
     <svrl:fired-rule context="//D_5189" />
 
 		<!--ASSERT -->
@@ -8709,11 +8707,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_7161" mode="M6" priority="1002">
+<xsl:template match="//D_7161" mode="M5" priority="1002">
     <svrl:fired-rule context="//D_7161" />
 
 		<!--ASSERT -->
@@ -8730,11 +8728,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_6411" mode="M6" priority="1001">
+<xsl:template match="//D_6411" mode="M5" priority="1001">
     <svrl:fired-rule context="//D_6411" />
 
 		<!--ASSERT -->
@@ -8751,11 +8749,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//D_0809" mode="M6" priority="1000">
+<xsl:template match="//D_0809" mode="M5" priority="1000">
     <svrl:fired-rule context="//D_0809" />
 
 		<!--ASSERT -->
@@ -8771,10 +8769,10 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:apply-templates mode="M6" select="*" />
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
-  <xsl:template match="text()" mode="M6" priority="-1" />
-  <xsl:template match="@*|node()" mode="M6" priority="-2">
-    <xsl:apply-templates mode="M6" select="*" />
+  <xsl:template match="text()" mode="M5" priority="-1" />
+  <xsl:template match="@*|node()" mode="M5" priority="-2">
+    <xsl:apply-templates mode="M5" select="*" />
   </xsl:template>
 </xsl:stylesheet>

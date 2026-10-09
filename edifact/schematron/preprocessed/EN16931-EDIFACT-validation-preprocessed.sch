@@ -4,6 +4,7 @@
     Licensed under European Union Public Licence (EUPL) version 1.2.
 
 -->
+<!--Schematron version 1.3.17 - Last update: 2026-10-09-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
   <phase id="EN16931-model-phase">
     <active pattern="EN16931-EDIFACT-Model" />
