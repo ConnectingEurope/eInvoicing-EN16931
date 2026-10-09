@@ -13,11 +13,11 @@ jobs:
         uses: actions/checkout@master
 
       - name: Run CII tests
-        uses: docker://difi/vefa-validator:latest
+        uses: docker://phelger/vefa-validator:latest
         with:
           args: build -x -t -p cii /github/workspace
 
       - name: Run UBL tests
-        uses: docker://difi/vefa-validator:latest
+        uses: docker://phelger/vefa-validator:latest
         with:
           args: build -x -t -p ubl /github/workspace
