@@ -39,7 +39,7 @@
             </goals>
             <configuration>
               <xmlDirectory>cii/examples</xmlDirectory>
-              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
+              <schematronProcessingEngine>xslt</schematronProcessingEngine>
               <schematronFile>cii/xslt/EN16931-CII-validation.xslt</schematronFile>
             </configuration>
           </execution>
@@ -51,7 +51,7 @@
             </goals>
             <configuration>
               <xmlDirectory>edifact/examples</xmlDirectory>
-              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
+              <schematronProcessingEngine>xslt</schematronProcessingEngine>
               <schematronFile>edifact/xslt/EN16931-EDIFACT-validation.xslt</schematronFile>
             </configuration>
           </execution>
@@ -63,7 +63,7 @@
             </goals>
             <configuration>
               <xmlDirectory>ubl/examples</xmlDirectory>
-              <schematronProcessingEngine>XSLT</schematronProcessingEngine>
+              <schematronProcessingEngine>xslt</schematronProcessingEngine>
               <schematronFile>ubl/xslt/EN16931-UBL-validation.xslt</schematronFile>
             </configuration>
           </execution>
