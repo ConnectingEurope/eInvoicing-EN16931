@@ -55,6 +55,18 @@
               <xsltDirectory>${basedir}/ubl/xslt</xsltDirectory>
             </configuration>
           </execution>
+<!--
+-->
+          <execution>
+            <id>edifact</id>
+            <goals>
+              <goal>convert</goal>
+            </goals>
+            <configuration>
+              <schematronDirectory>${basedir}/edifact/schematron/preprocessed</schematronDirectory>
+              <xsltDirectory>${basedir}/edifact/xslt</xsltDirectory>
+            </configuration>
+          </execution>
         </executions>
         <configuration>
           <schematronPattern>*.sch</schematronPattern>
