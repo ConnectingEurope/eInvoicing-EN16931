@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - validation-*
 
 jobs:
   run-tests:
