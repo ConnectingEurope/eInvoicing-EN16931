@@ -1106,7 +1106,7 @@
       <assert id="UBL-SR-29" flag="fatal" test="(count(//cac:PartyIdentification/cbc:ID[upper-case(@schemeID) = 'SEPA']) &lt;= 1)">[UBL-SR-29]-Bank creditor reference shall occur maximum once</assert>
       <assert id="UBL-SR-39" flag="fatal" test="(count(cac:ProjectReference/cbc:ID) &lt;= 1)">[UBL-SR-39]-Project reference shall occur maximum once.</assert>
       <assert id="UBL-SR-40" flag="fatal" test="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name) &lt;= 1)">[UBL-SR-40]-Buyer trade name shall occur maximum once</assert>
-      <assert id="UBL-SR-44" flag="fatal" test="count(//cbc:PaymentID[not(preceding::cbc:PaymentID/. = .)]) &lt;= 1">[UBL-SR-44]-An Invoice may only have one unique PaymentID, but the PaymentID may be used for multiple PaymentMeans</assert>
+      <assert id="UBL-SR-44" flag="fatal" test="count(distinct-values(//cbc:PaymentID)) &lt;= 1">[UBL-SR-44]-An Invoice may only have one unique PaymentID, but the PaymentID may be used for multiple PaymentMeans</assert>
       <assert id="UBL-SR-45" flag="fatal" test="(count(cac:PaymentMeans/cbc:PaymentDueDate) &lt;=1)">[UBL-SR-45]-Due Date shall occur maximum once</assert>
       <assert id="UBL-SR-46" flag="fatal" test="(count(cac:PaymentMeans/cbc:PaymentMeansCode/@name) &lt;=1)">[UBL-SR-46]-Payment means text shall occur maximum once</assert>
       <assert id="UBL-SR-47" flag="fatal" test="count(//cbc:PaymentMeansCode[not(preceding::cbc:PaymentMeansCode/. = .)]) &lt;= 1">[UBL-SR-47]-When there are more than one payment means code, they shall be equal</assert>

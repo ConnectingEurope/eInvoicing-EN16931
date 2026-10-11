@@ -14635,9 +14635,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="count(//cbc:PaymentID[not(preceding::cbc:PaymentID/. = .)]) &lt;= 1" />
+      <xsl:when test="count(distinct-values(//cbc:PaymentID)) &lt;= 1" />
       <xsl:otherwise>
-        <svrl:failed-assert test="count(//cbc:PaymentID[not(preceding::cbc:PaymentID/. = .)]) &lt;= 1">
+        <svrl:failed-assert test="count(distinct-values(//cbc:PaymentID)) &lt;= 1">
           <xsl:attribute name="id">UBL-SR-44</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
